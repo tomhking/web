@@ -49,8 +49,8 @@ hr{
 }
 
 .partners h3.title::after,
-div#what-are-we h2::after,
-div#team h2::after {
+.what-are-we h2::after,
+.team h2::after {
     border-bottom: 1px solid #d7d7d7;
     content: " ";
     height: 1px;
@@ -241,10 +241,6 @@ form .notice {
     }
 }
 
-.icon {
-    background-image: url(../images/icons-dd0be5997a.svg)
-}
-
 .icon.icon-decentraland {
     width: 52px;
     height: 52px;
@@ -273,10 +269,6 @@ form .notice {
     width: 13px;
     height: 12px;
     background-position: -330px -16px;
-}
-
-.card-icon {
-    background-image: url(../images/card-icons-e4089aef71.svg);
 }
 
 .card-icon.card-icon-virtual-world {
@@ -440,7 +432,6 @@ button.navbar-toggle {
 
 .nav>li>a:focus,
 .nav>li>a:hover {
-    background-color: initial;
     color: #FFF;
     background: #8291a4;
 }
@@ -1435,7 +1426,7 @@ p.subtitle {
         margin-left: 0;
     }
     .footer div#navbar {
-        margin-top: 0px;
+        margin-top: 0;
     }
 }
 
@@ -1936,7 +1927,7 @@ p.subtitle a {
 }
 
 .footer .copyright {
-    margin: 30px 0 0px;
+    margin: 30px 0 0;
     color: #8DA0B0;
     font-size: 14px;
 }
@@ -1970,7 +1961,7 @@ p.subtitle a {
 
 .faq-button.collapsed h3.panel-title::before {
      content: "\f067";
-     font-family: Fontawesome;
+     font-family: 'Fontawesome';
      font-size: 16px;
      color: #318aff;
      margin-right: 10px;
@@ -1978,7 +1969,7 @@ p.subtitle a {
 
 .faq-button h3.panel-title::before {
     content: "\f068";
-    font-family: Fontawesome;
+    font-family: 'Fontawesome';
     font-size: 16px;
     color: #318aff;
     margin-right: 10px;
@@ -2182,9 +2173,6 @@ p.subtitle a {
         top: 0;
         left: 19%;
         position: absolute;
-        background-image: url(../images/mana-token-outline-eb8a0abf6f.png);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .outline-wrapper>div {
         position: relative;
@@ -2237,14 +2225,6 @@ p.subtitle a {
         margin-right: 15px;
         float: right;
     }
-}
-
-.no-slack header,
-.thankyou header,
-.whitelist header {
-    height: 100%;
-    background-image: url(../images/tokensale-background-a2468696b7.png);
-    background-position: 0 0;
 }
 
 @media (min-width:1050px) {
