@@ -1,3 +1,19 @@
+body,
+html {
+    height: 100%;
+    overflow-x: hidden;
+    width:100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    min-height: 100%;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFF;
+    color: #062033;
+}
+
 a,
 a:hover {
     color: #328bff;
@@ -25,22 +41,6 @@ a:hover {
     content: " ";
 }
 
-body,
-html {
-    height: 100%;
-   overflow-x: hidden;
-    width:100%;
-    -webkit-overflow-scrolling: touch;
-}
-
-body {
-    min-height: 100%;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #FFF;
-    color: #062033;
-}
-
 p{
     font-weight: 300;
 }
@@ -51,7 +51,8 @@ hr{
 
 .partners h3.title::after,
 .what-are-we h2::after,
-.team h2::after {
+.team h2::after,
+.bitdegrees-list h2::after {
     border-bottom: 1px solid #d7d7d7;
     content: " ";
     height: 1px;
@@ -59,6 +60,7 @@ hr{
     margin: 0 auto;
     display: block;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 div#testimonials {
@@ -224,7 +226,7 @@ form .notice {
 }
 
 @media (min-width:768px) {
-    header.container-fluid {
+    .front-page header.container-fluid {
         min-height: 700px;
     }
     .main {
@@ -232,7 +234,7 @@ form .notice {
         padding-bottom: 80px;
     }
     h2.title {
-        margin-bottom: 70px;
+        /*margin-bottom: 70px;*/
     }
     form .notice {
         position: absolute;
@@ -357,6 +359,187 @@ form .notice {
     color: #05cf00
 }
 
+/*MVP Page*/
+
+.bitdegrees-list  p.subtitle {
+    padding-bottom: 30px;
+}
+
+.bitdegrees-list .cards .card {
+    margin: auto;
+    box-shadow: 5px 5px 25px 0px rgba(76, 108, 231, .12);
+    border: 1px solid rgba(76, 108, 231, .12);
+    background: #FFF;
+    max-width: 350px;
+    min-height: 280px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.bitdegrees-list .cards .card a h3{
+    color: #062033;
+    font-size: 22px;
+}
+
+.bitdegrees-list .cards .card a{
+    text-decoration: none;
+}
+
+.bitdegrees-list .cards .card:hover {
+    box-shadow: 2px 4px 8px 0px rgba(76, 108, 231, .2);
+}
+
+.degree-header{
+    position: relative;
+}
+
+.degree-header img{
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    max-width: 100%;
+}
+
+.degree-overlay {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index: 4000;
+    position: absolute;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.degree-overlay.blue{
+    background-color: rgba(50, 101, 169, 0.8);
+}
+
+.degree-overlay.cyan{
+    background-color: rgba(86, 183, 214, 0.8);
+}
+
+.degree-overlay.red{
+    background-color: rgba(202, 74, 74, 0.8);
+}
+
+.degree-overlay.purple{
+    background-color: rgba(130, 74, 202, 0.8);
+}
+
+.degree-overlay.yellow{
+    background-color: rgba(251, 200, 50, 0.75);
+}
+
+.degree-overlay.orange{
+    background-color: rgba(251, 154, 50, 0.8);
+}
+
+.degree-overlay.grey{
+    background-color: rgba(99, 114, 134, 0.8);
+}
+
+.degree-overlay.green{
+    background-color: rgba(26, 177, 109, 0.74);
+}
+
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #328bff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 0;
+    letter-spacing: 1px;
+    z-index: 5000;
+    text-transform: uppercase;
+    box-shadow: 4px 6px 8px 0px rgba(46,61,73,0.2);
+    position: absolute;
+    margin:5px;
+}
+
+.bitdegrees-list .cards .card .info{
+    text-align: center;
+    padding:15px;
+}
+
+.card.blue {
+    background-color: #318aff;
+    color: #fff;
+    padding: 25px;
+}
+
+.card.blue-2 {
+    background-color: #319eff;
+    color: #fff;
+    padding: 25px;
+}
+
+.card.blue h3,
+.card.blue-2 h3 {
+    margin-top:10px;
+}
+
+.card.blue i,
+.card.blue-2 i {
+    font-size: 38px;
+    float: left;
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding: 15px 15px;
+}
+
+.image-bkg {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 0px rgba(76, 108, 231, .4);
+    border: 1px solid rgba(76, 108, 231, .4);
+}
+.image-bkg img{
+    max-width:100%;
+    border-radius: 10px;
+}
+
+.image-bkg-overlay {
+    background-color: rgba(50, 101, 169, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4000;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.subscribe-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+}
+
+.communicate .subscribe-container .title,
+.communicate .subscribe-container i{
+    color: #fff;
+}
+
+/*MVP Page*/
+
 @media (min-width:768px) {
     .cards .card {
         margin: auto;
@@ -385,6 +568,11 @@ button.navbar-toggle {
 
 .navbar-header {
     float: left;
+}
+
+.navbar-brand>img {
+    display: block;
+    max-width: 160px;
 }
 
 .navbar-logo {
@@ -468,7 +656,7 @@ button.navbar-toggle {
 
 @media (min-width:400px) {
     .navbar-logo {
-        padding: 20px 10px;
+        padding: 25px 10px;
     }
     .nav.navbar-nav li .navbar-launch {
         color: orange;
@@ -493,6 +681,7 @@ button.navbar-toggle {
     }
     .navbar-container {
         margin-top: 25px;
+        margin-bottom: 25px;
     }
     .nav.navbar-nav {
         padding-right: 0;
@@ -624,7 +813,13 @@ button.navbar-toggle {
 @media (max-width:991px) {
     div#navbar {
         padding: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
     }
+    .navbar-right {
+         float: none !important;
+     }
     .nav>li>a {
         padding: 10px 15px;
     }
@@ -643,7 +838,6 @@ button.navbar-toggle {
 }
 
 header {
-    padding-bottom: 102px;
     background-color: #05243b;
     background-size: cover;
     position: relative;
@@ -652,7 +846,11 @@ header {
     z-index: 100;
 }
 
-header.container-fluid {
+.front-page header {
+    padding-bottom: 102px;
+}
+
+.front-page header.container-fluid {
     -webkit-box-shadow: 0 0 35px 0 rgba(0,0,0,.3);
     box-shadow: 0 0 35px 0 rgba(0,0,0,.3);
     position: relative;
@@ -780,7 +978,7 @@ header .contact .big-input .request-demo {
 }
 
 @media (min-width:992px) {
-    header {
+    .front-page header {
         padding-bottom: 55px;
         background-position: 0 42px;
     }
@@ -819,7 +1017,7 @@ header .contact .big-input .request-demo {
 }
 
 @media (min-width:1280px) {
-    header {
+    .front-page header {
         padding-bottom: 95px;
     }
     header .title {
@@ -834,7 +1032,7 @@ header .contact .big-input .request-demo {
 }
 
 @media (min-width:1425px) {
-    header {
+    .front-page header {
         padding-bottom: 122px;
     }
     header .title {
@@ -923,9 +1121,14 @@ header .countdown .subtitle {
     }
 }
 
+h3, .h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
 .what-are-we {
-    padding-bottom: 60px;
-    padding-top: 25px;
+    /*padding-bottom: 60px;
+    padding-top: 25px;*/
 }
 
 .what-are-we .title-container {
@@ -1085,9 +1288,10 @@ header .countdown .subtitle {
     .explanation .cards .card {
         width: 95%;
         height: auto;
-        min-height: 490px;
+        min-height:  520px;
         padding: 40px 25px;
         box-shadow: 0 5px 5px 0 rgba(76, 108, 231, .12);
+        border: 1px solid rgba(76, 108, 231, .12);
         background: #FFF;
     }
     .explanation .cards .card.left {
@@ -1255,6 +1459,8 @@ p.subtitle {
     margin: 0;
     text-align: left;
     color:#fff;
+    line-height: inherit;
+    font-size: 18px;
 }
 
 .milestone-tooltip p {
@@ -1480,6 +1686,7 @@ div#team hr {
 
 p.subtitle {
     font-size: 18px;
+    line-height: 28px;
 }
 
 p.subtitle a {
@@ -1866,6 +2073,9 @@ p.subtitle a {
     padding-bottom: 30px;
 }
 
+a.footer-logo img {
+    max-width: 160px;
+}
 .footer .nav.navbar-nav,
 .footer .navbar-container{
     float:none;
