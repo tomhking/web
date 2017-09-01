@@ -824,8 +824,8 @@ button.navbar-toggle {
         text-align: center;
     }
     .navbar-right {
-         float: none !important;
-     }
+        float: none !important;
+    }
     .nav>li>a {
         padding: 10px 15px;
     }
@@ -1006,12 +1006,8 @@ header .contact .big-input .request-demo {
         margin-top: 40px;
     }
     header .video-overlay {
-      height: 100%;
+        height: 100%;
         background: #05243b;
-        /*background: -moz-linear-gradient(top, #05243b 0, transparent 100%);
-        background: -webkit-linear-gradient(top, #05243b 0, transparent 100%);
-        background: linear-gradient(to bottom, #05243b 0, transparent 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#091446', endColorstr='transparent', GradientType=0);*/
         opacity: 0.7;
     }
 }
@@ -1173,12 +1169,12 @@ h3, .h3 {
 }
 
 .what-are-we img {
-     margin-top: 15px;
-     border: 1px solid #dedede;
-     max-width: 100%;
-     -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
-     box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
- }
+    margin-top: 15px;
+    border: 1px solid #dedede;
+    max-width: 100%;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+}
 
 .economy img {
     border: none;
@@ -2203,7 +2199,7 @@ a.footer-logo img {
 }
 
 .panel-default {
-   border:0;
+    border:0;
     border-radius:0;
 }
 
