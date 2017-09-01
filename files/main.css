@@ -1898,6 +1898,7 @@ p.subtitle a {
     }
     .milestone-tooltip p {
         font-size: 13px;
+        line-height: 18px;
     }
     h3.title {
         font-size: 20px;
