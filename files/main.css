@@ -11,6 +11,7 @@ html {
 body {
     min-height: 100%;
     font-size: 16px;
+    line-height: 24px;
     font-family: 'Open Sans', sans-serif;
     background-color: #FFF;
     color: #062033;
@@ -1495,6 +1496,8 @@ p.subtitle {
     }
     .milestone-tooltip p {
         font-size: 14px;
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 
@@ -1577,13 +1580,49 @@ p.subtitle {
         text-align: center;
     }
     .navbar-logo {
-        padding: 20px 0;
+        padding: 0;
         float: none;
         display: inline-block;
+        margin-top: 15px;
     }
     .nav.navbar-nav {
         padding-right: 0;
         margin: 0;
+    }
+    .image-bkg {
+        border-radius: 0;
+        box-shadow: none;
+        border: 1px solid rgba(76, 108, 231, .4);
+        position: inherit;
+    }
+    .image-bkg-overlay {
+        border-radius: 0;
+    }
+    .main.container-fluid.communicate.image-bkg {
+        padding: 0;
+        width: 100%;
+        background-image: url('subscribe-bkg.jpg');
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main.container-fluid.communicate.image-bkg .subscribe-container {
+        padding: 35px 0;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: inherit;
+        z-index: 10000;
+    }
+    .main.container-fluid.communicate.image-bkg .subscribe-container h2 {
+        margin-bottom: 25px;
+    }
+    .main.container-fluid.communicate.image-bkg .subscribe-container .contact {
+        margin-top: 0px;
+    }
+    .image-bkg img {
+        display:none;
     }
 }
 
