@@ -505,7 +505,8 @@ form .notice {
     padding: 15px 15px;
 }
 
-.image-bkg {
+.image-bkg-wrap {
+    padding:0;
     position: relative;
     border-radius: 10px;
     box-shadow: 5px 5px 25px 0px rgba(76, 108, 231, .4);
@@ -534,6 +535,8 @@ form .notice {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 10000;
+    width: 700px;
+    max-width: 100%;
 }
 
 .communicate .subscribe-container .title,
@@ -1589,11 +1592,12 @@ p.subtitle {
         padding-right: 0;
         margin: 0;
     }
-    .image-bkg {
+    .image-bkg-wrap {
         border-radius: 0;
         box-shadow: none;
         border: 1px solid rgba(76, 108, 231, .4);
         position: inherit;
+        width: 100%;
     }
     .image-bkg-overlay {
         border-radius: 0;
@@ -1608,12 +1612,13 @@ p.subtitle {
         background-position: center;
     }
     .main.container-fluid.communicate.image-bkg .subscribe-container {
-        padding: 35px 0;
+        padding: 35px 15px;
         position: relative;
         top: auto;
         left: auto;
         transform: inherit;
         z-index: 10000;
+        margin: 0 auto;
     }
     .main.container-fluid.communicate.image-bkg .subscribe-container h2 {
         margin-bottom: 25px;
