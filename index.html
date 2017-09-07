@@ -47,6 +47,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,200,300,400,500,600,700,900|Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 
@@ -60,126 +61,130 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
   <link rel="stylesheet" href="./files/vendor-bundle.min.css">
-
   <link rel="stylesheet" href="./files/main.css">
 
 </head>
 
 <body class="landing front-page">
+<header>
+  <div class="medusae-overlay"></div>
+  <video style="position: absolute; top:-105px;" id="bgvid" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; left: 0; right: 0;">
+    <source src="./files/bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-  <header class="container-fluid">
+  <div class="container header-content">
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-logo navbar-brand">
+            <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
+          </a>
 
-    <video id="js-background-video" style="position: absolute;" poster="./files/landing-bg.jpg" id="bgvid" class="hidden-xs hidden-sm" autoplay="" loop="">
-      <source src="./files/bg.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
 
-
-  <div class="video-overlay"></div>
-
-
-  <div class="navbar" role="navigation">
-    <div class="container">
-    <div class="navbar-header">
-      <a href="index.html" class="navbar-logo navbar-brand">
-        <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
-      </a>
-
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-
-    </div>
-    <div id="navbar" class="collapse navbar-collapse navbar-container">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is BitDegree</a></li>
-        <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse.in">People Behind</a></li>
-        <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>-->
-        <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>-->
-        <!--<li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>-->
-        <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager <i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12 text-center">
-      <h2 class="title"><b>Revolutionizing education</b> with blockchain</h2>
-      <div class="description">
-        <p>The world's first blockchain-powered online education platform with token scholarships &amp; tech talent recruiting.</p>
-        <p>Smart incentives based  &#8226;  The world's best online courses  &#8226;  Powered by the Ethereum blockchain</p>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-container">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is BitDegree</a></li>
+            <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse.in">People Behind</a></li>
+            <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>-->
+            <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>-->
+            <!--<li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>-->
+          </ul>
+          <ul class="cta-menu">
+            <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="communicate">
-        <div class="contact">
-          <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-            <input type="submit" class="submit" value="Subscribe" name="subscribe">
-          </form>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="title">Revolutionizing education with blockchain</h2>
+        <div class="description">
+          <p>The world's first blockchain-powered online education platform with token scholarships &amp; tech talent recruiting.</p>
+          <p>Smart incentives based  &#8226;  The world's best online courses  &#8226;  Powered by the Ethereum blockchain</p>
+        </div>
+        <div class="communicate">
+          <div class="contact">
+            <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
+              <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
+              <input type="submit" class="submit" value="Subscribe" name="subscribe">
+            </form>
 
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </header>
 
-  <div id="what-are-we" class="main what-are-we white-bkg">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="title-container">
-            <h2 class="title">What is BitDegree?</h2>
-            <h3 class="subtitle">
-              <b>BitDegree</b> platform will offer students the best online courses with clear and transparent blockchain-based reward system and achievement tracking in their own name. It is also a unique tool for business to recruit tech talents and shape global education to their needs.
-              <br>Think about it as Coursera and HackerRank merged together, powered by decentralized blockchain technology.
-            </h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
 
 
-
-  <div class="partners light-violet-bkg">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h3 class="title">29 000 000 users is our starting point</h3>
-          <p class="subtitle">We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community.
-            Our vision at Hostinger is to enable millions of people around the globe to unlock the power
-            of Internet and give them the empowerment to learn, create and grow.
-          </p>
-        </div>
-      </div>
-      <div class="logos partner-logos">
-        <div class="row text-center">
-          <div class="grid-block">
-            <div class="grid-image">
-              <a href="https://www.000webhost.com" target="_blank"><img src="./files/000webhost-2.png" alt="000webhost logo"></a>
-            </div>
-            <div class="grid-image">
-              <a href="https://www.hostinger.com" target="_blank"><img src="./files/hostinger.png"  alt="Hostinger logo"></a>
-            </div>
-          </div>
+<div id="what-are-we" class="main what-are-we white-bkg">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="title-container">
+          <h2 class="title">What is BitDegree?</h2>
+          <h3 class="subtitle">
+            <b>BitDegree</b> platform will offer students the best online courses with clear and transparent blockchain-based reward system and achievement tracking in their own name. It is also a unique tool for business to recruit tech talents and shape global education to their needs.
+            <br>Think about it as Coursera and HackerRank merged together, powered by decentralized blockchain technology.
+          </h3>
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="why-us" class="main explanation white-bkg">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="title">What problems does BitDegree solve?</h2>
-        </div>
+  </div>
+</div>
+
+
+
+<div class="partners main light-violet-bkg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <img src="./files/users-our-starting-point.jpg" alt="29 000 000 users is our starting point">
       </div>
 
-      <div class="row cards">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <h3 class="title">29 000 000 users is our starting point</h3>
+        <p class="subtitle">We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community.
+          Our vision at Hostinger is to enable millions of people around the globe to unlock the power
+          of Internet and give them the empowerment to learn, create and grow.
+        </p>
+        <div class="logos partner-logos">
+          <div class="row text-center">
+            <div class="grid-block">
+              <div class="grid-image">
+                <a href="https://www.000webhost.com" target="_blank"><img src="./files/000webhost-2.png" alt="000webhost logo"></a>
+              </div>
+              <div class="grid-image">
+                <a href="https://www.hostinger.com" target="_blank"><img src="./files/hostinger.png"  alt="Hostinger logo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="why-us" class="main explanation white-bkg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2">
+        <h2 class="title center">What problems does BitDegree solve?</h2>
+      </div>
+    </div>
+
+    <div class="row cards">
       <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s">
         <div class="card left">
-          <span class="fa fa-globe" aria-hidden="true"></span>
+          <img src="./files/book.jpg" alt="Education is flawed">
           <h3>1. Education is flawed globally</h3>
           <p>Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well. The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is the possibility for business to initiate and maintain dialogue with upcoming talent and reward them for achievements through smart-incentives. From the student’s perspective it means - getting paid to learn.
           </p>
@@ -187,14 +192,14 @@
       </div>
       <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
         <div class="card">
-          <span class="fa fa-star" aria-hidden="true"></span>
+          <img src="./files/lamp.jpg" alt="Help recruiting talents">
           <h3>2. Helps recruiting tech talent</h3>
           <p>It is estimated that the global recruitment market is worth over $200 billion and $4,000 is the average amount spent by a U.S. company to fill an open position. Tech companies are actively competing to constantly raise and maintain their employer profiles, offering perks unimaginable in other industries. Our solution here is to provide global employer branding to millions of BitDegree students by sponsoring smart-incentives.</p>
         </div>
       </div>
       <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
         <div class="card right">
-          <span class="fa fa-flask" aria-hidden="true"></span>
+          <img src="./files/money.jpg" alt="Tech students are valued customers">
           <h3>3. Tech students are valued customers</h3>
           <p>With a traditional client acquisition model, tech companies like Hostinger, DigitalOcean or NordVPN spend huge amounts to acquire new customers. By accepting decentralized BitDegree tokens, they will be able to attract new flow of technophile users in a cost-effective way. Students who earned scholarships are qualified customers with a proven interest in learning technology & are willing to spend on various products & services.</p>
         </div>
@@ -203,181 +208,127 @@
   </div>
 </div>
 
-  <div id="statistics" class="main white-bkg">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="title-container">
-            <h2 class="title">Growth of MOOCs</h2>
-            <h3 class="subtitle">The popularity of MOOCs has been growing steadily</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-12 description">
-          <div class="image-container text-center">
-            <img src="./files/mooc-graph.jpg" alt="Growth of MOOCs">
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 description">
-          <div class="description-container">
-            <p>The popularity of MOOCs has been growing steadily since their first appearance. This resulted in more and more courses offered every year. The amount of MOOCs should continue to grow due to increasing demand.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="how-it-works main light-violet-bkg">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="title-container">
-            <h2 class="title">How does it look from student perspective?</h2>
-            <h3 class="subtitle">Start now &amp; earn BitDegree tokens as a reward.<br>Take the world's best courses, online. </h3>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="bitdegrees-list" class="bitdegrees-list" style="margin:25px;">
-
-          <div class="row cards">
-            <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s">
-              <div class="card left">
-                <a href="subscribe-page.html">
-                  <div class="badge"><span>FREE</span></div>
-                  <div class="degree-header">
-                    <div class="degree-overlay"></div>
-                    <img class="degree-img" src="./files/web-development.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h3>Web Development Glossary</h3>
-                    <p></p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.1s">
-              <div class="card">
-                <a href="subscribe-page.html">
-                  <div class="badge"><span>NEW</span></div>
-                  <div class="degree-header">
-                    <div class="degree-overlay blue"></div>
-                    <img class="degree-img" src="./files/coding-fundamentals.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h3>Coding Fundamentals</h3>
-                    <p>Coming Soon</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-              <div class="card right">
-                <a href="subscribe-page.html">
-                  <div class="badge"><span>NEW</span></div>
-                  <div class="degree-header">
-                    <div class="degree-overlay green"></div>
-                    <img class="degree-img" src="./files/deep-learning.png" alt="">
-                  </div>
-                  <div class="info">
-                    <h3>Deep Learning</h3>
-                    <p>Coming Soon</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        <a href="mvp-page.html" style="display:block; text-align: center;">And more</a>
-      </div>
-
-
-
-      <div class="row">
-        <div class="col-xs-12 text-center economy">
-          <p>Coursera and CodeCademy together are worth more than $1 billion today. However, even these frontrunners face abysmal course completion results – only 5%. The BitDegree platform’s innovation is the possibility for business to initiate and maintain dialogue with upcoming talent and reward them for achievements through smart-incentives. From the student’s perspective it means - getting paid to learn.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div id="statistics" class="main white-bkg">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="title-container">
-            <h2 class="title">Forecast of IT Jobs Demand Potential</h2>
-            <h3 class="subtitle">IT companies have a huge hiring potential and it is still growing</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="col-xs-12 col-sm-12 col-md-12 description">
-          <div class="image-container text-center">
-            <img src="./files/it-jobs-demand-graph.jpg" alt="IT Jobs Demand">
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 description">
-          <div class="description-container">
-            <p>Write something about the high demand for IT specialists and our ability to create those specialists for the sponsoring companies</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="how-it-works main light-violet-bkg">
-    <div class="container wow fadeIn">
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="title-container">
-            <h2 class="title">BitDegree Token economy</h2>
-            <h3 class="subtitle">BitDegree will revolutionize education by creating a new token that can be exchanged among the users of the platform: Students, Sponsors, and third party Digital Service Providers.</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="economy">
-          <p><img src="./files/token-economy.png" alt="Learn to code"></p>
-        </div>
-
-
-
-
-        <div class="col-xs-12 col-sm-3 wow fadeIn">
-          <p>BitDegree Token can be used to create <strong>smart-incentives</strong> for educational accomplishments, to purchase advertising and recruitment services, or for various digital services offered by third parties on the BitDegree platform.</p>
-        </div>
-
-        <div class="col-xs-12 col-sm-3 wow fadeIn">
-          <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and the <strong>recruitment of tech talent.</strong> </p>
-        </div>
-
-        <div class="col-xs-12 col-sm-3 wow fadeIn">
-          <p>The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Due to limited supply, the growing demand for BitDegree platform’s services will drive the token price up.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div id="team" class="main team white-bkg">
-    <div class="container">
+<div id="statistics" class="main white-bkg">
+  <div class="container wow fadeIn">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <div class="title-container">
+          <h2 class="title">Growth of MOOCs</h2>
+          <h3 class="subtitle">The popularity of MOOCs has been growing steadily</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 description">
+        <div class="image-container text-center">
+          <img src="./files/moocs.jpg" alt="Growth of MOOCs">
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 description">
+        <div class="description-container">
+          <p>The popularity of MOOCs has been growing steadily since their first appearance. This resulted in more and more courses offered every year. The amount of MOOCs should continue to grow due to increasing demand.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="how-it-works main light-violet-bkg">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <div class="title-container">
+          <h2 class="title">How does it look from student perspective?</h2>
+          <h3 class="subtitle">Start now &amp; earn BitDegree tokens as a reward.<br>Take the world's best courses, online.</h3>
+        </div>
+      </div>
+    </div>
+
+<div class="mvp-cta text-center">
+      <a href="mvp-page.html" class="cta-btn">TRY MVP</a>
+</div>
+
+
+
+    <div class="row">
+      <div class="col-xs-12 text-center economy">
+        <p>Coursera and CodeCademy together are worth more than $1 billion today. However, even these frontrunners face abysmal course completion results – only 5%. The BitDegree platform’s innovation is the possibility for business to initiate and maintain dialogue with upcoming talent and reward them for achievements through smart-incentives. From the student’s perspective it means - getting paid to learn.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="statistics" class="main white-bkg">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="title-container">
+          <h2 class="title">Forecast of IT Jobs Demand Potential</h2>
+          <h3 class="subtitle">IT companies have a huge hiring potential and it is still growing</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 description">
+        <div class="image-container text-center">
+          <img src="./files/jobs-graph.jpg" alt="IT Jobs Demand">
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 description">
+        <div class="description-container">
+          <p>Write something about the high demand for IT specialists and our ability to create those specialists for the sponsoring companies</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="how-it-works main">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="economy">
+          <img src="./files/token-economy.jpg" alt="Learn to code">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <div class="title-container">
+          <h2 class="title">BitDegree Token economy</h2>
+          <h3 class="subtitle">BitDegree will revolutionize education by creating a new token that can be exchanged among the users of the platform: Students, Sponsors, and third party Digital Service Providers.</h3>
+        </div>
+
+        <div class="col-xs-12 grey-block">
+          <p><b>01.</b> Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and the <strong>recruitment of tech talent.</strong> </p>
+        </div>
+
+        <div class="col-xs-12 grey-block">
+          <p><b>02.</b> BitDegree Token can be used to create <strong>smart-incentives</strong> for educational accomplishments, to purchase advertising and recruitment services, or for various digital services offered by third parties on the BitDegree platform.</p>
+        </div>
+
+
+
+        <div class="col-xs-12 grey-block">
+          <p><b>03.</b> The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Due to limited supply, the growing demand for BitDegree platform’s services will drive the token price up.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="team" class="main team light-violet-bkg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
         <h2 class="title">The Team</h2>
         <p class="subtitle">Let us introduce you the key people of the Team that will make it all happen.</p>
       </div>
@@ -386,8 +337,9 @@
     <div id="js-team-members" class="row team-members">
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
-          <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/andrius-putna.jpg" alt="Andrius Putna">
+          <div class="team-member-image-holder ">
+
+            <img class="team-member-image" src="./files/team/andrius-putna.png" alt="Andrius Putna">
 
           </div>
           <div class="team-member-data">
@@ -408,7 +360,7 @@
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
           <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/danielius-stasiulis.jpg" alt="Danielius Stasiulis">
+            <img class="team-member-image" src="./files/team/danielius-stasiulis.png" alt="Danielius Stasiulis">
 
           </div>
           <div class="team-member-data">
@@ -429,7 +381,7 @@
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
           <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/martynas-andriuskevicius.jpg" alt="Martynas Andriuškevičius">
+            <img class="team-member-image" src="./files/team/martynas-andriuskevicius.png" alt="Martynas Andriuškevičius">
 
           </div>
           <div class="team-member-data">
@@ -450,7 +402,7 @@
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
           <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/ervinas-rimdeika.jpg" alt="Ervinas Rimdeika">
+            <img class="team-member-image" src="./files/team/ervinas-rimdeika.png" alt="Ervinas Rimdeika">
 
           </div>
           <div class="team-member-data">
@@ -471,7 +423,7 @@
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
           <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/kestutis-bajorunas.jpg" alt="Kęstutis Bajorūnas">
+            <img class="team-member-image" src="./files/team/kestutis-bajorunas.png" alt="Kęstutis Bajorūnas">
 
           </div>
           <div class="team-member-data">
@@ -492,14 +444,14 @@
       <div class="col-xs-12 col-sm-3 wow fadeIn">
         <div class="team-member">
           <div class="team-member-image-holder">
-            <img class="team-member-image" src="./files/team/ra.jpg" alt="R.A.">
+            <img class="team-member-image" src="./files/team/rio-asatiani.png" alt="R.A.">
 
           </div>
           <div class="team-member-data">
             <h3 class="title">Rio <b>Asatiani</b></h3>
             <p>CMO</p>
             <div class="handles">
-            <i class="fa " aria-hidden="true"></i>
+              <i class="fa " aria-hidden="true"></i>
             </div>
 
             <div class="team-member-desc">
@@ -573,213 +525,189 @@
 
     </div>
 
-      <hr>
+    <hr>
 
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="title">Advisors</h2>
-          </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <h2 class="title">Advisors</h2>
       </div>
+    </div>
 
-      <div id="js-advisory-board" class="row team-members">
-        <div class="col-xs-12 col-sm-3 wow fadeIn" style="float:none; margin:0 auto;">
-          <div class="team-member">
-            <div class="team-member-image-holder">
-              <img class="team-member-image" src="./files/team/arnas-stuopelis.jpg" alt="Arnas Stuopelis">
-            </div>
-            <div class="team-member-data">
-              <h3 class="title">Arnas <b>Stuopelis</b></h3>
-              <p>Co-founder in advisory capacity</p>
-              <p>CEO - Hostinger</p>
-              <div class="handles">
-                <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-              </div>
-
-              <div class="team-member-desc">
-                <p><b>Prior to taking the role of the CEO,</b> for 6 years Arnas was responsible for business development at Hostinger. He successfully expanded Hostinger on a global level as well as played in important role when creating one of the most successful web hosting brands in Indonesia - Niagahoster.co.id. With his profound entrepreneurship skills and a solid experience in business development,  Arnas knows how to scale a project to global success.</p>
-              </div>
-
-            </div>
+    <div id="js-advisory-board" class="row team-members">
+      <div class="col-xs-12 col-sm-3 wow fadeIn" style="float:none; margin:0 auto;">
+        <div class="team-member">
+          <div class="team-member-image-holder">
+            <img class="team-member-image" src="./files/team/arnas-stuopelis.png" alt="Arnas Stuopelis">
           </div>
-        </div>
-
-      </div>
-
-  </div>
-  </div>
-
-  <div id="token-sale-terms-2" class="main light-violet-bkg token-sale-terms communicate">
-        <div class="container-fluid">
-          <div class="text-center">
-            <h2 class="title">The crowdsale is not that far away</h2>
-          </div>
-
-          <div class="row find-out-more">
-            <div class="col-xs-12 text-center">
-              <p class="subtitle">Be the first to find out! Subscribe to our newsletter to get the latest ICO updates first</p>
-
-
-              <div class="contact">
-                <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                  <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-                  <input type="submit" class="submit" value="Subscribe" name="subscribe">
-                </form>
-
-              </div>
-
-
+          <div class="team-member-data">
+            <h3 class="title">Arnas <b>Stuopelis</b></h3>
+            <p>Co-founder in advisory capacity</p>
+            <p>CEO - Hostinger</p>
+            <div class="handles">
+              <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </div>
+
+            <div class="team-member-desc">
+              <p><b>Prior to taking the role of the CEO,</b> for 6 years Arnas was responsible for business development at Hostinger. He successfully expanded Hostinger on a global level as well as played in important role when creating one of the most successful web hosting brands in Indonesia - Niagahoster.co.id. With his profound entrepreneurship skills and a solid experience in business development,  Arnas knows how to scale a project to global success.</p>
+            </div>
+
           </div>
         </div>
       </div>
 
+    </div>
 
-  <div id="roadmap" class="main container-fluid roadmap">
-    <h2 class="title">Roadmap</h2>
+  </div>
+</div>
 
-    <div class="timeline">
+<div class="main light-violet-bkg token-sale-terms communicate cta-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+      <h2 class="title">The crowdsale is not that far away</h2>
+      </div>
+    </div>
 
-      <div class="row milestone current-milestone">
-        <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done">
-          <div class="mobile-circle circle-container">
+    <div class="row find-out-more">
+      <div class="col-xs-12 text-center">
+        <p class="subtitle">Be the first to find out! Subscribe to our newsletter to get the latest ICO updates first</p>
+
+
+        <div class="contact">
+          <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
+            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
+            <input type="submit" class="submit" value="Subscribe" name="subscribe">
+          </form>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="roadmap" class="main container-fluid roadmap light-violet-bkg">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <h2 class="title">Roadmap</h2>
+      </div>
+    </div>
+
+  <div class="timeline">
+
+    <div class="row milestone current-milestone">
+      <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done">
+        <div class="milestone-tooltip">
+          <h3 class="title">29M+ user base</h3>
+          <h5 class="subtitle visible-xs">January, 2017</h5>
+          <p>Reached 29 million users on 000webhost free web developement learning platform and Hostinger web hosting services. Biggest part of users are young technophiles with deep will to learn, build and grow.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 milestone-right hidden-xs">
+        <div class="milestone-landmark">
+          <div class="circle-container">
             <div class="circle outer-circle">
               <div class="circle inner-circle"></div>
             </div>
           </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">29M+ user base</h3>
-            <h5 class="subtitle visible-xs">January, 2017</h5>
-            <div class="dash"></div>
-            <p>Reached 29 million users on 000webhost free web developement learning platform and Hostinger web hosting services. Biggest part of users are young technophiles with deep will to learn, build and grow.</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 milestone-right hidden-xs">
-          <div class="milestone-landmark">
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-            <div class="milestone-date">January, 2017</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row milestone">
-        <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile">
-          <div class="milestone-landmark">
-            <div class="milestone-date">June, 2017</div>
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-           </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 milestone-right">
-          <div class="mobile-circle circle-container">
-            <div class="circle outer-circle">
-              <div class="circle inner-circle"></div>
-            </div>
-          </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">Coding Fundamentals MVP</h3>
-            <h5 class="subtitle visible-xs">June, 2017</h5>
-            <div class="dash"></div>
-            <p>First version of Glossary for Coding Fundamentals with 200+ articles is prepared (Minimal Viable Product).</p>
-          </div>
+          <div class="milestone-date">January, 2017</div>
         </div>
       </div>
     </div>
 
-    <div class="timeline">
-      <div class="timeline-title hidden"></div>
-
-      <div class="row milestone">
-        <div class="col-xs-12 col-sm-6 milestone-left">
-          <div class="mobile-circle circle-container">
+    <div class="row milestone">
+      <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile">
+        <div class="milestone-landmark">
+          <div class="milestone-date">June, 2017</div>
+          <div class="circle-container">
             <div class="circle outer-circle">
               <div class="circle inner-circle"></div>
             </div>
-          </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">Smart Contract developement</h3>
-            <h5 class="subtitle visible-xs">Early September, 2017</h5>
-            <div class="dash"></div>
-            <p>Period of building finalized Ethereum Smart Contract for upcoming BitDegree ICO event.</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 milestone-right hidden-xs">
-          <div class="milestone-landmark">
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-            <div class="milestone-date">Early September, 2017</div>
           </div>
         </div>
       </div>
-
-      <div class="row milestone">
-        <div class="col-sm-6 milestone-left hidden-mobile">
-          <div class="milestone-landmark">
-            <div class="milestone-date">September, 2017</div>
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-           </div>
+      <div class="col-xs-12 col-sm-6 milestone-right">
+        <div class="milestone-tooltip">
+          <h3 class="title">Coding Fundamentals MVP</h3>
+          <h5 class="subtitle visible-xs">June, 2017</h5>
+          <p>First version of Glossary for Coding Fundamentals with 200+ articles is prepared (Minimal Viable Product).</p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-xs-12 col-sm-6 milestone-right">
-          <div class="mobile-circle circle-container">
+  <div class="timeline">
+    <div class="timeline-title hidden"></div>
+
+    <div class="row milestone">
+      <div class="col-xs-12 col-sm-6 milestone-left">
+        <div class="milestone-tooltip">
+          <h3 class="title">Smart Contract developement</h3>
+          <h5 class="subtitle visible-xs">Early September, 2017</h5>
+          <p>Period of building finalized Ethereum Smart Contract for upcoming BitDegree ICO event.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 milestone-right hidden-xs">
+        <div class="milestone-landmark">
+          <div class="circle-container">
             <div class="circle outer-circle">
               <div class="circle inner-circle"></div>
             </div>
           </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">BitDegree Token Contribution Period</h3>
-            <h5 class="subtitle visible-xs">September, 2017</h5>
-            <div class="dash"></div>
-            <p>An ERC20 token, BitDegree, will allow students to collect scholarships &amp; to interact with Sponsors &amp; Digital Service Providers within blockchain network.</p>
-          </div>
+          <div class="milestone-date">Early September, 2017</div>
         </div>
       </div>
     </div>
 
-    <div class="timeline">
-      <div class="row milestone">
-        <div class="col-xs-12 col-sm-6 milestone-left">
-          <div class="mobile-circle circle-container">
+    <div class="row milestone">
+      <div class="col-sm-6 milestone-left hidden-mobile">
+        <div class="milestone-landmark">
+          <div class="milestone-date">September, 2017</div>
+          <div class="circle-container">
             <div class="circle outer-circle">
               <div class="circle inner-circle"></div>
             </div>
           </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">ICO - BitDegree Token Distribution Event</h3>
-            <h5 class="subtitle visible-xs">Late October, 2017</h5>
-            <div class="dash"></div>
-            <p>The most important part after the crowdsale is to accomplish &amp; concentrate the most talented blockchain and academia couches into the platform building process. </p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 milestone-right hidden-xs">
-          <div class="milestone-landmark">
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-            <div class="milestone-date">Late October, 2017</div>
-          </div>
         </div>
       </div>
 
-      <div class="row milestone">
+      <div class="col-xs-12 col-sm-6 milestone-right">
+        <div class="milestone-tooltip">
+          <h3 class="title">BitDegree Token Contribution Period</h3>
+          <h5 class="subtitle visible-xs">September, 2017</h5>
+          <p>An ERC20 token, BitDegree, will allow students to collect scholarships &amp; to interact with Sponsors &amp; Digital Service Providers within blockchain network.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="row milestone">
+      <div class="col-xs-12 col-sm-6 milestone-left">
+        <div class="milestone-tooltip">
+          <h3 class="title">ICO - BitDegree Token Distribution Event</h3>
+          <h5 class="subtitle visible-xs">Late October, 2017</h5>
+          <p>The most important part after the crowdsale is to accomplish &amp; concentrate the most talented blockchain and academia couches into the platform building process. </p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 milestone-right hidden-xs">
+        <div class="milestone-landmark">
+          <div class="circle-container">
+            <div class="circle outer-circle">
+              <div class="circle inner-circle"></div>
+            </div>
+          </div>
+          <div class="milestone-date">Late October, 2017</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row milestone">
       <div class="col-sm-6 milestone-left hidden-mobile">
         <div class="milestone-landmark">
           <div class="milestone-date">Q1 2018</div>
@@ -792,150 +720,121 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 milestone-right">
-        <div class="mobile-circle circle-container">
-          <div class="circle outer-circle">
-            <div class="circle inner-circle"></div>
-          </div>
-        </div>
         <div class="milestone-tooltip">
           <h3 class="title">Cutting-Edge Learning Programs</h3>
           <h5 class="subtitle visible-xs">Q1 2018</h5>
-          <div class="dash"></div>
           <p>All fundamental programs are developed in accordance to the most innovative companies and top education models.</p>
         </div>
       </div>
     </div>
-    </div>
-
-
-    <div class="timeline">
-      <div class="row milestone">
-        <div class="col-xs-12 col-sm-6 milestone-left">
-          <div class="mobile-circle circle-container">
-            <div class="circle outer-circle">
-              <div class="circle inner-circle"></div>
-            </div>
-          </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">Hype on Student sector</h3>
-            <h5 class="subtitle visible-xs">Late October, 2017</h5>
-            <div class="dash"></div>
-            <p>Start full-stack marketing activities oriented on Student engagement within strong influencers community &amp; Alumni partnerships. Scholarships program &amp; blockchain Students ID's are developed.</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 milestone-right hidden-xs">
-          <div class="milestone-landmark">
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-            <div class="milestone-date">Q2 2018</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row milestone">
-        <div class="col-sm-6 milestone-left hidden-mobile">
-          <div class="milestone-landmark">
-            <div class="milestone-date">Q3 2018</div>
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 milestone-right">
-          <div class="mobile-circle circle-container">
-            <div class="circle outer-circle">
-              <div class="circle inner-circle"></div>
-            </div>
-          </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">Business Platform launch</h3>
-            <h5 class="subtitle visible-xs">Q3 2018</h5>
-            <div class="dash"></div>
-            <p>Developed &amp; launched platform for Sponsors. Business developement towards strong sponsorships with emphasize on in-demand skill courses formation &amp creation of sourcing pool of talents.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline">
-      <div class="row milestone milestone-offset">
-        <div class="col-xs-12 col-sm-6 milestone-left">
-          <div class="mobile-circle circle-container">
-            <div class="circle outer-circle">
-              <div class="circle inner-circle"></div>
-            </div>
-          </div>
-          <div class="milestone-tooltip">
-            <h3 class="title">Digital Service Provider SDK Developement</h3>
-            <h5 class="subtitle visible-xs">Q4, 2018</h5>
-            <div class="dash"></div>
-            <p>Building SDK for a third party Digital Service Providers to inegrate Bitdegree Tokens as a mean of payment into market cycle.</p>
-          </div>
-        </div>
-
-        <div class="col-sm-6 milestone-right hidden-xs">
-          <div class="milestone-landmark">
-            <div class="circle-container">
-              <div class="circle outer-circle">
-                <div class="circle inner-circle"></div>
-              </div>
-            </div>
-            <div class="milestone-date">Q4 2018</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 
-  <div class="main container-fluid communicate light-violet-bkg">
-    <div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2 class="title">Come &amp; help us to build education the world deserves
-      </h2>
 
-      <div class="contact">
-        <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-          <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-          <input type="submit" class="submit" value="Subscribe" name="subscribe">
-        </form>
-        <div class="contact-icons">
-          <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-          <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
-          <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+  <div class="timeline">
+    <div class="row milestone">
+      <div class="col-xs-12 col-sm-6 milestone-left">
+        <div class="milestone-tooltip">
+          <h3 class="title">Hype on Student sector</h3>
+          <h5 class="subtitle visible-xs">Late October, 2017</h5>
+          <p>Start full-stack marketing activities oriented on Student engagement within strong influencers community &amp; Alumni partnerships. Scholarships program &amp; blockchain Students ID's are developed.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 milestone-right hidden-xs">
+        <div class="milestone-landmark">
+          <div class="circle-container">
+            <div class="circle outer-circle">
+              <div class="circle inner-circle"></div>
+            </div>
+          </div>
+          <div class="milestone-date">Q2 2018</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row milestone">
+      <div class="col-sm-6 milestone-left hidden-mobile">
+        <div class="milestone-landmark">
+          <div class="milestone-date">Q3 2018</div>
+          <div class="circle-container">
+            <div class="circle outer-circle">
+              <div class="circle inner-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 milestone-right">
+        <div class="milestone-tooltip">
+          <h3 class="title">Business Platform launch</h3>
+          <h5 class="subtitle visible-xs">Q3 2018</h5>
+          <p>Developed &amp; launched platform for Sponsors. Business developement towards strong sponsorships with emphasize on in-demand skill courses formation &amp creation of sourcing pool of talents.</p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="timeline">
+    <div class="row milestone milestone-offset">
+      <div class="col-xs-12 col-sm-6 milestone-left">
+        <div class="milestone-tooltip">
+          <h3 class="title">Digital Service Provider SDK Developement</h3>
+          <h5 class="subtitle visible-xs">Q4, 2018</h5>
+          <p>Building SDK for a third party Digital Service Providers to inegrate Bitdegree Tokens as a mean of payment into market cycle.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 milestone-right hidden-xs">
+        <div class="milestone-landmark">
+          <div class="circle-container">
+            <div class="circle outer-circle">
+              <div class="circle inner-circle"></div>
+            </div>
+          </div>
+          <div class="milestone-date">Q4 2018</div>
+        </div>
+      </div>
     </div>
+
+  </div>
+  </div>
+
+</div>
+
+<div class="main container-fluid communicate light-violet-bkg cta-block bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <h2 class="title">Come &amp; help us to build education the world deserves</h2>
+      </div>
+        <div class="contact">
+          <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
+            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
+            <input type="submit" class="submit" value="Subscribe" name="subscribe">
+          </form>
+          <div class="contact-icons">
+            <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+            <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+            <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-  <footer class="container-fluid footer main">
-    <div class="container">
-      <div class="row footer-links">
-        <div class="col-md-12">
-          <a href="index.html" class="footer-logo">
-            <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
-          </a>
-<br>
-        <a href="https://www.ethereum.org/" rel="nofollow" class="footer-logo">
-          <img class="logo" src="./files/etherium.png" alt="Etherium foundation">
+<footer class="container-fluid footer main">
+  <div class="container">
+    <div class="row footer-links">
+      <div class="col-md-12">
+        <a href="index.html" class="footer-logo">
+          <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
         </a>
-        <hr>
-        </div>
-        <div class="col-md-12">
+      </div>
+      <div class="col-md-12">
         <div class="navbar" role="navigation">
           <div id="navbar-2" class="navbar-container">
             <ul class="nav navbar-nav">
@@ -944,15 +843,20 @@
               <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>-->
               <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>-->
               <!--<li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>-->
-              <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager <i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+              <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager</a></li>
             </ul>
           </div>
         </div>
-        </div>
       </div>
-      <p class="copyright">Copyright © 2017 BitDegree.org - All rights reserved. |  <a href="mailto:hello@bitdegree.org">hello@bitdegree.org</a></p>
     </div>
-  </footer>
+
+    <a href="https://www.ethereum.org/" rel="nofollow" class="footer-logo">
+      <img class="logo" src="./files/ethereum.png" alt="Etherium foundation">
+    </a>
+
+    <p class="copyright">Copyright © 2017 BitDegree.org <br>  <a href="mailto:hello@bitdegree.org">hello@bitdegree.org</a></p>
+  </div>
+</footer>
 
 </body>
 </html>
