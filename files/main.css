@@ -49,6 +49,15 @@ a.cta-btn {
     text-decoration:none;
 }
 
+div#statistics-2 hr {
+    margin-top: 65px;
+    margin-bottom: 0;
+}
+
+div#statistics-2{
+    padding-bottom:25px;
+}
+
 .mvp-cta.text-center {
     margin-bottom: 45px;
 }
@@ -254,6 +263,12 @@ form .notice {
 
 .light-violet-bkg {
     background-color: #f0f0f0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
 }
 
 @media (min-width:768px) {
