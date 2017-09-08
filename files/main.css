@@ -364,6 +364,12 @@ form .notice {
     }
 }
 
+@media (max-width: 1099px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
 @media (min-width:768px) {
     .front-page header.container-fluid {
         min-height: 700px;
