@@ -719,13 +719,13 @@ body.landing.degree-list header{
     box-shadow: 5px 5px 25px 0px rgba(76, 108, 231, .4);
     border: 1px solid rgba(76, 108, 231, .4);
 }
-.image-bkg img{
-    max-width:100%;
+.image-bkg img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .image-bkg-overlay {
-    background-color: rgba(50, 101, 169, 0.8);
+    background-color: rgba(1, 20, 45, 0.8);
     top: 0;
     bottom: 0;
     left: 0;
