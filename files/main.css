@@ -1,5 +1,5 @@
 /*FINAL*/
-.page-navigation.side-nav {
+.page-navigation {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,14 +12,14 @@
     padding-top: 10%;
 }
 
-.side-nav ul.menu {
+.page-navigation ul.menu {
     width: 100%;
     display: block;
     position: relative;
     background: none;
 }
 
-.side-nav ul.menu li a {
+.page-navigation ul.menu li a {
     color: #909090;
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
@@ -27,8 +27,12 @@
     font-size: 14px;
     position:relative;
 }
+nav.page-navigation .current a {
+    background-color: #d2d2d2;
+    color: #fff;
+}
 
-.side-nav ul.menu li a::before{
+.page-navigation ul.menu li a::before{
     width: 14px;
     height: 14px;
     content: " ";
@@ -40,11 +44,11 @@
     top: 2px;
 }
 
-.side-nav ul.menu li a span{
+.page-navigation  ul.menu li a span{
     display:none;
 }
 
-.side-nav ul.menu li a:hover span{
+.page-navigation  ul.menu li a:hover span{
     display: inherit;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -53,8 +57,8 @@
     transition: all .3s ease-in-out;
 }
 
-.side-nav ul.menu li a:hover::before,
-.side-nav ul.menu li.current a::before{
+.page-navigation ul.menu li a:hover::before,
+.page-navigation ul.menu li.current a::before{
     width: 14px;
     height: 14px;
     content: " ";
@@ -1382,7 +1386,6 @@ header .contact .big-input .request-demo {
         bottom: 0;
     }
     header .video-overlay, header video {
-        width: 100%;
         top: 0;
         left: 0;
         position: absolute;
@@ -1399,9 +1402,6 @@ header .contact .big-input .request-demo {
 @media (min-width:1280px) {
     .front-page header {
         padding-bottom: 95px;
-    }
-    header video {
-        width: 108%;
     }
     header .title {
         margin-top: 60px;
@@ -2252,6 +2252,39 @@ img.team-member-image:hover {
     background-position: -58px -28px;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+    header video {
+        width: 160%!important;
+        left: -30%;
+        height: 160%!important;
+        top: -30%!important;
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+    header video {
+        width: auto!important;
+        height: 120%;
+        left:-20%;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1500px) {
+    header video {
+        width: 120%!important;
+        height: 120%!important;
+        left: -10%;
+    }
+}
+
+@media (min-width: 1501px) {
+    header video {
+        width: 120%!important;
+        height: 120%!important;
+        left:-10%;
+    }
+}
+
 @media screen and (max-width: 992px) and (min-width: 768px) {
     header .header-content h1,
     header .header-content h2,
@@ -2582,9 +2615,6 @@ img.team-member-image:hover {
 @media (min-width:992px) {
     .partners .logos a {
         width: 260px;
-    }
-    header video {
-        width: 100%;
     }
 }
 

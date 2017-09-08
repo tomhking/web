@@ -59,11 +59,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="./files/modernizr-2.6.2.min.js"></script>
 
   <link rel="stylesheet" href="./files/vendor-bundle.min.css">
   <link rel="stylesheet" href="./files/main.css">
-
-  <script src="./files/modernizr-2.6.2.min.js"></script>
   <script src="./files/jquery.combinedScroll.js"></script>
 
   <script>
@@ -78,10 +77,11 @@
   </script>
 </head>
 
-<body class="landing front-page" data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+<body class="landing front-page">
+
 <div id="top"></div>
 
-<nav id="sidenav" class="sidenav side-nav site-navigation page-navigation">
+<nav id="sidenav" class="site-navigation page-navigation ">
   <ul class="menu">
     <li><a href="#top">Top</a></li>
     <li><a href="#what-are-we">01. <span>What is Bitdegree?</span></a></li>
@@ -904,21 +904,9 @@
         $.localScroll({ duration:500 });
 
         // Hook up the current state to the nav bar
-        $('#sidenav').onePageNav();
+        $('.side-nav').onePageNav();
 
     });
-</script>
-
-<script type="text/javascript">
-    $(window).scroll(function(e) {
-        if($(this).scrollTop()>950){
-            $('.sidenav').fadeIn(1000); // Fading in the button on scroll after 150px
-        }
-        else{
-            $('.sidenav').fadeOut(900); // Fading out the button on scroll if less than 150px
-        }
-    });
-
 </script>
 
 </body>
