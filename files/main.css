@@ -569,6 +569,9 @@ form .notice {
 
 /*MVP Page*/
 
+body.landing.degree-list header{
+    min-height: 120px;
+}
 .bitdegrees-list  p.subtitle {
     padding-bottom: 30px;
 }
@@ -589,9 +592,12 @@ form .notice {
     transition: all .3s ease-in-out;
 }
 
-.bitdegrees-list .cards .card a h3{
+.bitdegrees-list .cards .card a h3 {
     color: #062033;
-    font-size: 22px;
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .bitdegrees-list .cards .card a{
@@ -607,8 +613,6 @@ form .notice {
 }
 
 .degree-header img{
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
     max-width: 100%;
 }
 
@@ -620,8 +624,6 @@ form .notice {
     width: 100%;
     z-index: 4000;
     position: absolute;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
 }
 
 .degree-overlay.blue{
@@ -664,7 +666,7 @@ form .notice {
     font-size: 12px;
     font-weight: 600;
     line-height: 1;
-    color: #328bff;
+    color: #c02b3f;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -1117,7 +1119,7 @@ ul.cta-menu li .navbar-cta {
 }
 
 header {
-    background-color: #05243b;
+    background-color: #000;
     background-size: cover;
     position: relative;
     overflow: hidden;
