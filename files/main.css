@@ -1,4 +1,75 @@
 /*FINAL*/
+.page-navigation.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 99999;
+    width: auto;
+    padding-left: 25px;
+    border-left: 1px solid #909090;
+    margin-left: 35px;
+    padding-top: 10%;
+}
+
+.side-nav ul.menu {
+    width: 100%;
+    display: block;
+    position: relative;
+    background: none;
+}
+
+.side-nav ul.menu li a {
+    color: #909090;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    position:relative;
+}
+
+.side-nav ul.menu li a::before{
+    width: 14px;
+    height: 14px;
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    border-radius: 200%;
+    border: 1px solid #909090;
+    left: -33px;
+    top: 2px;
+}
+
+.side-nav ul.menu li a span{
+    display:none;
+}
+
+.side-nav ul.menu li a:hover span{
+    display: inherit;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.side-nav ul.menu li a:hover::before,
+.side-nav ul.menu li.current a::before{
+    width: 14px;
+    height: 14px;
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    border-radius: 200%;
+    border: 1px solid #909090;
+    left: -33px;
+    background-color: #c02b3f;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
 
 body,
 html {
@@ -58,8 +129,23 @@ div#statistics-2{
     padding-bottom:25px;
 }
 
+
+.how-it-works.mvp {
+    background-image: url(network-bg.png);
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
 .mvp-cta.text-center {
     margin-bottom: 45px;
+    margin-top:35px;
+}
+
+.mvp-cta.text-center a {
+    font-size: 22px;
+    padding: 22px 25px 22px 25px;
 }
 
 a.cta-btn:hover {
@@ -877,28 +963,13 @@ ul.cta-menu li .navbar-cta:hover{
     .nav.navbar-nav {
         padding-right: 0;
     }
-    ul.cta-menu li .navbar-cta {
-        border: 2px solid #fff;
-    }
     .nav>li>a {
         padding: 10px 30px;
     }
 }
 
-.menu {
-    width: 95%;
-    height: 100%;
-    font-size: 16px;
-    top: 0;
-    right: 0;
-    position: fixed;
-    text-align: center;
-    border-left: 1px solid #31419E;
-    transform: translate(100%, 0);
-    -webkit-transition: -webkit-transform .5s;
-    transition: transform .5s;
-    background-color: #F8FAFF;
-    z-index: 999999;
+ul.cta-menu li .navbar-cta {
+    border: 2px solid #fff;
 }
 
 .menu-open {
@@ -1001,14 +1072,19 @@ ul.cta-menu li .navbar-cta:hover{
 }
 
 @media (max-width:991px) {
+    .front-page header {
+        background-image: url(cta-block-bg.jpg);
+        min-height: 650px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
     div#navbar {
         padding: 0;
         padding: 0;
-        width: 100%;
         text-align: center;
-    }
-    .navbar-right {
-        float: none !important;
     }
     .nav>li>a {
         padding: 10px 15px;
@@ -1104,7 +1180,6 @@ header::before {
 .communicate.cta-block::after {
     content: "";
     height: 0;
-    z-index: 1000000;
     position: absolute;
     left: 0;
     right: 0;
@@ -1119,7 +1194,6 @@ header::before {
 .communicate.cta-block::before {
     content: "";
     height: 0;
-    z-index: 1000000;
     position: absolute;
     left: 0;
     right: 0;
@@ -1197,6 +1271,12 @@ header .description {
     margin: 0 auto;
     font-size: 15px;
     line-height: 22px;
+    margin-top: 45px!important;
+    margin-bottom: 55px!important;
+}
+header .bullet-points p{
+    font-size: 14px;
+    margin-top: 55px;
 }
 
 header small.subtitle {
@@ -1336,7 +1416,7 @@ header .contact .big-input .request-demo {
         padding-bottom: 122px;
     }
     header .title {
-        margin-top: 115px;
+        margin-top: 90px;
     }
 }
 
@@ -1585,8 +1665,6 @@ h3.subtitle {
 
 @media (min-width:550px) {
     .explanation .cards .card {
-        width: 60%;
-        height: 250px;
         padding: 45px 20px;
     }
 }
@@ -1677,7 +1755,7 @@ h3.subtitle {
 
 .milestone-tooltip {
     padding: 0 25px;
-    width: 350px;
+    max-width: 350px;
     height: 100%;
     color: #36316D;
     position: relative;
@@ -1757,8 +1835,8 @@ h3.subtitle {
     margin-bottom: 8px;
     text-align: left;
     color: #252525;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 16px!important;
+    line-height: 24px!important;
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
     text-transform: inherit;
@@ -1769,6 +1847,7 @@ h3.subtitle {
     margin-top: 2px;
     font-size: 14px;
     font-weight:300;
+    line-height: 18px;
 }
 
 @media (min-width:550px) {
@@ -1818,14 +1897,8 @@ h3.subtitle {
 }
 
 @media (max-width:768px) {
-    .logos.partner-logos .grid-image {
-        max-width: 30%;
-    }
     .logos.partner-logos .grid-image img {
         max-width:100%;
-    }
-    .milestone-tooltip {
-        width: 320px;
     }
     .explanation .cards .card {
         width: 100%;
@@ -1893,8 +1966,72 @@ h3.subtitle {
 }
 
 @media (max-width:767px) {
+    .nav.navbar-nav li {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-left: -5px;
+    }
+    .nav.navbar-nav li a {
+        text-align: left;
+    }
+    .nav.navbar-nav li::after {
+        display:none;
+    }
+    .nav.navbar-nav li a::before {
+        bottom: 13px;
+        left: 28px;
+    }
+    .nav.navbar-nav li::before,
+    .nav.navbar-nav li:first-child::before{
+        width: 54px;
+        bottom: 19px;
+        left: -25px;
+    }
+    .nav>li>a {
+        padding: 10px 10px 10px 60px;
+    }
+    .front-page header {
+        background-image: url(mobile-bg.jpg);
+    }
+    .row.milestone::before {
+        width: 91px;
+        background-image: url(ruler.png);
+        height: 100%;
+        position: absolute;
+        content: " ";
+        display: block;
+        left: 0;
+    }
+    .row.milestone{
+        padding-left: 88px;
+    }
+    .milestone-left .milestone-tooltip, .milestone-left .milestone-tooltip h3 {
+        text-align: left;
+    }
+    .milestone-right {
+        padding-left: 0;
+    }
+    .milestone-tooltip::after {
+        content: " ";
+        width: 15px;
+        height: 15px;
+        border: 2px solid#c02b3f;
+        border-radius: 200%;
+        display: block;
+        position: absolute;
+        right: auto;
+        top: 3px;
+        background: #f0f0f0;
+        left: 0;
+    }
     .milestone-tooltip {
-        width: 350px;
+        width: 100%;
+        padding: 0 0 0 25px;
+    }
+    .milestone-left {
+        padding-left: 0;
+        padding-right: 0;
     }
     .timeline {
         padding-left: 15%;
@@ -1912,7 +2049,7 @@ h3.subtitle {
         vertical-align: middle;
     }
     .roadmap h5.subtitle {
-        color:#fff;
+        margin-bottom: 15px;
         font-size:13px;
     }
     .nav.navbar-nav li {
@@ -2115,7 +2252,141 @@ img.team-member-image:hover {
     background-position: -58px -28px;
 }
 
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    header .header-content h1,
+    header .header-content h2,
+    header .header-content h3,
+    .token-sale-terms h2.title, .communicate.cta-block h2 {
+        font-size: 48px;
+        line-height: 54px;
+    }
+    header .header-content p,
+    .find-out-more p.subtitle,
+    .communicate.cta-block p {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 100;
+        font-size: 18px!important;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-align: center!important;
+    }
+    .communicate .suscribe-input {
+        height: 60px;
+    }
+    .communicate .submit {
+        height: 60px;
+    }
+    .what-are-we h3.subtitle, .how-it-works h3.subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .partners .logos a {
+        margin-top: 0;
+        display: block;
+    }
+    .nav>li>a {
+        padding: 20px 0;
+    }
+
+    .navbar-header {
+        float: left;
+        display: inline-block;
+        max-width: 30%;
+        margin-top: 13px;
+    }
+    div#navbar {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 551px) {
+    header .header-content h1,
+    header .header-content h2,
+    header .header-content h3,
+    .token-sale-terms h2.title, .communicate.cta-block h2 {
+        font-size: 60px;
+        line-height: 56px;
+    }
+    header .header-content p,
+    .find-out-more p.subtitle,
+    .communicate.cta-block p {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 100;
+        font-size: 18px!important;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-align: center!important;
+    }
+    .communicate .suscribe-input {
+        height: 60px;
+    }
+    .communicate .submit {
+        height: 60px;
+    }
+    .what-are-we h3.subtitle, .how-it-works h3.subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: left;
+    }
+    .partners .logos a {
+        margin-top: 0;
+        display: block;
+    }
+}
+
 @media (max-width:550px) {
+    ul.cta-menu {
+        float: none;
+        margin-top: 18px;
+        margin-bottom: 25px;
+    }
+    header .header-content h1,
+    header .header-content h2,
+    header .header-content h3,
+    .token-sale-terms h2.title,
+    .communicate.cta-block h2{
+        font-size: 40px;
+        line-height: 46px;
+        text-align: center!important;
+        margin-bottom:15px;
+    }
+    div#roadmap h2 {
+        margin-bottom: 25px;
+    }
+    header .header-content p,
+    .find-out-more p.subtitle,
+    .communicate.cta-block p{
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 100;
+        font-size: 18px!important;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-align: center!important;
+    }
+    .find-out-more {
+        margin: 0!important;
+    }
+    .communicate .contact {
+        margin-top: 0!important;
+    }
+    h2.title, h3.title {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: left!important;
+        margin-bottom: 0;
+    }
+    h3.subtitle,
+    p.subtitle{
+        text-align: left!important;
+    }
+    .explanation .cards .card {
+        margin-bottom: 35px;
+        padding-left: 0;
+    }
     div#navbar ul {
         padding-top: 25px;
     }
@@ -2147,7 +2418,14 @@ img.team-member-image:hover {
         margin: 30px 0 0 0;
     }
     .as-seen-on .grid-image, .logos.partner-logos .grid-image {
-        width: 24%;
+        width: auto;
+        display: block;
+        max-width: 160px;
+        padding: 0;
+    }
+    .partners .logos a {
+        margin-top: 10px;
+        display: block;
     }
     .grid-image.webhost {
         display: none;
@@ -2171,11 +2449,8 @@ img.team-member-image:hover {
     .timeline {
         padding-left: 0;
     }
-    .milestone-tooltip {
-        width: 280px;
-    }
     .milestone {
-        height: 265px;
+        height: 288px;
         margin-bottom:0;
     }
     .milestone-left:after {
@@ -2194,10 +2469,8 @@ img.team-member-image:hover {
         line-height: 18px;
     }
     h3.title {
-        font-size: 20px;
-    }
-    .coding-container {
-        margin-top: 0;
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
@@ -2209,36 +2482,33 @@ img.team-member-image:hover {
     }
 }
 
-@media (min-width:768px) {
-    .team .team-member {
-        width: initial;
-        text-align: center;
-    }
-    .team p.subtitle {
-        padding: 0;
-        font-size: 24px;
-    }
-    .team .team-member-data h3 {
-        margin-top: 15px;
-        margin-bottom: 8px;
-        text-align: center;
-        color: #252525;
-        font-size: 18px;
-        line-height: 30px;
-        font-family: 'Source Code Pro', monospace;
-        font-weight:600;
-    }
-    .team .team-member-data a {
-        margin-left: 0;
-    }
-    .team .team-member-image {
-        float: none;
-        margin-right: 0;
-        width: 270px;
-        max-width: 100%;
-    }
+.team .team-member {
+    width: initial;
+    text-align: center;
 }
-
+.team p.subtitle {
+    padding: 0;
+    font-size: 24px;
+}
+.team .team-member-data h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: center!important;
+    color: #252525;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight:600;
+}
+.team .team-member-data a {
+    margin-left: 0;
+}
+.team .team-member-image {
+    float: none;
+    margin-right: 0;
+    width: 270px;
+    max-width: 100%;
+}
 
 .partners .logos {
     margin: 20px auto 0;
@@ -2270,6 +2540,20 @@ img.team-member-image:hover {
 @media (max-width:350px) {
     .partners .logos .zeppelin {
         width: 90%;
+    }
+    header .header-content h1,
+    header .header-content h2,
+    header .header-content h3,
+    .token-sale-terms h2.title,
+    .communicate.cta-block h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .row.milestone {
+        padding-left: 58px;
+    }
+    .row.milestone::before {
+        left: -25px;
     }
 }
 
@@ -2335,7 +2619,6 @@ img.team-member-image:hover {
 }
 
 .communicate form {
-    padding: 20px;
     position: relative;
     display: inline-block;
 }
