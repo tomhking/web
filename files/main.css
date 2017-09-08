@@ -1,6 +1,6 @@
 /*FINAL*/
-.page-navigation {
-    position: fixed;
+.side-nav {
+    position: absolute;
     top: 0;
     left: 0;
     height: 100%;
@@ -12,27 +12,24 @@
     padding-top: 10%;
 }
 
-.page-navigation ul.menu {
+.side-nav ul {
     width: 100%;
     display: block;
     position: relative;
     background: none;
 }
 
-.page-navigation ul.menu li a {
+.side-nav ul li a {
     color: #909090;
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
     text-transform: uppercase;
     font-size: 14px;
     position:relative;
-}
-nav.page-navigation .current a {
-    background-color: #d2d2d2;
-    color: #fff;
+    padding: 8px 0;
 }
 
-.page-navigation ul.menu li a::before{
+.side-nav ul li a::before{
     width: 14px;
     height: 14px;
     content: " ";
@@ -41,15 +38,15 @@ nav.page-navigation .current a {
     border-radius: 200%;
     border: 1px solid #909090;
     left: -33px;
-    top: 2px;
+    top: 13px;
 }
 
-.page-navigation  ul.menu li a span{
+.side-nav ul li a span{
     display:none;
 }
 
-.page-navigation  ul.menu li a:hover span{
-    display: inherit;
+.side-nav  ul li a:hover span{
+    display: inline;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
@@ -57,8 +54,13 @@ nav.page-navigation .current a {
     transition: all .3s ease-in-out;
 }
 
-.page-navigation ul.menu li a:hover::before,
-.page-navigation ul.menu li.current a::before{
+.side-nav ul li a:focus, .side-nav ul li a:hover {
+    color: #909090;
+    background: none;
+}
+
+.side-nav ul li a:hover::before,
+.side-nav ul li.active a::before {
     width: 14px;
     height: 14px;
     content: " ";
@@ -1381,7 +1383,7 @@ header .contact .big-input .request-demo {
         left: 0;
         position: absolute;
         z-index: 500;
-        background: rgba(0, 0, 0, 0.45);
+        background: rgba(0, 0, 0, 0.3);
         display: block;
         bottom: 0;
     }

@@ -59,10 +59,11 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-  <script src="./files/modernizr-2.6.2.min.js"></script>
 
   <link rel="stylesheet" href="./files/vendor-bundle.min.css">
   <link rel="stylesheet" href="./files/main.css">
+
+  <script src="./files/modernizr-2.6.2.min.js"></script>
   <script src="./files/jquery.combinedScroll.js"></script>
 
   <script>
@@ -77,30 +78,13 @@
   </script>
 </head>
 
-<body class="landing front-page">
-
+<body class="landing front-page" data-spy="scroll" data-target=".sidebar">
 <div id="top"></div>
-
-<nav id="sidenav" class="site-navigation page-navigation ">
-  <ul class="menu">
-    <li><a href="#top">Top</a></li>
-    <li><a href="#what-are-we">01. <span>What is Bitdegree?</span></a></li>
-    <li><a href="#section-two">02. <span>Our Users</span></a></li>
-    <li><a href="#why-us">03. <span>What problems do we solve?</span></a></li>
-    <li><a href="#statistics">04. <span>About MOOCs</span></a></li>
-    <li><a href="#section-five">05. <span>Student Perspective</span></a></li>
-    <li><a href="#statistics-2">06. <span>IT jobs Demand</span></a></li>
-    <li><a href="#section-seven">07. <span>Token Economy</span></a></li>
-    <li><a href="#team">08. <span>The Team</span></a></li>
-    <li><a href="#roadmap">09. <span>Roadmap</span></a></li>
-
-  </ul>
-</nav>
 
 <header>
   <div class="medusae-overlay"></div>
   <video style="position: absolute; top:-105px;" id="bgvid" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; left: 0; right: 0;">
-    <source src="./files/bg.mp4" type="video/mp4">
+    <source src="files/bg.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -155,6 +139,21 @@
   </div>
 
 </header>
+
+<nav class="sidebar side-nav">
+  <ul class="nav nav-list affix">
+    <li><a href="#top">Top</a></li>
+    <li><a href="#what-are-we">01. <span>What is Bitdegree?</span></a></li>
+    <li><a href="#section-two">02. <span>Our Users</span></a></li>
+    <li><a href="#why-us">03. <span>What problems do we solve?</span></a></li>
+    <li><a href="#statistics">04. <span>About MOOCs</span></a></li>
+    <li><a href="#section-five">05. <span>Student Perspective</span></a></li>
+    <li><a href="#statistics-2">06. <span>IT jobs Demand</span></a></li>
+    <li><a href="#section-seven">07. <span>Token Economy</span></a></li>
+    <li><a href="#team">08. <span>The Team</span></a></li>
+    <li><a href="#roadmap">09. <span>Roadmap</span></a></li>
+  </ul>
+</nav>
 
 <div id="what-are-we" class="main what-are-we white-bkg">
   <div class="container wow fadeIn">
@@ -891,22 +890,14 @@
 </footer>
 
 
-<script src="./files/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"><\/script>')</script>
-<script src="./files/plugins.js"></script>
-<script src="./files/main.js"></script>
-<script src="./files/jquery.combinedScroll.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-
-        // Add LocalScroll, so that any anchor link on the page will "scroll" to it's target location
-        $.localScroll({ duration:500 });
-
-        // Hook up the current state to the nav bar
-        $('.side-nav').onePageNav();
-
-    });
+<script>$('body').scrollspy({ target: '.sidebar' });
+$('ul.nav li a').bind('click', function(e) {
+    e.preventDefault();
+    $('html,body').animate({scrollTop: $(this.hash).offset().top});
+});
 </script>
 
 </body>
