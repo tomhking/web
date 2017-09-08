@@ -1,10 +1,10 @@
 /*FINAL*/
 .side-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 99999;
+    z-index: 9999999;
     width: auto;
     padding-left: 25px;
     border-left: 1px solid #909090;
@@ -92,6 +92,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #FFF;
     color: #062033;
+    position: relative;
 }
 
 img {
