@@ -1906,6 +1906,9 @@ h3.subtitle {
         width: 100%;
         overflow: hidden;
     }
+    .side-nav{
+        display:none;
+    }
 }
 
 @media (max-width:768px) {
