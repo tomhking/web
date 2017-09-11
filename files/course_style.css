@@ -36,11 +36,15 @@ div#sidebar {
   border: 0;
 }
 
+.navbar-collapse.collapse {
+  width: 100%;
+}
+
 .lessons-nav {
   position: relative;
   height: 60%;
   display: block;
-  padding: 15px;
+ /* padding: 15px;*/
 }
 
 .lessons-nav ul.nav {

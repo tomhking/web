@@ -2594,6 +2594,24 @@ img.team-member-image:hover {
     display: block;
 }
 
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: #252525;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+}
+
+.panel-body ul li {
+    list-style-type: disc;
+    margin-left: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
 @media (max-width:768px) {
     .team .team-member-image {
         width: 192px;
