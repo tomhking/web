@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,22 +10,12 @@
   <meta name="keywords" content="ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:image" content="">
-
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:card" value="">
   <meta name="twitter:site" content="">
   <meta name="twitter:creator" content="">
   <meta name="twitter:image" content="">
-
-  <meta itemprop="name" content="">
-  <meta itemprop="description" content="">
-  <meta itemprop="image" content="">
 
   <link rel="shortcut icon" href="fav_icon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="./files/app-icons/apple-icon-57x57.png">
@@ -46,41 +37,36 @@
   <meta name="theme-color" content="#ffffff">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,200,300,400,500,600,700,900|Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
   <link rel="stylesheet" href="./files/vendor-bundle.min.css">
-
   <link rel="stylesheet" href="./files/main.css">
 
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-105983339-1', 'auto');
+      ga('send', 'pageview');
+  </script>
 </head>
 
-<body class="landing">
+<body class="landing degree-list">
 
 <header class="container-fluid">
-
-  <video id="js-background-video" style="position: absolute;" poster="./files/landing-bg.jpg" id="bgvid" class="hidden-xs hidden-sm" autoplay="" loop="">
-    <source src="files/-bg.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-
-  <div class="video-overlay"></div>
-
 
   <div class="navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a href="/" class="navbar-logo navbar-brand">
+        <a href="index.html" class="navbar-logo navbar-brand">
           <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
         </a>
 
@@ -91,36 +77,21 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse navbar-container">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is BitDegree</a></li>
-          <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse.in">People Behind</a></li>
-          <li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>
-          <li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>
-          <li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>
-          <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager <i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+          <li><a href="index.html#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is BitDegree</a></li>
+          <li><a href="index.html#team" data-toggle="collapse" data-target=".navbar-collapse.in">People Behind</a></li>
+          <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>-->
+          <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>-->
+          <!--<li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>-->
+        </ul>
+        <ul class="cta-menu">
+          <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-xs-12 text-center">
-      <h2 class="title"><b>Revolutionizing education</b> with blockchain</h2>
-      <div class="description">
-        <p>The world's first blockchain based free education platform with token scholarships &amp; talent networking.</p>
-      </div>
-      <div class="communicate">
-        <div class="contact">
-          <h4>Be the first to know Token Distribution &amp; ICO event updates</h4>
-          <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-            <input type="submit" class="submit" value="Subscribe" name="subscribe">
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </div>
 </header>
+
 
 <div id="faqs" class="main faqs faq-page">
   <div class="container">
@@ -139,13 +110,14 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <h3 class="panel-title">
-              What is Learn Token?
+              What is BitDegree?
             </h3>
           </div>
         </div>
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
-            <p>Based on Ethereum technology, Learn Token is a utility that can be used as an account unit between between sponsors, advertisers, students in a new blockchain-based learning platform. Note that the token is not a currency.</p>
+            <p>BitDegree is the world's first blockchain-powered, smart-incentives based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
+              <p>BitDegree is an educational platform for everyone who is willing to study and get IT job.</p>
           </div>
         </div>
       </div>
@@ -154,13 +126,13 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             <h3 class="panel-title">
-              How can I buy Tokens?
+              How different are you compared to Coursera?
             </h3>
           </div>
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
-            <p>Tokens can be bought with Smart Contracts. The information regarding Token purchases will be provided soon.</p>
+            <p>BitDegree will be highest quality IT courses website similar as Coursera. The difference is smart-contract based rewards for students learning on platform. In short it means students in addition getting direct benefits for learning on BitDegree platform, which leads to higher education level and lower barrier to enter job marketplace. Please read our whitepaper how does this work in details.</p>
           </div>
         </div>
       </div>
@@ -169,43 +141,43 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
             <h3 class="panel-title">
-               Are Tokens transferable? Where are Tokens traded?
+              How much will it cost to study on BitDegree?
             </h3>
           </div>
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            <p>The purpose of Learn Tokes is for it to be used on the Learn.xyz platform as an exchange unit. Yes, Tokens are transferable. The information regarding places where Tokens can be traded will be provided soon.</p>
+            <p>For the first 2 years all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
           </div>
         </div>
       </div>
-        <div class="panel panel-default">
-      <div class="panel-heading" role="tab" id="headingFour">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFour">
 
-        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-          <h3 class="panel-title">
-            What do Tokens represent?
-          </h3>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <h3 class="panel-title">
+              What courses will be available on BitDegree?
+            </h3>
+          </div>
         </div>
-      </div>
-      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-        <div class="panel-body">
-          <p>Tokens represent a utility used in order to use the Learn.xyz platform - a new blockchain technology-based learning platform. Token ownership means only the right to use them in order to obtain services from the Learn.xyz platform as well as enable the usage and interaction with the platform. Token ownership does not represent any stakes, shares, rights to future profits or any ownership of any intellectual property or any other form of participation related to the Learn.xyz platform.</p>
+        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+          <div class="panel-body">
+            <p>All courses on BitDegree platform will be IT oriented. Highest quality courses created by best tutors available.</p>
+          </div>
         </div>
-      </div>
       </div>
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFive">
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
             <h3 class="panel-title">
-              Where will Tokens be used?
+              Why this project needs Blockchain technology?
             </h3>
           </div>
         </div>
         <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
           <div class="panel-body">
-            <p>The Token will be used on the Learn.xyz platform in order to obtain services from the platform and conduct translations on the platform. More information will be provided soon.</p>
+            <p>Blockchain will put BitDegree online education platform ahead of competition. By enabling us to introduce smart incentives and record students achievements in blockchain. Rewards earned on platform will be exchangeable into digital goods on third party service providers.</p>
           </div>
         </div>
       </div>
@@ -214,13 +186,13 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
             <h3 class="panel-title">
-              Which wallets can be used to store Token?
+              What achievement data will be stored in blockchain?
             </h3>
           </div>
         </div>
         <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
           <div class="panel-body">
-            <p>Learn Token is an ERC20 token. In order to store the Learn Token(s) any wallet that is compatible with ERC20 can be used.</p>
+            <p>Students will be able to choose which data will be stored on blockchain. What courses he had passed.</p>
           </div>
         </div>
       </div>
@@ -229,13 +201,13 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
             <h3 class="panel-title">
-              Will I lose my Token after 6 months?
+              How can I hide my achievement data on blockchain?
             </h3>
           </div>
         </div>
         <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
           <div class="panel-body">
-            <p>No, you will not use any Token after 6 month period, as the Learn tokes in built according to ERC20 token standards.</p>
+            <p>Once student have chosen that his data is stored on blockchain, it can not be removed afterwards.</p>
           </div>
         </div>
       </div>
@@ -244,28 +216,13 @@
 
           <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
             <h3 class="panel-title">
-              What is the roadmap?
+              How BitDegree will ensure that student learned a course online?
             </h3>
           </div>
         </div>
         <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
           <div class="panel-body">
-            <p>The Learn.xyz roadmap can be found <a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">here.</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingNine">
-
-          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
-            <h3 class="panel-title">
-              I transferred some Token from one wallet to another and it never arrived. Can you help me?
-            </h3>
-          </div>
-        </div>
-        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
-          <div class="panel-body">
-            <p>We do not store any keep or store any information regarding wallet usage and unfortunately cannot help you directly. The best way in order to solve such problem is contacting the providers of the wallet that you are using.</p>
+            <p>Students are incentivized to do peer-review process for assignments. Course tutor BitDegree token is received for each peer-review students submit. Proof of effort verification process is defined in our whitepaper.</a></p>
           </div>
         </div>
       </div>
@@ -273,308 +230,295 @@
     </div>
 
     <br>
-        <h4 class="title">Token Sale, Distribution and Fund Use</h4>
+    <h4 class="title">Company</h4>
 
-        <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
+    <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#1" aria-expanded="true" aria-controls="1">
-                <h3 class="panel-title">
-                  What crypto-currencies were accepted during the sale?
-                </h3>
-              </div>
-            </div>
-            <div id="1" class="panel-collapse collapse">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#1" aria-expanded="true" aria-controls="1">
+            <h3 class="panel-title">
+              What crypto-currencies were accepted during the sale?
+            </h3>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
-
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#2" aria-expanded="false" aria-controls="2">
-                <h3 class="panel-title">
-                  What is the distribution of tokens?
-                </h3>
-              </div>
-            </div>
-            <div id="2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+        </div>
+        <div id="1" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
-                <h3 class="panel-title">
-                   What was the value of Tokens sold? Will there be a follow-on sale?
-                </h3>
-              </div>
-            </div>
-            <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#2" aria-expanded="false" aria-controls="2">
+            <h3 class="panel-title">
+              What is the distribution of tokens?
+            </h3>
           </div>
-            <div class="panel panel-default">
-          <div class="panel-heading" role="tab">
-
-            <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="true" aria-controls="4">
-              <h3 class="panel-title">
-                What was the sale price at the time of token sale?
-              </h3>
-            </div>
+        </div>
+        <div id="2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
           </div>
-          <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="4">
-            <div class="panel-body">
-              <p>The information will be announced soon.</p>
-            </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
+            <h3 class="panel-title">
+              What was the value of Tokens sold? Will there be a follow-on sale?
+            </h3>
           </div>
+        </div>
+        <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="true" aria-controls="5">
-                <h3 class="panel-title">
-                  What is the Tokens smart contract address?
-                </h3>
-              </div>
-            </div>
-            <div id="5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="5">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="true" aria-controls="4">
+            <h3 class="panel-title">
+              What was the sale price at the time of token sale?
+            </h3>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
-
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="true" aria-controls="6">
-                <h3 class="panel-title">
-                  How will the user growth pool be used?
-                </h3>
-              </div>
-            </div>
-            <div id="6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="6">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+        </div>
+        <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="4">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading" role="tab">
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#7" aria-expanded="true" aria-controls="7">
-                <h3 class="panel-title">
-                  When the token sale was completed, where were the funds (ETH) stored?
-                </h3>
-              </div>
-            </div>
-            <div id="7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="7">
-              <div class="panel-body">
-                <p>The information will be announced soon.</p>
-              </div>
-            </div>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#5" aria-expanded="true" aria-controls="5">
+            <h3 class="panel-title">
+              What is the Tokens smart contract address?
+            </h3>
           </div>
+        </div>
+        <div id="5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="5">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              </div>
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#6" aria-expanded="true" aria-controls="6">
+            <h3 class="panel-title">
+              How will the user growth pool be used?
+            </h3>
+          </div>
+        </div>
+        <div id="6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="6">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
 
-              <br>
-                  <h4 class="title">Token and Learn.xyz</h4>
-
-                  <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="true" aria-controls="8">
-                          <h3 class="panel-title">
-                            Is Learn.xyz Hiring?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="8" class="panel-collapse collapse">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
-                          <h3 class="panel-title">
-                            Explain the Token and Learn.xyz products and how they work together.
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="9">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#10" aria-expanded="false" aria-controls="10">
-                          <h3 class="panel-title">
-                             How can a authors apply to become part of Learn.xyz platform to start creating courses?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="10">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                      <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                      <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="true" aria-controls="11">
-                        <h3 class="panel-title">
-                          When will students in the Learn.xyz platform be available to opt-in?
-                        </h3>
-                      </div>
-                    </div>
-                    <div id="11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="11">
-                      <div class="panel-body">
-                        <p>The information will be announced soon.</p>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="true" aria-controls="12">
-                          <h3 class="panel-title">
-                            What are some names of sponsors that have signed up for Learn.xyz and will be transitioned to the Token once the platform is finished?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="12">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="true" aria-controls="13">
-                          <h3 class="panel-title">
-                            How many users does the Learn.xyz have?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="13">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="true" aria-controls="14">
-                          <h3 class="panel-title">
-                            How does Token deal with fraud students?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="14">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#15" aria-expanded="true" aria-controls="15">
-                          <h3 class="panel-title">
-                            Does the recent SEC bulletin affect Token?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="15">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#16" aria-expanded="true" aria-controls="16">
-                          <h3 class="panel-title">
-                            Where can I find the whitepaper?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="16">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#17" aria-expanded="true" aria-controls="17">
-                          <h3 class="panel-title">
-                            How do I report a security issue?
-                          </h3>
-                        </div>
-                      </div>
-                      <div id="17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="17">
-                        <div class="panel-body">
-                          <p>The information will be announced soon.</p>
-                        </div>
-                      </div>
-                    </div>
-                        </div>
-
-
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#7" aria-expanded="true" aria-controls="7">
+            <h3 class="panel-title">
+              When the token sale was completed, where were the funds (ETH) stored?
+            </h3>
+          </div>
+        </div>
+        <div id="7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="7">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
         </div>
       </div>
 
     </div>
 
+    <br>
+    <h4 class="title">Token and Learn.xyz</h4>
 
+    <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="true" aria-controls="8">
+            <h3 class="panel-title">
+              Is Learn.xyz Hiring?
+            </h3>
+          </div>
+        </div>
+        <div id="8" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
+            <h3 class="panel-title">
+              Explain the Token and Learn.xyz products and how they work together.
+            </h3>
+          </div>
+        </div>
+        <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="9">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#10" aria-expanded="false" aria-controls="10">
+            <h3 class="panel-title">
+              How can a authors apply to become part of Learn.xyz platform to start creating courses?
+            </h3>
+          </div>
+        </div>
+        <div id="10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="10">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="true" aria-controls="11">
+            <h3 class="panel-title">
+              When will students in the Learn.xyz platform be available to opt-in?
+            </h3>
+          </div>
+        </div>
+        <div id="11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="11">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="true" aria-controls="12">
+            <h3 class="panel-title">
+              What are some names of sponsors that have signed up for Learn.xyz and will be transitioned to the Token once the platform is finished?
+            </h3>
+          </div>
+        </div>
+        <div id="12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="12">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="true" aria-controls="13">
+            <h3 class="panel-title">
+              How many users does the Learn.xyz have?
+            </h3>
+          </div>
+        </div>
+        <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="13">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="true" aria-controls="14">
+            <h3 class="panel-title">
+              How does Token deal with fraud students?
+            </h3>
+          </div>
+        </div>
+        <div id="14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="14">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#15" aria-expanded="true" aria-controls="15">
+            <h3 class="panel-title">
+              Does the recent SEC bulletin affect Token?
+            </h3>
+          </div>
+        </div>
+        <div id="15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="15">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#16" aria-expanded="true" aria-controls="16">
+            <h3 class="panel-title">
+              Where can I find the whitepaper?
+            </h3>
+          </div>
+        </div>
+        <div id="16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="16">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab">
+
+          <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#17" aria-expanded="true" aria-controls="17">
+            <h3 class="panel-title">
+              How do I report a security issue?
+            </h3>
+          </div>
+        </div>
+        <div id="17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="17">
+          <div class="panel-body">
+            <p>The information will be announced soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </div>
 </div>
 
 
-<div class="main container-fluid communicate light-violet-bkg">
+<div class="main container-fluid communicate light-violet-bkg cta-block bottom">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        <h2 class="title">BitDegree is for ordinary people who want to learn
-          <br>
-          <span class="highlighted">Coding Fundamentals, Deep Learning, React, VR Developement, AI, Robotics, Neuro Marketing, Digital Graphics...</span>
-        </h2>
-
-        <div class="contact">
-          <h4>Be the first to find out about Token Distribution &amp; ICO event</h4>
-          <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter an email here" required>
-            <input type="submit" class="submit" value="Subscribe" name="subscribe">
-          </form>
-          <div class="contact-icons">
-            <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-            <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
-            <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-          </div>
+      <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+        <h2 class="title">Come &amp; help us to build education the world deserves</h2>
+      </div>
+      <div class="contact">
+        <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
+          <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
+          <input type="submit" class="submit" value="Subscribe" name="subscribe">
+        </form>
+        <div class="contact-icons">
+          <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" rel="nofollow" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+          <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+          <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -586,31 +530,31 @@
   <div class="container">
     <div class="row footer-links">
       <div class="col-md-12">
-        <a href="/" class="footer-logo">
+        <a href="index.html" class="footer-logo">
           <img class="logo" src="./files/bitdegree-logo.png" alt="BitDegree">
         </a>
-        <br>
-        <a href="https://www.ethereum.org/" rel="nofollow" class="footer-logo">
-          <img class="logo" src="./files/etherium.png" alt="Etherium foundation">
-        </a>
-        <hr>
       </div>
       <div class="col-md-12">
         <div class="navbar" role="navigation">
-          <div id="navbar" class="navbar-container">
+          <div id="navbar-2" class="navbar-container">
             <ul class="nav navbar-nav">
-              <li><a href="#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is LEARN.XYZ</a></li>
+              <li><a href="#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">What is BitDegree</a></li>
               <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse.in">People Behind</a></li>
-              <li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>
-              <li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>
-              <li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>
-              <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager <i class="fa fa-arrow-down" aria-hidden="true"></i></a></li>
+              <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">ICO &amp; Roadmap</a></li>-->
+              <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">FAQ</a></li>-->
+              <!--<li><a href="https://medium.com/@bitdegree" target="_blank">Blog</a></li>-->
+              <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">One Pager</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <p class="copyright">Copyright © 2017 BitDegree. All right reserved</p>
+
+    <a href="https://www.ethereum.org/" rel="nofollow" class="footer-logo">
+      <img class="logo" src="./files/ethereum.png" alt="Etherium foundation">
+    </a>
+
+    <p class="copyright">Copyright © 2017 BitDegree.org <br>  <a href="mailto:hello@bitdegree.org">hello@bitdegree.org</a></p>
   </div>
 </footer>
 

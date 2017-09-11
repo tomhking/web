@@ -40,6 +40,7 @@ div#sidebar {
   position: relative;
   height: 60%;
   display: block;
+  padding: 15px;
 }
 
 .lessons-nav ul.nav {
