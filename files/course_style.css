@@ -23,7 +23,7 @@ div#sidebar {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 .sidebar-nav{
-  padding:20px;
+  padding:20px 0;
   position: relative;
 }
 
@@ -184,13 +184,14 @@ div#sidebar {
   position:relative;
   background: #101215;
 }
-.video-container .h1 {
+.video-container .communicate {
   position: absolute;
   top: 43%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 100%;
   text-align: center;
+  z-index: 99999999;
+  width: 100%;
 }
 
 video {
@@ -211,6 +212,48 @@ h1 {
   font-weight: 300;
   color: #98a2ab;
   font-size: 18px;
+}
+
+.navbar-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width:1280px) {
+  .lessons-nav ul.nav {
+    white-space: nowrap;
+    margin-right: 0;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .lessons-nav .nav > li > a {
+    font-size: 12px;
+  }
+  .video-container .communicate {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  div#navbar {
+    width: 100%;
+    text-align: left;
+  }
+  .video-container .communicate {
+    width: 100%;
+  }
+  .communicate .suscribe-input {
+    width: auto;
+  }
+  .main-content {
+    margin-left: 32%;
+    padding: 0;
+  }
+  .col-sm-9 {
+    width: 68%;
+  }
 }
 
 @media (max-width:768px) {
@@ -251,5 +294,8 @@ h1 {
   .main-content {
     margin-left: 0;
     padding: 0;
+  }
+  .container-fluid.communicate {
+    width: 100%;
   }
 }
