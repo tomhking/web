@@ -578,12 +578,12 @@ body.landing.degree-list header{
 
 .bitdegrees-list .cards .card {
     margin: auto;
-    box-shadow: 5px 5px 25px 0px rgba(76, 108, 231, .12);
+    box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
     border: 1px solid rgba(76, 108, 231, .12);
     background: #FFF;
     max-width: 350px;
-    min-height: 280px;
-    margin-bottom: 35px;
+    min-height: 350px;
+    margin-bottom: 60px;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
@@ -627,39 +627,40 @@ body.landing.degree-list header{
 }
 
 .degree-overlay.blue{
-    background-color: rgba(50, 101, 169, 0.7);
+    background-color: rgba(2,179,228,0.8);
+
 }
 
 .degree-overlay.cyan{
-    background-color: rgba(86, 183, 214, 0.7);
+    background-color: rgba(63, 215, 209, 0.8);
 }
 
 .degree-overlay.red{
-    background-color: rgba(202, 74, 74, 0.7);
+    background-color: rgba(215, 68, 99, 0.8);
 }
 
 .degree-overlay.purple{
-    background-color: rgba(130, 74, 202, 0.7);
+    background-color: rgba(169,81,237,0.8);
 }
 
 .degree-overlay.yellow{
-    background-color: rgba(251, 200, 50, 0.75);
+    background-color: rgba(255,162,52,0.8);
 }
 
 .degree-overlay.orange{
-    background-color: rgba(251, 154, 50, 0.7);
+    background-color: rgba(236, 146, 79, 0.8);
 }
 
 .degree-overlay.grey{
-    background-color: rgba(99, 114, 134, 0.7);
+    background-color: rgba(125,151,173,0.8);
 }
 
 .degree-overlay.green{
-    background-color: rgba(26, 177, 109, 0.74);
+    background-color: rgba(2,204,186,0.8);
 }
 
 .degree-overlay.pink {
-    background-color: rgba(214, 86, 174, 0.7);
+    background-color: rgba(255,84,131,0.8);
 }
 
 .bitdegrees-list .cards .card a:hover .degree-overlay {
@@ -693,8 +694,8 @@ body.landing.degree-list header{
 }
 
 .bitdegrees-list .cards .card .info{
-    text-align: center;
-    padding:15px;
+    text-align: left;
+    padding:25px 25px 70px 25px;
 }
 
 .card.blue {
