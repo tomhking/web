@@ -1903,6 +1903,9 @@ h3.subtitle {
 
 
 @media (min-width:1025px) and (max-width:1450px) {
+    .side-nav ul li a, .side-nav ul li a {
+        transition: unset;
+    }
     .side-nav ul li a:focus, .side-nav ul li a:hover {
         color: #909090;
         background: none;
