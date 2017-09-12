@@ -42,7 +42,7 @@ div#sidebar {
 
 .lessons-nav {
   position: relative;
-  height: 60%;
+  height: 70%;
   display: block;
  /* padding: 15px;*/
 }
@@ -51,6 +51,7 @@ div#sidebar {
   white-space: nowrap;
   margin-right: 18px;
   overflow: hidden;
+  padding-bottom: 45px;
 }
 
 .lessons-nav .nav>li>a {
