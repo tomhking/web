@@ -627,19 +627,19 @@ body.landing.degree-list header{
 }
 
 .degree-overlay.blue{
-    background-color: rgba(50, 101, 169, 0.8);
+    background-color: rgba(50, 101, 169, 0.7);
 }
 
 .degree-overlay.cyan{
-    background-color: rgba(86, 183, 214, 0.8);
+    background-color: rgba(86, 183, 214, 0.7);
 }
 
 .degree-overlay.red{
-    background-color: rgba(202, 74, 74, 0.8);
+    background-color: rgba(202, 74, 74, 0.7);
 }
 
 .degree-overlay.purple{
-    background-color: rgba(130, 74, 202, 0.8);
+    background-color: rgba(130, 74, 202, 0.7);
 }
 
 .degree-overlay.yellow{
@@ -647,17 +647,29 @@ body.landing.degree-list header{
 }
 
 .degree-overlay.orange{
-    background-color: rgba(251, 154, 50, 0.8);
+    background-color: rgba(251, 154, 50, 0.7);
 }
 
 .degree-overlay.grey{
-    background-color: rgba(99, 114, 134, 0.8);
+    background-color: rgba(99, 114, 134, 0.7);
 }
 
 .degree-overlay.green{
     background-color: rgba(26, 177, 109, 0.74);
 }
 
+.degree-overlay.pink {
+    background-color: rgba(214, 86, 174, 0.7);
+}
+
+.bitdegrees-list .cards .card a:hover .degree-overlay {
+    opacity: 0.4;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
 
 .badge {
     display: inline-block;
@@ -1906,15 +1918,48 @@ h3.subtitle {
     .side-nav ul li a, .side-nav ul li a {
         transition: unset;
     }
-    .side-nav ul li a:focus, .side-nav ul li a:hover {
-        color: #909090;
-        background: none;
-        background: #fff;
-        border: 1px solid #e4e4e4;
+    .side-nav ul li a:hover span,
+    .side-nav ul li a:focus span{
+        display: inline;
+        transition: unset;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid #cecece;
+        padding: 3px;
+        position:relative;
     }
     .side-nav ul li a {
-        padding: 6px 4px;
+        padding: 0 4px;
         border: 1px solid rgba(173, 84, 84, 0);
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    .side-nav ul li a::before {
+        top: 5px;
+    }
+    .side-nav ul li a span::before {
+        content: " ";
+        width: 0px;
+        height: 0px;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        border-right: 6px solid #fff;
+        left: -6px;
+        display: inline;
+        position: absolute;
+        top:5px;
+        z-index: 10;
+    }
+    .side-nav ul li a span::after {
+        content: " ";
+        width: 0px;
+        height: 0px;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-right: 7px solid #cecece;
+        left: -8px;
+        display: inline;
+        position: absolute;
+        top:4px;
     }
 }
 
