@@ -592,6 +592,21 @@ body.landing.degree-list header{
     transition: all .3s ease-in-out;
 }
 
+.bitdegrees-list .cards .card::before {
+    content: "";
+    height: 0;
+    z-index: 1000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-bottom: 12%;
+    background: white;
+    -webkit-clip-path: polygon(100% 100%, 100% 0%, 85% 0%);
+    clip-path: polygon(100% 100%, 100% 0%, 85% 0%);
+    top: 0;
+    right: 0;
+}
+
 .bitdegrees-list .cards .card a h3 {
     color: #062033;
     font-size: 18px;
