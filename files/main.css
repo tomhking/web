@@ -639,6 +639,11 @@ body.landing.degree-list header{
     width: 100%;
     z-index: 4000;
     position: absolute;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .degree-overlay.blue{
@@ -678,13 +683,8 @@ body.landing.degree-list header{
     background-color: rgba(255,84,131,0.8);
 }
 
-.bitdegrees-list .cards .card a:hover .degree-overlay {
+.bitdegrees-list .cards .card .degree-overlay:hover {
     opacity: 0.4;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
 }
 
 .badge {

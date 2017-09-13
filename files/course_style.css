@@ -48,18 +48,25 @@ div#sidebar {
 }
 
 .lessons-nav ul.nav {
-  white-space: nowrap;
   margin-right: 18px;
-  overflow: hidden;
   padding-bottom: 45px;
 }
 
 .lessons-nav .nav>li>a {
-  padding: 8px 8px 8px 24px;
+  padding: 0px 8px 16px 24px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   color: #98a2ab;
   font-size: 15px;
+  line-height: 35px;
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .lessons-nav ul li a::before {
@@ -71,7 +78,9 @@ div#sidebar {
   border-radius: 200%;
   border: 1px solid #fff;
   left: 0;
-  top: 13px;
+  top: 10px;
+  background:#1c2228;
+  z-index: 25;
 }
 
 .list-group-item.active,
@@ -94,12 +103,12 @@ div#sidebar {
 .lessons-nav .nav>li>a::after {
   content: " ";
   width: 1px;
-  height: 29px;
+  height: 100%;
   background: rgba(255, 255, 255, 0.47);
   display: block;
   position: absolute;
   left: 5px;
-  top: 24px;
+  top: 0;
 }
 
 .lesson.tabs{
