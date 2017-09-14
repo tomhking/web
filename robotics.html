@@ -102,54 +102,64 @@
 
             </div>
         </div>
-        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 main-content">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-content">
             <div class="col-xs-12 col-sm-12 col-md-12 header">
-            <div class="container-fluid">
-                <div class="content text-center">
-                    <h4>Robotics</h4>
+                <div class="container-fluid">
+                    <div class="content text-center">
+                        <h4>Robotics</h4>
+                    </div>
                 </div>
             </div>
-        </div>
+
             <div class="col-xs-12 col-sm-12 col-md-12  video-wrapper">
-            <div class="content front-content" id="content">
-                <div class="video-container">
-
-
+                <div class="content front-content" id="content">
+                    <div class="video-container">
                         <div class="container-fluid communicate">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-12 text-center">
-                                        <h1>Coming Soon</h1>
-                                        <p class="subtitle" style="color:#fff;">Come &amp; help us build education the world deserves</p>
-                                    </div>
-                                    <div class="contact">
-                                        <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                                            <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-                                            <input type="submit" class="submit" value="Subscribe" name="subscribe">
-                                        </form>
-                                        <div class="contact-icons">
-                                            <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" rel="nofollow" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-                                            <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                            <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
-                                            <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                        </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                                    <h6>BitDegree Program</h6>
+                                    <h1>Become Robotics Developer</h1>
+                                    <p class="subtitle" style="color:#fff;">Prepare for a data science career. Learn to use Python, R, SQL, and Tableau to uncover insights, communicate critical findings, and create data-driven solutions.</p>
+                                    <p>Enrollment available from <b>October 10, 2017</b></p>
+                                </div>
+                                <div class="contact">
+                                    <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
+                                        <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
+                                        <input type="submit" class="submit" value="Subscribe" name="subscribe">
+                                    </form>
+                                    <div class="contact-icons">
+                                        <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" rel="nofollow" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                                        <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                        <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+                                        <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
+                            </div>
                         </div>
 
-                    <video controls style="width:100%;height:90%;" preload="none">
-                        <source src="./files/landing-bg.jpg"
-                                type='video/webm;codecs="vp8, vorbis"' />
-                        <source src="./files/bg.mp4"
-                                type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
-                    </video>
+                        <div class="contain-video">
+                            <div class="course-video">
+                                <div class="course-video-overlay"></div>
+                                <video  id="bgvid" poster="./files/bitdegree-vid-img.jpg" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
+                                    <source src="files/bitdegree_bg.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+
+
+
+
+
+
             <div class="col-xs-12 col-sm-12 col-md-12 ">
-            <div class="content front-content" id="lesson-content">
+                <div class="content front-content" id="lesson-content">
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </div>
@@ -181,6 +191,20 @@
                 $(".content").mCustomScrollbar("scrollTo",$(this).attr("href"));
             });
 
+        });
+    })(jQuery);
+</script>
+
+<script>
+    (function($){
+        $(window).on("load resize",function(){
+            var selector=".lessons-nav", //your element(s) selector
+                cssFlag=window.getComputedStyle(document.querySelector(selector),":after").getPropertyValue("content").replace(/"/g,'');
+            if(cssFlag){
+                $(selector).mCustomScrollbar({ /* scrollbar options */ });
+            }else{
+                $(selector).mCustomScrollbar("destroy");
+            }
         });
     })(jQuery);
 </script>
