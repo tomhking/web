@@ -1979,13 +1979,16 @@ h3.subtitle {
     }
 }
 
+@media (max-width:1380px) {
+    .side-nav{
+        display:none;
+    }
+}
+
 @media (max-width:1024px) {
     .as-seen-on .content {
         width: 100%;
         overflow: hidden;
-    }
-    .side-nav{
-        display:none;
     }
 }
 
