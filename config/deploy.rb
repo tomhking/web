@@ -37,7 +37,6 @@ task :setup => :environment do
   queue %[mkdir -p "#{deploy_to}/shared/storage/framework/cache"]
   queue %[mkdir -p "#{deploy_to}/shared/storage/framework/views"]
   queue %[chmod -R 777 "#{deploy_to}/shared/storage"]
-  queue %[chmod -R 777 "#{deploy_to}/bootstrap/cache"]
 end
 
 task :precompile do
