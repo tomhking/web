@@ -124,6 +124,7 @@
                         <h3 class="title">Julija <b>Sabaliauskaitė</b></h3>
                         <p>Business Assistant</p>
                         <div class="handles">
+                            <i class="fa " aria-hidden="true"></i>
                         </div>
 
                         <div class="team-member-desc">
@@ -186,7 +187,7 @@
         </div>
 
         <div id="js-advisory-board" class="row team-members">
-            <div class="col-xs-12 col-sm-3 wow fadeIn" style="float:none; margin:0 auto;">
+            <div class="col-xs-12 col-sm-3 col-sm-offset-2 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
@@ -201,6 +202,27 @@
 
                         <div class="team-member-desc">
                             <p><b>Prior to taking the role of the CEO,</b><br>For 6 years Arnas was responsible for business development at Hostinger. He successfully expanded Hostinger on a global level as well as played in important role when creating one of the most successful web hosting brands in Indonesia - Niagahoster.co.id. With his profound entrepreneurship skills and a solid experience in business development,  Arnas knows how to scale a project to global success.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 wow fadeIn">
+                <div class="team-member">
+                    <div class="team-member-image-holder">
+                        <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">
+
+                    </div>
+                    <div class="team-member-data">
+                        <h3 class="title">Ričardas <b>Pocius</b></h3>
+                        <p>Technical<br> advisor</p>
+                         <div class="handles">
+                            <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="team-member-desc">
+                            <p><b>Ričardas is a passionate distributed systems engineer</b> who enjoys sharing his experience and knowledge with others. Determined on keeping magic out of the systems. Organiser of Erlang workshop/meetup in Vilnius,LT.</p>
                         </div>
 
                     </div>
