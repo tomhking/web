@@ -44,7 +44,6 @@
         </div>
     </div>
 
-
     @include('partials.subscribe-bottom')
 
 @endsection
