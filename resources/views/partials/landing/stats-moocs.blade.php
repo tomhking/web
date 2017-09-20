@@ -13,7 +13,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="image-container text-center">
-                    <img src="./assets/moocs.jpg" alt="Growth of MOOCs">
+                    <img src="{{ asset('moocs.jpg') }}" alt="Growth of MOOCs">
                 </div>
             </div>
 

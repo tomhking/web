@@ -12,7 +12,7 @@
                 <div class="team-member">
                     <div class="team-member-image-holder ">
 
-                        <img class="team-member-image" src="./assets/team/andrius-putna.png" alt="Andrius Putna">
+                        <img class="team-member-image" src="{{ asset('team/andrius-putna.png') }}" alt="Andrius Putna">
 
                     </div>
                     <div class="team-member-data">
@@ -33,7 +33,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/danielius-stasiulis.png" alt="Danielius Stasiulis">
+                        <img class="team-member-image" src="{{ asset('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
 
                     </div>
                     <div class="team-member-data">
@@ -54,7 +54,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/martynas-andriuskevicius.png" alt="Martynas Andriuškevičius">
+                        <img class="team-member-image" src="{{ asset('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
 
                     </div>
                     <div class="team-member-data">
@@ -75,7 +75,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/ervinas-rimdeika.png" alt="Ervinas Rimdeika">
+                        <img class="team-member-image" src="{{ asset('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
 
                     </div>
                     <div class="team-member-data">
@@ -96,7 +96,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/rio-asatiani.png" alt="R.A.">
+                        <img class="team-member-image" src="{{ asset('team/rio-asatiani.png') }}" alt="R.A.">
 
                     </div>
                     <div class="team-member-data">
@@ -117,7 +117,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/julija-sabaliauskaite.png" alt="Julija Sabaliauskaitė">
+                        <img class="team-member-image" src="{{ asset('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
 
                     </div>
                     <div class="team-member-data">
@@ -137,7 +137,7 @@
             <div class="col-xs-12 col-sm-3 col-sm-offset-2 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/sarune-saulyte.png" alt="Šarūnė Šaulytė">
+                        <img class="team-member-image" src="{{ asset('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
 
                     </div>
                     <div class="team-member-data">
@@ -157,7 +157,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/dovile-tarutyte.png" alt="Dovilė Tarutytė">
+                        <img class="team-member-image" src="{{ asset('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
 
                     </div>
                     <div class="team-member-data">
@@ -189,7 +189,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn" style="float:none; margin:0 auto;">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="./assets/team/arnas-stuopelis.png" alt="Arnas Stuopelis">
+                        <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
                     </div>
                     <div class="team-member-data">
                         <h3 class="title">Arnas <b>Stuopelis</b></h3>

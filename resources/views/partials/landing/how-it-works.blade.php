@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="economy">
-                    <img src="./assets/token-economy.jpg" alt="Learn to code">
+                    <img src="{{ asset('token-economy.jpg') }}" alt="Learn to code">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">

@@ -2,7 +2,7 @@
 <header class="{{ $navBarOnly ?? false ? 'container-fluid' : '' }}">
     @if(!($navBarOnly ?? false))
         <div class="medusae-overlay"></div>
-        <video  id="bgvid" poster="./assets/landing-bg.jpg" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; top:-105px;">
+        <video  id="bgvid" poster="{{ asset('landing-bg.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; top:-105px;">
             <source src="assets/bg.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="navbar-header">
                     <a href="{{ route('home') }}" class="navbar-logo navbar-brand">
-                        <img class="logo" src="./assets/bitdegree-logo.png" alt="BitDegree">
+                        <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
                     </a>
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

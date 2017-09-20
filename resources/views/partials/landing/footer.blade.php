@@ -3,7 +3,7 @@
         <div class="row footer-links">
             <div class="col-md-12">
                 <a href="{{ route('home') }}" class="footer-logo">
-                    <img class="logo" src="./assets/bitdegree-logo.png" alt="BitDegree">
+                    <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
                 </a>
             </div>
             <div class="col-md-12">
@@ -23,7 +23,7 @@
         </div>
 
         <a href="https://www.ethereum.org/" rel="nofollow" class="footer-logo">
-            <img class="logo" src="./assets/ethereum.png" alt="Etherium foundation">
+            <img class="logo" src="{{ asset('ethereum.png') }}" alt="Etherium foundation">
         </a>
 
         <p class="copyright">Copyright © 2017 BitDegree.org <br>  <a href="mailto:hello@bitdegree.org">hello@bitdegree.org</a></p>

@@ -13,7 +13,7 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="image-container text-center">
-                    <img src="./assets/jobs-graph.jpg" alt="IT Jobs Demand">
+                    <img src="{{ asset('jobs-graph.jpg') }}" alt="IT Jobs Demand">
                 </div>
             </div>
 

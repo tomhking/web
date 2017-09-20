@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <img src="./assets/users-our-starting-point.jpg" alt="29 000 000 users is our starting point">
+                <img src="{{ asset('users-our-starting-point.jpg') }}" alt="29 000 000 users is our starting point">
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6">
@@ -15,10 +15,10 @@
                     <div class="row text-center">
                         <div class="grid-block">
                             <div class="grid-image">
-                                <a href="https://www.000webhost.com" target="_blank"><img src="./assets/000webhost-2.png" alt="000webhost logo"></a>
+                                <a href="https://www.000webhost.com" target="_blank"><img src="{{ asset('000webhost-2.png') }}" alt="000webhost logo"></a>
                             </div>
                             <div class="grid-image">
-                                <a href="https://www.hostinger.com" target="_blank"><img src="./assets/hostinger.png"  alt="Hostinger logo"></a>
+                                <a href="https://www.hostinger.com" target="_blank"><img src="{{ asset('hostinger.png') }}"  alt="Hostinger logo"></a>
                             </div>
                         </div>
                     </div>

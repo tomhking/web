@@ -7,23 +7,23 @@
     <meta name="keywords" content="ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="fav_icon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/app-icons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/app-icons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/app-icons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/app-icons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/assets/app-icons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/assets/app-icons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/assets/app-icons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/assets/app-icons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/app-icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/app-icons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="fav-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="fav-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fav-16x16.png">
-    <link rel="manifest" href="/assets/app-icons/manifest.json">
+    <link rel="shortcut icon" href="{{ base('fav_icon.ico') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('app-icons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('app-icons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('app-icons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('app-icons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('app-icons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('app-icons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('app-icons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('app-icons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('app-icons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('app-icons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ base('fav-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ base('fav-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ base('fav-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('app-icons/manifest.json') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/assets/app-icons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ asset('app-icons/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
@@ -36,10 +36,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="/assets/vendor-bundle.min.css?ver2">
-    <link rel="stylesheet" href="/assets/main.css?ver2">
-    <link href="/assets/course_style.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="{{ asset('vendor-bundle.min.css?ver2') }}">
+    <link rel="stylesheet" href="{{ asset('main.css?ver2') }}">
+    <link href="{{ asset('course_style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.css') }}">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -128,8 +128,8 @@
                         <div class="contain-video">
                             <div class="course-video">
                                 <div class="course-video-overlay"></div>
-                                <video  id="bgvid" poster="/assets/bitdegree-vid-img.jpg" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
-                                    <source src="files/bitdegree_bg.mp4" type="video/mp4">
+                                <video  id="bgvid" poster="{{ asset('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
+                                    <source src="{{ asset('bitdegree_bg.mp4') }}" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -154,10 +154,10 @@
 
 <!-- Google CDN jQuery with fallback to local -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/jquery-1.11.0.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="{{ asset('jquery-1.11.0.min.js') }}"><\/script>')</script>
 
 <!-- custom scrollbar plugin -->
-<script src="/assets/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}"></script>
 
 <script>
     (function($){
