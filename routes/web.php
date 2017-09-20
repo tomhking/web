@@ -12,20 +12,24 @@
 */
 
 
-$router->get('/', ['as' => 'home', function () use ($router) {
+$router->get('/', ['as' => 'root', function () use ($router) {
+    return redirect()->route('home');
+}]);
+
+$router->get('/token/', ['as' => 'home', function () use ($router) {
     return view('pages.home');
 }]);
 
-$router->get('/mvp', ['as' => 'mvp', function () {
+$router->get('/token/mvp', ['as' => 'mvp', function () {
     $courses = app()->make('courses');
     return view('pages.mvp', compact('courses'));
 }]);
 
-$router->get('/faq', ['as' => 'faq', function () use ($router) {
+$router->get('/token/faq', ['as' => 'faq', function () use ($router) {
     return view('pages.faq');
 }]);
 
 
-$router->get('/course/{course}', ['as' => 'course', function ($course) {
+$router->get('/token/course/{course}', ['as' => 'course', function ($course) {
     return view('pages.courses.'.$course, compact('courses'));
 }]);
