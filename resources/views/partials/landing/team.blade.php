@@ -44,7 +44,7 @@
                         </div>
 
                         <div class="team-member-desc">
-                            <p><strong>Head of Startup Division at Civitta</strong><br>7 years with the leading management consulting firm in Eastern Europe. Advised 300+ startups and worked with many startup programs, including in Silicon Valley at Berkeley Skydeck. Focus on ICO and blockchain-based business models.</p>
+                            <p><strong>Head of Startup Division at Civitta</strong><br>7 years with the leading management consulting firm in Eastern Europe. Advised 300+ startups and worked with many startup programs, including Berkeley Skydeck in Silicon Valley. Focus on ICO and blockchain-based business models.</p>
                         </div>
 
                     </div>
