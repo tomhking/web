@@ -96,6 +96,26 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
+                        <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
+                    </div>
+                    <div class="team-member-data">
+                        <h3 class="title">Darius <b>Rugevičius</b></h3>
+                        <p>Partner in Prime Block Capital Investment Fund</p>
+                        <div class="handles">
+                            <a href="https://www.linkedin.com/in/dariusrugevicius/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="team-member-desc">
+                            <p><b>Darius is experienced in building successful technology based business,</b> having sold two of his previous start-ups in the past 4 years alone. Using his skills to implement effective marketing strategies, propel execution, and meet deadlines, he has assisted companies operating in the blockchain, fin-tech, robotics and biotech sectors. In the past year Darius has worked with numerous blockchain projects, helping them to develop successful strategies, networking and outcome.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 wow fadeIn">
+                <div class="team-member">
+                    <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/rio-asatiani.png') }}" alt="R.A.">
 
                     </div>
@@ -108,26 +128,6 @@
 
                         <div class="team-member-desc">
                             <p><b>With more than 14 years of experience in effective customer acquisition fields,</b> working with new brands and startup launches, Rio is a growth-hacking guru &amp; Google Certified Partner who led 000webhost and Hostinger to an international success in more than 40 countries by attracting 29+ millions of new users. He joined the BitDegree project having a strong vision in innovative acquisition channels and a solid experience in growth-hacking. Rio ensures the success of BitDegree on an international level.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-3 wow fadeIn">
-                <div class="team-member">
-                    <div class="team-member-image-holder">
-                        <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
-
-                    </div>
-                    <div class="team-member-data">
-                        <h3 class="title">Darius <b>Rugevičius</b></h3>
-                        <p>Partner in Prime Block Capital Investment Fund</p>
-                        <div class="handles">
-                        </div>
-
-                        <div class="team-member-desc">
-                            <p><b>Darius is experienced in building successful technology based business,</b> having sold two of his previous start-ups in the past 4 years alone. Using his skills to implement effective marketing strategies, propel execution, and meet deadlines, he has assisted companies operating in the blockchain, fin-tech, robotics and biotech sectors. In the past year Darius has worked with numerous blockchain projects, helping them to develop successful strategies, networking and outcome.</p>
                         </div>
 
                     </div>
