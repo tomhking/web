@@ -117,6 +117,26 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
+                        <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Julija Sabaliauskaitė">
+
+                    </div>
+                    <div class="team-member-data">
+                        <h3 class="title">Darius <b>Rugevičius</b></h3>
+                        <p>Partner in Prime Block Capital Investment Fund</p>
+                        <div class="handles">
+                        </div>
+
+                        <div class="team-member-desc">
+                            <p><b>Darius is experienced in building successful technology based business,</b> having sold two of his previous start-ups in the past 4 years alone. Using his skills to implement effective marketing strategies, propel execution, and meet deadlines, he has assisted companies operating in the blockchain, fin-tech, robotics and biotech sectors. In the past year Darius has worked with numerous blockchain projects, helping them to develop successful strategies, networking and outcome.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 wow fadeIn">
+                <div class="team-member">
+                    <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
 
                     </div>
@@ -124,7 +144,6 @@
                         <h3 class="title">Julija <b>Sabaliauskaitė</b></h3>
                         <p>Business Assistant</p>
                         <div class="handles">
-                            <i class="fa " aria-hidden="true"></i>
                         </div>
 
                         <div class="team-member-desc">
@@ -135,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-3 col-sm-offset-2 wow fadeIn">
+            <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
