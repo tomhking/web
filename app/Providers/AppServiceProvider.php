@@ -2,10 +2,24 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        Validator::extend('validCountry', function ($attribute, $value, $parameters) {
+            $countries = app()->make('countries');
+            return isset($countries[$value]);
+        });
+    }
+
     /**
      * Register any application services.
      *
@@ -13,6 +27,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton('countries', function(){
+            return json_decode(file_get_contents(base_path('vendor/umpirsky/country-list/data/en_US/country.json')), true);
+        });
+
         $this->app->singleton('courses', function ($app) {
             return [
                 [
