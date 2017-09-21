@@ -241,7 +241,7 @@
                         </div>
 
                         <div class="team-member-desc">
-                            <p><b>Ričardas is a passionate distributed systems engineer</b> who enjoys sharing his experience and knowledge with others. Determined on keeping magic out of the systems. Organiser of Erlang workshop/meetup in Vilnius,LT.</p>
+                            <p><b>Ričardas is professional distributed systems engineer</b> driven by passion for technologies. He is the early Bitcoin implementor in Erlang. Ričardas shares personal experience and knowledge with the team by providing his ‘know-how’s’ in platform engineering. Determined on keeping magic out of the systems and always striving towards perfection. Major organiser of local Erlang workshops for programming engineers.</p>
                         </div>
 
                     </div>
