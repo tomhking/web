@@ -8,7 +8,7 @@
 
         <div class="row find-out-more">
             <div class="col-xs-12 text-center">
-                <p class="subtitle">Be the first to find out! Subscribe to our newsletter to get the latest ICO updates</p>
+                <p class="subtitle">Be the first to find out!<br> Subscribe to get the latest ICO updates</p>
 
 
                 <div class="contact">

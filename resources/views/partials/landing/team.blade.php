@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <h2 class="title">The Team</h2>
-                <p class="subtitle">Let us introduce you the key people of the Team that will make it all happen.</p>
+                <p class="subtitle">Let us introduce you the key people that will make it all possible.</p>
             </div>
         </div>
 
@@ -117,7 +117,7 @@
             <div class="col-xs-12 col-sm-3 wow fadeIn">
                 <div class="team-member">
                     <div class="team-member-image-holder">
-                        <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Julija Sabaliauskaitė">
+                        <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
 
                     </div>
                     <div class="team-member-data">
@@ -147,7 +147,7 @@
                         </div>
 
                         <div class="team-member-desc">
-                            <p><b>Our young and talented Project and Business Assistant - Julija.</b> Despite having a degree in IT and Marketing, Julija can’t simply say no to learning and is a self-taught graphic designer who has worked as a freelancer for more than 7 years. Julija joined the BitDegree project as she believes that BitDegree is the answer to empowering people to learn and continue growing as a person. She knows that passion for IT combined with BitDegree is the global future education model.</p>
+                            <p><b>Our young and talented Project and Business Assistant - Julija.</b> Despite having a degree in IT and Marketing, Julija can’t simply say no to learning and is a self-taught graphic designer who has worked as a freelancer for more than 7 years. Julija joined the BitDegree project as she believes that BitDegree is the answer to empowering people to learn and grow continuously. She knows that passion for IT combined with BitDegree is the global future education model.</p>
                         </div>
 
                     </div>
@@ -167,7 +167,7 @@
                         </div>
 
                         <div class="team-member-desc">
-                            <p><b>Being a quick learner and never saying no to any challenge</b> Šarūnė started her career at Hostinger without any marketing background, yet that didn’t stop her from becoming the leader of small International Marketing team in less than 1 year. She believes that everything is possible and there is no challenge that is too difficult. Šarūnė joined the BitDegree project and took to prove that anyone can become a specialist if they’re ready to learn and work hard. </p>
+                            <p><b>Being a quick learner and never saying no to any challenge</b> Šarūnė started her career at Hostinger without any marketing background, yet that didn’t stop her from becoming the leader of a small International Marketing team in less than 1 year. She believes that everything is possible and there is no challenge that is too difficult. Šarūnė joined the BitDegree project and proved that anyone can become a specialist if they’re ready to learn and work hard. </p>
                         </div>
 
                     </div>

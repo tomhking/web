@@ -4,7 +4,7 @@
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <div class="title-container">
                     <h2 class="title">How does it look from the student's perspective?</h2>
-                    <h3 class="subtitle">Start now &amp; earn BitDegree tokens as a scholarship &amp reward.<br>Take the world's best courses - online. Be hired by world-changing companies.</h3>
+                    <h3 class="subtitle">Start now &amp; earn BitDegree tokens as a scholarship &amp reward.<br>Take the world's best courses online. Be hired by world-changing companies.</h3>
                 </div>
             </div>
         </div>

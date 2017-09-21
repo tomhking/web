@@ -6,10 +6,10 @@
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <h3 class="title">29 000 000 users is our starting point</h3>
-                <p class="subtitle">We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community.
+                <h3 class="title">29 000 000 users - our starting point</h3>
+                <p class="subtitle">We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and open to innovation worldwide community.
                     "Our vision at Hostinger is to enable millions of people around the globe to unlock the power
-                    of Internet and give them the empowerment to learn, create and grow independently to racial, social and geo statuses."
+                    of Internet by empowering them to learn, create and grow independently regardless of racial, social and geo statuses."
                 </p>
                 <div class="logos partner-logos">
                     <div class="row text-center">
