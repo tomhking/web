@@ -3,7 +3,7 @@
     @if(!($navBarOnly ?? false))
         <div class="medusae-overlay"></div>
         <video  id="bgvid" poster="{{ asset('landing-bg.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; top:-105px;">
-            <source src="assets/bg.mp4" type="video/mp4">
+            <source src="{{ asset('bg.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
