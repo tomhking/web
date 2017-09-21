@@ -199,7 +199,7 @@
 
         <hr>
 
-        <div class="row">
+        <div class="row" id="advisors">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <h2 class="title">Advisors</h2>
             </div>
