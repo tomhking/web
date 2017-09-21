@@ -3,6 +3,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>BitDegree ICO - Revolutionizing education with blockchain</title>
+
+    @include('partials.tag-manager-head')
+
     <meta name="description" content="Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world's first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.">
     <meta name="keywords" content="ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,18 +43,11 @@
     <link rel="stylesheet" href="{{ asset('main.css?ver2') }}">
     <link href="{{ asset('course_style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.css') }}">
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-105983339-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 
 <body lang="en-GB" class="canvas" data-spy="scroll" data-target="#toc" style="">
+
+@include('partials.tag-manager-body')
 
 <div class="container-fluid">
     <div class="row-fluid">
