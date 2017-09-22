@@ -11,21 +11,20 @@
 @section('currentStep')
     <div class="current-lesson-title-content">
         <span>Lesson 1:</span>
-        <span>Introduction Smart Contracts</span>
+        <span>Installing Solidity</span>
     </div>
 @endsection
 
 @section('steps')
     <ul class="nav ">
-        <li><a class="list-group-item active" href="">1. Introduction to Smart Contracts</a></li>
-        <li><a class="list-group-item" href="">2. Installing Solidity & Ethereum Wallet</a></li>
-        <li><a class="list-group-item" href="">3. Solidity Source Files & Structure of Smart Contracts</a></li>
-        <li><a class="list-group-item" href="">4. Variables & Functions</a></li>
-        <li><a class="list-group-item" href="">5. Arithmetic, Logical & Bitwise Operators</a></li>
-        <li><a class="list-group-item" href="">6. Input Parameters and Output Parameters</a></li>
-        <li><a class="list-group-item" href="">7. Importing Smart Contracts & Compiling Contracts</a></li>
-        <li><a class="list-group-item" href="">8. Events & Logging</a></li>
-        <li><a class="list-group-item" href="">9. Exceptions</a></li>
-        <li><a class="list-group-item" href="">10. Examples</a></li>
+        <li><a class="list-group-item active" href="">1. Installing Solidity & Ethereum Wallet</a></li>
+        <li><a class="list-group-item" href="">2. Solidity Source Files & Structure of Smart Contracts</a></li>
+        <li><a class="list-group-item" href="">3. Variables & Functions</a></li>
+        <li><a class="list-group-item" href="">4. Arithmetic, Logical & Bitwise Operators</a></li>
+        <li><a class="list-group-item" href="">5. Input Parameters and Output Parameters</a></li>
+        <li><a class="list-group-item" href="">6. Importing Smart Contracts & Compiling Contracts</a></li>
+        <li><a class="list-group-item" href="">7. Events & Logging</a></li>
+        <li><a class="list-group-item" href="">8. Exceptions</a></li>
+        <li><a class="list-group-item" href="">9. Examples</a></li>
     </ul>
 @endsection

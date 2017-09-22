@@ -11,13 +11,13 @@
 @section('currentStep')
     <div class="current-lesson-title-content">
         <span>Lesson 1:</span>
-        <span>Introduction</span>
+        <span>Introduction to Ethereum</span>
     </div>
 @endsection
 
 @section('steps')
     <ul class="nav ">
-        <li><a class="list-group-item active" href="">1. Introduction</a></li>
+        <li><a class="list-group-item active" href="">1. Introduction to Ethereum</a></li>
         <li><a class="list-group-item" href="">2. Ethereum and Blockchain</a></li>
         <li><a class="list-group-item" href="">3. Ethereum Mining</a></li>
         <li><a class="list-group-item" href="">4. The Future of Ethereum</a></li>

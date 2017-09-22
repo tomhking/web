@@ -11,14 +11,14 @@
 @section('currentStep')
     <div class="current-lesson-title-content">
         <span>Lesson 1:</span>
-        <span>Introduction</span>
+        <span>Introduction to Crypto</span>
     </div>
 @endsection
 
 @section('steps')
     <ul class="nav ">
-        <li><a class="list-group-item active" href="">1. Introduction </a></li>
-        <li><a class="list-group-item" href="">2. What are Cryptocurrencies</a></li>
+        <li><a class="list-group-item active" href="">1. Introduction to Crypto</a></li>
+        <li><a class="list-group-item" href="">2. Cryptocurrencies</a></li>
         <li><a class="list-group-item" href="">3. History of Cryptocurrencies</a></li>
         <li><a class="list-group-item" href="">4. Setting up a wallet</a></li>
         <li><a class="list-group-item" href="">5. Mining</a></li>
