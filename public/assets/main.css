@@ -1756,13 +1756,13 @@ h3.subtitle {
 }
 
 .milestone {
-    height: 216px;
+    height: 251px;
     position: relative;
     margin-bottom: 30px;
 }
 
 .milestone-left {
-    height: 216px;
+    height: 251px;
     padding-left: 0;
     padding-right: 100px;
 }
@@ -1795,7 +1795,7 @@ h3.subtitle {
 
 .milestone-tooltip {
     padding: 0 25px;
-    max-width: 350px;
+    max-width: 450px;
     height: 100%;
     color: #36316D;
     position: relative;
@@ -1831,6 +1831,10 @@ h3.subtitle {
     right: 0;
     top: 3px;
     background: #f0f0f0;
+}
+
+.milestone-tooltip.milestone-done::after {
+    background: #c02b3f;
 }
 
 .milestone-right .milestone-tooltip::after {

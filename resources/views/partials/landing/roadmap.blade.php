@@ -10,7 +10,7 @@
 
             <div class="row milestone current-milestone">
                 <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done">
-                    <div class="milestone-tooltip">
+                    <div class="milestone-tooltip milestone-done">
                         <h3 class="title">29M+ user base</h3>
                         <h5 class="subtitle visible-xs">2007-2016</h5>
                         <p>Reached 29 million users on 000webhost - free web development learning platform, and Hostinger - web hosting services. Biggest part of users are young tech-savvy with deep will to learn, build and grow. <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow">Users love</a> us as an online learning platform already.</p>
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 milestone-right">
-                    <div class="milestone-tooltip">
+                    <div class="milestone-tooltip milestone-done">
                         <h3 class="title">Web fundamentals</h3>
                         <h5 class="subtitle visible-xs">2017 spring</h5>
                         <p>Summary of 500+ articles about <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank">web coding fundamentals</a> was prepared. Polishing of the business strategy. Approaching first business partners. Consulting with numerous universities and blockchain companies to develop first courses.</p>
@@ -55,7 +55,7 @@
 
             <div class="row milestone">
                 <div class="col-xs-12 col-sm-6 milestone-left">
-                    <div class="milestone-tooltip">
+                    <div class="milestone-tooltip milestone-done">
                         <h3 class="title">BitDegree ICO</h3>
                         <h5 class="subtitle visible-xs">2017 summer/autumn</h5>
                         <p>Period of building Ethereum Smart Contract for upcoming BitDegree ICO event. An ERC20 token, auditing SM code. Development of MOOC Educational expertise partnerships. Marketing. BitDegree Token Crowdsale & Distribution Event.</p>
@@ -144,7 +144,7 @@
             <div class="row milestone">
                 <div class="col-xs-12 col-sm-6 milestone-left">
                     <div class="milestone-tooltip">
-                        <h3 class="title">Hype on Student sector</h3>
+                        <h3 class="title">Future</h3>
                         <h5 class="subtitle visible-xs">Future</h5>
                         <p>3rd party integrations. Digital Service Provider SDK Development. Building SDK for a third party Digital Service Providers to integrate Bitdegree Tokens as a mean of value exchange into market cycle. At this point in time blockchain technologies are already widely adopted. Tools for token integration into 3rd parties is already present. BitDegree for Business. BitDegree Jobs. BitDegree Certification. BitDegree Decentralized Diploma. BitDegree education AI assistant. Decentralized diploma viewer. BitDegree training. BitDegree young talent aquisition. BitDegree Braille (blind education). BitDegree for Third World countries.</p>
                     </div>
