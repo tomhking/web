@@ -546,13 +546,12 @@ form .notice {
     z-index: 1000000;
     position: absolute;
     left: 0;
-    right: 0;
     padding-bottom: 7%;
     background: white;
     -webkit-clip-path: polygon(100% 100%, 100% 0%, 90% 0%);
     clip-path: polygon(100% 100%, 100% 0%, 90% 0%);
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
 }
 
 .news-bar {
