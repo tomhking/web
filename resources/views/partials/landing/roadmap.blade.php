@@ -9,7 +9,7 @@
         <div class="timeline">
 
             <div class="row milestone current-milestone">
-                <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done">
+                <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done ruler-done">
                     <div class="milestone-tooltip milestone-done">
                         <h3 class="title">29M+ user base</h3>
                         <h5 class="subtitle visible-xs">2007-2016</h5>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="row milestone">
-                <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile">
+                <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile ruler-done">
                     <div class="milestone-landmark">
                         <div class="milestone-date">2017 spring</div>
                         <div class="circle-container">

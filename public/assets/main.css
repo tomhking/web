@@ -1917,6 +1917,12 @@ h3.subtitle {
         width: 91px;
         background-image: url(ruler.png);
     }
+    .milestone-left.ruler-done:after, .milestone-left:before {
+        left: inherit;
+        right: -45px;
+        width: 91px;
+        background-image: url(ruler-done.png);
+    }
     .milestone-left:after {
         height: 100%;
         top: 0;
