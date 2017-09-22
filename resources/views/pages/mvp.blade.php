@@ -7,13 +7,11 @@
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-push-2">
                     <div class="title-container">
-                        <h2 class="title text-center">What problems does BitDegree solve?</h2>
+                        <h2 class="title text-center">@lang('courses.title')</h2>
                     </div>
                 </div>
                 <div class="col-xs-12">
-                    <p class="subtitle">We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community.
-                        Our vision at Hostinger is to enable millions of people around the globe to unlock the power
-                        of Internet and give them the empowerment to learn, create and grow.</p>
+                    <p class="subtitle">@lang('courses.subtitle')</p>
                 </div>
             </div>
 
@@ -24,14 +22,14 @@
                         <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s">
                             <div class="card left">
                                 <a href="{{ $course['url'] }}">
-                                    <div class="badge"><span>{{ $course['isFree'] ?? false ? "FREE" : "NEW" }}</span></div>
+                                    <div class="badge"><span>{{ $course['isFree'] ?? false ? trans('courses.free') : trans('courses.new') }}</span></div>
                                     <div class="degree-header">
                                         <div class="degree-overlay {{ $course['overlay'] }}"></div>
                                         <img class="degree-img" src="{{ $course['image']}}" alt="">
                                     </div>
                                     <div class="info">
                                         <h3>{{ $course['title'] }}</h3>
-                                        <p>{{ $course['description'] or 'Coming Soon' }}</p>
+                                        <p>{{ $course['description'] or trans('courses.coming_soon') }}</p>
                                     </div>
                                 </a>
                             </div>
