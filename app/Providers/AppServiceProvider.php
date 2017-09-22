@@ -101,6 +101,41 @@ class AppServiceProvider extends ServiceProvider
                     'overlay' => 'green',
                     'title' => '2D Game Development',
                 ],
+                [
+                    'url' => route('course', ['course' => 'blockchain-basics']),
+                    'key' => 'blockchain-basics',
+                    'image' => asset('blockchain-basics.jpg'),
+                    'overlay' => 'grey',
+                    'title' => 'Blockchain basics',
+                ],
+                [
+                    'url' => route('course', ['course' => 'crypto-intro']),
+                    'key' => 'crypto-intro',
+                    'image' => asset('cryptocurrency.jpg'),
+                    'overlay' => 'orange',
+                    'title' => 'Introduction to Crypto and Cryptocurrencies',
+                ],
+                [
+                    'url' => route('course', ['course' => 'ethereum-basics']),
+                    'key' => 'ethereum-basics',
+                    'image' => asset('ethereum-basics.jpg'),
+                    'overlay' => 'purple',
+                    'title' => 'Ethereum Basics',
+                ],
+                [
+                    'url' => route('course', ['course' => 'smart-contracts']),
+                    'key' => 'smart-contracts',
+                    'image' => asset('smart-contracts.jpg'),
+                    'overlay' => 'green',
+                    'title' => 'Smart contract development & Solidity',
+                ],
+                [
+                    'url' => route('course', ['course' => 'ethereum-development']),
+                    'key' => 'ethereum-development',
+                    'image' => asset('eth-development.jpg'),
+                    'overlay' => 'blue',
+                    'title' => 'Ethereum Development: Truffle and Open Zeppelin',
+                ],
             ];
         });
     }
