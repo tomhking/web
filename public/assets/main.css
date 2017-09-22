@@ -578,8 +578,8 @@ body.landing.degree-list header{
 
 .bitdegrees-list .cards .card {
     margin: auto;
-    box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
-    border: 1px solid rgba(76, 108, 231, .12);
+    box-shadow: 2px 8px 16px 0px rgba(46,61,73,0.2);
+    border: 1px solid rgba(46,61,73,0.12);
     background: #FFF;
     max-width: 350px;
     min-height: 350px;
@@ -620,7 +620,7 @@ body.landing.degree-list header{
 }
 
 .bitdegrees-list .cards .card:hover {
-    box-shadow: 2px 4px 8px 0px rgba(76, 108, 231, .2);
+    box-shadow: 2px 4px 8px 0px rgba(46,61,73,0.2);
 }
 
 .degree-header{
