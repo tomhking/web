@@ -12,8 +12,7 @@
             <div class="subscribe-container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="title text-center" style="font-size:38px;">Come help us build the education the world deserves
-                        </h2>
+                        <h2 class="title text-center" style="font-size:38px;">Come &amp; help us create talent the world deserves</h2>
 
                         <div class="contact">
                             <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
