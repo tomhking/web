@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                <h2 class="title">Come &amp; help us create talent the world deserves</h2>
+                <h2 class="title">@lang('subscribe.title_alt')</h2>
             </div>
             <div class="contact">
                 <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                    <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-                    <input type="submit" class="submit" value="Subscribe" name="subscribe">
+                    <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" required>
+                    <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
                 </form>
                 <div class="contact-icons">
                     <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>

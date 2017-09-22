@@ -4,12 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>BitDegree ICO - Revolutionizing education with blockchain</title>
+    <title>@lang('home.title')</title>
 
     @include('partials.tag-manager-head')
 
-    <meta name="description" content="Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world's first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.">
-    <meta name="keywords" content="ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education">
+    <meta name="description" content="@lang('home.meta_description')">
+    <meta name="keywords" content="@lang('home.meta_keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="{{ base('fav_icon.ico') }}" type="image/x-icon">

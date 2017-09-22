@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-xs-12 text-center">
                 <div class="title-container">
-                    <h2 class="title">IT Jobs Demand Potential Forecast</h2>
-                    <h3 class="subtitle">IT companies have a huge hiring potential and it is still growing</h3>
+                    <h2 class="title">@lang('home.demand_title')</h2>
+                    <h3 class="subtitle">@lang('home.demand_subtitle')</h3>
                 </div>
             </div>
         </div>
@@ -13,13 +13,13 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="image-container text-center">
-                    <img src="{{ asset('jobs-graph.jpg') }}" alt="IT Jobs Demand">
+                    <img src="{{ asset('jobs-graph.jpg') }}" alt="@lang('home.demand_image_alt')">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="description-container">
-                    <p>Tech jobs are on the rise and these in-demand jobs are going to grow that way for many more years to come.</p>
+                    <p>@lang('home.demand_description')</p>
                 </div>
                 <hr>
             </div>
