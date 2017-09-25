@@ -588,10 +588,6 @@ form .notice {
     border-radius: 0;
 }
 
-select {
-    -webkit-border-radius: 0px;
-}
-
 .cards .card,
 .grey-block {
     background-color: #f0f0f0;
