@@ -2,92 +2,108 @@
 
 @section('content')
 
-    <div id="bitdegrees-list" class="main bitdegrees-list white-bkg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" data-time-left="{{ $timeLeft }}">
-                    <h1><span class="time-left-days">0</span> days <span class="time-left-hours">00</span>:<span class="time-left-minutes">00</span>:<span class="time-left-seconds">00</span></h1>
-
-                    <h2>Currently raised: {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH</h2>
-                    <h2>Soft Cap: {{ number_format($softCapEth, 0, ".", "") }} ETH</h2>
-                    <h2>Hard Cap: {{ number_format($hardCapEth, 0, ".", "") }} ETH</h2>
-                    <h2>Progress: {{ number_format($progress, 1) }}%</h2>
-
-                    <div style="border:1px solid #333; overflow: hidden; position: relative;margin-bottom:2em">
-                        <!-- soft cap marker -->
-                        <div style="position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCapEth / $hardCapEth * 100 }}%; background: #333;"></div>
-                        <!-- progress bar -->
-                        <div style="width: {{ $progress }}%; height: 30px; background:greenyellow;"></div>
+    <div class="ico-page white-bkg">
+        <div class="ico-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Welcome to<br> <b>BitDegree Crowdsale</b></h1>
                     </div>
+                </div>
+            </div>
+            @include('partials.ico-progress')
 
-                    @if($icoDataAvailable)
-                        <h2>Crowdsale Address</h2>
-                        @if($showAddress)
-                            <code>{{ $icoAddress }}</code>
+        </div>
+
+        <div class="main container-fluid ico-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center cwordsale-info">
+                        @if($icoDataAvailable)
+                            <h2>Crowdsale Address</h2>
+                            @if($showAddress)
+                                <code>{{ $icoAddress }}</code>
+                            @else
+                                <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">View Crowdsale Address</a></p>
+                            @endif
                         @else
-                            <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">View Crowdsale Address</a></p>
+                            <h2>Crowdsale information will be announced soon.</h2>
                         @endif
-                    @else
-                        <h2>Crowdsale information will be announced soon.</h2>
-                    @endif
-
-                    <h2>Mist Ethereum Wallet</h2>
-                    <p>You can <a href="https://github.com/ethereum/mist/releases" target="_blank" rel="nofollow noopener">download Mist here</a>.</p>
-                    <ol>
-                        <li>Open Mist and click on <strong>Send</strong> tab at the top</li>
-                        <li>Select the account from which you want to transfer funds</li>
-                        <li>Paste the crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the destination</li>
-                        <li>Enter the amount that you want to invest</li>
-                        <li>Make sure Ether is selected as the currency</li>
-                        <li>Scroll down and select the fee. The higher the fee, the less time it will take for the transaction to get mined.</li>
-                        <li>Click on <strong>Send</strong></li>
-                        <li>Under <strong>Provide maximum fee</strong> enter <strong>200000</strong></li>
-                        <li>Review if everything is correct, type in your password and click on <strong>Send Transaction</strong></li>
-                    </ol>
-
-                    <h2>MetaMask</h2>
-                    <p>MetaMask is a plugin for <strong>Google Chrome</strong> browser. It can be downloaded an installed from <a href="https://metamask.io/" rel="nofollow noopener">metamask.io</a></p>
-                    <ol>
-                        <li>Open MetaMask by clicking on its logo that is located on the right of your address bar</li>
-                        <li>Choose the account from which you want to make an investment</li>
-                        <li>Click on <strong>Send</strong></li>
-                        <li>Put BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>Recipient</strong></li>
-                        <li>Enter the amount of Ether that you would like to invest</li>
-                        <li>Click on <strong>Next</strong></li>
-                        <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
-                        <li>Review if everything is correct and click on <strong>Submit</strong></li>
-                    </ol>
-
-                    <h2>MyEtherWallet</h2>
-                    <ol>
-                        <li>Go to <a href="https://myetherwallet.com/" target="_blank" rel="nofollow noopener">myetherwallet.com</a></li>
-                        <li>Make sure the URL is correct and <strong>MYETHERWALLET LLC [US]</strong> certificate is there</li>
-                        <li>Authenticate your wallet and click on <strong>Send Ether & Tokens</strong></li>
-                        <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif into <strong>To Address</strong> field</li>
-                        <li>Enter the amount of ether that you would like to invest into <strong>Amount to Send</strong> field</li>
-                        <li>Make sure <strong>ETH</strong> is selected as the currency</li>
-                        <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
-                        <li>Click on <strong>Generate Transaction</strong></li>
-                        <li>Confirm by clicking on <strong>Send Transaction</strong></li>
-                        <!--li>Click on <strong>Yes, I am sure! Make transaction</strong></li-->
-                    </ol>
-
-                    <h2>Parity</h2>
-                    <p>Parity can be downloaded from <a href="https://parity.io/" target="_blank" rel="nofollow noopener">parity.io</a></p>
-                    <ol>
-                        <li>Open Parity</li>
-                        <li>Click on <strong>Accounts</strong> tab at the top of the screen</li>
-                        <li>Click on an account from which you would like to make the investment</li>
-                        <li>Click on <strong>Transfer</strong></li>
-                        <li>Make sure <strong>Ethereum</strong> is selected as the token type</li>
-                        <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>recipient address</strong></li>
-                        <li>Enter the <strong>amount to transfer</strong></li>
-                        <li>Check the <strong>advanced sending options</strong> checkbox</li>
-                        <li>Click on <strong>Next</strong></li>
-                        <li>For <strong>gas</strong> enter <strong>200000</strong></li>
-                        <li>Click on <strong>Send</strong></li>
-                        <li>Enter your account password and click on <strong>Confirm Request</strong></li>
-                    </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="grey-block">
+                            <h2>Mist Ethereum Wallet</h2>
+                            <p>You can <a href="https://github.com/ethereum/mist/releases" target="_blank" rel="nofollow noopener">download Mist here</a>.</p>
+                            <ol>
+                                <li>Open Mist and click on <strong>Send</strong> tab at the top</li>
+                                <li>Select the account from which you want to transfer funds</li>
+                                <li>Paste the crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the destination</li>
+                                <li>Enter the amount that you want to invest</li>
+                                <li>Make sure Ether is selected as the currency</li>
+                                <li>Scroll down and select the fee. The higher the fee, the less time it will take for the transaction to get mined.</li>
+                                <li>Click on <strong>Send</strong></li>
+                                <li>Under <strong>Provide maximum fee</strong> enter <strong>200000</strong></li>
+                                <li>Review if everything is correct, type in your password and click on <strong>Send Transaction</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="grey-block">
+                            <h2>MetaMask</h2>
+                            <p>MetaMask is a plugin for <strong>Google Chrome</strong> browser. It can be downloaded an installed from <a href="https://metamask.io/" rel="nofollow noopener">metamask.io</a></p>
+                            <ol>
+                                <li>Open MetaMask by clicking on its logo that is located on the right of your address bar</li>
+                                <li>Choose the account from which you want to make an investment</li>
+                                <li>Click on <strong>Send</strong></li>
+                                <li>Put BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>Recipient</strong></li>
+                                <li>Enter the amount of Ether that you would like to invest</li>
+                                <li>Click on <strong>Next</strong></li>
+                                <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
+                                <li>Review if everything is correct and click on <strong>Submit</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="grey-block">
+                            <h2>MyEtherWallet</h2>
+                            <ol>
+                                <li>Go to <a href="https://myetherwallet.com/" target="_blank" rel="nofollow noopener">myetherwallet.com</a></li>
+                                <li>Make sure the URL is correct and <strong>MYETHERWALLET LLC [US]</strong> certificate is there</li>
+                                <li>Authenticate your wallet and click on <strong>Send Ether & Tokens</strong></li>
+                                <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif into <strong>To Address</strong> field</li>
+                                <li>Enter the amount of ether that you would like to invest into <strong>Amount to Send</strong> field</li>
+                                <li>Make sure <strong>ETH</strong> is selected as the currency</li>
+                                <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
+                                <li>Click on <strong>Generate Transaction</strong></li>
+                                <li>Confirm by clicking on <strong>Send Transaction</strong></li>
+                                <!--li>Click on <strong>Yes, I am sure! Make transaction</strong></li-->
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="grey-block">
+                            <h2>Parity</h2>
+                            <p>Parity can be downloaded from <a href="https://parity.io/" target="_blank" rel="nofollow noopener">parity.io</a></p>
+                            <ol>
+                                <li>Open Parity</li>
+                                <li>Click on <strong>Accounts</strong> tab at the top of the screen</li>
+                                <li>Click on an account from which you would like to make the investment</li>
+                                <li>Click on <strong>Transfer</strong></li>
+                                <li>Make sure <strong>Ethereum</strong> is selected as the token type</li>
+                                <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>recipient address</strong></li>
+                                <li>Enter the <strong>amount to transfer</strong></li>
+                                <li>Check the <strong>advanced sending options</strong> checkbox</li>
+                                <li>Click on <strong>Next</strong></li>
+                                <li>For <strong>gas</strong> enter <strong>200000</strong></li>
+                                <li>Click on <strong>Send</strong></li>
+                                <li>Enter your account password and click on <strong>Confirm Request</strong></li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
