@@ -8,7 +8,7 @@
 
         <div class="timeline">
 
-            <div class="row milestone current-milestone">
+            <div class="row milestone mobile-complete">
                 <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done ruler-done">
                     <div class="milestone-tooltip milestone-done">
                         <h3 class="title">@lang('roadmap.title_25m')</h3>
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="row milestone">
+            <div class="row milestone mobile-complete">
                 <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile ruler-done">
                     <div class="milestone-landmark">
                         <div class="milestone-date">@lang('roadmap.date_fundamentals')</div>

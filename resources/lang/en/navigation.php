@@ -4,6 +4,7 @@ return [
     'what-is' => 'What is BitDegree',
     'people' => 'People Behind',
     'one-pager' => 'One Pager',
+    'white-paper' => 'White-paper',
     'ico' => 'ICO &amp; Roadmap',
     'faq' => 'FAQ',
     'blog' => 'Blog',

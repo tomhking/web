@@ -941,15 +941,6 @@ button.navbar-toggle {
     font-size: 10px;
 }
 
-.navbar-right {
-    float: left !important;
-}
-
-ul.cta-menu{
-    float:right;
-    margin-top: 18px;
-    margin-bottom: 25px;
-}
 ul.cta-menu li .navbar-cta{
     padding: 12px 16px;
     margin-top: -3px;
@@ -1095,22 +1086,41 @@ ul.cta-menu li .navbar-cta {
 }
 
 @media (max-width:992px) {
-    .milestone-tooltip {
-        width: 280px;
+    .explanation .cards p,
+    .grey-block p {
+        font-size: 14px;
+        line-height: 20px;
+        color: #252525;
+        margin-top: 0;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
     }
-
+    .milestone-tooltip {
+        width: 290px;
+    }
+    .row.milestone, .milestone-left, .milestone-right {
+        height: 432px;
+        position: relative;
+    }
     .milestone {
-        height: 265px;
         margin-bottom: 0;
     }
-
-    .milestone-left,
-    .milestone-right {
-        height: 230px;
-    }
-
     .row.milestone {
         margin: 0 !important;
+    }
+    .milestone-left .milestone-tooltip{
+        margin-right: 100px;
+    }
+    .milestone-left .milestone-landmark{
+        margin-right: 58px;
+    }
+    h3, .h3 {
+        color: #252525;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
     }
 }
 
@@ -1230,7 +1240,7 @@ header::before {
     background: #f0f0f0;
     -webkit-clip-path: polygon(50% 100%, 0% 100%, 0% 0%);
     clip-path: polygon(50% 100%, 0% 100%, 0% 0%);
-    bottom: 0;
+    bottom: -1px;
     left:0;
 }
 
@@ -1244,7 +1254,7 @@ header::before {
     background: #f0f0f0;
     -webkit-clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
     clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
-    bottom: 0;
+    bottom: -1px;
     right:0;
 }
 
@@ -1537,14 +1547,6 @@ header .countdown .subtitle {
     }
 }
 
-h3, .h3 {
-    color: #252525;
-    font-size: 18px;
-    line-height: 30px;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 300;
-}
-
 h3.subtitle {
     margin-bottom: 35px;
 }
@@ -1684,17 +1686,6 @@ h3.subtitle {
     margin-bottom: 22px;
 }
 
-.explanation .cards p,
-.grey-block p{
-    font-size: 16px;
-    line-height: 24px;
-    color: #252525;
-    margin-top: 0;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
 .explanation .card span {
     font-size: 40px;
     margin-bottom: 20px;
@@ -1754,16 +1745,53 @@ h3.subtitle {
     opacity: .05;
 }
 
-.milestone {
-    height: 251px;
-    position: relative;
-    margin-bottom: 30px;
-}
+@media (min-width: 993px) {
+    ul.cta-menu{
+        float:right;
+        margin-top: 18px;
+        margin-bottom: 25px;
+    }
+    .navbar-right {
+        float: left !important;
+    }
+    .explanation .cards p, .grey-block p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #252525;
+        margin-top: 0;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    h3, .h3 {
+        color: #252525;
+        font-size: 18px;
+        line-height: 30px;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+    }
+    .milestone {
+        height: 251px;
+        position: relative;
+        margin-bottom: 30px;
+    }
 
-.milestone-left {
-    height: 251px;
-    padding-left: 0;
-    padding-right: 100px;
+    .milestone-left {
+        height: 251px;
+        padding-left: 0;
+        padding-right: 100px;
+    }
+    .milestone-left .milestone-landmark {
+        right: -46px;
+    }
+
+    .milestone-right .milestone-landmark {
+        margin-left: -55px;
+    }
+
+    .milestone-left .milestone-landmark {
+        margin-right: -15px;
+    }
 }
 
 .milestone-left:after{
@@ -1787,7 +1815,6 @@ h3.subtitle {
 }
 
 .milestone-right {
-    height: 200px;
     padding-left: 100px;
     vertical-align: middle;
 }
@@ -1817,6 +1844,7 @@ h3.subtitle {
     background: #c02b3f;
     width: 90px;
     height: 2px;
+    z-index: 1;
 }
 
 .milestone-tooltip::after {
@@ -1849,16 +1877,7 @@ h3.subtitle {
 
 .milestone-left .milestone-landmark {
     float: right;
-    right: -46px;
     position: relative;
-}
-
-.milestone-right .milestone-landmark {
-    margin-left: -55px;
-}
-
-.milestone-left .milestone-landmark {
-    margin-right: -15px;
 }
 
 .milestone-landmark>div {
@@ -2010,6 +2029,15 @@ h3.subtitle {
     }
     .explanation .cards .card {
         width: 100%;
+        height: auto;
+        padding: 30px 25px;
+        background: #f0f0f0;
+        margin-bottom: 45px;
+    }
+    .cards .card::before {
+        padding-bottom: 10%;
+        -webkit-clip-path: polygon(100% 100%, 100% 0%, 88% 0%);
+        clip-path: polygon(100% 100%, 100% 0%, 88% 0%);
     }
     .nav>li>a {
         padding: 10px 11px;
@@ -2076,6 +2104,11 @@ h3.subtitle {
 @media (max-width:767px) {
     ul.cta-menu {
         float: none!important;
+        height: 65px;
+    }
+    ul.cta-menu li .navbar-cta {
+        margin-top: 0;
+        display: block;
     }
     ul.nav.navbar-nav.navbar-right {
         float: none!important;
@@ -2108,14 +2141,22 @@ h3.subtitle {
     .front-page header {
         background-image: url(mobile-bg.jpg);
     }
+    div#roadmap .container {
+        padding-right: 0;
+    }
     .row.milestone::before {
-        width: 91px;
+        width: 70px;
         background-image: url(ruler.png);
         height: 100%;
         position: absolute;
         content: " ";
         display: block;
         left: 0;
+        background-size: 65px;
+    }
+    .row.milestone.mobile-complete::before{
+        background-image: url(ruler-done.png);
+        z-index: 5;
     }
     .row.milestone{
         padding-left: 88px;
@@ -2125,6 +2166,7 @@ h3.subtitle {
     }
     .milestone-right {
         padding-left: 0;
+        padding-right: 0;
     }
     .milestone-tooltip::after {
         content: " ";
@@ -2138,10 +2180,15 @@ h3.subtitle {
         top: 3px;
         background: #f0f0f0;
         left: 0;
+        z-index: 8;
     }
     .milestone-tooltip {
         width: 100%;
         padding: 0 0 0 25px;
+    }
+    .row.milestone, .milestone-left, .milestone-right {
+        height: 470px;
+        position: relative;
     }
     .milestone-left {
         padding-left: 0;
@@ -2438,13 +2485,22 @@ img.team-member-image:hover {
     }
 
     .navbar-header {
-        float: left;
-        display: inline-block;
-        max-width: 30%;
-        margin-top: 13px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
+        max-width: 100%;
     }
     div#navbar {
-        width: 70%;
+        width: 100%;
+    }
+    .nav.navbar-nav {
+        float: none!important;
+    }
+    ul.cta-menu {
+        display: block;
+        height: 45px;
+        margin-top: 25px;
     }
 }
 
@@ -2531,10 +2587,6 @@ img.team-member-image:hover {
     p.subtitle{
         text-align: left!important;
     }
-    .explanation .cards .card {
-        margin-bottom: 35px;
-        padding-left: 0;
-    }
     div#navbar ul {
         padding-top: 25px;
     }
@@ -2604,13 +2656,6 @@ img.team-member-image:hover {
     .milestone-left:after {
         top: 114px;
         height: 100%;
-    }
-    .milestone-tooltip:before {
-        display:none;
-    }
-    .milestone-left,
-    .milestone-right {
-        height: 230px;
     }
     .milestone-tooltip p {
         font-size: 13px;
@@ -2717,7 +2762,7 @@ img.team-member-image:hover {
         letter-spacing: inherit;
     }
     .row.milestone {
-        padding-left: 58px;
+        padding-left: 38px;
     }
     .row.milestone::before {
         left: -25px;
