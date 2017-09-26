@@ -942,7 +942,7 @@ h2.current-amount {
     position: relative;
 }
 
-.cwordsale-info {
+.crowdsale-info {
     margin-bottom: 45px;
 }
 
@@ -995,6 +995,7 @@ h2.current-amount {
 
 .progress-bar-wrapper {
     padding-bottom: 35px;
+    position:relative;
 }
 
 /*ICO Page*/
@@ -1065,12 +1066,12 @@ button.navbar-toggle {
 .nav.navbar-nav li {
     float: none;
     display: inline-block;
-    width:190px;
+    width: 180px;
     margin-left: -5px;
 }
 
 .nav.navbar-nav li::before {
-    width: 88px;
+    width: 83px;
     height: 1px;
     content: " ";
     background: #fff;
@@ -1082,11 +1083,11 @@ button.navbar-toggle {
 
 .nav.navbar-nav li:first-child::before {
     width: 8px;
-    left:80px;
+    left:75px;
 }
 
 .nav.navbar-nav li::after {
-    width: 88px;
+    width: 83px;
     height: 1px;
     content: " ";
     background: #fff;
@@ -1098,7 +1099,7 @@ button.navbar-toggle {
 
 .nav.navbar-nav li:last-child::after {
     width: 8px;
-    right:80px;
+    right:75px;
 }
 
 .nav.navbar-nav li a::before {
@@ -1111,7 +1112,7 @@ button.navbar-toggle {
     margin: 0 auto;
     bottom:0;
     border:1px solid #fff;
-    left:88px;
+    left:83px;
 }
 
 
@@ -1305,9 +1306,14 @@ ul.cta-menu li .navbar-cta {
 }
 
 @media (max-width:992px) {
+    ul.cta-menu li .navbar-cta {
+        margin-left: 0;
+    }
     .explanation .cards p,
-    .grey-block p {
-        font-size: 14px;
+    .grey-block p,
+    .grey-block ol li,
+    .grey-block ul li {
+        font-size: 15px;
         line-height: 20px;
         color: #252525;
         margin-top: 0;
@@ -2314,7 +2320,7 @@ h3.subtitle {
 
 @media (min-width: 1024px){
     .nav>li>a {
-        padding: 22px 8px;
+        padding: 22px 0;
     }
 }
 
@@ -2758,6 +2764,80 @@ img.team-member-image:hover {
 }
 
 @media (max-width:550px) {
+    body header {
+        min-height: 80px!important;
+    }
+    body header .container{
+        padding:0!important;
+    }
+    .ico-page .ico-top h1 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+    .countdown {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 15px 0;
+    }
+    .time-amount {
+        min-width: 80px;
+    }
+    .time-amount-days {
+        display: block;
+        margin-bottom: 25px;
+    }
+    h2.current-amount {
+        font-size: 24px!important;
+        line-height: 34px;
+    }
+    .soft-cap-marker, .hard-cap-marker {
+        width: 100%!important;
+        position: relative!important;
+        background: none!important;
+        height: auto!important;
+        display: block!important;
+        left: 0!important;
+    }
+    .soft-cap-text, .hard-cap-text {
+        font-size: 15px;
+        line-height: inherit;
+        width: 100%;
+        padding-top: 0;
+        border-right: 0;
+        padding-right: 8px;
+        position: relative;
+        right: auto;
+        left: 0!important;
+    }
+    .ico-page h2, .ico-page .h2 {
+        font-size: 26px;
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        margin: 25px 0;
+        word-wrap: break-word;
+    }
+    .ico-page .col-md-6 .grey-block {
+        height: auto;
+        padding: 20px 15px;
+        background: #f0f0f0;
+        margin-bottom: 25px;
+        position: relative;
+        min-height: 650px;
+    }
+    .btn-primary {
+        padding: 22px 20px;
+        color: #FFF;
+        background-color: #c02b3f;
+        font-size: 16px;
+        border: none;
+        display: block;
+        width:100%;
+    }
+    .ico-info .col-md-6 {
+        padding: 0!important;
+    }
     ul.cta-menu {
         float: none;
         margin-top: 18px;

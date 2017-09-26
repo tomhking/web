@@ -18,7 +18,7 @@
         <div class="main container-fluid ico-info">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center cwordsale-info">
+                    <div class="col-md-12 text-center crowdsale-info">
                         @if($icoDataAvailable)
                             <h2>Crowdsale Address</h2>
                             @if($showAddress)
