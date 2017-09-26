@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \App\Console\Commands\ExportTranslationsToCsv::class,
+        \App\Console\Commands\ImportTranslationsFromCsv::class,
         \App\Console\Commands\UpdateIcoBalance::class,
     ];
 

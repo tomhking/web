@@ -114,7 +114,12 @@ $router->get('/token/faq', ['as' => 'faq', function () {
     return view('pages.faq');
 }]);
 
-
 $router->get('/token/course/{course}', ['as' => 'course', function ($course) {
     return view('pages.courses.'.$course, compact('courses'));
 }]);
+
+$router->get('/{lang}/test/page', function ($lang) {
+    return [
+        'language' => $lang,
+    ];
+});

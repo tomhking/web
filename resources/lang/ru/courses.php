@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'title_web_fundamentals' => 'Теория Веб-разработки',
+  'title_coding_fundamentals' => 'Основы Программирования',
+  'title_deep_learning' => 'Глубокое Обучение',
+  'title_react' => 'React',
+  'title_vr_development' => 'Разработка VR ',
+  'title_ai_development' => 'Разработка AI ',
+  'title_robotics' => 'Робототехника',
+  'title_neuro_marketing' => 'Нейромаркетинг',
+  'title_digital_graphics' => 'Цифровая Графика',
+  'title_build_website' => 'Создание сайта с нуля',
+  'title_building_apps' => 'Создание Приложений для Android',
+  'title_game_development' => 'Разработка 2D Игр',
+  'title_blockchain_basics' => 'Основы Блокчейна',
+  'title_crypto_intro' => 'Введение в Крипто и Криптовалюты',
+  'title_ethereum_basics' => 'Основы Ethereum',
+  'title_smart_contracts' => 'Разработка Смарт Контракта и Solidity',
+  'title_ethereum_development' => 'Разработка Ethereum: Truffle и Open Zeppelin',
+  'title' => 'Какие проблемы решает BitDegree?',
+  'subtitle' => 'Мы создаём BitDegree на прочной основе в виде 29 миллионов существующих пользователей на площадках Hostinger и 000webhost - верном, любящем веб, открытом для инноваций и обучения сообществе. Нашей целью является позволить миллионам людей по всему миру, открыть для себя силу всемирной паутины и дать им возможность учиться, творить и расти.',
+  'free' => 'БЕСПЛАТНО',
+  'new' => 'НОВОЕ',
+  'coming_soon' => 'Скоро',
+  'enrollment_date' => 'Дата зачисления',
+  'lesson_number' => 'Урок :number',
+);
