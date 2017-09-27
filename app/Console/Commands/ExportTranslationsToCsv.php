@@ -11,7 +11,7 @@ class ExportTranslationsToCsv extends Command
      *
      * @var string
      */
-    protected $signature = 'translations:export {lang?}';
+    protected $signature = 'translations:export {lang?} {fallback?}';
 
     /**
      * The console command description.
@@ -38,8 +38,33 @@ class ExportTranslationsToCsv extends Command
     public function handle()
     {
         $language = $this->argument("lang") ?? 'en';
-        $path = resource_path('lang/' . $language . '/');
+        $fallback = $this->argument("fallback") ?? "en";
 
+        $messages = $this->getMessagesFromPath(resource_path('lang/' . $language . '/'));
+
+        if ($language != $fallback) {
+            $fallbackMessages = $this->getMessagesFromPath(resource_path('lang/' . $fallback . '/'));
+            $messages = array_merge($messages, array_diff_key($fallbackMessages, $messages));
+        }
+
+        foreach ($messages as $key => $message) {
+            if (!is_string($message)) {
+                continue;
+            }
+            $out = fopen('php://output', 'w');
+            fputcsv($out, [$key, $message]);
+            fclose($out);
+        }
+    }
+
+    /**
+     * Returns all translation messages from a given path
+     *
+     * @param $path
+     * @return array
+     */
+    public function getMessagesFromPath($path)
+    {
         $messages = [];
 
         foreach (scandir($path) as $file) {
@@ -50,13 +75,6 @@ class ExportTranslationsToCsv extends Command
             $messages[substr($file, 0, -4)] = require($path . $file);
         }
 
-        foreach(array_dot($messages) as $key => $message) {
-            if(!is_string($message)){
-                continue;
-            }
-            $out = fopen('php://output', 'w');
-            fputcsv($out, [$key, $message]);
-            fclose($out);
-        }
+        return array_dot($messages);
     }
 }

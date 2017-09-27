@@ -25,9 +25,9 @@
 
     <div class="container header-content">
         <div class="navbar" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="{{ route('home') }}" class="navbar-logo navbar-brand">
+                    <a href="{{ route_lang('home') }}" class="navbar-logo navbar-brand">
                         <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
                     </a>
 
@@ -38,8 +38,8 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
-                        <li><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
+                        <li><a href="{{ route_lang('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
+                        <li><a href="{{ route_lang('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
                         <li><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                         <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.ico')</a></li>-->
                         <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.faq')</a></li>-->
@@ -48,7 +48,18 @@
                     <ul class="cta-menu">
                         <li><a href="{{ asset('files/white-paper.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                     </ul>
+
+                    <div class="dropdown lang-menu">
+                        <button class="dropdown-toggle" type="button" data-toggle="dropdown">{{ $languages[$currentLanguage] }}
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu ">
+                            @foreach($languages as $code => $name)
+                                <li class="{{ $code == $currentLanguage ? "current" : "" }}"><a href="{{ route('home', ['lang' => $code]) }}" class="{{ $code == $currentLanguage }}">{{ $name }}</a></li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </div>
 

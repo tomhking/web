@@ -1,7 +1,7 @@
 <div id="section-five" class="how-it-works mvp main light-violet-bkg">
     <div class="container wow fadeIn">
         <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+            <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
                 <div class="title-container">
                     <h2 class="title">@lang('home.mvp_title')</h2>
                     <h3 class="subtitle">@lang('home.mvp_subtitle')</h3>
@@ -9,13 +9,13 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="{{ route('mvp') }}">
+            <a href="{{ route_lang('mvp') }}">
                 <img src="{{ asset('mvp-image.png') }}" style="width:600px;" alt="@lang('home.mvp_image_alt')">
             </a>
         </div>
 
         <div class="mvp-cta text-center">
-            <a href="{{ route('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
+            <a href="{{ route_lang('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
         </div>
 
         <div class="row">

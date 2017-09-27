@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12" data-time-left="{{ $timeLeft }}">
                 <div class="countdown">
-                    <div class="time-amount time-amount-days">
+                    <div class="time-amount">
                         <span class="time-left-days">0</span>
                         <span class="time-value">days</span>
                     </div>
@@ -28,7 +28,7 @@
 
 
                     <!-- hard cap marker -->
-                    <div class="hard-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCapEth, 0, ".", "") }} ETH</h3></div>
+                    <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCapEth, 0, ".", "") }} ETH</h3></div>
 
                 </div>
             </div>

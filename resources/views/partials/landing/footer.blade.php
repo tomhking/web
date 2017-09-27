@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row footer-links">
             <div class="col-md-12">
-                <a href="{{ route('home') }}" class="footer-logo">
+                <a href="{{ route_lang('home') }}" class="footer-logo">
                     <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
                 </a>
             </div>
@@ -10,8 +10,8 @@
                 <div class="navbar" role="navigation">
                     <div id="navbar-2" class="navbar-container">
                         <ul class="nav navbar-nav">
-                            <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
-                            <li><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
+                            <li><a href="{{ route_lang('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
+                            <li><a href="{{ route_lang('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
                             <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.ico')</a></li>-->
                             <!--<li><a href="#faqs" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.faq')</a></li>-->
                             <!--<li><a href="https://medium.com/@bitdegree" target="_blank">@lang('navigation.blog')</a></li>-->
