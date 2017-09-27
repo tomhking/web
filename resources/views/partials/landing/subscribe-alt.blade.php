@@ -15,6 +15,7 @@
                     <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
                     <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a class="contact-icon contact-icon-medium" href="https://blog.bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

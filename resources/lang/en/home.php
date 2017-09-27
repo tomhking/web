@@ -33,7 +33,7 @@ return [
     'mvp_title' => 'How does it look from the student\'s perspective?',
     'mvp_subtitle' => 'Start now &amp; earn BitDegree tokens as a scholarship &amp reward.<br>Take the world\'s best courses online. Be hired by world-changing companies.',
     'mvp_image_alt' => 'Try Bitdegree MVP',
-    'mvp_c2a' => 'TRY MVP',
+    'mvp_c2a' => 'TRY Prototype MVP',
     'mvp_description' => 'Coursera and CodeCademy together are worth more than $1 billion today. However, even these frontrunners face abysmal course completion results – only 5%. The BitDegree platform’s innovation is the possibility for business to initiate and maintain dialogue with upcoming talent and reward them for achievements through smart-incentives. From the student’s perspective it means - getting paid to learn.',
     'demand_title' => 'IT Jobs Demand Potential Forecast',
     'demand_subtitle' => 'IT companies have a huge hiring potential and it is still growing',

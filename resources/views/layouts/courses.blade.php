@@ -39,8 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-    <link rel="stylesheet" href="{{ asset('vendor-bundle.min.css?ver2') }}">
-    <link rel="stylesheet" href="{{ asset('main.css?ver2') }}">
+    <link rel="stylesheet" href="{{ asset($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css') }}">
     <link href="{{ asset('course_style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.css') }}">
 </head>
@@ -105,19 +104,7 @@
                                     <h6>BitDegree Program</h6>
                                     @yield('courseHeader')
                                 </div>
-                                <div class="contact">
-                                    <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                                        <input class="suscribe-input" name="EMAIL" type="email" placeholder="Enter your email to receive updates" required>
-                                        <input type="submit" class="submit" value="Subscribe" name="subscribe">
-                                    </form>
-                                    <div class="contact-icons">
-                                        <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        <a class="contact-icon contact-icon-slack" href="https://bitdegree.slack.com" rel="nofollow" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-                                        <a class="contact-icon contact-icon-github" href="https://github.com/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                        <a class="contact-icon contact-icon-reddit" href="https://www.reddit.com/r/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
-                                        <a class="contact-icon contact-icon-facebook" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
+                                @include('partials.subscribe-block')
                             </div>
                         </div>
 

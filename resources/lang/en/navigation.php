@@ -3,6 +3,7 @@
 return [
     'what-is' => 'What is BitDegree',
     'people' => 'People Behind',
+    'mvp' => 'MVP',
     'one-pager' => 'One Pager',
     'white-paper' => 'White-paper',
     'ico' => 'ICO &amp; Roadmap',

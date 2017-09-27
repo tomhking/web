@@ -925,6 +925,7 @@ span.time-value {
   bottom: 0;
   left: 0;
   width: 100%;
+  letter-spacing: 2px;
 }
 
 .time-amount {
@@ -938,19 +939,30 @@ span.time-value {
 h2.current-amount {
   font-weight: 200 !important;
   text-transform: inherit !important;
+  font-size: 28px!important;
+  letter-spacing:2px;
+  b{
+    font-weight:400!important;
+  }
 }
 
-.ico-page .main {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-}
-
-.cwordsale-info {
-  margin-bottom: 45px;
+.crowdsale-info{
+    margin-top: 15px;
+  code {
+    background: 0 0;
+    border: 1px solid #fff;
+    border-radius: 0;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 300;
+    margin-top: 15px;
+    display: inline-block;
+  }
 }
 
 .ico-page {
+  position: relative;
   h2, .h2 {
     font-size: 36px;
     font-family: $work-sans;
@@ -1068,12 +1080,12 @@ button.navbar-toggle {
   &.navbar-nav {
     padding-right: 18px;
     li {
-      float: none;
-      display: inline-block;
-      width: 190px;
-      margin-left: -5px;
+        float: none;
+        display: inline-block;
+        width: 164px;
+        margin-left: -5px;
       &::before {
-        width: 88px;
+        width: 75px;
         height: 1px;
         content: " ";
         background: #fff;
@@ -1084,10 +1096,10 @@ button.navbar-toggle {
       }
       &:first-child::before {
         width: 8px;
-        left: 80px;
+        left: 68px;
       }
       &::after {
-        width: 88px;
+        width: 75px;
         height: 1px;
         content: " ";
         background: #fff;
@@ -1098,7 +1110,7 @@ button.navbar-toggle {
       }
       &:last-child::after {
         width: 8px;
-        right: 80px;
+        right: 68px;
       }
       a::before {
         width: 14px;
@@ -1110,7 +1122,7 @@ button.navbar-toggle {
         margin: 0 auto;
         bottom: 0;
         border: 1px solid #fff;
-        left: 88px;
+        left: 75px;
       }
       &:focus a::before, &:hover a::before {
         background: #c02b3f;
@@ -1197,7 +1209,6 @@ button.navbar-toggle {
 ul.cta-menu li .navbar-cta {
   padding: 12px 16px;
   margin-top: -3px;
-  margin-left: 6px;
   font-size: 15px;
   color: #FFF;
   text-align: center;

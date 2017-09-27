@@ -7,7 +7,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Welcome to<br> <b>BitDegree Crowdsale</b></h1>
+                        <h1 class="text-center">Crowdsale starts in:</h1>
                     </div>
                 </div>
             </div>
@@ -17,20 +17,6 @@
 
         <div class="main container-fluid ico-info">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center crowdsale-info">
-                        @if($icoDataAvailable)
-                            <h2>Crowdsale Address</h2>
-                            @if($showAddress)
-                                <code>{{ $icoAddress }}</code>
-                            @else
-                                <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">View Crowdsale Address</a></p>
-                            @endif
-                        @else
-                            <h2>Crowdsale information will be announced soon.</h2>
-                        @endif
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="grey-block">

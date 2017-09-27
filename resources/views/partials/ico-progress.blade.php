@@ -13,8 +13,22 @@
                     </div>:<div class="time-amount"><span class="time-left-minutes">00</span><span class="time-value">minutes</span></div>:<div class="time-amount"><span class="time-left-seconds">00</span><span class="time-value">seconds</span></div>
                 </div>
 
-                <h2 class="current-amount">Currently raised: {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH</h2>
+                <h2 class="current-amount">Currently raised: <b> {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH </b></h2>
 
+                        <div class="row">
+                            <div class="col-md-12 text-center crowdsale-info">
+                                @if($icoDataAvailable)
+                                    @if($showAddress)
+                                        <h3>Send Ether (only) to this contract address</h3>
+                                        <code>{{ $icoAddress }}</code>
+                                    @else
+                                        <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Get Crowdsale Address</a></p>
+                                    @endif
+                                @else
+                                    <h2>Crowdsale information will be announced soon.</h2>
+                                @endif
+                            </div>
+                        </div>
 
                 <h3>Progress: {{ number_format($progress, 1) }}%</h3>
 
