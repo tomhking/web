@@ -12,6 +12,8 @@ return [
     'position_designer' => 'Product Designer',
     'position_co_founder' => 'Co-founder in advisory capacity',
     'position_ceo_hostinger' => 'CEO - Hostinger',
+    'position_advisor_1' => 'Serial Entrepreneur and',
+    'position_advisor_1_1' => 'Builder of Global Enterprise',
     'position_technical_advisor' => 'Technical<br> advisor',
     'description_ceo' => '<strong>The Technology Wiz & CEO of BitDegree.</strong><br> 11 years in software engineering. Blockchain evangelist. Person behind the success of 000webhost - world’ first and biggest free cloud hosting platform designed for learning, testing and experimenting.',
     'description_cbo' => '<strong>Head of Startup Division at Civitta</strong><br>7 years with the leading management consulting firm in Eastern Europe. Advised 300+ startups and worked with many startup programs, including Berkeley Skydeck in Silicon Valley. Focus on ICO and blockchain-based business models.',
@@ -24,6 +26,8 @@ return [
     'description_designer' => '<b>Former freelance illustrator and experienced artist, now a professional UX designer</b> who worked with multiple international web hosting brands, Dovilė helped to successfully launch 65+ international websites. On her free time Dovilė is a passionate gamer and cosplayer. Joining BitDegree combined her two passions and allowed to combine game elements with IT; she is ready to prove that gamification is the key to learning and change the way people understand education.',
     'description_co_founder' => '<b>Prior to taking the role of the CEO,</b><br>For 6 years Arnas was responsible for business development at Hostinger. He successfully expanded Hostinger on a global level as well as played in important role when creating one of the most successful web hosting brands in Indonesia - Niagahoster.co.id. With his profound entrepreneurship skills and a solid experience in business development,  Arnas knows how to scale a project to global success.',
     'description_technical_advisor' => '<b>Ričardas is a passionate distributed systems engineer</b> who enjoys sharing his experience and knowledge with others. Mysterium Network - decentralized VPN on Blockchain, technical Advisor. Determined on keeping magic out of the systems. Organiser of Erlang workshop/meetup in Vilnius,LT.',
+    'description_advisor_1' => '<b>Believer that technology and the unifying strength of multicultural exchange</b> in the pursuit of problem solving and business growth can lead to profound economic, social, and global benefit. Jeff was a founding team member of Electronic Arts.',
+
     'advisors' => 'Advisors',
     'title' => 'The Team',
     'subtitle' => 'Let us introduce you the key people that will make it all possible.',

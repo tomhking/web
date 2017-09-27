@@ -44,5 +44,5 @@ return array (
   'economy_subtitle' => 'BitDegree将通过创建可在平台的用户之间交换的在线货币的方式来革新教育：学生，赞助商和第三方。',
   'economy_point_1' => '<b> 01.</b>作为赞助商的公司是BitDegree经济可持续的主要动力。赞助商购买BitDegree币的经济激励是<strong>招聘技术人才</strong>，加强雇主品牌的广告效应的基础。',
   'economy_point_2' => '<b> 02.</b> BitDegree币可用于为学生的教育成就创建奖学金的<strong>智慧奖励</strong>，可用于获取第三方在其平台上提供的各种数字服务以兑换BitDegree币。',
-  'economy_point_3' => '<b> 03.</ b>通过接受BitDegree币，第三方成为BitDegree币经济的中介者。赞助商和学习者将能够在广泛的行业合作伙伴网络中交换和兑换他们的BitDegree币，或者将其交换用于数字商品和服务。 BitDegree币<strong>需求</strong>的潜力与招收行业巨大的2000亿美元强势紧密相关。BitDegree币的有限供应确保了BitDegree平台的服务在未来的日益增长的需求。',
+  'economy_point_3' => '<b> 03.</b>通过接受BitDegree币，第三方成为BitDegree币经济的中介者。赞助商和学习者将能够在广泛的行业合作伙伴网络中交换和兑换他们的BitDegree币，或者将其交换用于数字商品和服务。 BitDegree币<strong>需求</strong>的潜力与招收行业巨大的2000亿美元强势紧密相关。BitDegree币的有限供应确保了BitDegree平台的服务在未来的日益增长的需求。',
 );

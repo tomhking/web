@@ -1,6 +1,9 @@
 /vendor
 /.idea
 /database/**/*.sqlite
+/public/assets/default.css
+/public/assets/lang-*.css
+/node_modules
 Homestead.json
 Homestead.yaml
 .env
