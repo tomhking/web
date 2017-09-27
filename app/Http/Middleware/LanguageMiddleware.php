@@ -9,7 +9,7 @@ class LanguageMiddleware
     private $fallbackLanguage = 'en';
     private $supportedLanguages = [
         'en' => 'EN',
-        'ch' => 'CH',
+        'cn' => 'CN',
         'ru' => 'RU',
     ];
 
