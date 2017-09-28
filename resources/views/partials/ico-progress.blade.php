@@ -21,6 +21,7 @@
                                     @if($showAddress)
                                         <h3>Send Ether (only) to this contract address</h3>
                                         <code>{{ $icoAddress }}</code>
+                                        <p>Recommended Gas Limit: 200000</p>
                                     @else
                                         <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Get Crowdsale Address</a></p>
                                     @endif

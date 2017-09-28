@@ -913,8 +913,11 @@ body.landing.degree-list header {
 }
 
 .ico-page .ico-top {
-  h1, h2, h3 {
+  h1, h2, h3, p {
     color: #fff;
+  }
+  p{
+    font-weight: 300;
   }
 }
 
@@ -949,16 +952,32 @@ h2.current-amount {
 .crowdsale-info{
     margin-top: 15px;
   code {
-    background: 0 0;
     border: 1px solid #fff;
     border-radius: 0;
     padding: 10px 35px;
     font-size: 18px;
-    font-family: "Source Code Pro", monospace;
+    font-family: "Source Code Pro",monospace;
     font-weight: 300;
     margin-top: 15px;
     display: inline-block;
+    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.11);
+    color: #ff3d6e;
   }
+}
+
+.grey-block code {
+  border: 1px solid #c5c5c5;
+  border-radius: 0;
+  padding: 2px 10px;
+  font-family: "Source Code Pro",monospace!important;
+  font-weight: 300;
+  margin-top: 15px;
+  display: inline-block;
+  margin-bottom: 15px;
+  background: 0 0;
+  color: #c02b3f;
+  font-size: 90%;
 }
 
 .ico-page {
@@ -977,7 +996,7 @@ h2.current-amount {
     background: #f0f0f0;
     margin-bottom: 25px;
     position: relative;
-    min-height: 650px;
+    min-height: 680px;
     ol li {
       margin-bottom: 8px;
     }
