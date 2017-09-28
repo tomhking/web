@@ -42,6 +42,8 @@
     <link rel="stylesheet" href="{{ asset($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css') }}">
     <link href="{{ asset('course_style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.css') }}">
+
+    @include('partials.smartlook')
 </head>
 
 <body lang="en-GB" class="canvas" data-spy="scroll" data-target="#toc" style="">
