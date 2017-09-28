@@ -77,6 +77,11 @@
                                 <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" required>
                                 <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
                             </form>
+                            <div class="contact-icons">
+                                <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="contact-icon contact-icon-slack" href="https://slack.bitdegree.org" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                                <a class="contact-icon contact-icon-telegram" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                            </div>
                         </div>
 
                         <div class="bullet-points">
