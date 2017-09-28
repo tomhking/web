@@ -17,7 +17,7 @@
                             <!--<li><a href="https://medium.com/@bitdegree" target="_blank">@lang('navigation.blog')</a></li>-->
                             <li><a href="{{ route_lang('home') }}#section-five" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                             <li><a href="/bitdegree-ico-one-pager.pdf" class="navbar-cta" target="_blank">@lang('navigation.one-pager')</a></li>
-                            <li><a href="{{ asset('files/white-paper.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                            <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         </ul>
                     </div>
                 </div>

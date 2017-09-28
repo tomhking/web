@@ -47,7 +47,7 @@
                         <!--<li><a href="https://medium.com/@bitdegree" target="_blank">@lang('navigation.blog')</a></li>-->
                     </ul>
                     <ul class="cta-menu">
-                        <li><a href="{{ asset('files/white-paper.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                        <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                     </ul>
 
                     <div class="dropdown lang-menu">
