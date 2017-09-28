@@ -1088,11 +1088,17 @@ h2.current-amount {
   font-size: 15px;
   line-height: inherit;
   width: max-content;
+  width: -moz-max-content;
   padding-top: 20px;
   border-right: 1px solid #fff;
   padding-right: 8px;
   position: absolute;
   right: 0;
+}
+
+.crowdsale-info h2 {
+  font-size: 24px;
+  text-transform: inherit;
 }
 
 .progress-bar-wrapper {
