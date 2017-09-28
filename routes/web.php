@@ -47,6 +47,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         $progress = $raisedEth / $hardCapEth * 100;
 
         $icoAddress = env('ICO_ADDRESS');
+        $icoRate = env('ICO_RATE');
+        $totalSupply = env('TOKEN_SUPPLY');
 
         $countries = app()->make('countries');
 
@@ -63,7 +65,9 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
             'countries',
             'raisedDecimals',
             'progress',
-            'icoDataAvailable'
+            'icoDataAvailable',
+            'icoRate',
+            'totalSupply'
         ));
     }]);
 
