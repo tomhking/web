@@ -231,6 +231,33 @@ div#testimonials {
   }
 }
 
+.trust {
+  padding-bottom: 80px;
+  h2.title, h3.title {
+    margin-bottom: 60px;
+  }
+  hr {
+    padding-bottom: 61px;
+    max-width: 350px;
+  }
+  a img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  a:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+
 .carousel-control {
   &.right, &.left {
     background: none;
@@ -384,7 +411,45 @@ form .notice {
   }
 }
 
+@media screen and (min-width:1100px) and (max-width: 1198px) {
+  .dropdown.lang-menu {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .dropdown-toggle{
+      border:0!important;
+    }
+  }
+  div#navbar {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-header {
+    display: block;
+    width: 100%;
+    text-align: center;
+    .navbar-logo{
+      float:none;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  header .title {
+    margin-top: 40px!important;
+  }
+}
+
 @media screen and (min-width:993px) and (max-width: 1099px) {
+  .dropdown.lang-menu {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .dropdown-toggle{
+      border:0!important;
+    }
+  }
   header .title {
     margin-top: 40px!important;
   }
@@ -418,6 +483,9 @@ form .notice {
     padding-top: 80px;
     padding-bottom: 80px;
     position: relative;
+  }
+  div#what-are-we {
+    padding-bottom: 40px;
   }
   div#what-are-we {
     &::before {

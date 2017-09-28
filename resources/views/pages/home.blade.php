@@ -2,6 +2,7 @@
 
 @section('content')
     @include('partials.landing.what-we-are')
+    @include('partials.landing.trust')
     @include('partials.landing.partners')
     @include('partials.landing.why-us')
     @include('partials.landing.stats-moocs')
