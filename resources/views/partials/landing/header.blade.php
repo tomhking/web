@@ -78,9 +78,11 @@
                                 <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
                             </form>
                             <div class="contact-icons">
-                                <a class="contact-icon contact-icon-twitter" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a class="contact-icon contact-icon-slack" href="https://slack.bitdegree.org" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-                                <a class="contact-icon contact-icon-telegram" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                                <a class="contact-icon" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a class="contact-icon" href="https://slack.bitdegree.org" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                                <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                                <a class="contact-icon" href="https://bitcointalk.org/index.php?topic=2214321" rel="nofollow" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
+
                             </div>
                         </div>
 
