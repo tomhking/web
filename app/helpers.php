@@ -9,7 +9,7 @@ if (!function_exists('asset')) {
     function asset($path)
     {
         $buildNumberFile = base_path('build-number.txt');
-        $version = "?v=" . (file_exists($buildNumberFile) ? file_get_contents($buildNumberFile) : "");
+        $version = trim(file_exists($buildNumberFile) ? "?v=" . file_get_contents($buildNumberFile) : "");
         return base('assets/' . $path) . $version;
     }
 }
