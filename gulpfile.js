@@ -8,6 +8,7 @@ var sassSources = 'resources/scss/**/*.scss';
 
 gulp.task('sass-prod', function(){
     return gulp.src(sassSources)
+        .pipe(sass())
         .pipe(cleanCss({rebase: false}))
         .pipe(gulp.dest('public/assets/'));
 });
