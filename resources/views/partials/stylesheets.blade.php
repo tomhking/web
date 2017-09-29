@@ -7,5 +7,4 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="{{ asset('vendor-bundle.min.css') }}">
 <link rel="stylesheet" href="{{ asset($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css') }}">

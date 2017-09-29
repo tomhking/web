@@ -148,6 +148,10 @@ a {
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
+  &:focus,
+  &:hover {
+    color: #c02b3f;
+  }
   &.cta-btn {
     border: none;
     background-color: #c02b3f;
@@ -567,7 +571,7 @@ form .notice {
     width: 91px;
     height: 62px;
     background-position: -194px 0;
-  }v
+  }
 }
 
 .contact-icon {
@@ -608,6 +612,12 @@ form .notice {
   background-color: #c02b3f;
   font-size: 18px;
   border: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
   &:hover {
     background-color: #c02b3f;
     box-shadow: 0 8px 30px rgba(215, 48, 48, 0.5);
@@ -678,6 +688,12 @@ form .notice {
     font-weight: 300;
     font-size: 16px;
     margin-top: 25px;
+  }
+  .btn-success:hover {
+    color: #fff;
+    background-color: #c02b3f;
+    border-color: #c02b3f;
+    box-shadow: 0 8px 30px rgba(215,48,48,.5);
   }
   label {
     display: inline-block;
