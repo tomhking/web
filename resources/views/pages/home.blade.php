@@ -14,3 +14,19 @@
     @include('partials.landing.roadmap')
     @include('partials.landing.subscribe-alt')
 @endsection
+
+@section('footer')
+    <script type="text/javascript">
+        $(function () {
+            $('#sidebar').on('activate.bs.scrollspy', function (event) {
+                var hash = $("a", event.target).attr('href');
+
+                if(history) {
+                    history.replaceState({}, $('title').text(), hash)
+                } else {
+                    window.location.hash = hash;
+                }
+            });
+        });
+    </script>
+@endsection

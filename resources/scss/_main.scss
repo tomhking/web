@@ -112,7 +112,6 @@ ul {
 
 body, html {
   height: 100%;
-  overflow-x: hidden;
   width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -617,7 +616,6 @@ form .notice {
   -ms-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
   &:hover {
     background-color: #c02b3f;
     box-shadow: 0 8px 30px rgba(215, 48, 48, 0.5);
