@@ -2,34 +2,70 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12" data-time-left="{{ $timeLeft }}">
-                <div class="countdown">
-                    <div class="time-amount">
-                        <span class="time-left-days">0</span>
-                        <span class="time-value">days</span>
-                    </div>
-                    <div class="time-amount">
-                        <span class="time-left-hours">00</span>
-                        <span class="time-value">hours</span>
-                    </div>:<div class="time-amount"><span class="time-left-minutes">00</span><span class="time-value">minutes</span></div>:<div class="time-amount"><span class="time-left-seconds">00</span><span class="time-value">seconds</span></div>
-                </div>
-
-                <h2 class="current-amount">Currently raised: <b> {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH </b></h2>
-
+                @if($icoStart->isFuture())
+                    <div class="container">
                         <div class="row">
-                            <div class="col-md-12 text-center crowdsale-info">
-                                @if($icoDataAvailable)
-                                    @if($showAddress)
-                                        <h3>Send Ether (only) to this contract address</h3>
-                                        <code>{{ $icoAddress }}</code>
-                                        <p>Recommended Gas Limit: 200000</p>
-                                    @else
-                                        <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Get Crowdsale Address</a></p>
-                                    @endif
-                                @else
-                                    <h2>Crowdsale information will be announced soon.</h2>
-                                @endif
+                            <div class="col-md-12">
+                                <h1 class="text-center">Crowdsale starts in:</h1>
                             </div>
                         </div>
+                    </div>
+                    <div class="countdown">
+                        <div class="time-amount">
+                            <span class="time-left-days">0</span>
+                            <span class="time-value">days</span>
+                        </div>
+                        <div class="time-amount">
+                            <span class="time-left-hours">00</span>
+                            <span class="time-value">hours</span>
+                        </div>:<div class="time-amount"><span class="time-left-minutes">00</span><span class="time-value">minutes</span></div>:<div class="time-amount"><span class="time-left-seconds">00</span><span class="time-value">seconds</span></div>
+                    </div>
+                @elseif($icoEnd->isFuture() && $raisedEth < $hardCapEth)
+                    <!-- ICO is in progress -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">ICO started!</h1>
+                            </div>
+                        </div>
+                    </div>
+                @else
+                    <!-- ICO is over -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="text-center">Thank you for participating!</h1>
+                            </div>
+                        </div>
+                    </div>
+                    @if($raisedEth < $softCapEth)
+                        <!-- soft cap not reached -->
+                    @elseif($raisedEth < $hardCapEth)
+                        <!-- soft cap reached -->
+                    @else
+                        <!-- hard cap reached -->
+                    @endif
+                @endif
+
+                <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Currently raised" : "Raised" }}: <b> {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH </b></h2>
+
+                <div class="row">
+                    <div class="col-md-12 text-center crowdsale-info">
+                        @if($icoDataAvailable and $icoEnd->isFuture())
+                            @if($showAddress)
+                                <h3>Send Ether (only) to this contract address</h3>
+                                <code>{{ $icoAddress }}</code>
+                                <p>Recommended Gas Limit: 200000</p>
+                            @else
+                                <p><a href="#agreement-popup" class="btn btn-primary" data-toggle="modal" data-target="#signup-modal">Get Crowdsale Address</a></p>
+                            @endif
+                        @elseif($icoEnd->isPast())
+                            <h2>Crowdsale is over</h2>
+                        @else
+                            <h2>Crowdsale information will be announced soon.</h2>
+                        @endif
+                    </div>
+                </div>
 
                 <h3>Progress: {{ number_format($progress, 1) }}%</h3>
 

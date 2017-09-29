@@ -4,19 +4,27 @@
 
     <div class="ico-page white-bkg">
         <div class="ico-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">Crowdsale starts in:</h1>
-                    </div>
-                </div>
-            </div>
             @include('partials.ico-progress')
 
         </div>
 
         <div class="main container-fluid ico-info">
             <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Amount of Ether</h3>
+                        <input type="number" id="amt-eth">
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Tokens to Be Received</h3>
+                        <input type="number" id="amt-tokens">
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>% of total supply</h3>
+                        <input type="number" id="amt-supply">
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <h2>How to participate</h2>
@@ -273,6 +281,7 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="{{ asset('big.min.js') }}"></script>
     <script type="text/javascript">
         $(function () {
             var confirmationButton = $('#confirm-agreements'), modalAgreement = $('#modal-agreements'), modalSignup = $('#modal-sign-up');
@@ -322,6 +331,11 @@
                 var timer = this;
                 var secondsLeft = parseInt($(timer).attr('data-time-left'));
                 var initializedAt = Math.floor(Date.now()/1000), remainingAtInit = secondsLeft;
+
+                if(secondsLeft === 0) {
+                    return;
+                }
+
                 var interval = setInterval(function () {
                     var currentTimestamp = Math.floor(Date.now() / 1000);
                     if(Math.abs(initializedAt + remainingAtInit - currentTimestamp - secondsLeft) > 5) {
@@ -331,9 +345,46 @@
 
                     if(secondsLeft <= 0) {
                         clearInterval(interval);
+                        location.reload();
                     }
                 }, 1000);
             });
+
+            var amtEth = $("#amt-eth"), amtTokens = $("#amt-tokens"), amtSupply = $("#amt-supply"), totalSupply = new Big({{ $totalSupply }}), rate = new Big({{ $icoRate }});
+
+            amtEth.val(150);
+            ethChanged();
+
+            amtEth.keyup(ethChanged).change(ethChanged);
+            amtTokens.keyup(tokensChanged).change(tokensChanged);
+            amtSupply.keyup(supplyChanged).change(supplyChanged);
+
+            function ethChanged() {
+                var amt = parseFloat(amtEth.val().replace(",", "."));
+
+                amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > totalSupply / rate ? totalSupply / rate : amt));
+
+                amtTokens.val(amt.times(rate));
+                amtSupply.val(amt.times(rate).div(totalSupply).times(100).toFixed(4));
+            }
+
+            function tokensChanged() {
+                var amt = parseFloat(amtTokens.val().replace(",", "."));
+
+                amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > totalSupply ? totalSupply : amt));
+
+                amtEth.val(amt.div(rate));
+                amtSupply.val(amt.div(totalSupply).times(100).toFixed(4));
+            }
+
+            function supplyChanged() {
+                var amt = parseFloat(amtSupply.val().replace(",", "."));
+
+                amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > 100 ? 100 : amt));
+
+                amtEth.val(totalSupply.times(amt).div(100).div(rate));
+                amtTokens.val(totalSupply.times(amt));
+            }
 
             function updateTimer(timeLeft, context) {
                 var seconds = timeLeft%60,
