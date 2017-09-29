@@ -5,7 +5,7 @@ return [
     'title_coding_fundamentals' => 'Coding Fundamentals',
     'title_deep_learning' => 'Deep Learning',
     'title_react' => 'React',
-    'title_vr_development' => 'VR Developement',
+    'title_vr_development' => 'VR Development',
     'title_ai_development' => 'AI Development',
     'title_robotics' => 'Robotics',
     'title_neuro_marketing' => 'Neuro Marketing',
