@@ -2531,8 +2531,46 @@ h3.subtitle {
     width: 100%;
     padding: 0 0 0 25px;
   }
-  .row.milestone, .milestone-left, .milestone-right {
-    height: 470px;
+  .row.milestone.step-1,
+  .row.milestone.step-1 .milestone-left,
+  .row.milestone.step-1 .milestone-right {
+    height: 300px;
+    position: relative;
+  }
+  .row.milestone.step-2,
+  .row.milestone.step-2 .milestone-left,
+  .row.milestone.step-2 .milestone-right {
+    height: 300px;
+    position: relative;
+  }
+  .row.milestone.step-3,
+  .row.milestone.step-3 .milestone-left,
+  .row.milestone.step-3 .milestone-right {
+    height: 300px;
+    position: relative;
+  }
+  .row.milestone.step-4,
+  .row.milestone.step-4 .milestone-left,
+  .row.milestone.step-4 .milestone-right {
+    height: 374px;
+    position: relative;
+  }
+  .row.milestone.step-5,
+  .row.milestone.step-5 .milestone-left,
+  .row.milestone.step-5 .milestone-right {
+    height: 500px;
+    position: relative;
+  }
+  .row.milestone.step-6,
+  .row.milestone.step-6 .milestone-left,
+  .row.milestone.step-6 .milestone-right {
+    height: 349px;
+    position: relative;
+  }
+  .row.milestone.step-7,
+  .row.milestone.step-7 .milestone-left,
+  .row.milestone.step-7 .milestone-right {
+    height: 525px;
     position: relative;
   }
   .milestone-left {

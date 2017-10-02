@@ -8,7 +8,7 @@
 
         <div class="timeline">
 
-            <div class="row milestone mobile-complete">
+            <div class="row milestone mobile-complete step-1">
                 <div class="col-xs-12 col-sm-6 milestone-left first-milestone-done ruler-done">
                     <div class="milestone-tooltip milestone-done">
                         <h3 class="title">@lang('roadmap.title_25m')</h3>
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="row milestone mobile-complete">
+            <div class="row milestone mobile-complete step-2">
                 <div class="col-sm-6 milestone-left last-milestone-done hidden-mobile ruler-done">
                     <div class="milestone-landmark">
                         <div class="milestone-date">@lang('roadmap.date_fundamentals')</div>
@@ -53,7 +53,7 @@
         <div class="timeline">
             <div class="timeline-title hidden"></div>
 
-            <div class="row milestone">
+            <div class="row milestone step-3">
                 <div class="col-xs-12 col-sm-6 milestone-left">
                     <div class="milestone-tooltip milestone-done">
                         <h3 class="title">@lang('roadmap.title_ico')</h3>
@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="row milestone">
+            <div class="row milestone step-4">
                 <div class="col-sm-6 milestone-left hidden-mobile">
                     <div class="milestone-landmark">
                         <div class="milestone-date">@lang('roadmap.date_courses')</div>
@@ -97,7 +97,7 @@
         </div>
 
         <div class="timeline">
-            <div class="row milestone">
+            <div class="row milestone step-5">
                 <div class="col-xs-12 col-sm-6 milestone-left">
                     <div class="milestone-tooltip">
                         <h3 class="title">@lang('roadmap.title_hype')</h3>
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="row milestone">
+            <div class="row milestone step-6">
                 <div class="col-sm-6 milestone-left hidden-mobile">
                     <div class="milestone-landmark">
                         <div class="milestone-date">@lang('roadmap.date_platform')</div>
@@ -141,7 +141,7 @@
         </div>
 
         <div class="timeline">
-            <div class="row milestone">
+            <div class="row milestone step-7">
                 <div class="col-xs-12 col-sm-6 milestone-left">
                     <div class="milestone-tooltip">
                         <h3 class="title">@lang('roadmap.title_future')</h3>
