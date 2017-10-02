@@ -29,13 +29,14 @@
                         <a href="https://sg.news.yahoo.com/blockchain-tech-disrupt-education-more-ways-expect-003022725.html" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/yahoo.png') }}" alt="As seen on Yahoo News"></a>
                     </div>
                     <div class="col-xs-6 col-sm-3 text-center">
+                        <a href="https://www.coinspeaker.com/2017/09/29/bitdegree-challenges-coursera-hackerranks-phenomenon-gearing-blockchain/" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/coinspeaker.png') }}" alt="As seen on BitcoinPRbuzz"></a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 text-center">
                         <a href="http://www.finanzen.ch/nachrichten/aktien/BitDegree-Challenges-Coursera-and-HackerRanks-Phenomenon-by-Gearing-Up-With-Blockchain-1002908591" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/finanzen.png') }}" alt="As seen on Finanzen.ch"></a>
                     </div>
                     <div class="col-xs-6 col-sm-3 text-center">
                         <a href="http://markets.businessinsider.com/news/stocks/BitDegree-Challenges-Coursera-and-HackerRank-s-Phenomenon-by-Gearing-Up-With-Blockchain-1002908591" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/markets-insider.png') }}" alt="As seen on Markets Insider"></a>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 text-center">
-                        <a href="http://bitcoinprbuzz.com/bitdegree-challenges-coursera-hackerranks-phenomenon-gearing-blockchain/" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/bitcoinprbuzz.png') }}" alt="As seen on BitcoinPRbuzz"></a>
                     </div>
                 </div>
                 <div class="row">
@@ -53,6 +54,9 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-xs-6 col-sm-3 text-center">
+                        <a href="http://bitcoinprbuzz.com/bitdegree-challenges-coursera-hackerranks-phenomenon-gearing-blockchain/" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/bitcoinprbuzz.png') }}" alt="As seen on BitcoinPRbuzz"></a>
+                    </div>
                     <div class="col-xs-6 col-sm-3 text-center">
                         <a href="https://channels.theinnovationenterprise.com/articles/blockchain" rel="nofollow" target="_blank"><img src="{{ asset('trust-logos/innovation-enterprise.png') }}" alt="As seen on Innovation Enterprise"></a>
                     </div>
