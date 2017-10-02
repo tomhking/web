@@ -1,3 +1,20 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  min-height: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFF;
+  color: #062033;
+  position: relative;
+}
+
+
 p, ol, ul {
   b, strong {
     font-weight: 600;
@@ -95,23 +112,6 @@ p, ol, ul {
     }
   }
 }
-
-body, html {
-  height: 100%;
-  width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-body {
-  min-height: 100%;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #FFF;
-  color: #062033;
-  position: relative;
-}
-
 img {
   max-width: 100%;
 }
