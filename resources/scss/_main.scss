@@ -1,18 +1,4 @@
-/*FINAL*/
-
-p {
-  b, strong {
-    font-weight: 600;
-  }
-}
-
-ol {
-  b, strong {
-    font-weight: 600;
-  }
-}
-
-ul {
+p, ol, ul {
   b, strong {
     font-weight: 600;
   }
@@ -236,6 +222,9 @@ div#testimonials {
 
 .trust {
   padding-bottom: 80px;
+  .row-logos{
+    margin-bottom:35px;
+  }
   h2.title, h3.title {
     margin-bottom: 60px;
   }
@@ -489,8 +478,7 @@ form .notice {
   }
   div#what-are-we {
     padding-bottom: 40px;
-  }
-  div#what-are-we {
+    padding-top: 160px;
     &::before {
       content: " ";
       height: 105px;
@@ -514,62 +502,12 @@ form .notice {
       top: 105px;
       left: 50%;
     }
-    padding-top: 160px;
-  }
-  h2.title {
-    /*margin-bottom: 70px;*/
   }
   form .notice {
     position: absolute;
   }
   .fixed-scroll-xs {
     overflow: inherit;
-  }
-}
-
-.icon {
-  &.icon-decentraland {
-    width: 52px;
-    height: 52px;
-    background-position: 0 0;
-  }
-  &.icon-close {
-    width: 16px;
-    height: 16px;
-    background-position: -72px -15px;
-  }
-  &.icon-hamburger {
-    width: 21px;
-    height: 14px;
-    background-position: -108px -16px;
-  }
-  &.icon-arrow {
-    width: 12px;
-    height: 11px;
-    background-position: -269px -18px;
-  }
-  &.icon-arrow-green {
-    width: 13px;
-    height: 12px;
-    background-position: -330px -16px;
-  }
-}
-
-.card-icon {
-  &.card-icon-virtual-world {
-    width: 81px;
-    height: 69px;
-    background-position: 0 0;
-  }
-  &.card-icon-control {
-    width: 81px;
-    height: 62px;
-    background-position: -97px 0;
-  }
-  &.card-icon-blockchain {
-    width: 91px;
-    height: 62px;
-    background-position: -194px 0;
   }
 }
 
