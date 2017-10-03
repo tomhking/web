@@ -1,4 +1,4 @@
-<div id="section-five" class="how-it-works mvp main light-violet-bkg">
+<div id="mvp" class="how-it-works mvp main light-violet-bkg">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-xs-12 col-md-10 col-md-push-1 text-center">

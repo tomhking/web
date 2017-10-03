@@ -11,12 +11,12 @@
             <ul class="nav nav-list affix">
                 <li><a href="#top">@lang('navigation.top')</a></li>
                 <li><a href="#what-are-we">01. <span>@lang('navigation.what-it-is')</span></a></li>
-                <li><a href="#section-two">02. <span>@lang('navigation.users')</span></a></li>
+                <li><a href="#starting-point">02. <span>@lang('navigation.users')</span></a></li>
                 <li><a href="#why-us">03. <span>@lang('navigation.problems')</span></a></li>
                 <li><a href="#statistics">04. <span>@lang('navigation.moocs')</span></a></li>
-                <li><a href="#section-five">05. <span>@lang('navigation.perspective')</span></a></li>
-                <li><a href="#statistics-2">06. <span>@lang('navigation.demand')</span></a></li>
-                <li><a href="#section-seven">07. <span>@lang('navigation.economy')</span></a></li>
+                <li><a href="#mvp">05. <span>@lang('navigation.perspective')</span></a></li>
+                <li><a href="#demand-forecast">06. <span>@lang('navigation.demand')</span></a></li>
+                <li><a href="#token-economy">07. <span>@lang('navigation.economy')</span></a></li>
                 <li><a href="#team">08. <span>@lang('navigation.team')</span></a></li>
                 <li><a href="#roadmap">09. <span>@lang('navigation.roadmap')</span></a></li>
             </ul>
@@ -40,7 +40,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route_lang('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
                         <li><a href="{{ route_lang('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
-                        <li class="narrow"><a href="{{ route_lang('home') }}#section-five" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
+                        <li class="narrow"><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                         <li class="narrow"><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank">@lang('navigation.bitcointalk')</a></li>
                         <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                         <!--<li><a href="#token-sale-terms" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.ico')</a></li>-->

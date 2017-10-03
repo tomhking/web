@@ -1,4 +1,4 @@
-<div id="section-two" class="partners main light-violet-bkg">
+<div id="starting-point" class="partners main light-violet-bkg">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
