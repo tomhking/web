@@ -13,7 +13,13 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="image-container text-center">
-                    <img src="{{ asset('jobs-graph.jpg') }}" alt="@lang('home.demand_image_alt')">
+                    @if($currentLanguage == "cn")
+                        <img src="{{ asset('jobs-graph-cn.jpg') }}" alt="@lang('home.demand_image_alt')">
+                    @elseif($currentLanguage == "ru")
+                        <img src="{{ asset('jobs-graph-ru.jpg') }}" alt="@lang('home.demand_image_alt')">
+                    @else
+                        <img src="{{ asset('jobs-graph.jpg') }}" alt="@lang('home.demand_image_alt')">
+                    @endif
                 </div>
             </div>
 
