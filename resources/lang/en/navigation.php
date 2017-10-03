@@ -4,6 +4,7 @@ return [
     'what-is' => 'What is BitDegree',
     'people' => 'People Behind',
     'mvp' => 'MVP',
+    'bitcointalk' => 'Bounty',
     'one-pager' => 'One Pager',
     'white-paper' => 'White-paper',
     'ico' => 'ICO &amp; Roadmap',

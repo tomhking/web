@@ -6,6 +6,7 @@ return array (
   'meta_keywords' => 'ICO, initial coin offerings, bitdegree, ethereum, 比特币, token, tokens, 区块链, 学习, 奖学金, 免费教育',
   'header_title' => '用区块链来革新教育',
   'header_subtitle' => '世界上第一个由区块链驱动的在线教育平台，同时提供奖学金和科技人才收购。',
+  'trust_title' => '媒体报道',
   'incentives' => '智慧的激励',
   'moocs' => '世界上最好的慕课',
   'ethereum' => '由Ethereum强力驱动',
