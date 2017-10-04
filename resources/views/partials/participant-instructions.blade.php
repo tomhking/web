@@ -43,11 +43,19 @@
                                 <li>Paste the crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the destination</li>
                                 <li>Enter the amount that you want to invest</li>
                                 <li>Make sure Ether is selected as the currency</li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/mist/participate-1.png') }}"></div>
+                            <ol start="6">
                                 <li>Scroll down and select the fee. The higher the fee, the less time it will take for the transaction to get mined.</li>
                                 <li>Click on <strong>Send</strong></li>
-                                <li>Under <strong>Provide maximum fee</strong> enter <strong>200000</strong></li>
-                                <li>Review if everything is correct, type in your password and click on <strong>Send Transaction</strong></li>
                             </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/mist/participate-2.png') }}"></div>
+                            <ol start="8">
+                                <li>Under <strong>Provide maximum fee</strong> enter <strong>200000</strong></li>
+                                <li>Type in your password</li>
+                                <li>Click on <strong>Send Transaction</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/mist/participate-3.png') }}"></div>
                         </div>
                     </div>
                 </div>
@@ -73,12 +81,19 @@
                                 <li>Open MetaMask by clicking on its logo that is located on the right of your address bar</li>
                                 <li>Choose the account from which you want to make an investment</li>
                                 <li>Click on <strong>Send</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/metamask/participate-1.png') }}"></div>
+                            <ol start="4">
                                 <li>Put BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>Recipient</strong></li>
                                 <li>Enter the amount of Ether that you would like to invest</li>
                                 <li>Click on <strong>Next</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/metamask/participate-2.png') }}"></div>
+                            <ol start="7">
                                 <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
                                 <li>Review if everything is correct and click on <strong>Submit</strong></li>
                             </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/metamask/participate-3.png') }}"></div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +117,11 @@
                             <ol>
                                 <li>Go to <a href="https://myetherwallet.com/" target="_blank" rel="nofollow noopener">myetherwallet.com</a></li>
                                 <li>Make sure the URL is correct and <strong>MYETHERWALLET LLC [US]</strong> certificate is there</li>
-                                <li>Authenticate your wallet and click on <strong>Send Ether & Tokens</strong></li>
+                                <li>Click on <strong>Send Ether & Tokens</strong></li>
+                                <li>Authenticate your wallet</li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/myetherwallet/participate-1.png') }}"></div>
+                            <ol start="5">
                                 <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif into <strong>To Address</strong> field</li>
                                 <li>Enter the amount of ether that you would like to invest into <strong>Amount to Send</strong> field</li>
                                 <li>Make sure <strong>ETH</strong> is selected as the currency</li>
@@ -111,6 +130,7 @@
                                 <li>Confirm by clicking on <strong>Send Transaction</strong></li>
                                 <!--li>Click on <strong>Yes, I am sure! Make transaction</strong></li-->
                             </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/myetherwallet/participate-2.png') }}"></div>
                         </div>
                     </div>
                 </div>
@@ -136,14 +156,26 @@
                                 <li>Open Parity</li>
                                 <li>Click on <strong>Accounts</strong> tab at the top of the screen</li>
                                 <li>Click on an account from which you would like to make the investment</li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/parity/participate-1.png') }}"></div>
+                            <ol start="4">
                                 <li>Click on <strong>Transfer</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/parity/participate-2.png') }}"></div>
+                            <ol start="5">
                                 <li>Make sure <strong>Ethereum</strong> is selected as the token type</li>
                                 <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>recipient address</strong></li>
                                 <li>Enter the <strong>amount to transfer</strong></li>
                                 <li>Check the <strong>advanced sending options</strong> checkbox</li>
                                 <li>Click on <strong>Next</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/parity/participate-3.png') }}"></div>
+                            <ol start="10">
                                 <li>For <strong>gas</strong> enter <strong>200000</strong></li>
                                 <li>Click on <strong>Send</strong></li>
+                            </ol>
+                            <div class="tutorial-img"><img src="{{ asset('tutorial/parity/participate-4.png') }}"></div>
+                            <ol start="12">
                                 <li>Enter your account password and click on <strong>Confirm Request</strong></li>
                             </ol>
                         </div>

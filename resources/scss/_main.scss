@@ -3325,6 +3325,19 @@ a.footer-logo img {
   max-width: 160px;
 }
 
+.tutorial-img{
+  border:1px solid #e6e6e6;
+  margin:1em 2em;
+  padding:5px;
+  background:#eee;
+  display:inline-block;
+  overflow: hidden;
+  height:auto;
+  img{
+    border:1px solid #e6e6e6;
+  }
+}
+
 .footer {
   .nav.navbar-nav, .navbar-container {
     float: none;
