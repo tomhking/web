@@ -10,8 +10,11 @@
 
         <div class="main container-fluid ico-info">
             <div class="container">
-                <div class="row">
-                    <p class="text-right">
+                @if($icoEnd->isFuture() && $raisedEth < $hardCapEth)
+                    @include('partials.participant-instructions')
+                @endif
+                <div class="row token-calculator-btn">
+                    <p class="text-center">
                         <a class="btn btn-default" data-toggle="collapse" href="#token-calculator">Token Calculator</a>
                     </p>
                 </div>
@@ -29,10 +32,6 @@
                         <input type="number" id="amt-supply">
                     </div>
                 </div>
-
-                @if($icoEnd->isFuture() && $raisedEth < $hardCapEth)
-                    @include('partials.participant-instructions')
-                @endif
             </div>
         </div>
     </div>
