@@ -1017,6 +1017,31 @@ h2.current-amount {
   position:relative;
 }
 
+.row.token-calculator-btn a {
+  font-size: 18px;
+  font-family: "Work Sans",sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin: 25px 0;
+  padding: 8px 15px;
+  border: 1px solid #333;
+}
+
+div#token-calculator {
+  h3 {
+    font-weight: 600;
+  }
+  input {
+    height: 42px;
+    padding: 6px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    width: 90%;
+  }
+}
+
 /*ICO Page*/
 
 button.navbar-toggle {
