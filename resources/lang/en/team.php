@@ -10,7 +10,7 @@ return [
     'position_business_assistant' => 'Business Assistant',
     'position_marketing_assistant' => 'Marketing Assistant',
     'position_designer' => 'Product Designer',
-    'position_enterpreneur' => 'Crypto-economy focused entrepreneur,',
+    'position_enterpreneur' => 'Crypto-economy focused entrepreneur',
     'position_co_founder' => 'Co-founder in advisory capacity',
     'position_ceo_hostinger' => 'CEO - Hostinger',
     'position_advisor_1' => 'Serial Entrepreneur and',
