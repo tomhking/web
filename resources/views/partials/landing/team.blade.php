@@ -207,6 +207,44 @@
 
             </div>
 
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                    <div class="team-member">
+                        <div class="team-member-data">
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                    <div class="team-member">
+                        <div class="team-member-image-holder">
+                            <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
+
+                        </div>
+                        <div class="team-member-data">
+                            <h3 class="title">Oleg <b>Belousov</b></h3>
+                            <p>@lang('team.position_enterpreneur')</p>
+                            <div class="handles">
+                                <a href="https://www.linkedin.com/in/oleg-belousov-b4112145/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="team-member-desc">
+                                <p>@lang('team.description_enterpreneur')</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
 
         </div>
 
@@ -218,7 +256,7 @@
             </div>
         </div>
 
-        <div id="js-advisory-board" class="row team-members">
+        <div class="row team-members">
 
             <div class="col-xs-12 col-sm-4 wow fadeIn">
                 <div class="team-member">
