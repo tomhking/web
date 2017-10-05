@@ -16,6 +16,7 @@
 @endsection
 
 @section('footer')
+    @include('partials.chat')
     <script type="text/javascript">
         $(function () {
             $('#sidebar').on('activate.bs.scrollspy', function (event) {

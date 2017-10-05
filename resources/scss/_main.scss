@@ -159,11 +159,11 @@ a {
 }
 
 div#demand-forecast {
+  padding-bottom: 25px;
   hr {
     margin-top: 65px;
     margin-bottom: 0;
   }
-  padding-bottom: 25px;
 }
 
 .how-it-works.mvp {
@@ -1043,6 +1043,70 @@ div#token-calculator {
 }
 
 /*ICO Page*/
+
+.chat-container {
+  position: fixed;
+  right: 3px;
+  bottom: 3px;
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  z-index:999999;
+  .chat-link {
+    z-index: 99999999999;
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    a{
+      text-decoration:none;
+    }
+    i {
+      font-size: 36px;
+      color: #fff;
+    }
+    h4{
+      font-family: "Work Sans", sans-serif;
+      font-weight: 300;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      font-size:14px;
+      color:#fff;
+    }
+  }
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background: #2f2f2f;
+    position: absolute;
+    top: 0;
+  }
+  .hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #2f2f2f;
+  }
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #2f2f2f;
+  }
+}
+
+.footer{
+  background:red;
+}
 
 button.navbar-toggle {
   font-size: 30px;
@@ -3351,19 +3415,6 @@ p.subtitle {
 
 a.footer-logo img {
   max-width: 160px;
-}
-
-.tutorial-img{
-  border:1px solid #e6e6e6;
-  margin:1em 2em;
-  padding:5px;
-  background:#eee;
-  display:inline-block;
-  overflow: hidden;
-  height:auto;
-  img{
-    border:1px solid #e6e6e6;
-  }
 }
 
 .footer {
