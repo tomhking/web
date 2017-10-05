@@ -1,7 +1,7 @@
 <div class="ico-progress">
     <div class="container">
         <div class="row">
-            <div class="col-md-12" data-time-left="{{ $timeLeft }}">
+            <div class="col-md-12">
                 @if($icoStart->isFuture())
                     <div class="container">
                         <div class="row">
@@ -10,16 +10,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="countdown">
-                        <div class="time-amount">
-                            <span class="time-left-days">0</span>
-                            <span class="time-value">days</span>
-                        </div>
-                        <div class="time-amount">
-                            <span class="time-left-hours">00</span>
-                            <span class="time-value">hours</span>
-                        </div>:<div class="time-amount"><span class="time-left-minutes">00</span><span class="time-value">minutes</span></div>:<div class="time-amount"><span class="time-left-seconds">00</span><span class="time-value">seconds</span></div>
-                    </div>
+                    @include('partials.countdown', ['timeLeft' => $icoStart->diffInSeconds(\Carbon\Carbon::now())])
                 @elseif($icoEnd->isFuture() && $raisedEth < $hardCapEth)
                     <!-- ICO is in progress -->
                     <div class="container">
@@ -29,6 +20,7 @@
                             </div>
                         </div>
                     </div>
+                    @include('partials.countdown', ['timeLeft' => $icoEnd->diffInSeconds(\Carbon\Carbon::now())])
                 @else
                     <!-- ICO is over -->
                     <div class="container">

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use GeoIp2\Database\Reader;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,6 +15,31 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Trust CloudFare IP ranges - https://www.cloudflare.com/ips/
+        \Symfony\Component\HttpFoundation\Request::setTrustedProxies([
+            '103.21.244.0/22',
+            '103.22.200.0/22',
+            '103.31.4.0/22',
+            '104.16.0.0/12',
+            '108.162.192.0/18',
+            '131.0.72.0/22',
+            '141.101.64.0/18',
+            '162.158.0.0/15',
+            '172.64.0.0/13',
+            '173.245.48.0/20',
+            '188.114.96.0/20',
+            '190.93.240.0/20',
+            '197.234.240.0/22',
+            '198.41.128.0/1',
+            '2400:cb00::/32',
+            '2405:8100::/32',
+            '2405:b500::/32',
+            '2606:4700::/32',
+            '2803:f800::/32',
+            '2c0f:f248::/32',
+            '2a06:98c0::/29',
+        ]);
+
         Validator::extend('validCountry', function ($attribute, $value, $parameters) {
             $countries = app()->make('countries');
             return isset($countries[$value]);
@@ -27,6 +53,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton('geoip', function() {
+            return new Reader(resource_path('geoip.mmdb'));
+        });
+
         $this->app->singleton('countries', function(){
             return json_decode(file_get_contents(base_path('vendor/umpirsky/country-list/data/en_US/country.json')), true);
         });

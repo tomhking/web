@@ -35,7 +35,6 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         $icoDataAvailable = (bool) env('ICO_INFO_AVAILABLE', false);
 
         $showAddress = $icoDataAvailable && !!$request->cookie('participant', false);
-        $timeLeft = $icoStart->isPast() ? 0 : $icoStart->diffInSeconds(\Carbon\Carbon::now());
 
         $raisedDecimals = 4;
         $raised = Cache::get('ico_balance', ['balance' => 0])['balance'] ?? 0;
@@ -51,9 +50,50 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         $totalSupply = env('TOKEN_SUPPLY');
 
         $countries = app()->make('countries');
+        $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP'];
+        $currentCountry = false;
+
+        try {
+            $result = app()->make('geoip')->country($request->ip());
+
+            if($result instanceof \GeoIp2\Model\Country) {
+                $currentCountry = $result->country->isoCode;
+            }
+        }catch (\GeoIp2\Exception\AddressNotFoundException $e) {
+            //
+        }
+
+
+        if($request->get('key') == env('ICO_PREVIEW_KEY') && $request->has('mock')) {
+            switch ($request->get('mock')) {
+                case "pre_ico_addr_unavailable":
+                case "pre_ico_addr_available":
+                    $icoStart = \Carbon\Carbon::today()->addDay();
+                    $icoEnd = $icoStart->copy()->addDay();
+                    $icoDataAvailable = $request->get('mock') == 'pre_ico_addr_available';
+                    break;
+                case "ico_started_pre_softcap":
+                case "ico_started_pre_hardcap":
+                    $icoStart = \Carbon\Carbon::today()->subDay();
+                    $icoEnd = \Carbon\Carbon::today()->addDays(2);
+                    $raisedEth = ($request->get('mock') == "ico_started_pre_softcap" ? $softCapEth : $hardCapEth) / 2;
+                    $icoDataAvailable = true;
+                    break;
+                case "ico_ended_pre_softcap":
+                case "ico_ended_pre_hardcap":
+                case "ico_ended_hardcap":
+                    $icoStart = \Carbon\Carbon::today()->subDay();
+                    $icoEnd = \Carbon\Carbon::today();
+                    $raisedEth = ($request->get('mock') == "ico_ended_pre_softcap" ? $softCapEth : $hardCapEth) / 2;
+                    $raisedEth = $request->get('mock') == "ico_ended_hardcap" ? $hardCapEth : $raisedEth;
+                    break;
+            }
+
+            $showAddress = $icoDataAvailable && $request->has('participant');
+            $progress = $raisedEth / $hardCapEth * 100;
+        }
 
         return view('pages.ico', compact(
-            'timeLeft',
             'icoStart',
             'icoEnd',
             'raised',
@@ -63,6 +103,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
             'raisedEth',
             'showAddress',
             'countries',
+            'currentCountry',
+            'blacklistedCountries',
             'raisedDecimals',
             'progress',
             'icoDataAvailable',
