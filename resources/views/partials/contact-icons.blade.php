@@ -1,6 +1,6 @@
 <div class="contact-icons">
     <a class="contact-icon" href="https://twitter.com/bitdegree_org" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a class="contact-icon" href="https://slack.bitdegree.org" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+    <a class="contact-icon" href="https://chat.bitdegree.org/" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
     <a class="contact-icon" href="https://github.com/bitdegree" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
     <a class="contact-icon" href="https://www.reddit.com/r/bitdegree" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
     <a class="contact-icon" href="https://www.facebook.com/bitdegree.org/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
