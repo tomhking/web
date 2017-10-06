@@ -50,7 +50,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         $totalSupply = env('TOKEN_SUPPLY');
 
         $countries = app()->make('countries');
-        $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP'];
+        $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP', 'CN'];
         $currentCountry = false;
 
         try {
