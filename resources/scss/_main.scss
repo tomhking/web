@@ -179,6 +179,13 @@ div#demand-forecast {
   }
 }
 
+.ico-data-unavailable, .address-visible {
+  [data-crowdsale-address] {
+    color: #000;
+    cursor: auto;
+  }
+}
+
 a.cta-btn:hover {
   background-color: #c02b3f;
   box-shadow: 0 8px 30px rgba(215, 48, 48, 0.5);
@@ -3406,6 +3413,19 @@ p.subtitle {
 
 a.footer-logo img {
   max-width: 160px;
+}
+
+.tutorial-img{
+  border:1px solid #e6e6e6;
+  margin:1em 2em;
+  padding:5px;
+  background:#eee;
+  display:inline-block;
+  overflow: hidden;
+  height:auto;
+  img{
+    border:1px solid #e6e6e6;
+  }
 }
 
 .footer {

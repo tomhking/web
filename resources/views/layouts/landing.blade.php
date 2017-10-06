@@ -50,7 +50,7 @@
     @include('partials.landing.header')
     @yield('content')
     @include('partials.landing.footer')
-    @yield('footer')
+    @stack('body_scripts')
 
 </body>
 
