@@ -36,9 +36,6 @@
         </div>
     </div>
 
-@endsection
-
-@section('footer')
     <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -120,10 +117,11 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group validation-wallet">
-                                    <label for="input-wallet">Wallet Address</label>
+                                    <label for="input-wallet">Ethereum Wallet Address</label>
                                     <input type="text" class="form-control" id="input-wallet" name="wallet">
                                     <span class="text-danger validation-error"></span>
                                 </div>
+                                <div class="well well-sm">Please make sure to enter a valid ERC20 compatible Ethereum address to receive your tokens. Do not use any exchange address!</div>
                             </div>
                         </div>
                         <button class="btn btn-primary">Participate in BitDegree ICO</button>
@@ -133,6 +131,9 @@
         </div>
     </div>
 
+@endsection
+
+@push('body_scripts')
     <script type="text/javascript" src="{{ asset('big.min.js') }}"></script>
     <script type="text/javascript">
         $(function () {
@@ -251,4 +252,4 @@
             }
         });
     </script>
-@endsection
+@endpush

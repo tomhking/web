@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<div class="panel-group ico-tutorials" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group ico-tutorials address-{{ $showAddress ? "visible" : "hidden" }} ico-data-{{ $icoDataAvailable ? "available" : "unavailable" }}" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
 
@@ -40,7 +40,7 @@
                             <ol>
                                 <li>Open Mist and click on <strong>Send</strong> tab at the top</li>
                                 <li>Select the account from which you want to transfer funds</li>
-                                <li>Paste the crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the destination</li>
+                                <li>Paste the <a data-crowdsale-address>BitDegree Crowdsale address</a> @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the destination</li>
                                 <li>Enter the amount that you want to invest</li>
                                 <li>Make sure Ether is selected as the currency</li>
                             </ol>
@@ -84,7 +84,7 @@
                             </ol>
                             <div class="tutorial-img"><img src="{{ asset('tutorial/metamask/participate-1.png') }}"></div>
                             <ol start="4">
-                                <li>Put BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>Recipient</strong></li>
+                                <li>Put <a data-crowdsale-address>BitDegree Crowdsale address</a> @if($showAddress)<code>{{ $icoAddress }}</code>@endif as the <strong>Recipient</strong></li>
                                 <li>Enter the amount of Ether that you would like to invest</li>
                                 <li>Click on <strong>Next</strong></li>
                             </ol>
@@ -122,7 +122,7 @@
                             </ol>
                             <div class="tutorial-img"><img src="{{ asset('tutorial/myetherwallet/participate-1.png') }}"></div>
                             <ol start="5">
-                                <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif into <strong>To Address</strong> field</li>
+                                <li>Enter <a data-crowdsale-address>BitDegree Crowdsale address</a> @if($showAddress)<code>{{ $icoAddress }}</code> @endif into <strong>To Address</strong> field</li>
                                 <li>Enter the amount of ether that you would like to invest into <strong>Amount to Send</strong> field</li>
                                 <li>Make sure <strong>ETH</strong> is selected as the currency</li>
                                 <li>Enter <strong>200000</strong> for <strong>Gas Limit</strong></li>
@@ -164,7 +164,7 @@
                             <div class="tutorial-img"><img src="{{ asset('tutorial/parity/participate-2.png') }}"></div>
                             <ol start="5">
                                 <li>Make sure <strong>Ethereum</strong> is selected as the token type</li>
-                                <li>Enter BitDegree Crowdsale address @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>recipient address</strong></li>
+                                <li>Enter <a data-crowdsale-address>BitDegree Crowdsale address</a> @if($showAddress)<code>{{ $icoAddress }}</code> @endif as the <strong>recipient address</strong></li>
                                 <li>Enter the <strong>amount to transfer</strong></li>
                                 <li>Check the <strong>advanced sending options</strong> checkbox</li>
                                 <li>Click on <strong>Next</strong></li>
@@ -185,3 +185,16 @@
         </div>
     </div>
 </div>
+
+
+@push('body_scripts')
+    @if($icoDataAvailable && !$showAddress)
+        <script type="text/javascript">
+            $(function () {
+                $('[data-crowdsale-address]').click(function () {
+                    $('#signup-modal').modal('show');
+                });
+            });
+        </script>
+    @endif
+@endpush
