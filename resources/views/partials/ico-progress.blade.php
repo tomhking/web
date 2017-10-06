@@ -39,7 +39,9 @@
                     @endif
                 @endif
 
-                <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Currently raised" : "Raised" }}: <b> {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH </b></h2>
+                @if($icoDataAvailable)
+                    <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Currently raised" : "Raised" }}: <b> {{ number_format($raisedEth, $raisedDecimals, ".", "") }} ETH </b></h2>
+                @endif
 
                 <div class="row">
                     <div class="col-md-12 text-center crowdsale-info">
@@ -81,7 +83,7 @@
                         <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCapEth, 0, ".", "") }} ETH</h3></div>
 
                     </div>
-                @endif
+                 @endif
             </div>
         </div>
     </div>
