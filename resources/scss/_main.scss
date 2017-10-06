@@ -2392,6 +2392,16 @@ h3.subtitle {
 }
 
 @media (max-width: 768px) {
+  .trust .row-logos {
+    margin-bottom: 0;
+    .col-xs-6.col-sm-3.text-center {
+      display: inline-block;
+      vertical-align: middle;
+      width: 48%;
+      float: none;
+      margin-bottom:25px;
+    }
+  }
   .team .team-member-image {
     width: 192px;
     float: none;
@@ -3037,6 +3047,15 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  .trust .row-logos {
+    margin-bottom: 0;
+    .col-xs-6.col-sm-3.text-center {
+      display: inline-block;
+      vertical-align: middle;
+      width: 48%;
+      float: none;
+    }
+  }
   body header {
     min-height: 80px!important;
   }
