@@ -14,10 +14,6 @@ body {
   position: relative;
 }
 
-.row{
-  width:100%;
-}
-
 p, ol, ul {
   b, strong {
     font-weight: 600;
@@ -2743,18 +2739,6 @@ h3.subtitle {
   }
 }
 
-.team {
-  padding-bottom: 30px;
-}
-
-div#team hr {
-  margin-bottom: 45px;
-}
-
-.team h2.title {
-  margin-bottom: 30px;
-}
-
 p.subtitle {
   font-size: 18px;
   line-height: 28px;
@@ -2765,6 +2749,16 @@ p.subtitle {
 }
 
 .team {
+  padding-bottom: 30px;
+  .row{
+    width:100%;
+  }
+  hr {
+    margin-bottom: 45px;
+  }
+  h2.title {
+    margin-bottom: 30px;
+  }
   .team-members {
     padding-top: 30px;
     display: flex;
@@ -2774,9 +2768,6 @@ p.subtitle {
     margin-bottom: 78px;
     overflow: hidden;
   }
-}
-
-.team {
   .team-member-data .team-member-desc {
     margin-top: 15px;
     margin-bottom: 15px;
