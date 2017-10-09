@@ -1,5 +1,5 @@
 <div id="statistics" class="main white-bkg">
-    <div class="container wow fadeIn">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <div class="title-container">

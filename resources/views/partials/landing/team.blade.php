@@ -10,7 +10,7 @@
 
             <div class="row team-members">
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder ">
 
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
@@ -53,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
@@ -78,7 +78,7 @@
 
             <div class="row team-members">
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/rio-asatiani.png') }}" alt="R.A.">
@@ -144,7 +144,7 @@
 
             <div class="row team-members">
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
@@ -208,7 +208,7 @@
 
             <div class="row team-members">
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-data">
 
@@ -219,7 +219,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 wow fadeIn">
+                <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
                             <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
@@ -256,7 +256,7 @@
 
         <div class="row team-members">
 
-            <div class="col-xs-12 col-sm-4 wow fadeIn">
+            <div class="col-xs-12 col-sm-4">
                 <div class="team-member">
                     <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/jeff-burton.png') }}" alt="Arnas Stuopelis">
@@ -277,7 +277,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 wow fadeIn">
+            <div class="col-xs-12 col-sm-4">
                 <div class="team-member">
                     <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
@@ -298,7 +298,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-12 col-sm-4 wow fadeIn">
+            <div class="col-xs-12 col-sm-4">
                 <div class="team-member">
                     <div class="team-member-image-holder">
                         <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">

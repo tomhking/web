@@ -1,5 +1,5 @@
 <div id="demand-forecast" class="main white-bkg">
-    <div class="container wow fadeIn">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
                 <div class="title-container">

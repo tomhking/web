@@ -19,7 +19,7 @@
                 @if($i % 3 == 0)
                     <div class="row cards">
                         @endif
-                        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.2s">
+                        <div class="col-xs-12 col-sm-4">
                             <div class="card left">
                                 <a href="{{ $course['url'] }}">
                                     <div class="badge"><span>{{ $course['isFree'] ?? false ? trans('courses.free') : trans('courses.new') }}</span></div>

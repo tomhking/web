@@ -1,5 +1,5 @@
 <div id="token-economy" class="how-it-works main">
-    <div class="container wow fadeIn">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="economy">

@@ -1,5 +1,5 @@
 <div id="what-are-we" class="main what-are-we white-bkg">
-    <div class="container wow fadeIn">
+    <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
                 <div class="title-container">

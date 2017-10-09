@@ -2902,20 +2902,41 @@ p.subtitle {
 }
 
 .partners {
-  .partner-logo {
-    text-align: center;
-  }
-  .partner-desc {
-    padding:0 15px;
-    h3 {
-      margin-top: 25px;
-      margin-bottom: 15px;
-      text-align: center !important;
-      color: #252525;
-      font-size: 18px;
-      line-height: 30px;
-      font-family: "Source Code Pro", monospace;
-      font-weight: 600;
+  .row.cards{
+    margin-top:25px;
+    .card{
+      padding:0 25px 25px 25px;
+      min-height:575px;
+      .partner-logo {
+        text-align: center;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: .7;
+        cursor: pointer;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &:hover{
+          -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+      .partner-desc {
+        padding:0 15px;
+        h3 {
+          margin-top: 25px;
+          margin-bottom: 15px;
+          text-align: center !important;
+          color: #252525;
+          font-size: 18px;
+          line-height: 30px;
+          font-family: "Source Code Pro", monospace;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
