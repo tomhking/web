@@ -1580,6 +1580,9 @@ header {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  &.bottom{
+    min-height: auto;
+  }
   h2 {
     font-size: 60px;
     margin-top: 0;

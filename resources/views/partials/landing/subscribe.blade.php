@@ -1,4 +1,4 @@
-<div class="main light-violet-bkg token-sale-terms communicate cta-block">
+<div class="main light-violet-bkg communicate cta-block">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
