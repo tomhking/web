@@ -1,15 +1,14 @@
 <div id="team" class="main team light-violet-bkg">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                <h2 class="title">@lang('team.title')</h2>
-                <p class="subtitle">@lang('team.subtitle')</p>
-            </div>
-        </div>
-
-        <div id="js-team-members" class="row team-members">
-
+        <div class="team-container">
             <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                    <h2 class="title">@lang('team.title')</h2>
+                    <p class="subtitle">@lang('team.subtitle')</p>
+                </div>
+            </div>
+
+            <div class="row team-members">
 
                 <div class="col-xs-12 col-sm-4 wow fadeIn">
                     <div class="team-member">
@@ -77,7 +76,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="row team-members">
 
                 <div class="col-xs-12 col-sm-4 wow fadeIn">
                     <div class="team-member">
@@ -143,7 +142,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="row team-members">
 
                 <div class="col-xs-12 col-sm-4 wow fadeIn">
                     <div class="team-member">
@@ -207,7 +206,7 @@
 
             </div>
 
-            <div class="row">
+            <div class="row team-members">
 
                 <div class="col-xs-12 col-sm-4 wow fadeIn">
                     <div class="team-member">
@@ -246,16 +245,14 @@
 
 
             </div>
-
         </div>
 
         <hr>
 
-        <div class="row" id="advisors">
+        <div id="advisors" class="advisors-container">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <h2 class="title">@lang('team.advisors')</h2>
             </div>
-        </div>
 
         <div class="row team-members">
 
@@ -322,6 +319,7 @@
                 </div>
             </div>
 
+        </div>
         </div>
 
     </div>

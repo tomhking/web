@@ -43,7 +43,7 @@ return [
     'economy_image_alt' => 'Learn to code',
     'economy_title' => 'BitDegree Token economy',
     'economy_subtitle' => 'BitDegree will revolutionize education by creating a new token that can be exchanged among the users of the platform: Students, Sponsors, and third parties.',
-    'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising',
+    'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising.',
     'economy_point_2' => '<b>02.</b> BitDegree tokens can be used for creating <strong>smart-incentives as scholarships</strong> for students’ educational accomplishments, which can be used for getting various digital services offered by third parties on their platforms in exchange for tokens.',
     'economy_point_3' => '<b>03.</b> Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
 ];
