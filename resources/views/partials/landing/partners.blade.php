@@ -29,7 +29,8 @@
                              <a href="https://preply.com/" rel="nofollow" target="_blank"><img src="{{ asset('partners/tokenlot.png') }}" alt="Our partners Tokenlot"></a>
                         </div>
                         <div class="partner-desc">
-                            <p>TokenLot offers access to more ICO’s than any other service. Their simple to use, intuitive, and streamlined service removes the hassle of complicated account and wallet creation. By giving you the option to buy all upcoming ICO’s either presale or postsale, you have the power to diversify your holdings and guarantee your place in line for all the hottest ICOs.</p>
+                            <p>TokenLot in an ICO superstore which offers access to more ICO’s than any other service. Their service is intuitive and easy to use.</p>
+                            <p>TokenLot removes the hassle of complicated account and wallet creation and allows users to buy all upcoming ICO’s either presale or postsale with any digital currency using Shapeshift. </p>
                         </div>
                     </div>
                 </div>
