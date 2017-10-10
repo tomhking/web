@@ -161,7 +161,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         return view('pages.faq');
     }]);
 
-    $router->get('/token/course/{course}', ['as' => 'course', function ($course) {
+    $router->get('/course/{course}', ['as' => 'course', function ($course) {
         return view('pages.courses.'.$course, compact('courses'));
     }]);
 });
