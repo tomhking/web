@@ -11,6 +11,13 @@ class LanguageMiddleware
         'en' => 'EN',
         'cn' => 'CN',
         'ru' => 'RU',
+        'lv' => 'LV',
+        'ro' => 'RO',
+        'tr' => 'TR',
+        'fr' => 'FR',
+        'vn' => 'VN',
+        'es' => 'ES',
+        'id' => 'ID',
     ];
 
     /**
@@ -27,6 +34,8 @@ class LanguageMiddleware
         if (!isset($this->supportedLanguages[$language])) {
             abort(404);
         }
+
+        ksort($this->supportedLanguages);
 
         view()->share([
             'languages' => $this->supportedLanguages,

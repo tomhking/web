@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'title_web_fundamentals' => 'Web Geliştirme Teorisi',
+  'title_coding_fundamentals' => 'Kodlama Temelleri',
+  'title_deep_learning' => 'Derin Öğrenme (Deep Learning)',
+  'title_react' => 'React',
+  'title_vr_development' => 'VR Geliştirme',
+  'title_ai_development' => 'AI Geliştirme',
+  'title_robotics' => 'Robotik',
+  'title_neuro_marketing' => 'Nöro Pazarlama',
+  'title_digital_graphics' => 'Dijital Grafik Tasarım',
+  'title_build_website' => 'Sıfırdan site kur',
+  'title_building_apps' => 'Andorid Uygulama Geliştirme',
+  'title_game_development' => '2D Oyun Geliştirme',
+  'title_blockchain_basics' => 'Blockchain temelleri',
+  'title_crypto_intro' => 'Kripto ve kripto para birimlerine giriş',
+  'title_ethereum_basics' => 'Ethereum Temelleri',
+  'title_smart_contracts' => 'Akıllı sözleşme geliştirme & Sağlamlık',
+  'title_ethereum_development' => 'Ethereum Geliştirme: Truffle ve Open Zeppelin',
+  'title' => 'BitDegree hangi problemleri çözüyor?',
+  'subtitle' => 'Hostinger ve 000webhost\'un mevcut sadık, web tutkulu, öğrenen ve yeniliğe açık uluslararası sağlam bulunan 29 milyonluk kullanıcısıyla BitDegree\'yi kuruyoruz. Hostinger\'daki görüşümüz Dünya\'nın her yerinden insanların internetin gücünü serbest bırakmaklarını sağlamak ve onlara öğrenmek, oluşturmak & geliştirmek için gücü vermektir.',
+  'free' => 'ÜCRETSİZ',
+  'new' => 'YENİ',
+  'coming_soon' => 'Yakında',
+  'enrollment_date' => 'Kayıt tarihi',
+  'lesson_number' => 'Ders :number',
+);
