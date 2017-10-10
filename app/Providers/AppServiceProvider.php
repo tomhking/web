@@ -73,8 +73,8 @@ class AppServiceProvider extends ServiceProvider
                     'isFree' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'coding-fundamentals']),
-                    'key' => 'coding-fundamentals',
+                    'url' => route_lang('course', ['course' => 'full-stack-web-developer']),
+                    'key' => 'full-stack-web-developer',
                     'image' => asset('coding-fundamentals.png'),
                     'overlay' => 'blue',
                     'title' => trans('courses.title_coding_fundamentals'),
