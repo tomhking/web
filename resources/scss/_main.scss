@@ -473,16 +473,15 @@ form .notice {
   }
 }
 
-.contact-icon {
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
-  color: rgba(255,255,255,.6);
-  font-size: 26px;
-}
-
 .contact-icons {
-  margin-top: 25px;
+  margin-top: 45px;
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    color: rgba(255,255,255,.6);
+    font-size: 30px;
+  }
 }
 
 .contact-icons.buttons {
