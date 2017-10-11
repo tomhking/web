@@ -3042,8 +3042,18 @@ p.subtitle {
   }
 }
 
-.team .row.reg.team-members .team-member-image-holder img {
-  width: 200px;
+.team .row.reg.team-members {
+  .team-member-image-holder img {
+    width: 200px;
+  }
+  .team-member-data h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .team-member-data p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .partners {
