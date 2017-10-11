@@ -164,4 +164,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/course/{course}', ['as' => 'course', function ($course) {
         return view('pages.courses.'.$course, compact('courses'));
     }]);
+
+    $router->get('/landing/course/web-developer', ['as' => 'web-developer', function () {
+        return view('pages.courses.web-developer-landing');
+    }]);
 });
