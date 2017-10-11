@@ -43,54 +43,12 @@
 </head>
 
 <body class="landing {{ $bodyClass or 'front-page' }}" data-spy="scroll" data-target="#sidebar" data-offset="150">
-    @include('partials.tag-manager-body')
+@include('partials.tag-manager-body')
 
-    <div id="top"></div>
-
-    @include('partials.landing.header')
-
-    @include('partials.tag-manager-body')
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-content">
-
-                <div class="col-xs-12 col-sm-12 col-md-12  video-wrapper">
-                    <div class="content front-content" id="content">
-                        <div class="video-container">
-                            <div class="container-fluid communicate">
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                                        <h6>BitDegree Program</h6>
-                                        @yield('courseHeader')
-                                    </div>
-                                    @include('partials.sign-up-for-course')
-                                </div>
-                            </div>
-
-                            <div class="contain-video">
-                                <div class="course-video">
-                                    <div class="course-video-overlay"></div>
-                                    <video  id="bgvid" poster="{{ asset('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
-                                        <source src="{{ asset('bitdegree_bg.mp4') }}" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    @yield('content')
-    @include('partials.landing.footer')
-    @stack('body_scripts')
-
+@include('partials.landing.header')
+@yield('content')
+@include('partials.landing.footer')
+@stack('body_scripts')
 </body>
 
 </html>

@@ -880,7 +880,6 @@ body.landing.degree-list header {
 .course-landing{
   .video-wrapper {
     padding: 0;
-    margin-top:35px;
     margin-bottom:35px;
     .video-container{
       position:relative;
@@ -888,7 +887,7 @@ body.landing.degree-list header {
         font-family: 'Work Sans', sans-serif;
         text-transform: inherit;
         font-weight: 100;
-        font-size: 64px;
+        font-size: 58px;
         line-height: 70px;
         color: #fff;
         margin: 35px 0;
@@ -896,13 +895,14 @@ body.landing.degree-list header {
       h6 {
         font-family: 'Work Sans', sans-serif;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 18px;
         color: #fff;
         letter-spacing:3px;
       }
       p{
         color:#fff;
+        font-weight: 100;
       }
       .communicate {
         position: absolute;
@@ -916,6 +916,9 @@ body.landing.degree-list header {
           position: relative;
           display: inline-block;
           margin-top: 25px;
+        }
+        .submit {
+          width: auto;
         }
       }
       .course-video {
@@ -960,6 +963,42 @@ body.landing.degree-list header {
     font-weight: 300;
     color: #98a2ab;
     font-size: 18px;
+  }
+  .course-summary{
+    .course-summary-part{
+      border-right:1px solid #d7d7d7;
+      &:last-child{
+        border:0;
+      }
+      h5 {
+        font-family: 'Work Sans',sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom:15px;
+        color: #636363;
+      }
+      h4{
+        font-family: 'Work Sans',sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+      }
+    }
+  }
+  .trust.collaboration-with {
+    border-top: 1px solid #d7d7d7;
+    padding: 45px 0 15px 0;
+    h2.title, h3.title {
+      font-size: 18px;
+      color: #636363;
+      line-height: 24px;
+      margin-bottom: 25px;
+      font-weight: 300;
+    }
+    a img {
+      opacity: .9;
+    }
   }
 }
 
