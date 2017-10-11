@@ -1,4 +1,4 @@
-@extends('layouts.course-landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list course-landing'])
+@extends('layouts.course-landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list course-landing smart-contract-developer'])
 
 @section('content')
     <div class="main">
@@ -12,9 +12,9 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
                                             <h6>BitDegree Program</h6>
-                                                <h1>Become a Full Stack Web Developer</h1>
-                                                <p class="subtitle" style="color:#fff;">Get the skills to work with both back-end and front-end technologies Learn to develop a solid foundation for working with servers and host configurations, perform database integrations, and troubleshoot front-end development issues. Master course to become a Full Stack Web Developer.</p>
-                                                <p>Enroll by <b>January, 2018</b></p>
+                                                <h1>Become Smart Contract Developer</h1>
+                                            <p class="subtitle" style="color:#fff;"><b>Solidity</b> is a programming language for writing smart contracts which run on Ethereum Virtual Machine on Blockchain. It is a contract-oriented, high-level language whose syntax is similar to that of JavaScript. It's designed to target the Ethereum Virtual Machine. Master this course to become a Smart Contract Developer.</p>
+                                                <p>Enroll by <b>February, 2018</b></p>
                                         </div>
                                         @include('partials.sign-up-for-course')
                                     </div>
@@ -38,11 +38,11 @@
                     <div class="col-md-10 col-md-offset-1">
                         <div class="col-md-4 course-summary-part">
                             <h5>Time</h5>
-                            <h4>5 months</h4>
+                            <h4>6 months</h4>
                         </div>
                         <div class="col-md-4 course-summary-part">
                             <h5>Classroom Opens</h5>
-                            <h4>January, 2018</h4>
+                            <h4>February, 2018</h4>
                         </div>
                         <div class="col-md-4 course-summary-part">
                             <h5>Scholarship</h5>
@@ -62,7 +62,7 @@
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                     <div class="title-container">
                         <h2 class="title">Why take this course?</h2>
-                        <h3 class="subtitle">Full-stack web developer job openings are up 50%</h3>
+                        <h3 class="subtitle"> Solidity smart contract developer <b>job openings are up 200%</b></h3>
                     </div>
                 </div>
             </div>
@@ -70,13 +70,13 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
-                            <img src="{{ asset('full-stack-developer.png') }}" alt="">
+                            <img src="{{ asset('smart-contract-developer.png') }}" alt="">
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="description-container">
-                        <p>In this program, you’ll gain the skills needed to develop world-class Virtual Reality content. You’ll master the core principles of full-stack web development, learn with hands-on experience, and transform from a simple developer to become a Full Stack Developer.</p>
+                        <p>In this program, you’ll gain the skills needed to work on both the front-end and back-end portions of an application . You’ll master the core principles of full-stack web development, learn with hands-on experience, and transform from a simple developer to become a Full Stack Developer.</p>
                     </div>
                 </div>
             </div>

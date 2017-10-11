@@ -168,4 +168,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/landing/course/web-developer', ['as' => 'web-developer', function () {
         return view('pages.courses.web-developer-landing');
     }]);
+
+    $router->get('/landing/course/smart-contract-developer', ['as' => 'smart-contract-developer', function () {
+        return view('pages.courses.smart-contract-developer-landing');
+    }]);
 });

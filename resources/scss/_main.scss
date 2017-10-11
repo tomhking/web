@@ -952,7 +952,7 @@ body.landing.degree-list header {
     color: #fff;
   }
   p.subtitle {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
     letter-spacing: 1px;
     font-family: 'Work Sans', sans-serif;
@@ -1000,8 +1000,32 @@ body.landing.degree-list header {
       opacity: .9;
     }
   }
+  .communicate.cta-block {
+    background-image: url('course-cover-photo2.jpg');
+    min-height: 400px!important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    .submit {
+      width: auto;
+    }
+  }
 }
 
+.smart-contract-developer .video-wrapper .video-container .course-video .course-video-overlay::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  background: rgba(1,178,228,.38);
+}
 
 /*Course landing page*/
 
