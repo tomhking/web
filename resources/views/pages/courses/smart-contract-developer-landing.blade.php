@@ -16,7 +16,7 @@
                                             <p class="subtitle" style="color:#fff;"><b>Solidity</b> is a programming language for writing smart contracts which run on Ethereum Virtual Machine on Blockchain. It is a contract-oriented, high-level language whose syntax is similar to that of JavaScript. It's designed to target the Ethereum Virtual Machine. Master this course to become a Smart Contract Developer.</p>
                                                 <p>Enroll by <b>February, 2018</b></p>
                                         </div>
-                                        @include('partials.sign-up-for-course')
+                                        @include('partials.sign-up-for-solidity')
                                     </div>
                                 </div>
                                 <div class="contain-video">
@@ -90,7 +90,7 @@
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                     <h2 class="title">@lang('signup.title')</h2>
                 </div>
-                @include('partials.sign-up-for-course')
+                @include('partials.sign-up-for-solidity')
             </div>
         </div>
     </div>

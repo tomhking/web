@@ -9,4 +9,5 @@
     <a class="contact-icon" href="https://www.facebook.com/bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
     <a class="contact-icon" href="https://blog.bitdegree.org/" rel="nofollow" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
     <a class="contact-icon" href="https://bitcointalk.org/index.php?topic=2214321" rel="nofollow" target="_blank"><i class="fa fa-btc" aria-hidden="true"></i></a>
+    <a class="contact-icon" href="https://www.youtube.com/channel/UCuiGDksOmsM8y-_txG3wPYg" rel="nofollow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 </div>

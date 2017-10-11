@@ -1,4 +1,4 @@
-@extends('layouts.course-landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list course-landing'])
+@extends('layouts.course-landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list course-landing web-developer'])
 
 @section('content')
     <div class="main">
@@ -16,7 +16,7 @@
                                                 <p class="subtitle" style="color:#fff;">Get the skills to work with both back-end and front-end technologies Learn to develop a solid foundation for working with servers and host configurations, perform database integrations, and troubleshoot front-end development issues. Master course to become a Full Stack Web Developer.</p>
                                                 <p>Enroll by <b>January, 2018</b></p>
                                         </div>
-                                        @include('partials.sign-up-for-course')
+                                        @include('partials.sign-up-for-web-development')
                                     </div>
                                 </div>
                                 <div class="contain-video">
@@ -90,7 +90,7 @@
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                     <h2 class="title">@lang('signup.title')</h2>
                 </div>
-                @include('partials.sign-up-for-course')
+                @include('partials.sign-up-for-web-development')
             </div>
         </div>
     </div>
