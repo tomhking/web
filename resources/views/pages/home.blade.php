@@ -13,10 +13,10 @@
     @include('partials.landing.subscribe')
     @include('partials.landing.roadmap')
     @include('partials.landing.subscribe-alt')
+    @include('partials.chat')
 @endsection
 
 @section('footer')
-    @include('partials.chat')
     <script type="text/javascript">
         $(function () {
             $('#sidebar').on('activate.bs.scrollspy', function (event) {

@@ -1198,17 +1198,28 @@ div#token-calculator {
   position: fixed;
   right: 3px;
   bottom: 3px;
-  width: 100px;
-  height: 80px;
   text-align: center;
   z-index:999999;
+  background: #2f2f2f;
+  width:250px;
+  height:45px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background: #c02b3f;
+  }
   .chat-link {
     z-index: 99999999999;
-    position: absolute;
-    left: 8px;
-    top: -8px;
     a{
       text-decoration:none;
+      padding:5px 15px;
+      display:block;
     }
     i {
       font-size: 36px;
@@ -1217,40 +1228,13 @@ div#token-calculator {
     h4{
       font-family: "Work Sans", sans-serif;
       font-weight: 300;
-      text-transform:uppercase;
-      letter-spacing:1px;
       font-size:14px;
       color:#fff;
+      display:inline-block;
     }
-  }
-  .hexagon {
-    width: 100px;
-    height: 55px;
-    background: #2f2f2f;
-    position: absolute;
-    top: 0;
-  }
-  .hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #2f2f2f;
-  }
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #2f2f2f;
+    img{
+      display:inline-block;
+    }
   }
 }
 
@@ -1707,7 +1691,7 @@ header {
 
 .communicate.cta-block {
   background-image: url('cta-block-bg.jpg');
-  min-height: 650px;
+  min-height: 700px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;

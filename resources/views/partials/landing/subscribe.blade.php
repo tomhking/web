@@ -15,6 +15,7 @@
                         <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" required>
                         <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
                     </form>
+                    @include('partials.contact-icons')
                 </div>
             </div>
         </div>
