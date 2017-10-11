@@ -89,6 +89,7 @@
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                     <h2 class="title">@lang('signup.title')</h2>
+                    <p class="subtitle">@lang('signup.subtitle')</p>
                 </div>
                 @include('partials.sign-up-for-solidity')
             </div>

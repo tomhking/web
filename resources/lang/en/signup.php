@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'Sign up for courses',
-    'subtitle' => 'Don’t miss out, be the first to know!',
+    'title' => 'Learn. Earn. Grow.',
+    'subtitle' => 'Sign up and be the first to know<br> when the course starts',
     'button' => 'START LEARNING NOW',
     'email_placeholder' => 'Enter email to join the course',
-    'title_alt' => 'Come &amp; help us create talent the world deserves',
+    'title_alt' => '',
 ];
