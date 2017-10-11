@@ -873,6 +873,159 @@ body.landing.degree-list header {
 
 /*MVP Page*/
 
+
+
+/*Course landing page*/
+.course-landing{
+  .video-wrapper {
+    padding: 0;
+    margin-bottom:35px;
+    .video-container{
+      position:relative;
+      h1 {
+        font-family: 'Work Sans', sans-serif;
+        text-transform: inherit;
+        font-weight: 100;
+        font-size: 58px;
+        line-height: 70px;
+        color: #fff;
+        margin: 35px 0;
+      }
+      h6 {
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing:3px;
+      }
+      p{
+        color:#fff;
+        font-weight: 100;
+      }
+      .communicate {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: 10;
+        width: 100%;
+        form {
+          position: relative;
+          display: inline-block;
+          margin-top: 25px;
+        }
+        .submit {
+          width: auto;
+        }
+      }
+      .course-video {
+        height: 100%;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        max-height: 680px;
+        .course-video-overlay::before{
+          content: " ";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0.50;
+          background: #062033;
+        }
+      }
+    }
+  }
+  h1 {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 70px;
+    line-height: 70px;
+    color: #fff;
+  }
+  p.subtitle {
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+  }
+  .header h4{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    color: #98a2ab;
+    font-size: 18px;
+  }
+  .course-summary{
+    .course-summary-part{
+      border-right:1px solid #d7d7d7;
+      &:last-child{
+        border:0;
+      }
+      h5 {
+        font-family: 'Work Sans',sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom:15px;
+        color: #636363;
+      }
+      h4{
+        font-family: 'Work Sans',sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+      }
+    }
+  }
+  .trust.collaboration-with {
+    border-top: 1px solid #d7d7d7;
+    padding: 45px 0 15px 0;
+    h2.title, h3.title {
+      font-size: 18px;
+      color: #636363;
+      line-height: 24px;
+      margin-bottom: 25px;
+      font-weight: 300;
+    }
+    a img {
+      opacity: .9;
+    }
+  }
+  .communicate.cta-block {
+    background-image: url('course-cover-photo2.jpg');
+    min-height: 450px!important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    .submit {
+      width: auto;
+    }
+  }
+}
+
+.smart-contract-developer .video-wrapper .video-container .course-video .course-video-overlay::before {
+  opacity: .9;
+  background: rgba(1, 105, 134, 0.6);
+}
+
+.web-developer .video-wrapper .video-container .course-video .course-video-overlay::before {
+  background:#4f0f6d;
+}
+
+/*Course landing page*/
+
+
+
 /*ICO Page*/
 
 .ico-top {
@@ -1064,59 +1217,45 @@ div#token-calculator {
   position: fixed;
   right: 3px;
   bottom: 3px;
-  width: 100px;
-  height: 80px;
   text-align: center;
   z-index:999999;
-  .chat-link {
-    z-index: 99999999999;
-    position: absolute;
-    left: 8px;
-    top: -8px;
-    a{
-      text-decoration:none;
+  .chat-icon{
+    margin: 0 auto;
+    background: #fff;
+    width:78px;
+    height:78px;
+    border:1px solid #909090;
+    border-radius: 200%;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:hover{
+      background: #d4d4d4;
     }
     i {
-      font-size: 36px;
-      color: #fff;
+      font-size: 72px;
+      color: #2f2f2f;
+      margin-top:2px;
     }
+  }
+  .chat-text{
+    margin: 0 auto;
+    background:#2f2f2f;
+    margin-top: 5px;
     h4{
-      font-family: "Work Sans", sans-serif;
-      font-weight: 300;
-      text-transform:uppercase;
-      letter-spacing:1px;
-      font-size:14px;
+      font-family: "Work Sans",sans-serif;
+      font-weight: 200;
+      font-size: 15px;
       color:#fff;
+      display:inline-block;
+      padding:0px 15px;
+      margin-top:5px;
+      margin-bottom:5px;
+      letter-spacing:2px;
     }
-  }
-  .hexagon {
-    width: 100px;
-    height: 55px;
-    background: #2f2f2f;
-    position: absolute;
-    top: 0;
-  }
-  .hexagon:before {
-    content: "";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #2f2f2f;
-  }
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #2f2f2f;
   }
 }
 
@@ -1573,7 +1712,7 @@ header {
 
 .communicate.cta-block {
   background-image: url('cta-block-bg.jpg');
-  min-height: 650px;
+  min-height: 700px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
