@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var cleanCss = require('gulp-clean-css');
 var browserSync = require('browser-sync').create();
+var imageMin = require('gulp-imagemin');
 
 var sassSources = 'resources/scss/**/*.scss';
 
@@ -24,6 +25,15 @@ gulp.task('sass-dev', function(){
 });
 
 gulp.task('default', ['sass-prod']);
+
+gulp.task('optimize-images', function(){
+    return gulp.src('public/assets/**/*.{png,jpg,gif}').pipe(imageMin([
+        imageMin.jpegtran({progressive: true}),
+        imageMin.optipng({optimizationLevel: 7})
+    ],{
+        verbose: true
+    })).pipe(gulp.dest('public/assets'));
+});
 
 gulp.task('serve', ['sass-dev'], function() {
     gulp.watch(sassSources, ['sass-dev']);
