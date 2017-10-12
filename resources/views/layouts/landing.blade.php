@@ -45,10 +45,10 @@
 
     @yield('content')
 
-    @include('partials.landing.footer')
+    @if(!isset($hideFooter) || !$hideFooter) @include('partials.landing.footer') @endif
 
     @include('partials.scripts')
-    @stack('body_scripts')
+    @stack('body-scripts')
 </body>
 
 </html>

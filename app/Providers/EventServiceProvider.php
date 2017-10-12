@@ -2,6 +2,9 @@
 
 namespace App\Providers;
 
+use App\Events\FreeTokenSignup;
+use App\Events\LogIn;
+use App\Listeners\MailListener;
 use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
@@ -12,8 +15,12 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+        FreeTokenSignup::class => [
+            MailListener::class,
+        ],
+        LogIn::class => [
+            MailListener::class,
         ],
     ];
+
 }

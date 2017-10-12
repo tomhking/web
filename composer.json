@@ -10,7 +10,11 @@
         "vlucas/phpdotenv": "~2.2",
         "guzzlehttp/guzzle": "^6.3",
         "umpirsky/country-list": "^2.0",
-        "geoip2/geoip2": "^2.6"
+        "geoip2/geoip2": "^2.6",
+        "doctrine/dbal": "^2.5",
+        "hostinger/event-mail": "^1.0",
+        "php-amqplib/php-amqplib": "^2.7",
+        "google/recaptcha": "~1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -36,6 +40,12 @@
             "php -r \"copy('.env.example', '.env');\""
         ]
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:hostinger/event-mail.git"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "optimize-autoloader": true
