@@ -19,7 +19,7 @@
                             <h3 class="title">Andrius <b>Putna</b></h3>
                             <p>@lang('team.position_andrius')</p>
                             <div class="handles">
-                                <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/andriusputna/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             </div>
                             <div class="team-member-desc">
                                 <p>@lang('team.description_andrius')</p>
