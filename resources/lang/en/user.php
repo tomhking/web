@@ -11,7 +11,8 @@ return [
     'already_member' => 'You already have an account at BitDegree! Click <strong>Log In</strong> below to authenticate.',
     'email_address' => 'Email Address',
     'sample_email' => 'you@example.com',
-    'signup' => 'or Sign Up',
+    'or_signup' => 'or Sign Up',
+    'signup' => 'Sign Up',
     'check_email' => 'You are one step away from securing <b>Your free token</b>. Please check the e-mail you provided during registration and click confirmation link in it.',
     'please_provide' => 'Please provide some info to get Registered to Bitdegree',
     'name' => 'Your Name',
@@ -22,4 +23,6 @@ return [
     'share' => 'Share to get more <b>FREE</b> tokens:',
     'congratulations' => 'Congratulations, :name!',
     'logout' => 'Log out',
+    'almost_done' => 'Almost done...',
+    'register' => 'Register',
 ];
