@@ -7,6 +7,7 @@ return [
     'header_title' => 'Revolutionizing education with blockchain',
     'header_subtitle' => 'The world\'s first blockchain-powered online education platform with token scholarships &amp; tech talent acquisition',
     'trust_title' => 'As Seen On',
+    'partners_title' => 'Partners',
     'incentives' => 'Smart incentives',
     'moocs' => 'The world\'s best MOOCs',
     'ethereum' => 'Powered by the Ethereum',

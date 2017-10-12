@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                <h2 class="title">Partners</h2>
+                <h2 class="title">@lang('home.partners_title')</h2>
             </div>
         </div>
 

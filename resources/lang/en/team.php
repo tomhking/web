@@ -41,5 +41,6 @@ return [
     'description_jeff' => '<b>Global technology executive, keynote speaker and a Silicon Valley old-timer. </b> Jeff was a founding team member of Electronic Arts, where he has overseen the global expansion of its operations. Jeff has high-level connections in Silicon Valley and around the world that he is using to help startups like BitDegree. Jeff has developed Berkeley Skydeck startup accelerator and is currently involved in helping startups around the world to grow and scale into the Silicon Valley. Jeff is a very great guy that believes in BitDegree and wants to help.',
     'advisors' => 'Advisors',
     'title' => 'The Team',
+    'leadership_title' => 'Leadership',
     'subtitle' => 'Let us introduce you the key people that will make it all possible.',
 ];
