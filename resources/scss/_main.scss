@@ -1223,9 +1223,10 @@ body.login-page {
     background-size: cover;
     background-position: center;
     color: #fff;
+  background-attachment: fixed;
   &::before{
     content: " ";
-    position:absolute;
+    position:fixed;
     top:0;
     bottom:0;
     left:0;
