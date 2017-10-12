@@ -33,11 +33,6 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,200,300,400,500,600,700,900|Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
     <link rel="stylesheet" href="{{ asset($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css') }}">
     <link href="{{ asset('course_style.css') }}" rel="stylesheet">
@@ -136,16 +131,12 @@
     </div>
 </div>
 
+@include('partials.scripts')
 
-<!-- Google CDN jQuery with fallback to local -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ asset('jquery-1.11.0.min.js') }}"><\/script>')</script>
-
-<!-- custom scrollbar plugin -->
-<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}"></script>
+<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}" async></script>
 
 <script>
-    (function($){
+    jqWait(function(){
         $(window).on("load",function(){
 
             $("a[rel='load-content']").click(function(e){
@@ -164,11 +155,11 @@
             });
 
         });
-    })(jQuery);
+    });
 </script>
 
 <script>
-    (function($){
+    jqWait(function(){
         $(window).on("load resize",function(){
             var selector=".lessons-nav", //your element(s) selector
                 cssFlag=window.getComputedStyle(document.querySelector(selector),":after").getPropertyValue("content").replace(/"/g,'');
@@ -178,7 +169,7 @@
                 $(selector).mCustomScrollbar("destroy");
             }
         });
-    })(jQuery);
+    });
 </script>
 
 

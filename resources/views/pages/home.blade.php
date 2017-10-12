@@ -16,9 +16,9 @@
     @include('partials.chat')
 @endsection
 
-@section('footer')
+@push('body_scripts')
     <script type="text/javascript">
-        $(function () {
+        jqWait(function () {
             $('#sidebar').on('activate.bs.scrollspy', function (event) {
                 var hash = $("a", event.target).attr('href');
 
@@ -30,4 +30,4 @@
             });
         });
     </script>
-@endsection
+@endpush

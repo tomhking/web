@@ -134,9 +134,9 @@
 @endsection
 
 @push('body_scripts')
-    <script type="text/javascript" src="{{ asset('big.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('big.min.js') }}" async></script>
     <script type="text/javascript">
-        $(function () {
+        jqWait(function() {
             var confirmationButton = $('#confirm-agreements'), modalAgreement = $('#modal-agreements'), modalSignup = $('#modal-sign-up');
 
             confirmationButton.click(function () {

@@ -32,13 +32,6 @@
     <meta name="theme-color" content="#ffffff">
 
     @include('partials.stylesheets')
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-
     @include('partials.smartlook')
 </head>
 
@@ -49,6 +42,9 @@
 @yield('content')
 @include('partials.landing.footer')
 @stack('body_scripts')
+
+@include('partials.scripts')
+
 </body>
 
 </html>
