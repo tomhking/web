@@ -2957,6 +2957,7 @@ p.subtitle {
   .team-member-image-holder {
     position: relative;
     padding: 3px;
+    cursor: pointer;
     img {
         margin-right: 0;
         width: 252px;
@@ -3108,28 +3109,28 @@ p.subtitle {
 }
 
 .partners {
+  .partner-logo {
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .7;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    &:hover{
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
   .row.cards{
     margin-top:25px;
     .card{
       padding:0 25px 25px 25px;
       min-height:575px;
-      .partner-logo {
-        text-align: center;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        opacity: .7;
-        cursor: pointer;
-        -webkit-transition: all .3s ease-in-out;
-        -moz-transition: all .3s ease-in-out;
-        -ms-transition: all .3s ease-in-out;
-        -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-        &:hover{
-          -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-          opacity: 1;
-        }
-      }
       .partner-desc {
         padding:0 15px;
         h3 {
