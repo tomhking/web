@@ -20,6 +20,7 @@
                             <p>@lang('team.position_andrius')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/andriusputna/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=" https://github.com/fordnox" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
                             <div class="team-member-desc">
                                 <p>@lang('team.description_andrius')</p>
@@ -38,6 +39,7 @@
                             <p>@lang('team.position_balys')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=" https://github.com/balys" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
                             <div class="team-member-desc">
                                 <p>@lang('team.description_balys')</p>
@@ -87,6 +89,7 @@
                             <p>@lang('team.position_antanas')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/antanaspa/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://github.com/4n705" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="AntanasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -106,6 +109,7 @@
                                                 <p>@lang('team.position_antanas')</p>
                                                 <div class="handles">
                                                     <a href="https://www.linkedin.com/in/antanaspa/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://github.com/4n705" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_antanas')</p>
@@ -134,6 +138,7 @@
                             <p>@lang('team.position_donatas')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/ton31337/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=" https://github.com/ton31337" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="DonatasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -145,7 +150,7 @@
 
                                         <div class="modal-body">
 
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
+                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#DonatasModal">
                                                 <img class="team-member-image" src="{{ asset('team/donatas-abraitis.png') }}" alt="Donatas Abraitis">
                                             </div>
                                             <div class="team-member-data">
@@ -153,6 +158,7 @@
                                                 <p>@lang('team.position_donatas')</p>
                                                 <div class="handles">
                                                     <a href="https://www.linkedin.com/in/ton31337/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href=" https://github.com/ton31337" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_donatas')</p>
@@ -181,6 +187,7 @@
                             <p>@lang('team.position_martynas')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/martynas-andriuskevicius/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://github.com/errb" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="MartynasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -200,6 +207,7 @@
                                                 <p>@lang('team.position_martynas')</p>
                                                 <div class="handles">
                                                     <a href="https://www.linkedin.com/in/martynas-andriuskevicius/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://github.com/errb" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_martynas')</p>
@@ -281,7 +289,7 @@
                             <h3 class="title">Rio <b>Asatiani</b></h3>
                             <p>@lang('team.position_rio')</p>
                             <div class="handles">
-                                <i class="fa " aria-hidden="true"></i>
+                                <a href="https://github.com/riohuber" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="RioModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -300,7 +308,7 @@
                                                 <h3 class="title">Rio <b>Asatiani</b></h3>
                                                 <p>@lang('team.position_rio')</p>
                                                 <div class="handles">
-                                                    <i class="fa " aria-hidden="true"></i>
+                                                    <a href="https://github.com/riohuber" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_rio')</p>
@@ -424,6 +432,7 @@
                             <p>@lang('team.position_edgaras')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/edgaras-luko%C5%A1evi%C4%8Dius-a559a938/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://github.com/ledgr" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="EdgarasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -443,6 +452,7 @@
                                                 <p>@lang('team.position_edgaras')</p>
                                                 <div class="handles">
                                                     <a href="https://www.linkedin.com/in/edgaras-luko%C5%A1evi%C4%8Dius-a559a938/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://github.com/ledgr" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_edgaras')</p>
@@ -473,7 +483,9 @@
                         <div class="team-member-data">
                             <h3 class="title">Aurimas <b>Lapienė</b></h3>
                             <p>@lang('team.position_aurimas')</p>
-                            <div class="handles"></div>
+                            <div class="handles">
+                                <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
 
                             <div class="modal fade" role="dialog" id="AurimasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
@@ -490,7 +502,9 @@
                                             <div class="team-member-data">
                                                 <h3 class="title">Aurimas <b>Lapienė</b></h3>
                                                 <p>@lang('team.position_aurimas')</p>
-                                                <div class="handles"></div>
+                                                <div class="handles">
+                                                    <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_aurimas')</p>
                                                 </div>
@@ -517,7 +531,9 @@
                         <div class="team-member-data">
                             <h3 class="title">Julija <b>Sabaliauskaitė</b></h3>
                             <p>@lang('team.position_julija')</p>
-                            <div class="handles"></div>
+                            <div class="handles">
+                                <a href="https://github.com/julijasabaliauskaite" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
 
                             <div class="modal fade" role="dialog" id="JulijaModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
@@ -534,7 +550,9 @@
                                             <div class="team-member-data">
                                                 <h3 class="title">Julija <b>Sabaliauskaitė</b></h3>
                                                 <p>@lang('team.position_julija')</p>
-                                                <div class="handles"></div>
+                                                <div class="handles">
+                                                    <a href="https://github.com/julijasabaliauskaite" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_julija')</p>
                                                 </div>
@@ -561,7 +579,9 @@
                         <div class="team-member-data">
                             <h3 class="title">Šarūnė <b>Šaulytė</b></h3>
                             <p>@lang('team.position_sarune')</p>
-                            <div class="handles"></div>
+                            <div class="handles">
+                                <a href="https://github.com/sarunesaul" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
 
                             <div class="modal fade" role="dialog" id="SaruneModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
@@ -578,7 +598,9 @@
                                             <div class="team-member-data">
                                                 <h3 class="title">Šarūnė <b>Šaulytė</b></h3>
                                                 <p>@lang('team.position_sarune')</p>
-                                                <div class="handles"></div>
+                                                <div class="handles">
+                                                    <a href="https://github.com/sarunesaul" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_sarune')</p>
                                                 </div>
@@ -603,7 +625,9 @@
                         <div class="team-member-data">
                             <h3 class="title">Dovilė <b>Tarutytė</b></h3>
                             <p>@lang('team.position_dovile')</p>
-                            <div class="handles"></div>
+                            <div class="handles">
+                                <a href="https://github.com/leliumoj" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
 
                             <div class="modal fade" role="dialog" id="DovileModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
@@ -620,7 +644,9 @@
                                             <div class="team-member-data">
                                                 <h3 class="title">Dovilė <b>Tarutytė</b></h3>
                                                 <p>@lang('team.position_dovile')</p>
-                                                <div class="handles"></div>
+                                                <div class="handles">
+                                                    <a href="https://github.com/leliumoj" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_dovile')</p>
                                                 </div>
@@ -653,7 +679,9 @@
                         <div class="team-member-data">
                             <h3 class="title">Skirmantas <b>Juraška</b></h3>
                             <p>@lang('team.position_skirmantas')</p>
-                            <div class="handles"></div>
+                            <div class="handles">
+                                <a href="https://github.com/skirmis" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
 
                             <div class="modal fade" role="dialog" id="SkirmantasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
@@ -670,7 +698,9 @@
                                             <div class="team-member-data">
                                                 <h3 class="title">Skirmantas <b>Juraška</b></h3>
                                                 <p>@lang('team.position_skirmantas')</p>
-                                                <div class="handles"></div>
+                                                <div class="handles">
+                                                    <a href="https://github.com/skirmis" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_skirmantas')</p>
                                                 </div>
@@ -745,6 +775,7 @@
                             <p>@lang('team.position_arnas')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
                             <div class="modal fade" role="dialog" id="ArnasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -764,6 +795,7 @@
                                                 <p>@lang('team.position_arnas')</p>
                                                 <div class="handles">
                                                     <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_arnas')</p>

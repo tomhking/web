@@ -15,7 +15,7 @@ return [
     'position_donatas' => 'Lead Systems Engineer',
     'position_aurimas' => 'Systems Engineer',
     'position_edgaras' => 'IT Architect',
-    'position_skirmantas' => 'Systems Architect - DevOps',
+    'position_skirmantas' => 'Systems Architect -<br>DevOps',
     'position_oleg' => 'Crypto-economy advisor,<br> founder of Nexchange.io',
     'position_arnas' => 'Co-founder in advisory capacity<br> CEO - Hostinger',
     'position_jeff' => 'Serial Entrepreneur,<br> co-founder of Electronic Arts',
