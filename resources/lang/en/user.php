@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'my_account' => 'My Account',
+    'enter_email' => 'Enter your email',
+    'welcome_back' => 'Welcome back, :name!',
+    'login' => 'Log In',
+    'link_sent' => 'Your instant log in link has been emailed to you.',
+    'back_home' => 'Back to the Home Page',
+    'unknown_error' => 'An unknown error occurred. Please make sure you entered correct data and try again.',
+    'already_member' => 'You already have an account at BitDegree! Click <strong>Log In</strong> below to authenticate.',
+    'email_address' => 'Email Address',
+    'sample_email' => 'you@example.com',
+    'signup' => 'or Sign Up',
+    'check_email' => 'You are one step away from securing <b>Your free token</b>. Please check the e-mail you provided during registration and click confirmation link in it.',
+    'please_provide' => 'Please provide some info to get Registered to Bitdegree',
+    'name' => 'Your Name',
+    'optional' => 'optional',
+    'or_login' => 'or Log In',
+    'congrats' => 'Congratulations, {{ $participant->first_name or $participant->email }}!',
+    'tokens_secured' => '<h3>You have</h3 ><h1>:number EDU</h1> <h3>Token secured</h3>',
+    'share' => 'Share to get more <b>FREE</b> tokens:',
+    'congratulations' => 'Congratulations, :name!',
+    'logout' => 'Log out',
+];

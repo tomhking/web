@@ -9,6 +9,7 @@ return [
     'trust_title' => 'As Seen On',
     'partners_title' => 'Partners',
     'incentives' => 'Smart incentives',
+    'free_tokens' => 'GET FREE TOKENS',
     'moocs' => 'The world\'s best MOOCs',
     'ethereum' => 'Powered by the Ethereum',
     'decentralized' => 'Decentralized',

@@ -2,9 +2,12 @@
 
 namespace App\Providers;
 
+use App\Library\Mailer;
 use GeoIp2\Database\Reader;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use PhpAmqpLib\Connection\AMQPStreamConnection;
+use ReCaptcha\ReCaptcha;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -44,6 +47,11 @@ class AppServiceProvider extends ServiceProvider
             $countries = app()->make('countries');
             return isset($countries[$value]);
         });
+
+        Validator::extend('recaptcha', function ($attribute, $value, $parameters) {
+            $recaptcha = new ReCaptcha(env('RECAPTCHA_SECRET'));
+            return $recaptcha->verify($value, app('request')->ip())->isSuccess();
+        });
     }
 
     /**
@@ -59,6 +67,28 @@ class AppServiceProvider extends ServiceProvider
 
         $this->app->singleton('countries', function(){
             return json_decode(file_get_contents(base_path('vendor/umpirsky/country-list/data/en_US/country.json')), true);
+        });
+
+        $this->app->singleton('amqp.connection', function () {
+            $config = config('amqp');
+
+            $amqpConnection = new AMQPStreamConnection($config['host'], $config['port'], $config['user'], $config['password'], $config['vhost']);
+
+            if (!empty($config['exchange'])) {
+                $amqpConnection->channel()->exchange_declare($config['exchange'], 'topic', false, true, false);
+            }
+            return $amqpConnection;
+        });
+
+        $this->app->bind(Mailer::class, function () {
+            $mailer = new Mailer();
+
+            if (env('APP_ENV', 'production') != 'local') {
+                $mailer->setConnection(app('amqp.connection'));
+                $mailer->setExchange(config('amqp.exchange'));
+            }
+
+            return $mailer;
         });
 
         $this->app->singleton('courses', function ($app) {

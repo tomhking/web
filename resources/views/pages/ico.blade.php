@@ -133,7 +133,7 @@
 
 @endsection
 
-@push('body_scripts')
+@push('body-scripts')
     <script type="text/javascript" src="{{ asset('big.min.js') }}" async></script>
     <script type="text/javascript">
         jqWait(function() {

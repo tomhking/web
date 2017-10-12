@@ -187,7 +187,7 @@
 </div>
 
 
-@push('body_scripts')
+@push('body-scripts')
     @if($icoDataAvailable && !$showAddress)
         <script type="text/javascript">
             jqWait(function () {

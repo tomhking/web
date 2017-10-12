@@ -104,6 +104,12 @@ return [
         'country' => [
             'valid_country' => 'The country you have selected is not valid.',
         ],
+        'g-recaptcha-response' => [
+            'required' => 'You must select this box to prove you are not a bot.',
+        ],
+        'email' => [
+            'exists' => 'The given email was not found on our database. You should sign up first.',
+        ],
     ],
 
     /*
@@ -120,6 +126,7 @@ return [
     'attributes' => [
         'first-name' => 'First Name',
         'last-name' => 'Last Name',
+        'g-recaptcha-response' => 'reCaptcha validation'
     ],
 
 ];

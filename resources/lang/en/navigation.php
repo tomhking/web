@@ -22,4 +22,6 @@ return [
     'top' => 'Top',
     'subscribe' => 'Subscribe',
     'email_placeholder' => 'Enter email to receive updates',
+    'no_account' => 'An account with the given email does not exist.',
+    'link_expired' => 'Sorry, this link is either invalid or it had already expired. Please try logging in again.',
 ];
