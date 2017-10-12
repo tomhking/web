@@ -9,6 +9,7 @@
                         <br>@lang('home.bitdegree_description_2')
                     </h3>
                 </div>
+                @include('partials.landing.jeff-video')
             </div>
         </div>
 
