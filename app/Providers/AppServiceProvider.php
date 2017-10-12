@@ -70,12 +70,16 @@ class AppServiceProvider extends ServiceProvider
         });
 
         $this->app->singleton('amqp.connection', function () {
-            $config = config('amqp');
+            $amqpConnection = new AMQPStreamConnection(
+                env('AMQP_HOST'),
+                env('AMQP_PORT'),
+                env('AMQP_USER'),
+                env('AMQP_PASSWORD'),
+                env('AMQP_VHOST')
+            );
 
-            $amqpConnection = new AMQPStreamConnection($config['host'], $config['port'], $config['user'], $config['password'], $config['vhost']);
-
-            if (!empty($config['exchange'])) {
-                $amqpConnection->channel()->exchange_declare($config['exchange'], 'topic', false, true, false);
+            if (!empty(env('AMQP_EXCHANGE'))) {
+                $amqpConnection->channel()->exchange_declare(env('AMQP_EXCHANGE'), 'topic', false, true, false);
             }
             return $amqpConnection;
         });
@@ -85,7 +89,7 @@ class AppServiceProvider extends ServiceProvider
 
             if (env('APP_ENV', 'production') != 'local') {
                 $mailer->setConnection(app('amqp.connection'));
-                $mailer->setExchange(config('amqp.exchange'));
+                $mailer->setExchange(env('AMQP_EXCHANGE'));
             }
 
             return $mailer;
