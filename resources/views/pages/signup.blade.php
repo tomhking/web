@@ -9,12 +9,12 @@
             </a>
 
             <div id="signup-success" style="display: none">
-                <h1>Almost done...</h1>
+                <h1>@lang('user.almost_done')</h1>
                 <div class="alert alert-success">@lang('user.check_email')</div>
                 <a href="{{ route_lang('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
             </div>
             <form class="async-validated" action="{{ route_lang('signup-post') }}" method="post" data-show="#signup-success">
-                <h1>Register</h1>
+                <h1>@lang('user.register')</h1>
                 <p class="subtitle">@lang('user.please_provide')</p>
                 <div class="alert alert-danger other-error" style="display: none;">@lang('user.unknown_error')</div>
                 <div class="form-group validation-email">
