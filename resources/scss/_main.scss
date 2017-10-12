@@ -2038,6 +2038,10 @@ h3.subtitle {
   }
 }
 
+.video-block iframe {
+  max-width: 100%;
+}
+
 .economy {
   img {
     border: none;
@@ -2551,6 +2555,10 @@ h3.subtitle {
 }
 
 @media (max-width: 768px) {
+  .video-block iframe {
+    max-width: 100%;
+    height:360px;
+  }
   .trust .row-logos {
     margin-bottom: 0;
     .col-xs-6.col-sm-3.text-center {
@@ -2670,6 +2678,7 @@ h3.subtitle {
       li {
         display:inline-block;
         border-right:1px solid #fff;
+        margin-bottom:15px;
         &:last-child{
           border:0;
         }
@@ -3179,6 +3188,10 @@ p.subtitle {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+  .video-block iframe {
+    max-width: 100%;
+    height:400px;
+  }
   header .description {
     margin-top: 15px;
     margin-bottom: 25px;
@@ -3312,6 +3325,10 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  .video-block iframe {
+    max-width: 100%;
+    height:260px;
+  }
   .trust .row-logos {
     margin-bottom: 0;
     .col-xs-6.col-sm-3.text-center {
@@ -3536,6 +3553,13 @@ p.subtitle {
     font-size: 30px;
     line-height: 36px;
   }
+  .team .row.reg.team-members .team-member .modal-body {
+    position: relative;
+    padding: 5px 35px 35px 35px;
+  }
+  .contact-icons a.contact-icon {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 550px) {
@@ -3576,8 +3600,20 @@ p.subtitle {
 }
 
 @media (max-width: 350px) {
-  .starting-point .logos .zeppelin {
-    width: 90%;
+  .row.find-out-more .col-xs-12.text-center {
+    padding: 0;
+  }
+  .contact-icons.buttons a.contact-icon {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .video-block iframe {
+    max-width: 100%;
+    height: 160px;
+  }
+  header .col-xs-12.text-center{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
   }
   header .header-content {
     h1, h2, h3 {
