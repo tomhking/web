@@ -3,6 +3,7 @@
 @section('content')
     @include('partials.landing.what-we-are')
     @include('partials.landing.trust')
+    @include('partials.landing.jeff-video')
     @include('partials.landing.starting-point')
     @include('partials.landing.why-us')
     @include('partials.landing.stats-moocs')
