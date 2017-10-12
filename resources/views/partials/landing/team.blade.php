@@ -3,7 +3,7 @@
         <div class="team-container">
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                    <h2 class="title">@lang('team.leadership_title')</h2>
+                    <h2 class="title">@lang('team.title')</h2>
                     <p class="subtitle">@lang('team.subtitle')</p>
                 </div>
             </div>
@@ -16,8 +16,8 @@
                             <img class="team-member-image" src="{{ asset('team/andrius-putna.png') }}" alt="Andrius Putna">
                         </div>
                         <div class="team-member-data">
-                            <h3 class="title">Balys <b>Krikščiūnas</b></h3>
-                            <p>@lang('team.position_balys')</p>
+                            <h3 class="title">Andrius <b>Putna</b></h3>
+                            <p>@lang('team.position_andrius')</p>
                             <div class="handles">
                                 <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             </div>
