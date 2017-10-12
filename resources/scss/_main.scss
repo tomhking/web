@@ -473,16 +473,15 @@ form .notice {
   }
 }
 
-.contact-icon {
-  width: 26px;
-  height: 26px;
-  margin: 0 10px;
-  color: rgba(255,255,255,.6);
-  font-size: 26px;
-}
-
 .contact-icons {
-  margin-top: 25px;
+  margin-top: 45px;
+  .contact-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    color: rgba(255,255,255,.6);
+    font-size: 30px;
+  }
 }
 
 .contact-icons.buttons {
@@ -631,7 +630,7 @@ form .notice {
 .cards .card::before {
   content: "";
   height: 0;
-  z-index: 1000000;
+  z-index: 10;
   position: absolute;
   left: 0;
   right: 0;
@@ -3043,6 +3042,71 @@ p.subtitle {
   }
 }
 
+.team .row.reg.team-members {
+  .team-member {
+    margin-bottom: 35px;
+    overflow: hidden;
+    .team-member-image-holder img {
+      width: 200px;
+    }
+    .team-member-data h3 {
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 1px;
+    }
+    .team-member-data p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .modal-header {
+      border-bottom: 0;
+    }
+    .modal-body {
+      position: relative;
+      padding: 15px 65px 45px 65px;
+      .team-member-image-holder img {
+        -webkit-filter: drop-shadow(2px 2px 0 #c02b3f) drop-shadow(-2px 2px 0 #c02b3f) drop-shadow(2px -2px 0 #c02b3f) drop-shadow(-2px -2px 0 #c02b3f) grayscale(0);
+        filter: drop-shadow(2px 2px 0 #c02b3f) drop-shadow(-2px 2px 0 #c02b3f) drop-shadow(2px -2px 0 #c02b3f) drop-shadow(-2px -2px 0 #c02b3f) grayscale(0);
+      }
+      .team-member-data {
+        h3 {
+          margin-top: 14px;
+          margin-bottom: 2px;
+          font-size: 22px;
+          text-align: left;
+        }
+        p {
+          margin: 5px 0;
+          color: #252525;
+          font-size: 15px;
+          line-height: 22px;
+          font-family: $source-code;
+          font-weight: 300;
+        }
+        .handles a {
+          display: inline-block;
+          position: relative;
+          color: #8291a4;
+          font-size: 18px;
+          &:hover {
+            color: #c02b3f !important;
+          }
+        }
+        .team-member-desc p {
+          text-align: left;
+          font-size: 16px;
+          line-height: 24px;
+          color: #252525;
+          margin-top: 0;
+          font-family: "Work Sans",sans-serif;
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
 .partners {
   .row.cards{
     margin-top:25px;
@@ -3478,7 +3542,7 @@ p.subtitle {
 
 @media (min-width: 550px) {
   .team .team-member {
-    width: 90%;
+    width: 99%;
     margin-left: auto;
     margin-right: auto;
   }
