@@ -10,7 +10,6 @@
     @include('partials.landing.stats-demand')
     @include('partials.landing.how-it-works')
     @include('partials.landing.team')
-    @include('partials.landing.partners')
     @include('partials.landing.subscribe')
     @include('partials.landing.roadmap')
     @include('partials.landing.subscribe-alt')
