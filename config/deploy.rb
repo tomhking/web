@@ -45,6 +45,8 @@ task :precompile do
     system '/usr/local/bin/composer install --optimize-autoloader --no-dev --ignore-platform-reqs --no-scripts' or exit!(1)
     print_str '-----> YARN Install'
     system ('/usr/bin/yarn install') or exit!(1)
+    print_str '-----> Bower Install'
+    system ('./node_modules/bower/bin/bower install --verbose') or exit!(1)
     print_str '-----> Gulp Build'
     system ('./node_modules/gulp/bin/gulp.js') or exit!(1)
   end

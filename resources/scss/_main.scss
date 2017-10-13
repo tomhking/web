@@ -1,3 +1,6 @@
+@import "../../bower_components/bootstrap/dist/css/bootstrap";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+
 body, html {
   height: 100%;
   width: 100%;
@@ -163,7 +166,7 @@ div#demand-forecast {
 }
 
 .how-it-works.mvp {
-  background-image: url(network-bg.png);
+  background-image: url('../network-bg.png');
   position: relative;
   background-position: center;
   overflow: hidden;
@@ -1000,7 +1003,7 @@ body.landing.degree-list header {
     }
   }
   .communicate.cta-block {
-    background-image: url('course-cover-photo2.jpg');
+    background-image: url('../course-cover-photo2.jpg');
     min-height: 450px!important;
     position: relative;
     background-repeat: no-repeat;
@@ -1029,7 +1032,7 @@ body.landing.degree-list header {
 /*ICO Page*/
 
 .ico-top {
-  background-image: url(ico-bg.jpg);
+  background-image: url('../ico-bg.jpg');
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1233,7 +1236,7 @@ body.error-page{
 }
 
 body.login-page {
-    background-image: url(login-bg.jpg);
+    background-image: url('../login-bg.jpg');
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1401,7 +1404,7 @@ body.login-page {
       position:relative;
      .share-arrow::after{
        content: " ";
-       background-image: url(share-arrow.png);
+       background-image: url('../share-arrow.png');
        background-repeat: no-repeat;
        position: absolute;
        width: 100px;
@@ -1910,7 +1913,7 @@ ul.cta-menu li .navbar-cta {
 
 @media (max-width: 991px) {
   .front-page header {
-    background-image: url(cta-block-bg.jpg);
+    background-image: url('../cta-block-bg.jpg');
     min-height: 650px;
     position: relative;
     background-repeat: no-repeat;
@@ -1983,7 +1986,7 @@ header {
 }
 
 .communicate.cta-block {
-  background-image: url('cta-block-bg.jpg');
+  background-image: url('../cta-block-bg.jpg');
   min-height: 700px;
   position: relative;
   background-repeat: no-repeat;
@@ -2078,7 +2081,7 @@ header .header-content {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    background-image: url('landing-bg.jpg');
+    background-image: url('../landing-bg.jpg');
   }
 }
 
@@ -2636,13 +2639,13 @@ h3.subtitle {
           left: inherit;
           right: -45px;
           width: 91px;
-          background-image: url(ruler.png);
+          background-image: url('../ruler.png');
         }
         &.ruler-done:after, &:before {
           left: inherit;
           right: -45px;
           width: 91px;
-          background-image: url(ruler-done.png);
+          background-image: url('../ruler-done.png');
         }
         &:after {
           height: 100%;
@@ -2906,7 +2909,7 @@ h3.subtitle {
   .main.container-fluid.communicate.image-bkg {
     padding: 0;
     width: 100%;
-    background-image: url('subscribe-bkg.jpg');
+    background-image: url('../subscribe-bkg.jpg');
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -3015,7 +3018,7 @@ h3.subtitle {
     }
   }
   .front-page header {
-    background-image: url(mobile-bg-min.jpg);
+    background-image: url('../mobile-bg-min.jpg');
   }
   div#roadmap .container {
     padding-right: 0;
@@ -3023,7 +3026,7 @@ h3.subtitle {
   .row.milestone {
     &::before {
       width: 70px;
-      background-image: url(ruler.png);
+      background-image: url('../ruler.png');
       height: 100%;
       position: absolute;
       content: " ";
@@ -3032,7 +3035,7 @@ h3.subtitle {
       background-size: 65px;
     }
     &.mobile-complete::before {
-      background-image: url(ruler-done.png);
+      background-image: url('../ruler-done.png');
       z-index: 5;
     }
     padding-left: 88px;
