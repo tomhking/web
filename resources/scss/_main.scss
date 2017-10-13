@@ -1216,6 +1216,22 @@ div#token-calculator {
 
 /*login page*/
 
+body.error-page{
+  background-image:url('network-bg.png');
+  .container.content{
+    text-align: center;
+    h1{
+      margin-top:1em;
+      font-size:2em;
+      font-weight: 200;
+    }
+    .symfony-exception-ghost{
+      margin-top:15em;
+      width: 150px;
+    }
+  }
+}
+
 body.login-page {
     background-image: url(login-bg.jpg);
     position: relative;

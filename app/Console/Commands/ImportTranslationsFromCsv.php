@@ -40,14 +40,22 @@ class ImportTranslationsFromCsv extends Command
     {
         $file = base_path($this->argument('file'));
         $destPath = resource_path('lang/' . $this->argument('lang') . '/');
+        $line = 0;
 
         if(!file_exists($destPath)){
             mkdir($destPath, 0777, true);
             $this->line("Destination path created");
         }
 
-        collect(explode("\r\n", file_get_contents($file)))->map(function ($item) {
-            list($key, $message) = str_getcsv($item);
+        collect(explode("\r\n", file_get_contents($file)))->map(function ($item) use (&$line) {
+            try {
+                list($key, $message) = str_getcsv($item);
+                $line++;
+            } catch (\Exception $e) {
+                $this->error("Invalid CSV on line ". $line);
+                throw $e;
+            }
+
             $keyParts = explode(".", $key);
 
             return [
@@ -60,7 +68,9 @@ class ImportTranslationsFromCsv extends Command
         })->each(function(Collection $values, $file) use ($destPath) {
             $newValues = array();
             foreach ($values as $key => $value) {
-                array_set($newValues, $key, $value);
+                if(!empty($value)) {
+                    array_set($newValues, $key, $value);
+                }
             }
 
             $destFile = $destPath.$file;
