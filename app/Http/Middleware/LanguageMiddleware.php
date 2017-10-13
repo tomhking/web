@@ -18,6 +18,8 @@ class LanguageMiddleware
         'vn' => 'VN',
         'es' => 'ES',
         'id' => 'ID',
+        'gt' => 'GR',
+        'it' => 'IT',
     ];
 
     /**
