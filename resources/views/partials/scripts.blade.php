@@ -17,3 +17,4 @@
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" async defer></script>
+<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>

@@ -20,11 +20,20 @@
                                 <div class="share">
                             <h3>@lang('user.share')</h3>
                             <div class="share-arrow"></div>
+                                    <div class="share-buttons large">
+                                        <a class="telegram-share" href="javascript:window.open('https://t.me/share/url?url=https://www.bitdegree.org/en/token', '_blank')">
+                                            <i></i>
+                                            <span>Telegram</span>
+                                        </a>
+                                        <a class="twitter-share" href="http://twitter.com/intent/tweet?url=https://www.bitdegree.org/en/token&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
+                                            <i class="fa fa-twitter"></i> Tweet
+                                        </a>
+
+                                    </div>
                             <!-- AddToAny BEGIN -->
                             <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                                 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                 <a class="a2a_button_facebook"></a>
-                                <a class="a2a_button_twitter"></a>
                                 <a class="a2a_button_google_plus"></a>
                                 <a class="a2a_button_linkedin"></a>
                                 <a class="a2a_button_reddit"></a>

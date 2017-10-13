@@ -1355,11 +1355,11 @@ body.login-page {
     margin-bottom: 35px;
   }
   img{
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
     .amount-of-tokens {
       text-align: center;
-      margin-bottom: 55px;
+      margin-bottom: 35px;
       h1{
         font-size:120px;
         margin:35px 0;
@@ -1401,6 +1401,61 @@ body.login-page {
         margin:0 auto;
         text-align: center;
         display: inline-block;
+      }
+      .share-buttons.large {
+        display: block;
+        margin-bottom: 35px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+        a {
+          font-size: 18px;
+          padding: 10px 15px;
+          margin-right: 5px;
+          border-radius: 3px;
+          box-sizing: border-box;
+          text-decoration: none;
+          cursor: pointer;
+          position: relative;
+          display: inline-block;
+          vertical-align: top;
+          color: #fff;
+          font-weight: 300;
+          height: 45px;
+          min-width: 150px;
+          letter-spacing: 1px;
+        }
+        .telegram-share{
+          background-color: #0088cc;
+          span{
+            display: inline-block;
+          }
+          i{
+            display: inline-block;
+            height: 22px;
+            vertical-align: top;
+            width: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px;
+            background-image: url(telegram-plane.png);
+            margin-right: 3px;
+            margin-top: 1px;
+          }
+          &:hover{
+            background-color: #007dbb;
+          }
+          &:active{
+            background-color: #026698;
+          }
+        }
+        .twitter-share {
+          background-color: #1b95e0;
+          i{
+            font-size: 22px;
+            margin-right: 3px;
+            margin-top: 1px;
+          }
+        }
       }
     }
 }
