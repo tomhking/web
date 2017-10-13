@@ -95,6 +95,23 @@ class AppServiceProvider extends ServiceProvider
             return $mailer;
         });
 
+        $this->app->singleton('languages', function() {
+            return [
+                'en' => 'EN',
+                'cn' => 'CN',
+                'ru' => 'RU',
+                'lv' => 'LV',
+                'ro' => 'RO',
+                'tr' => 'TR',
+                'fr' => 'FR',
+                'vn' => 'VN',
+                'es' => 'ES',
+                'id' => 'ID',
+                'gr' => 'GR',
+                'it' => 'IT',
+            ];
+        });
+
         $this->app->singleton('courses', function ($app) {
             return [
                 [

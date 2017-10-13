@@ -7,20 +7,6 @@ use Closure;
 class LanguageMiddleware
 {
     private $fallbackLanguage = 'en';
-    private $supportedLanguages = [
-        'en' => 'EN',
-        'cn' => 'CN',
-        'ru' => 'RU',
-        'lv' => 'LV',
-        'ro' => 'RO',
-        'tr' => 'TR',
-        'fr' => 'FR',
-        'vn' => 'VN',
-        'es' => 'ES',
-        'id' => 'ID',
-        'gr' => 'GR',
-        'it' => 'IT',
-    ];
 
     /**
      * Handle an incoming request.
@@ -32,15 +18,16 @@ class LanguageMiddleware
     public function handle($request, Closure $next)
     {
         $language = $request->segment(1);
+        $supportedLanguages = app('languages');
 
-        if (!isset($this->supportedLanguages[$language])) {
+        if (!isset($supportedLanguages[$language])) {
             abort(404);
         }
 
-        ksort($this->supportedLanguages);
+        ksort($supportedLanguages);
 
         view()->share([
-            'languages' => $this->supportedLanguages,
+            'languages' => $supportedLanguages,
             'currentLanguage' => $language,
             'defaultLanguage' => $this->fallbackLanguage,
         ]);
