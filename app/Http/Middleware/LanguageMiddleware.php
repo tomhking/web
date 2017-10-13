@@ -18,7 +18,7 @@ class LanguageMiddleware
         'vn' => 'VN',
         'es' => 'ES',
         'id' => 'ID',
-        'gt' => 'GR',
+        'gr' => 'GR',
         'it' => 'IT',
     ];
 
