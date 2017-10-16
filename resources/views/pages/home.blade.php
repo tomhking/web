@@ -17,7 +17,7 @@
     @include('partials.chat')
 @endsection
 
-@push('body_scripts')
+@push('body-scripts')
     <script type="text/javascript">
         jqWait(function () {
             $('#sidebar').on('activate.bs.scrollspy', function (event) {
