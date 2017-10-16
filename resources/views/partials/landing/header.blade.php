@@ -2,10 +2,24 @@
 <header class="{{ $navBarOnly ?? false ? 'container-fluid' : '' }}">
     @if(!($navBarOnly ?? false))
         <div class="medusae-overlay"></div>
-        <video  id="bgvid" poster="{{ asset('landing-bg.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="position: absolute; height: 1006px; top:-105px;">
-            <source src="{{ asset('bg.mp4') }}" type="video/mp4">
+        <video  id="bgvid" poster="{{ asset('landing-bg.jpg') }}" class="hidden-xs hidden-sm" style="position: absolute; height: 1006px; top:-105px;">
+            <source data-src="{{ asset('bg.mp4') }}" type="video/mp4">
             @lang('misc.video-unsupported')
         </video>
+
+        @push('body-scripts')
+            <script>
+                jqWait(function(){
+                    $(window).on("load", function() {
+                        var bg = $('#bgvid'), src = $('source', bg);
+                        src.attr('src', src.attr('data-src'));
+                        bg[0].loop = true;
+                        bg[0].load();
+                        bg[0].play();
+                    });
+                });
+            </script>
+        @endpush
 
         <nav id="sidebar" class="sidebar side-nav">
             <ul class="nav nav-list affix">
