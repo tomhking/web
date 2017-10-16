@@ -20,7 +20,10 @@ $router->get('/', ['as' => 'root', function () use ($router) {
 $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($router) {
     $router->get('/token/', ['as' => 'home', function (\Illuminate\Http\Request $request) use ($router) {
         $from000 = $request->get('utm_source') === '000' || $request->cookie('utm_source') === '000';
-        $response = response(view('pages.home', ['from000' => $from000])->render());
+        $response = response(view('pages.home', [
+            'from000' => $from000,
+            'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
+        ])->render());
 
         if($from000) {
             $response->withCookie(new \Symfony\Component\HttpFoundation\Cookie(

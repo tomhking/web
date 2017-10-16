@@ -77,12 +77,12 @@
                             @else
                                 @if($from000)
                                 <form action="{{ route_lang('signup') }}" method="get">
-                                    <input class="suscribe-input" name="email" type="email" placeholder="@lang('user.enter_email')" required>
+                                    <input class="suscribe-input" name="email" type="email" placeholder="@lang('user.enter_email')" value="{{ $email }}" required>
                                     <button type="submit" class="submit">@lang('home.free_tokens')</button>
                                 </form>
                                 @else
                                     <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                                        <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" required>
+                                        <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" value="{{ $email }}" required>
                                         <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
                                     </form>
                                 @endif
