@@ -57,9 +57,9 @@
                         <li class="narrow"><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                         <li class="narrow"><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank">@lang('navigation.bitcointalk')</a></li>
                         @if($currentLanguage == "cn")
-                            <li class="narrow"><a href="{{ asset('onepager_cn.png') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                            <li class="narrow"><a href="{{ asset('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                         @elseif($currentLanguage == "ru")
-                            <li class="narrow"><a href="{{ asset('onepage_ru.png') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                            <li class="narrow"><a href="{{ asset('files/onepager-ru.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                         @else
                             <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                         @endif
