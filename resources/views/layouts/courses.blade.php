@@ -34,6 +34,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/'.($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css')) }}">
     <link href="{{ asset('course_style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.min.css') }}">
 
     @include('partials.smartlook')
 </head>
@@ -129,6 +130,8 @@
 </div>
 
 @include('partials.scripts')
+
+<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}" async></script>
 
 <script>
     jqWait(function(){
