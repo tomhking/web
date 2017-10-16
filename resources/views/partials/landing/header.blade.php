@@ -42,7 +42,13 @@
                         <li><a href="{{ route_lang('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
                         <li class="narrow"><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                         <li class="narrow"><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank">@lang('navigation.bitcointalk')</a></li>
-                        <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
+                        @if($currentLanguage == "cn")
+                            <li class="narrow"><a href="{{ asset('onepager_cn.png') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                        @elseif($currentLanguage == "ru")
+                            <li class="narrow"><a href="{{ asset('onepage_ru.png') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                        @else
+                            <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
+                        @endif
                     </ul>
                     <ul class="cta-menu">
                         <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
