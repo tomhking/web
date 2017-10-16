@@ -88,7 +88,7 @@
                                 @endif
                             @endif
                             <div class="contact-icons buttons">
-                                <a class="contact-icon" href="https://t.me/joinchat/GIngsQrKak9hN8h4xwN2Kg" rel="nofollow" target="_blank"><img src="{{ asset('telegram-logo.png') }}" alt="Telegram"></a>
+                                <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset('telegram-logo.png') }}" alt="Telegram"></a>
                                 <a class="contact-icon" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><img src="{{ asset('twitter-logo.png') }}" alt="Twitter"></a>
                             </div>
                         </div>

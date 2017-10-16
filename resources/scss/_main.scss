@@ -1417,6 +1417,11 @@ body.login-page {
         margin:0 auto;
         text-align: center;
         display: inline-block;
+        .a2a_svg {
+          height: 28px;
+          line-height: 28px;
+          width: 28px;
+        }
       }
       .share-buttons.large {
         display: block;
