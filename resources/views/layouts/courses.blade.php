@@ -130,8 +130,6 @@
 
 @include('partials.scripts')
 
-<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}" async></script>
-
 <script>
     jqWait(function(){
         $(window).on("load",function(){

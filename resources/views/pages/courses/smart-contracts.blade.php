@@ -17,14 +17,20 @@
 
 @section('steps')
     <ul class="nav ">
-        <li><a class="list-group-item active" href="">1. Installing Solidity & Ethereum Wallet</a></li>
-        <li><a class="list-group-item" href="">2. Solidity Source Files & Structure of Smart Contracts</a></li>
-        <li><a class="list-group-item" href="">3. Variables & Functions</a></li>
-        <li><a class="list-group-item" href="">4. Arithmetic, Logical & Bitwise Operators</a></li>
-        <li><a class="list-group-item" href="">5. Input Parameters and Output Parameters</a></li>
-        <li><a class="list-group-item" href="">6. Importing Smart Contracts & Compiling Contracts</a></li>
-        <li><a class="list-group-item" href="">7. Events & Logging</a></li>
-        <li><a class="list-group-item" href="">8. Exceptions</a></li>
-        <li><a class="list-group-item" href="">9. Examples</a></li>
+        <li><a class="list-group-item active" href="">1. Course Overview</a></li>
+        <li><a class="list-group-item" href="">2. Introduction to Ethereum Smart Contracts</a></li>
+        <li><a class="list-group-item" href="">3. Setting up the Development Environment</a></li>
+        <li><a class="list-group-item" href="">4. Data types</a></li>
+        <li><a class="list-group-item" href="">5. Operators</a></li>
+        <li><a class="list-group-item" href="">6. Functions</a></li>
+        <li><a class="list-group-item" href="">7. Visibility of Variables and Functions</a></li>
+        <li><a class="list-group-item" href="">8. ERC20 tokens</a></li>
+        <li><a class="list-group-item" href="">9. Solidity Source Files &amp; Structure of Smart Contracts</a></li>
+        <li><a class="list-group-item" href="">10. Compilation and Deployment</a></li>
+        <li><a class="list-group-item" href="">11. Inheritance and Polymorphism</a></li>
+        <li><a class="list-group-item" href="">12. Events and Logging</a></li>
+        <li><a class="list-group-item" href="">13. Exceptions</a></li>
+        <li><a class="list-group-item" href="">14. Security Concerns</a></li>
+        <li><a class="list-group-item" href="">15. Deploy on Ethereum Blockchain</a></li>
     </ul>
 @endsection
