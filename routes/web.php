@@ -200,6 +200,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
 
         $participant->first_name = $nameParts[0];
         $participant->last_name = count($nameParts) > 1 ? implode(" ", array_slice($nameParts, 1)) : null;
+        $participant->captcha_verified = true;
 
         $participant->save();
 
@@ -227,6 +228,9 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         if($participant instanceof \App\Participant) {
             $authToken = $participant->authTokens()->save(new \App\AuthToken);
             event(new LogIn($participant, $authToken, $request->segment(1)));
+
+            $participant->captcha_verified = true;
+            $participant->save();
 
             return response()->json(['success' => true]);
         }
