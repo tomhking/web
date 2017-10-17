@@ -16,12 +16,14 @@
                             <li><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                             @if($currentLanguage == "cn")
                                 <li class="narrow"><a href="{{ asset('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                                <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @elseif($currentLanguage == "ru")
                                 <li class="narrow"><a href="{{ asset('files/onepager-ru.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                                <li><a href="{{ asset('files/white-paper-ru.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @else
                                 <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
+                                <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @endif
-                            <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         </ul>
                     </div>
                 </div>

@@ -65,7 +65,12 @@
                         @endif
                     </ul>
                     <ul class="cta-menu">
-                        <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                        @if($currentLanguage == "ru")
+                            <li><a href="{{ asset('files/white-paper-ru.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                        @else
+                            <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                        @endif
+
                     </ul>
 
                     <div class="dropdown lang-menu">
