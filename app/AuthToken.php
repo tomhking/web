@@ -33,6 +33,13 @@ class AuthToken extends Model
         $this->save();
     }
 
+    public function invalidate()
+    {
+        $this->key = self::generateKey();
+        $this->expires_at = Carbon::now()->subMinute();
+        $this->save();
+    }
+
     public function participant()
     {
         return $this->belongsTo(Participant::class);
@@ -60,4 +67,13 @@ class AuthToken extends Model
         return $query->where('key', '=', $key);
     }
 
+    public function scopeByIp(Builder $query, $ip)
+    {
+        return $query->where('ip', '=', $ip);
+    }
+
+    public function scopeLastHour(Builder $query)
+    {
+        return $query->where('created_at', '>', Carbon::now()->subHour());
+    }
 }

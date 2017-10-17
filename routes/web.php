@@ -134,7 +134,48 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
 
         return view('pages.signup', [
             'email' => $request->get('email'),
+            'success' => $request->has('success'),
         ]);
+    }]);
+
+    $router->post('/token/join', ['as' => 'join', function(\Illuminate\Http\Request $request) {
+        $this->validate($request, [
+            'email' => 'required|string|email|max:250'
+        ]);
+
+        $participant = \App\Participant::where('email', '=', $request->get('email'))->first();
+        $captchaRequired = \App\AuthToken::byIp($request->ip())->lastHour()->count() >= 5;
+
+        if($participant instanceof \App\Participant) {
+            if($captchaRequired) {
+                return redirect(route_lang('login', ['email' => $participant->email]));
+            }
+
+            $authToken = $participant->authTokens()->save(new \App\AuthToken);
+            event(new LogIn($participant, $authToken, $request->segment(1)));
+            return redirect(route_lang('login').'?success');
+        }
+
+        if($captchaRequired) {
+            return redirect(route_lang('signup', ['email' => $request->get('email')]));
+        }
+
+        $participant = new \App\Participant();
+        $participant->email = $request->get('email');
+        $participant->ip = $request->ip();
+
+        $name = ucwords(str_replace("."," ", explode("@", $request->get('email'))[0]));
+        $nameParts = explode(" ", $name);
+
+        $participant->first_name = $nameParts[0];
+        $participant->last_name = count($nameParts) > 1 ? implode(" ", array_slice($nameParts, 1)) : null;
+
+        $participant->save();
+
+        $authToken = $participant->authTokens()->save(new \App\AuthToken);
+        event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1)));
+
+        return redirect(route_lang('signup').'?success');
     }]);
 
     $router->post('/token/signup', ['as' => 'signup-post', function (\Illuminate\Http\Request $request) {
@@ -163,7 +204,6 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         $participant->save();
 
         $authToken = $participant->authTokens()->save(new \App\AuthToken);
-
         event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1)));
 
         return response()->json(['success' => true]);
@@ -172,6 +212,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/login', ['as' => 'login', function (\Illuminate\Http\Request $request) {
         return view('pages.login', [
             'email' => $request->get('email'),
+            'success' => $request->has('success'),
         ]);
     }]);
 
@@ -196,7 +237,10 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/logout', ['as' => 'logout', function (\Illuminate\Http\Request $request) {
         $key = $request->cookie('auth');
         if(!empty($key)){
-            \App\AuthToken::byKey($key)->delete();
+            $token = \App\AuthToken::byKey($key)->first();
+            if($token instanceof \App\AuthToken) {
+                $token->invalidate();
+            }
         }
         return redirect(route_lang('home'))->withCookie(
             new \Symfony\Component\HttpFoundation\Cookie('auth','',0)

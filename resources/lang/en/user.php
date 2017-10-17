@@ -6,6 +6,7 @@ return [
     'welcome_back' => 'Welcome back, :name!',
     'login' => 'Log In',
     'link_sent' => 'Your instant log in link has been emailed to you.',
+    'link_expired' => 'Sorry, the log in link is either incorrect or it had already expired.',
     'back_home' => 'Back to the Home Page',
     'unknown_error' => 'An unknown error occurred. Please make sure you entered correct data and try again.',
     'already_member' => 'You already have an account at BitDegree! Click <strong>Log In</strong> below to authenticate.',

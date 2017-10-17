@@ -96,7 +96,7 @@
                                 <p><a class="btn btn-account" href="{{ route_lang('user') }}">@lang('user.my_account')</a></p>
                             @else
                                 @if($from000)
-                                <form action="{{ route_lang('signup') }}" method="get">
+                                <form action="{{ route_lang('join') }}" method="post">
                                     <input class="suscribe-input" name="email" type="email" placeholder="@lang('user.enter_email')" value="{{ $email }}" required>
                                     <button type="submit" class="submit">@lang('home.free_tokens')</button>
                                 </form>

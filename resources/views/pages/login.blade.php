@@ -8,11 +8,11 @@
                 <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
             </a>
             <h1>@lang('user.login')</h1>
-            <div id="login-success" style="display: none">
+            <div id="login-success" style="@if(!$success) display: none @endif">
                 <div class="alert alert-success">@lang('user.link_sent')</div>
                 <a href="{{ route_lang('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
             </div>
-            <form action="{{ route_lang('login-post') }}" method="post" class="async-validated" data-show="#login-success">
+            <form action="{{ route_lang('login-post') }}" method="post" class="async-validated" data-show="#login-success" style="@if($success) display: none @endif">
                 <div class="alert alert-danger other-error" style="display: none;">@lang('user.unknown_error')</div>
                 @if(!empty($email))
                     <div class="well-sm well">@lang('user.already_member')</div>
