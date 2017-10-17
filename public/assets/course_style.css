@@ -309,6 +309,10 @@ p.subtitle {
   margin-bottom: 0;
 }
 
+.contact-icons.buttons a.contact-icon {
+  padding: 12px 15px;
+}
+
 @media (min-width:1800px) {
   video{
     width: 100%!important;
