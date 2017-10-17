@@ -66,7 +66,7 @@
                     </ul>
                     <ul class="cta-menu">
                         @if($currentLanguage == "cn")
-                            <li><a href="{{ asset('files/white-paper-cn.pdf') }}" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
+                            <li><a href="https://www.bitdegree.org/white-paper-cn.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @elseif($currentLanguage == "ru")
                             <li><a href="https://www.bitdegree.org/white-paper-ru.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @else
