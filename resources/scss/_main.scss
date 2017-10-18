@@ -741,13 +741,14 @@ form .notice {
     letter-spacing: 1px;
   }
   table{
-    width:70%;
-    color:#fff;
+    width: 500px;
+    max-width: 100%;
+    color: #fff;
     font-size: 16px;
     line-height: 30px;
-    font-family: $source-code;
+    font-family: "Source Code Pro", monospace;
     font-weight: 300;
-    margin:0 auto 45px auto;
+    margin: 0 auto 45px auto;
     td{
       width:50%;
       color:#fff;
@@ -777,6 +778,9 @@ form .notice {
   table {
     width: 100%;
     margin-bottom:35px;
+    td{
+      vertical-align: top;
+    }
   }
   p.note{
     margin:15px 0 45px 0;
@@ -3729,6 +3733,62 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  body.login-page {
+    a.login-logo img {
+      max-width: 150px;
+      margin-bottom: 25px;
+    }
+    img {
+      margin-bottom: 15px;
+      max-width: 60%;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 40px;
+      letter-spacing: 3px!important;
+      line-height: 24px;
+    }
+    .amount-of-tokens h1 {
+      line-height: 90px;
+      font-size: 90px;
+      margin: 0;
+      letter-spacing: 0;
+    }
+    .share{
+      .share-arrow::after {
+        display:none;
+      }
+      h3 {
+        font-size: 20px!important;
+      }
+      .share-buttons.large a {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .ico-info-block table {
+    width: auto;
+    max-width: 100%;
+    td{
+      vertical-align: top;
+    }
+  }
+  .token-distribution, .budget-allocation {
+    table {
+      width: 100%;
+      tr td {
+        vertical-align: bottom;
+        font-size: 14px;
+        letter-spacing: 0;
+        width: 60%;
+        line-height: 24px;
+        &.amount {
+          padding-left: 15px;
+          width: 40%;
+        }
+      }
+    }
+  }
   .video-block iframe {
     max-width: 100%;
     height:260px;
@@ -3880,6 +3940,9 @@ p.subtitle {
     &.subtitle {
       text-align: left !important;
     }
+  }
+  .ico-info-block h3 {
+    text-align: center!important;
   }
   p.subtitle {
     text-align: left !important;
