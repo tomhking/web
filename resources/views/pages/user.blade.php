@@ -53,6 +53,10 @@
                         </div>
                             </div>
                         </div>
+                        <div class="col-md-6 col-md-offset-3 bounty-note">
+                            <p>To receive your Tokens for sharing, join the BitDegree Bounty campaign <a href="https://bitcointalk.org/index.php?topic=2225880.0" target="_blank" style="color:#ec7686;"><b>here</b></a>.</p>
+                            <p>The bounty campaign consists of many ways you can earn tokens, all you need is an account on bitcointalk forum.</p>
+                        </div>
                         <div class="col-md-12">
                             <p><a class="back-to-homepage btn btn-default" href="{{ route_lang('logout') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.logout')</a></p>
                         </div>

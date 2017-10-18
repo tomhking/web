@@ -1584,6 +1584,13 @@ body.login-page {
         }
       }
     }
+  .bounty-note {
+    margin-top: 25px;
+    p {
+      font-size: 13px;
+      line-height: 18px;
+    }
+  }
 }
 
 body.login-page.token-secured a.login-logo{
