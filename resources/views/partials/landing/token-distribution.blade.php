@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class="main white-bkg">
+<div class="token-graphs main white-bkg">
     <div class="container">
         <div class="token-distribution">
             <div class="row">

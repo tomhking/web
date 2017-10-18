@@ -755,7 +755,7 @@ form .notice {
   }
 }
 
-div#token-distribution hr{
+.token-graphs hr{
   margin-bottom: 65px!important;
 }
 
@@ -765,7 +765,8 @@ div#token-distribution hr{
   line-height: 30px;
   font-family: $source-code;
   font-weight: 300;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
+  margin-top: 25px;
   .image-container{
     margin:35px 0;
   }
