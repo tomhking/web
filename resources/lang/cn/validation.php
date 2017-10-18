@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => '您选择的国家有误.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => '您需要完成下方的验证以确认您的身份.',
+    ),
+    'email' => 
+    array (
+      'exists' => '提供的邮箱未能在数据库中找到. 请先注册.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => '姓',
+    'last-name' => '名',
+    'g-recaptcha-response' => 'reCaptcha验证',
   ),
 );

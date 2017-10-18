@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Țara pe care ai selectat-o nu este validă.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Trebuie să selectați această casetă pentru a dovedi că nu sunteți un bot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'E-mailul furnizat nu a fost găsit în baza noastră de date. Ar trebui să vă înscrieți mai întâi.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Prenume',
+    'last-name' => 'Nume',
+    'g-recaptcha-response' => 'validare reCaptcha',
   ),
 );

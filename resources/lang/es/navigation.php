@@ -2,8 +2,8 @@
 
 return array (
   'what-is' => 'Qué es BitDegree',
-  'people' => 'Las Personas Detrás',
-  'one-pager' => 'Un Localizador',
+  'people' => 'El Equipo',
+  'one-pager' => 'Localizador',
   'ico' => 'ICO &amp; Mapa de Ruta',
   'faq' => 'Preguntas Frecuentes',
   'blog' => 'Blog',
@@ -18,5 +18,10 @@ return array (
   'roadmap' => 'Mapa de Ruta',
   'top' => 'Parte superior',
   'subscribe' => 'Suscribir',
-  'email_placeholder' => 'Ingresa tu correo electrónico para recibir nuestras actualizaciones',
+  'email_placeholder' => 'Ingresa tu email para recibir nuestras actualizaciones',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Generosidad',
+  'white-paper' => 'Transparencia',
+  'no_account' => 'No existe una cuenta con el correo electrónico brindado.',
+  'link_expired' => 'Lo sentimos, este enlace no es válido o ya ha expirado. Intenta iniciar sesión nuevamente',
 );

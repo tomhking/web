@@ -1,0 +1,27 @@
+<?php 
+
+return array (
+  'what-is' => 'Što je BitDegree',
+  'people' => 'Ljudi u pozadini',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Nagrada',
+  'one-pager' => 'Jedan Pager',
+  'white-paper' => 'Dokumenti',
+  'ico' => 'ICO &amp; Plan',
+  'faq' => 'FAQ',
+  'blog' => 'Blog',
+  'what-it-is' => 'Što je BitDegree?',
+  'users' => 'Naši Korisnici',
+  'problems' => 'Koje probleme riješavamo?',
+  'moocs' => 'Više o MOOCs',
+  'perspective' => 'Studentska perspektiva',
+  'demand' => 'Potreba za IT poslovima',
+  'economy' => 'Ekonomija Tokena',
+  'team' => 'Tim',
+  'roadmap' => 'Plan',
+  'top' => 'Vrh',
+  'subscribe' => 'Pretplata',
+  'email_placeholder' => 'Upišite email kako bi zaprimali obavijesti',
+  'no_account' => 'Račun s navedenim emailom ne postoji',
+  'link_expired' => 'Oprostite, ovaj link nije validan ili je istekao. Molimo pokušajte ponovno',
+);

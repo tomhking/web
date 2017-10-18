@@ -19,4 +19,9 @@ return array (
   'top' => 'Augša',
   'subscribe' => 'Pierakstīties',
   'email_placeholder' => 'Ievadiet e-pasta adresi, lai saņemtu jaunumus',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Atalgojums',
+  'white-paper' => 'Pārskats',
+  'no_account' => 'Konts ar norādīto e-pasta adresi neeksistē.',
+  'link_expired' => 'Atvainojiet, šī saite vairs nav izmantojama. Lūdzu, mēģiniet pieslēgties vēlreiz.',
 );

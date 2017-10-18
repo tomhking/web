@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Страна, которую вы выбрали неверна.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Вы должны выбрать эту опцию, чтобы доказать, что вы не бот.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Данный адрес электронной почты отсутствует в нашей базе данных. Сначала вы должны зарегистрироваться.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Имя',
+    'last-name' => 'Фамилия',
+    'g-recaptcha-response' => 'Проверка reCaptcha',
   ),
 );

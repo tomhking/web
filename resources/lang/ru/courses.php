@@ -16,7 +16,7 @@ return array (
   'title_blockchain_basics' => 'Основы Блокчейна',
   'title_crypto_intro' => 'Введение в Крипто и Криптовалюты',
   'title_ethereum_basics' => 'Основы Ethereum',
-  'title_smart_contracts' => 'Разработка Смарт Контракта и Solidity',
+  'title_smart_contracts' => 'Разработка Смарт-контракта и Solidity',
   'title_ethereum_development' => 'Разработка Ethereum: Truffle и Open Zeppelin',
   'title' => 'Какие проблемы решает BitDegree?',
   'subtitle' => 'Мы создаём BitDegree на прочной основе в виде 29 миллионов существующих пользователей на площадках Hostinger и 000webhost - верном и открытом для инноваций и обучения сообществе. Нашей целью является позволить миллионам людей по всему миру, открыть для себя силу всемирной паутины и дать им возможность учиться, творить и расти.',

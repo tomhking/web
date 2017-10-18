@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Moj račun',
+  'enter_email' => 'Unesite svoj email',
+  'welcome_back' => 'Dobrodošli nazad, :name!',
+  'login' => 'Prijava',
+  'link_sent' => 'Vaš link za brzu prijavu je poslan na vašu email adresu.',
+  'back_home' => 'Povratak na početnu stranicu',
+  'unknown_error' => 'Nepoznata pogreška. Budite sigurni da ste upisali ispravne podatke i pokušajte ponovno.',
+  'already_member' => 'Imate korisnički račun s BitDegree! Kliknite na <strong>Prijava</strong> kako bi se prijavili.',
+  'email_address' => 'Email adresa',
+  'sample_email' => 'vi@primjer.com',
+  'or_signup' => 'ili se Registrirajte',
+  'signup' => 'Registracija',
+  'check_email' => 'Udaljeni ste samo jedan korak od <b>Vašeg besplatnog tokena</b>. Molimo vas da provjerite email adresu koju ste nam dali prilikom registracije i kliknite na link koji se nalazi u emailu.',
+  'please_provide' => 'Molimo vas da nam ostavite podatke vezane za Vašu Registraciju na Bitdegree',
+  'name' => 'Vaše ime',
+  'optional' => 'opcionalno',
+  'or_login' => 'ili Prijava',
+  'congrats' => 'Čestitamo, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h3>Vi imate</h3 ><h1>:number EDU</h1> <h3>sigurnih tokena</h3>',
+  'share' => 'Podijelite kako bi dobili više <b>BESPLATNIH</b> tokens:',
+  'congratulations' => 'Čestitamo, :name!',
+  'logout' => 'Odjava',
+  'almost_done' => 'Uskoro ste gotovi...',
+  'register' => 'Registracija',
+);

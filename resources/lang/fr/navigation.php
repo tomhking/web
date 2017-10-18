@@ -19,4 +19,9 @@ return array (
   'top' => 'Vers Haut',
   'subscribe' => 'S\'inscrire',
   'email_placeholder' => 'Entrez un email pour recevoir les mises à jour',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Prime',
+  'white-paper' => 'Papier blanc',
+  'no_account' => 'Le compte avec l\'email donné n\'existe pas.',
+  'link_expired' => 'Désolé, ce lien n\'est pas valide ou a déjà expiré. Essayez de vous reconnecter s\'il vous plaît .',
 );

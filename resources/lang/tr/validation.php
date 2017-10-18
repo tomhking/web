@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Seçtiğiniz ülke geçersizdir.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Bot olmadığınızı kanıtlamak için bu kutuya tıklamalısınız.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Verilen e-posta adresi veritabanımızda bulunmadı. Önce kaydolmalısınız.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Ad',
+    'last-name' => 'Soyad',
+    'g-recaptcha-response' => 'reCaptcha doğrulaması',
   ),
 );

@@ -45,4 +45,7 @@ return array (
   'economy_point_1' => '<b> 01. </b> Tanto las empresas como los Patrocinadores son el principal combustible para una economía sostenible BitDegree. El incentivo económico para los Patrocinadores para comprar fichas BitDegree es <strong> reclutar talentos tecnológicos </strong>, mejorando la marca y la publicidad de los empleadores',
   'economy_point_2' => '<b>02.</b> Las fichas de BitDegree se pueden utilizar para crear <strong>incentivos inteligentes como becas</strong> para los logros educativos de los estudiantes, que pueden utilizarse para obtener diversos servicios digitales ofrecidos por terceros en sus plataformas a cambio de fichas.',
   'economy_point_3' => '<b>03.</b> Al aceptar las fichas de BitDegree, terceros se convierten en mediadores de la economía simbólica. Los patrocinadores, así como los estudiantes podrán intercambiar y canjear sus fichas en una amplia red de socios de la industria o intercambiarlos por bienes y servicios digitales. El potencial de BitDegree Token y su <strong>demanda</strong> está estrechamente alineado con la gigantesca industria de reclutamiento de <strong> $200 mil millones</ trong>. La oferta limitada de fichas asegura una creciente demanda de los servicios de la plataforma BitDegree en el futuro previsto.',
+  'trust_title' => 'Como Se Ve en',
+  'partners_title' => 'Socios',
+  'free_tokens' => 'OBTEN FICHAS GRATUITAS',
 );

@@ -76,7 +76,7 @@ return array (
   'timezone' => ':attribute debe ser una zona válida.',
   'unique' => ':attribute ya ha sido tomado',
   'uploaded' => 'The :attribute no pudo subirse',
-  'url' => ':attribute format is invalid.',
+  'url' => ':attribute el formato no es válido.',
   'custom' => 
   array (
     'attribute-name' => 
@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'El país que ha seleccionado no es válido.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Debes seleccionar esta casilla para demostrar que no eres un bot',
+    ),
+    'email' => 
+    array (
+      'exists' => 'El correo electrónico no se encontró en nuestra base de datos. Debes registrarte primero.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Nombre',
+    'last-name' => 'Apellido',
+    'g-recaptcha-response' => 'Validación reCaptcha',
   ),
 );

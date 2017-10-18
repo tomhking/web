@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Minha conta',
+  'enter_email' => 'Insira seu email',
+  'welcome_back' => 'Bem-vindo de volta, :nome!',
+  'login' => 'Entrar',
+  'link_sent' => 'O seu link de login instantâneo foi enviado para você.',
+  'back_home' => 'Voltar a página inicial',
+  'unknown_error' => 'Ocorreu um erro desconhecido. Certifique-se de inserir os dados corretos e tentar novamente.',
+  'already_member' => 'Você já possui uma conta no BitDegree! Clique em <strong> Iniciar sessão </ strong> abaixo para autenticar.',
+  'email_address' => 'Endereço de e-mail',
+  'sample_email' => 'you@example.com',
+  'or_signup' => 'ou Inscreva-se',
+  'signup' => 'Inscrever-se',
+  'check_email' => 'Você está a um passo de garantir <b> Seu token grátis </b>. Verifique o e-mail fornecido durante o registro e clique no link de confirmação nele.',
+  'please_provide' => 'Por favor, forneça algumas informações para se registrar no Bitdegree',
+  'name' => 'Seu Nome',
+  'optional' => 'opcional',
+  'or_login' => 'ou faça o login',
+  'congrats' => 'Parabéns, {{$ participant-> first_name or $ participant-> email}}!',
+  'tokens_secured' => '<h3> Você tem </h3> <h1>:número EDU </h1> <h3> Token seguro </h3>',
+  'share' => 'Compartilhe para obter mais tokens<b> GRATUITOS</b> :',
+  'congratulations' => 'Parabéns, :nome!',
+  'logout' => 'Sair',
+  'almost_done' => 'Quase pronto...',
+  'register' => 'registo',
+);

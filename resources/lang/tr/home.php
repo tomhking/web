@@ -45,4 +45,7 @@ return array (
   'economy_point_1' => '<b>01.</b> Sponsor olan şirketler, sürdürülebilir bir BitDegree ekonomisinin temel yakıtlarıdır. Sponsorların BitDegree tokenlerini satın almalarının ekonomik teşviği, <strong>teknoloji yeteneklerini işe almaları</strong>, işveren marka bilinci oluşturmaları ve reklamcılık faaliyetlerini artırmalarıdır.',
   'economy_point_2' => '<b>02.</b> BitDegree tokenleri, öğrencilerin eğitim başarıları için <strong>burs olarak akıllı teşvikler oluşturmak</strong> için kullanılabilir; bunlar, tokenler karşılığında platformlarında üçüncü şahısların sunduğu çeşitli dijital hizmetleri almak için kullanılabilir.',
   'economy_point_3' => '<b>03.</b> BitDegree tokenini kabul ederek, üçüncü taraflar token ekonomisinin aracı haline gelir. Sponsorlar ve öğrenciler, geniş endüstri ortakları ağı içerisinde tokenlerini takas edebilir, kullanabilir ve dijital ürünler & hizmetler için kullanabilir. BitDegree Token <strong>talep</strong> potansiyeli, devasa <strong>200 milyar $</ strong> işe alım endüstrisiyle yakından alakalıdır. Sınırlı token, öngörülen gelecekte BitDegree platformunun hizmetleri için giderek artan bir talebi garanti altına almaktadır.',
+  'trust_title' => 'Medyada',
+  'partners_title' => 'Partnerler',
+  'free_tokens' => 'ÜCRETSİZ TOKEN AL',
 );

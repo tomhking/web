@@ -1,9 +1,9 @@
 <?php 
 
 return array (
-  'what-is' => 'Ce este BitDegree',
+  'what-is' => 'Ce este',
   'people' => 'Oamenii din spate',
-  'one-pager' => 'Un pager',
+  'one-pager' => 'Prezentare',
   'ico' => 'ICO &amp; Foaia de parcurs',
   'faq' => 'Întrebări frecvente',
   'blog' => 'Blog',
@@ -18,5 +18,10 @@ return array (
   'roadmap' => 'Foaia de parcurs',
   'top' => 'Sus',
   'subscribe' => 'Abonează-te',
-  'email_placeholder' => 'Introdu un e-mail pentru a primi actualizări',
+  'email_placeholder' => 'Scrieți un email pentru a primi știri',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Răsplată',
+  'white-paper' => 'Carte-Albă',
+  'no_account' => 'Nu există un cont cu email-ul furnizat.',
+  'link_expired' => 'Ne pare rău, acest link este invalid sau a expirat deja. Încercați să vă conectați din nou.',
 );

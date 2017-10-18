@@ -19,4 +19,9 @@ return array (
   'top' => 'En Üst',
   'subscribe' => 'Abone Ol',
   'email_placeholder' => 'Gelişmelerden haberdar olmak için email girin.',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Ödül Programı',
+  'white-paper' => 'Beyaz-kagit',
+  'no_account' => 'Verilen e-posta adresi ile hesap bulunmuyor.',
+  'link_expired' => 'Üzgünüz, bu bağlantı ya geçersiz ya da zaman aşımına uğradı. Lütfen tekrar giriş yapmayı deneyin.',
 );

@@ -45,4 +45,7 @@ return array (
   'economy_point_1' => '<b>01.</b> Công ty như nhà tài trợ là tài nguyên chính giúp nền kinh tế của BitDegree vận hành bền vững. Lý do để khuyến khích các nhà tài trợ mua BitDegree tokesn là  <strong>tuyển mộ nhân tài công nghệ</strong>, quảng cáo và tăng tính nhận diện thương hiệu của nhà tuyển dụng',
   'economy_point_2' => '<b>02.</b> BitDegree tokens có thể được sử dụng để tạo ra <strong>smart-incentives như là học bổng</strong> cho việc hoàn tất khóa học của sinh viên, có thể được dùng để nhận nhiều ưu đãi dịch vụ công nghệ khác nhau từ các bên thứ 3 trên nền tảng của họ bằng cách trao đổi tokens.',
   'economy_point_3' => '<b>03.</b> Bằng việc chấp nhận sử dụng BitDegree token, bên thứ 3 trở thành trung gian của nền kinh tế token. Nhà tài trợ và sinh viên có thể quy đổi hoặc nhận đổi token trong mạng lưới rộng lớn của các đối tác cùng ngành hoặc chuyển chúng thành dịch vụ hoặc hàng hóa số. Tiềm năng <strong>sử dụng</strong> BitDegree Token gắn lièn với nền công nghiệp tuyển dụng khổng lồ <strong>200 tỷ đô</strong>. Tokens được cung cấp có giới hạn cũng đảm bảo việc phát triển bền vững của nền tảng dịch vụ của BitDegree trong tương lai có thể nhìn thấy được. ',
+  'trust_title' => 'Được nhắc đến bởi',
+  'partners_title' => 'Đối tác',
+  'free_tokens' => 'NHẬN TOKENS MIỄN PHÍ',
 );

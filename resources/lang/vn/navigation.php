@@ -19,4 +19,9 @@ return array (
   'top' => 'Top',
   'subscribe' => 'Subscribe',
   'email_placeholder' => 'Điền email để nhận cập nhật',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Bounty',
+  'white-paper' => 'Sách trắng',
+  'no_account' => 'Tài khoản với email này không tồn tại.',
+  'link_expired' => 'Xin lỗi, liên kết này đã hết hạn hoặc không đúng. Hãy thử đăng nhập lại lần nữa.',
 );

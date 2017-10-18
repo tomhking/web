@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Mi cuenta',
+  'enter_email' => 'Enter your email',
+  'welcome_back' => 'Bienvenido, :name',
+  'login' => 'Iniciar Sesión',
+  'link_sent' => 'Su enlace de inicio de sesión instantáneo se le ha enviado por correo electrónico.',
+  'back_home' => 'Regreso a la Página de Inicio',
+  'unknown_error' => 'Un error desconocido ocurrió. Asegúrate de ingresar los datos correctos e intente nuevamente.',
+  'already_member' => '¡Ya tienes una cuenta en BitDegree! Haz clic en <strong> Iniciar sesión</strong> a continuación para autenticar.',
+  'email_address' => 'Dirección de Correo Electrónico',
+  'sample_email' => 'tu@ejemplo.com',
+  'or_signup' => 'o Regístrate',
+  'signup' => 'Regístrate',
+  'check_email' => 'Estás a un paso de asegurar <b>Tus fichas gratuitas/b>. Verifica tu correo electrónico proporcionado durante el registro y haz clic en el enlace de confirmación.',
+  'please_provide' => 'Proporciona información para registrarse en Bitdegree',
+  'name' => 'Tu Nombre',
+  'optional' => 'opcional',
+  'or_login' => 'o Inicie Sesión',
+  'congrats' => 'Felicitaciones,  {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h3>Tienes</h3 ><h1>:number EDU</h1> <h3>Fichas aseguradas</h3>',
+  'share' => 'Compartir para obtener más fichas <b>GRATIS</b>:',
+  'congratulations' => 'Felicitaciones, :name!',
+  'logout' => 'Cerrar sesión',
+  'almost_done' => 'Casi terminado...',
+  'register' => 'Registro',
+);

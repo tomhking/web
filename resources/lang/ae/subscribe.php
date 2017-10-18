@@ -1,9 +1,9 @@
 <?php 
 
 return array (
-  'title' => 'The crowdsale is not that far away',
-  'subtitle' => 'Be the first to find out!<br> Subscribe to get the latest ICO updates',
+  'title' => 'وcrowdsale ليست بعيدة',
+  'subtitle' => 'كن أول من يعرف!<br> إشترك للحصول على آخر التحديثات عرض العملة الأولي',
   'button' => 'الاشتراك',
   'email_placeholder' => 'أدخل بريدك الإلكتروني لتلقي التحديثات',
-  'title_alt' => 'Come &amp; help us create talent the world deserves',
+  'title_alt' => 'تعال و ساعدنا على خلق المواهب التي يستحقها العالم',
 );

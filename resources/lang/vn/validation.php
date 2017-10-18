@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Quốc gia bạn chọn không hợp lệ.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Bạn phải chọn ô này để xác nhận bạn không phải là bot máy tính',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Email của bạn không tìm thấy trên dữ liệu của chúng tôi. Bạn cần đăng ký trước.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Tên',
+    'last-name' => 'Họ',
+    'g-recaptcha-response' => 'xác thực lại mã capcha',
   ),
 );

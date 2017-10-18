@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Il mio account',
+  'enter_email' => 'Inserisci la tua email',
+  'welcome_back' => 'Welcome back, :name!',
+  'login' => 'Accesso',
+  'link_sent' => 'Il tuo collegamento di accesso istantaneo è stato inviato via email.',
+  'back_home' => 'Torna alla Home Page',
+  'unknown_error' => 'Si è verificato un errore sconosciuto. Assicurati di aver inserito i dati corretti e riprova.',
+  'already_member' => 'Hai già un account su BitDegree! Fai clic su <strong>Accedi</strong> in basso per accedere.',
+  'email_address' => 'Indirizzo email',
+  'sample_email' => 'nome@esempio.com',
+  'or_signup' => 'o Iscriviti',
+  'signup' => 'Iscriviti',
+  'check_email' => 'Sei ad un passo dall\'assicurarti <b>il tuo token gratuito</b>. Controlla l\'e-mail che hai fornito durante la registrazione e fai clic sul link di conferma.',
+  'please_provide' => 'Fornisci alcune informazioni per registrarti su Bitdegree',
+  'name' => 'Il tuo nome',
+  'optional' => 'facoltativo',
+  'or_login' => 'o accedi',
+  'congrats' => 'Complimenti, {{ $participant->first_name o $participant->email }}!',
+  'tokens_secured' => '<h3>Hai</h3 ><h1>:number EDU</h1> <h3>Token assicurati</h3>',
+  'share' => 'Condividi per ottenere di più token <b>GRATIS</b>:',
+  'congratulations' => 'Congratulazioni, :name!',
+  'logout' => 'Scollegati',
+  'almost_done' => 'Quasi finito',
+  'register' => 'Registrati',
+);

@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Negara yang Anda pilih tidak valid.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Pilih kotak ini jika Anda bukan robot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Email yang dimasukkan tidak ditemukan di dalam database kami. Anda harus mendaftar terlebih dulu.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Nama Pertama',
+    'last-name' => 'Nama Terakhir',
+    'g-recaptcha-response' => 'Validasi reCaptcha',
   ),
 );
