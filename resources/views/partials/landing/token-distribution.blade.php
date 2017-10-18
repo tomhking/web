@@ -14,16 +14,13 @@
                 <table>
                     <tbody>
                     <tr>
-                        <td><b>Maximum financing:</b></td><td>75,000 ETH*</td>
-                    </tr>
-                    <tr>
                         <td><b>Minimum financing:</b></td><td>16,000 ETH*</td>
                     </tr>
                     <tr>
-                        <td><b>Exchange rate:</b></td><td>1 ETH = 10,000 EDU Tokens*</td>
+                        <td><b>Maximum financing:</b></td><td>75,000 ETH*</td>
                     </tr>
                     <tr>
-                        <td><b>Token launch time-frame:</b></td><td>30 days</td>
+                        <td><b>Exchange rate:</b></td><td>1 ETH = 10,000 EDU Tokens*</td>
                     </tr>
                     </tbody>
                 </table>
@@ -91,18 +88,6 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 description">
-                    <div class="description-container">
-                        <ul>
-                            <li>@lang('home.budget_allocation_text_1')</li>
-                            <li>@lang('home.budget_allocation_text_2')</li>
-                            <li>@lang('home.budget_allocation_text_3')</li>
-                            <li>@lang('home.budget_allocation_text_4')</li>
-                            <li>@lang('home.budget_allocation_text_5')</li>
-                            <li>@lang('home.budget_allocation_text_6')</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

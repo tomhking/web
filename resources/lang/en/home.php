@@ -56,14 +56,6 @@ return [
     'token_distribution_text_5' => '<td><b>Bounties / Advisors / Partners:</b></td><td>60 million;</td>',
     'token_distribution_text_6' => '<td><b>Tokens in total:</b></td><td>1,5 billion.</td>',
     'token_distribution_note' => '* locked for 360 days.',
-
     'budget_allocation_title' => 'Budget Allocation',
-    'budget_allocation_text_1' => '<b>BitDegree Platform: 30% of budget.</b><br>The team consists of over 10 engineers [DS8] and MOOC experts fulfilling the key roles in the company – sales, marketing, legal and others. This financing allows the rollout and operations of the BitDegree platform;',
-    'budget_allocation_text_2' => '<b>Courses development: 30% of budget.</b><br>These funds will be directed at third-party education professionals, offering online courses and content production;',
-    'budget_allocation_text_3' => '<b>Marketing and business development: 25% of budget.</b><br>Marketing will focus on expanding awareness and adoption of the BitDegree platform and the platform solution among users, publishers and advertisers. This also includes the growth and maintenance of the world-wide community. Marketing, growth-hacking, PR, partnerships, affiliate programs and more;',
-    'budget_allocation_text_4' => '<b>Operational: 8% of budget.</b><br>Consists of BitDegree legal, security, accounting and other associated administration costs;',
-    'budget_allocation_text_5' => '<b>Security: 2% of budget.</b><br>This part of the budget is set-aside for auditing software;',
-    'budget_allocation_text_6' => '<b>Reserve: 5% of budget.</b><br>This part of the budget is set-aside for unforeseen expenditure.',
-
 
 ];
