@@ -1,4 +1,4 @@
-<div class="ico-info-block main light-violet-bkg">
+<div id="token-distribution" class="ico-info-block main light-violet-bkg">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div id="token-distribution" class="main white-bkg">
+<div class="main white-bkg">
     <div class="container">
         <div class="token-distribution">
             <div class="row">
@@ -49,7 +49,7 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
-                            <img src="{{ asset('token-distribution.png') }}" alt="@lang('home.token_distribution_title')">
+                            <img src="{{ asset('token-distribution2.png') }}" alt="@lang('home.token_distribution_title')">
                     </div>
                 </div>
 

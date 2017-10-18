@@ -17,6 +17,7 @@ return [
     'perspective' => 'Student Perspective',
     'demand' => 'IT jobs Demand',
     'economy' => 'Token Economy',
+    'distribution' => 'Token Distribution',
     'team' => 'The Team',
     'roadmap' => 'Roadmap',
     'top' => 'Top',

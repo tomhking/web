@@ -31,8 +31,9 @@
                 <li><a href="#mvp">05. <span>@lang('navigation.perspective')</span></a></li>
                 <li><a href="#demand-forecast">06. <span>@lang('navigation.demand')</span></a></li>
                 <li><a href="#token-economy">07. <span>@lang('navigation.economy')</span></a></li>
-                <li><a href="#team">08. <span>@lang('navigation.team')</span></a></li>
-                <li><a href="#roadmap">09. <span>@lang('navigation.roadmap')</span></a></li>
+                <li><a href="#token-distribution">08. <span>@lang('navigation.distribution')</span></a></li>
+                <li><a href="#team">09. <span>@lang('navigation.team')</span></a></li>
+                <li><a href="#roadmap">10. <span>@lang('navigation.roadmap')</span></a></li>
             </ul>
         </nav>
     @endif
