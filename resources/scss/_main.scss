@@ -233,6 +233,22 @@ div#testimonials {
   padding-bottom: 80px;
   .row-logos{
     margin-bottom:35px;
+    &.sponsor-nexchange {
+      img{
+        max-height: 75px;
+        opacity: 1;
+        filter: none;
+      }
+      h4 {
+        color: #636363;
+        font-weight: 200;
+        font-size:0.9em;
+        margin-top: 20px;
+        div{
+          margin-bottom:5px;
+        }
+      }
+    }
   }
   h2.title, h3.title {
     margin-bottom: 60px;
