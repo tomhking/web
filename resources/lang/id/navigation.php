@@ -19,4 +19,9 @@ return array (
   'top' => 'Top',
   'subscribe' => 'Berlangganan',
   'email_placeholder' => 'Masukkan email untuk menerima informasi terbaru',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Hadiah',
+  'white-paper' => 'White-paper',
+  'no_account' => 'Akun dengan email yang diberikan tidak ditemukan.',
+  'link_expired' => 'Maaf, tatutan ini tidak valid atau sudah kedaluwarsa. Silakan coba lagi.',
 );

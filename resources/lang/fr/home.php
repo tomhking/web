@@ -45,4 +45,7 @@ return array (
   'economy_point_1' => '<b>01.</b> Les entreprises Sponsors sont le moteur d\'une économie durable chez BitDegree. L\'utilité pour les Sponsors d\'acheter des jetons BitDegree est <strong>d\'ensuite pouvoir recruter des talents de l\'informatique</strong>, améliorant ainsi leur image de marque et leur efficacité.',
   'economy_point_2' => '<b>02.</b> Les jetons BitDegree sont utilisés comme <strong>un levier de motivation intelligent</strong> : ils permettent d\'offrir une bourse d\'études aux élèves qui ont réalisé de belles choses. Ils peuvent aussi être échangés contre des services numériques, fournis par des tiers.',
   'economy_point_3' => '<b>03.</b> En acceptant le jeton BitDegree, les tiers deviennent les médiateurs de l\'économie par token. Les sponsors ainsi que les étudiants pourront échanger leurs jetons dans un large réseau de partenaires de l\'industrie ou les échanger contre des biens et des services numériques. Le besoin que comble BitDegree est étroitement lié à l\'industrie du recrutement qui pèse <strong>200 milliards de $</strong>. Aussi, la disponibilité limitée des tokens garantit une demande croissante pour les services de la plate-forme BitDegree.',
+  'trust_title' => 'Vu sur',
+  'partners_title' => 'Partenaires',
+  'free_tokens' => 'OBTENEZ DES JETONS GRATUITS',
 );

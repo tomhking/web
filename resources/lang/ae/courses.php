@@ -4,7 +4,7 @@ return array (
   'title_web_fundamentals' => 'نظرية تطوير الويب',
   'title_coding_fundamentals' => 'أساسيات البرمجة',
   'title_deep_learning' => 'تعلم عميق',
-  'title_react' => 'React',
+  'title_react' => 'تفاعل',
   'title_vr_development' => 'تطوير VR',
   'title_ai_development' => 'تطوير AI',
   'title_robotics' => 'الروبوتيات',

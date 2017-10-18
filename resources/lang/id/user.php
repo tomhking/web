@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Akun Saya',
+  'enter_email' => 'Masukkan email Anda',
+  'welcome_back' => 'Selamat datang kembali, :nama!',
+  'login' => 'Masuk',
+  'link_sent' => 'Link instan untuk log ini telah dikirimkan ke email Anda.',
+  'back_home' => 'Kembali ke Beranda Utama.',
+  'unknown_error' => 'Terjadi kesalahan yang tidak diketahui. Pastikan bahwa Anda telah memasukkan data yang benar dan silakan coba lagi.',
+  'already_member' => 'Anda telah memiliki akun di BitDegree! Klik <strong>Masuk</strong> di bawah ini untuk melakukan konfirmasi.',
+  'email_address' => 'Alamat Email',
+  'sample_email' => 'anda@contoh.com',
+  'or_signup' => 'atau Daftar',
+  'signup' => 'Daftar',
+  'check_email' => 'Selangkah lagi Anda dapat mengamankan <b>token gratis Anda</b>. Silakan cek email yang Anda masukkan saat proses pendaftaran dan klik link konfirmasi.',
+  'please_provide' => 'Mohon masukkan informasi agar Anda dapat terdaftar di Bitdegree',
+  'name' => 'Nama Anda',
+  'optional' => 'opsional',
+  'or_login' => 'atau Masuk',
+  'congrats' => 'Selamat, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h3>Anda memiliki</h3 ><h1>:number EDU</h1> <h3>Token yang diamankan</h3>',
+  'share' => 'Bagikan untuk mendapatkan lebih banyak token <b>GRATIS</b> :',
+  'congratulations' => 'Selamat, :nama!',
+  'logout' => 'Keluar',
+  'almost_done' => 'Hampir selesai...',
+  'register' => 'Daftar',
+);

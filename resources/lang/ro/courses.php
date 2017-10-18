@@ -19,7 +19,7 @@ return array (
   'title_smart_contracts' => 'Dezvoltare Smart contract & Solidity',
   'title_ethereum_development' => 'Dezvoltare Ethereum: Truffle și Open Zeppelin',
   'title' => 'Ce probleme rezolvă BitDegree?',
-  'subtitle' => 'Înființăm BitDegree pe o bază solidă de 29 de milioane de utilizatori existenți ai Hostinger și 000webhost - comunitate mondială loială, pasionată de web, învățare și deschisă la inovare. Viziunea noastră la Hostinger este de a permite milioanelor de oameni din întreaga lume să deblocheze puterea Internetului și să îi ajutăm să învețe, să creeze și să dezvolte.',
+  'subtitle' => 'Înființăm BitDegree pe o bază solidă de 29 de milioane de utilizatori existenți ai Hostinger și 000webhost - comunitate mondială loială, pasionată de web, învățare și deschisă la inovare. Viziunea noastră la Hostinger este de a permite milioanelor de oameni din întreaga lume să deblocheze puterea Internetului și să îi împuternicim să învețe, să creeze și să dezvolte.',
   'free' => 'GRATUIT',
   'new' => 'NOU',
   'coming_soon' => 'În curând',

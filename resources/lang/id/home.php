@@ -45,4 +45,7 @@ return array (
   'economy_point_1' => '<b>01.</b> Perusahaan sebagai Sponsor merupakan fondasi bagi perekonomian BitDegree yang berkelanjutan. Insentif ekonomi bagi Sponsor untuk membeli token BitDegree adalah <strong>merekrut calon teknisi</strong>, meningkatkan employer branding dan periklanan',
   'economy_point_2' => '<b>02.</b> Token BitDegree dapat digunakan untuk membuat <strong>smart incentives sebagai beasiswa</strong> bagi para siswa berprestasi, yang dapat digunakan untuk memperoleh berbagai layanan digital yang ditawarkan oleh pihak ketiga di platform mereka dengan token sebagai imbalannya.',
   'economy_point_3' => '<b>03.</b> Dengan menyetujui token BitDegree, pihak ketiga berperan sebagai mediator dari token ekonomi. Baik sponsor maupun siswa dapat menukar dan mengambil (redeem) token mereka di jaringan mitra industri yang luas atau menukarkan token tersebut dengan produk dan layanan. Potensi <strong>permintaan</strong> akan token BitDegree berkaitan dengan industri rekrutmen yang bernilai <strong>200 miliar dollar</strong>. Terbatasnya persediaan token membuktikan bahwa permintaan terhadap layanan platform BitDegree akan meningkat di kemudian hari.',
+  'trust_title' => 'Lihat Kami Di',
+  'partners_title' => 'Partner',
+  'free_tokens' => 'DAPATKAN TOKEN GRATIS',
 );

@@ -42,7 +42,10 @@ return array (
   'economy_image_alt' => 'Imprara a programmare',
   'economy_title' => 'BitDegree Token economy',
   'economy_subtitle' => 'BitDegree rivoluzionerà l\'educazione creando un nuovo token che può essere scambiato tra gli utenti della piattaforma: studenti, sponsor e terzi.',
-  'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising',
-  'economy_point_2' => '<b>02.</b> BitDegree tokens can be used for creating <strong>smart-incentives as scholarships</strong> for students’ educational accomplishments, which can be used for getting various digital services offered by third parties on their platforms in exchange for tokens.',
-  'economy_point_3' => '<b>03.</b> By accepting the BitDegree token, third parties become the mediator of the token economy. Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
+  'economy_point_1' => '<b>01.</b> Le aziende, in qualità di Sponsor, sono la linfa principale per l\'economia sostenibile BitDegree. L\'incentivo economico per gli sponsor per acquistare i token BitDegree è di <strong>reclutare talenti tecnici</strong>, migliorando il marchio e la pubblicità del datore di lavoro',
+  'economy_point_2' => '<b>02.</b> I token BitDegree possono essere utilizzati per creare <strong>incentivi intelligenti come borse di studio</strong> per i risultati degli studenti, che possono essere utilizzati per ottenere vari servizi digitali offerti da terzi sulle loro piattaforme in cambio di token.',
+  'economy_point_3' => '<b>03.</b> Accettando il token BitDegree, le terze parti diventano il mediatore dell\'economia dei token. Gli sponsor e gli studenti saranno in grado di scambiare e riscattare i propri gettoni in una vasta rete di partner industriali o scambiarli per beni e servizi digitali. Il potenziale della <strong>richiesta</strong>dei token BitDegree è strettamente allineata con l\'industria di reclutamento di <strong>200 miliardi di dollari</strong>. La fornitura limitata di gettoni assicura una crescente domanda dei servizi della piattaforma BitDegree nel futuro.',
+  'trust_title' => 'Come visto in',
+  'partners_title' => 'Soci',
+  'free_tokens' => 'OTTIENI TOKEN GRATUITI',
 );

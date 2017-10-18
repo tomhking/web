@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Izvēlētā valsts nav korekta.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Jums jāatzīmē šī rūtiņa, lai pierādītu, ka neesat robots.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Norādītais e-pasts netika atrasts mūsu datubāzē. Jums vispirms jāreģistrējas.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Vārds',
+    'last-name' => 'Uzvārds',
+    'g-recaptcha-response' => 'reCaptcha validācija',
   ),
 );

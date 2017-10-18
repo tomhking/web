@@ -87,5 +87,19 @@ return array (
     array (
       'valid_country' => 'Le pays que vous avez sélectionné n\'est pas valide.',
     ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Vous devez sélectionner cette case pour prouver que vous n\'êtes pas un robot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'L\'email donné n\'a pas été trouvé dans notre base de données. Vous devez d\'abord vous inscrire.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'first-name' => 'Prénom',
+    'last-name' => 'Nom',
+    'g-recaptcha-response' => 'Validation reCaptcha',
   ),
 );

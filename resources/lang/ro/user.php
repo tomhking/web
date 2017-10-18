@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Contul meu',
+  'enter_email' => 'Introduceți adresa de email',
+  'welcome_back' => 'Bine ai revenit, :name!',
+  'login' => 'Autentificare',
+  'link_sent' => 'Adresa dvs. de conectare instantă a fost trimisă prin e-mail.',
+  'back_home' => 'Înapoi la pagina principală',
+  'unknown_error' => 'A apărut o eroare necunoscută. Asigurați-vă că ați introdus datele corecte și încercați din nou.',
+  'already_member' => 'Aveți deja un cont la BitDegree! Click pe <strong>Autentificare</strong> mai jos pentru a vă conecta.',
+  'email_address' => 'Adresa de email',
+  'sample_email' => 'tu@exemplu.com',
+  'or_signup' => 'sau Înscrieți-vă',
+  'signup' => 'Înscrieți-vă',
+  'check_email' => 'Sunteți la un pas de securizarea <b>tokenului gratuit</b>. Verificați e-mailul furnizat la înregistrare și faceți clic pe link-ul de confirmare din acesta.',
+  'please_provide' => 'Vă rugăm să furnizați câteva informații pentru a vă înregistra la Bitdegree',
+  'name' => 'Numele dumneavoastră',
+  'optional' => 'opțional',
+  'or_login' => 'sau Autentificați-vă',
+  'congrats' => 'Felicitări, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h3>Aveți</h3 ><h1>:number EDU</h1> <h3>token securizat</h3>',
+  'share' => 'Distribuiți pentru a obține mai multe token-uri <b>GRATUITE</b>:',
+  'congratulations' => 'Felicitări, :name!',
+  'logout' => 'Deconectați-vă',
+  'almost_done' => 'Aproape gata...',
+  'register' => 'Înregistrați-vă',
+);

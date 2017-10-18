@@ -2,6 +2,6 @@
 
 return array (
   'ethereum-foundation' => 'Ethereum foundation',
-  'video-unsupported' => 'Your browser does not support the video tag.',
+  'video-unsupported' => 'Il tuo browser non supporta il tag video.',
   'copyright' => 'Copyright',
 );

@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Tài khoản của tôi',
+  'enter_email' => 'Điền email của bạn',
+  'welcome_back' => 'Chào mừng trở lại, :name!',
+  'login' => 'Đăng nhập',
+  'link_sent' => 'Link đăng nhập tức thời đã được email tới bạn',
+  'back_home' => 'Trở lại trang chủ',
+  'unknown_error' => 'Lỗi xảy ra. Hãy đảm bảo bạn điền đúng thông tin và thử lại.',
+  'already_member' => 'Bạn đã có tài khoản tại BitDegree! Click <strong>Đăng nhập </strong> bên dưới để xác thực.',
+  'email_address' => 'Email address',
+  'sample_email' => 'you@example.com',
+  'or_signup' => 'hoặc Đăng ký',
+  'signup' => 'Đăng ký',
+  'check_email' => 'Chỉ còn một bước để lấy <b>Token miễn phí </b>. Hãy kiểmt ra email chúng tôi đã cung cấp trong quá trình đăng ký và click vào link xác nhận.',
+  'please_provide' => 'Hãy cung cấp vài thông tin để đăng ký BitDegree',
+  'name' => 'Tên của bạn',
+  'optional' => 'tùy chọn',
+  'or_login' => 'hoặc Đăng nhập',
+  'congrats' => 'Chúc mừng, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h3>Bạn có</h3 ><h1>:number EDU</h1> <h3>Token</h3>',
+  'share' => 'Chia sẽ đế lấy thêm nhiều <b>MIỄN PHÍ</b>:',
+  'congratulations' => 'Chúc mừng, :name!',
+  'logout' => 'Đăng xuất',
+  'almost_done' => 'Gần hoàn tất...',
+  'register' => 'Đăng ký',
+);

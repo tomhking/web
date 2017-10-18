@@ -1,0 +1,28 @@
+<?php 
+
+return array (
+  'my_account' => 'Hesabım',
+  'enter_email' => 'E-posta adresinizi girin',
+  'welcome_back' => 'Tekrar hoş geldin, :name!',
+  'login' => 'Giriş Yap',
+  'link_sent' => 'Anında giriş bağlantınız e-posta adresinize gönderildi.',
+  'back_home' => 'Ana Sayfaya Geri Dön',
+  'unknown_error' => 'Bilinmeyen hata oluştu. Doğru veri girdiğinizden emin olup tekrar deneyiniz.',
+  'already_member' => 'BitDegree\'de zaten bir hesabınız bulunuyr! Hesabınıza erişmek için  aşağıdaki <strong>Giriş Yap</strong> butonuna tıklayın.',
+  'email_address' => 'E-posta Adresi',
+  'sample_email' => 'sen@ornek.com',
+  'or_signup' => 'veya Üye Ol',
+  'signup' => 'Üye Ol',
+  'check_email' => '<b>Ücretsiz token</b>\'inizi güvene almak için bir adım uzaktasınız. Kayıt sırasında verdiğiniz e-posta adresini kontrol edin ve içerisindeki onay bağlantısına tıklayın.',
+  'please_provide' => 'Bitdegree\'ye üye olmak için lütfen bazı verileri yazın.',
+  'name' => 'Adınız',
+  'optional' => 'tercihi',
+  'or_login' => 'veya Giriş Yap',
+  'congrats' => 'Tebrikler, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '<h1>:number EDU</h1> <h3>Token\'i güvene aldınız.</h3>',
+  'share' => 'Daha fazla <b>ÜCRETSİZ</b> token almak için paylaşın:',
+  'congratulations' => 'Tebrikler, :name!',
+  'logout' => 'Çıkış yap',
+  'almost_done' => 'Neredeyse tamamlandı...',
+  'register' => 'Üye ol',
+);

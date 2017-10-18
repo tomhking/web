@@ -1,7 +1,7 @@
 <?php 
 
 return array (
-  'ethereum-foundation' => 'Ethereum foundation',
+  'ethereum-foundation' => 'أساسيات Ethereum',
   'video-unsupported' => 'متصفحك الحالي لا يدعم تشغيل الفيديو.',
   'copyright' => 'حقوق النشر',
 );

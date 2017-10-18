@@ -109,6 +109,14 @@ class AppServiceProvider extends ServiceProvider
                 'id' => 'ID',
                 'gr' => 'GR',
                 'it' => 'IT',
+                'nl' => 'NL',
+                'pt' => 'PT',
+                'hr' => 'HR',
+                'ae' => 'AE',
+
+                // 'hu' => 'HU',
+                // 'th' => 'TH',
+                // 'ee' => 'EE',
             ];
         });
 
