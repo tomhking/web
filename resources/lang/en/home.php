@@ -48,4 +48,22 @@ return [
     'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising.',
     'economy_point_2' => '<b>02.</b> BitDegree tokens can be used for creating <strong>smart-incentives as scholarships</strong> for students’ educational accomplishments, which can be used for getting various digital services offered by third parties on their platforms in exchange for tokens.',
     'economy_point_3' => '<b>03.</b> Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
+    'token_distribution_title' => 'Token Distribution',
+    'token_distribution_text_1' => '<td><b>BitDegree foundation:</b></td><td>150 million;</td>',
+    'token_distribution_text_2' => '<td><b>Scholarships pool:</b></td><td>375 million;</td>',
+    'token_distribution_text_3' => '<td><b>Tokens available to public at launch:</b></td><td>765 million;</td>',
+    'token_distribution_text_4' => '<td><b>Team:</b></td><td>150 million;*</td>',
+    'token_distribution_text_5' => '<td><b>Bounties / Advisors / Partners:</b></td><td>60 million;</td>',
+    'token_distribution_text_6' => '<td><b>Tokens in total:</b></td><td>1,5 billion.</td>',
+    'token_distribution_note' => '* locked for 360 days.',
+
+    'budget_allocation_title' => 'Budget Allocation',
+    'budget_allocation_text_1' => '<b>BitDegree Platform: 30% of budget.</b><br>The team consists of over 10 engineers [DS8] and MOOC experts fulfilling the key roles in the company – sales, marketing, legal and others. This financing allows the rollout and operations of the BitDegree platform;',
+    'budget_allocation_text_2' => '<b>Courses development: 30% of budget.</b><br>These funds will be directed at third-party education professionals, offering online courses and content production;',
+    'budget_allocation_text_3' => '<b>Marketing and business development: 25% of budget.</b><br>Marketing will focus on expanding awareness and adoption of the BitDegree platform and the platform solution among users, publishers and advertisers. This also includes the growth and maintenance of the world-wide community. Marketing, growth-hacking, PR, partnerships, affiliate programs and more;',
+    'budget_allocation_text_4' => '<b>Operational: 8% of budget.</b><br>Consists of BitDegree legal, security, accounting and other associated administration costs;',
+    'budget_allocation_text_5' => '<b>Security: 2% of budget.</b><br>This part of the budget is set-aside for auditing software;',
+    'budget_allocation_text_6' => '<b>Reserve: 5% of budget.</b><br>This part of the budget is set-aside for unforeseen expenditure.',
+
+
 ];

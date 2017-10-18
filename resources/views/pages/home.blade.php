@@ -9,6 +9,7 @@
     @include('partials.landing.how-it-works-mvp')
     @include('partials.landing.stats-demand')
     @include('partials.landing.how-it-works')
+    @include('partials.landing.token-distribution')
     @include('partials.landing.team')
     @include('partials.landing.partners')
     @include('partials.landing.subscribe')
