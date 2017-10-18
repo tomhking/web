@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    @include('partials.collaboration-with')
+    @include('partials.collaboration-with', ['sponsor' => 'nexchange'])
 
     <div class="main light-violet-bkg">
         <div class="container">
