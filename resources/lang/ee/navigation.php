@@ -17,4 +17,11 @@ return array (
   'top' => 'Üles',
   'subscribe' => 'Telli uudiskiri',
   'email_placeholder' => 'Sisesta email uudiste saamiseks',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Preemia',
+  'white-paper' => '"White-paper"',
+  'demand' => 'IT töökohtade nõudlus',
+  'economy' => 'Tokeni-majandus',
+  'no_account' => 'Antud emaili aadressiga seotud kontot ei ole olemas.',
+  'link_expired' => 'Vabandame, see link on vale või aegunud. Palun proovi uuesti sisse logida.',
 );
