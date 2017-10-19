@@ -51,7 +51,7 @@
             <div class="sidebar-nav">
                 <div class="current-lesson">
                     <div class="back-arrow">
-                        <a href="{{ route_lang('mvp') }}" title="Back">
+                        <a href="{{ $hasLanding ? route_lang('course', ['course' => $course]) : route_lang('mvp') }}" title="Back">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         </a>
                     </div>
