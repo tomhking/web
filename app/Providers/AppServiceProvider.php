@@ -113,10 +113,10 @@ class AppServiceProvider extends ServiceProvider
                 'pt' => 'PT',
                 'hr' => 'HR',
                 'ae' => 'AE',
+                'ee' => 'EE',
 
                 // 'hu' => 'HU',
                 // 'th' => 'TH',
-                // 'ee' => 'EE',
             ];
         });
 
