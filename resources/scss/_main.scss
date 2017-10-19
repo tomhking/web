@@ -3336,6 +3336,12 @@ p.subtitle {
   padding-bottom: 30px;
   .row{
     width:100%;
+    .col-sm-4{
+      width:33.2%;
+    }
+    .col-sm-3{
+      width: 24.9%;
+    }
   }
   hr {
     margin-bottom: 45px;
@@ -3733,6 +3739,15 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  .team {
+    padding-bottom: 30px;
+    .row {
+      width: 100%;
+      .col-xs-12 {
+        width: 100%;
+      }
+    }
+  }
   body.login-page {
     a.login-logo img {
       max-width: 150px;
