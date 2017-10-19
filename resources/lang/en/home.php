@@ -48,6 +48,14 @@ return [
     'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising.',
     'economy_point_2' => '<b>02.</b> BitDegree tokens can be used for creating <strong>smart-incentives as scholarships</strong> for students’ educational accomplishments, which can be used for getting various digital services offered by third parties on their platforms in exchange for tokens.',
     'economy_point_3' => '<b>03.</b> Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
+    'ico_section_title' => 'ICO',
+    'ico_section_subtitle' => '1 Dec 2017',
+    'ico_section_minimum' => 'Minimum financing:',
+    'ico_section_maximum' => 'Maximum financing:',
+    'ico_section_exchange' => 'Exchange rate:',
+    'ico_section_note' => '* may change due to exchange rate changes.',
+    'ico_section_cta_text' => 'Don\'t miss the start, join our private mailing list and be the first to know.',
+    'ico_section_cta_btn' => 'Join Now',
     'token_distribution_title' => 'Token Distribution',
     'token_distribution_text_1' => '<td><b>BitDegree foundation:</b></td><td class="amount">150 million;</td>',
     'token_distribution_text_2' => '<td><b>Scholarships pool:</b></td><td class="amount">375 million;</td>',
@@ -57,5 +65,4 @@ return [
     'token_distribution_text_6' => '<td><b>Tokens in total:</b></td><td class="amount">1,5 billion.</td>',
     'token_distribution_note' => '* locked for 360 days.',
     'budget_allocation_title' => 'Budget Allocation',
-
 ];

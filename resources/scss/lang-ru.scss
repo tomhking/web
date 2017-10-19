@@ -11,6 +11,10 @@ $work-sans: 'Roboto', sans-serif;
   font-size: 12px!important;
 }
 
+.ico-info-block table {
+  width: 600px!important;
+}
+
 @media (max-width: 767px) {
   .row.milestone.step-1,
   .row.milestone.step-1 .milestone-left,

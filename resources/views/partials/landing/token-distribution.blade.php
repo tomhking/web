@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <div class="title-container">
-                    <h1 class="title">ICO</h1>
-                    <h3 class="subtitle">1 Dec 2017</h3>
+                    <h1 class="title">@lang('home.ico_section_title')</h1>
+                    <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
                 </div>
             </div>
         </div>
@@ -14,20 +14,20 @@
                 <table>
                     <tbody>
                     <tr>
-                        <td><b>Minimum financing:</b></td><td>16,000 ETH*</td>
+                        <td><b>@lang('home.ico_section_minimum')</b></td><td>16,000 ETH*</td>
                     </tr>
                     <tr>
-                        <td><b>Maximum financing:</b></td><td>75,000 ETH*</td>
+                        <td><b>@lang('home.ico_section_maximum')</b></td><td>75,000 ETH*</td>
                     </tr>
                     <tr>
-                        <td><b>Exchange rate:</b></td><td>1 ETH = 10,000 EDU Tokens*</td>
+                        <td><b>@lang('home.ico_section_exchange')</b></td><td>1 ETH = 10,000 EDU Tokens*</td>
                     </tr>
                     </tbody>
                 </table>
-                <p class="note text-center">* may change due to exchange rate changes.</p>
+                <p class="note text-center">@lang('home.ico_section_note')</p>
                 <div class="text-center">
-                    <p>Don't miss the start, join our private mailing list and be the first to know.</p>
-                    <a href="#top" class="cta-btn">Join Now</a>
+                    <p>@lang('home.ico_section_cta_text')</p>
+                    <a href="#top" class="cta-btn">@lang('home.ico_section_cta_btn')</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,13 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
+                        @if($currentLanguage == "cn")
+                            <img src="{{ asset('token-distribution-cn.png') }}" alt="@lang('home.token_distribution_title')">
+                        @elseif($currentLanguage == "ru")
+                            <img src="{{ asset('token-distribution-ru.png') }}" alt="@lang('home.token_distribution_title')">
+                        @else
                             <img src="{{ asset('token-distribution2.png') }}" alt="@lang('home.token_distribution_title')">
+                        @endif
                     </div>
                 </div>
 
@@ -84,7 +90,13 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
-                        <img src="{{ asset('budget-allocation.png') }}" alt="@lang('home.budget_allocation_title')">
+                        @if($currentLanguage == "cn")
+                            <img src="{{ asset('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
+                        @elseif($currentLanguage == "ru")
+                            <img src="{{ asset('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
+                        @else
+                            <img src="{{ asset('budget-allocation.png') }}" alt="@lang('home.budget_allocation_title')">
+                        @endif
                     </div>
                 </div>
 
