@@ -24,4 +24,5 @@ return array (
   'white-paper' => '白皮书',
   'no_account' => '提供的邮箱帐号不存在.',
   'link_expired' => '非常抱歉,此链接无效或是已过期. 请尝试重新登录.',
+  'distribution' => '货币分配',
 );
