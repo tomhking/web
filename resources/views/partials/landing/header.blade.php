@@ -1,11 +1,12 @@
 
 <header class="{{ $navBarOnly ?? false ? 'container-fluid' : '' }}">
     @if(!($navBarOnly ?? false))
-        <div class="medusae-overlay"></div>
+        <div class="medusae-overlay">
         <video  id="bgvid" poster="{{ asset('landing-bg.jpg') }}" class="hidden-xs hidden-sm" style="position: absolute; height: 1006px; top:-105px;">
             <source data-src="{{ asset('bg.mp4') }}" type="video/mp4">
             @lang('misc.video-unsupported')
         </video>
+        </div>
 
         @push('body-scripts')
             <script>

@@ -2079,7 +2079,7 @@ ul.cta-menu li .navbar-cta {
   }
 }
 
-.front-page header {
+.front-page header .medusae-overlay {
   overflow: hidden;
 }
 
@@ -2101,7 +2101,7 @@ header {
     background: white;
     -webkit-clip-path: polygon(50% 100%, 0% 100%, 0% 0%);
     clip-path: polygon(50% 100%, 0% 100%, 0% 0%);
-    bottom: 0;
+    bottom: -1px;
   }
   &::before {
     content: "";
@@ -2114,7 +2114,7 @@ header {
     background: white;
     -webkit-clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
     clip-path: polygon(100% 100%, 100% 0%, 50% 100%);
-    bottom: 0;
+    bottom: -1px;
   }
 }
 
@@ -2330,10 +2330,19 @@ header {
       top: 0;
       left: 0;
       position: absolute;
-      z-index: 500;
-      background: rgba(0, 0, 0, 0.3);
       display: block;
       bottom: 0;
+      &::before{
+        content: " ";
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 500;
+        background: rgba(0, 0, 0, 0.3);
+        display: block;
+        bottom: 0;
+      }
     }
     .video-overlay, video {
       top: 0;
