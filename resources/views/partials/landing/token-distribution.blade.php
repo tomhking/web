@@ -93,7 +93,7 @@
                         @if($currentLanguage == "cn")
                             <img src="{{ asset('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
                         @elseif($currentLanguage == "ru")
-                            <img src="{{ asset('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
+                            <img src="{{ asset('budget-allocation-ru.png') }}" alt="@lang('home.budget_allocation_title')">
                         @else
                             <img src="{{ asset('budget-allocation.png') }}" alt="@lang('home.budget_allocation_title')">
                         @endif
