@@ -1,4 +1,4 @@
-@extends('layouts.courses')
+@extends('layouts.lesson')
 
 @section('title', 'Building Websites from Scratch')
 

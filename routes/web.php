@@ -321,13 +321,40 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
         return view('pages.faq');
     }]);
 
-    $router->get('/course/{course}', ['as' => 'course', function ($course) {
-        return view('pages.courses.'.$course, compact('courses'));
+    $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', function ($course, $lesson) {
+        $availableCourses = collect(app()->make('courses'))->keyBy('key');
+        if($availableCourses->has($course)) {
+            if($lesson != 'intro') {
+                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+            }
+
+            $hasLanding = file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'));
+
+            return view('pages.courses.'.$course.'.lesson-'.$lesson, compact('course', 'lesson', 'hasLanding'));
+        }
+
+        abort(404);
     }]);
 
-    $router->get('/landing/course/web-developer', ['as' => 'web-developer', function () {
-        return view('pages.courses.web-developer-landing');
+    $router->get('/course/{course}', ['as' => 'course', function ($course) {
+        $availableCourses = collect(app()->make('courses'))->keyBy('key');
+        if($availableCourses->has($course)) {
+            if(!file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'))) {
+                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+            }
+            return view('pages.courses.'.$course.'.landing');
+        }
+
+        abort(404);
     }]);
+
+    $router->get('/landing/course/{course}', function ($course) {
+        $mappings = [
+            'web-developer' => 'full-stack-web-developer',
+            'smart-contract-developer' => 'smart-contracts',
+        ];
+        return redirect(route_lang('course', ['course' => $mappings[$course] ?? $course]), 301);
+    });
 
     $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', function () {
         return view('pages.user');
