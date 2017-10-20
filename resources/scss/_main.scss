@@ -1048,6 +1048,16 @@ body.landing.degree-list header {
         .submit {
           width: auto;
         }
+
+        @media(max-width: 991px) {
+          position:relative;
+          top: auto;
+          left: auto;
+          transform: none;
+          h1, h6, p {
+            color: #333;
+          }
+        }
       }
       .course-video {
         height: 100%;
@@ -1095,6 +1105,13 @@ body.landing.degree-list header {
   .course-summary{
     .course-summary-part{
       border-right:1px solid #d7d7d7;
+      @media(max-width: 991px) {
+        border-right:none;
+        margin-bottom:30px;
+        &:last-child{
+          margin-bottom:0;
+        }
+      }
       &:last-child{
         border:0;
       }
@@ -3749,6 +3766,9 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  .collaboration-with h2.title {
+    text-align:center !important;
+  }
   .team {
     padding-bottom: 30px;
     .row {
