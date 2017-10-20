@@ -1011,7 +1011,7 @@ body.landing.degree-list header {
     .video-container{
       position:relative;
       h1 {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $work-sans;
         text-transform: inherit;
         font-weight: 200;
         font-size: 58px;
@@ -1021,7 +1021,7 @@ body.landing.degree-list header {
         letter-spacing: -1px;
       }
       h6 {
-        font-family: 'Work Sans', sans-serif;
+        font-family: $work-sans;
         text-transform: uppercase;
         font-weight: 200;
         font-size: 18px;
@@ -1072,7 +1072,7 @@ body.landing.degree-list header {
     }
   }
   h1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: $work-sans;
     text-transform: uppercase;
     font-weight: 100;
     font-size: 70px;
@@ -1083,11 +1083,11 @@ body.landing.degree-list header {
     font-size: 17px;
     line-height: 28px;
     letter-spacing: 1px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: $work-sans;
     font-weight: 300;
   }
   .header h4{
-    font-family: 'Work Sans', sans-serif;
+    font-family: $work-sans;
     font-weight: 300;
     color: #98a2ab;
     font-size: 18px;
@@ -1099,7 +1099,7 @@ body.landing.degree-list header {
         border:0;
       }
       h5 {
-        font-family: 'Work Sans',sans-serif;
+        font-family: $work-sans;
         text-transform: uppercase;
         font-weight: 300;
         font-size: 14px;
@@ -1108,7 +1108,7 @@ body.landing.degree-list header {
         color: #636363;
       }
       h4{
-        font-family: 'Work Sans',sans-serif;
+        font-family: $work-sans;
         font-weight: 300;
         font-size: 24px;
       }
@@ -1317,7 +1317,7 @@ h2.current-amount {
 
 .row.token-calculator-btn a {
   font-size: 18px;
-  font-family: "Work Sans",sans-serif;
+  font-family: $work-sans;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -1454,7 +1454,7 @@ body.login-page {
     }
     a.link {
       font-size: 18px;
-      font-family: "Work Sans",sans-serif;
+      font-family: $work-sans;
       font-weight: 200;
       color: #fff;
       display: block;
@@ -1466,7 +1466,7 @@ body.login-page {
     }
     a.back-to-homepage {
       margin-bottom: 40px;
-      font-family: "Work Sans",sans-serif;
+      font-family: $work-sans;
       text-transform: uppercase;
       font-weight: 200;
       color: #fff;
@@ -1481,7 +1481,7 @@ body.login-page {
       color: #fff;
       background: 0;
       border: 0;
-      font-family: "Source Code Pro",monospace;
+      font-family: $source-code;
       font-weight: 100;
       font-size: 18px;
       line-height: 26px;
@@ -1493,7 +1493,7 @@ body.login-page {
     color: #fff;
     background: 0;
     border: 0;
-    font-family: "Source Code Pro",monospace;
+    font-family: $source-code;
     font-weight: 100;
     font-size: 18px;
     line-height: 26px;
@@ -1525,7 +1525,7 @@ body.login-page {
     font-size: 16px;
     line-height: 24px;
     margin-top: 0;
-    font-family: "Work Sans",sans-serif;
+    font-family: $work-sans;
     font-weight: 300;
     letter-spacing: 1px;
   }
@@ -3529,7 +3529,7 @@ p.subtitle {
           line-height: 24px;
           color: #252525;
           margin-top: 0;
-          font-family: "Work Sans",sans-serif;
+          font-family: $work-sans;
           font-weight: 300;
           letter-spacing: 1px;
         }
@@ -3570,7 +3570,7 @@ p.subtitle {
           color: #252525;
           font-size: 18px;
           line-height: 30px;
-          font-family: "Source Code Pro", monospace;
+          font-family: $source-code;
           font-weight: 600;
         }
       }
@@ -3840,7 +3840,7 @@ p.subtitle {
     }
     h2, .h2 {
       font-size: 26px;
-      font-family: 'Work Sans', sans-serif;
+      font-family: $work-sans;
       text-transform: uppercase;
       font-weight: 300;
       text-align: center;
