@@ -120,6 +120,29 @@ class AppServiceProvider extends ServiceProvider
             ];
         });
 
+        $this->app->singleton('mailableLanguages', function () {
+            return [
+                'en',
+                'nl',
+                'ee',
+                'ae',
+                'ru',
+                'lv',
+                'hr',
+                'gr',
+                'pt',
+                'th',
+                'it',
+                'ro',
+                'tr',
+                'fr',
+                'vn',
+                'es',
+                'id',
+                'hu',
+            ];
+        });
+
         $this->app->singleton('courses', function ($app) {
             return [
                 [

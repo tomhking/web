@@ -34,7 +34,7 @@ class FreeTokenSignup extends Event implements Mailable
     public function getMessage(): \Mailer\Contract\Messageable
     {
         $message = new Simple();
-        $message->setEvent('participant_signup');
+        $message->setEvent('participant_signup'.$this->getLanguageSuffix($this->language));
         $message->setClientId($this->participant->id);
         $message->setEmail($this->participant->email);
         $message->setFirstName($this->participant->first_name);

@@ -34,7 +34,7 @@ class LogIn extends Event implements Mailable
     public function getMessage(): \Mailer\Contract\Messageable
     {
         $message = new Simple();
-        $message->setEvent('participant_login');
+        $message->setEvent('participant_login'.$this->getLanguageSuffix($this->language));
         $message->setFirstName($this->participant->first_name);
         $message->setLastName($this->participant->last_name);
         $message->setClientId($this->participant->id);
