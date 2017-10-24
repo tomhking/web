@@ -3596,6 +3596,12 @@ p.subtitle {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1280px) {
+  header .header-content h1,
+  header .header-content h2,
+  header .header-content h3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
   header video {
     width: 160% !important;
     left: -30%;
