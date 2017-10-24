@@ -104,7 +104,7 @@
                                 <p><strong>@lang('user.welcome_back', ['name' => $participant->first_name ?: $participant->email])</strong></p>
                                 <p><a class="btn btn-account" href="{{ route_lang('user') }}">@lang('user.my_account')</a></p>
                             @else
-                                @if($from000)
+                                @if($canGetFreeTokens)
                                 <form action="{{ route_lang('join') }}" method="post">
                                     <input class="suscribe-input" name="email" type="email" placeholder="@lang('user.enter_email')" value="{{ $email }}" required>
                                     <button type="submit" class="submit">@lang('home.free_tokens')</button>

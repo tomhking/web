@@ -19,15 +19,17 @@ $router->get('/', ['as' => 'root', function () use ($router) {
 
 $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($router) {
     $router->get('/token/', ['as' => 'home', function (\Illuminate\Http\Request $request) use ($router) {
-        $from000 = $request->get('utm_source') === '000' || $request->cookie('utm_source') === '000';
+        $sources = ['000', 'hostinger',];
+        $canGetFreeTokens = in_array($request->get('utm_source'), $sources) || in_array($request->cookie('utm_source'), $sources);
+
         $response = response(view('pages.home', [
-            'from000' => $from000,
+            'canGetFreeTokens' => $canGetFreeTokens,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
         ])->render());
 
-        if($from000) {
+        if(in_array($request->get('utm_source'), $sources)) {
             $response->withCookie(new \Symfony\Component\HttpFoundation\Cookie(
-                'utm_source', '000', \Carbon\Carbon::now()->addYear()
+                'utm_source', $request->get('utm_source'), \Carbon\Carbon::now()->addYear()
             ));
         }
 
