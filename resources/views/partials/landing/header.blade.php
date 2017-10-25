@@ -82,7 +82,9 @@
                             <span class="caret"></span></button>
                         <ul class="dropdown-menu ">
                             @foreach($languages as $code => $name)
-                                <li class="{{ $code == $currentLanguage ? "current" : "" }}"><a href="{{ route('home', ['lang' => $code]) }}" class="{{ $code == $currentLanguage }}">{{ $name }}</a></li>
+                                <li class="{{ $name }} {{ $code == $currentLanguage ? "current" : "" }}"><a href="{{ route('home', ['lang' => $code]) }}" class="{{ $code == $currentLanguage }}">
+                                        <img src="{{asset('flags').'/'.$name.'.png'}}"> {{ $name }}
+                                    </a></li>
                             @endforeach
                         </ul>
                     </div>
