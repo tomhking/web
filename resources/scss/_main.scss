@@ -4647,6 +4647,21 @@ body.lang-ID .find-out-more {
   max-width: 800px;
 }
 
+body.lang-PT,
+body.lang-RO,
+body.lang-LV,
+body.lang-HR{
+  .nav.navbar-nav li a {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  ul.cta-menu li .navbar-cta {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
+
+body.lang-GR,
 body.lang-ES,
 body.lang-AE,
 body.lang-EE,
@@ -4655,9 +4670,6 @@ body.lang-HU,
 body.lang-ID,
 body.lang-TR,
 body.lang-VN{
-  .navbar-container {
-    margin-top: 15px;
-  }
   .nav.navbar-nav li {
     width: 174px;
     &::before {

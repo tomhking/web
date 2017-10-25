@@ -2,7 +2,7 @@
 
 return array (
   'what-is' => 'Pengertian BitDegree',
-  'people' => 'Orang-orang di balik BitDegree',
+  'people' => 'Tim bitdegree',
   'one-pager' => 'One Pager',
   'ico' => 'ICO & Skala Pertumbuhan',
   'faq' => 'FAQ',
