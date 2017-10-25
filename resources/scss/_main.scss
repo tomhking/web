@@ -1898,6 +1898,9 @@ button.navbar-toggle {
       z-index: 10;
     }
   }
+  .dropdown-menu > li > a {
+    padding: 3px 12px;
+  }
 }
 
 ul.cta-menu li .navbar-cta {
