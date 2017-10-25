@@ -1650,7 +1650,7 @@ body.login-page.token-secured a.login-logo{
   right: 3px;
   bottom: 3px;
   text-align: center;
-  z-index:999999;
+  z-index:9999999;
   .chat-icon{
     margin: 0 auto;
     background: #fff;
@@ -3108,20 +3108,20 @@ h3.subtitle {
       width: 100%;
       background: none;
       margin-bottom: 30px;
-      &::before{
-        display:none;
+      &::before {
+        display: none;
       }
       li {
-        display:inline-block;
-        border-right:1px solid #fff;
-        margin-bottom:15px;
-        &:last-child{
-          border:0;
+        display: inline-block;
+        border-right: 1px solid #fff;
+        margin-bottom: 15px;
+        &:last-child {
+          border: 0;
         }
         a {
           color: #fff;
-          &:hover{
-            background:none;
+          &:hover {
+            background: none;
           }
         }
       }
@@ -3222,61 +3222,60 @@ h3.subtitle {
     width: 100%;
     padding: 0 0 0 25px;
   }
-  .row.milestone.step-1,
-  .row.milestone.step-1 .milestone-left,
-  .row.milestone.step-1 .milestone-right {
-    height: 300px;
-    position: relative;
+  .row.milestone{
+
   }
-  .row.milestone.step-2,
-  .row.milestone.step-2 .milestone-left,
-  .row.milestone.step-2 .milestone-right {
-    height: 300px;
-    position: relative;
-  }
-  .row.milestone.step-3,
-  .row.milestone.step-3 .milestone-left,
-  .row.milestone.step-3 .milestone-right {
-    height: 300px;
-    position: relative;
-  }
-  .row.milestone.step-4,
-  .row.milestone.step-4 .milestone-left,
-  .row.milestone.step-4 .milestone-right {
-    height: 374px;
-    position: relative;
-  }
-  .row.milestone.step-5,
-  .row.milestone.step-5 .milestone-left,
-  .row.milestone.step-5 .milestone-right {
-    height: 500px;
-    position: relative;
-  }
-  .row.milestone.step-6,
-  .row.milestone.step-6 .milestone-left,
-  .row.milestone.step-6 .milestone-right {
-    height: 349px;
-    position: relative;
-  }
-  .row.milestone.step-7,
-  .row.milestone.step-7 .milestone-left,
-  .row.milestone.step-7 .milestone-right {
-    height: 525px;
-    position: relative;
+  .row.milestone {
+    &.step-1,
+    &.step-1 .milestone-left,
+    &.step-1 .milestone-right,
+    &.step-2,
+    &.step-2 .milestone-left,
+    &.step-2 .milestone-right,
+    &.step-3,
+    &.step-3 .milestone-left,
+    &.step-3 .milestone-right {
+      height: 300px;
+      position: relative;
+    }
+    &.step-4,
+    &.step-4 .milestone-left,
+    &.step-4 .milestone-right {
+      height: 374px;
+      position: relative;
+    }
+    &.step-5,
+    &.step-5 .milestone-left,
+    &.step-5 .milestone-right {
+      height: 500px;
+      position: relative;
+    }
+    &.step-6,
+    &.step-6 .milestone-left,
+    &.step-6 .milestone-right {
+      height: 349px;
+      position: relative;
+    }
+    &.step-7,
+    &.step-7 .milestone-left,
+    &.step-7 .milestone-right {
+      height: 525px;
+      position: relative;
+    }
   }
   .milestone-left {
     padding-left: 0;
     padding-right: 0;
+    &.hidden-mobile {
+      padding: 0;
+      float: left;
+      > div {
+        display: none;
+      }
+    }
   }
   .timeline {
     padding-left: 15%;
-  }
-  .milestone-left.hidden-mobile {
-    padding: 0;
-    float: left;
-    > div {
-      display: none;
-    }
   }
   .milestone .mobile-circle {
     margin-left: 20px;
@@ -3321,6 +3320,100 @@ h3.subtitle {
   }
   .footer div#navbar {
     margin-top: 0;
+  }
+
+  body.lang-ES,
+  body.lang-FR,
+  body.lang-HU,
+  body.lang-ID,
+  body.lang-NL,
+  body.lang-PT,
+  body.lang-RO{
+    .row.milestone {
+      &.step-1,
+      &.step-1 .milestone-left,
+      &.step-1 .milestone-right,
+      &.step-2,
+      &.step-2 .milestone-left,
+      &.step-2 .milestone-right,
+      &.step-3,
+      &.step-3 .milestone-left,
+      &.step-3 .milestone-right {
+        height: 325px;
+        position: relative;
+      }
+      &.step-4,
+      &.step-4 .milestone-left,
+      &.step-4 .milestone-right {
+        height: 475px;
+        position: relative;
+      }
+      &.step-5,
+      &.step-5 .milestone-left,
+      &.step-5 .milestone-right {
+        height: 600px;
+        position: relative;
+      }
+      &.step-6,
+      &.step-6 .milestone-left,
+      &.step-6 .milestone-right {
+        height: 400px;
+        position: relative;
+      }
+      &.step-7,
+      &.step-7 .milestone-left,
+      &.step-7 .milestone-right {
+        height: 580px;
+        position: relative;
+      }
+    }
+  }
+  body.lang-GR {
+    .timeline .milestone .milestone-tooltip p {
+      line-height: 15px !important;
+    }
+    .milestone-tooltip h3 {
+      font-weight: 600;
+      line-height: 18px !important;
+    }
+    .row.milestone {
+      &.step-1,
+      &.step-1 .milestone-left,
+      &.step-1 .milestone-right,
+      &.step-2,
+      &.step-2 .milestone-left,
+      &.step-2 .milestone-right {
+        height: 325px;
+        position: relative;
+      }
+      &.step-3,
+      &.step-3 .milestone-left,
+      &.step-3 .milestone-right,
+      &.step-4,
+      &.step-4 .milestone-left,
+      &.step-4 .milestone-right {
+        height: 450px;
+        position: relative;
+      }
+      &.step-5,
+      &.step-5 .milestone-left,
+      &.step-5 .milestone-right {
+        height: 625px;
+        position: relative;
+      }
+      &.step-6,
+      &.step-6 .milestone-left,
+      &.step-6 .milestone-right {
+        height: 400px;
+        position: relative;
+      }
+      &.step-7,
+      &.step-7 .milestone-left,
+      &.step-7 .milestone-right {
+        height: 580px;
+        position: relative;
+      }
+    }
   }
 }
 
@@ -3775,8 +3868,40 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  a.cta-btn{
+    width: 100%;
+  }
+  .ico-info-block {
+    padding-bottom: 80px;
+  }
+  body.lang-HU,
+  body.lang-PT{
+    .mvp-cta.text-center a {
+      font-size: 18px;
+      padding: 15px 25px 15px 25px;
+      height: auto;
+    }
+  }
+  body.lang-GR h2.title,
+  body.lang-GR h3.title {
+    font-size: 30px!important;
+    line-height: 36px!important;
+  }
+  body.lang-GR .team .team-member-data h3,
+  body.lang-GR .milestone-tooltip h3{
+    font-size: 18px!important;
+    line-height: 24px!important;
+  }
   .communicate {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    form {
+      width: 100%;
+    }
+  }
+  .contact-icons.buttons a.contact-icon {
+    width: 49%;
+    margin: 0;
   }
   .collaboration-with h2.title {
     text-align:center !important;
@@ -4598,6 +4723,8 @@ body.lang-GR{
 }
 
 body.lang-GR {
+  .communicate .submit,
+  input.suscribe-input,
   p,
   h3.subtitle,
   .team .team-member-data p,
