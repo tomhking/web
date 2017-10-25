@@ -4582,18 +4582,120 @@ a.footer-logo img {
 }
 
 body.lang-VN,
-body.lang-GR,
-.communicate.cta-block h2{
+body.lang-GR{
+.communicate.cta-block h2,
   h2, h3{
     font-family: 'Roboto', sans-serif;
     font-weight:100;
   }
+  .card .h3, .card h3,
+  .milestone-tooltip h3 {
+    font-weight: 600;
+  }
 }
+
 body.lang-GR {
   p,
   h3.subtitle,
   .team .team-member-data p,
-  .communicate.cta-block p{
+  .communicate.cta-block p,
+  .team .row.reg.team-members .team-member .modal-body .team-member-data p,
+  .side-nav ul li a{
    font-family: 'Roboto Mono', monospace;
+  }
+  h2.title, h3.title {
+    font-size: 44px;
+  }
+  .team .team-member-data h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .find-out-more {
+    margin: 5px auto 0;
+    p.subtitle {
+      font-size: 18px;
+    }
+  }
+  .milestone-tooltip h3 {
+    font-weight: 600;
+  }
+  .card .h3, .card h3 {
+    font-weight: 600;
+  }
+}
+
+body.lang-FR {
+  header .header-content p {
+    font-size: 18px;
+  }
+  header .bullet-points p {
+    font-size: 14px;
+  }
+  h3, .h3 {
+    font-size: 17px;
+  }
+  .find-out-more {
+    margin: 5px auto 0;
+    p.subtitle {
+      font-size: 18px;
+    }
+  }
+}
+
+body.lang-ID .find-out-more {
+  margin: 5px auto 0;
+  max-width: 800px;
+}
+
+body.lang-ES,
+body.lang-AE,
+body.lang-EE,
+body.lang-FR,
+body.lang-HU,
+body.lang-ID,
+body.lang-TR,
+body.lang-VN{
+  .navbar-container {
+    margin-top: 15px;
+  }
+  .nav.navbar-nav li {
+    width: 174px;
+    &::before {
+      width: 80px;
+    }
+    &::after {
+      width: 80px;
+    }
+    a::before {
+      left: 80px;
+    }
+    &:first-child::before {
+      width: 8px;
+      left: 72px;
+    }
+  }
+  .nav.navbar-nav li.narrow {
+    width: 110px;
+    &::before {
+      width: 48px;
+    }
+    &::after {
+      width: 48px;
+    }
+    a::before {
+      left: 48px;
+    }
+    &:last-child::after {
+      width: 8px;
+      right: 40px;
+    }
+  }
+  .nav.navbar-nav li a {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+  ul.cta-menu li .navbar-cta {
+    font-size: 13px;
+    letter-spacing: 0;
   }
 }
