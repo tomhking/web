@@ -4580,3 +4580,20 @@ a.footer-logo img {
 .coding-container {
   margin-top: 60px;
 }
+
+body.lang-VN,
+body.lang-GR,
+.communicate.cta-block h2{
+  h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+  }
+}
+body.lang-GR {
+  p,
+  h3.subtitle,
+  .team .team-member-data p,
+  .communicate.cta-block p{
+   font-family: 'Roboto Mono', monospace;
+  }
+}

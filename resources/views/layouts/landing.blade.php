@@ -36,7 +36,7 @@
     @include('partials.smartlook')
 </head>
 
-<body class="landing {{ $bodyClass or 'front-page' }}" data-spy="scroll" data-target="#sidebar" data-offset="150">
+<body class="landing {{ $bodyClass or 'front-page' }} lang-{{ $languages[$currentLanguage] }}" data-spy="scroll" data-target="#sidebar" data-offset="150">
     @include('partials.tag-manager-body')
 
     <div id="top"></div>

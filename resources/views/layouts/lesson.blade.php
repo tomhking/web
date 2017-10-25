@@ -39,7 +39,7 @@
     @include('partials.smartlook')
 </head>
 
-<body lang="en-GB" class="canvas" data-spy="scroll" data-target="#toc" style="">
+<body class="canvas lang-{{ $languages[$currentLanguage] }}" data-spy="scroll" data-target="#toc" style="">
 
 @include('partials.tag-manager-body')
 
