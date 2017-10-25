@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Co-founder, CBDO (BizDev)',
   'position_martynas' => 'Smart Contract Developer',
   'position_ervinas' => 'กฎหมาย',
-  'position_darius' => 'Partner in Prime Block Capital Investment Fund',
+  'position_darius' => 'Co-founder, Partner in Prime Block Capital Investment Fund',
   'position_rio' => 'CMO',
   'position_julija' => 'Business Assistant',
   'position_sarune' => 'Marketing Assistant',

@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Līdzdibinātājs, galvenā zīmola amatpersona',
   'position_martynas' => 'Tehniskais direktors, gudro līgumu izstrādātājs',
   'position_ervinas' => 'Notārs',
-  'position_darius' => 'Prime Block Capital ieguldījumu fonda partneris',
+  'position_darius' => 'Līdzdibinātājs, Prime Block Capital ieguldījumu fonda partneris',
   'position_rio' => 'Mārketinga direktors',
   'position_julija' => 'Biznesa asistents',
   'position_sarune' => 'Mārketinga asistents',

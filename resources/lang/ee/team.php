@@ -14,7 +14,7 @@ return array (
   'position_danielius' => 'Kaasasutaja, CBDO (BizDev)',
   'position_martynas' => 'Tarkade Lepingute Arendaja',
   'position_ervinas' => 'Seaduslik',
-  'position_darius' => 'Prime Block Capital Investment Fund partnerlus',
+  'position_darius' => 'Kaasasutaja, Prime Block Capital Investment Fund partnerlus',
   'position_rio' => 'CMO',
   'position_julija' => 'Äriassistent',
   'position_sarune' => 'Turundusassistent',

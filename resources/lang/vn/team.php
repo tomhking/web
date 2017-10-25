@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Đồng sáng lập, CBO',
   'position_martynas' => 'CTO, Lập trình Smart Contract',
   'position_ervinas' => 'Pháp lý',
-  'position_darius' => 'Đối tác của Prime Block Capital Investment Fund',
+  'position_darius' => 'Đồng sáng lập, Đối tác của Prime Block Capital Investment Fund',
   'position_rio' => 'CMO',
   'position_julija' => 'Trợ lý kinh doanh',
   'position_sarune' => 'Trợ lý marketing',

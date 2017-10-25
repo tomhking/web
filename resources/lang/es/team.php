@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Co-fundador, CBO',
   'position_martynas' => 'CTO, Desarrollador de Contratos Inteligentes',
   'position_ervinas' => 'Legal',
-  'position_darius' => 'Socio en Prime Block Capital Investment Fund',
+  'position_darius' => 'Co-fundador, Socio en Prime Block Capital Investment Fund',
   'position_rio' => 'CMO',
   'position_julija' => 'Asistente de Negocios',
   'position_sarune' => 'Asistente de Marketing',

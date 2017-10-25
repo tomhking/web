@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Mede-oprichter, CBDO (BizDev)',
   'position_martynas' => 'Ontwikkelaar Slimme Contracten',
   'position_ervinas' => 'Juridisch',
-  'position_darius' => 'Partner in Prime Block Capital Investment Fund',
+  'position_darius' => 'Mede-oprichter, Partner in Prime Block Capital Investment Fund',
   'position_rio' => 'CMO',
   'position_julija' => 'Zakelijk assistent',
   'position_sarune' => 'Marketingassistent',

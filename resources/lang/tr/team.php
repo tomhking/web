@@ -5,7 +5,7 @@ return array (
   'position_danielius' => 'Kurucu Ortağı, CBO',
   'position_martynas' => 'CTO, Akıllı Sözleşme Geliştiricisi',
   'position_ervinas' => 'Yasal',
-  'position_darius' => 'Blok Sermaye Yatırım Fonu Ortaklığında Partner',
+  'position_darius' => 'Kurucu Ortağı, Blok Sermaye Yatırım Fonu Ortaklığında Partner',
   'position_rio' => 'CMO',
   'position_julija' => 'İşletme Asistanı',
   'position_sarune' => 'Pazarlama Asistanı',
