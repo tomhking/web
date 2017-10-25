@@ -56,7 +56,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route_lang('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
                         <li><a href="{{ route_lang('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
-                        <li class="narrow"><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
+                        <li class="narrow middle"><a href="{{ route_lang('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                         <li class="narrow"><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank">@lang('navigation.bitcointalk')</a></li>
                         @if($currentLanguage == "cn")
                             <li class="narrow"><a href="{{ asset('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
