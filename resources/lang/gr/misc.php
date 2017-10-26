@@ -2,6 +2,6 @@
 
 return array (
   'ethereum-foundation' => 'Ίδρυμα Ethereum',
-  'video-unsupported' => 'Το πρόγραμμα περιήγησής σας δεν υποστηρίζει την ετικέτα βίντεο.',
+  'video-unsupported' => 'Ο Περιηγητής σας δεν υποστηρίζει τον τύπο του βίντεο.',
   'copyright' => 'Copyright',
 );
