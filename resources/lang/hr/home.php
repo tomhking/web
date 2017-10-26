@@ -5,7 +5,7 @@ return array (
   'meta_description' => 'Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world\'s first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.',
   'meta_keywords' => 'ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education',
   'header_title' => 'Revolucionarna edukacija s blockchainom',
-  'header_subtitle' => 'Prva svjetska mrežna edukacijska platforma na internetu s dodjelom stipendija za tokene & amp; tehničko stjecanje talenta',
+  'header_subtitle' => 'Prva svjetska mrežna edukacijska platforma na internetu s dodjelom stipendija za tokene &amp; tehničko stjecanje talenta',
   'trust_title' => 'Kao što možete vidjeti na',
   'partners_title' => 'Partneri',
   'incentives' => 'Pametni poticaji',

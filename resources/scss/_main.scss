@@ -2149,7 +2149,7 @@ header {
   overflow: hidden;
   margin-bottom: -1px;
   &.bottom{
-    min-height: auto;
+    min-height: initial;
   }
   h2 {
     font-size: 60px;
