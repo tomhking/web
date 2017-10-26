@@ -19,7 +19,7 @@ return [
     'title_smart_contracts' => 'Smart contract development & Solidity',
     'title_ethereum_development' => 'Ethereum Development: Truffle and Open Zeppelin',
     'title' => 'What problems does BitDegree solve?',
-    'subtitle' => 'We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community. Our vision at Hostinger is to enable millions of people around the globe to unlock the power of Internet and give them the empowerment to learn, create and grow.',
+    'subtitle' => 'We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and innovation open worldwide community. Our vision correlates with Hostingers and it is to enable millions of people around the globe to unlock the power of Internet and give them the empowerment to learn, create and grow.',
     'free' => 'FREE',
     'new' => 'NEW',
     'coming_soon' => 'Coming Soon',
