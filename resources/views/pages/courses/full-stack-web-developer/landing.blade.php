@@ -92,6 +92,9 @@
                     <p class="subtitle">@lang('signup.subtitle')</p>
                 </div>
                 @include('partials.sign-up-for-web-development')
+                <div class="text-center">
+                    @include('partials.contact-icons')
+                </div>
             </div>
         </div>
     </div>
