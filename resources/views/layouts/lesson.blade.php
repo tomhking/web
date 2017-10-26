@@ -95,7 +95,7 @@
                     <div class="video-container">
                         <div class="container-fluid communicate">
                             <div class="row">
-                                <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                                <div class="col-xs-12 col-md-8 col-md-push-2 col-lg-10 col-lg-push-1 text-center">
                                     <h6>BitDegree Program</h6>
                                     @yield('courseHeader')
                                 </div>
