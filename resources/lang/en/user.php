@@ -20,7 +20,7 @@ return [
     'optional' => 'optional',
     'or_login' => 'or Log In',
     'congrats' => 'Congratulations, {{ $participant->first_name or $participant->email }}!',
-    'tokens_secured' => '<h3>You have</h3 ><h1>:number EDU</h1> <h3>Token secured</h3>',
+    'tokens_secured' => '<h3>You have</h3 ><h1>:number BDG</h1> <h3>Token secured</h3>',
     'share' => 'Share to get more <b>FREE</b> tokens:',
     'congratulations' => 'Congratulations, :name!',
     'logout' => 'Log out',

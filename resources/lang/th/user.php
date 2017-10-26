@@ -19,7 +19,7 @@ return array (
   'optional' => 'ไม่จำเป็น',
   'or_login' => 'หรือเข้าสู่ระบบ',
   'congrats' => 'ขอแสดงความยินดี, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>คุณมี</h3 ><h1>:number EDU</h1> <h3>Token secured</h3>',
+  'tokens_secured' => '<h3>คุณมี</h3 ><h1>:number BDG</h1> <h3>Token secured</h3>',
   'share' => 'แชร์เพื่อรับ Token <b>ฟรี</b> เพิ่มเติม:',
   'congratulations' => 'ขอแสดงความยินดี, :name!',
   'logout' => 'ออกจากระบบ',

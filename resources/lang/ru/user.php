@@ -19,7 +19,7 @@ return array (
   'optional' => 'необязательно',
   'or_login' => 'или Войти',
   'congrats' => 'Поздравляем, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Вы получили</h3 ><h1>:number EDU</h1> <h3>Токена</h3>',
+  'tokens_secured' => '<h3>Вы получили</h3 ><h1>:number BDG</h1> <h3>Токена</h3>',
   'share' => 'Поделитесь, чтобы получить больше <b>БЕСПЛАТНЫХ</b> токенов:',
   'congratulations' => 'Поздравляем, :name!',
   'logout' => 'Выйти',

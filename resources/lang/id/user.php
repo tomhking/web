@@ -19,7 +19,7 @@ return array (
   'optional' => 'opsional',
   'or_login' => 'atau Masuk',
   'congrats' => 'Selamat, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Anda memiliki</h3 ><h1>:number EDU</h1> <h3>Token yang diamankan</h3>',
+  'tokens_secured' => '<h3>Anda memiliki</h3 ><h1>:number BDG</h1> <h3>Token yang diamankan</h3>',
   'share' => 'Bagikan untuk mendapatkan lebih banyak token <b>GRATIS</b> :',
   'congratulations' => 'Selamat, :nama!',
   'logout' => 'Keluar',

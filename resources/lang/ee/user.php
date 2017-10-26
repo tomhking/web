@@ -19,7 +19,7 @@ return array (
   'optional' => 'valikuline',
   'or_login' => 'või Logi sisse',
   'congrats' => 'Õnnitlused, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Sul on</h3 ><h1>:number EDU</h1> <h3>Token kaitstud</h3>',
+  'tokens_secured' => '<h3>Sul on</h3 ><h1>:number BDG</h1> <h3>Token kaitstud</h3>',
   'share' => 'Jaga et saada veel <b>TASUTA</b> tokeneid:',
   'congratulations' => 'Õnnitlused, :nimi!',
   'logout' => 'Logi välja',

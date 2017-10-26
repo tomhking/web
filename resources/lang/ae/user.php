@@ -19,7 +19,7 @@ return array (
   'optional' => 'اختياري',
   'or_login' => 'أو سجل الدخول',
   'congrats' => '!{{ $participant->first_name or $participant->email }} ،تهانينا',
-  'tokens_secured' => ' <h3>رمز مؤمن</h3> <h1>:number EDU</h1><h3>لديك</h3 >',
+  'tokens_secured' => ' <h3>رمز مؤمن</h3> <h1>:number BDG</h1><h3>لديك</h3 >',
   'share' => 'شارك من أجل الحصول على المزيد من الرموز <b>المجانية</b>:',
   'congratulations' => 'تهانينا، :name!',
   'logout' => 'تسجيل الخروج',

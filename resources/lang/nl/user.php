@@ -19,7 +19,7 @@ return array (
   'optional' => 'optioneel',
   'or_login' => 'of Login',
   'congrats' => 'Gefeliciteerd, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Je hebt</h3 ><h1>:number EDU</h1> <h3>Token veiliggesteld</h3>',
+  'tokens_secured' => '<h3>Je hebt</h3 ><h1>:number BDG</h1> <h3>Token veiliggesteld</h3>',
   'share' => 'Deel om meer <b>GRATIS</b> tokens te krijgen:',
   'congratulations' => 'Gefeliciteerd, :name!',
   'logout' => 'Uitloggen',

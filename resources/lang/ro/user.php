@@ -19,7 +19,7 @@ return array (
   'optional' => 'opțional',
   'or_login' => 'sau Autentificați-vă',
   'congrats' => 'Felicitări, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Aveți</h3 ><h1>:number EDU</h1> <h3>token securizat</h3>',
+  'tokens_secured' => '<h3>Aveți</h3 ><h1>:number BDG</h1> <h3>token securizat</h3>',
   'share' => 'Distribuiți pentru a obține mai multe token-uri <b>GRATUITE</b>:',
   'congratulations' => 'Felicitări, :name!',
   'logout' => 'Deconectați-vă',

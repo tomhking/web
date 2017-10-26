@@ -19,7 +19,7 @@ return array (
   'optional' => 'tùy chọn',
   'or_login' => 'hoặc Đăng nhập',
   'congrats' => 'Chúc mừng, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Bạn có</h3 ><h1>:number EDU</h1> <h3>Token</h3>',
+  'tokens_secured' => '<h3>Bạn có</h3 ><h1>:number BDG</h1> <h3>Token</h3>',
   'share' => 'Chia sẽ đế lấy thêm nhiều <b>MIỄN PHÍ</b>:',
   'congratulations' => 'Chúc mừng, :name!',
   'logout' => 'Đăng xuất',

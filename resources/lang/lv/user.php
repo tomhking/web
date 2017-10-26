@@ -19,7 +19,7 @@ return array (
   'optional' => 'neobligāts',
   'or_login' => 'vai Pierakstīties',
   'congrats' => 'Apsveicam, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Jums ir</h3 ><h1>:number EDU</h1> <h3>žetonu nodrošinājums</h3>',
+  'tokens_secured' => '<h3>Jums ir</h3 ><h1>:number BDG</h1> <h3>žetonu nodrošinājums</h3>',
   'share' => 'Dalieties, lai saņemtu vairāk <b>FREE</b> žetonu:',
   'congratulations' => 'Apsveicam, :name!',
   'logout' => 'Izrakstīties',

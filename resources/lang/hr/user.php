@@ -19,7 +19,7 @@ return array (
   'optional' => 'opcionalno',
   'or_login' => 'ili Prijava',
   'congrats' => 'Čestitamo, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Vi imate</h3 ><h1>:number EDU</h1> <h3>sigurnih tokena</h3>',
+  'tokens_secured' => '<h3>Vi imate</h3 ><h1>:number BDG</h1> <h3>sigurnih tokena</h3>',
   'share' => 'Podijelite kako bi dobili više <b>BESPLATNIH</b> tokens:',
   'congratulations' => 'Čestitamo, :name!',
   'logout' => 'Odjava',

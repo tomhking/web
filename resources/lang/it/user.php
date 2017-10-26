@@ -19,7 +19,7 @@ return array (
   'optional' => 'facoltativo',
   'or_login' => 'o accedi',
   'congrats' => 'Complimenti, {{ $participant->first_name o $participant->email }}!',
-  'tokens_secured' => '<h3>Hai</h3 ><h1>:number EDU</h1> <h3>Token assicurati</h3>',
+  'tokens_secured' => '<h3>Hai</h3 ><h1>:number BDG</h1> <h3>Token assicurati</h3>',
   'share' => 'Condividi per ottenere di più token <b>GRATIS</b>:',
   'congratulations' => 'Congratulazioni, :name!',
   'logout' => 'Scollegati',

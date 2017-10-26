@@ -19,7 +19,7 @@ return array (
   'optional' => '可选',
   'or_login' => '或登入',
   'congrats' => '{{ $participant->first_name or $participant->email }}, 恭喜您!',
-  'tokens_secured' => '<h3>您已确保</h3 ><h1>:number EDU</h1> <h3>个货币安全</h3>',
+  'tokens_secured' => '<h3>您已确保</h3 ><h1>:number BDG</h1> <h3>个货币安全</h3>',
   'share' => '分享并获得更多<b>免费</b>货币:',
   'congratulations' => ':name, 恭喜您!',
   'logout' => '登出',

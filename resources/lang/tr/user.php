@@ -19,7 +19,7 @@ return array (
   'optional' => 'tercihi',
   'or_login' => 'veya Giriş Yap',
   'congrats' => 'Tebrikler, {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h1>:number EDU</h1> <h3>Token\'i güvene aldınız.</h3>',
+  'tokens_secured' => '<h1>:number BDG</h1> <h3>Token\'i güvene aldınız.</h3>',
   'share' => 'Daha fazla <b>ÜCRETSİZ</b> token almak için paylaşın:',
   'congratulations' => 'Tebrikler, :name!',
   'logout' => 'Çıkış yap',

@@ -19,7 +19,7 @@ return array (
   'optional' => 'nem kötelező',
   'or_login' => 'vagy Belépés',
   'congrats' => 'Gratulálunk {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Ön</h3 ><h1>:number EDU</h1> <h3>zsetonnal rendelkezik</h3>',
+  'tokens_secured' => '<h3>Ön</h3 ><h1>:number BDG</h1> <h3>zsetonnal rendelkezik</h3>',
   'share' => 'Ossza meg, hogy még több <b>INGYEN</b> zsetont szerezzen:',
   'congratulations' => 'Gratulálunk, :name!',
   'logout' => 'Kijelentkezés',

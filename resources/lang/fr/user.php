@@ -19,7 +19,7 @@ return array (
   'optional' => 'optionnel',
   'or_login' => 'ou Se connecter',
   'congrats' => 'Félicitations,{{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Vous avez</h3> <h1>:number Jeton(s)</h1> <h3>EDU sécurisé(s) </h3>',
+  'tokens_secured' => '<h3>Vous avez</h3> <h1>:number Jeton(s)</h1> <h3>BDG sécurisé(s) </h3>',
   'share' => 'Partager pour obtenir plus de jetons <b>GRATUITS</b> :',
   'congratulations' => 'Félicitations, :name !',
   'logout' => 'Se déconnecter',

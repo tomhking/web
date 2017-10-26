@@ -19,7 +19,7 @@ return array (
   'optional' => 'opcional',
   'or_login' => 'o Inicie Sesión',
   'congrats' => 'Felicitaciones,  {{ $participant->first_name or $participant->email }}!',
-  'tokens_secured' => '<h3>Tienes</h3 ><h1>:number EDU</h1> <h3>Fichas aseguradas</h3>',
+  'tokens_secured' => '<h3>Tienes</h3 ><h1>:number BDG</h1> <h3>Fichas aseguradas</h3>',
   'share' => 'Compartir para obtener más fichas <b>GRATIS</b>:',
   'congratulations' => 'Felicitaciones, :name!',
   'logout' => 'Cerrar sesión',
