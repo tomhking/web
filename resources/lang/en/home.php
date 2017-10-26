@@ -17,7 +17,7 @@ return [
     'bitdegree_description_2' => 'Think about it as Coursera and HackerRank merged together, powered by decentralized blockchain technology.',
     'starting_point_alt' => '29 000 000 users is our starting point',
     'starting_point_headline' => '29 000 000 users - our starting point',
-    'starting_point_description' => 'We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and open to innovation worldwide community. "Our vision at Hostinger is to enable millions of people around the globe to unlock the power of Internet by empowering them to learn, create and grow independently regardless of racial, social and geo statuses."',
+    'starting_point_description' => 'We are establishing BitDegree on a solid ground of 29 million existing user base of Hostinger and 000webhost - loyal, web passionate, learning and open to innovation worldwide community. Our vision correlates with Hostingers and it is to enable millions of people around the globe to unlock the power of Internet by empowering them to learn, create and grow independently regardless of racial, social and geo statuses.',
     'starting_point_logo_000webhost' => '000webhost logo',
     'starting_point_logo_hostinger' => 'Hostinger logo',
     'problems_headline' => 'What problems does BitDegree solve?',
