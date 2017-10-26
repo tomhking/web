@@ -20,7 +20,7 @@
                         <td><b>@lang('home.ico_section_maximum')</b></td><td>75,000 ETH*</td>
                     </tr>
                     <tr>
-                        <td><b>@lang('home.ico_section_exchange')</b></td><td>1 ETH = 10,000 EDU Tokens*</td>
+                        <td><b>@lang('home.ico_section_exchange')</b></td><td>1 ETH = 10,000 BDG Tokens*</td>
                     </tr>
                     </tbody>
                 </table>
