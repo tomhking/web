@@ -10,7 +10,7 @@
                 @if($authenticated)
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <img class="token-image" src="{{ asset('token.png') }}" alt="BitDegree EDU Token">
+                            <img class="token-image" src="{{ asset('token.png') }}" alt="BitDegree Token">
                             <p>@lang('user.congratulations', ['name' => $participant->first_name ? : $participant->email])</p>
                             <div class="amount-of-tokens">
                                 @lang('user.tokens_secured', ['number' => 1])
