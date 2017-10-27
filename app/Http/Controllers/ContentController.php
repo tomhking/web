@@ -199,11 +199,4 @@ class ContentController extends Controller
         ];
         return redirect(route_lang('course', ['course' => $mappings[$course] ?? $course]), 301);
     }
-
-    /**
-     * @return \Illuminate\View\View
-     */
-    function user() {
-        return view('pages.user');
-    }
 }

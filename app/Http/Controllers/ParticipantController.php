@@ -244,4 +244,11 @@ class ParticipantController extends Controller
             new Cookie('participant', $participant->id, $endDate->addDay())
         );
     }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    function user() {
+        return view('pages.user');
+    }
 }
