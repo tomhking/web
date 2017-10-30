@@ -236,8 +236,13 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#7" aria-expanded="true" aria-controls="7">
                             <h3 class="panel-title">
-                                Please send us an email to hello@bitdegree.org
+                                How do I report a security issue?
                             </h3>
+                        </div>
+                    </div>
+                    <div id="7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="7">
+                        <div class="panel-body">
+                            <p>Please send us an email to hello@bitdegree.org</p>
                         </div>
                     </div>
                 </div>
