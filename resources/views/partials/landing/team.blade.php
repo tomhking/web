@@ -72,6 +72,161 @@
 
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+                    <h2 class="title">@lang('team.advisors')</h2>
+                </div>
+            </div>
+
+            <div class="row reg team-members">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="team-member">
+
+                            <div class="team-member-image-holder" data-toggle="modal" data-target="#MauriceModal">
+                                <img class="team-member-image" src="{{ asset('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
+                            </div>
+
+                            <div class="team-member-data">
+                                <h3 class="title">Maurice <b>De Hond</b></h3>
+                                <p>@lang('team.position_maurice')</p>
+                                <div class="handles">
+                                    <a href="https://www.linkedin.com/in/mauricedehond/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="MauriceModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#MauriceModal">
+                                                    <img class="team-member-image" src="{{ asset('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
+                                                </div>
+                                                <div class="team-member-data">
+                                                    <h3 class="title">Maurice <b>De Hond</b></h3>
+                                                    <p>@lang('team.position_maurice')</p>
+                                                    <div class="handles">
+                                                        <a href="https://www.linkedin.com/in/mauricedehond/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="team-member-desc">
+                                                        <p>@lang('team.description_maurice')</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="team-member">
+
+                            <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
+                                <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
+                            </div>
+
+                            <div class="team-member-data">
+                                <h3 class="title">Oleg <b>Belousov</b></h3>
+                                <p>@lang('team.position_oleg')</p>
+                                <div class="handles">
+                                    <a href="https://www.linkedin.com/in/oleg-belousov-b4112145/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="OlegModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
+                                                    <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
+                                                </div>
+                                                <div class="team-member-data">
+                                                    <h3 class="title">Oleg <b>Belousov</b></h3>
+                                                    <p>@lang('team.position_oleg')</p>
+                                                    <div class="handles">
+                                                        <a href="https://www.linkedin.com/in/oleg-belousov-b4112145/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="team-member-desc">
+                                                        <p>@lang('team.description_oleg')</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="team-member">
+
+                            <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
+                                <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">
+                            </div>
+
+                            <div class="team-member-data">
+                                <h3 class="title">Ričardas <b>Pocius</b></h3>
+                                <p>@lang('team.position_ricardas')</p>
+                                <div class="handles">
+                                    <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="RicardasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
+                                                    <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">
+                                                </div>
+                                                <div class="team-member-data">
+                                                    <h3 class="title">Ričardas <b>Pocius</b></h3>
+                                                    <p>@lang('team.position_ricardas')</p>
+                                                    <div class="handles">
+                                                        <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    </div>
+
+                                                    <div class="team-member-desc">
+                                                        <p>@lang('team.description_ricardas')</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                     <h2 class="title">@lang('team.title')</h2>
                 </div>
             </div>
@@ -223,7 +378,6 @@
                         </div>
                     </div>
                 </div>
-
 
                 <div class="col-xs-12 col-sm-3">
 
@@ -669,7 +823,7 @@
 
             <div class="row reg team-members">
 
-                <div class="col-xs-12 col-sm-3">
+                <div class="col-xs-12 col-sm-3 col-sm-offset-3">
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#SkirmantasModal">
@@ -716,52 +870,6 @@
 
                 </div>
 
-                <div class="col-xs-12 col-sm-3">
-                    <div class="team-member">
-
-                        <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
-                            <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
-                        </div>
-
-                        <div class="team-member-data">
-                            <h3 class="title">Oleg <b>Belousov</b></h3>
-                            <p>@lang('team.position_oleg')</p>
-                            <div class="handles">
-                                <a href="https://www.linkedin.com/in/oleg-belousov-b4112145/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                            </div>
-
-                            <div class="modal fade" role="dialog" id="OlegModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                        </div>
-
-                                        <div class="modal-body">
-
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
-                                                <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
-                                            </div>
-                                            <div class="team-member-data">
-                                                <h3 class="title">Oleg <b>Belousov</b></h3>
-                                                <p>@lang('team.position_oleg')</p>
-                                                <div class="handles">
-                                                    <a href="https://www.linkedin.com/in/oleg-belousov-b4112145/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                                </div>
-                                                <div class="team-member-desc">
-                                                    <p>@lang('team.description_oleg')</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
 
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
@@ -800,55 +908,6 @@
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_arnas')</p>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-3">
-                    <div class="team-member">
-
-                        <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                            <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">
-                        </div>
-
-                        <div class="team-member-data">
-                            <h3 class="title">Ričardas <b>Pocius</b></h3>
-                            <p>@lang('team.position_ricardas')</p>
-                            <div class="handles">
-                                <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                            </div>
-
-                            <div class="modal fade" role="dialog" id="RicardasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                        </div>
-
-                                        <div class="modal-body">
-
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                                                <img class="team-member-image" src="{{ asset('team/ricardas-pocius.png') }}" alt="Ričardas Pocius">
-                                            </div>
-                                            <div class="team-member-data">
-                                                <h3 class="title">Ričardas <b>Pocius</b></h3>
-                                                <p>@lang('team.position_ricardas')</p>
-                                                <div class="handles">
-                                                    <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                                </div>
-
-                                                <div class="team-member-desc">
-                                                    <p>@lang('team.description_ricardas')</p>
-                                                </div>
-
                                             </div>
                                         </div>
 
