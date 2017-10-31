@@ -5,6 +5,7 @@
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
                     <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
+                    <p class="ico-dscription-note">@lang('home.ico_section_description')</p>
                 </div>
             </div>
         </div>
@@ -13,6 +14,18 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
                 <table>
                     <tbody>
+                    <tr>
+                        @lang('home.ico_section_legal_form')
+                    </tr>
+                    <tr>
+                        @lang('home.ico_section_jurisdiction')
+                    </tr>
+                    <tr>
+                        @lang('home.ico_section_kyc')
+                    </tr>
+                    <tr>
+                        @lang('home.ico_section_escrow')
+                    </tr>
                     <tr>
                         <td><b>@lang('home.ico_section_minimum')</b></td><td>16,000 ETH*</td>
                     </tr>

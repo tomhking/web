@@ -677,6 +677,7 @@ form .notice {
   position: relative;
   background-size: cover;
   overflow: hidden;
+  padding-bottom: 180px!important;
   &::before {
     content: "";
     height: 0;
@@ -735,6 +736,10 @@ form .notice {
     font-family: $work-sans;
     font-weight: 300;
     letter-spacing: 1px;
+  }
+  p.ico-dscription-note {
+    font-size: 14px;
+    text-align: left;
   }
   table{
     width: 500px;
