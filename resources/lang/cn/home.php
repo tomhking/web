@@ -48,7 +48,7 @@ return array (
   'economy_point_3' => '<b> 03.</b>通过接受BitDegree币，第三方成为BitDegree币经济的中介者。赞助商和学习者将能够在广泛的行业合作伙伴网络中交换和兑换他们的BitDegree币，或者将其交换用于数字商品和服务。 BitDegree币<strong>需求</strong>的潜力与招收行业巨大的2000亿美元强势紧密相关。BitDegree币的有限供应确保了BitDegree平台的服务在未来的日益增长的需求。',
   'partners_title' => '合作伙伴',
   'free_tokens' => '获得免费奖励',
-    'ico_section_title' => 'ICO',
+    'ico_section_title' => 'PRE-ICO',
     'ico_section_subtitle' => '2017年12月1日',
     'ico_section_minimum' => '最低发行:',
     'ico_section_maximum' => '最大发行:',
