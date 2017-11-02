@@ -40,7 +40,7 @@
     @include('partials.tag-manager-body')
 
     <div id="top"></div>
-
+    @include('partials.top-information')
     @include('partials.landing.header')
 
     @yield('content')
