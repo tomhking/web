@@ -48,7 +48,7 @@ return [
     'economy_point_1' => '<b>01.</b> Companies as Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is <strong>recruiting tech talents</strong>, enhancing employer branding and advertising.',
     'economy_point_2' => '<b>02.</b> BitDegree tokens can be used for creating <strong>smart-incentives as scholarships</strong> for students’ educational accomplishments, which can be used for getting various digital services offered by third parties on their platforms in exchange for tokens.',
     'economy_point_3' => '<b>03.</b> Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
-    'ico_section_title' => 'PRE-ICO',
+    'ico_section_title' => 'Token Sale',
     'ico_section_subtitle' => '1 Dec 2017',
     'ico_section_description' => 'As BitDegree token is utility token at the current stage we are based in Lithuania (LLC Company) and seeking for official confirmation from Lithuanian bank, which on 12th October officially confirmed that utility token ICO’s are in general legitime, but it should checked in case by case. In case of not positive situation with Lithuanian bank the project will be held in Switzerland and we have all agreements on that.',
     'ico_section_legal_form' => '<td><b>Legal Form:</b></td><td>LLC</td>',
