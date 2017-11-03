@@ -750,7 +750,7 @@ form .notice {
     text-align: left;
     font-family: $work-sans;
   }
-  .col-md-8.col-md-offset-2 .col-md-4:first-child {
+  .col-md-8.col-md-offset-2 .col-md-4 {
     padding-left: 0;
   }
   a.cta-btn {
@@ -3019,6 +3019,9 @@ h3.subtitle {
 }
 
 @media (max-width: 768px) {
+  .milestone-left .milestone-tooltip {
+    margin-right: 0!important;
+  }
   .video-block iframe {
     max-width: 100%;
     height:360px;
