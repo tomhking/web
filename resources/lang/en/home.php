@@ -54,7 +54,7 @@ return [
     'ico_section_legal_form' => 'Legal Form:',
     'ico_section_legal_form2' => 'LLC',
     'ico_section_jurisdiction' => 'Jurisdiction:',
-    'ico_section_jurisdiction2' => 'Lithuania',
+    'ico_section_jurisdiction2' => 'Lithuania, EU',
     'ico_section_kyc' => 'KYC:',
     'ico_section_kyc2' => 'Required',
     'ico_section_escrow' => 'Escrow:',
