@@ -12,9 +12,9 @@
 
         <div class="row">
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-6 col-sm-3 col-md-3">
                     <h4>@lang('home.ico_section_exchange')</h4>
                     <p>1 ETH = 10,000 BDG*</p>
 
@@ -26,7 +26,7 @@
 
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-6 col-sm-3 col-md-3">
                     <h4>@lang('home.ico_section_minimum')</h4>
                     <p>16,000 ETH*</p>
 
@@ -37,7 +37,7 @@
                     <p>1,5 billion</p>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div class="col-xs-6 col-sm-3 col-md-3">
 
 
                     <h4>@lang('home.ico_section_legal_form')</h4>
@@ -46,8 +46,13 @@
                     <h4>@lang('home.ico_section_jurisdiction')</h4>
                     <p>@lang('home.ico_section_jurisdiction2')</p>
 
-                   <!-- <h4>@lang('home.ico_section_kyc')</h4>
-                    <p>@lang('home.ico_section_kyc2')</p>-->
+                </div>
+
+
+                <div class="col-xs-6 col-sm-3 col-md-3">
+
+                    <h4>@lang('home.ico_section_kyc')</h4>
+                    <p>@lang('home.ico_section_kyc2')</p>
 
                     <h4>@lang('home.ico_section_escrow')</h4>
                     <p>@lang('home.ico_section_escrow2')</p>

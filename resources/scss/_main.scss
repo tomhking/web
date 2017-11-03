@@ -2022,7 +2022,21 @@ ul.cta-menu li .navbar-cta {
   }
 }
 
+div#token-distribution .col-md-10{
+  padding-left:100px;
+}
+
+div#token-distribution  .col-xs-6 {
+  width: 48%;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
 @media (max-width: 992px) {
+  div#token-distribution .col-md-10{
+    padding-left:0!important;
+  }
   .explanation .cards p, .grey-block p {
     font-size: 14px;
     line-height: 20px;
