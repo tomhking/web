@@ -90,10 +90,22 @@ class ParticipantController extends Controller
     function signUp(Request $request) {
         $this->validate($request, [
             'name' => 'string|min:2|max:60',
-            'email' => 'required|string|email|max:250|unique:participants,email',
+            'email' => 'required|string|email|max:250',
             'g-recaptcha-response' => 'required|recaptcha',
             'platform' => 'platform',
         ]);
+
+        $participant = Participant::where('email', '=', $request->get('email'))->first();
+
+        if($participant instanceof Participant) {
+            $authToken = $participant->authTokens()->save(new AuthToken);
+            event(new LogIn($participant, $authToken, $request->segment(1), $request->get('platform')));
+
+            $participant->captcha_verified = true;
+            $participant->save();
+
+            return response()->json(['success' => true, 'login' => true]);
+        }
 
         $participant = new Participant();
 
@@ -117,7 +129,7 @@ class ParticipantController extends Controller
         $authToken = $participant->authTokens()->save(new AuthToken);
         event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1), $request->get('platform')));
 
-        return response()->json(['success' => true]);
+        return response()->json(['success' => true, 'login' => false]);
     }
 
     /**
