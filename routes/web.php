@@ -20,10 +20,12 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
     $router->get('/token/mvp', ['as' => 'mvp', 'uses' => 'ContentController@mvp']);
     $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@home']);
-    $router->get('/token/signup[/{platform}]', ['as' => 'signup', 'uses' => 'ParticipantController@showSignUp']);
+    $router->get('/token/signup', ['as' => 'signup', 'uses' => 'ParticipantController@showSignUp']);
+    $router->get('/token/signup/{platform}', ['as' => 'signup-platform', 'uses' => 'ParticipantController@showSignUp']);
     $router->post('/token/join', ['as' => 'join', 'uses' => 'ParticipantController@join']);
     $router->post('/token/signup', ['as' => 'signup-post', 'uses' => 'ParticipantController@signUp']);
-    $router->get('/token/login[/{platform}]', ['as' => 'login', 'uses' => 'ParticipantController@showLogIn']);
+    $router->get('/token/login', ['as' => 'login', 'uses' => 'ParticipantController@showLogIn']);
+    $router->get('/token/login/{platform}', ['as' => 'login-platform', 'uses' => 'ParticipantController@showLogIn']);
     $router->post('/token/login', ['as' => 'login-post', 'uses' => 'ParticipantController@logIn']);
     $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
     $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);

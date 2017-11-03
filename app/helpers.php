@@ -42,8 +42,8 @@ if (!function_exists('route_lang')) {
          */
         $request = app()->make('request');
 
-        return route($name, array_merge([
-            'lang' => $request->segment(1, 'en'),
-        ], $parameters), $secure);
+        return rtrim(str_replace(['[',']',], '', route($name, array_merge([
+            'lang' => $parameters['lang'] ?? $request->segment(1, 'en'),
+        ], $parameters), $secure)), '/');
     }
 }

@@ -20,9 +20,9 @@ class FreeTokenSignup extends Event implements Mailable
      * @param Participant $participant
      * @param AuthToken $authToken
      * @param string $language
-     * @param null $platform
+     * @param bool|string $platform
      */
-    public function __construct(Participant $participant, AuthToken $authToken, $language = 'en', $platform = null)
+    public function __construct(Participant $participant, AuthToken $authToken, $language = 'en', $platform = false)
     {
         $this->participant = $participant;
         $this->authToken = $authToken;
@@ -44,7 +44,7 @@ class FreeTokenSignup extends Event implements Mailable
         $message->setLastName($this->participant->last_name);
         $message->setExtras([
             'wallet' => $this->participant->wallet,
-            'login_url' => route('auth', [
+            'login_url' => route_lang('auth', [
                 'lang' => $this->language,
                 'participant' => $this->participant->id,
                 'token' => $this->authToken->key,
