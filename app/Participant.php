@@ -12,6 +12,11 @@ class Participant extends Model
         'ip',
     ];
 
+    protected $casts = [
+        'email_verified' => 'bool',
+        'captcha_verified' => 'bool',
+    ];
+
     public function authTokens()
     {
         return $this->hasMany(AuthToken::class);

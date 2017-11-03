@@ -52,6 +52,20 @@ class AppServiceProvider extends ServiceProvider
             $recaptcha = new ReCaptcha(env('RECAPTCHA_SECRET'));
             return $recaptcha->verify($value, app('request')->ip())->isSuccess();
         });
+
+        Validator::extend('platform', function ($attribute, $value, $parameters) {
+            return isset(config('platforms')[$value]);
+        });
+
+        config([
+            'platforms' => [
+                'solidity' => [
+                    'name' => 'BitDegree Solidity Course',
+                    'audience' => env('PLATFORM_SOLIDITY_URL', 'http://localhost:4000'),
+                    'redirect' => env('PLATFORM_SOLIDITY_REDIRECT', 'http://localhost:4000/#auth:{token}'),
+                ]
+            ]
+        ]);
     }
 
     /**

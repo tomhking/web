@@ -14,7 +14,8 @@
         "doctrine/dbal": "^2.5",
         "hostinger/event-mail": "^1.0",
         "php-amqplib/php-amqplib": "^2.7",
-        "google/recaptcha": "~1.1"
+        "google/recaptcha": "~1.1",
+        "firebase/php-jwt": "^5.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

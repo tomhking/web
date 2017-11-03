@@ -6,6 +6,7 @@ use App\AuthToken;
 use App\Events\LogIn;
 use App\Participant;
 use Carbon\Carbon;
+use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Cookie;
 
@@ -23,9 +24,10 @@ class ParticipantController extends Controller
 
     /**
      * @param Request $request
+     * @param string $platform
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
      */
-    public function showSignUp(Request $request){
+    public function showSignUp(Request $request, $platform = ''){
         if($request->has('email') && Participant::where('email', '=', $request->get('email'))->first() instanceof Participant) {
             return redirect(route_lang('login', ['email' => $request->get('email')]));
         }
@@ -33,6 +35,7 @@ class ParticipantController extends Controller
         return view('pages.signup', [
             'email' => $request->get('email'),
             'success' => $request->has('success'),
+            'platform' => config('platforms')[$platform] ?? false ? $platform : false,
         ]);
     }
 
@@ -89,6 +92,7 @@ class ParticipantController extends Controller
             'name' => 'string|min:2|max:60',
             'email' => 'required|string|email|max:250|unique:participants,email',
             'g-recaptcha-response' => 'required|recaptcha',
+            'platform' => 'platform',
         ]);
 
         $participant = new Participant();
@@ -111,19 +115,21 @@ class ParticipantController extends Controller
         $participant->save();
 
         $authToken = $participant->authTokens()->save(new AuthToken);
-        event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1)));
+        event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1), $request->get('platform')));
 
         return response()->json(['success' => true]);
     }
 
     /**
      * @param Request $request
+     * @param string $platform
      * @return \Illuminate\View\View
      */
-    function showLogIn(Request $request) {
+    function showLogIn(Request $request, $platform = '') {
         return view('pages.login', [
             'email' => $request->get('email'),
             'success' => $request->has('success'),
+            'platform' => config('platforms')[$platform] ?? false ? $platform : false,
         ]);
     }
 
@@ -135,13 +141,14 @@ class ParticipantController extends Controller
         $this->validate($request, [
             'email' => 'required|email|exists:participants,email',
             'g-recaptcha-response' => 'required|recaptcha',
+            'platform' => 'platform',
         ]);
 
         $participant = Participant::where('email', '=', $request->get('email'))->first();
 
         if($participant instanceof \App\Participant) {
             $authToken = $participant->authTokens()->save(new AuthToken);
-            event(new LogIn($participant, $authToken, $request->segment(1)));
+            event(new LogIn($participant, $authToken, $request->segment(1), $request->get('platform')));
 
             $participant->captcha_verified = true;
             $participant->save();
@@ -170,14 +177,15 @@ class ParticipantController extends Controller
     }
 
     /**
-     * @param $language
-     * @param $id
-     * @param $key
+     * @param $lang
+     * @param $participant
+     * @param $token
+     * @param string $destination
      * @return $this|\Illuminate\View\View
      */
-    function auth($language, $id, $key) {
-        $participant = Participant::findOrFail($id);
-        $authToken = $participant->authTokens()->byKey($key)->first();
+    function auth($lang, $participant, $token, $destination = '') {
+        $participant = Participant::findOrFail($participant);
+        $authToken = $participant->authTokens()->byKey($token)->first();
 
         if($authToken instanceof AuthToken && $authToken->isUsable()) {
             if(!$participant->email_verified) {
@@ -186,6 +194,20 @@ class ParticipantController extends Controller
             }
 
             $authToken->use();
+
+            $platform = config('platforms');
+
+            if($destination = $platform[$destination] ?? false) {
+                $jwt = JWT::encode([
+                    'iss' => route('root'),
+                    'aud' => $destination['audience'],
+                    'iat' => Carbon::now()->timestamp,
+                    'exp' => Carbon::now()->addDays(2)->timestamp,
+                    'user' => $participant
+                ], env('JWT_SECRET'));
+
+                return redirect(str_replace('{token}', $jwt, $destination['redirect']));
+            }
 
             return redirect(route_lang('user'))->withCookie(
                 new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
