@@ -39,6 +39,8 @@
 
                 <button class="btn btn-default" type="submit">@lang('user.signup')</button>
                 <a class="link" href="{{ route_lang('login') }}">@lang('user.or_login')</a>
+
+                <input type="hidden" name="platform" value="{{ $platform or '' }}">
             </form>
         </div>
     </div>

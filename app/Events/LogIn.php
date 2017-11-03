@@ -12,6 +12,7 @@ class LogIn extends Event implements Mailable
     private $participant;
     private $authToken;
     private $language;
+    private $platform;
 
     /**
      * Create a new event instance.
@@ -19,12 +20,14 @@ class LogIn extends Event implements Mailable
      * @param Participant $participant
      * @param AuthToken $authToken
      * @param string $language
+     * @param bool $platform
      */
-    public function __construct(Participant $participant, AuthToken $authToken, $language = 'en')
+    public function __construct(Participant $participant, AuthToken $authToken, $language = 'en', $platform = null)
     {
         $this->participant = $participant;
         $this->authToken = $authToken;
         $this->language = $language;
+        $this->platform = $platform;
     }
 
     /**
@@ -44,6 +47,7 @@ class LogIn extends Event implements Mailable
                 'lang' => $this->language,
                 'participant' => $this->participant->id,
                 'token' => $this->authToken->key,
+                'destination' => $this->platform,
             ]),
         ]);
 
