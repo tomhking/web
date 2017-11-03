@@ -38,7 +38,7 @@
                 @include('partials.recaptcha')
 
                 <button class="btn btn-default" type="submit">@lang('user.signup')</button>
-                <a class="link" href="{{ route_lang('login') }}">@lang('user.or_login')</a>
+                <a class="link" href="{{ route_lang($platform ? 'login-platform' : 'login', $platform ? compact('platform') : []) }}">@lang('user.or_login')</a>
 
                 <input type="hidden" name="platform" value="{{ $platform or '' }}">
             </form>
