@@ -68,15 +68,12 @@
                     </div>
                 </div>
 
+
+
+
             </div>
 
-            <div class="row">
-                <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                    <h2 class="title">@lang('team.advisors')</h2>
-                </div>
-            </div>
-
-            <div class="row reg team-members">
+            <div class="row reg team-members team-leaders">
 
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
@@ -270,7 +267,6 @@
                 </div>
 
             </div>
-
 
             <div class="row">
                 <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
