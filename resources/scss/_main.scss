@@ -2035,7 +2035,7 @@ div#token-distribution .col-md-10.token-info-table{
     display: inline-block;
     vertical-align: top;
   }
-  div#token-distribution .col-md-10{
+  div#token-distribution .col-md-10.token-info-table {
     padding-left:0!important;
   }
   .explanation .cards p, .grey-block p {
@@ -2630,8 +2630,8 @@ h3.subtitle {
     display:inline-block;
   }
   .explanation .cards p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 22px;
     color: #252525;
     margin-top: 0;
     font-family: $work-sans;
@@ -2652,7 +2652,7 @@ h3.subtitle {
   h3, .h3 {
     color: #252525;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 26px;
     font-family: $source-code;
     font-weight: 300;
   }
@@ -2829,7 +2829,7 @@ h3.subtitle {
     .cards .card {
       width: 95%;
       height: auto;
-      min-height: 850px;
+      min-height: 810px;
       padding: 40px 25px;
       background: #f0f0f0;
       &.left {
@@ -3548,8 +3548,8 @@ p.subtitle {
     margin-bottom: 15px;
     p {
       text-align: left;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 22px;
       color: #252525;
       margin-top: 0;
       font-family: $work-sans;
@@ -3649,7 +3649,7 @@ p.subtitle {
 
 .team .row.reg.team-members {
   .team-member {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     overflow: hidden;
     .team-member-image-holder img {
       width: 200px;
@@ -3793,6 +3793,9 @@ p.subtitle {
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+  .col-sm-6 {
+    width: 49%;
+  }
   body.lang-HR,
   body.lang-AE,
   body.lang-EE,
