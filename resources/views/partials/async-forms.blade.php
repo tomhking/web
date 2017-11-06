@@ -9,8 +9,10 @@
             $('.validation-error', form).text('');
             $('.other-error').hide();
 
-            $.post(form.attr('action'), formData).then(function (e) {
-                if(form.attr('data-redirect')) {
+            $.post(form.attr('action'), formData).then(function (data) {
+                if(data.login) {
+                    location.href = '{{ route_lang($platform ?? false ? 'login-platform' : 'login', $platform ?? false ? compact('platform') : []) }}?success';
+                } else if(form.attr('data-redirect')) {
                     location.href = form.attr('data-redirect');
                 } else if(form.attr('data-show')) {
                     $(form.attr('data-show')).fadeIn();
