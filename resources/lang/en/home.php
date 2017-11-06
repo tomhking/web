@@ -64,6 +64,8 @@ return [
     'ico_section_exchange' => 'Exchange rate:',
     'ico_tokens_total' => 'Tokens in total',
     'ico_token_symbol' => 'Token symbol',
+    'ico_section_token_type' => 'Token Type',
+    'ico_section_token_type_2' => 'Utility',
     'ico_accepted_currencies' => 'Accepted currencies',
     'ico_section_note' => '* may change due to exchange rate changes.',
     'ico_section_cta_text' => 'Don\'t miss the start, join our private mailing list and be the first to know.',

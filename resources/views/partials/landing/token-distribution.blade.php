@@ -1,10 +1,10 @@
 <div id="token-distribution" class="ico-info-block main light-violet-bkg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+            <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
-                    <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
+                    <h3 class="subtitle">Token generation event: @lang('home.ico_section_subtitle')</h3>
                     <p class="ico-dscription-note">@lang('home.ico_section_description')</p>
                 </div>
             </div>
@@ -12,17 +12,17 @@
 
         <div class="row">
 
-            <div class="col-md-10 col-md-offset-1">
+            <div class="col-md-10 col-md-offset-1 token-info-table">
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
-                    <h4>@lang('home.ico_section_exchange')</h4>
-                    <p>1 ETH = 10,000 BDG*</p>
+                    <h4>@lang('home.ico_section_token_type')</h4>
+                    <p>@lang('home.ico_section_token_type_2')</p>
 
                     <h4>@lang('home.ico_token_symbol')</h4>
                     <p>BDG</p>
 
-                    <h4>@lang('home.ico_accepted_currencies')</h4>
-                    <p>ETH</p>
+                    <h4>@lang('home.ico_section_exchange')</h4>
+                    <p>1 ETH = 10,000 BDG*</p>
 
                 </div>
 
@@ -38,6 +38,8 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
+                    <h4>@lang('home.ico_accepted_currencies')</h4>
+                    <p>ETH</p>
 
 
                     <h4>@lang('home.ico_section_legal_form')</h4>
