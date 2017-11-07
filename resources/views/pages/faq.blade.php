@@ -58,7 +58,7 @@
                     </div>
                     <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
                         <div class="panel-body">
-                            <p>For the first 1 years all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
+                            <p>For the first 1 year all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
                         </div>
                     </div>
                 </div>
