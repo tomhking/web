@@ -24,11 +24,14 @@
                     </div>
                     <div id="1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1">
                         <div class="panel-body">
+                            <p>We are kick-starting a new education platform for everyone around the globe.</p>
                             <p>BitDegree is the world's first blockchain-powered, smart-incentives based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
                             <p>BitDegree is an educational platform for everyone who is willing to study and get IT job.</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
@@ -55,7 +58,7 @@
                     </div>
                     <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
                         <div class="panel-body">
-                            <p>For the first 2 years all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
+                            <p>For the first 1 years all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
                         </div>
                     </div>
                 </div>
