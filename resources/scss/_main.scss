@@ -717,6 +717,7 @@ form .notice {
     font-weight: 200;
     color: #ffffff;
     font-size: 24px;
+    line-height: 32px;
   }
   h4{
     color: #ffbcbc;
@@ -2135,6 +2136,7 @@ div#token-distribution .col-md-10.token-info-table{
     font-weight: 300;
     letter-spacing: 1px;
     margin:0;
+    line-height: 18px;
   }
 }
 
@@ -4033,7 +4035,7 @@ p.subtitle {
 }
 @media (max-width: 600px) {
   header {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 }
 
