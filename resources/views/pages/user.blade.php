@@ -25,7 +25,7 @@
                                             <i></i>
                                             <span>Telegram</span>
                                         </a>
-                                        <a class="twitter-share" href="http://twitter.com/intent/tweet?url=https://www.bitdegree.org/en/token&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
+                                        <a class="twitter-share" href="http://twitter.com/intent/tweet?url=https://www.bitdegree.org/en/token&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree_org&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
                                             <i class="fa fa-twitter"></i> Tweet
                                         </a>
 
