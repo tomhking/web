@@ -2116,7 +2116,7 @@ div#token-distribution .col-md-10.token-info-table{
 
 .top-info-container {
   background: #431986;
-  padding: 1px;
+  padding: 8px;
   color: #fff;
   text-align: center;
   border-bottom: 1px solid #2d1258;
@@ -2126,14 +2126,15 @@ div#token-distribution .col-md-10.token-info-table{
   right: 0;
   z-index: 1000;
   box-shadow: 2px 8px 16px 0 rgba(46, 61, 73, 0.2);
-  a{
+  a, p{
     color:#fff;
     text-decoration: none;
   }
-  h4{
+  h4, p{
     font-size: 13px;
     font-weight: 300;
     letter-spacing: 1px;
+    margin:0;
   }
 }
 

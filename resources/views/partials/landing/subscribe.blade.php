@@ -1,4 +1,4 @@
-<div class="main container-fluid communicate light-violet-bkg cta-block">
+<div id="subscribe-to-get-bonus" class="main container-fluid communicate light-violet-bkg cta-block">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
