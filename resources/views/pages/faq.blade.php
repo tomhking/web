@@ -273,9 +273,10 @@
                     </div>
                     <div id="17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="17">
                         <div class="panel-body">
+                            <p>BitDegree will provide free tokens for learning and it is a common question to ask how we will handle bots, abusive clients, macro scripts and similar. For this we have planned these solutions:</p>
                             <ul>
-                                <li>Will require make a selfie before starting studies</li>
-                                <li>Can track typing a text into the box to learn typing pattern</li>
+                                <li>Selfie tracking. Will require make a selfie before starting studies.</li>
+                                <li>Typing pattern tracking. System learns unique text typing for each client.</li>
                                 <li>SmartCaptcha where before starting learning users has to say words in the screen.</li>
                             </ul>
                         </div>
@@ -419,7 +420,7 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#002" aria-expanded="false" aria-controls="002">
                             <h3 class="panel-title">
-                                When does the ICO  start?
+                                When does the token sale start?
                             </h3>
                         </div>
                     </div>
@@ -449,7 +450,7 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#004" aria-expanded="false" aria-controls="004">
                             <h3 class="panel-title">
-                                What is the value of 1 BitDegree (BDG) token at the ICO?
+                                What is the value of 1 BitDegree (BDG) token at the token sale?
                             </h3>
                         </div>
                     </div>
@@ -509,13 +510,13 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#007" aria-expanded="false" aria-controls="007">
                             <h3 class="panel-title">
-                                How to participate in ICO?
+                                How to participate in token sale?
                             </h3>
                         </div>
                     </div>
                     <div id="007" class="panel-collapse collapse" role="tabpanel" aria-labelledby="007">
                         <div class="panel-body">
-                            <p>We will provide more information in this website on how to participate in the ICO once the crowdsale date approaches. Stay tuned! Subscribe to our newsletter. You can start by creating Ethereum wallet on <a href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet</a> this will help to get started easier.</p>
+                            <p>We will provide more information in this website on how to participate in the token sale once the crowdsale date approaches. Stay tuned! Subscribe to our newsletter. You can start by creating Ethereum wallet on <a href="https://www.myetherwallet.com/" target="_blank">MyEtherWallet</a> this will help to get started easier.</p>
                         </div>
                     </div>
                 </div>
@@ -530,8 +531,8 @@
                     </div>
                     <div id="008" class="panel-collapse collapse" role="tabpanel" aria-labelledby="008">
                         <div class="panel-body">
-                            <p>The token sale is not BitDegree goal itself. It is only one of the ways to accumulate funds for building a company. Raising money though ICO does not equal to value creating. True value and biggest return for all the shareholders, stakeholders, contributors and investors comes when the global company is being build with the raised funds.</p>
-                            <p>The core Bitdegree team members are acting actively in IT business since 2004. We are bootstrapped, profitable and proud. We have vision to change the global education to better and ICO is just a starting point.</p>
+                            <p>The token sale is not BitDegree goal itself. It is only one of the ways to accumulate funds for building a company. Raising money though token sale does not equal to value creating. True value and biggest return for all the shareholders, stakeholders, contributors and investors comes when the global company is being build with the raised funds.</p>
+                            <p>The core Bitdegree team members are acting actively in IT business since 2004. We are bootstrapped, profitable and proud. We have vision to change the global education to better and token sale is just a starting point. Big advisory board tells about itself.</p>
                         </div>
                     </div>
                 </div>
@@ -546,7 +547,7 @@
                     </div>
                     <div id="009" class="panel-collapse collapse" role="tabpanel" aria-labelledby="009">
                         <div class="panel-body">
-                            <p>We have received requests from 2 Exchanges to list BitDegree token. This is the information we can provide right now. Check us after the ICO.</p>
+                            <p>We have received requests from 2 Exchanges to list BitDegree token. In general all crypto currency exchanges are able to add ERC20 tokens to their trading platform. This is the information we can provide right now. More information about exchanges will be provided after the token sale.</p>
                         </div>
                     </div>
                 </div>
@@ -670,7 +671,7 @@
                     </div>
                     <div id="017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="017">
                         <div class="panel-body">
-                            <p>SEC jurisdiction lies in the United States federal government and as they personally state only affects ICOs that are issuing tokens in the United States or for the citizens of the US. As we won't issue tokens through the US and will not let the US citizens or green card holders to participate in ICO. Moreover Bitdegree Token will be more like payment measure and not the security and therefore are not under the scope of SEC’s jurisdictions.</p>
+                            <p>SEC jurisdiction lies in the United States federal government and as they personally state only affects token sales that are issuing tokens in the United States or for the citizens of the US. As we won't issue tokens through the US and will not let the US citizens or green card holders to participate in token sale. Moreover Bitdegree Token will be more like payment measure and not the security and therefore are not under the scope of SEC’s jurisdictions.</p>
                         </div>
                     </div>
                 </div>
@@ -679,7 +680,7 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#018" aria-expanded="false" aria-controls="018">
                             <h3 class="panel-title">
-                                What kind of information do I need to provide to participate in ICO?
+                                What kind of information do I need to provide to participate in token sale?
                             </h3>
                         </div>
                     </div>
@@ -694,13 +695,13 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#019" aria-expanded="false" aria-controls="019">
                             <h3 class="panel-title">
-                                Can USA participate in the ICO?
+                                Can USA participate in the token sale?
                             </h3>
                         </div>
                     </div>
                     <div id="019" class="panel-collapse collapse" role="tabpanel" aria-labelledby="019">
                         <div class="panel-body">
-                            <p>Unfortunately people from the US are unable to participate in the ICO.</p>
+                            <p>Unfortunately people from the US are unable to participate in the token sale.</p>
                         </div>
                     </div>
                 </div>
@@ -725,6 +726,56 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0002" aria-expanded="false" aria-controls="0002">
+                            <h3 class="panel-title">
+                                What are the payment options to fund courses?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0002" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0002">
+                        <div class="panel-body">
+                            <p>Everything will be paid in tokens.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0003" aria-expanded="false" aria-controls="0003">
+                            <h3 class="panel-title">
+                                What is your business plan for onboarding sponsors to fund BitDegree platform?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0003" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0003">
+                        <div class="panel-body">
+                            <p>Approach sponsors explaining BitDegree idea. Sponsors who appreciates the project will join.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0004" aria-expanded="false" aria-controls="0004">
+                            <h3 class="panel-title">
+                                What student data is provided to Sponsors?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0004" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0004">
+                        <div class="panel-body">
+                            <p>Depending on course and content provider settings, student will be able to choose which data is provided to Sponsors.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <br>
