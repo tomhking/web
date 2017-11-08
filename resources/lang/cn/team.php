@@ -11,7 +11,7 @@ return array (
   'position_sarune' => '市场助理',
   'position_dovile' => '产品设计师',
   'position_arnas' => '联合创始人的咨询能力 <br> CEO - Hostinger',
-  'position_jeff' => '连锁企业家及 <br> 全球企业缔造者',
+  'position_jeff' => '连锁企业家及 全球企业缔造者',
   'position_ricardas' => '技术 顾问,<br>Mysterium Network',
   'description_andrius' => '<b>BitDegree的技术专家和首席执行官。</b> <br>软件工程11年。 Blockchain的传道人。 000webhost成功的人物 - 世界上第一个也是最大的免费云端主机平台，专为学习，测试和实验而设计。',
   'description_danielius' => '<b>Civitta Startup Division部门主管</b> <br>与东欧领先的管理咨询公司共事7年。为300多家创业公司提供咨询，并与许多启动计划合作，包括硅谷的Berkeley Skydeck。专注于ICO和基于块的商业模式。',
