@@ -4265,6 +4265,12 @@ p.subtitle {
     color: #fff;
     text-align: center !important;
   }
+  header .header-content p {
+    padding: 0 15px;
+  }
+  header .description {
+    margin: 25px auto 35px auto;
+  }
   header .bullet-points p {
     font-size: 14px!important;
   }
@@ -4302,7 +4308,7 @@ p.subtitle {
     text-align: left !important;
   }
   header .col-xs-12.text-center {
-    padding-top: 35px;
+    padding-top: 15px;
   }
   .communicate .submit {
     width: 100% !important;
