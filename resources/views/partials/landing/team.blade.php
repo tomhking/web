@@ -104,7 +104,7 @@
                                                 </div>
 
                                                 <div class="team-member-desc">
-                                                    <!--<p>@lang('team.description_roberto')</p>-->
+                                                    <p>@lang('team.description_roberto')</p>
                                                 </div>
 
                                             </div>
