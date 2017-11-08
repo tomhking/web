@@ -277,7 +277,8 @@
                             <ul>
                                 <li>Selfie tracking. Will require make a selfie before starting studies.</li>
                                 <li>Typing pattern tracking. System learns unique text typing for each client.</li>
-                                <li>SmartCaptcha where before starting learning users has to say words in the screen.</li>
+                                <li>Speech recognition. Client has to say words on the screen.</li>
+                                During system development multiple new ways will be identified which works best.
                             </ul>
                         </div>
                     </div>
