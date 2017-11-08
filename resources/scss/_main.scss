@@ -4401,11 +4401,27 @@ p.subtitle {
   /* letter-spacing: 1px; */
 }
 
+.panel-body ul {
+  margin-bottom: 15px;
+  li {
+    list-style-type: disc;
+    margin-left: 16px;
+    font-family: $work-sans;
+    font-weight: 300;
+  }
+}
+
 .panel-body ul li {
   list-style-type: disc;
   margin-left: 15px;
   font-family: $work-sans;
   font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #252525;
+  margin-top: 0;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 350px) {
