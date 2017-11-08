@@ -2115,16 +2115,17 @@ div#token-distribution .col-md-10.token-info-table{
 }
 
 .top-info-container {
-  background: #1c2228;
+  background: #431986;
   padding: 1px;
   color: #fff;
   text-align: center;
-  border-bottom: 1px solid #000;
-  position: absolute;
+  border-bottom: 1px solid #2d1258;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: 2px 8px 16px 0 rgba(46, 61, 73, 0.2);
   a{
     color:#fff;
     text-decoration: none;

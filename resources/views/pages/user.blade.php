@@ -21,7 +21,7 @@
                             <h3>@lang('user.share')</h3>
                             <div class="share-arrow"></div>
                                     <div class="share-buttons large">
-                                        <a class="telegram-share" href="javascript:window.open('https://t.me/share/url?url=https://www.bitdegree.org/en/token', '_blank')">
+                                        <a class="telegram-share" href="https://t.me/bitdegree" target="_blank">
                                             <i></i>
                                             <span>Telegram</span>
                                         </a>
