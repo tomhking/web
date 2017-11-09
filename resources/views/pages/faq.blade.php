@@ -315,7 +315,7 @@
                     </div>
                     <div id="02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="02">
                         <div class="panel-body">
-                            <p>The BitDegree Roadmap is available <a href="index.html#roadmap">here</a>.</p>
+                            <p>The BitDegree Roadmap is available <a href="https://www.bitdegree.org/en/token#roadmap">here</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -345,7 +345,7 @@
                     </div>
                     <div id="04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="04">
                         <div class="panel-body">
-                            <p>Please check our roadmap <a href="index.html#roadmap">here</a>.</p>
+                            <p>Please check our roadmap <a href="https://www.bitdegree.org/en/token#roadmap">here</a>.</p>
                         </div>
                     </div>
                 </div>
