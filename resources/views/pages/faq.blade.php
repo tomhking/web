@@ -737,6 +737,21 @@
                         </div>
                     </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#020" aria-expanded="false" aria-controls="020">
+                            <h3 class="panel-title">
+                                Where can I find your Smart Contract?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="020" class="panel-collapse collapse" role="tabpanel" aria-labelledby="020">
+                        <div class="panel-body">
+                            <p>Bitdegree Smart Contract is open source and can be viewed on <a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" target="blank">Github</a></p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 

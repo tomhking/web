@@ -2025,6 +2025,18 @@ ul.cta-menu li .navbar-cta {
 
 div#token-distribution .col-md-10.token-info-table{
   padding-left:80px;
+  .token-table-links{
+    p{
+      margin:0;
+    }
+    a{
+      color:#fff;
+      font-size: 15px;
+      &:hover{
+        color:#c02b3f;
+      }
+    }
+  }
 }
 
 

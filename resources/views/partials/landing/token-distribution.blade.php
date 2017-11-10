@@ -59,6 +59,14 @@
                     <h4>@lang('home.ico_section_escrow')</h4>
                     <p>@lang('home.ico_section_escrow2')</p>
 
+                    <h4>@lang('home.ico_token_source')</h4>
+                    <div class="token-table-links">
+                        <p><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" rel="nofollow" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Github</a></p>
+                        <p><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i> Audit our Code</a></p>
+                    </div>
+
+
+
                 </div>
             </div>
 
