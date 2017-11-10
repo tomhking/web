@@ -10,7 +10,7 @@
             </div>
 
 
-            <h4 class="title">Basics</h4>
+            <h4 class="title">Bitdegree</h4>
 
             <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
@@ -30,8 +30,6 @@
                         </div>
                     </div>
                 </div>
-
-
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
@@ -44,36 +42,6 @@
                     <div id="2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="2">
                         <div class="panel-body">
                             <p>BitDegree will be highest quality IT courses website similar as Coursera. The difference is smart-contract based rewards for students learning on platform. In short it means students in addition getting direct benefits for learning on BitDegree platform, which leads to higher education level and lower barrier to enter job marketplace. Please read our whitepaper how does this work in details.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
-                            <h3 class="panel-title">
-                                How much will it cost to study on BitDegree?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
-                        <div class="panel-body">
-                            <p>For the first 1 year all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false" aria-controls="4">
-                            <h3 class="panel-title">
-                                What courses will be available on BitDegree?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="4">
-                        <div class="panel-body">
-                            <p>All courses on BitDegree platform will be IT oriented. Highest quality courses created by best tutors available.</p>
                         </div>
                     </div>
                 </div>
@@ -125,36 +93,6 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false" aria-controls="8">
-                            <h3 class="panel-title">
-                                How BitDegree will ensure that student learned a course online?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="8">
-                        <div class="panel-body">
-                            <p>Students are incentivized to do peer-review process for assignments. Course tutor BitDegree token is received for each peer-review students submit. Proof of effort verification process is defined in our whitepaper.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
-                            <h3 class="panel-title">
-                                How much tokens will student receive for finished course?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="9">
-                        <div class="panel-body">
-                            <p>Actual amount of token received for course completion will be decided depending on sponsor. Amount may vary on geo location, language and tutors.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#10" aria-expanded="false" aria-controls="10">
                             <h3 class="panel-title">
                                 What do the 29m users of two Web Hosts have to do with your product?
@@ -164,67 +102,6 @@
                     <div id="10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="10">
                         <div class="panel-body">
                             <p>These users are young and eager to learn which correlates directly with the BitDegree project idea. User base was incentivized with AirDrop of BitDegree tokens.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="false" aria-controls="11">
-                            <h3 class="panel-title">
-                                Will there be courses in the other languages?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="11">
-                        <div class="panel-body">
-                            <p>There will be courses in other languages in the future.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="false" aria-controls="12">
-                            <h3 class="panel-title">
-                                Is the platform also suitable for children education?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="12">
-                        <div class="panel-body">
-                            <p>In the beginning our focus will be on the digital skills that are needed by employers, but there is no limit of what a smart kid can learn and we will not discriminate. In the future, we also foresee to address the skills and knowledge needed to acquire at the young age. More news about that - very soon.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="false" aria-controls="13">
-                            <h3 class="panel-title">
-                                Will the courses be membership based or you'll pay for each course you take?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="13">
-                        <div class="panel-body">
-                            <p>For most of the courses, you'll get paid to learn. If this option will not be available, you will be able to pay for the courses with your BitDegree tokens. We will have special incentives for the loyal BitDegree learners community, you could say that you'll get "membership benefits"</p>
-                            <p>Students will be able to choose from a plethora of IT courses. Most of the courses will be free to enroll for the first year. All of the courses has a sponsor who funds the students participating. Depending on sponsor, students will receive micro-scholarships for learning. This is calculated by achievements every student is performing. Think of it this way, if you solve a "CodeCademy" style of exercise, you get micro-payment for doing that. This is one way of distributing sponsors funding to students. Another way is: Students enroll to paid courses. All the funds are frozen until, the achievement is unlocked. Basically students learn for free, because he is getting back his money while learning. This incentivizes students, to finish the course. There will be more enrollment models how students will learn.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="false" aria-controls="14">
-                            <h3 class="panel-title">
-                                How will our degrees become internationally recognized?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="14">
-                        <div class="panel-body">
-                            <p>We will provide blockchain based certificates issued by BitDegree. Everybody will be able to see each student progress. We will consider using 3rd party services such as blockcerts.org</p>
                         </div>
                     </div>
                 </div>
@@ -284,6 +161,160 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+            <h4 class="title">Education and Courses</h4>
+
+            <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#4" aria-expanded="false" aria-controls="4">
+                            <h3 class="panel-title">
+                                What courses will be available on BitDegree?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="4">
+                        <div class="panel-body">
+                            <p>All courses on BitDegree platform will be IT oriented. Highest quality courses created by best tutors available.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#3" aria-expanded="false" aria-controls="3">
+                            <h3 class="panel-title">
+                                How much will it cost to study on BitDegree?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
+                        <div class="panel-body">
+                            <p>For the first 1 year all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#8" aria-expanded="false" aria-controls="8">
+                            <h3 class="panel-title">
+                                How BitDegree will ensure that student learned a course online?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="8">
+                        <div class="panel-body">
+                            <p>Students are incentivized to do peer-review process for assignments. Course tutor BitDegree token is received for each peer-review students submit. Proof of effort verification process is defined in our whitepaper.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#9" aria-expanded="false" aria-controls="9">
+                            <h3 class="panel-title">
+                                How much tokens will student receive for finished course?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="9">
+                        <div class="panel-body">
+                            <p>Actual amount of token received for course completion will be decided depending on sponsor. Amount may vary on geo location, language and tutors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#11" aria-expanded="false" aria-controls="11">
+                            <h3 class="panel-title">
+                                Will there be courses in the other languages?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="11">
+                        <div class="panel-body">
+                            <p>There will be courses in other languages in the future.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#12" aria-expanded="false" aria-controls="12">
+                            <h3 class="panel-title">
+                                Is the platform also suitable for children education?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="12">
+                        <div class="panel-body">
+                            <p>In the beginning our focus will be on the digital skills that are needed by employers, but there is no limit of what a smart kid can learn and we will not discriminate. In the future, we also foresee to address the skills and knowledge needed to acquire at the young age. More news about that - very soon.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#13" aria-expanded="false" aria-controls="13">
+                            <h3 class="panel-title">
+                                Will the courses be membership based or you'll pay for each course you take?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="13">
+                        <div class="panel-body">
+                            <p>For most of the courses, you'll get paid to learn. If this option will not be available, you will be able to pay for the courses with your BitDegree tokens. We will have special incentives for the loyal BitDegree learners community, you could say that you'll get "membership benefits"</p>
+                            <p>Students will be able to choose from a plethora of IT courses. Most of the courses will be free to enroll for the first year. All of the courses has a sponsor who funds the students participating. Depending on sponsor, students will receive micro-scholarships for learning. This is calculated by achievements every student is performing. Think of it this way, if you solve a "CodeCademy" style of exercise, you get micro-payment for doing that. This is one way of distributing sponsors funding to students. Another way is: Students enroll to paid courses. All the funds are frozen until, the achievement is unlocked. Basically students learn for free, because he is getting back his money while learning. This incentivizes students, to finish the course. There will be more enrollment models how students will learn.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#14" aria-expanded="false" aria-controls="14">
+                            <h3 class="panel-title">
+                                How will our degrees become internationally recognized?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="14">
+                        <div class="panel-body">
+                            <p>We will provide blockchain based certificates issued by BitDegree. Everybody will be able to see each student progress. We will consider using 3rd party services such as blockcerts.org</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#18" aria-expanded="false" aria-controls="18">
+                            <h3 class="panel-title">
+                                What is gamification in education?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="18">
+                        <div class="panel-body">
+                            <p>Over the longer term, BitDegree will consider adding an interesting narrative to each course. For instance, rather than simply doing the assignment, tell us we are on a mission to disarm a bomb or address world hunger and the only way to do that is to write a program that contains the exact same features as the abstract version of the course. Some arbitrary graphics like a burning fuse or a hungry child can help provide context. Eventually, we consider creating a higher level context for the entire program that would provide a reason for doing this task whether it be killing the dragon or saving the real world. By creating a contextualized identity for learners, we make course assignments more personally relevant thereby enhancing both learning and motivation to continue and complete the work.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
 
             <br>
             <h4 class="title">Company</h4>
