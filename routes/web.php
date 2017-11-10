@@ -19,7 +19,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/', ['as' => 'home', 'uses' => 'ContentController@home']);
     $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
     $router->get('/token/mvp', ['as' => 'mvp', 'uses' => 'ContentController@mvp']);
-    $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@home']);
+    $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@ico']);
     $router->get('/token/signup', ['as' => 'signup', 'uses' => 'ParticipantController@showSignUp']);
     $router->get('/token/signup/{platform}', ['as' => 'signup-platform', 'uses' => 'ParticipantController@showSignUp']);
     $router->post('/token/join', ['as' => 'join', 'uses' => 'ParticipantController@join']);
