@@ -649,7 +649,7 @@ form .notice {
 .col-xs-12.grey-block::before {
   content: "";
   height: 0;
-  z-index: 1000000;
+  z-index: 100;
   position: absolute;
   left: 0;
   padding-bottom: 7%;
