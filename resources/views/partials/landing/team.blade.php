@@ -103,9 +103,9 @@
                                                     <a href="https://www.linkedin.com/in/robertosantana1/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                                 </div>
 
-                                                <div class="team-member-desc">
+                                                <!-- <div class="team-member-desc">
                                                     <p>@lang('team.description_roberto')</p>
-                                                </div>
+                                                </div> -->
 
                                             </div>
                                         </div>
