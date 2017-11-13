@@ -25,24 +25,10 @@ class ContentController extends Controller
      */
     function home(Request $request)
     {
-        list(,$options) = $request->route();
-        $forceFree = $options['as'] === 'airdrop';
-
-        $sources = ['000', 'hostinger',];
-        $canGetFreeTokens = $forceFree || in_array($request->get('utm_source'), $sources) || in_array($request->cookie('utm_source'), $sources);
-
-        $response = response(view('pages.home', [
-            'canGetFreeTokens' => $canGetFreeTokens,
+        return response(view('pages.home', [
+            'canGetFreeTokens' => true,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
         ])->render());
-
-        if (in_array($request->get('utm_source'), $sources)) {
-            $response->withCookie(new Cookie(
-                'utm_source', $request->get('utm_source'), Carbon::now()->addYear()
-            ));
-        }
-
-        return $response;
     }
 
     /**
