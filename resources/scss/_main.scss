@@ -2024,7 +2024,10 @@ ul.cta-menu li .navbar-cta {
 }
 
 div#token-distribution .col-md-10.token-info-table{
-  padding-left:80px;
+  padding-left:100px;
+  .col-xs-6.col-sm-3.col-md-3{
+    padding-right: 0;
+  }
   .token-table-links{
     p{
       margin:0;

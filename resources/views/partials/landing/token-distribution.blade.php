@@ -1,7 +1,7 @@
 <div id="token-distribution" class="ico-info-block main light-violet-bkg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
+            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
                     <h3 class="subtitle">Token generation event: @lang('home.ico_section_subtitle')</h3>
