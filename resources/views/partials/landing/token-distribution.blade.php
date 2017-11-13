@@ -4,7 +4,7 @@
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
-                    <h3 class="subtitle">Token generation event: @lang('home.ico_section_subtitle')</h3>
+                    <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
                     <p class="ico-dscription-note">@lang('home.ico_section_description')</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <p>75,000 ETH*</p>
 
                     <h4>@lang('home.ico_tokens_total')</h4>
-                    <p>1,5 billion</p>
+                    <p>@lang('home.ico_tokens_total_2')</p>
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
@@ -62,7 +62,7 @@
                     <h4>@lang('home.ico_token_source')</h4>
                     <div class="token-table-links">
                         <p><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" rel="nofollow" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Github</a></p>
-                        <p><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i> Audit our Code</a></p>
+                        <p><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i>@lang('home.ico_token_source_link')</a></p>
                     </div>
 
 
