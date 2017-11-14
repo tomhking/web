@@ -21,7 +21,7 @@ return [
     'position_jeff' => 'Major Advisor, Serial<br>Entrepreneur, co-founder of EA',
     'position_ricardas' => 'Technical advisor,<br>Mysterium Network',
     'position_maurice'=> 'Steve JobsSchool Founder, Personalized Learning Advisor',
-    'position_james' => 'Stanford University PhD. Candidate, Gamification Advisor',
+    'position_james' => 'Stanford University PhD., Gamification Advisor',
     'position_roberto' => 'Product and Strategy Advisor, Former Senior Manager at Coursera',
     'description_andrius' => '<b>The Technology Wiz & CEO of BitDegree.</b> 11 years in software engineering. Blockchain evangelist. Person behind the success of 000webhost - world’ first and biggest free cloud hosting platform designed for learning, testing and experimenting. His way-ahead-of our-time mindset and passion for technologies led him to become the CEO and one of the founding members of BitDegree where, on the long term, he aims to revolutionize education and shape it to today’s businesses needs.',
     'description_danielius' => '<b>Business, Growth architect with a solid management consulting background.</b> Head of Startup Division / Associate Partner at Civitta, a leading management consulting firm in Eastern Europe. Worked with 300+ startups, including Berkeley Skydeck in Silicon Valley. Founded 4 own startups. Was the official Lithuania’s youth delegate to the UN in 2012 and a member of Major Group for Children and Youth, where he fought for THE education initiatives. Danielius focuses on blockchain-based business models and long-term growth of BitDegree.',
