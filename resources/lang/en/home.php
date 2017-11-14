@@ -64,7 +64,7 @@ return [
     'ico_section_exchange' => 'Exchange rate',
     'ico_tokens_total' => 'Tokens in total',
     'ico_tokens_total_2' => '1,5 billion',
-    'ico_token_symbol' => '货币符号',
+    'ico_token_symbol' => 'Token symbol',
     'ico_section_token_type' => 'Token Type',
     'ico_section_token_type_2' => 'Utility',
     'ico_accepted_currencies' => 'Accepted currencies',
