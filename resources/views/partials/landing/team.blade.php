@@ -72,19 +72,19 @@
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
 
-                        <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
-                            <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                        <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
+                            <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
                         </div>
 
                         <div class="team-member-data">
-                            <h3 class="title">Balys <b>Krikščiūnas</b></h3>
-                            <p>@lang('team.position_balys')</p>
+                            <h3 class="title">Arnas <b>Stuopelis</b></h3>
+                            <p>@lang('team.position_arnas')</p>
                             <div class="handles">
-                                <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                <a href=" https://github.com/balys" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </div>
 
-                            <div class="modal fade" role="dialog" id="BalysModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                            <div class="modal fade" role="dialog" id="ArnasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -93,21 +93,19 @@
 
                                         <div class="modal-body">
 
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
-                                                <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
+                                                <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
                                             </div>
                                             <div class="team-member-data">
-                                                <h3 class="title">Balys <b>Krikščiūnas</b></h3>
-                                                <p>@lang('team.position_balys')</p>
+                                                <h3 class="title">Arnas <b>Stuopelis</b></h3>
+                                                <p>@lang('team.position_arnas')</p>
                                                 <div class="handles">
-                                                    <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                                    <a href=" https://github.com/balys" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                    <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                                                 </div>
-
                                                 <div class="team-member-desc">
-                                                    <p>@lang('team.description_balys')</p>
+                                                    <p>@lang('team.description_arnas')</p>
                                                 </div>
-
                                             </div>
                                         </div>
 
@@ -274,6 +272,57 @@
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
 
+                        <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
+                            <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                        </div>
+
+                        <div class="team-member-data">
+                            <h3 class="title">Balys <b>Krikščiūnas</b></h3>
+                            <p>@lang('team.position_balys')</p>
+                            <div class="handles">
+                                <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href=" https://github.com/balys" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            </div>
+
+                            <div class="modal fade" role="dialog" id="BalysModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+
+                                        <div class="modal-body">
+
+                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
+                                                <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                                            </div>
+                                            <div class="team-member-data">
+                                                <h3 class="title">Balys <b>Krikščiūnas</b></h3>
+                                                <p>@lang('team.position_balys')</p>
+                                                <div class="handles">
+                                                    <a href="https://www.linkedin.com/in/balysk/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href=" https://github.com/balys" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                </div>
+
+                                                <div class="team-member-desc">
+                                                    <p>@lang('team.description_balys')</p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <div class="team-member">
+
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#AntanasModal">
                             <img class="team-member-image" src="{{ asset('team/antanas-patasius.png') }}" alt="Antanas Patašius">
                         </div>
@@ -417,7 +466,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row reg team-members">
                 <div class="col-xs-12 col-sm-3">
 
                     <div class="team-member">
@@ -466,9 +517,7 @@
                     </div>
 
                 </div>
-            </div>
 
-            <div class="row reg team-members">
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
 
@@ -610,7 +659,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row reg team-members">
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
 
@@ -647,56 +698,6 @@
                                                 </div>
                                                 <div class="team-member-desc">
                                                     <p>@lang('team.description_edgaras')</p>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="row reg team-members">
-                <div class="col-xs-12 col-sm-3">
-                    <div class="team-member">
-
-                        <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
-                            <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
-                        </div>
-
-                        <div class="team-member-data">
-                            <h3 class="title">Aurimas <b>Lapienė</b></h3>
-                            <p>@lang('team.position_aurimas')</p>
-                            <div class="handles">
-                                <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                            </div>
-
-                            <div class="modal fade" role="dialog" id="AurimasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                        </div>
-
-                                        <div class="modal-body">
-
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
-                                                <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
-                                            </div>
-                                            <div class="team-member-data">
-                                                <h3 class="title">Aurimas <b>Lapienė</b></h3>
-                                                <p>@lang('team.position_aurimas')</p>
-                                                <div class="handles">
-                                                    <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                                </div>
-                                                <div class="team-member-desc">
-                                                    <p>@lang('team.description_aurimas')</p>
                                                 </div>
                                             </div>
 
@@ -858,6 +859,54 @@
                     <div class="col-xs-12 col-sm-4">
                         <div class="team-member">
 
+                            <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
+                                <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
+                            </div>
+
+                            <div class="team-member-data">
+                                <h3 class="title">Aurimas <b>Lapienė</b></h3>
+                                <p>@lang('team.position_aurimas')</p>
+                                <div class="handles">
+                                    <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="AurimasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
+                                                    <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
+                                                </div>
+                                                <div class="team-member-data">
+                                                    <h3 class="title">Aurimas <b>Lapienė</b></h3>
+                                                    <p>@lang('team.position_aurimas')</p>
+                                                    <div class="handles">
+                                                        <a href="https://github.com/aurimasl" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="team-member-desc">
+                                                        <p>@lang('team.description_aurimas')</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="team-member">
+
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#SkirmantasModal">
                                 <img class="team-member-image" src="{{ asset('team/skirmantas-juraska.png') }}" alt="Skirmantas Juraška">
                             </div>
@@ -889,55 +938,6 @@
                                                     </div>
                                                     <div class="team-member-desc">
                                                         <p>@lang('team.description_skirmantas')</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4">
-                        <div class="team-member">
-
-                            <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
-                                <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
-                            </div>
-
-                            <div class="team-member-data">
-                                <h3 class="title">Arnas <b>Stuopelis</b></h3>
-                                <p>@lang('team.position_arnas')</p>
-                                <div class="handles">
-                                    <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                </div>
-
-                                <div class="modal fade" role="dialog" id="ArnasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            </div>
-
-                                            <div class="modal-body">
-
-                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
-                                                    <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
-                                                </div>
-                                                <div class="team-member-data">
-                                                    <h3 class="title">Arnas <b>Stuopelis</b></h3>
-                                                    <p>@lang('team.position_arnas')</p>
-                                                    <div class="handles">
-                                                        <a href="https://www.linkedin.com/in/arnas-stuopelis-52395a6/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                                        <a href="https://github.com/Arnas888" rel="nofollow" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                                    </div>
-                                                    <div class="team-member-desc">
-                                                        <p>@lang('team.description_arnas')</p>
                                                     </div>
                                                 </div>
                                             </div>
