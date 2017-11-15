@@ -6,6 +6,7 @@
                     <h1 class="title">@lang('home.ico_section_title')</h1>
                     <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
                     <p class="ico-dscription-note">@lang('home.ico_section_description')</p>
+                    <p class="ico-dscription-note">Thanks to our partner, minimal token value will be covered with Hostinger services. Exchange it anytime after ICO!</p>
                 </div>
             </div>
         </div>
