@@ -82,5 +82,5 @@ return array (
     'token_distribution_text_6' => '<td><b>Токенов в общем:</b></td><td class="amount">1,5 миллиарда.</td>',
     'token_distribution_note' => '* фиксировано на 360 дней.',
     'budget_allocation_title' => 'Распределение Бюджета',
-    'ico_top_information' => 'Crowdsale starts <b>December 1st, 2017</b> - Subscribe now and get <b>SPECIAL BONUS</b>',
+    'ico_top_information' => 'ICO начнётся <b>1 декабря 2017 года</b> - Подпишись сейчас и получи <b>СПЕЦИАЛЬНЫЙ БОНУС</b>',
 );
