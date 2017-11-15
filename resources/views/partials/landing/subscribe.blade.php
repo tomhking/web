@@ -1,8 +1,19 @@
-<div id="subscribe-to-get-bonus" class="main container-fluid communicate light-violet-bkg cta-block">
+<div class="main container-fluid communicate light-violet-bkg cta-block">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <h2 class="title">@lang('subscribe.title')</h2>
+            </div>
+        </div>
+
+        <div class="video-block">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 description">
+                    <div class="image-container text-center">
+                        <iframe width="820" height="456" src="https://www.youtube.com/embed/Ue_h6CDngjM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+                    </div>
+                </div>
             </div>
         </div>
 
