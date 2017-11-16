@@ -812,6 +812,91 @@ form .notice {
 
 /*MVP Page*/
 
+body.landing.degree-list .mvp-available {
+  background: url('../network.jpg') no-repeat center;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  padding:80px 40px;
+  margin-bottom:100px;
+    h1 {
+      font-family: $work-sans;
+      text-transform: inherit;
+      font-weight: 200;
+      font-size: 58px;
+      line-height: 70px;
+      color: #fff;
+      margin: 35px 0;
+      letter-spacing: -1px;
+    }
+    h6 {
+      font-family: $work-sans;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing:3px;
+    }
+    p{
+      color:#fff;
+      font-weight: 200;
+    }
+    .communicate {
+      text-align: center;
+      z-index: 10;
+      width: 100%;
+      form {
+        position: relative;
+        display: inline-block;
+        margin-top: 25px;
+      }
+      .submit {
+        width: auto;
+      }
+
+      @media(max-width: 991px) {
+        position:relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        h1, h6, p {
+          color: #333;
+        }
+      }
+  }
+  h1 {
+    font-family: $work-sans;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 70px;
+    line-height: 70px;
+    color: #fff;
+  }
+  p.subtitle {
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-family: $work-sans;
+    font-weight: 300;
+  }
+  .header h4{
+    font-family: $work-sans;
+    font-weight: 300;
+    color: #98a2ab;
+    font-size: 18px;
+  }
+  .communicate.cta-block {
+    background: url('../course-cover-photo2.jpg') no-repeat left;
+    min-height: 450px!important;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+    .submit {
+      width: auto;
+    }
+  }
+}
+
 body.landing.degree-list header {
   min-height: 80px;
 }
@@ -853,6 +938,10 @@ body.landing.degree-list header {
         font-family: $work-sans;
         text-transform: uppercase;
         font-weight: 400;
+      }
+      p{
+        font-size: 15px;
+        color: #848484;
       }
       text-decoration: none;
     }
@@ -936,9 +1025,39 @@ body.landing.degree-list header {
   margin: 5px;
 }
 
+.badge-mvp {
+  display: inline-block;
+  min-width: 10px;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #c02b3f;
+  border-radius: 0;
+  letter-spacing: 1px;
+  z-index: 5000;
+  text-transform: uppercase;
+  box-shadow: 4px 6px 8px 0 rgba(46, 61, 73, 0.2);
+  position: absolute;
+  margin: 5px;
+  left:75px;
+}
+
 .bitdegrees-list .cards .card .info {
   text-align: left;
-  padding: 25px;
+  padding: 8px 25px;
+  .by-sponsor {
+    font-size: 15px;
+    color: #848484;
+    display: inline-block;
+  }
+  img.sponsor-img{
+    display: inline-block;
+  }
 }
 
 .card {
