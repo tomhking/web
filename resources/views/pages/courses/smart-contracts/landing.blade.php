@@ -56,6 +56,8 @@
 
     @include('partials.collaboration-with', ['sponsor' => 'nexchange'])
 
+    @include('partials.mvp-available')
+
     <div class="main light-violet-bkg">
         <div class="container">
             <div class="row">
