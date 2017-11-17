@@ -500,6 +500,7 @@ form .notice {
     padding: 8px 15px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     height: 48px;
+    opacity:1;
     &:hover{
       border: 1px solid rgba(255, 255, 255, 1);
     }
@@ -1058,6 +1059,10 @@ body.landing.degree-list header {
   img.sponsor-img{
     display: inline-block;
   }
+}
+
+body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-available {
+  margin: 0;
 }
 
 .card {
