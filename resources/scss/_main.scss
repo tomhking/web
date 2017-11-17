@@ -819,80 +819,46 @@ body.landing.degree-list .mvp-available {
   background-size: cover;
   overflow: hidden;
   margin-bottom:100px;
-    h1 {
-      font-family: $work-sans;
-      text-transform: inherit;
-      font-weight: 200;
-      font-size: 58px;
-      line-height: 70px;
-      color: #fff;
-      margin: 35px 0;
-      letter-spacing: -1px;
-    }
-    h6 {
-      font-family: $work-sans;
-      text-transform: uppercase;
-      font-weight: 200;
-      font-size: 18px;
-      color: #fff;
-      letter-spacing:3px;
-    }
-    p{
-      color:#fff;
-      font-weight: 200;
-    }
-    .communicate {
-      text-align: center;
-      z-index: 10;
-      width: 100%;
-      form {
-        position: relative;
-        display: inline-block;
-        margin-top: 25px;
-      }
-      .submit {
-        width: auto;
-      }
-
-      @media(max-width: 991px) {
-        position:relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        h1, h6, p {
-          color: #333;
-        }
-      }
+  .container{
+    padding:0;
+    max-width: 100%;
+  }
+  .row{
+    margin:0;
+    width:100%;
+  }
+  .mvp-cta.text-center {
+    margin-bottom: 0;
+    margin-top: 0;
   }
   h1 {
     font-family: $work-sans;
+    font-weight: 200;
+    font-size: 64px;
+    line-height: 64px;
+    color: #fff;
+    margin: 35px 0;
+    letter-spacing: -1px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+  }
+  h6 {
+    font-family: $work-sans;
     text-transform: uppercase;
     font-weight: 200;
-    font-size: 60px;
-    line-height: 60px;
-    color: #fff;
-  }
-  p.subtitle {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    font-family: $work-sans;
-    font-weight: 300;
-  }
-  .header h4{
-    font-family: $work-sans;
-    font-weight: 300;
-    color: #98a2ab;
     font-size: 18px;
+    color: #fff;
+    letter-spacing:3px;
   }
-  .communicate.cta-block {
-    background: url('../course-cover-photo2.jpg') no-repeat left;
-    min-height: 450px!important;
-    position: relative;
-    background-size: cover;
-    overflow: hidden;
-    .submit {
-      width: auto;
+  p{
+    color:#fff;
+    font-weight: 200;
+    &.subtitle {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      font-family: $work-sans;
+      font-weight: 300;
     }
   }
 }
@@ -4195,6 +4161,10 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  body.landing.degree-list .mvp-available h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
   a.cta-btn{
     width: 100%;
   }
