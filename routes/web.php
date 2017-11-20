@@ -36,4 +36,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/course/{course}', ['as' => 'course', 'uses' => 'ContentController@course']);
     $router->get('/landing/course/{course}', ['uses' => 'ContentController@redirectLanding']);
     $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
+
+    $router->get('/token/admin/stats', ['as' => 'admin.stats', 'uses' => 'AdminController@stats']);
+    $router->get('/token/admin/emails', ['as' => 'admin.emails', 'uses' => 'AdminController@emails']);
 });
