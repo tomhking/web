@@ -330,47 +330,61 @@ class ParticipantController extends Controller
      * @return $this|\Illuminate\Http\JsonResponse
      */
     function joinICO(Request $request) {
-        $endDate = Carbon::createFromTimestamp(env('ICO_ENDS_AT'));
-        $icoDataAvailable = (bool) env('ICO_INFO_AVAILABLE', false);
+        $icoAddress = env('ICO_ADDRESS');
 
-        if(!$icoDataAvailable){
+        if(empty($icoAddress)){
             return response()->json([
                 'error' => 'Registrations for ICO are not yet available.'
             ], 403);
         }
 
-        $this->validate($request, [
-            'first-name' => 'required|string|min:2|max:35',
-            'last-name' => 'required|string|min:2|max:35',
-            'email' => 'required|string|email|max:250',
-            'phone' => 'required|string|min:8|max:20',
-            'country' => 'required|string|valid-country',
-            'birthday' => 'required|date',
-            'wallet' => 'required|string|size:42',
-        ]);
+        $email = strtolower($request->get('email', ''));
+        $participant = Participant::where('email', '=', $email)->first();
 
-        if(Participant::where('ip', $request->ip())->count() > 10) {
-            return response()->json(['success' => true,])->withCookie(
-                new Cookie('participant', $request->ip(), $endDate->addDay())
+        if($participant instanceof Participant) {
+            $authToken = $participant->authTokens()->save(new AuthToken);
+            $authToken->use();
+            return redirect(route_lang('ico-address'))->withCookie(
+                new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
             );
         }
 
+        $this->validate($request, [
+            'email' => 'required|string|email|max:250',
+        ]);
+
         $participant = new Participant();
 
-        $participant->first_name = $request->get('first-name');
-        $participant->last_name = $request->get('last-name');
         $participant->email = strtolower($request->get('email'));
-        $participant->phone_number = $request->get('phone');
-        $participant->country = $request->get('country');
-        $participant->birthday = $request->get('birthday');
-        $participant->wallet = $request->get('wallet');
         $participant->ip = $request->ip();
 
         $participant->save();
 
-        return response()->json(['success' => true,])->withCookie(
-            new Cookie('participant', $participant->id, $endDate->addDay())
+        $authToken = $participant->authTokens()->save(new AuthToken);
+        $authToken->use();
+        return redirect(route_lang('ico-address'))->withCookie(
+            new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
         );
+    }
+
+    public function updateProfile(Request $request) {
+        $participant = Participant::getCurrent();
+
+        $this->validate($request, [
+            'first_name' => 'required|string|min:2|max:35',
+            'last_name' => 'required|string|min:2|max:35',
+            'country' => 'required|string|valid-country',
+            'birthday' => 'required|date',
+        ]);
+
+        $participant->first_name = $request->get('first_name');
+        $participant->last_name = $request->get('last_name');
+        $participant->country = $request->get('country');
+        $participant->birthday = $request->get('birthday');
+
+        $participant->save();
+
+        return redirect(route_lang('ico-address'));
     }
 
     /**

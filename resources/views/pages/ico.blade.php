@@ -5,12 +5,11 @@
     <div class="ico-page white-bkg">
         <div class="ico-top">
             @include('partials.ico-progress')
-
         </div>
 
         <div class="main container-fluid ico-info">
             <div class="container">
-                @if($icoEnd->isFuture() && $raisedEth < $hardCapEth)
+                @if($icoEnd->isFuture() && $tokensSold < $hardCap)
                     @include('partials.participant-instructions')
                 @endif
                 <div class="row token-calculator-btn">
@@ -36,100 +35,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Participate in BitDegree ICO</h4>
-                </div>
-                <div class="modal-body" id="modal-agreements">
-                    <div class="checkbox">
-                        <label><input class="check-required" type="checkbox" name="checkbox"> Confirm thar you are not a United States citizen, resident or green card holder, or have a primary residence or domicile in the united States, including Puerto Rico, the U.S. Virgin Islands or any other territories of the United States and are not purchasing BitDegree tokens or signing on behalf of a United States citizen, resident or entity.</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input class="check-required" type="checkbox" name="checkbox"> Confirm that you have read and understand the Terms of Token Sale and expressly accept all terms, conditions, obligations, affirmations, representations and warranties described in these Terms and agree to be bound by them.</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input class="check-required" type="checkbox" name="checkbox"> Confirm that you have read and understand the Terns and Conditions and Privacy Policy and expressly accept all terms, conditions, obligations, affirmations, representations and warranties described in these Terms and agree to be bound by them.</label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input class="check-required" type="checkbox" name="checkbox"> Confirm that you have read and understand the <a href="/white-paper.pdf" target="_blank">BitDegree White Paper</a>.</label>
-                    </div>
-                    <a id="confirm-agreements" class="btn btn-success disabled">You must agree with all points in order to continue</a>
-                </div>
-                <div class="modal-body" id="modal-sign-up" style="display: none">
-                    <form action="{{ route_lang('ico') }}" method="post">
-                        <div class="alert alert-danger other-error" style="display: none;">An unknown error occurred. Please make sure you entered correct data and try again.</div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group validation-first-name">
-                                    <label for="input-first-name">First Name</label>
-                                    <input type="text" class="form-control" id="input-first-name" name="first-name">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group validation-last-name">
-                                    <label for="input-last-name">Last Name</label>
-                                    <input type="text" class="form-control" id="input-last-name" name="last-name">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group validation-email">
-                                    <label for="input-email">Email</label>
-                                    <input type="email" class="form-control" id="input-email" name="email">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group validation-phone">
-                                    <label for="input-phone">Phone Number</label>
-                                    <input type="text" class="form-control" id="input-phone" name="phone">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group validation-country">
-                                    <label for="input-country">Country</label>
-                                    <select name="country" id="input-country" class="form-control">
-                                        <option value="">- please select -</option>
-                                        @foreach($countries as $code => $country)
-                                            <option value="{{ $code }}" {{ in_array($code, $blacklistedCountries) ? "disabled" : "" }} {{ $currentCountry == $code && !in_array($code, $blacklistedCountries) ? "selected" : "" }}>{{ $country }}</option>
-                                        @endforeach
-                                    </select>
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group validation-birthday">
-                                    <label for="input-birthday">Date of Birth</label>
-                                    <input type="date" class="form-control" id="input-birthday" name="birthday" max="{{ \Carbon\Carbon::today()->subYears(16)->toDateString() }}" min="{{ \Carbon\Carbon::today()->subYears(100)->toDateString() }}">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group validation-wallet">
-                                    <label for="input-wallet">Ethereum Wallet Address</label>
-                                    <input type="text" class="form-control" id="input-wallet" name="wallet">
-                                    <span class="text-danger validation-error"></span>
-                                </div>
-                                <div class="well well-sm">Please make sure to enter a valid ERC20 compatible Ethereum address to receive your tokens. Do not use any exchange address!</div>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary">Participate in BitDegree ICO</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    @include('partials.email-modal')
 
 @endsection
 
@@ -137,48 +43,11 @@
     <script type="text/javascript" src="{{ asset('big.min.js') }}" async></script>
     <script type="text/javascript">
         jqWait(function() {
-            var confirmationButton = $('#confirm-agreements'), modalAgreement = $('#modal-agreements'), modalSignup = $('#modal-sign-up');
-
-            confirmationButton.click(function () {
-                modalAgreement.hide();
-                modalSignup.show();
-            });
-
-            $('#modal-sign-up form').submit(function (e) {
-                var form = $(this), inputs = $("input,select,button", form), formData = $(this).serialize();
-                e.preventDefault();
-
-                inputs.attr("disabled", "disabled");
-                $('.has-error', form).removeClass('has-error');
-                $('.validation-error', form).text('');
-                $('.other-error').hide();
-
-                $.post(form.attr('action'), formData).then(function (e) {
-                    location.reload();
-                }).catch(function (response) {
-                    if(response.status === 422) {
-                        Object.keys(response.responseJSON).forEach(function(key) {
-                            var field = $('.validation-'+key, form);
-                            field.addClass('has-error');
-                            $('.validation-error', field).text(response.responseJSON[key].join(' '));
-                        });
-                    } else{
-                        $('.other-error').show();
-                    }
-
-                    inputs.removeAttr('disabled');
+            @if($displaySignUp)
+                $(window).on('load', function () {
+                    $('#signup-modal').modal('show');
                 });
-            });
-
-            $('.check-required').change(function () {
-                var total = $('.check-required').length, checked = $('.check-required:checked').length;
-
-                if(total === checked){
-                    confirmationButton.text('Continue').removeClass('disabled');
-                }else{
-                    confirmationButton.text('You must agree with all points in order to continue').addClass('disabled');
-                }
-            });
+            @endif
 
             $('[data-time-left]').each(function () {
                 var timer = this;

@@ -19,7 +19,6 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/', ['as' => 'home', 'uses' => 'ContentController@home']);
     $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
     $router->get('/token/mvp', ['as' => 'mvp', 'uses' => 'ContentController@mvp']);
-    $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@ico']);
     $router->get('/token/signup', ['as' => 'signup', 'uses' => 'ParticipantController@showSignUp']);
     $router->get('/token/signup/{platform}', ['as' => 'signup-platform', 'uses' => 'ParticipantController@showSignUp']);
     $router->post('/token/join', ['as' => 'join', 'uses' => 'ParticipantController@join']);
@@ -30,12 +29,16 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
     $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);
     $router->get('/token/auth/{participant}/{token}[/{destination}]', ['as' => 'auth', 'uses' => 'ParticipantController@auth']);
-    $router->post('/token/ico', ['as' => 'ico-post', 'uses' => 'ParticipantController@joinICO']);
     $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
     $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', 'uses' => 'ContentController@lesson']);
     $router->get('/course/{course}', ['as' => 'course', 'uses' => 'ContentController@course']);
     $router->get('/landing/course/{course}', ['uses' => 'ContentController@redirectLanding']);
-    $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);
+
+    $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@ico']);
+    $router->get('/token/ico/address', ['as' => 'ico-address', 'uses' => 'ContentController@icoAddress']);
+    $router->post('/token/ico', ['as' => 'ico-post', 'uses' => 'ParticipantController@joinICO']);
+    $router->post('/token/profile', ['as' => 'participant-profile', 'middleware' => 'auth', 'uses' => 'ParticipantController@updateProfile']);
 
     $router->get('/token/admin/stats', ['as' => 'admin.stats', 'uses' => 'AdminController@stats']);
     $router->get('/token/admin/emails', ['as' => 'admin.emails', 'uses' => 'AdminController@emails']);

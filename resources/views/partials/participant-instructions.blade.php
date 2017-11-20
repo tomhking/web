@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<div class="panel-group ico-tutorials address-{{ $showAddress ? "visible" : "hidden" }} ico-data-{{ $icoDataAvailable ? "available" : "unavailable" }}" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel-group ico-tutorials address-{{ $showAddress ? "visible" : "hidden" }} ico-data-available" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
 
@@ -185,16 +185,3 @@
         </div>
     </div>
 </div>
-
-
-@push('body-scripts')
-    @if($icoDataAvailable && !$showAddress)
-        <script type="text/javascript">
-            jqWait(function () {
-                $('[data-crowdsale-address]').click(function () {
-                    $('#signup-modal').modal('show');
-                });
-            });
-        </script>
-    @endif
-@endpush
