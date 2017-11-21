@@ -3,11 +3,16 @@
 @section('content')
 
     <div class="main">
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="dashboard-logo">
+                    <a href="{{ route_lang('home') }}" class="login-logo">
+                        <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <a href="{{ route_lang('home') }}" class="login-logo">
-                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
-            </a>
-
             <div class="content main">
                 @if($participant->isProfileFull())
                     <div class="row">
