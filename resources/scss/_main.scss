@@ -569,63 +569,77 @@ form .notice {
   border-color: #c02b3f;
 }
 
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  outline: 0;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-}
-
-.modal-title {
-  line-height: 1.42857143;
-  font-size: 30px;
-  font-family: $work-sans;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-align: center;
-  margin: 15px 0;
-}
-
-.modal-body {
-  position: relative;
-  padding: 35px;
-}
-
 .modal {
-  .btn {
-    margin: 25px auto 0 auto;
-    text-align: center;
-    display: table;
-    padding: 15px;
-    font-family: $work-sans;
-    font-weight: 300;
-    font-size: 16px;
+  .modal-dialog {
+    -webkit-transform: translate(0, 50%)!important;
+    -ms-transform: translate(0, 50%)!important;
+    -o-transform: translate(0, 50%)!important;
+    transform: translate(0, 50%)!important;
   }
-  .btn-success:hover {
-    color: #fff;
-    background-color: #c02b3f;
-    border-color: #c02b3f;
-    box-shadow: 0 8px 30px rgba(215,48,48,.5);
-  }
-  label {
-    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-family: $work-sans;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 8px;
-  }
-  .form-control {
-    height: 42px;
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   }
+  .modal-title {
+    line-height: 1.42857143;
+    font-size: 30px;
+    font-family: $work-sans;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-body {
+    position: relative;
+    padding: 0 45px;
+    label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-family: $work-sans;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+    .form-control {
+      height: 46px;
+      border-radius: 0;
+      font-size: 18px;
+      font-weight:300;
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    .btn {
+      margin: 0 auto 25px auto;
+      text-align: center;
+      display: table;
+      padding: 15px;
+      font-family: $source-code;
+      font-weight: 300;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    .btn-success:hover {
+      color: #fff;
+      background-color: #c02b3f;
+      border-color: #c02b3f;
+      box-shadow: 0 8px 30px rgba(215,48,48,.5);
+    }
+  }
+
 }
+
 
 .cards .card, .grey-block {
   background-color: #f0f0f0;
@@ -1472,20 +1486,10 @@ body.error-page{
 }
 
 body.login-page {
-    background: url('../login-bg.jpg') no-repeat fixed center;
+    background: url('../dashboad-bg.jpg') no-repeat fixed center;
     position: relative;
     background-size: cover;
     color: #fff;
-  &::before{
-    content: " ";
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    z-index: -1;
-    background:rgba(0, 0, 0, 0.42);
-  }
   .main{
     padding: 35px 0;
   }
@@ -1723,6 +1727,77 @@ body.login-page {
     p {
       font-size: 13px;
       line-height: 18px;
+    }
+  }
+  &.get-tokens{
+    .personal-details{
+      label {
+        font-size:16px;
+        font-family: $work-sans;
+        font-weight: 600;
+        margin:10px 0;
+      }
+      input {
+        height: 46px;
+        font-family: $work-sans;
+        text-transform: inherit;
+      }
+      .form-control {
+        height: 46px;
+        font-size: 16px;
+        font-weight:300;
+        color: #000;
+        border-radius: 0;
+      }
+      .agreement{
+        margin:25px 0;
+      }
+      .cta button{
+        font-size: 18px;
+        font-weight:300;
+        font-family: $source-code;
+        text-transform: uppercase;
+      }
+    }
+    .eth-address{
+      .form-group{
+        label{
+          font-size: 22px;
+          font-weight:600;
+          font-family: $work-sans;
+          letter-spacing: 2px;
+          margin-bottom:20px;
+        }
+        input.form-control{
+          text-align: center;
+          height:72px;
+          padding:25px;
+          color:#000;
+          font-size: 28px;
+          font-weight:600;
+          font-family: $work-sans;
+          letter-spacing: 2px;
+          background: #fff;
+        }
+        p.text-right.copy a{
+          color:#fff;
+          text-transform: uppercase;
+          text-decoration: underline;
+          font-size: 14px;
+          margin:15px 0;
+          display: block;
+        }
+      }
+      .well{
+        border:1px solid rgba(255,255,255, 0.3);
+        border-radius:0;
+        padding:25px 35px;
+        p{
+          font-size:15px;
+          line-height:22px;
+          font-weight: 300;
+        }
+      }
     }
   }
 }
