@@ -1844,13 +1844,18 @@ body.login-page {
           letter-spacing: 2px;
           background: #fff;
         }
-        p.text-right.copy a{
+        p#copy-address span.text-success.copied{
+          color:#7bde92;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+        p#copy-address a{
           color:#fff;
           text-transform: uppercase;
           text-decoration: underline;
           font-size: 14px;
           margin:15px 0;
-          display: block;
+          text-align: right;
         }
       }
       .well{
