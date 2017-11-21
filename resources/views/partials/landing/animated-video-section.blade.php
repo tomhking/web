@@ -10,7 +10,7 @@
             <div class="col-xs-12 col-md-12 text-center">
                 <iframe width="770" height="515" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-xs-12 col-md-8 col-md-offset-2 animated-video-desc">
+            <div class="col-xs-12 animated-video-desc">
                <p>Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.</p>
             </div>
         </div>
