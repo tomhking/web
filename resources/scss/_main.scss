@@ -5080,6 +5080,17 @@ a.footer-logo img {
   margin: auto;
 }
 
+.form-group {
+  &.has-error {
+    .validation {
+      display: block;
+    }
+  }
+  .validation {
+    display: none;
+  }
+}
+
 @media (min-width: 489px) {
   .token-sale-terms {
     .highlight {

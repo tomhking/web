@@ -6,11 +6,11 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title">Enter email to get<br> <strong>BitDegree Tokens</strong></h4>
                 </div>
-                <div class="modal-body" id="modal-agreements">
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" value="" name="email" placeholder="Your email" required>
-                        </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="email" data-validate="email"class="form-control" value="" name="email" placeholder="Your email" id="input-email"required>
+                        <div class="text-danger validation">Email is not valid.</div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" type="submit">Get Tokens Now</button>
@@ -19,3 +19,5 @@
         </form>
     </div>
 </div>
+
+@include('partials.validation')
