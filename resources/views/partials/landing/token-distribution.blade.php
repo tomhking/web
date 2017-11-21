@@ -5,8 +5,6 @@
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
                     <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
-                    <p class="ico-dscription-note">@lang('home.ico_section_description')</p>
-                    <p class="ico-dscription-note">Thanks to our partner, minimal token value will be covered with Hostinger services. Exchange it anytime after ICO!</p>
                 </div>
             </div>
         </div>
@@ -70,12 +68,16 @@
 
                 </div>
             </div>
-
+            <div class="col-md-12">
+                <p class="note text-center">@lang('home.ico_section_note')</p>
+            </div>
         </div>
+
+        @include('partials.landing.token-facts')
 
         <div class="row">
             <div class="col-md-12">
-                <p class="note text-center">@lang('home.ico_section_note')</p>
+
                 <div class="text-center">
                     <p>@lang('home.ico_section_cta_text')</p>
                     <a href="#top" class="cta-btn">@lang('home.ico_section_cta_btn')</a>

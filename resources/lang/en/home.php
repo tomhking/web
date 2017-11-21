@@ -83,4 +83,6 @@ return [
     'token_distribution_note' => '* locked for 360 days.',
     'budget_allocation_title' => 'Budget Allocation',
     'ico_top_information' => 'Crowdsale starts <b>December 1st, 2017</b> - Subscribe now and get <b>SPECIAL BONUS</b>',
+    'media_title' => 'Explore Bitdegree',
+    'read_articles' => 'Read all Articles',
 ];

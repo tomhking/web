@@ -162,6 +162,7 @@ class AppServiceProvider extends ServiceProvider
                     'url' => route_lang('course', ['course' => 'smart-contracts']),
                     'key' => 'smart-contracts',
                     'image' => asset('smart-contracts.jpg'),
+                    'sponsor' => asset('nexchange.png'),
                     'overlay' => 'purple',
                     'description' => 'CLASSROOM OPENS: February, 2018',
                     'title' => trans('courses.title_smart_contracts'),
