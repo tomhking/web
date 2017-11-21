@@ -33,7 +33,7 @@
                     @endif
                 @endif
 
-                    <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Tokens Sold" : "Raised" }}: <b> {{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG </b></h2>
+                    <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Tokens Sold" : "Raised" }}: <b> {{ number_format($tokensSold, $raisedDecimals, ".", ",") }} BDG </b></h2>
                     <h3>Progress: {{ number_format($progress, 1) }}%</h3>
 
                     <div class="progress-bar-wrapper">
@@ -43,10 +43,10 @@
                         </div>
 
                         <!-- soft cap marker -->
-                        <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCap / $hardCap * 100 }}%; background: #fff;"> <h3 class="soft-cap-text">Soft Cap: {{ number_format($softCap, 0, ".", "") }} BDG</h3></div>
+                        <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCap / $hardCap * 100 }}%; background: #fff;"> <h3 class="soft-cap-text">Soft Cap: {{ number_format($softCap, 0, ".", ",") }} BDG</h3></div>
 
                         <!-- hard cap marker -->
-                        <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", "") }} BDG</h3></div>
+                        <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", ",") }} BDG</h3></div>
                     </div>
 
                     <div class="bonuses-table">
