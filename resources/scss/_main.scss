@@ -1281,6 +1281,13 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
 
 /*ICO Page*/
 
+.ico-progress .btn-primary {
+  padding: 20px 35px;
+  font-size: 22px;
+  font-family: $source-code;
+  text-transform: uppercase;
+}
+
 .ico-top {
   background: url('../ico-bg.jpg') no-repeat  center;
   position: relative;
@@ -1293,9 +1300,10 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
 .ico-page .ico-top h1 {
   font-family: $work-sans;
   text-transform: uppercase;
-  font-weight: 100;
-  font-size: 60px;
-  line-height: 60px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 2px;
   b, strong {
     font-weight: 400;
   }
@@ -1317,6 +1325,62 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
   }
   p{
     font-weight: 300;
+  }
+}
+
+.bonuses-table {
+  margin-bottom: 35px;
+  h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  table{
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    tr{
+      border-top: 1px solid rgba(255, 255, 255, 0.37);
+      td{
+        padding:5px 15px;
+        font-weight: 300;
+        span.sold-out{
+          background:#c02b3f;
+          display: block;
+          padding: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 2px;
+          margin:-5px;
+        }
+        span.tokens-left{
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    tr.sold-out {
+      td::before {
+        content: " ";
+        position: absolute;
+        left: 0; top: 50%; width: 100%;
+        border-bottom: 1px solid #fff;
+      }
+      td {
+        opacity: 0.7;
+        position: relative;
+      }
+      td:last-child {
+        opacity: 1;
+        position: relative;
+        &::before {
+          display:none;
+        }
+      }
+    }
   }
 }
 

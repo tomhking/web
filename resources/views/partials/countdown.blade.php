@@ -1,7 +1,7 @@
 <div class="countdown" data-time-left="{{ $timeLeft }}">
     <div class="time-amount">
         <span class="time-left-days">0</span>
-        <span class="time-value">days</span>
+        <span class="time-value">days</span>:
     </div>
     <div class="time-amount">
         <span class="time-left-hours">00</span>

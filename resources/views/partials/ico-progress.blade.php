@@ -1,35 +1,29 @@
 <div class="ico-progress">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-xs-12 col-md-10 col-md-offset-1">
                 @if($icoStart->isFuture())
-                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 class="text-center">Crowdsale starts in:</h1>
                             </div>
                         </div>
-                    </div>
                     @include('partials.countdown', ['timeLeft' => $icoStart->diffInSeconds(\Carbon\Carbon::now())])
                 @elseif($icoEnd->isFuture() && $tokensSold < $hardCap)
                     <!-- ICO is in progress -->
-                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 class="text-center">Token sale is live:</h1>
                             </div>
                         </div>
-                    </div>
                     @include('partials.countdown', ['timeLeft' => $icoEnd->diffInSeconds(\Carbon\Carbon::now())])
                 @else
                     <!-- ICO is over -->
-                    <div class="container">
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 class="text-center">Thank you for participating!</h1>
                             </div>
                         </div>
-                    </div>
                     @if($tokensSold < $softCap)
                         <!-- soft cap not reached -->
                     @elseif($tokensSold < $hardCap)
@@ -53,6 +47,94 @@
 
                         <!-- hard cap marker -->
                         <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", "") }} BDG</h3></div>
+                    </div>
+
+                    <div class="bonuses-table">
+                        <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
+                        <table>
+                            <tbody>
+                                <tr class="sold-out">
+                                    <td>
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        25% BONUS
+                                    </td>
+                                    <td>
+                                        100,000 BDG
+                                    </td>
+                                    <td>
+                                       <span class="sold-out">Sold out!</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        20% BONUS
+                                    </td>
+                                    <td>
+                                        100,000 BDG
+                                    </td>
+                                    <td>
+                                        <span class="tokens-left">Only 10,000 Left!</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        15% BONUS
+                                    </td>
+                                    <td>
+                                        100,000 BDG
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        10% BONUS
+                                    </td>
+                                    <td>
+                                        100,000 BDG
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        5% BONUS
+                                    </td>
+                                    <td>
+                                        100,000 BDG
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
                 <div class="row">
