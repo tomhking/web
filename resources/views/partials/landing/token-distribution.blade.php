@@ -73,8 +73,6 @@
             </div>
         </div>
 
-        @include('partials.landing.token-facts')
-
         <div class="row">
             <div class="col-md-12">
 
@@ -84,6 +82,8 @@
                 </div>
             </div>
         </div>
+
+        @include('partials.landing.token-facts')
     </div>
 </div>
 

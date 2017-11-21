@@ -2656,6 +2656,11 @@ h3.subtitle {
 }
 
 .token-facts {
+   margin: 35px 0;
+  .icon {
+    display: block;
+    margin:25px 0;
+  }
   h3 {
     font-size: 20px;
     text-transform: uppercase;
