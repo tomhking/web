@@ -1,4 +1,4 @@
-<div id="backed-by" class="main backed-by white-bkg">
+<div id="backed-by" class="main backed-by  light-violet-bkg">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
