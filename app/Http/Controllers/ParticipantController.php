@@ -250,7 +250,7 @@ class ParticipantController extends Controller
         $showAddress = $icoDataAvailable && !!$request->cookie('participant', false);
 
         $raisedDecimals = 4;
-        $raised = Cache::get('ico_balance', ['balance' => 0])['balance'] ?? 0;
+        $raised = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
         $raisedEth = bcdiv($raised, bcpow(10, 18 - $raisedDecimals)) / pow(10, $raisedDecimals);
 
         $hardCapEth = env('ICO_HARD_CAP');

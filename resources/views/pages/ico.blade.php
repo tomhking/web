@@ -49,29 +49,6 @@
                 });
             @endif
 
-            $('[data-time-left]').each(function () {
-                var timer = this;
-                var secondsLeft = parseInt($(timer).attr('data-time-left'));
-                var initializedAt = Math.floor(Date.now()/1000), remainingAtInit = secondsLeft;
-
-                if(secondsLeft === 0) {
-                    return;
-                }
-
-                var interval = setInterval(function () {
-                    var currentTimestamp = Math.floor(Date.now() / 1000);
-                    if(Math.abs(initializedAt + remainingAtInit - currentTimestamp - secondsLeft) > 5) {
-                        secondsLeft = (initializedAt + remainingAtInit) - currentTimestamp;
-                    }
-                    updateTimer(--secondsLeft < 0 ? 0 : secondsLeft);
-
-                    if(secondsLeft <= 0) {
-                        clearInterval(interval);
-                        location.reload();
-                    }
-                }, 1000);
-            });
-
             var amtEth = $("#amt-eth"), amtTokens = $("#amt-tokens"), amtSupply = $("#amt-supply"), totalSupply = new Big({{ $totalSupply }}), rate = new Big({{ $icoRate }});
 
             amtEth.val(150);
@@ -106,18 +83,6 @@
 
                 amtEth.val(totalSupply.times(amt).div(100).div(rate));
                 amtTokens.val(totalSupply.times(amt));
-            }
-
-            function updateTimer(timeLeft, context) {
-                var seconds = timeLeft%60,
-                    minutes = Math.floor(timeLeft/60)%60,
-                    hours = Math.floor(timeLeft/60/60)%24,
-                    days = Math.floor(timeLeft/60/60/24);
-
-                $('.time-left-seconds', context).text((seconds < 10 ? '0' : '') + seconds);
-                $('.time-left-minutes', context).text((minutes < 10 ? '0' : '') + minutes);
-                $('.time-left-hours', context).text((hours < 10 ? '0' : '') + hours);
-                $('.time-left-days', context).text(days);
             }
         });
     </script>

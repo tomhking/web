@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         \App\Console\Commands\ExportTranslationsToCsv::class,
         \App\Console\Commands\ImportTranslationsFromCsv::class,
-        \App\Console\Commands\UpdateIcoBalance::class,
+        \App\Console\Commands\UpdateIcoProgress::class,
     ];
 
     /**
@@ -28,7 +28,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // Start running the command 1 day before ICO and run for extra day after it ends
-        $schedule->command('ico:update-balance')->everyMinute()->when(function() {
+        $schedule->command('ico:update-progress')->everyMinute()->when(function() {
             $start = Carbon::createFromTimestamp(env('ICO_STARTS_AT'));
             $end = Carbon::createFromTimestamp(env('ICO_ENDS_AT'));
 
