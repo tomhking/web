@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Cookie;
 
 class ParticipantController extends Controller
@@ -349,9 +350,13 @@ class ParticipantController extends Controller
             );
         }
 
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
             'email' => 'required|string|email|max:250',
         ]);
+
+        if($validator->fails()) {
+            return redirect(route_lang('ico'));
+        }
 
         $participant = new Participant();
 
@@ -367,15 +372,24 @@ class ParticipantController extends Controller
         );
     }
 
+    /**
+     * Updates the progile of a logged in user
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Laravel\Lumen\Http\Redirector
+     */
     public function updateProfile(Request $request) {
         $participant = Participant::getCurrent();
 
-        $this->validate($request, [
+        $validator = Validator::make($request->all(), [
             'first_name' => 'required|string|min:2|max:35',
             'last_name' => 'required|string|min:2|max:35',
             'country' => 'required|string|valid-country',
             'birthday' => 'required|date',
         ]);
+
+        if($validator->fails()) {
+            return redirect(route_lang('ico-address'));
+        }
 
         $participant->first_name = $request->get('first_name');
         $participant->last_name = $request->get('last_name');

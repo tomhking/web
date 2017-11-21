@@ -104,7 +104,13 @@ class ContentController extends Controller
             'displaySignUp'
         ));
     }
-    
+
+    /**
+     * Displays ICO address
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
+     */
     public function icoAddress(Request $request) {
         $icoAddress = env('ICO_ADDRESS');
 
