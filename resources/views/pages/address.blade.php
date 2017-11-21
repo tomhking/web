@@ -30,8 +30,8 @@
                                 </p>
                             </div>
                             <div class="well">
-                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. Do not use any exchange address!</p>
-                                <p>Recommended Gas Limit: 200 000. Payments without data or gas limit fields are rejeced.</p>
+                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b></p>
+                                <p><b>Recommended Gas Limit: 200 000.</b> Payments without data or gas limit fields are rejeced.</p>
                                 <p><strong>Do NOT send ETH from an exchange.</strong> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
                             </div>
                         </div>
