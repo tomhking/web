@@ -33,7 +33,7 @@ return [
     'moocs_headline' => 'Growth of MOOCs',
     'moocs_subtitle' => 'The popularity of MOOCs has been growing steadily',
     'moocs_description' => 'The popularity of MOOCs (Massive Open Online Courses) has been growing steadily since their first appearance. This resulted in more and more courses offered every year. The amount of MOOCs should continue to grow due to increasing demand.',
-    'mvp_title' => 'How does it look from the student\'s perspective?',
+    'mvp_title' => 'We\'ve already developed a functional MVP',
     'mvp_subtitle' => 'Start now &amp; earn BitDegree tokens as a scholarship &amp reward.<br>Take the world\'s best courses online. Be hired by world-changing companies.',
     'mvp_image_alt' => 'Try Bitdegree MVP',
     'mvp_c2a' => 'View all courses',

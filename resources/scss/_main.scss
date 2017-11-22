@@ -172,6 +172,12 @@ div#demand-forecast {
   .row.cards {
     margin-top: 15px;
   }
+  .text-center.cta-link a {
+    background: none;
+    box-shadow: none;
+    color: #c02b3f;
+    text-decoration: underline;
+  }
 }
 
 .mvp-cta.text-center {
@@ -826,7 +832,7 @@ form .notice {
 
 /*MVP Page*/
 
-body.landing.degree-list .mvp-available {
+.mvp-available {
   background: url('../network.jpg') no-repeat center;
   position: relative;
   background-size: cover;
@@ -920,7 +926,7 @@ body.landing.degree-list header {
     }
     &:hover {
       .degree-overlay {
-        opacity: 0.4;
+        /*opacity: 0.6;*/
       }
     }
   }
@@ -973,6 +979,9 @@ body.landing.degree-list header {
     }
     &.pink {
       background-color: rgba(255, 84, 131, 0.8);
+    }
+    &.available {
+      opacity: 0.6;
     }
   }
 }

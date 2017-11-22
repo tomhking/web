@@ -9,6 +9,7 @@
             </div>
         </div>
 
+        @include('partials.mvp-available')
 
         @foreach($courses as $i => $course)
             @if($i % 3 == 0)
@@ -52,15 +53,8 @@
                 </div>
             @endif
         @endforeach
-        <div class="mvp-cta text-center">
+        <div class="text-center cta-link">
             <a href="{{ route_lang('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12">
-                <p>@lang('home.mvp_description')</p>
-            </div>
-
         </div>
     </div>
 </div>
