@@ -47,9 +47,8 @@ class ContentController extends Controller
         $showAddress = !!$request->cookie('participant', false);
         $displaySignUp = $request->has('email');
 
-        $raisedDecimals = 4;
-        $amount = Cache::get('tokens_sold', ['balance' => 0])['balance'] ?? 0;
-        $tokensSold = bcdiv($amount, bcpow(10, 18 - $raisedDecimals)) / pow(10, $raisedDecimals);
+        $raisedDecimals = env('SOLD_COUNTER_DECIMALS', 0);
+        $tokensSold = bcdiv(Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0, bcpow(10, env('TOKEN_DECIMALS') - $raisedDecimals)) / pow(10, $raisedDecimals);
 
         $hardCap = env('ICO_HARD_CAP');
         $softCap = env('ICO_SOFT_CAP');
@@ -91,7 +90,6 @@ class ContentController extends Controller
         return view('pages.ico', compact(
             'icoStart',
             'icoEnd',
-            'amount',
             'icoAddress',
             'hardCap',
             'softCap',
