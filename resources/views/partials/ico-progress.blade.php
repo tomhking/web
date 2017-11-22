@@ -1,11 +1,11 @@
 <div class="ico-progress">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
                 @if($icoStart->isFuture())
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="text-center">Crowdsale starts in:</h1>
+                                <h1 class="text-center">Token sale starts in:</h1>
                             </div>
                         </div>
                     @include('partials.countdown', ['timeLeft' => $icoStart->diffInSeconds(\Carbon\Carbon::now())])
@@ -13,7 +13,7 @@
                     <!-- ICO is in progress -->
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="text-center">Token sale is live:</h1>
+                                <h1 class="text-center">Token sale is live!</h1>
                             </div>
                         </div>
                     @include('partials.countdown', ['timeLeft' => $icoEnd->diffInSeconds(\Carbon\Carbon::now())])
@@ -33,8 +33,7 @@
                     @endif
                 @endif
 
-                    <h2 class="current-amount">{{ $icoEnd->isFuture() ? "Tokens Sold" : "Raised" }}: <b> {{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG </b></h2>
-                    <h3>Progress: {{ number_format($progress, 1) }}%</h3>
+                    <h3 class="ico-progress-percentage">Progress: {{ number_format($progress, 1) }}% ({{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG)</h3>
 
                     <div class="progress-bar-wrapper">
                         <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">

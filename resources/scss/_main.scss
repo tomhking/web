@@ -1316,7 +1316,7 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
   font-size: 80px;
   line-height: 80px;
   text-align: center;
-  margin: 35px 0;
+  margin: 15px 0 25px 0;
 }
 
 .ico-page .ico-top {
@@ -1343,6 +1343,8 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
       td{
         padding:5px 15px;
         font-weight: 300;
+        font-size: 13px;
+        letter-spacing: 1px;
         span.sold-out{
           background:#c02b3f;
           display: block;
@@ -1351,7 +1353,8 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 2px;
-          margin:-5px;
+          margin: -5px 0;
+          font-size: 16px;
         }
         span.tokens-left{
           display: block;
@@ -1359,6 +1362,7 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: 2px;
+          font-size: 16px;
         }
       }
     }
@@ -1479,8 +1483,9 @@ h2.current-amount {
   right: -1px;
 }
 
-.soft-cap-text, .hard-cap-text {
-  font-size: 15px;
+.soft-cap-text,
+.hard-cap-text{
+  font-size: 12px;
   line-height: inherit;
   width: max-content;
   width: -moz-max-content;
@@ -1489,6 +1494,10 @@ h2.current-amount {
   padding-right: 8px;
   position: absolute;
   right: 0;
+}
+
+h3.ico-progress-percentage{
+  font-size: 15px;
 }
 
 .crowdsale-info h2 {
