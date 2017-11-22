@@ -867,7 +867,7 @@
                                 <h3 class="title">Rokas <b>Malakauskas</b></h3>
                                 <p>@lang('team.position_rokas')</p>
                                 <div class="handles">
-
+                                    <a href="https://www.linkedin.com/in/rokas-malakauskas-137181100/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                 </div>
 
                                 <div class="modal fade" role="dialog" id="RokasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -886,7 +886,7 @@
                                                     <h3 class="title">Rokas <b>Malakauskas</b></h3>
                                                     <p>@lang('team.position_rokas')</p>
                                                     <div class="handles">
-
+                                                        <a href="https://www.linkedin.com/in/rokas-malakauskas-137181100/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                                     </div>
                                                     <div class="team-member-desc">
                                                         <p>@lang('team.description_rokas')</p>
