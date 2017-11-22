@@ -1,7 +1,7 @@
 <div class="twitter-feed main ">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
                 <a class="twitter-timeline"
                    data-width="585"
                    data-height="600"

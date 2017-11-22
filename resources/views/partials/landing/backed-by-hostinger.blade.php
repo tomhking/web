@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="mvp-cta text-center">
+            <div class="col-md-12 mvp-cta text-center">
                 <a href="https://blog.bitdegree.org/" class="cta-btn">Read more here</a>
             </div>
         </div>

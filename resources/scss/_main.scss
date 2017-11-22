@@ -636,7 +636,7 @@ form .notice {
   text-align: left;
 }
 
-.cards .card::before {
+/*.cards .card::before {
   content: "";
   height: 0;
   z-index: 10;
@@ -648,7 +648,7 @@ form .notice {
   -webkit-clip-path: polygon(100% 100%, 100% 0%, 80% 0%);
   clip-path: polygon(100% 100%, 100% 0%, 80% 0%);
   top: 0;
-}
+}*/
 
 .grey-block {
   height: auto;
@@ -889,8 +889,8 @@ body.landing.degree-list header {
     box-shadow: 0px 6px 10px 0 rgba(46, 61, 73, 0.2);
     border: 1px solid rgba(46, 61, 73, 0.12);
     background: #FFF;
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    min-height: 350px;
     cursor: pointer;
     position: relative;
     -webkit-clip-path:polygon(75% 0%, 100% 20%, 120% 120%, 0 120%, 0 0);
@@ -3991,6 +3991,43 @@ p.subtitle {
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .bitdegrees-list .cards .card {
+    width:300;
+    margin: auto auto 30px;
+    -webkit-clip-path: polygon(80% 0%, 100% 12%, 120% 120%, 0 120%, 0 0);
+    clip-path: polygon(80% 0%, 100% 12%, 120% 120%, 0 120%, 0 0);
+
+    .degree-overlay{
+      -webkit-clip-path: polygon(81% 0%, 100% 41%, 120% 120%, 0 120%, 0 0);
+      clip-path: polygon(81% 0%, 100% 31%, 120% 120%, 0 120%, 0 0);
+    }
+    .info {
+      text-align: left;
+      padding: 8px 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .bitdegrees-list .cards .card {
+    margin: auto auto 30px;
+    -webkit-clip-path: polygon(80% 0%, 100% 12%, 120% 120%, 0 120%, 0 0);
+    clip-path: polygon(80% 0%, 100% 12%, 120% 120%, 0 120%, 0 0);
+    &:hover .degree-overlay {
+      opacity: 1;
+    }
+    .degree-overlay{
+      -webkit-clip-path: polygon(81% 0%, 100% 41%, 120% 120%, 0 120%, 0 0);
+      clip-path: polygon(81% 0%, 100% 41%, 120% 120%, 0 120%, 0 0);
+    }
+    .info {
+      text-align: left;
+      padding: 8px 15px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px){
   .col-sm-6 {
     width: 49%;
@@ -4231,6 +4268,11 @@ p.subtitle {
 }
 
 @media (max-width: 550px) {
+  .bitdegrees-list .cards .card {
+    &:hover .degree-overlay {
+      opacity: 1;
+    }
+  }
   body.landing.degree-list .mvp-available h1 {
     font-size: 40px;
     line-height: 40px;
