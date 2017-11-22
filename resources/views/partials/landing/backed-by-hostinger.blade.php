@@ -5,7 +5,7 @@
                 <div class="title-container">
                     <h2 class="title">TOKEN IS BACKED BY HOSTINGER</h2>
                    <img src="{{ asset('token-illustration.png') }}" alt="Token backed by Hostinger"></a>
-                    <p class="subtitle">Token value is backed by Hostinger services. Hostinger will accept BDG tokens in exchange of its services. The exchange rate is 100% fixed to the rate you paid for tokens during crowdsale - 1BDG = 0,03USD<br>
+                    <p class="subtitle">Token value is backed by Hostinger services. Hostinger will accept BDG tokens in exchange of its services. The exchange rate is 100% fixed to the rate you paid for tokens during crowdsale - 1 BDG = 0,03 USD.<br>
                       This is a guarantee that your tokens will be always valuable in equivalent to Hostinger services for the first year after ICO.</p>
                 </div>
             </div>
