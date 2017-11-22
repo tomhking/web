@@ -1,13 +1,15 @@
 <div id="token-distribution" class="ico-info-block main light-violet-bkg">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
                 <div class="title-container">
                     <h1 class="title">@lang('home.ico_section_title')</h1>
                     <h3 class="subtitle">@lang('home.ico_section_subtitle')</h3>
                 </div>
             </div>
         </div>
+
+        @include('partials.landing.token-facts')
 
         <div class="row">
 
@@ -61,7 +63,7 @@
                     <h4>@lang('home.ico_token_source')</h4>
                     <div class="token-table-links">
                         <p><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" rel="nofollow" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Github</a></p>
-                        <p><a href="https://bitcointalk.org/index.php?topic=2225880.0;all" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i> @lang('home.ico_token_source_link')</a></p>
+                        <p><a href="https://www.reddit.com/r/ethdev/comments/7c0bns/150k_massive_bug_bounty_for_bitdegree_ico_smart/" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i> @lang('home.ico_token_source_link')</a></p>
                     </div>
 
 
@@ -83,7 +85,7 @@
             </div>
         </div>
 
-        @include('partials.landing.token-facts')
+
     </div>
 </div>
 

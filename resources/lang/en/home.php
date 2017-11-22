@@ -50,7 +50,7 @@ return [
     'economy_point_3' => '<b>03.</b> Sponsors as well as students will be able to exchange and redeem their tokens in wide network of industry partners or swap them for digital goods and services. The potential of BitDegree Token <strong>demand</strong> is closely aligned with the gargantuan <strong>$200 billion</strong> recruitment industry. Limited supply of tokens ensures a growing demand for BitDegree platform’s services in the foreseen future.',
     'ico_section_title' => 'Token Sale',
     'ico_section_subtitle' => 'Token generation event: 1 Dec 2017',
-    'ico_section_description' => 'BitDegree token is utility token. We are based in Lithuania, Europe, (LLC Company) and have an official confirmation from Lithuanian Bank regarding ICO.',
+    'ico_section_description' => 'BitDegree token is utility token. We are based in Lithuania, Europe, (LLC Company) and have an official confirmation from Lithuanian Central Bank regarding ICO.',
     'ico_section_legal_form' => 'Legal Form',
     'ico_section_legal_form2' => 'LLC',
     'ico_section_jurisdiction' => 'Jurisdiction:',

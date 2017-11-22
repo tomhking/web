@@ -1,7 +1,6 @@
 <div class="token-facts">
    <div class="row">
-       <div class="col-md-10 col-md-offset-1">
-           <hr>
+       <div class="col-md-10 col-md-offset-1 token-facts-row">
             <div class="col-xs-12 col-sm-4">
                 <div class="icon text-center">
                     <img src="{{ asset('equality.png') }}" alt="Equal opportunity">
