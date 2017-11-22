@@ -689,7 +689,7 @@ form .notice {
   position: relative;
   background-size: cover;
   overflow: hidden;
-  padding-bottom: 140px!important;
+  padding-bottom: 180px!important;
   &::before {
     content: "";
     height: 0;
@@ -757,6 +757,9 @@ form .notice {
     font-family: $work-sans;
     font-weight: 300;
     letter-spacing: 1px;
+    a {
+      color: #ffbcbc;
+    }
   }
   p.ico-dscription-note {
     font-size: 14px;
@@ -813,6 +816,13 @@ form .notice {
     letter-spacing: 1px;
   }
 }
+
+.twitter-feed.main {
+  background: #f0f0f0 url(../network-bg.png) no-repeat center;
+  position: relative;
+  overflow: hidden;
+}
+
 
 /*MVP Page*/
 
