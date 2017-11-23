@@ -1486,6 +1486,15 @@ body.login-page {
     z-index: -1;
     background:rgba(0, 0, 0, 0.42);
   }
+  ul.nav.user-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background: #c02b3f;
+    padding: 10px;
+    text-align: center;
+  }
   .main{
     padding: 35px 0;
   }

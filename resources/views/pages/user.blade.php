@@ -2,17 +2,24 @@
 
 @section('content')
 <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="dashboard-logo">
+                        <a href="{{ route_lang('home') }}" class="login-logo">
+                            <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="nav user-nav">
+                        <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     <div class="container">
-
-            <a href="{{ route_lang('home') }}" class="login-logo">
-                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
-            </a>
-
-        <ul class="nav user-nav">
-            <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
-        </ul>
-
-
 
         @if($authenticated)
                     <div class="row">

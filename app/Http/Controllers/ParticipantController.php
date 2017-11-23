@@ -380,6 +380,10 @@ class ParticipantController extends Controller
         return view('pages.user');
     }
 
+    function affiliate() {
+        return view('pages.affiliate');
+    }
+
     /**
      * Sets affiliate cookie
      *
