@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center">
                 <div class="video-block">
-                    <iframe width="820" height="456" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="820" height="462" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-xs-12 animated-video-desc">
