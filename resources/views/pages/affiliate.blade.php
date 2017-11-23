@@ -3,18 +3,11 @@
 @section('content')
 <div class="main">
     <div class="container">
-
             <a href="{{ route_lang('home') }}" class="login-logo">
                 <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
             </a>
 
-        <ul class="nav user-nav">
-            <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
-        </ul>
-
-
-
-        @if($authenticated)
+                @if($authenticated)
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <img class="token-image" src="{{ asset('token.png') }}" alt="BitDegree Token">
