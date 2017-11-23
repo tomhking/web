@@ -29,10 +29,10 @@
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
                     <h4>@lang('home.ico_section_minimum')</h4>
-                    <p>16,000 ETH*</p>
+                    <p>~550 ETH*</p>
 
                     <h4>@lang('home.ico_section_maximum')</h4>
-                    <p>75,000 ETH*</p>
+                    <p>~30,000 ETH*</p>
 
                     <h4>@lang('home.ico_tokens_total')</h4>
                     <p>@lang('home.ico_tokens_total_2')</p>
@@ -123,6 +123,7 @@
                             <tr>@lang('home.token_distribution_text_3')</tr>
                             <tr>@lang('home.token_distribution_text_4')</tr>
                             <tr>@lang('home.token_distribution_text_5')</tr>
+                            <tr>@lang('home.token_distribution_text_5_2')</tr>
                             <tr>@lang('home.token_distribution_text_6')</tr>
                             </tbody>
                         </table>
