@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Library\Mailer;
+use App\Participant;
 use GeoIp2\Database\Reader;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -66,6 +68,16 @@ class AppServiceProvider extends ServiceProvider
                 ]
             ]
         ]);
+
+        Participant::creating(function (Participant $self) {
+            /** @var Request $request */
+            $request = app()->make('request');
+            $affiliateID = (int) $request->cookie('bd-aff', 0);
+
+            if($affiliateID > 0 && Participant::find($affiliateID)->exists()) {
+                $self->affiliate_id = $affiliateID;
+            }
+        });
     }
 
     /**

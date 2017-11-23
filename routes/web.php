@@ -15,6 +15,8 @@ $router->get('/', ['as' => 'root', function () use ($router) {
     return redirect(route_lang('home'));
 }]);
 
+$router->get('/a/{id:[0-9]+}', ['as' => 'affiliate-cookie', 'uses' => 'ParticipantController@setAffiliateCookie']);
+
 $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($router) {
     $router->get('/token/', ['as' => 'home', 'uses' => 'ContentController@home']);
     $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
