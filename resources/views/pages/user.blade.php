@@ -11,11 +11,11 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <!--div class="col-md-2">
                     <ul class="nav user-nav">
                         <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
                     </ul>
-                </div>
+                </div-->
             </div>
         </div>
 

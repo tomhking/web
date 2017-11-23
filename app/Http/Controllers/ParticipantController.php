@@ -380,6 +380,9 @@ class ParticipantController extends Controller
         return view('pages.user');
     }
 
+    /**
+     * @return \Illuminate\View\View
+     */
     function affiliate() {
         return view('pages.affiliate');
     }

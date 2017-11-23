@@ -33,12 +33,12 @@
                 <div class="row">
                     <div class="col-md-6 text-center">
                         <div class="well well-important">
-                           Affiliate link
+                           https://www.bitdegree.org/a/{{ $participant->id }}
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
                         <div class="well well-important">
-                            34564653218
+                            {{ $participant->referrals()->count() }} referrals
                         </div>
                     </div>
                 </div>
