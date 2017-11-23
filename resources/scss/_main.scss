@@ -2734,6 +2734,7 @@ h3.subtitle {
   height: 600px;
   max-width: 585px;
   position: relative;
+  margin: 0 auto;
   &::after {
     content: " ";
     position: absolute;
@@ -4421,7 +4422,11 @@ p.subtitle {
     padding-top: 60px;
   }
 }
-
+@media (max-width: 546px) {
+  .media-articles .col-xs-6 {
+    width: 100%;
+  }
+}
 @media (max-width: 550px) {
   .bitdegrees-list .cards .card {
     &:hover .degree-overlay {
