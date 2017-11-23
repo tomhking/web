@@ -1,4 +1,4 @@
-<div id="why-us" class="main animated-video explanation white-bkg">
+<div id="why-us" class="main animated-video explanation light-violet-bkg">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2">
@@ -16,6 +16,5 @@
                <p>Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.</p>
             </div>
         </div>
-        <hr>
     </div>
 </div>

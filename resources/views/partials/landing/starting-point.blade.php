@@ -1,8 +1,8 @@
-<div id="starting-point" class="starting-point main light-violet-bkg">
+<div id="starting-point" class="starting-point main">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
-                <img src="{{ asset('users-our-starting-point.jpg') }}" alt="@lang('home.starting_point_alt')">
+                <img src="{{ asset('users-our-starting-point-2.jpg') }}" alt="@lang('home.starting_point_alt')">
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <h3 class="title">@lang('home.starting_point_headline')</h3>

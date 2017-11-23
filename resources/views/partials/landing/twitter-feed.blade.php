@@ -9,6 +9,9 @@
                 </a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+            <div class="col-xs-12 col-md-12">
+            @include('partials.contact-icons')
+            </div>
         </div>
     </div>
 </div>

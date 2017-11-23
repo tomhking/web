@@ -42,8 +42,10 @@
                                     <p>{{ $course['description'] or trans('courses.coming_soon') }}</p>
 
                                     @if($course['sponsor'] ?? false )
-                                        <div class="by-sponsor">by</div>
-                                        <img class="sponsor-img" src="{{ $course['sponsor']}}" alt="">
+                                        <div class="sponsor">
+                                            <div class="by-sponsor">by</div>
+                                            <img class="sponsor-img" src="{{ $course['sponsor']}}" alt="">
+                                        </div>
                                     @endif
                                 </div>
                             </a>

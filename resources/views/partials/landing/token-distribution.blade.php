@@ -40,7 +40,7 @@
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
                     <h4>@lang('home.ico_accepted_currencies')</h4>
-                    <p>ETH</p>
+                    <p>ETH (all other - via Tokenlot)</p>
 
 
                     <h4>@lang('home.ico_section_legal_form')</h4>
@@ -63,7 +63,7 @@
                     <h4>@lang('home.ico_token_source')</h4>
                     <div class="token-table-links">
                         <p><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" rel="nofollow" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> Github</a></p>
-                        <p><a href="https://www.reddit.com/r/ethdev/comments/7c0bns/150k_massive_bug_bounty_for_bitdegree_ico_smart/" rel="nofollow" target="_blank"> <i class="fa fa-btc" aria-hidden="true"></i> @lang('home.ico_token_source_link')</a></p>
+                        <p><a href="https://www.reddit.com/r/ethdev/comments/7c0bns/150k_massive_bug_bounty_for_bitdegree_ico_smart/" rel="nofollow" target="_blank"> <i class="fa fa-reddit-alien" aria-hidden="true"></i> @lang('home.ico_token_source_link')</a></p>
                     </div>
 
 
@@ -114,7 +114,7 @@
                     </div>
                 </div>
 
-                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3 description">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 description">
                     <div class="description-container">
                         <table>
                             <tbody>
@@ -127,7 +127,6 @@
                             <tr>@lang('home.token_distribution_text_6')</tr>
                             </tbody>
                         </table>
-                        <p class="note text-center">@lang('home.token_distribution_note')</p>
                     </div>
                 </div>
             </div>

@@ -1032,13 +1032,17 @@ body.landing.degree-list header {
 .bitdegrees-list .cards .card .info {
   text-align: left;
   padding: 8px 25px;
-  .by-sponsor {
-    font-size: 15px;
-    color: #848484;
-    display: inline-block;
-  }
-  img.sponsor-img{
-    display: inline-block;
+  .sponsor {
+    position: absolute;
+    bottom: 15px;
+    .by-sponsor {
+      font-size: 15px;
+      color: #848484;
+      display: inline-block;
+    }
+    img.sponsor-img{
+      display: inline-block;
+    }
   }
 }
 
@@ -2312,7 +2316,6 @@ header {
 }
 
 .animated-video{
-  padding-bottom: 0!important;
   .animated-video-desc{
     margin-top:35px;
     margin-bottom:35px;
@@ -2651,14 +2654,17 @@ h3.subtitle {
     }
     a.article-thumbnail h4 {
       font-family: $work-sans;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 24px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
       letter-spacing: 1px;
+      text-align:left;
+      color:#000;
     }
     p.article-date {
       font-size: 13px;
       color: grey;
+      text-align:left;
     }
   }
 }
@@ -2701,6 +2707,9 @@ h3.subtitle {
     font-size: 18px;
     line-height: 28px;
     text-align: justify;
+    a{
+      font-family: $work-sans;
+    }
   }
 }
 

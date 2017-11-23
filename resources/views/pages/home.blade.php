@@ -3,6 +3,7 @@
 @section('content')
     @include('partials.landing.what-we-are')
     @include('partials.landing.media')
+    @include('partials.landing.twitter-feed')
     @include('partials.landing.starting-point')
     @include('partials.landing.animated-video-section')
     @include('partials.landing.stats-moocs')
@@ -16,7 +17,6 @@
     @include('partials.landing.subscribe')
     @include('partials.landing.roadmap')
     @include('partials.landing.trust')
-    @include('partials.landing.twitter-feed')
     @include('partials.landing.subscribe-alt')
     @include('partials.chat')
 @endsection
