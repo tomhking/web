@@ -32,12 +32,12 @@
 
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <div class="well">
+                        <div class="well well-important">
                            Affiliate link
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
-                        <div class="well">
+                        <div class="well well-important">
                             34564653218
                         </div>
                     </div>
@@ -45,10 +45,8 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <div class="well">
                             <h2>Banners to use</h2>
-                            <p>TBanners to use</p>
-                        </div>
+                            <p class="subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
                     </div>
                 </div>
                 <div class="row">
