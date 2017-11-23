@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <p><a class="back-to-homepage btn btn-default" href="{{ route_lang('user') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back')</a></p>
+                    <p style="text-align:right;"><a style="margin:0;" class="back-to-homepage btn btn-default" href="{{ route_lang('user') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back')</a></p>
                 </div>
 
             </div>
