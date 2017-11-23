@@ -2654,11 +2654,17 @@ h3.subtitle {
 
 .media-articles {
   margin-bottom: 45px;
+  .text-center.cta-link a {
+    background: none;
+    box-shadow: none;
+    color: #c02b3f;
+    text-decoration: underline;
+  }
   h2 {
     margin: 35px 0 55px 0;
   }
   .row.row-articles{
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     &:last-child{
       margin-bottom:0;
     }
@@ -2720,7 +2726,7 @@ h3.subtitle {
   }
   .medium-posts-content {
     overflow-y: scroll;
-    padding: 0 15px 28px 15px;
+    padding: 0 15px 26px 15px;
     height: 530px;
     position: absolute;
     bottom: 0;
@@ -3765,6 +3771,18 @@ div#token-distribution .container {
         position: relative;
       }
     }
+  }
+}
+
+.faq-token-info div#token-distribution {
+  padding: 50px 0!important;
+  .token-facts {
+    display: none;
+    margin: 10px 0;
+  }
+  &::before,
+  &::after {
+    display: none!important;
   }
 }
 

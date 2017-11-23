@@ -1,6 +1,10 @@
 @extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list'])
 
 @section('content')
+    <div class="faq-token-info">
+    @include('partials.landing.token-facts')
+    </div>
+
     <div id="faqs" class="main faqs faq-page">
         <div class="container">
             <div class="row">

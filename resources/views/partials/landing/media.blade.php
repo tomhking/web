@@ -103,7 +103,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="text-center cta-link">
+            <a href="https://blog.bitdegree.org/" class="cta-btn">All articles</a>
+        </div>
 
     </div>
 </div>

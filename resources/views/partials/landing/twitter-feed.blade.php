@@ -33,7 +33,15 @@
                         <li><a href="https://blog.bitdegree.org/dr-james-k-scarborough-bitdegree-is-the-groundwork-for-revolutionising-education-at-all-levels-33a9f3da9d8b" rel="nofollow" target="_blank"><b>Dr. James K. Scarborough: “BitDegree is the groundwork for revolutionizing education at all levels”</b></a></li>
                         <li><a href="https://blog.bitdegree.org/ethereum-blockchain-emulator-is-now-live-weekly-roundup-146620f68d04" rel="nofollow" target="_blank"><b>Ethereum Blockchain Emulator is Now Live</b> | Weekly Roundup</a></li>
                         <li><a href="https://blog.bitdegree.org/bitdegree-featured-on-daily-crypto-podcast-click-here-to-listen-64c3b24fceb7" rel="nofollow" target="_blank"><b>BitDegree featured on Daily Crypto Podcast — click here to listen!</b></a></li>
-
+                        <li><a href="https://blog.bitdegree.org/steve-jobsschool-founder-joins-bitdegree-as-advisor-2167bf04312c" rel="nofollow" target="_blank"><b>Steve JobsSchool Founder Joins BitDegree as Personalized Learning Advisor</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/bitdegree-joins-enterprise-ethereum-alliance-and-bitcoin-foundation-3fd3e192ac8f" rel="nofollow" target="_blank"><b>BitDegree Joins Enterprise Ethereum Alliance and Bitcoin Foundation</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/visiting-steve-jobsschool-token-value-growth-mvp-is-almost-here-weekly-roundup-ebdaf0bd5b46" rel="nofollow" target="_blank"><b>Visiting Steve JobsSchool, Token value growth, MVP is almost here</b> | Weekly Roundup</a></li>
+                        <li><a href="https://blog.bitdegree.org/united-states-already-ranking-amongst-bitdegrees-top-visitors-e6d95892a272" rel="nofollow" target="_blank"><b>United States already ranking amongst BitDegree’s top visitors</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/what-the-bitdegree-name-means-69f75d844b41" rel="nofollow" target="_blank"><b>What The BitDegree Name Means</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/ethereum-blockchain-emulator-massive-airdrop-major-ico-trackers-weekly-roundup-c69054effdc3" rel="nofollow" target="_blank"><b>Ethereum Blockchain Emulator, Massive Airdrop, Major ICO Trackers</b> | Weekly Roundup</a></li>
+                        <li><a href="https://blog.bitdegree.org/your-first-myetherwallet-c1a98f686f53" rel="nofollow" target="_blank"><b>Your first MyEtherWallet!</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/bitdegree-to-change-nature-of-online-education-network-effect-with-ico-1548f9d1a8a7" rel="nofollow" target="_blank"><b>BitDegree To Shake-Up Nature Of Network Effect In Online Education With Token Sale</b></a></li>
+                        <li><a href="https://blog.bitdegree.org/free-tokens-for-000webhost-users-5c7678de3190" rel="nofollow" target="_blank"><b>Free Tokens For 000webhost Users!</b></a></li>
                     </ul>
                     </div>
                 </div>
