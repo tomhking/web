@@ -10,6 +10,7 @@ return [
     'white-paper' => 'White-paper',
     'ico' => 'ICO &amp; Roadmap',
     'faq' => 'FAQ',
+    'affiliate' => 'Affiliate',
     'blog' => 'Blog',
     'what-it-is' => 'What is BitDegree?',
     'users' => 'Our Users',

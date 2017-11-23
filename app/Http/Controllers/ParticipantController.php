@@ -381,6 +381,13 @@ class ParticipantController extends Controller
     }
 
     /**
+     * @return \Illuminate\View\View
+     */
+    function affiliate() {
+        return view('pages.affiliate');
+    }
+
+    /**
      * Sets affiliate cookie
      *
      * @param $id

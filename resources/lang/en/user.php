@@ -24,6 +24,7 @@ return [
     'share' => 'Share or join to get more <b>FREE</b> tokens:',
     'congratulations' => 'Congratulations, :name!',
     'logout' => 'Log out',
+    'back' => 'Back',
     'almost_done' => 'Almost done...',
     'register' => 'Register',
 ];

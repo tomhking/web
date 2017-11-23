@@ -30,12 +30,13 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/login/{platform}', ['as' => 'login-platform', 'uses' => 'ParticipantController@showLogIn']);
     $router->post('/token/login', ['as' => 'login-post', 'uses' => 'ParticipantController@logIn']);
     $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
-    $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/affiliate', ['as' => 'affiliate', 'middleware' => 'auth', 'uses' => 'ParticipantController@affiliate']);
     $router->get('/token/auth/{participant}/{token}[/{destination}]', ['as' => 'auth', 'uses' => 'ParticipantController@auth']);
     $router->post('/token/ico', ['as' => 'ico-post', 'uses' => 'ParticipantController@joinICO']);
     $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
     $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', 'uses' => 'ContentController@lesson']);
-    $router->get('/course/{course}', ['as' => 'course', 'uses' => 'ContentController@course']);
+    $router->get('/course/{course}', ['as' => 'course', 'uses' => 'contentcontroller@course']);
     $router->get('/landing/course/{course}', ['uses' => 'ContentController@redirectLanding']);
     $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
 
