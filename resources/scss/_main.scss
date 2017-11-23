@@ -1598,22 +1598,26 @@ body.login-page {
   .well {
     color: #fff;
     background: 0;
-    font-family: $source-code;
+    font-family: $work-sans;
     font-weight: 100;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 24px;
     letter-spacing: 1px;
     border:1px solid rgba(255,255,255, 0.5);
     border-radius:0;
     padding:25px 35px;
     margin:35px 0;
+    a{
+      color:#ffbcbc;
+    }
     &.well-important{
+      font-family: $source-code;
       font-weight:600;
       font-size:26px;
     }
-    p{
-      font-size:15px;
-      line-height:22px;
+    p, li{
+      font-size:16px;
+      line-height:24px;
       font-weight: 300;
       span.red{
         color:#ffbcbc;

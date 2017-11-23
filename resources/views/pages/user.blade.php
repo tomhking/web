@@ -29,6 +29,16 @@
                             <div class="amount-of-tokens">
                                 @lang('user.tokens_secured', ['number' => 1])
                             </div>
+                            <div class="col-md-6 col-md-offset-3 text-left">
+                                <div class="well">
+                                    <p>To claim your <b>FREE BDG</b> is simple. All you have to do is the following:</p>
+                                    <ul>
+                                        <li> * Join our Telegram group: <a href="https://t.me/bitdegree" rel="nofollow" target="_blank">https://t.me/bitdegree</a></li>
+                                        <li>* Follow us on Twitter: <a href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank">https://twitter.com/bitdegree_org</a></li>
+                                        <li>* No cheating</li>
+                                    </ul>
+                                </div>
+                            </div>
 
                             <div class="col-md-6 col-md-offset-3">
                                 <div class="share">
