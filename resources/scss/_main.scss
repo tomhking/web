@@ -1801,6 +1801,38 @@ body.login-page {
     }
   }
   &.get-tokens{
+    ul.sidebar-nav {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 15px 25px;
+      li{
+        margin-bottom: 15px;
+        a{
+          color:#fff;
+        }
+      }
+    }
+    .user-menu{
+      ul{
+        li{
+          display:inline;
+          margin-right:15px;
+          a{
+            color:#fff;
+            font-size:15px;
+            font-weight: 300;
+          }
+          .fa{
+            margin-right: 5px;
+            font-size:16px;
+          }
+          img.ethereum{
+            height:17px;
+            margin-bottom:5px;
+          }
+        }
+      }
+    }
+
     .dashboard-logo{
       padding:0 25px;
     }
@@ -1824,7 +1856,17 @@ body.login-page {
         border-radius: 0;
       }
       .agreement{
-        margin:25px 0;
+        margin:25px 0 25px 0;
+        input{
+          height: auto!important;
+        }
+        label{
+          margin: 0!important;
+          font-weight: 300!important;
+          a{
+            color: #ffbcbc;
+          }
+        }
       }
       .cta button{
         font-size: 18px;
