@@ -50,5 +50,5 @@ return [
     'advisors' => 'Advisors',
     'title' => 'The Team',
     'leadership_title' => 'Leadership',
-    'subtitle' => 'Let us introduce you the key people that will make it all possible.',
+    'subtitle' => 'Let us introduce you to the key people that will make it all possible.',
 ];
