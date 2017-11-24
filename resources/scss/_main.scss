@@ -1561,6 +1561,9 @@ body.login-page {
     position: relative;
     background-size: cover;
     color: #fff;
+  .top-info-container{
+    display:none;
+  }
   .main{
     padding: 35px 0;
   }
@@ -1575,7 +1578,7 @@ body.login-page {
       margin-bottom: 45px;
       display: block;
       img {
-        max-width: 200px;
+        max-width: 160px;
         margin: 0;
       }
     }
@@ -1801,37 +1804,86 @@ body.login-page {
     }
   }
   &.get-tokens{
+    .main {
+      padding-top: 80px;
+      padding-bottom: 80px;
+      position: relative;
+    }
+    .header.container-fluid {
+      background: #191c2f;
+      padding:20px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      a.login-logo{
+        margin-bottom: 0;
+      }
+      .user-menu{
+        padding: 7px 15px;
+        ul{
+          li{
+            display:inline;
+            margin-right:15px;
+            a{
+              color:#fff;
+              font-size:15px;
+              font-weight: 300;
+            }
+            .fa{
+              margin-right: 5px;
+              font-size:16px;
+            }
+            img{
+              height:20px;
+              margin-bottom:5px;
+              &.token{
+                height:24px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .sidebar{
+      margin-top: -1px;
+      background: #191c2f;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 15px 25px;
+      margin-left: -15px;
+      h4{
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight:300;
+        margin-bottom: 20px;
+      }
+    }
     ul.sidebar-nav {
       border-left: 1px solid rgba(255, 255, 255, 0.5);
-      padding: 15px 25px;
       li{
         margin-bottom: 15px;
+        padding:4px 0 4px 15px;
+        position: relative;
         a{
           color:#fff;
-        }
-      }
-    }
-    .user-menu{
-      ul{
-        li{
-          display:inline;
-          margin-right:15px;
-          a{
-            color:#fff;
-            font-size:15px;
-            font-weight: 300;
+          font-weight: 300;
+          &::before {
+            width: 12px;
+            height: 12px;
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            border-radius: 200%;
+            border: 1px solid #fff;
+            left: -6px;
+            top: 11px;
+            background: #191c2f;
+            z-index: 25;
           }
-          .fa{
-            margin-right: 5px;
-            font-size:16px;
-          }
-          img.ethereum{
-            height:17px;
-            margin-bottom:5px;
+          &:hover::before{
+            background: #c02b3f;
           }
         }
       }
     }
+
 
     .dashboard-logo{
       padding:0 25px;
@@ -1854,6 +1906,9 @@ body.login-page {
         font-weight:300;
         color: #000;
         border-radius: 0;
+      }
+      .form-group.upload {
+        padding: 10px 0;
       }
       .agreement{
         margin:25px 0 25px 0;
@@ -2612,10 +2667,6 @@ header .title {
 
 body.course-landing header{
   padding-top: 0;
-}
-
-body.login-page {
-  padding-top: 39px;
 }
 
 header {
