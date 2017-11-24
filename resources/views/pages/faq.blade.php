@@ -326,13 +326,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#020" aria-expanded="false" aria-controls="020">
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#022" aria-expanded="false" aria-controls="022">
                             <h3 class="panel-title">
                                 Is BitDegree legitimate, does BitDegree have any legal confirmation?
                             </h3>
                         </div>
                     </div>
-                    <div id="020" class="panel-collapse collapse" role="tabpanel" aria-labelledby="020">
+                    <div id="022" class="panel-collapse collapse" role="tabpanel" aria-labelledby="022">
                         <div class="panel-body">
                             <p>Yes we are. The Central Bank of Lithuania recently acknowledged that BitDegree is operating fully within the frameworks of the Lithuanian and Eurozone legal system. <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" target="blank">Read more here.</a></p>
                         </div>
