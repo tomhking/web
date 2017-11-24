@@ -28,8 +28,7 @@
                     </div>
                     <div id="1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1">
                         <div class="panel-body">
-                            <p>We are kick-starting a new education platform for everyone around the globe.</p>
-                            <p>BitDegree is the world's first blockchain-powered, smart-incentives based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
+                            <p> BitDegree is the world's first blockchain-powered, smart-incentive based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
                             <p>BitDegree is an educational platform for everyone who is willing to study and get IT job.</p>
                         </div>
                     </div>
@@ -60,7 +59,7 @@
                     </div>
                     <div id="5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="5">
                         <div class="panel-body">
-                            <p>Blockchain will put BitDegree online education platform ahead of competition. By enabling us to introduce smart incentives and record students achievements in blockchain. Rewards earned on platform will be exchangeable into digital goods on third party service providers.</p>
+                            <p>Blockchain will put BitDegree online education platform ahead of competition. By enabling us to introduce smart incentives and record students achievements in blockchain. Rewards earned on platform will be exchangeable into digital goods on third party service providers. Sponsoring and distributing attribution can easily be made with smart contracts with every partner.</p>
                         </div>
                     </div>
                 </div>
@@ -75,7 +74,7 @@
                     </div>
                     <div id="6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="6">
                         <div class="panel-body">
-                            <p>Students will be able to choose which data will be stored on blockchain. What courses he had passed.</p>
+                            <p>Students will be able to choose which data will be stored on blockchain. What courses he had passed. By default all student progress will automatically be stored on blockchain.</p>
                         </div>
                     </div>
                 </div>
@@ -182,7 +181,7 @@
                     </div>
                     <div id="4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="4">
                         <div class="panel-body">
-                            <p>All courses on BitDegree platform will be IT oriented. Highest quality courses created by best tutors available.</p>
+                            <p>All courses on BitDegree platform will be IT oriented. Highest quality courses created by best tutors available. <a href="https://solidity.bitdegree.org/" target="_blank" rel="nofollow">Smart contract development course</a> with collaboration with Nexchange.io is our first course.</p>
                         </div>
                     </div>
                 </div>
@@ -198,7 +197,7 @@
                     </div>
                     <div id="3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="3">
                         <div class="panel-body">
-                            <p>For the first 1 year all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future depending on business environment premium courses may be offered.</p>
+                            <p>For the first 1 year all courses on BitDegree will be free to attract as much students as possible. User growth pool will be used to incentivize this traction. In the future premium courses will be offered.</p>
                         </div>
                     </div>
                 </div>
@@ -278,8 +277,8 @@
                     </div>
                     <div id="13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="13">
                         <div class="panel-body">
-                            <p>For most of the courses, you'll get paid to learn. If this option will not be available, you will be able to pay for the courses with your BitDegree tokens. We will have special incentives for the loyal BitDegree learners community, you could say that you'll get "membership benefits"</p>
-                            <p>Students will be able to choose from a plethora of IT courses. Most of the courses will be free to enroll for the first year. All of the courses has a sponsor who funds the students participating. Depending on sponsor, students will receive micro-scholarships for learning. This is calculated by achievements every student is performing. Think of it this way, if you solve a "CodeCademy" style of exercise, you get micro-payment for doing that. This is one way of distributing sponsors funding to students. Another way is: Students enroll to paid courses. All the funds are frozen until, the achievement is unlocked. Basically students learn for free, because he is getting back his money while learning. This incentivizes students, to finish the course. There will be more enrollment models how students will learn.</p>
+                            <p>Students will be able to choose from a plethora of IT courses. Most of the courses will be free to enroll for the first year. All of the courses has a sponsor who funds the students participating. Depending on sponsor, students will receive micro-scholarships for learning. This is calculated by achievements every student is performing. Think of it this way, if you solve a "CodeCademy" style of exercise, you get micro-payment for doing that. This is one way of distributing sponsors funding to students.</p>
+                            <p>Another way is: Students enroll to paid courses. All the funds are frozen until, the achievement is unlocked. Basically students learn for free, because he is getting back his money while learning. This incentivizes students, to finish the course. There will be more enrollment models how students will learn.</p>
                         </div>
                     </div>
                 </div>
@@ -324,6 +323,22 @@
             <h4 class="title">Company</h4>
 
             <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#020" aria-expanded="false" aria-controls="020">
+                            <h3 class="panel-title">
+                                Is BitDegree legitimate, does BitDegree have any legal confirmation?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="020" class="panel-collapse collapse" role="tabpanel" aria-labelledby="020">
+                        <div class="panel-body">
+                            <p>Yes we are. The Central Bank of Lithuania recently acknowledged that BitDegree is operating fully within the frameworks of the Lithuanian and Eurozone legal system. <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" target="blank">Read more here.</a></p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
@@ -395,7 +410,7 @@
                     </div>
                     <div id="05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="05">
                         <div class="panel-body">
-                            <p>We have partnered with Hostinger International  and 000webhost and we will start promoting BitDegree services to more than 29 million 000webhost & Hostinger users.</p>
+                            <p>We have partnered with Hostinger International and 000webhost and we are promoting BitDegree services to more than 29 million 000webhost & Hostinger users.</p>
                         </div>
                     </div>
                 </div>
@@ -462,7 +477,7 @@
                     </div>
                     <div id="002" class="panel-collapse collapse" role="tabpanel" aria-labelledby="002">
                         <div class="panel-body">
-                            <p>December 1st. 2017. It will take 2 weeks until Dec 14 or until hard-cap is reached.</p>
+                            <p>December 1st 2017. It will last for one month or until hard-cap is reached.</p>
                         </div>
                     </div>
                 </div>
@@ -477,7 +492,7 @@
                     </div>
                     <div id="003" class="panel-collapse collapse" role="tabpanel" aria-labelledby="003">
                         <div class="panel-body">
-                            <p>Soft-cap is 19000 ETH and Hard-cap is 76500 ETH</p>
+                            <p>Soft-cap is 500 ETH and Hard-cap is 32,500 ETH</p>
                         </div>
                     </div>
                 </div>
@@ -509,7 +524,7 @@
                         <div class="panel-body">
                             <p>ERC20 utility token built on top of Ethereum blockchain. BitDegree token as a mean of exchange can be used among users of the platform: Students, Sponsors, and third party Digital Service Providers. </p>
                             <p>Token can be used to create smart-incentives for educational accomplishments, to purchase advertising and recruitment services, and various other digital services offered by third parties on the BitDegree platform. </p>
-                            <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and recruitment of tech talent. The demand of BitDegree Token is closely aligned with the gargantuan $200 billion recruitment industry. Due to limited supply, the demand for BitDegree platform’s services will drive the token price up. </p>
+                            <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and recruitment of tech talent. The demand of BitDegree Token is closely aligned with the gargantuan $200 billion recruitment industry. Due to limited supply, the demand for BitDegree platform’s services will drive the token price up.</p>
                         </div>
                     </div>
                 </div>
@@ -568,7 +583,7 @@
                     <div id="008" class="panel-collapse collapse" role="tabpanel" aria-labelledby="008">
                         <div class="panel-body">
                             <p>The token sale is not BitDegree goal itself. It is only one of the ways to accumulate funds for building a company. Raising money though token sale does not equal to value creating. True value and biggest return for all the shareholders, stakeholders, contributors and investors comes when the global company is being build with the raised funds.</p>
-                            <p>The core Bitdegree team members are acting actively in IT business since 2004. We are bootstrapped, profitable and proud. We have vision to change the global education to better and token sale is just a starting point. Big advisory board tells about itself.</p>
+                            <p>The core Bitdegree team members are acting actively in IT business since 2004. We are bootstrapped, profitable and proud. We have vision to change the global education to better and token sale is just a starting point. Big advisory board speaks for itself.</p>
                         </div>
                     </div>
                 </div>
@@ -628,7 +643,7 @@
                     </div>
                     <div id="012" class="panel-collapse collapse" role="tabpanel" aria-labelledby="012">
                         <div class="panel-body">
-                            <p>Only Ethereum (ETH) will be accepted during a sale.</p>
+                            <p>Only Ethereum (ETH) will be accepted during a sale. People interested in participating using other crypto-currencies will be able to do so using the Tokenlot platform.</p>
                         </div>
                     </div>
                 </div>
@@ -757,6 +772,24 @@
                     </div>
                 </div>
 
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#021" aria-expanded="false" aria-controls="021">
+                            <h3 class="panel-title">
+                                How can i earn more tokens/earn tokens/where is bounty campaign?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="021" class="panel-collapse collapse" role="tabpanel" aria-labelledby="021">
+                        <div class="panel-body">
+                            <p>You can earn more tokens by participating in our bounty campaigns <a href="https://bitcointalk.org/index.php?topic=2225880.0" target="blank">here</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
 
             <br>
@@ -873,7 +906,7 @@
                     </div>
                     <div id="00003" class="panel-collapse collapse" role="tabpanel" aria-labelledby="00003">
                         <div class="panel-body">
-                            <a href="https://t.me/joinchat/GIngsQrKak9hN8h4xwN2Kg" target="_blank">https://t.me/joinchat/GIngsQrKak9hN8h4xwN2Kg</a>
+                            <a href="https://t.me/bitdegree" target="_blank">https://t.me/bitdegree</a>
                         </div>
                     </div>
                 </div>
