@@ -36,7 +36,7 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->post('/token/ico', ['as' => 'ico-post', 'uses' => 'ParticipantController@joinICO']);
     $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
     $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', 'uses' => 'ContentController@lesson']);
-    $router->get('/course/{course}', ['as' => 'course', 'uses' => 'contentcontroller@course']);
+    $router->get('/course/{course}', ['as' => 'course', 'uses' => 'ContentController@course']);
     $router->get('/landing/course/{course}', ['uses' => 'ContentController@redirectLanding']);
     $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
 
