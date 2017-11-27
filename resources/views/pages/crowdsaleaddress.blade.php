@@ -49,8 +49,8 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 eth-address">
                             <div class="form-group">
                                 <input type="text" class="form-control" readonly value="" onclick="" id="ico-address">
-                                <p class="text-right" id="copy-address" style="display: none">
-                                    <span class="text-success copied" style="display: none">Copied!</span>
+
+                                <p class="text-right" id="copy-address">
                                     <a class="btn">Copy Address</a>
                                 </p>
                             </div>
