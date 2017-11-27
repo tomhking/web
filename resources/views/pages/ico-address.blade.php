@@ -14,8 +14,6 @@
 
         <div class="col-sm-12 col-md-10 col-md-offset-2 pt-3 ">
 
-            @include('partials.dashboard-tabs')
-
             <div class="main container-main">
                 <div class="container">
                     <div class="row">

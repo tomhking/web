@@ -1,3 +1,5 @@
+<div class="dashboard-top">
+
 <div class="header container-fluid">
     <div class="row-fluid">
         <div class="col-md-3">
@@ -21,4 +23,7 @@
             </div>
         </div>
     </div>
+</div>
+
+@include('partials.dashboard-tabs')
 </div>

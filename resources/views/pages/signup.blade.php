@@ -1,4 +1,4 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list login-page', 'hideFooter' => true])
+@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list login-page login-signup', 'hideFooter' => true])
 
 @section('content')
 <div class="main">
