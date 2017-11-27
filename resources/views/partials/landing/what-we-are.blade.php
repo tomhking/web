@@ -6,7 +6,6 @@
                     <h2 class="title">@lang('navigation.what-it-is')</h2>
                     <h3 class="subtitle">
                         @lang('home.bitdegree_description_1')
-                        <br>@lang('home.bitdegree_description_2')
                     </h3>
                 </div>
                 @include('partials.landing.jeff-video')
