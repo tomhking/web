@@ -1,32 +1,6 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
+@extends('layouts.dashboard', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
 
 @section('content')
-
-
-    <div class="header container-fluid">
-        <div class="row-fluid">
-            <div class="col-md-3">
-                <div class="dashboard-logo">
-                    <a href="{{ route('home') }}" class="login-logo">
-                        <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 col-md-push-7 align-right">
-                <div class="user-menu">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Change pasword</a></li>
-                        <li>
-                            <form method="post" action="{{ route('logout') }}">
-                                <button type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
-                                {!! csrf_field() !!}
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="container-fluid">
         <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
@@ -34,19 +8,14 @@
             <ul class="sidebar-nav">
                 <li class="step-done"><a href="#">Step 1</a></li>
                 <li class="step-active"><a href="#">Step 2</a></li>
-                <li class="step-other"><a href="#">Other</a></li>
+                <li class="step-other"><a href="#"><span>Other</span></a></li>
             </ul>
         </div>
 
         <div class="col-sm-9 offset-sm-3 col-md-10 col-md-offset-2 pt-3 ">
-            <div class="dashboard-navigation">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Crowdsale</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> How to participate</a></li>
-                    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i> Earn more </a></li>
-                    <li><a href="#"><img class="token" src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token"> My Airdrops</a></li>
-                </ul>
-            </div>
+
+            @include('partials.dashboard-tabs')
+
             <div class="main container-main">
                 <div class="container">
                     <div class="row">
@@ -63,25 +32,30 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
-                            <div class="crowdsale-info-table">
+                            <div class="crowdsale-info-table text-center">
 
-                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="col-xs-6 col-sm-6 col-md-4">
                                     <h4>Exchange rate</h4>
                                     <p>1 ETH = 10,000 BDG*</p>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4">
 
                                     <h4>Gas Limit</h4>
                                     <p>200,000</p>
 
                                 </div>
 
-                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="col-xs-6 col-sm-6 col-md-4 last">
                                     <h4>Week 1 Bonus</h4>
                                     <p>15%</p>
-
-                                    <h4>Week 1 Bonus ends in:</h4>
-                                    <p>24:15:20</p>
-
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
+                                <h2>Week 1 Bonus ends in:</h2>
+                                    @include('partials.countdown', ['timeLeft' => 15])
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -89,7 +63,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                                 <div class="well">
-                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> <strong>Do NOT send ETH from an exchange.</strong> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
+                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
                             </div>
                         </div>
                     </div>
