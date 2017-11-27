@@ -1885,11 +1885,16 @@ body.login-page {
       line-height: 18px;
     }
   }
+  &.logged-in .container-main{
+    padding-top: 60px;
+  }
   &.get-tokens{
     .main {
-      padding-top: 80px;
-      padding-bottom: 80px;
       position: relative;
+    }
+    .personal-details.well {
+      margin-top:0;
+      padding: 25px 35px 35px 35px;
     }
     .header.container-fluid {
       background: #191c2f;
@@ -1930,6 +1935,9 @@ body.login-page {
       border: 1px solid rgba(255, 255, 255, 0.12);
       padding: 15px 25px;
       margin-left: -15px;
+      position: absolute;
+      bottom: 0;
+      top: 85px;
       h4{
         text-transform: uppercase;
         font-size: 20px;
@@ -1961,6 +1969,21 @@ body.login-page {
           }
           &:hover::before{
             background: #c02b3f;
+          }
+        }
+        &.step-active{
+          a::before{
+            background: #c02b3f;
+          }
+        }
+        &.step-done{
+          a{
+            text-decoration: line-through;
+          }
+        }
+        &.step-other{
+          a{
+            opacity:0.6;
           }
         }
       }

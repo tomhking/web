@@ -315,6 +315,14 @@ class ParticipantController extends Controller
         return view('pages.user');
     }
 
+    function icologin() {
+        return view('pages.icologin');
+    }
+
+    function crowdsaleaddress() {
+        return view('pages.crowdsaleaddress');
+    }
+
     /**
      * @return \Illuminate\View\View
      */

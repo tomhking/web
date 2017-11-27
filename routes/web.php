@@ -30,6 +30,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->post('/token/login', ['as' => 'login-post', 'uses' => 'ParticipantController@logIn']);
     $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
     $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/icologin', ['as' => 'icologin', 'middleware' => 'auth', 'uses' => 'ParticipantController@icologin']);
+    $router->get('/token/crowdsaleaddress', ['as' => 'crowdsaleaddress', 'middleware' => 'auth', 'uses' => 'ParticipantController@crowdsaleaddress']);
     $router->get('/token/affiliate', ['as' => 'affiliate', 'middleware' => 'auth', 'uses' => 'ParticipantController@affiliate']);
     $router->get('/token/auth/{participant}/{token}[/{destination}]', ['as' => 'auth', 'uses' => 'ParticipantController@auth']);
     $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
