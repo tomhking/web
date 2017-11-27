@@ -1891,6 +1891,14 @@ body.login-page {
   &.get-tokens{
     .main {
       position: relative;
+      a.how-to-participate {
+        color: #fff;
+        padding: 15px;
+        border: 1px solid #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
     }
     .personal-details.well {
       margin-top:0;
