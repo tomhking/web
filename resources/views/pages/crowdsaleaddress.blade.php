@@ -12,7 +12,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-2 col-md-push-7 align-right">
+            <div class="col-md-2 col-md-push-7 text-right">
                 <div class="user-menu">
                     <ul>
                         <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Change pasword</a></li>
@@ -29,7 +29,7 @@
             <ul class="sidebar-nav">
                 <li class="step-done"><a href="#">Step 1</a></li>
                 <li class="step-active"><a href="#">Step 2</a></li>
-                <li class="step-other"><a href="#">Other</a></li>
+                <li class="step-other"><a href="#"><span>Other</span></a></li>
             </ul>
         </div>
 

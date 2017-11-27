@@ -1915,11 +1915,14 @@ body.login-page {
     .dashboard-navigation{
       background: #191c2f;
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-      margin: 0 -25px;
+      margin: 0 -30px 0 -25px;
       height:44px;
       ul{
         border:0;
+        display: block;
+        float: right;
         li{
+          border-left:1px solid rgba(255, 255, 255, 0.12);
           a{
             padding:10px;
             color:#fff;
@@ -1931,9 +1934,8 @@ body.login-page {
             }
           }
           &.active a{
-            color:#191c2f;
-            font-weight:400;
-
+           background:none;
+           border:1px solid #fff;
           }
         }
       }
@@ -2028,8 +2030,8 @@ body.login-page {
           }
         }
         &.step-other{
-          a{
-            opacity:0.6;
+          a span{
+            opacity:0.4;
           }
         }
       }
