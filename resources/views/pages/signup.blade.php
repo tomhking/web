@@ -4,17 +4,17 @@
 <div class="main">
     <div class="container">
         <div class="login-wrap">
-            <a href="{{ route_lang('home') }}" class="login-logo">
-                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+            <a href="{{ route('home') }}" class="login-logo">
+                <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
             </a>
 
             <div id="signup-success" style="@if(!$success) display: none @endif">
                 <h1>@lang('user.almost_done')</h1>
                 <div class="alert alert-success">@lang('user.check_email')</div>
-                <a href="{{ route_lang('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
+                <a href="{{ route('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
             </div>
 
-            <form class="async-validated" action="{{ route_lang('signup-post') }}" method="post" data-show="#signup-success" style="@if($success) display:none @endif">
+            <form class="async-validated" action="{{ route('signup-post') }}" method="post" data-show="#signup-success" style="@if($success) display:none @endif">
                 <h1>@lang('user.register')</h1>
                 <p class="subtitle">@lang('user.please_provide')</p>
                 <div class="alert alert-danger other-error" style="display: none;">@lang('user.unknown_error')</div>
@@ -38,7 +38,7 @@
                 @include('partials.recaptcha')
 
                 <button class="btn btn-default" type="submit">@lang('user.signup')</button>
-                <a class="link" href="{{ route_lang($platform ? 'login-platform' : 'login', $platform ? compact('platform') : []) }}">@lang('user.or_login')</a>
+                <a class="link" href="{{ route($platform ? 'login-platform' : 'login', $platform ? compact('platform') : []) }}">@lang('user.or_login')</a>
 
                 <input type="hidden" name="platform" value="{{ $platform or '' }}">
             </form>

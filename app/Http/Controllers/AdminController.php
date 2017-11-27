@@ -10,14 +10,6 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 class AdminController
 {
 
-    public function __construct(Request $request)
-    {
-        $password = env('ICO_PREVIEW_KEY', false);
-
-        if (!$password || $request->get('key') != $password) {
-            throw new AccessDeniedHttpException('Access key is not correct.');
-        }
-    }
 
     public function stats()
     {

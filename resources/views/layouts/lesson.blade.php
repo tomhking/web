@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,200,300,400,500,600,700,900|Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('css/'.($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css')) }}">
-    <link href="{{ asset('course_style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset_rev('css/'.($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css')) }}">
+    <link href="{{ asset_rev('course_style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset_rev('jquery.mCustomScrollbar.min.css') }}">
 
     @include('partials.smartlook')
 </head>
@@ -34,7 +34,7 @@
             <div class="sidebar-nav">
                 <div class="current-lesson">
                     <div class="back-arrow">
-                        <a href="{{ $hasLanding ? route_lang('course', ['course' => $course]) : route_lang('mvp') }}" title="Back">
+                        <a href="{{ $hasLanding ? route('course', ['course' => $course]) : route('mvp') }}" title="Back">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -89,8 +89,8 @@
                         <div class="contain-video">
                             <div class="course-video">
                                 <div class="course-video-overlay"></div>
-                                <video  id="bgvid" poster="{{ asset('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
-                                    <source src="{{ asset('bitdegree_bg.mp4') }}" type="video/mp4">
+                                <video  id="bgvid" poster="{{ asset_rev('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
+                                    <source src="{{ asset_rev('bitdegree_bg.mp4') }}" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -114,7 +114,7 @@
 
 @include('partials.scripts')
 
-<script src="{{ asset('jquery.mCustomScrollbar.concat.min.js') }}" async></script>
+<script src="{{ asset_rev('jquery.mCustomScrollbar.concat.min.js') }}" async></script>
 
 <script>
     jqWait(function(){

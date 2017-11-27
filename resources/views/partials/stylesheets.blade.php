@@ -5,4 +5,4 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:100,200,300,400,500,600,700,900|Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
 @endif
 
-<link rel="stylesheet" href="{{ asset('css/'. ($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css')) }}">
+<link rel="stylesheet" href="{{ asset_rev('css/'. ($currentLanguage == 'ru' ? 'lang-ru.css' : 'default.css')) }}">

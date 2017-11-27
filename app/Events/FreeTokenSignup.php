@@ -44,7 +44,7 @@ class FreeTokenSignup extends Event implements Mailable
         $message->setLastName($this->participant->last_name);
         $message->setExtras([
             'wallet' => $this->participant->wallet,
-            'login_url' => route_lang('auth', [
+            'login_url' => route('auth', [
                 'lang' => $this->language,
                 'participant' => $this->participant->id,
                 'token' => $this->authToken->key,

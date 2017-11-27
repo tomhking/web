@@ -1,6 +1,6 @@
 <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <form method="post" action="{{ route_lang('ico-post') }}">
+        <form method="post" action="{{ route('ico-post') }}">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>

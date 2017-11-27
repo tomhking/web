@@ -43,7 +43,7 @@ class LogIn extends Event implements Mailable
         $message->setClientId($this->participant->id);
         $message->setEmail($this->participant->email);
         $message->setExtras([
-            'login_url' => route_lang('auth', [
+            'login_url' => route('auth', [
                 'lang' => $this->language,
                 'participant' => $this->participant->id,
                 'token' => $this->authToken->key,

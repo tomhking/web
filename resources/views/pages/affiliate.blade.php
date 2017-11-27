@@ -6,13 +6,13 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="dashboard-logo">
-                        <a href="{{ route_lang('home') }}" class="login-logo">
-                            <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                        <a href="{{ route('home') }}" class="login-logo">
+                            <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
                         </a>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <p style="text-align:right;"><a style="margin:0;" class="back-to-homepage btn btn-default" href="{{ route_lang('user') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back')</a></p>
+                    <p style="text-align:right;"><a style="margin:0;" class="back-to-homepage btn btn-default" href="{{ route('user') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back')</a></p>
                 </div>
 
             </div>
@@ -57,9 +57,9 @@
                             </div>
                             <div class="panel-body">
                                 <div class="banner-image">
-                                    <img src="{{ asset('files/728x90-animated.gif') }}" alt="BitDegree - Revolutionizing education with blockchain">
+                                    <img src="{{ asset_rev('files/728x90-animated.gif') }}" alt="BitDegree - Revolutionizing education with blockchain">
                                 </div>
-                                <textarea readonly class="form-control select-all"><a href="https://bitdegree.org" target="_blank"><img src="{{ asset('files/728x90-animated.gif') }}" width="728" height="90" alt="BitDegree - Revolutionizing education with blockchain"></a></textarea>
+                                <textarea readonly class="form-control select-all"><a href="https://bitdegree.org" target="_blank"><img src="{{ asset_rev('files/728x90-animated.gif') }}" width="728" height="90" alt="BitDegree - Revolutionizing education with blockchain"></a></textarea>
                             </div>
                         </div>
                     </div>

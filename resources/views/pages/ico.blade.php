@@ -40,7 +40,7 @@
 @endsection
 
 @push('body-scripts')
-    <script type="text/javascript" src="{{ asset('big.min.js') }}" async></script>
+    <script type="text/javascript" src="{{ asset_rev('big.min.js') }}" async></script>
     <script type="text/javascript">
         jqWait(function() {
             @if($displaySignUp)

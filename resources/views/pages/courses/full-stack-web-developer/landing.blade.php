@@ -22,8 +22,8 @@
                                 <div class="contain-video">
                                     <div class="course-video">
                                         <div class="course-video-overlay"></div>
-                                        <video  id="bgvid" poster="{{ asset('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
-                                            <source src="{{ asset('bitdegree_bg.mp4') }}" type="video/mp4">
+                                        <video  id="bgvid" poster="{{ asset_rev('bitdegree-vid-img.jpg') }}" class="hidden-xs hidden-sm" autoplay="" loop="" style="      width: auto; height: 100%;">
+                                            <source src="{{ asset_rev('bitdegree_bg.mp4') }}" type="video/mp4">
                                             Your browser does not support the video tag.
                                         </video>
                                     </div>
@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
-                            <img src="{{ asset('full-stack-developer.png') }}" alt="">
+                            <img src="{{ asset_rev('full-stack-developer.png') }}" alt="">
                     </div>
                 </div>
 

@@ -17,7 +17,7 @@
                 <div class="row row-logos sponsor-{{ $sponsor or 'default' }}">
                     @if(isset($sponsor) && $sponsor == 'nexchange')
                         <div class="col-xs-12 text-center">
-                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset('partners/nexchange.png') }}" alt="NEXCHANGE"></a>
+                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="NEXCHANGE"></a>
                             <h4 class="title text-muted">
                                 <div>Exchange Cryptocurrencies</div>
                                 Simple. Secure. Transparent.
@@ -25,10 +25,10 @@
                         </div>
                     @else
                         <div class="col-xs-6 col-sm-6 text-center">
-                            <a href="https://www.000webhost.com" target="_blank"><img src="{{ asset('000webhost-2.png') }}" alt="@lang('home.starting_point_logo_000webhost')"></a>
+                            <a href="https://www.000webhost.com" target="_blank"><img src="{{ asset_rev('000webhost-2.png') }}" alt="@lang('home.starting_point_logo_000webhost')"></a>
                         </div>
                         <div class="col-xs-6 col-sm-6 text-center">
-                            <a href="https://www.hostinger.com" target="_blank"><img src="{{ asset('hostinger.png') }}"  alt="@lang('home.starting_point_logo_hostinger')"></a>
+                            <a href="https://www.hostinger.com" target="_blank"><img src="{{ asset_rev('hostinger.png') }}"  alt="@lang('home.starting_point_logo_hostinger')"></a>
                         </div>
                     @endif
                 </div>

@@ -6,7 +6,7 @@
         <div class="container image-bkg-wrap">
             <div class="image-bkg">
                 <div class="image-bkg-overlay"></div>
-                <img class="degree-img" src="{{ asset('subscribe-bkg.jpg') }}" alt="">
+                <img class="degree-img" src="{{ asset_rev('subscribe-bkg.jpg') }}" alt="">
             </div>
 
             <div class="subscribe-container">

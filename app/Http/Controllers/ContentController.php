@@ -122,7 +122,7 @@ class ContentController extends Controller
         $participant = Participant::getCurrent();
 
         if(!$participant instanceof Participant) {
-            return redirect(route_lang('ico') . '?email');
+            return redirect(route('ico') . '?email');
         }
 
         // Handle countries
@@ -174,7 +174,7 @@ class ContentController extends Controller
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
         if($availableCourses->has($course)) {
             if($lesson != 'intro') {
-                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+                return redirect(route('lesson', ['course' => $course, 'lesson' => 'intro']));
             }
 
             $hasLanding = file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'));
@@ -193,7 +193,7 @@ class ContentController extends Controller
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
         if($availableCourses->has($course)) {
             if(!file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'))) {
-                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+                return redirect(route('lesson', ['course' => $course, 'lesson' => 'intro']));
             }
             return view('pages.courses.'.$course.'.landing');
         }
@@ -210,6 +210,6 @@ class ContentController extends Controller
             'web-developer' => 'full-stack-web-developer',
             'smart-contract-developer' => 'smart-contracts',
         ];
-        return redirect(route_lang('course', ['course' => $mappings[$course] ?? $course]), 301);
+        return redirect(route('course', ['course' => $mappings[$course] ?? $course]), 301);
     }
 }
