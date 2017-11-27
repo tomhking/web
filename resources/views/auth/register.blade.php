@@ -48,13 +48,15 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="text-center cta"><button type="submit" class="btn btn-primary">Join Crowdsale</button></div>
+                                        <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">Join Crowdsale</button></div>
                                     </div>
                                 </div>
                                 {!! csrf_field() !!}
                             </form>
-                            <a href="{{ route('login') }}">Log In</a> |
-                            <a href="{{ route('password.request') }}">Forgot password?</a>
+                            <div class="text-center login-signup-link">
+                                <a href="{{ route('login') }}">Log In</a> |
+                                <a href="{{ route('password.request') }}">Forgot password?</a>
+                            </div>
                         </div>
                     </div>
                 </div>
