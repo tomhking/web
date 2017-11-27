@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
+use App\EmailConfirmation;
 use App\Library\Mailer;
 use App\User;
+use Carbon\Carbon;
 use GeoIp2\Database\Reader;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -69,6 +70,9 @@ class AppServiceProvider extends ServiceProvider
             $self->ip = request()->ip();
         });
 
+        EmailConfirmation::creating(function(EmailConfirmation $self) {
+            $self->expires_at = Carbon::now()->addHours(12);
+        });
 
         // Set the current language
         $languages = app()->make('languages');

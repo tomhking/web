@@ -60,7 +60,3 @@
         </div>
     </div>
 @endsection
-
-@push('body-scripts')
-@include('partials.async-forms')
-@endpush

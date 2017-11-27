@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
-use App\Events\FreeTokenSignup;
-use App\Events\LogIn;
+use App\Events\SignUp;
 use App\Listeners\MailListener;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -15,13 +15,15 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [
-        FreeTokenSignup::class => [
-            MailListener::class,
-        ],
-        LogIn::class => [
-            MailListener::class,
-        ],
+    protected $listen = [ ];
+
+    /**
+     * The subscriber classes to register.
+     *
+     * @var array
+     */
+    protected $subscribe = [
+        MailListener::class,
     ];
 
     /**
@@ -33,6 +35,8 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot();
 
-        //
+        Event::listen(Registered::class, function (Registered $event) {
+            event(new SignUp($event->user));
+        });
     }
 }

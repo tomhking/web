@@ -20,24 +20,16 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/', 'ContentController@home')->name('home');
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');
         Route::get('/mvp', 'ContentController@mvp')->name('mvp');
-        Route::get('/signup', 'UserController@showSignUp')->name('signup');
-        Route::get('/signup/{platform}', 'UserController@showSignUp')->name('signup-platform');
-        Route::post('/join', 'UserController@join')->name('join');
-        Route::post('/signup', 'UserController@signUp')->name('signup-post');
-        Route::get('/login', 'UserController@showLogIn')->name('login');
-        Route::get('/login/{platform}', 'UserController@showLogIn')->name('login-platform');
-        Route::post('/login', 'UserController@logIn')->name('login-post');
         Route::get('/faq', 'ContentController@faq')->name('faq');
-        Route::get('/user', 'UserController@user')->name('user');
-        Route::get('/participate', 'UserController@participate')->name('participate');
-        Route::get('/userdetails', 'UserController@userdetails')->name('userdetails');
 
         // User area
         Route::group(['middleware' => 'auth'], function () {
-            Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
             Route::get('/user', 'UserController@user')->name('user');
             Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
             Route::get('/address', 'UserController@address')->name('address');
+            Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
+            Route::get('/profile', 'UserController@userdetails')->name('userdetails');
+            Route::get('/participate', 'UserController@participate')->name('participate');
         });
 
         // Statistics and mailing list export
@@ -58,6 +50,9 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
         Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
         Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+
+        // Email verification routes...
+        Route::get('verify/{id}/{token}', 'Auth\EmailVerificationController@verify')->name('verify-email');
     });
 
     Route::get('/course/{course}/lesson/{lesson}', 'ContentController@lesson')->name('lesson');

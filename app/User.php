@@ -69,4 +69,14 @@ class User extends Authenticatable
     {
         return $this->belongsTo(User::class, 'affiliate_id');
     }
+
+    /**
+     * Email confirmations relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function emailConfirmations()
+    {
+        return $this->hasMany(EmailConfirmation::class);
+    }
 }

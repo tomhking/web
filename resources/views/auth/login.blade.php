@@ -47,8 +47,8 @@
                         {!! csrf_field() !!}
                     </form>
                     <div class="text-center login-signup-link">
-                        <a href="<?php echo e(route('register')); ?>">Sign Up</a> |
-                        <a href="<?php echo e(route('password.request')); ?>">Forgot password?</a>
+                        <a href="{{ e(route('register')) }}">Sign Up</a> |
+                        <a href="{{ e(route('password.request')) }}">Forgot password?</a>
                     </div>
             </div>
         </div>

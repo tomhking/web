@@ -8,8 +8,9 @@ abstract class Event
 {
     use SerializesModels;
 
-    protected function getLanguageSuffix($language) {
-        $defaultLanguage = 'en';
+    protected function getLanguageSuffix() {
+        $language = config('app.locale');
+        $defaultLanguage = config('app.fallback_locale');
         $availableLanguages = array_keys(app('languages'));
         $mailableLanguages = array_intersect($availableLanguages, app('mailableLanguages'));
 
