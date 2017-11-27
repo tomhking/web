@@ -42,12 +42,4 @@ class User extends Authenticatable
     public function affiliate() {
         return $this->belongsTo(User::class, 'affiliate_id');
     }
-
-    public function isProfileFull() {
-        return
-            !empty($this->first_name) &&
-            !empty($this->last_name) &&
-            !empty($this->country) &&
-            !empty($this->birthday);
-    }
 }

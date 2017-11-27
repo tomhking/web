@@ -27,7 +27,7 @@ class ContentController extends Controller
     function home(Request $request)
     {
         return response(view('pages.home', [
-            'canGetFreeTokens' => true,
+            'canGetFreeTokens' => false,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)
         ])->render());

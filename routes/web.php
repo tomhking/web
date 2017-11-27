@@ -20,31 +20,29 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/', 'ContentController@home')->name('home');
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');
         Route::get('/mvp', 'ContentController@mvp')->name('mvp');
-        Route::get('/signup', 'ParticipantController@showSignUp')->name('signup');
-        Route::get('/signup/{platform}', 'ParticipantController@showSignUp')->name('signup-platform');
-        Route::post('/join', 'ParticipantController@join')->name('join');
-        Route::post('/signup', 'ParticipantController@signUp')->name('signup-post');
-        Route::get('/login', 'ParticipantController@showLogIn')->name('login');
-        Route::get('/login/{platform}', 'ParticipantController@showLogIn')->name('login-platform');
-        Route::post('/login', 'ParticipantController@logIn')->name('login-post');
-        Route::get('/logout', 'ParticipantController@logOut')->name('logout');
+        Route::get('/signup', 'UserController@showSignUp')->name('signup');
+        Route::get('/signup/{platform}', 'UserController@showSignUp')->name('signup-platform');
+        Route::post('/join', 'UserController@join')->name('join');
+        Route::post('/signup', 'UserController@signUp')->name('signup-post');
+        Route::get('/login', 'UserController@showLogIn')->name('login');
+        Route::get('/login/{platform}', 'UserController@showLogIn')->name('login-platform');
+        Route::post('/login', 'UserController@logIn')->name('login-post');
+        Route::get('/logout', 'UserController@logOut')->name('logout');
         Route::get('/faq', 'ContentController@faq')->name('faq');
-        Route::get('/user', 'ParticipantController@user')->name('user');
-        Route::get('/auth/{participant}/{token}/{destination?}', 'ParticipantController@auth')->name('auth');
+        Route::get('/user', 'UserController@user')->name('user');
 
         // @todo move under auth middleware
-        Route::get('/icologin', 'ParticipantController@icologin')->name('icologin');
-        Route::get('/crowdsaleaddress', 'ParticipantController@crowdsaleaddress')->name('crowdsaleaddress');
+        Route::get('/crowdsaleaddress', 'UserController@crowdsaleaddress')->name('crowdsaleaddress');
 
         // User area
         Route::group(['middleware' => 'auth'], function () {
-            Route::post('/profile', 'ParticipantController@updateProfile')->name('participant-profile');
-            Route::get('/user', 'ParticipantController@user')->name('user');
-            Route::get('/affiliate', 'ParticipantController@affiliate')->name('affiliate');
+            Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
+            Route::get('/user', 'UserController@user')->name('user');
+            Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
 
             Route::get('/ico', 'ContentController@ico')->name('ico');
             Route::get('/ico/address', 'ContentController@icoAddress')->name('ico-address');
-            Route::post('/ico', 'ParticipantController@joinICO')->name('ico-post');
+            Route::post('/ico', 'UserController@joinICO')->name('ico-post');
         });
 
         // Statistics and mailing list export
