@@ -104,8 +104,11 @@ class UserController extends Controller
         return view('pages.user');
     }
 
-    function crowdsaleaddress() {
-        return view('pages.crowdsaleaddress');
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function address() {
+        return view('pages.ico-address');
     }
 
     /**

@@ -27,22 +27,15 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/login', 'UserController@showLogIn')->name('login');
         Route::get('/login/{platform}', 'UserController@showLogIn')->name('login-platform');
         Route::post('/login', 'UserController@logIn')->name('login-post');
-        Route::get('/logout', 'UserController@logOut')->name('logout');
         Route::get('/faq', 'ContentController@faq')->name('faq');
         Route::get('/user', 'UserController@user')->name('user');
-
-        // @todo move under auth middleware
-        Route::get('/crowdsaleaddress', 'UserController@crowdsaleaddress')->name('crowdsaleaddress');
 
         // User area
         Route::group(['middleware' => 'auth'], function () {
             Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
             Route::get('/user', 'UserController@user')->name('user');
             Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
-
-            Route::get('/ico', 'ContentController@ico')->name('ico');
-            Route::get('/ico/address', 'ContentController@icoAddress')->name('ico-address');
-            Route::post('/ico', 'UserController@joinICO')->name('ico-post');
+            Route::get('/address', 'UserController@address')->name('address');
         });
 
         // Statistics and mailing list export

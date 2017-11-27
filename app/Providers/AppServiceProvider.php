@@ -60,13 +60,13 @@ class AppServiceProvider extends ServiceProvider
         });
 
         User::creating(function (User $self) {
-            /** @var Request $request */
-            $request = app()->make('request');
-            $affiliateID = (int) $request->cookie('bd-aff', 0);
+            $affiliateID = (int) request()->cookie('bd-aff', 0);
 
             if($affiliateID > 0 && User::find($affiliateID)->exists()) {
                 $self->affiliate_id = $affiliateID;
             }
+
+            $self->ip = request()->ip();
         });
 
 
