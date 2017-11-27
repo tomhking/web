@@ -54,11 +54,11 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ route_('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
-                        <li class="narrow"><a href="{{ route_('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
-                        <li class="narrow middle"><a href="{{ route_('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
-                        <li class="narrow middle"><a href="{{ route_('faq') }}">@lang('navigation.faq')</a></li>
-                        <li class="narrow"><a href="{{ route_('home') }}#token-distribution" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.token')</a></li>
+                        <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
+                        <li class="narrow"><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
+                        <li class="narrow middle"><a href="{{ route('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
+                        <li class="narrow middle"><a href="{{ route('faq') }}">@lang('navigation.faq')</a></li>
+                        <li class="narrow"><a href="{{ route('home') }}#token-distribution" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.token')</a></li>
                         @if($currentLanguage == "cn")
                             <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                         @elseif($currentLanguage == "ru")

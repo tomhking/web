@@ -7,8 +7,8 @@
         <div class="row-fluid">
             <div class="col-md-3">
                 <div class="dashboard-logo">
-                    <a href="{{ route_lang('home') }}" class="login-logo">
-                        <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                    <a href="{{ route('home') }}" class="login-logo">
+                        <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
                     </a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                     <li class="active"><a href="#">Crowdsale</a></li>
                     <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> How to participate</a></li>
                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i> Earn more </a></li>
-                    <li><a href="#"><img class="token" src="{{ asset('token-img.png') }}" alt="BitDegree Token"> My Airdrops</a></li>
+                    <li><a href="#"><img class="token" src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token"> My Airdrops</a></li>
                 </ul>
             </div>
             <div class="main container-main">
@@ -75,6 +75,7 @@
 
                                     <h4>Week 1 Bonus ends in:</h4>
                                     <p>24:15:20</p>
+
                                 </div>
                             </div>
                         </div>

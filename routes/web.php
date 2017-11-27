@@ -33,8 +33,8 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/auth/{participant}/{token}/{destination?}', 'ParticipantController@auth')->name('auth');
 
         // @todo move under auth middleware
-        Routr::get('/token/icologin', ['as' => 'icologin', 'middleware' => 'auth', 'uses' => 'ParticipantController@icologin']);
-        Routr::get('/token/crowdsaleaddress', ['as' => 'crowdsaleaddress', 'middleware' => 'auth', 'uses' => 'ParticipantController@crowdsaleaddress']);
+        Route::get('/icologin', 'ParticipantController@icologin')->name('icologin');
+        Route::get('/crowdsaleaddress', 'ParticipantController@crowdsaleaddress')->name('crowdsaleaddress');
 
         // User area
         Route::group(['middleware' => 'auth'], function () {

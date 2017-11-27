@@ -50,12 +50,4 @@ class Participant extends Model
 
         return null;
     }
-
-    public function referrals() {
-        return $this->hasMany(Participant::class, 'affiliate_id');
-    }
-
-    public function affiliate() {
-        return $this->belongsTo(Participant::class, 'affiliate_id');
-    }
 }
