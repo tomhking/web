@@ -42,7 +42,7 @@
                                 <div class="row">
                                     <div class="agreement col-md-12 ">
                                         <input type="checkbox" id="agreeToTerms" name="agreement" {{ old('agreement', false) ? 'checked' : '' }} value="1">
-                                        <label for="agreeToTerms">I hereby agree to Bitdegree Token Sale <a href="#">Terms of Service</a></label>
+                                        <label for="agreeToTerms">I hereby agree to Bitdegree Token Sale <a href="{{ asset_rev('files/terms-of-service.pdf') }}" target="_blank">Terms of Service</a></label>
                                     </div>
                                 </div>
 

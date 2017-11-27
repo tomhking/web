@@ -1,50 +1,52 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list login-page token-secured', 'hideFooter' => true])
+@extends('layouts.dashboard', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
 
 @section('content')
-    <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="dashboard-logo">
-                        <a href="{{ route('home') }}" class="login-logo">
-                            <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
-                        </a>
+    <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
+        <h4>What's next?</h4>
+        <ul class="sidebar-nav">
+            <li class="step-done"><a href="#">Step 1</a></li>
+            <li class="step-active"><a href="{{ route('address') }}">Step 2</a></li>
+            <li class="step-other"><a href="#"><span>Other</span></a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="col-sm-12 col-md-10 col-md-offset-2 pt-3 ">
+
+        <div class="main container-main">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 text-center">
+                            <h1>Referral Program</h1>
+                            <p class="subtitle">These are some rules regarding affiliate program</p>
                     </div>
-                </div>
-                <div class="col-md-2">
-                    <p style="text-align:right;"><a style="margin:0;" class="back-to-homepage btn btn-default" href="{{ route('user') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back')</a></p>
+                 </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                   https://www.bitdegree.org/a/{{ auth()->user()->id }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                    {{ auth()->user()->referrals()->count() }} referrals
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-        </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h1 class="text-center">Banners to use</h1>
+                        <p class="text-center subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Affiliate Program</h2>
-                    <p>These are some rules regarding affiliate program</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <div class="well well-important">
-                       https://www.bitdegree.org/a/{{ auth()->user()->id }}
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="well well-important">
-                        {{ auth()->user()->referrals()->count() }} referrals
-                    </div>
-                </div>
-            </div>        <div class="row">
-                <div class="col-md-12 text-center">
-                        <h2>Banners to use</h2>
-                        <p class="subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel panel-primary">
+                        <div class="panel panel-primary">
                         <div class="panel-heading">
                            <h4>Animated banner <span class="label label-default pull-left">728x90</span></h4>
                         </div>
@@ -56,7 +58,12 @@
                         </div>
                     </div>
                 </div>
+
+
+
+            </div>
             </div>
         </div>
     </div>
+
 @endsection

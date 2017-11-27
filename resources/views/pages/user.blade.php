@@ -1,33 +1,27 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list login-page token-secured', 'hideFooter' => true])
+@extends('layouts.dashboard', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
 
 @section('content')
-<div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10">
-                    <div class="dashboard-logo">
-                        <a href="{{ route('home') }}" class="login-logo">
-                            <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
-                        </a>
-                    </div>
-                </div>
-                <!--div class="col-md-2">
-                    <ul class="nav user-nav">
-                        <li><a href="{{ route('affiliate') }}">@lang('navigation.affiliate')</a></li>
-                    </ul>
-                </div-->
-            </div>
-        </div>
+    <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
+        <h4>What's next?</h4>
+        <ul class="sidebar-nav">
+            <li class="step-done"><a href="#">Step 1</a></li>
+            <li class="step-active"><a href="{{ route('address') }}">Step 2</a></li>
+            <li class="step-other"><a href="#"><span>Other</span></a></li>
+        </ul>
+    </div>
 
-    <div class="container">
-        <div class="row">
+    <div class="col-sm-12 col-md-10 col-md-offset-2 pt-3 ">
+
+        <div class="main container-main">
+            <div class="container">
+                <div class="row">
             <div class="col-md-12 text-center">
                 <img class="token-image" src="{{ asset_rev('token.png') }}" alt="BitDegree Token">
                 <p>@lang('user.congratulations', ['name' => auth()->user()->first_name ? : auth()->user()->email])</p>
                 <div class="amount-of-tokens">
                     @lang('user.tokens_secured', ['number' => 1])
                 </div>
-                <div class="col-md-6 col-md-offset-3 text-left">
+                <div class="col-md-8 col-md-offset-2 text-left">
                     <div class="well">
                         <p>To claim your <b>FREE BDG</b> is simple. All you have to do is the following:</p>
                         <ul>
@@ -38,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-8 col-md-offset-2">
                     <div class="share">
                 <h3>@lang('user.share')</h3>
                 <div class="share-arrow"></div>
@@ -75,17 +69,13 @@
             </div>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-3 bounty-note">
+            <div class="col-md-8 col-md-offset-2 bounty-note">
                 <p>To receive your Tokens for sharing, join the BitDegree Bounty campaign <a href="https://bitcointalk.org/index.php?topic=2225880.0" target="_blank" style="color:#ec7686;"><b>here</b></a>.</p>
                 <p>The bounty campaign consists of many ways you can earn tokens, all you need is an account on bitcointalk forum.</p>
             </div>
-            <div class="col-md-12">
-                <form method="post" action="{{ route('logout') }}">
-                    <p><button class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.logout')</button></p>
-                    {!! csrf_field() !!}
-                </form>
-            </div>
         </div>
+            </div>
+    </div>
     </div>
 </div>
 @endsection
