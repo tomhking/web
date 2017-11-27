@@ -1992,53 +1992,105 @@ body.login-page {
         font-weight:300;
         margin-bottom: 20px;
       }
-    }
-    ul.sidebar-nav {
-      border-left: 1px solid rgba(255, 255, 255, 0.5);
-      li{
-        margin-bottom: 15px;
-        padding:4px 0 4px 15px;
-        position: relative;
-        a{
-          color:#fff;
-          font-weight: 300;
-          &::before {
-            width: 12px;
-            height: 12px;
-            content: " ";
-            display: inline-block;
-            position: absolute;
-            border-radius: 200%;
-            border: 1px solid #fff;
-            left: -6px;
-            top: 11px;
-            background: #191c2f;
-            z-index: 25;
-          }
-          &:hover::before{
-            background: #c02b3f;
-          }
-        }
-        &.step-active{
-          a::before{
-            background: #c02b3f;
-          }
-        }
-        &.step-done{
+      ul.sidebar-nav {
+        border-left: 1px solid rgba(255, 255, 255, 0.5);
+        li{
+          margin-bottom: 15px;
+          padding:4px 0 4px 15px;
+          position: relative;
           a{
-            text-decoration: line-through;
+            color:#fff;
+            font-weight: 300;
+            &::before {
+              width: 12px;
+              height: 12px;
+              content: " ";
+              display: inline-block;
+              position: absolute;
+              border-radius: 200%;
+              border: 1px solid #fff;
+              left: -6px;
+              top: 11px;
+              background: #191c2f;
+              z-index: 25;
+            }
+            &:hover::before{
+              background: #c02b3f;
+            }
           }
-        }
-        &.step-other{
-          a span{
-            opacity:0.4;
+          &.step-active{
+            a::before{
+              background: #c02b3f;
+            }
+          }
+          &.step-done{
+            a{
+              text-decoration: line-through;
+            }
+          }
+          &.step-other{
+            a span{
+              opacity:0.4;
+            }
           }
         }
       }
     }
-
-
-    .dashboard-logo{
+    .crowdsale-info-table {
+      .col-md-4{
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .col-md-4.last{
+        border-right: 0;
+      }
+      h4 {
+        color: #ffbcbc;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1px;
+        opacity: 0.8;
+      }
+      p{
+        font-size: 18px;
+      }
+    }
+    .bonus-countdown{
+      h2{
+        margin-top:35px;
+        color: #ffbcbc;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+     .countdown {
+        font-family: "Work Sans", sans-serif;
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin: 15px 0 25px 0;
+        .time-amount {
+          position: relative;
+          padding-bottom: 20px;
+          display: inline-block;
+          text-align: center;
+          min-width: 90px;
+          span.time-value {
+            font-size: 12px;
+            line-height: 12px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+      .dashboard-logo{
       padding:0 25px;
     }
     .personal-details{

@@ -58,25 +58,30 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
-                            <div class="crowdsale-info-table">
+                            <div class="crowdsale-info-table text-center">
 
-                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="col-xs-6 col-sm-6 col-md-4">
                                     <h4>Exchange rate</h4>
                                     <p>1 ETH = 10,000 BDG*</p>
+
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4">
 
                                     <h4>Gas Limit</h4>
                                     <p>200,000</p>
 
                                 </div>
 
-                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="col-xs-6 col-sm-6 col-md-4 last">
                                     <h4>Week 1 Bonus</h4>
                                     <p>15%</p>
-
-                                    <h4>Week 1 Bonus ends in:</h4>
-                                    <p>24:15:20</p>
-
                                 </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
+                                <h2>Week 1 Bonus ends in:</h2>
+                                    @include('partials.countdown', ['timeLeft' => 15])
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -84,7 +89,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                                 <div class="well">
-                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> <strong>Do NOT send ETH from an exchange.</strong> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
+                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
                             </div>
                         </div>
                     </div>

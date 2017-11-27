@@ -14,7 +14,6 @@ return [
     'ethereum' => 'Powered by the Ethereum',
     'decentralized' => 'Decentralized',
     'bitdegree_description_1' => 'The <b>BitDegree</b> platform will offer students the best online courses with a clear and transparent blockchain based reward system and achievement tracking. It is also a unique tool for businesses to recruit tech talent and shape global education to their needs. Think of it as Coursera and HackerRank merged together, powered by the decentralized blockchain technology.',
-    'bitdegree_description_2' => 'Think about it as Coursera and HackerRank merged together, powered by decentralized blockchain technology.',
     'starting_point_alt' => '29 000 000 users is our starting point',
     'starting_point_headline' => '29 000 000 users - our starting point',
     'starting_point_description' => 'We are establishing BitDegree on the solid ground of an existing user base of 29 million through Hostinger and OOOwebhost – a worlwide community that is loyal, web-passionate, eager to learn and open to innovation. “ Our vision at Hostinger is to enable millions of people around the globe to unlock the power of the Internet to provide them the means to learn, create, and grow independently, regardless of race, gender, social status, or geographical location.”',
