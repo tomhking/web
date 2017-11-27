@@ -314,4 +314,24 @@ class ParticipantController extends Controller
     function user() {
         return view('pages.user');
     }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    function affiliate() {
+        return view('pages.affiliate');
+    }
+
+    /**
+     * Sets affiliate cookie
+     *
+     * @param $id
+     * @return $this
+     */
+    public function setAffiliateCookie($id)
+    {
+        return redirect(route_lang('home', ['lang' => 'en']))->withCookie(
+            new Cookie('bd-aff', (int) $id > 0 ? (int) $id : 0, Carbon::now()->addMonths(3))
+        );
+    }
 }

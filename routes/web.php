@@ -15,6 +15,8 @@ $router->get('/', ['as' => 'root', function () use ($router) {
     return redirect(route_lang('home'));
 }]);
 
+$router->get('/a/{id:[0-9]+}', ['as' => 'affiliate-cookie', 'uses' => 'ParticipantController@setAffiliateCookie']);
+
 $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($router) {
     $router->get('/token/', ['as' => 'home', 'uses' => 'ContentController@home']);
     $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
@@ -27,7 +29,8 @@ $router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($
     $router->get('/token/login/{platform}', ['as' => 'login-platform', 'uses' => 'ParticipantController@showLogIn']);
     $router->post('/token/login', ['as' => 'login-post', 'uses' => 'ParticipantController@logIn']);
     $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
-    $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
+    $router->get('/token/affiliate', ['as' => 'affiliate', 'middleware' => 'auth', 'uses' => 'ParticipantController@affiliate']);
     $router->get('/token/auth/{participant}/{token}[/{destination}]', ['as' => 'auth', 'uses' => 'ParticipantController@auth']);
     $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
     $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', 'uses' => 'ContentController@lesson']);

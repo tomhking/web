@@ -855,8 +855,56 @@
             </div>
 
             <div class="row reg team-members">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="col-xs-12 col-sm-4">
+                <div class="col-md-12">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="team-member">
+
+                            <div class="team-member-image-holder" data-toggle="modal" data-target="#RokasModal">
+                                <img class="team-member-image" src="{{ asset('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
+                            </div>
+
+                            <div class="team-member-data">
+                                <h3 class="title">Rokas <b>Malakauskas</b></h3>
+                                <p>@lang('team.position_rokas')</p>
+                                <div class="handles">
+                                    <a href="https://www.linkedin.com/in/rokas-malakauskas-137181100/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="RokasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            </div>
+
+                                            <div class="modal-body">
+
+                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#RokasModal">
+                                                    <img class="team-member-image" src="{{ asset('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
+                                                </div>
+                                                <div class="team-member-data">
+                                                    <h3 class="title">Rokas <b>Malakauskas</b></h3>
+                                                    <p>@lang('team.position_rokas')</p>
+                                                    <div class="handles">
+                                                        <a href="https://www.linkedin.com/in/rokas-malakauskas-137181100/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    </div>
+                                                    <div class="team-member-desc">
+                                                        <p>@lang('team.description_rokas')</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3">
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
@@ -904,7 +952,7 @@
 
                     </div>
 
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-3">
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#SkirmantasModal">
@@ -951,7 +999,7 @@
 
                     </div>
 
-                    <div class="col-xs-12 col-sm-4">
+                    <div class="col-xs-12 col-sm-3">
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">

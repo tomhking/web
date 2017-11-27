@@ -3,7 +3,9 @@
 namespace App\Providers;
 
 use App\Library\Mailer;
+use App\Participant;
 use GeoIp2\Database\Reader;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -66,6 +68,16 @@ class AppServiceProvider extends ServiceProvider
                 ]
             ]
         ]);
+
+        Participant::creating(function (Participant $self) {
+            /** @var Request $request */
+            $request = app()->make('request');
+            $affiliateID = (int) $request->cookie('bd-aff', 0);
+
+            if($affiliateID > 0 && Participant::find($affiliateID)->exists()) {
+                $self->affiliate_id = $affiliateID;
+            }
+        });
     }
 
     /**
@@ -130,6 +142,7 @@ class AppServiceProvider extends ServiceProvider
                 'ee' => 'EE',
                 'th' => 'TH',
                 'hu' => 'HU',
+                'kr' => 'KR',
             ];
         });
 
@@ -162,7 +175,8 @@ class AppServiceProvider extends ServiceProvider
                     'url' => route_lang('course', ['course' => 'smart-contracts']),
                     'key' => 'smart-contracts',
                     'image' => asset('smart-contracts.jpg'),
-                    'overlay' => 'purple',
+                    'sponsor' => asset('nexchange.png'),
+                    'overlay' => 'purple available',
                     'description' => 'CLASSROOM OPENS: February, 2018',
                     'title' => trans('courses.title_smart_contracts'),
                     'isMvp' => true,
@@ -172,7 +186,7 @@ class AppServiceProvider extends ServiceProvider
                     'url' => 'https://www.bitdegree.org/learn/web-fundamentals/',
                     'key' => 'web-fundamentals',
                     'image' => asset('web-development.png'),
-                    'overlay' => 'green',
+                    'overlay' => 'green available',
                     'title' => trans('courses.title_web_fundamentals'),
                     'description' => 'Available Beta',
                     'isFree' => true,

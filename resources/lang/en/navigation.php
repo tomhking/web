@@ -2,13 +2,15 @@
 
 return [
     'what-is' => 'What is BitDegree',
-    'people' => 'People Behind',
+    'people' => 'Team',
     'mvp' => 'MVP',
     'bitcointalk' => 'Bounty',
+    'token' => 'Token',
     'one-pager' => 'One Pager',
     'white-paper' => 'White-paper',
     'ico' => 'ICO &amp; Roadmap',
     'faq' => 'FAQ',
+    'affiliate' => 'Affiliate',
     'blog' => 'Blog',
     'what-it-is' => 'What is BitDegree?',
     'users' => 'Our Users',

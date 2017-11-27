@@ -1,0 +1,27 @@
+<?php 
+
+return array (
+  'what-is' => 'BitDegree가 무엇인가요?',
+  'people' => '도와준 사람들',
+  'mvp' => 'MVP',
+  'bitcointalk' => '바운티',
+  'one-pager' => '한 페이지의',
+  'white-paper' => '백서',
+  'ico' => 'ICO와 로드맵',
+  'faq' => 'FAQ',
+  'blog' => '블로그',
+  'what-it-is' => 'BitDegree가 무엇인가요?',
+  'users' => '우리의 사용자들',
+  'problems' => '우리가 어떠한 문제점들을 해결하나요?',
+  'moocs' => 'MOOCs에 대해서',
+  'perspective' => '학생의 관점',
+  'demand' => 'IT 직업의 수요',
+  'economy' => '토큰 경제',
+  'team' => '개발팀',
+  'roadmap' => '로드맵',
+  'top' => '탑',
+  'subscribe' => '구독',
+  'email_placeholder' => '최신 뉴스를 받고 싶으시다면 이메일을 입력해주세요',
+  'no_account' => '입력하신 이메일의 계정이 존재하지 않습니다',
+  'link_expired' => '죄송합니다, 이 링크는 유효하지 않거나, 만료되었습니다. 로그인을 다시 시도해 주세요',
+);

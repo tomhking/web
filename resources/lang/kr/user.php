@@ -1,0 +1,27 @@
+<?php 
+
+return array (
+  'my_account' => '나의 계정',
+  'enter_email' => '당신의 이메일을 입력하세요',
+  'login' => '로그인',
+  'link_sent' => '당신의 일회용 로그인 링크가 이메일로 발송됬습니다',
+  'back_home' => '홈페이지로 돌아가기',
+  'unknown_error' => '알 수 없는 문제점이 발생했습니다. 당신이 정확한 정보를 입력했는지 다시한 번 확인하시고 다시 시도해 주십시오.',
+  'already_member' => '당신은 이미 BitDegree에 계정이 있습니다, 로그인을 눌러서 권한을 증명하십시오',
+  'email_address' => '이메일 주소',
+  'sample_email' => '홍길동@example.com',
+  'or_signup' => '혹은 가입',
+  'signup' => '가입',
+  'check_email' => '당신의 무료 토큰을 안전하게 지키는 것으로부터 멀어져 있습니다. 등록 과정에서 받은 이메일을 확인하고 확인 링크를 클릭하십시오',
+  'please_provide' => 'BitDegree에 가입하기 위해서는 몇가지 정보를 입력해주십시오.',
+  'name' => '당신의 이름',
+  'optional' => '선택적인',
+  'or_login' => '혹은 로그인하세요',
+  'congrats' => '축하드립니다, {{ $participant->first_name or $participant->email }}!',
+  'tokens_secured' => '당신은 : 만큼의 EDU 토큰을 가지고 있습니다.',
+  'share' => '공유하고 더 많은 <b>FREE</b>무료 토큰들을 얻으세요:',
+  'congratulations' => '축하드립니다, :name!',
+  'logout' => '로그아웃',
+  'almost_done' => '거의다 끝났습니다...',
+  'register' => '등록',
+);

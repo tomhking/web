@@ -2,18 +2,42 @@
 
 @section('content')
 <div class="main">
-    <div class="container">
-            <a href="{{ route_lang('home') }}" class="login-logo">
-                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
-            </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="dashboard-logo">
+                        <a href="{{ route_lang('home') }}" class="login-logo">
+                            <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                        </a>
+                    </div>
+                </div>
+                <!--div class="col-md-2">
+                    <ul class="nav user-nav">
+                        <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
+                    </ul>
+                </div-->
+            </div>
+        </div>
 
-                @if($authenticated)
+    <div class="container">
+
+        @if($authenticated)
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <img class="token-image" src="{{ asset('token.png') }}" alt="BitDegree Token">
                             <p>@lang('user.congratulations', ['name' => $participant->first_name ? : $participant->email])</p>
                             <div class="amount-of-tokens">
                                 @lang('user.tokens_secured', ['number' => 1])
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 text-left">
+                                <div class="well">
+                                    <p>To claim your <b>FREE BDG</b> is simple. All you have to do is the following:</p>
+                                    <ul>
+                                        <li> * Join our Telegram group: <a href="https://t.me/bitdegree" rel="nofollow" target="_blank">https://t.me/bitdegree</a></li>
+                                        <li>* Follow us on Twitter: <a href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank">https://twitter.com/bitdegree_org</a></li>
+                                        <li>* No cheating</li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <div class="col-md-6 col-md-offset-3">

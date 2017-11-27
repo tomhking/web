@@ -1,5 +1,5 @@
 <div id="why-us" class="main explanation white-bkg">
-    <div class="container">
+<div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2">
                 <h2 class="title center">@lang('home.problems_headline')</h2>
