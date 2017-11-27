@@ -1889,6 +1889,9 @@ body.login-page {
     padding-top: 60px;
   }
   &.get-tokens{
+    .container {
+      width: auto;
+    }
     .main {
       position: relative;
       a.how-to-participate {
@@ -2663,6 +2666,9 @@ div#token-distribution .col-md-10.token-info-table{
 }
 
 @media (max-width: 991px) {
+  body.login-page.get-tokens .sidebar{
+    display:none;
+  }
   .front-page header {
     background: #000 url('../cta-block-bg.jpg') no-repeat center;
     min-height: 650px;
