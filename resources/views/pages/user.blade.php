@@ -21,7 +21,7 @@
                 <div class="amount-of-tokens">
                     @lang('user.tokens_secured', ['number' => 1])
                 </div>
-                <div class="col-md-6 col-md-offset-3 text-left">
+                <div class="col-md-8 col-md-offset-2 text-left">
                     <div class="well">
                         <p>To claim your <b>FREE BDG</b> is simple. All you have to do is the following:</p>
                         <ul>
@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-8 col-md-offset-2">
                     <div class="share">
                 <h3>@lang('user.share')</h3>
                 <div class="share-arrow"></div>
@@ -69,7 +69,7 @@
             </div>
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-3 bounty-note">
+            <div class="col-md-8 col-md-offset-2 bounty-note">
                 <p>To receive your Tokens for sharing, join the BitDegree Bounty campaign <a href="https://bitcointalk.org/index.php?topic=2225880.0" target="_blank" style="color:#ec7686;"><b>here</b></a>.</p>
                 <p>The bounty campaign consists of many ways you can earn tokens, all you need is an account on bitcointalk forum.</p>
             </div>

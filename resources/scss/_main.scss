@@ -1816,7 +1816,7 @@ body.login-page {
       width: 100px;
       height: 100px;
       top: 15px;
-      right: -25px;
+      right: 0;
     }
     h3 {
       margin-bottom: 20px;
@@ -4879,10 +4879,21 @@ p.subtitle {
     ul.nav.nav-tabs{
       li{
         width:50%;
+        height:44px;
+        border:1px solid rgba(255, 255, 255, 0.12);
       }
     }
   }
 }
+  body.login-page .well {
+    padding: 15px 25px;
+    p, li {
+      line-height: 24px;
+      letter-spacing: 0;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+    }
+  }
 
   .bitdegrees-list .cards .card {
     &:hover .degree-overlay {
