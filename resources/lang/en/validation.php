@@ -110,6 +110,10 @@ return [
         'email' => [
             'exists' => 'The given email was not found on our database. You should sign up first.',
         ],
+        'agreement' => [
+            'required' => 'You must agree with the Terms of Service in order to proceed.',
+            'accepted' => 'You must agree with the Terms of Service in order to proceed.',
+        ]
     ],
 
     /*

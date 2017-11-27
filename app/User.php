@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -15,7 +16,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name',
+        'email',
+        'password',
     ];
 
     /**
@@ -35,11 +38,35 @@ class User extends Authenticatable
         'captcha_verified' => 'bool',
     ];
 
-    public function referrals() {
+    /**
+     * Limits results to a given email
+     *
+     * @param Builder $query
+     * @param $email
+     * @return Builder
+     */
+    public function scopeWithEmail(Builder $query, $email)
+    {
+        return $query->where('email', '=', $email);
+    }
+
+    /**
+     * Referrals relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function referrals()
+    {
         return $this->hasMany(User::class, 'affiliate_id');
     }
 
-    public function affiliate() {
+    /**
+     * Affiliate relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function affiliate()
+    {
         return $this->belongsTo(User::class, 'affiliate_id');
     }
 }

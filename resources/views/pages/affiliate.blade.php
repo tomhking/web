@@ -19,55 +19,44 @@
         </div>
 
         <div class="container">
-
-
-            @if($authenticated)
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>Affiliate Program</h2>
-                        <p>These are some rules regarding affiliate program</p>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Affiliate Program</h2>
+                    <p>These are some rules regarding affiliate program</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="well well-important">
+                       https://www.bitdegree.org/a/{{ auth()->user()->id }}
                     </div>
                 </div>
-
-
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <div class="well well-important">
-                           https://www.bitdegree.org/a/{{ $participant->id }}
+                <div class="col-md-6 text-center">
+                    <div class="well well-important">
+                        {{ auth()->user()->referrals()->count() }} referrals
+                    </div>
+                </div>
+            </div>        <div class="row">
+                <div class="col-md-12 text-center">
+                        <h2>Banners to use</h2>
+                        <p class="subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                           <h4>Animated banner <span class="label label-default pull-left">728x90</span></h4>
                         </div>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <div class="well well-important">
-                            {{ $participant->referrals()->count() }} referrals
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                            <h2>Banners to use</h2>
-                            <p class="subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">
-                               <h4>Animated banner <span class="label label-default pull-left">728x90</span></h4>
+                        <div class="panel-body">
+                            <div class="banner-image">
+                                <img src="{{ asset_rev('files/728x90-animated.gif') }}" alt="BitDegree - Revolutionizing education with blockchain">
                             </div>
-                            <div class="panel-body">
-                                <div class="banner-image">
-                                    <img src="{{ asset_rev('files/728x90-animated.gif') }}" alt="BitDegree - Revolutionizing education with blockchain">
-                                </div>
-                                <textarea readonly class="form-control select-all"><a href="https://bitdegree.org" target="_blank"><img src="{{ asset_rev('files/728x90-animated.gif') }}" width="728" height="90" alt="BitDegree - Revolutionizing education with blockchain"></a></textarea>
-                            </div>
+                            <textarea readonly class="form-control select-all"><a href="https://bitdegree.org" target="_blank"><img src="{{ asset_rev('files/728x90-animated.gif') }}" width="728" height="90" alt="BitDegree - Revolutionizing education with blockchain"></a></textarea>
                         </div>
                     </div>
                 </div>
-
-            @endif
-
-
+            </div>
         </div>
     </div>
 @endsection

@@ -3,7 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\PasswordReset;
+use App\User;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Password;
 
 class ForgotPasswordController extends Controller
 {
@@ -28,5 +34,35 @@ class ForgotPasswordController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+    }
+
+    /**
+     * Send a reset link to the given user.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    public function sendResetLinkEmail(Request $request)
+    {
+        $this->validateEmail($request);
+        $user = User::withEmail($request->get('email'))->first();
+
+        $response = $user instanceof User ? Password::RESET_LINK_SENT : Password::INVALID_PASSWORD;
+
+        if ($response === Password::RESET_LINK_SENT) {
+            PasswordReset::withEmail($user->email)->delete();
+            $passwordReset = new PasswordReset();
+            $passwordReset->email = $user->email;
+            $passwordReset->token = Hash::make($token = str_random(32));
+            $passwordReset->save();
+
+            // @todo emit event
+            Log::debug($passwordReset);
+            Log::debug($token);
+
+            return $this->sendResetLinkResponse($response);
+        }
+
+        return $this->sendResetLinkFailedResponse($request, $response);
     }
 }

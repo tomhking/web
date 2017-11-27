@@ -25,7 +25,7 @@
                         </div>
                     </div>
 
-                    @include('partials.errors')
+                    @include('partials.status')
 
                     <div class="row">
                         <div class="col-xs-12 col-md-6 col-md-push-3 personal-details well">
@@ -36,7 +36,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="input-password">Password</label>
-                                    <input class="form-control" type="password" name="password">
+                                    <input class="form-control" type="password" name="password" required minlength="3">
                                 </div>
 
                                 <div class="row">
