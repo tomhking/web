@@ -1,27 +1,6 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
+@extends('layouts.dashboard', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens logged-in', 'hideFooter' => true])
 
 @section('content')
-
-
-    <div class="header container-fluid">
-        <div class="row-fluid">
-            <div class="col-md-3">
-                <div class="dashboard-logo">
-                    <a href="{{ route('home') }}" class="login-logo">
-                        <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 col-md-push-7 text-right">
-                <div class="user-menu">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Change pasword</a></li>
-                        <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <div class="container-fluid">
         <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
@@ -34,14 +13,9 @@
         </div>
 
         <div class="col-sm-9 offset-sm-3 col-md-10 col-md-offset-2 pt-3 ">
-            <div class="dashboard-navigation">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#">Crowdsale</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> How to participate</a></li>
-                    <li><a href="{{ route('affiliate') }}"><i class="fa fa-star" aria-hidden="true"></i> Earn more </a></li>
-                    <li><a href="{{ route('user') }}"><img class="token" src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token"> My Airdrops</a></li>
-                </ul>
-            </div>
+
+            @include('partials.dashboard-tabs')
+
             <div class="main container-main">
                 <div class="container">
                     <div class="row">
