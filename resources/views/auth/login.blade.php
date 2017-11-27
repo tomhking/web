@@ -41,14 +41,15 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="text-center cta"><button type="submit" class="btn btn-primary">Log In</button></div>
+                                <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">Log In</button></div>
                             </div>
                         </div>
                         {!! csrf_field() !!}
                     </form>
-                    <a href="{{ route('register') }}">Sign Up</a> |
-                    <a href="{{ route('password.request') }}">Forgot password?</a>
-                </div>
+                    <div class="text-center login-signup-link">
+                        <a href="<?php echo e(route('register')); ?>">Sign Up</a> |
+                        <a href="<?php echo e(route('password.request')); ?>">Forgot password?</a>
+                    </div>
             </div>
         </div>
         </div>
