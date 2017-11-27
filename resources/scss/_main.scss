@@ -1956,9 +1956,13 @@ body.login-page {
             color:#fff;
             border-radius:0;
             font-weight:300;
+            .fa{
+              margin-right:5px;
+            }
             img{
               margin:0;
               height:22px;
+              margin-right:5px;
             }
           }
           &.active a{
