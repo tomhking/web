@@ -10,8 +10,8 @@
                                 <div class="row-fluid">
                                     <div class="col-md-3">
                                         <div class="dashboard-logo">
-                                            <a href="{{ route_lang('home') }}" class="login-logo">
-                                                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                                            <a href="{{ route('home') }}" class="login-logo">
+                                                <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
                                             </a>
                                         </div>
                                     </div>
@@ -96,7 +96,7 @@
 
                                         <div class="row">
                                             <div class="col-xs-12 col-md-10 col-md-offset-1 personal-details">
-                                                <form action="{{ route_lang('participant-profile') }}" method="post">
+                                                <form action="{{ route('participant-profile') }}" method="post">
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
@@ -169,7 +169,6 @@
                                 </div>
                             </div>
                         @endif
-
 
     @include('partials.validation')
 

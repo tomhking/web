@@ -4,11 +4,11 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="economy">
                     @if($currentLanguage == "cn")
-                        <img src="{{ asset('token-economy-cn.jpg') }}" alt="@lang('home.economy_image_alt')">
+                        <img src="{{ asset_rev('token-economy-cn.jpg') }}" alt="@lang('home.economy_image_alt')">
                     @elseif($currentLanguage == "ru")
-                        <img src="{{ asset('token-economy-ru.jpg') }}" alt="@lang('home.economy_image_alt')">
+                        <img src="{{ asset_rev('token-economy-ru.jpg') }}" alt="@lang('home.economy_image_alt')">
                     @else
-                        <img src="{{ asset('token-economy.jpg') }}" alt="@lang('home.economy_image_alt')">
+                        <img src="{{ asset_rev('token-economy.jpg') }}" alt="@lang('home.economy_image_alt')">
                     @endif
                 </div>
             </div>

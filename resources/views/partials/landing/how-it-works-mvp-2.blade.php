@@ -56,7 +56,7 @@
             @endif
         @endforeach
         <div class="text-center cta-link">
-            <a href="{{ route_lang('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
+            <a href="{{ route('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
         </div>
     </div>
 </div>

@@ -2,49 +2,73 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It is a breeze. Simply tell Lumen the URIs it should respond to
-| and give it the Closure to call when that URI is requested.
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
 |
 */
 
-$router->get('/', ['as' => 'root', function () use ($router) {
-    return redirect(route_lang('home'));
-}]);
+Route::get('/', [function () {
+    return redirect(route('home'));
+}])->name('root');
 
-$router->get('/a/{id:[0-9]+}', ['as' => 'affiliate-cookie', 'uses' => 'ParticipantController@setAffiliateCookie']);
+Route::group(['prefix' => config('app.locale')], function() {
+    Route::group(['prefix' => '/token'], function () {
+        Route::get('/', 'ContentController@home')->name('home');
+        Route::get('/airdrop', 'ContentController@home')->name('airdrop');
+        Route::get('/mvp', 'ContentController@mvp')->name('mvp');
+        Route::get('/signup', 'ParticipantController@showSignUp')->name('signup');
+        Route::get('/signup/{platform}', 'ParticipantController@showSignUp')->name('signup-platform');
+        Route::post('/join', 'ParticipantController@join')->name('join');
+        Route::post('/signup', 'ParticipantController@signUp')->name('signup-post');
+        Route::get('/login', 'ParticipantController@showLogIn')->name('login');
+        Route::get('/login/{platform}', 'ParticipantController@showLogIn')->name('login-platform');
+        Route::post('/login', 'ParticipantController@logIn')->name('login-post');
+        Route::get('/logout', 'ParticipantController@logOut')->name('logout');
+        Route::get('/faq', 'ContentController@faq')->name('faq');
+        Route::get('/user', 'ParticipantController@user')->name('user');
+        Route::get('/auth/{participant}/{token}/{destination?}', 'ParticipantController@auth')->name('auth');
 
-$router->group(['prefix' => '{lang}', 'middleware' => 'lang'], function() use ($router) {
-    $router->get('/token/', ['as' => 'home', 'uses' => 'ContentController@home']);
-    $router->get('/token/airdrop', ['as' => 'airdrop', 'uses' => 'ContentController@home']);
-    $router->get('/token/mvp', ['as' => 'mvp', 'uses' => 'ContentController@mvp']);
-    $router->get('/token/signup', ['as' => 'signup', 'uses' => 'ParticipantController@showSignUp']);
-    $router->get('/token/signup/{platform}', ['as' => 'signup-platform', 'uses' => 'ParticipantController@showSignUp']);
-    $router->post('/token/join', ['as' => 'join', 'uses' => 'ParticipantController@join']);
-    $router->post('/token/signup', ['as' => 'signup-post', 'uses' => 'ParticipantController@signUp']);
-    $router->get('/token/login', ['as' => 'login', 'uses' => 'ParticipantController@showLogIn']);
-    $router->get('/token/login/{platform}', ['as' => 'login-platform', 'uses' => 'ParticipantController@showLogIn']);
-    $router->post('/token/login', ['as' => 'login-post', 'uses' => 'ParticipantController@logIn']);
-    $router->get('/token/logout', ['as' => 'logout', 'uses' => 'ParticipantController@logOut']);
-    $router->get('/token/user', ['as' => 'user', 'middleware' => 'auth', 'uses' => 'ParticipantController@user']);
-    $router->get('/token/icologin', ['as' => 'icologin', 'middleware' => 'auth', 'uses' => 'ParticipantController@icologin']);
-    $router->get('/token/crowdsaleaddress', ['as' => 'crowdsaleaddress', 'middleware' => 'auth', 'uses' => 'ParticipantController@crowdsaleaddress']);
-    $router->get('/token/affiliate', ['as' => 'affiliate', 'middleware' => 'auth', 'uses' => 'ParticipantController@affiliate']);
-    $router->get('/token/auth/{participant}/{token}[/{destination}]', ['as' => 'auth', 'uses' => 'ParticipantController@auth']);
-    $router->get('/token/faq', ['as' => 'faq', 'uses' => 'ContentController@faq']);
-    $router->get('/course/{course}/lesson/{lesson}', ['as' => 'lesson', 'uses' => 'ContentController@lesson']);
-    $router->get('/course/{course}', ['as' => 'course', 'uses' => 'ContentController@course']);
-    $router->get('/landing/course/{course}', ['uses' => 'ContentController@redirectLanding']);
-    $router->get('/token/user', ['as' => 'user', 'uses' => 'ParticipantController@user']);
+        // @todo move under auth middleware
+        Routr::get('/token/icologin', ['as' => 'icologin', 'middleware' => 'auth', 'uses' => 'ParticipantController@icologin']);
+        Routr::get('/token/crowdsaleaddress', ['as' => 'crowdsaleaddress', 'middleware' => 'auth', 'uses' => 'ParticipantController@crowdsaleaddress']);
 
-    $router->get('/token/ico', ['as' => 'ico', 'uses' => 'ContentController@ico']);
-    $router->get('/token/ico/address', ['as' => 'ico-address', 'uses' => 'ContentController@icoAddress']);
-    $router->post('/token/ico', ['as' => 'ico-post', 'uses' => 'ParticipantController@joinICO']);
-    $router->post('/token/profile', ['as' => 'participant-profile', 'middleware' => 'auth', 'uses' => 'ParticipantController@updateProfile']);
+        // User area
+        Route::group(['middleware' => 'auth'], function () {
+            Route::post('/profile', 'ParticipantController@updateProfile')->name('participant-profile');
+            Route::get('/user', 'ParticipantController@user')->name('user');
+            Route::get('/affiliate', 'ParticipantController@affiliate')->name('affiliate');
 
-    $router->get('/token/admin/stats', ['as' => 'admin.stats', 'uses' => 'AdminController@stats']);
-    $router->get('/token/admin/emails', ['as' => 'admin.emails', 'uses' => 'AdminController@emails']);
+            Route::get('/ico', 'ContentController@ico')->name('ico');
+            Route::get('/ico/address', 'ContentController@icoAddress')->name('ico-address');
+            Route::post('/ico', 'ParticipantController@joinICO')->name('ico-post');
+        });
+
+        // Statistics and mailing list export
+        Route::get('/admin/stats', 'AdminController@stats')->name('admin.stats');
+        Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails');
+
+        // Authentication Routes...
+        Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+        Route::post('login', 'Auth\LoginController@login');
+        Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+        // Registration Routes...
+        Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+        Route::post('register', 'Auth\RegisterController@register');
+
+        // Password Reset Routes...
+        Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+        Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+        Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+        Route::post('password/reset', 'Auth\ResetPasswordController@reset');
+    });
+
+    Route::get('/course/{course}/lesson/{lesson}', 'ContentController@lesson')->name('lesson');
+    Route::get('/course/{course}', 'ContentController@course')->name('course');
+    Route::get('/landing/course/{course}', 'ContentController@redirectLanding');
 });
+

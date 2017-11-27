@@ -14,11 +14,11 @@
             <div class="col-xs-12 col-sm-12 col-md-12 description">
                 <div class="image-container text-center">
                     @if($currentLanguage == "cn")
-                        <img src="{{ asset('moocs-cn.jpg') }}" alt="@lang('home.moocs_headline')">
+                        <img src="{{ asset_rev('moocs-cn.jpg') }}" alt="@lang('home.moocs_headline')">
                     @elseif($currentLanguage == "ru")
-                        <img src="{{ asset('moocs-ru.jpg') }}" alt="@lang('home.moocs_headline')">
+                        <img src="{{ asset_rev('moocs-ru.jpg') }}" alt="@lang('home.moocs_headline')">
                     @else
-                        <img src="{{ asset('moocs.jpg') }}" alt="@lang('home.moocs_headline')">
+                        <img src="{{ asset_rev('moocs.jpg') }}" alt="@lang('home.moocs_headline')">
                     @endif
                 </div>
             </div>

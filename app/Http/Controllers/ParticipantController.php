@@ -31,7 +31,7 @@ class ParticipantController extends Controller
      */
     public function showSignUp(Request $request, $platform = ''){
         if($request->has('email') && Participant::where('email', '=', $request->get('email'))->first() instanceof Participant) {
-            return redirect(route_lang('login', ['email' => $request->get('email')]));
+            return redirect(route('login', ['email' => $request->get('email')]));
         }
 
         return view('pages.signup', [
@@ -55,16 +55,16 @@ class ParticipantController extends Controller
 
         if($participant instanceof \App\Participant) {
             if($captchaRequired) {
-                return redirect(route_lang('login', ['email' => $participant->email]));
+                return redirect(route('login', ['email' => $participant->email]));
             }
 
             $authToken = $participant->authTokens()->save(new AuthToken);
             event(new LogIn($participant, $authToken, $request->segment(1)));
-            return redirect(route_lang('login').'?success');
+            return redirect(route('login').'?success');
         }
 
         if($captchaRequired) {
-            return redirect(route_lang('signup', ['email' => $request->get('email')]));
+            return redirect(route('signup', ['email' => $request->get('email')]));
         }
 
         $participant = new Participant();
@@ -82,7 +82,7 @@ class ParticipantController extends Controller
         $authToken = $participant->authTokens()->save(new AuthToken);
         event(new \App\Events\FreeTokenSignup($participant, $authToken, $request->segment(1)));
 
-        return redirect(route_lang('signup').'?success');
+        return redirect(route('signup').'?success');
     }
 
     /**
@@ -185,7 +185,7 @@ class ParticipantController extends Controller
                 $token->invalidate();
             }
         }
-        return redirect(route_lang('home'))->withCookie(
+        return redirect(route('home'))->withCookie(
             new Cookie('auth','',0)
         );
     }
@@ -223,7 +223,7 @@ class ParticipantController extends Controller
                 return redirect(str_replace('{token}', $jwt, $destination['redirect']));
             }
 
-            return redirect(route_lang('user'))->withCookie(
+            return redirect(route('user'))->withCookie(
                 new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
             );
         }
@@ -252,7 +252,7 @@ class ParticipantController extends Controller
         if($participant instanceof Participant) {
             $authToken = $participant->authTokens()->save(new AuthToken);
             $authToken->use();
-            return redirect(route_lang('ico-address'))->withCookie(
+            return redirect(route('ico-address'))->withCookie(
                 new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
             );
         }
@@ -262,7 +262,7 @@ class ParticipantController extends Controller
         ]);
 
         if($validator->fails()) {
-            return redirect(route_lang('ico'));
+            return redirect(route('ico'));
         }
 
         $participant = new Participant();
@@ -274,7 +274,7 @@ class ParticipantController extends Controller
 
         $authToken = $participant->authTokens()->save(new AuthToken);
         $authToken->use();
-        return redirect(route_lang('ico-address'))->withCookie(
+        return redirect(route('ico-address'))->withCookie(
             new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
         );
     }
@@ -295,7 +295,7 @@ class ParticipantController extends Controller
         ]);
 
         if($validator->fails()) {
-            return redirect(route_lang('ico-address'));
+            return redirect(route('ico-address'));
         }
 
         $participant->first_name = $request->get('first_name');
@@ -305,7 +305,7 @@ class ParticipantController extends Controller
 
         $participant->save();
 
-        return redirect(route_lang('ico-address'));
+        return redirect(route('ico-address'));
     }
 
     /**

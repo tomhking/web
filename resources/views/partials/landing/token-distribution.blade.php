@@ -16,11 +16,11 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
                         @if($currentLanguage == "cn")
-                            <img src="{{ asset('token-distribution-cn.png') }}" alt="@lang('home.token_distribution_title')">
+                            <img src="{{ asset_rev('token-distribution-cn.png') }}" alt="@lang('home.token_distribution_title')">
                         @elseif($currentLanguage == "ru")
-                            <img src="{{ asset('token-distribution-ru.png') }}" alt="@lang('home.token_distribution_title')">
+                            <img src="{{ asset_rev('token-distribution-ru.png') }}" alt="@lang('home.token_distribution_title')">
                         @else
-                            <img src="{{ asset('token-distribution2.png') }}" alt="@lang('home.token_distribution_title')">
+                            <img src="{{ asset_rev('token-distribution2.png') }}" alt="@lang('home.token_distribution_title')">
                         @endif
                     </div>
                 </div>
@@ -57,11 +57,11 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 description">
                     <div class="image-container text-center">
                         @if($currentLanguage == "cn")
-                            <img src="{{ asset('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
+                            <img src="{{ asset_rev('budget-allocation-cn.png') }}" alt="@lang('home.budget_allocation_title')">
                         @elseif($currentLanguage == "ru")
-                            <img src="{{ asset('budget-allocation-ru.png') }}" alt="@lang('home.budget_allocation_title')">
+                            <img src="{{ asset_rev('budget-allocation-ru.png') }}" alt="@lang('home.budget_allocation_title')">
                         @else
-                            <img src="{{ asset('budget-allocation.png') }}" alt="@lang('home.budget_allocation_title')">
+                            <img src="{{ asset_rev('budget-allocation.png') }}" alt="@lang('home.budget_allocation_title')">
                         @endif
                     </div>
                 </div>

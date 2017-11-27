@@ -6,14 +6,14 @@
             <div class="row">
                 <div class="col-md-10">
                     <div class="dashboard-logo">
-                        <a href="{{ route_lang('home') }}" class="login-logo">
-                            <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+                        <a href="{{ route('home') }}" class="login-logo">
+                            <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
                         </a>
                     </div>
                 </div>
                 <!--div class="col-md-2">
                     <ul class="nav user-nav">
-                        <li><a href="{{ route_lang('affiliate') }}">@lang('navigation.affiliate')</a></li>
+                        <li><a href="{{ route('affiliate') }}">@lang('navigation.affiliate')</a></li>
                     </ul>
                 </div-->
             </div>
@@ -24,7 +24,7 @@
         @if($authenticated)
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <img class="token-image" src="{{ asset('token.png') }}" alt="BitDegree Token">
+                            <img class="token-image" src="{{ asset_rev('token.png') }}" alt="BitDegree Token">
                             <p>@lang('user.congratulations', ['name' => $participant->first_name ? : $participant->email])</p>
                             <div class="amount-of-tokens">
                                 @lang('user.tokens_secured', ['number' => 1])
@@ -82,7 +82,7 @@
                             <p>The bounty campaign consists of many ways you can earn tokens, all you need is an account on bitcointalk forum.</p>
                         </div>
                         <div class="col-md-12">
-                            <p><a class="back-to-homepage btn btn-default" href="{{ route_lang('logout') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.logout')</a></p>
+                            <p><a class="back-to-homepage btn btn-default" href="{{ route('logout') }}"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.logout')</a></p>
                         </div>
                     </div>
                 @endif

@@ -4,7 +4,7 @@ namespace App\Console;
 
 use Carbon\Carbon;
 use Illuminate\Console\Scheduling\Schedule;
-use Laravel\Lumen\Console\Kernel as ConsoleKernel;
+use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
@@ -34,5 +34,17 @@ class Kernel extends ConsoleKernel
 
             return $start->subDay()->isPast() && $end->addDay()->isFuture();
         });
+    }
+
+    /**
+     * Register the commands for the application.
+     *
+     * @return void
+     */
+    protected function commands()
+    {
+        $this->load(__DIR__.'/Commands');
+
+        require base_path('routes/console.php');
     }
 }

@@ -9,13 +9,13 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="{{ route_lang('mvp') }}">
-                <img src="{{ asset('mvp-image.png') }}" style="width:600px;" alt="@lang('home.mvp_image_alt')">
+            <a href="{{ route('mvp') }}">
+                <img src="{{ asset_rev('mvp-image.png') }}" style="width:600px;" alt="@lang('home.mvp_image_alt')">
             </a>
         </div>
 
         <div class="mvp-cta text-center">
-            <a href="{{ route_lang('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
+            <a href="{{ route('mvp') }}" class="cta-btn">@lang('home.mvp_c2a')</a>
         </div>
 
         <div class="row">

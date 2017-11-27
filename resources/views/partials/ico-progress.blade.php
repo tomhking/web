@@ -54,11 +54,11 @@
                             <tbody>
                                 <tr class="sold-out">
                                     <td>
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
                                         25% BONUS
@@ -72,10 +72,10 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
                                         20% BONUS
@@ -89,9 +89,9 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
                                         15% BONUS
@@ -105,8 +105,8 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
                                         10% BONUS
@@ -120,7 +120,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img src="{{ asset('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
                                         5% BONUS
@@ -144,7 +144,7 @@
                                 <code>{{ $icoAddress }}</code>
                                 <p>Recommended Gas Limit: 200000</p>
                             @else
-                                <p><a class="btn btn-primary" @if($authenticated) href="{{ route_lang('ico-address') }}" @else data-toggle="modal" data-target="#signup-modal" @endif>Get Tokens Now</a></p>
+                                <p><a class="btn btn-primary" @if($authenticated) href="{{ route('ico-address') }}" @else data-toggle="modal" data-target="#signup-modal" @endif>Get Tokens Now</a></p>
                             @endif
                         @elseif($icoEnd->isPast())
                             <h2>Crowdsale is over</h2>

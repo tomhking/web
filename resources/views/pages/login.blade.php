@@ -4,15 +4,15 @@
 <div class="main">
     <div class="container">
         <div class="login-wrap">
-            <a href="{{ route_lang('home') }}" class="login-logo">
-                <img class="logo" src="{{ asset('bitdegree-logo.png') }}" alt="BitDegree">
+            <a href="{{ route('home') }}" class="login-logo">
+                <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
             </a>
             <h1>@lang('user.login')</h1>
             <div id="login-success" style="@if(!$success) display: none @endif">
                 <div class="alert alert-success">@lang('user.link_sent')</div>
-                <a href="{{ route_lang('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
+                <a href="{{ route('home') }}" class="back-to-homepage btn btn-default"><i class="fa fa-chevron-left" aria-hidden="true"></i> @lang('user.back_home')</a>
             </div>
-            <form action="{{ route_lang('login-post') }}" method="post" class="async-validated" data-show="#login-success" style="@if($success) display: none @endif">
+            <form action="{{ route('login-post') }}" method="post" class="async-validated" data-show="#login-success" style="@if($success) display: none @endif">
                 <div class="alert alert-danger other-error" style="display: none;">@lang('user.unknown_error')</div>
                 @if(!empty($email))
                     <div class="well-sm well">@lang('user.already_member')</div>
@@ -28,7 +28,7 @@
                 @include('partials.recaptcha')
 
                 <button class="btn btn-default">@lang('user.login')</button>
-                <a class="link" href="{{ route_lang($platform ? 'signup-platform' : 'signup', $platform ? compact('platform') : []) }}">@lang('user.or_signup')</a>
+                <a class="link" href="{{ route($platform ? 'signup-platform' : 'signup', $platform ? compact('platform') : []) }}">@lang('user.or_signup')</a>
 
                 <input type="hidden" name="platform" value="{{ $platform or '' }}">
             </form>

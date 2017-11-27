@@ -9,21 +9,21 @@
         <div class="row cards">
             <div class="col-xs-12 col-sm-4">
                 <div class="card left">
-                    <img src="{{ asset('book.jpg') }}" alt="@lang('home.problems_reason_1_alt')">
+                    <img src="{{ asset_rev('book.jpg') }}" alt="@lang('home.problems_reason_1_alt')">
                     <h3>@lang('home.problems_reason_1')</h3>
                     <p>@lang('home.problems_description_1')</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="card">
-                    <img src="{{ asset('lamp.jpg') }}" alt="@lang('home.problems_reason_2_alt')">
+                    <img src="{{ asset_rev('lamp.jpg') }}" alt="@lang('home.problems_reason_2_alt')">
                     <h3>@lang('home.problems_reason_2')</h3>
                     <p>@lang('home.problems_description_2')</p>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="card right">
-                    <img src="{{ asset('money.jpg') }}" alt="@lang('home.problems_reason_3_alt')">
+                    <img src="{{ asset_rev('money.jpg') }}" alt="@lang('home.problems_reason_3_alt')">
                     <h3>@lang('home.problems_reason_3')</h3>
                     <p>@lang('home.problems_description_3')</p>
                 </div>
