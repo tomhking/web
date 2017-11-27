@@ -1,69 +1,65 @@
-@extends('layouts.app')
+@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'login-page get-tokens login-signup', 'hideFooter' => true])
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
+<div class="main">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-3">
+                <div class="dashboard-logo">
+                    <a href="{{ route('home') }}" class="login-logo">
+                        <img class="logo" src="{{ asset_rev('bitdegree-logo.png') }}" alt="BitDegree">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="container main">
+            <div class="content">
+            <div class="row">
+                <div class="col-md-8 col-md-push-2 text-center">
+                    <h1>Join Crowdsale and Receive Tokens Immediately</h1>
+                </div>
+            </div>
+
+            @include('partials.errors')
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-md-push-3 personal-details well">
+                    <form action="{{ route('login') }}" method="post">
+                        <div class="form-group">
+                            <label for="input-email">Email</label>
+                            <input type="email" data-validate="email" class="form-control" value="{{ old('email') }}" name="email" placeholder="Your email" id="input-email" autofocus required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-password">Password</label>
+                            <input class="form-control" type="password" name="password">
+                        </div>
+
+                        <div class="row">
+                            <div class="agreement col-md-12 ">
+                                <input type="checkbox" id="agreeToTerms" name="agreement" value="1">
+                                <label for="agreeToTerms">I hereby agree to Bitdegree Token Sale <a href="#">Terms of Service</a></label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center cta"><button type="submit" class="btn btn-primary">Join Crowdsale</button></div>
+                            </div>
+                        </div>
+                        {!! csrf_field() !!}
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
+
+
 @endsection
+
