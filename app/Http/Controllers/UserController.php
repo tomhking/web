@@ -108,6 +108,14 @@ class UserController extends Controller
         return view('pages.crowdsaleaddress');
     }
 
+    function participate() {
+        return view('pages.participate');
+    }
+
+    function userdetails() {
+        return view('pages.userdetails');
+    }
+
     /**
      * @return \Illuminate\View\View
      */

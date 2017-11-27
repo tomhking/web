@@ -12,7 +12,7 @@
             </ul>
         </div>
 
-        <div class="col-sm-12  col-md-10 col-md-offset-2 pt-3 ">
+        <div class="col-sm-12 col-md-10 col-md-offset-2 pt-3 ">
 
             @include('partials.dashboard-tabs')
 
@@ -76,7 +76,7 @@
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">
-                                        <button type="submit" class="btn btn-primary button-done">DONE</button></div>
+                                        <a href="{{ route('userdetails') }}" type="submit" class="btn btn-primary button-done">DONE</a></div>
                                     </div>
                                 </div>
                             </div>

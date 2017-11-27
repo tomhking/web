@@ -30,6 +30,8 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/logout', 'UserController@logOut')->name('logout');
         Route::get('/faq', 'ContentController@faq')->name('faq');
         Route::get('/user', 'UserController@user')->name('user');
+        Route::get('/participate', 'UserController@participate')->name('participate');
+        Route::get('/userdetails', 'UserController@userdetails')->name('userdetails');
 
         // @todo move under auth middleware
         Route::get('/crowdsaleaddress', 'UserController@crowdsaleaddress')->name('crowdsaleaddress');
