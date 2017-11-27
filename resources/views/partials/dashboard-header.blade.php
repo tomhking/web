@@ -7,7 +7,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-2 col-md-push-7 text-right">
+        <div class="col-md-4 col-md-push-5 text-right">
             <div class="user-menu">
                 <ul>
                     <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Change pasword</a></li>
