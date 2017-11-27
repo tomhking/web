@@ -53,7 +53,7 @@
 
                                 <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
                                 <h2>Week 1 Bonus ends in:</h2>
-                                    @include('partials.countdown', ['timeLeft' => 15])
+                                    @include('partials.countdown', ['timeLeft' => 25115])
                                 </div>
 
                             </div>

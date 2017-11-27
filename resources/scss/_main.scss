@@ -1974,6 +1974,16 @@ body.login-page {
           li{
             display:inline;
             margin-right:15px;
+            form{
+              display: inline-block;
+              button{
+                color:#fff;
+                font-size:13px;
+                font-weight: 300;
+                background: none;
+                border:0;
+              }
+            }
             a{
               color:#fff;
               font-size:13px;
