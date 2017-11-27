@@ -5,7 +5,7 @@
         <h4>What's next?</h4>
         <ul class="sidebar-nav">
             <li class="step-done"><a href="#">Step 1</a></li>
-            <li class="step-active"><a href="#">Step 2</a></li>
+            <li class="step-active"><a href="{{ route('address') }}">Step 2</a></li>
             <li class="step-other"><a href="#"><span>Other</span></a></li>
         </ul>
     </div>

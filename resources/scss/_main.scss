@@ -1743,7 +1743,8 @@ body.login-page {
     &.well-important{
       font-family: $source-code;
       font-weight:600;
-      font-size:26px;
+      font-size:24px;
+      word-wrap: break-word;
     }
     p, li{
       font-size:16px;
@@ -1919,10 +1920,15 @@ body.login-page {
         font-weight: 300;
         letter-spacing: 1px;
       }
+      .left{
+        float:left;
+      }
+      .right{
+        float:right;
+      }
       .left, .right {
         display: inline-block;
         vertical-align: middle;
-        width: 49.78%;
         a.btn.btn-primary.button-done {
           padding: 15px;
           text-transform: uppercase;
@@ -4844,6 +4850,18 @@ p.subtitle {
   }
 }
 @media (max-width: 600px) {
+.get-tokens.logged-in{
+  h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+    line-height: 42px;
+  }
+  .crowdsale-info-table .col-xs-4{
+    width:100%;
+    border:0!important;
+  }
+}
   header {
     padding-top: 60px;
   }
@@ -4854,6 +4872,18 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+.get-tokens.logged-in{
+  padding-top:50px;
+  .dashboard-navigation{
+    height:88px!important;
+    ul.nav.nav-tabs{
+      li{
+        width:50%;
+      }
+    }
+  }
+}
+
   .bitdegrees-list .cards .card {
     &:hover .degree-overlay {
       opacity: 1;

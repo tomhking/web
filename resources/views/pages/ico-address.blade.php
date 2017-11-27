@@ -7,7 +7,7 @@
             <h4>What's next?</h4>
             <ul class="sidebar-nav">
                 <li class="step-done"><a href="#">Step 1</a></li>
-                <li class="step-active"><a href="#">Step 2</a></li>
+                <li class="step-active"><a href="{{ route('address') }}">Step 2</a></li>
                 <li class="step-other"><a href="#"><span>Other</span></a></li>
             </ul>
         </div>
@@ -32,19 +32,19 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                             <div class="crowdsale-info-table text-center">
 
-                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                <div class="col-xs-4 col-sm-4 col-md-4">
                                     <h4>Exchange rate</h4>
                                     <p>1 ETH = 10,000 BDG*</p>
 
                                 </div>
-                                <div class="col-xs-6 col-sm-6 col-md-4">
+                                <div class="col-xs-4 col-sm-4 col-md-4">
 
                                     <h4>Gas Limit</h4>
                                     <p>200,000</p>
 
                                 </div>
 
-                                <div class="col-xs-6 col-sm-6 col-md-4 last">
+                                <div class="col-xs-4 col-sm-4 col-md-4 last">
                                     <h4>Week 1 Bonus</h4>
                                     <p>15%</p>
                                 </div>
