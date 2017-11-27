@@ -103,7 +103,7 @@
                     <div class="communicate">
                         <div class="contact">
                             @auth
-                                <p><strong>@lang('user.welcome_back', ['name' => $participant->first_name ?: $participant->email])</strong></p>
+                                <p><strong>@lang('user.welcome_back', ['name' => auth()->user()->first_name ?: auth()->user()->email])</strong></p>
                                 <p><a class="btn btn-account" href="{{ route('user') }}">@lang('user.my_account')</a></p>
                             @endauth
                             @guest

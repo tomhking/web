@@ -11,7 +11,10 @@
             <div class="user-menu">
                 <ul>
                     <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Change pasword</a></li>
-                    <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a></li>
+                    <form method="post" action="{{ route('logout') }}">
+                        <button type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
+                        {!! csrf_field() !!}
+                    </form>
                 </ul>
             </div>
         </div>

@@ -40,19 +40,14 @@
                         </div>
 
                         <div class="row">
-                            <div class="agreement col-md-12 ">
-                                <input type="checkbox" id="agreeToTerms" name="agreement" value="1">
-                                <label for="agreeToTerms">I hereby agree to Bitdegree Token Sale <a href="#">Terms of Service</a></label>
-                            </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-md-12">
-                                <div class="text-center cta"><button type="submit" class="btn btn-primary">Join Crowdsale</button></div>
+                                <div class="text-center cta"><button type="submit" class="btn btn-primary">Log In</button></div>
                             </div>
                         </div>
                         {!! csrf_field() !!}
                     </form>
+                    <a href="{{ route('register') }}">Sign Up</a> |
+                    <a href="{{ route('password.request') }}">Forgot password?</a>
                 </div>
             </div>
         </div>
