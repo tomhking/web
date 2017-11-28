@@ -10,7 +10,6 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 class AdminController
 {
 
-
     public function stats()
     {
         return response()->json([

@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Cookie;
 
@@ -29,7 +30,8 @@ class UserController extends Controller
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Laravel\Lumen\Http\Redirector
      */
-    public function updateProfile(Request $request) {
+    public function updateProfile(Request $request)
+    {
         $participant = User::getCurrent();
 
         $validator = Validator::make($request->all(), [
@@ -39,7 +41,7 @@ class UserController extends Controller
             'birthday' => 'required|date',
         ]);
 
-        if($validator->fails()) {
+        if ($validator->fails()) {
             return redirect(route('ico-address'));
         }
 
@@ -56,8 +58,9 @@ class UserController extends Controller
     /**
      * @return \Illuminate\View\View
      */
-    function user() {
-        if(!auth()->user()->isAirdropParticipant()) {
+    function user()
+    {
+        if (!auth()->user()->isAirdropParticipant()) {
             return redirect()->route('address');
         }
 
@@ -67,18 +70,19 @@ class UserController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    function address() {
+    function address()
+    {
         $ico = config('ico');
 
-        if(!$ico['started']) {
+        if (!$ico['started']) {
             return redirect()->route('affiliate');
         }
 
         $currentBonus = false;
         $rate = $ico['rate'];
 
-        foreach($ico['bonuses'] as $item) {
-            if(Carbon::now()->between($item['from'], $item['to'])) {
+        foreach ($ico['bonuses'] as $item) {
+            if (Carbon::now()->between($item['from'], $item['to'])) {
                 $currentBonus = $item;
                 $rate *= $item['bonus'];
                 break;
@@ -91,21 +95,51 @@ class UserController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    function participate() {
+    function participate()
+    {
         return view('pages.participate');
     }
 
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    function userdetails() {
-        return view('pages.userdetails');
+    function showDetails()
+    {
+        abort(404);
+        return view('pages.details');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function showPassword()
+    {
+        return view('pages.password');
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function password(Request $request)
+    {
+        $this->validate($request, [
+            'password' => 'required|string|min:3|confirmed',
+        ]);
+
+        $user = auth()->user();
+
+        $user->password = Hash::make($request->get('password'));
+        $user->save();
+
+        return back()->with('status', 'Your password has been changed.');
     }
 
     /**
      * @return \Illuminate\View\View
      */
-    function affiliate() {
+    function affiliate()
+    {
         $banners = config('affiliate.banners');
         $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
         return view('pages.affiliate', compact('banners'));
@@ -120,7 +154,7 @@ class UserController extends Controller
     public function setAffiliateCookie($id)
     {
         return redirect(route_lang('home', ['lang' => 'en']))->withCookie(
-            new Cookie('bd-aff', (int) $id > 0 ? (int) $id : 0, Carbon::now()->addMonths(3))
+            new Cookie('bd-aff', (int)$id > 0 ? (int)$id : 0, Carbon::now()->addMonths(3))
         );
     }
 }
