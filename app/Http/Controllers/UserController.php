@@ -25,7 +25,6 @@ class UserController extends Controller
     }
 
     /**
-     * @param $lang
      * @param $participant
      * @param $token
      * @param string $destination
@@ -101,6 +100,9 @@ class UserController extends Controller
      * @return \Illuminate\View\View
      */
     function user() {
+        if(!auth()->user()->isAirdropParticipant()) {
+            return redirect()->route('address');
+        }
         return view('pages.user');
     }
 
@@ -108,7 +110,19 @@ class UserController extends Controller
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     function address() {
-        return view('pages.ico-address');
+        $ico = config('ico');
+        $currentBonus = false;
+        $rate = $ico['rate'];
+
+        foreach($ico['bonuses'] as $item) {
+            if(Carbon::now()->between($item['from'], $item['to'])) {
+                $currentBonus = $item;
+                $rate *= $item['bonus'];
+                break;
+            }
+        }
+
+        return view('pages.ico-address', compact('ico', 'currentBonus', 'rate'));
     }
 
     function participate() {

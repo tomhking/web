@@ -16,12 +16,22 @@
 
             <div class="main container-main">
                 <div class="container">
+                    @if($ico['end']->isPast())
+                        <div class="row">
+                            <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+                                <img src="{{ asset_rev('token.png') }}" alt="BDG Token">
+                                <h1>Crowdsale ended!</h1>
+                                <h4>Thank you for participating!</h4>
+                            </div>
+                        </div>
+                    @else
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1 eth-address">
                             <h1 class="text-center">Send ETH to this address and receive BDG tokens <b>NOW!</b></h1>
                             <div class="form-group">
-                                <input type="text" class="form-control" readonly value="" onclick="" id="ico-address">
+                                <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address">
                                 <p class="text-right" id="copy-address">
+                                    <span class="text-success copied" style="display: none">Copied!</span>
                                     <a class="btn">Copy Address</a>
                                 </p>
                             </div>
@@ -30,31 +40,41 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
-                            <div class="crowdsale-info-table text-center">
-
-                                <div class="col-xs-4 col-sm-4 col-md-4">
-                                    <h4>Exchange rate</h4>
-                                    <p>1 ETH = 10,000 BDG*</p>
-
+                            @if($currentBonus)
+                                <div class="crowdsale-info-table text-center">
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        <h4>{{ $currentBonus['name'] }}</h4>
+                                        <p>{{ ($currentBonus['bonus']-1) * 100 }}%</p>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                        <h4>Exchange rate with bonus</h4>
+                                        <p>1 ETH = {{ number_format($rate) }} BDG</p>
+                                    </div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 last">
+                                        <h4>Gas Limit</h4>
+                                        <p>200,000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
+                                        <h2>{{ $currentBonus['name'] }} ends in:</h2>
+                                        @include('partials.countdown', ['timeLeft' => $currentBonus['to']->timestamp - time()])
+                                    </div>
                                 </div>
-                                <div class="col-xs-4 col-sm-4 col-md-4">
-
-                                    <h4>Gas Limit</h4>
-                                    <p>200,000</p>
-
+                            @else
+                                <div class="crowdsale-info-table text-center">
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <h4>Exchange rate</h4>
+                                        <p>1 ETH = {{ number_format($rate) }} BDG</p>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <h4>Gas Limit</h4>
+                                        <p>200,000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
+                                    <h2>Crowdsale ends in:</h2>
+                                        @include('partials.countdown', ['timeLeft' => $ico['end']->timestamp - time()])
+                                    </div>
                                 </div>
-
-                                <div class="col-xs-4 col-sm-4 col-md-4 last">
-                                    <h4>Week 1 Bonus</h4>
-                                    <p>15%</p>
-                                </div>
-
-                                <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
-                                <h2>Week 1 Bonus ends in:</h2>
-                                    @include('partials.countdown', ['timeLeft' => 25115])
-                                </div>
-
-                            </div>
+                            @endif
                         </div>
                     </div>
 
@@ -74,14 +94,13 @@
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">
-                                        <a href="{{ route('userdetails') }}" type="submit" class="btn btn-primary button-done">DONE</a></div>
+                                        <a href="{{ route('userdetails') }}" type="submit" class="btn btn-primary button-done">DONE</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
+                    @endif
                 </div>
             </div>
         </div>
@@ -90,3 +109,24 @@
 
 @endsection
 
+@push('body-scripts')
+    <script>
+        jqWait(function () {
+            var copyContainer = $('#copy-address'), button = $('.btn', copyContainer), address = $('#ico-address'), message = $('.copied', copyContainer), handle;
+
+            if(typeof document.execCommand === 'function') {
+                copyContainer.show();
+            }
+
+            button.click(function () {
+                address.select();
+                document.execCommand('Copy');
+                message.fadeIn();
+                if(handle) clearTimeout(handle);
+                handle = setTimeout(function () {
+                    message.fadeOut();
+                }, 2500);
+            });
+        })
+    </script>
+@endpush
