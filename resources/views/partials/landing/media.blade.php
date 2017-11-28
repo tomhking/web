@@ -49,10 +49,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://www.ted.com/talks/bill_gates_teachers_need_real_feedback/transcript?language=en" rel="nofollow" target="_blank">
-                            <img src="{{ asset('media-posts/bill-gates-ted.jpg') }}" alt="Bill Gates At TED Talks Education">
-                            <h4>Bill Gates At TED Talks Education</h4>
-                            <p class="article-date"><span>May 2013</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/bitdegree-takes-further-security-measures-to-ensure-token-holder-safety-ahead-of-token-sale-7426b1596cec" rel="nofollow" target="_blank">
+                            <img src="{{ asset('media-posts/bdg-security.jpg') }}" alt="Bill Gates At TED Talks Education">
+                            <h4>More security to protect BitDegree token</h4>
+                            <p class="article-date"><span>Nov 17, 2017</span></p>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
@@ -80,10 +80,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://blog.bitdegree.org/bitdegree-takes-further-security-measures-to-ensure-token-holder-safety-ahead-of-token-sale-7426b1596cec" rel="nofollow" target="_blank">
-                            <img src="{{ asset('media-posts/bdg-security.jpg') }}" alt="Bill Gates At TED Talks Education">
-                            <h4>More security to protect BitDegree token</h4>
-                            <p class="article-date"><span>Nov 17, 2017</span></p>
+                        <a class="article-thumbnail" href="https://www.ted.com/talks/bill_gates_teachers_need_real_feedback/transcript?language=en" rel="nofollow" target="_blank">
+                            <img src="{{ asset('media-posts/bill-gates-ted.jpg') }}" alt="Bill Gates At TED Talks Education">
+                            <h4>Bill Gates At TED Talks Education</h4>
+                            <p class="article-date"><span>May 2013</span></p>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
@@ -94,10 +94,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://medium.com/the-mission/focus-on-learning-and-creating-rather-than-being-entertained-and-distracted-e6573de1bc84" rel="nofollow" target="_blank">
-                            <img src="{{ asset('media-posts/focus-on-learning.jpg') }}" alt="Token Backed by Hostinger services">
-                            <h4>Focus On Learning</h4>
-                            <p class="article-date"><span>Sep 29, 2017</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/the-bitdegree-token-crowdsale-pledge-d92a144b8bcb" rel="nofollow" target="_blank">
+                            <img src="{{ asset('media-posts/bdg-pledge.jpg') }}" alt="BitDegree Token Sale Pledge: #fair2everyone">
+                            <h4>BitDegree Token Sale Pledge: #fair2everyone</h4>
+                            <p class="article-date"><span>Nov 23, 2017</span></p>
                         </a>
                     </div>
                 </div>
