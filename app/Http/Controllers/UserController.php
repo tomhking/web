@@ -162,7 +162,7 @@ class UserController extends Controller
      */
     public function setAffiliateCookie($id)
     {
-        return redirect(route_lang('home', ['lang' => 'en']))->withCookie(
+        return redirect()->route('home')->withCookie(
             new Cookie('bd-aff', (int)$id > 0 ? (int)$id : 0, Carbon::now()->addMonths(3))
         );
     }

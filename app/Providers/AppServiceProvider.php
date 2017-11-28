@@ -63,7 +63,7 @@ class AppServiceProvider extends ServiceProvider
         User::creating(function (User $self) {
             $affiliateID = (int) request()->cookie('bd-aff', 0);
 
-            if($affiliateID > 0 && User::find($affiliateID)->exists()) {
+            if($affiliateID > 0 && User::find($affiliateID) instanceof User) {
                 $self->affiliate_id = $affiliateID;
             }
 
