@@ -3,13 +3,23 @@
 namespace App\Listeners;
 
 use App\Contracts\Mailable;
+use App\Events\Event;
+use App\Events\SignUp;
 use App\Library\Mailer;
-use Illuminate\Contracts\Events\Dispatcher;
 use Mailer\Formatters\Events;
 use Mailer\Notification;
 
 class MailListener
 {
+
+    /**
+     * Events that this listener must listen to
+     *
+     * @var array
+     */
+    private $mailableEvents = [
+        SignUp::class,
+    ];
 
     /**
      * Create the event listener.
@@ -22,11 +32,26 @@ class MailListener
     }
 
     /**
-     * Handle the outgoing mail
-     * @param Mailable $event
+     * Register the listeners for the subscriber.
+     *
+     * @param  \Illuminate\Events\Dispatcher  $events
      */
-    public function handle(Mailable $event)
+    public function subscribe($events){
+        foreach($this->mailableEvents as $event) {
+            $events->listen($event, self::class.'@handle');
+        }
+    }
+
+    /**
+     * Handle the outgoing mail
+     * @param Event $event
+     */
+    public function handle(Event $event)
     {
+        if(!$event instanceof Mailable) {
+            return;
+        }
+
         /** @var Mailer $mailer */
         $mailer = app(Mailer::class);
 

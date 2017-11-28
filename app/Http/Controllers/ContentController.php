@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Participant;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
-use Symfony\Component\HttpFoundation\Cookie;
+use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ContentController extends Controller
 {
@@ -26,7 +27,7 @@ class ContentController extends Controller
     function home(Request $request)
     {
         return response(view('pages.home', [
-            'canGetFreeTokens' => true,
+            'canGetFreeTokens' => false,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)
         ])->render());
@@ -43,22 +44,88 @@ class ContentController extends Controller
 
         $icoStart = Carbon::createFromTimestamp(env('ICO_STARTS_AT'));
         $icoEnd = Carbon::createFromTimestamp(env('ICO_ENDS_AT'));
-        $icoDataAvailable = (bool) env('ICO_INFO_AVAILABLE', false);
 
-        $showAddress = $icoDataAvailable && !!$request->cookie('participant', false);
+        $showAddress = !!$request->cookie('participant', false);
+        $displaySignUp = $request->has('email');
 
-        $raisedDecimals = 4;
-        $raised = Cache::get('ico_balance', ['balance' => 0])['balance'] ?? 0;
-        $raisedEth = bcdiv($raised, bcpow(10, 18 - $raisedDecimals)) / pow(10, $raisedDecimals);
+        $raisedDecimals = env('SOLD_COUNTER_DECIMALS', 0);
+        $tokensSold = bcdiv(Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0, bcpow(10, env('TOKEN_DECIMALS') - $raisedDecimals)) / pow(10, $raisedDecimals);
 
-        $hardCapEth = env('ICO_HARD_CAP');
-        $softCapEth = env('ICO_SOFT_CAP');
+        $hardCap = env('ICO_HARD_CAP');
+        $softCap = env('ICO_SOFT_CAP');
 
-        $progress = $raisedEth / $hardCapEth * 100;
+        $progress = $tokensSold / $hardCap * 100;
 
         $icoAddress = env('ICO_ADDRESS');
         $icoRate = env('ICO_RATE');
         $totalSupply = env('TOKEN_SUPPLY');
+
+
+        if($request->get('key') == env('ICO_PREVIEW_KEY') && $request->has('mock')) {
+            switch ($request->get('mock')) {
+                case "pre_ico_addr_unavailable":
+                case "pre_ico_addr_available":
+                    $icoStart = Carbon::today()->addDay();
+                    $icoEnd = $icoStart->copy()->addDay();
+                    break;
+                case "ico_started_pre_softcap":
+                case "ico_started_pre_hardcap":
+                    $icoStart = Carbon::today()->subDay();
+                    $icoEnd = Carbon::today()->addDays(2);
+                    $tokensSold = ($request->get('mock') == "ico_started_pre_softcap" ? $softCap : $hardCap) / 2;
+                    break;
+                case "ico_ended_pre_softcap":
+                case "ico_ended_pre_hardcap":
+                case "ico_ended_hardcap":
+                    $icoStart = Carbon::today()->subDay();
+                    $icoEnd = Carbon::today();
+                    $tokensSold = ($request->get('mock') == "ico_ended_pre_softcap" ? $softCap : $hardCap) / 2;
+                    $tokensSold = $request->get('mock') == "ico_ended_hardcap" ? $hardCap : $tokensSold;
+                    break;
+            }
+
+            $showAddress = $request->has('participant');
+            $progress = $tokensSold / $hardCap * 100;
+        }
+
+        return view('pages.ico', compact(
+            'icoStart',
+            'icoEnd',
+            'icoAddress',
+            'hardCap',
+            'softCap',
+            'tokensSold',
+            'showAddress',
+            'raisedDecimals',
+            'progress',
+            'icoRate',
+            'totalSupply',
+            'displaySignUp'
+        ));
+    }
+
+    /**
+     * Displays ICO address
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
+     */
+    public function icoAddress(Request $request) {
+        $icoAddress = env('ICO_ADDRESS');
+
+        if(empty($icoAddress)) {
+            throw new UnauthorizedHttpException('ICO address is not yet available.');
+        }
+
+        // Retrieve participant details
+
+        $participant = Participant::getCurrent();
+
+        if(!$participant instanceof Participant) {
+            return redirect(route('ico') . '?email');
+        }
+
+        // Handle countries
 
         $countries = app()->make('countries');
         $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP', 'CN'];
@@ -74,53 +141,12 @@ class ContentController extends Controller
             //
         }
 
-
-        if($request->get('key') == env('ICO_PREVIEW_KEY') && $request->has('mock')) {
-            switch ($request->get('mock')) {
-                case "pre_ico_addr_unavailable":
-                case "pre_ico_addr_available":
-                    $icoStart = Carbon::today()->addDay();
-                    $icoEnd = $icoStart->copy()->addDay();
-                    $icoDataAvailable = $request->get('mock') == 'pre_ico_addr_available';
-                    break;
-                case "ico_started_pre_softcap":
-                case "ico_started_pre_hardcap":
-                    $icoStart = Carbon::today()->subDay();
-                    $icoEnd = Carbon::today()->addDays(2);
-                    $raisedEth = ($request->get('mock') == "ico_started_pre_softcap" ? $softCapEth : $hardCapEth) / 2;
-                    $icoDataAvailable = true;
-                    break;
-                case "ico_ended_pre_softcap":
-                case "ico_ended_pre_hardcap":
-                case "ico_ended_hardcap":
-                    $icoStart = Carbon::today()->subDay();
-                    $icoEnd = Carbon::today();
-                    $raisedEth = ($request->get('mock') == "ico_ended_pre_softcap" ? $softCapEth : $hardCapEth) / 2;
-                    $raisedEth = $request->get('mock') == "ico_ended_hardcap" ? $hardCapEth : $raisedEth;
-                    break;
-            }
-
-            $showAddress = $icoDataAvailable && $request->has('participant');
-            $progress = $raisedEth / $hardCapEth * 100;
-        }
-
-        return view('pages.ico', compact(
-            'icoStart',
-            'icoEnd',
-            'raised',
-            'icoAddress',
-            'hardCapEth',
-            'softCapEth',
-            'raisedEth',
-            'showAddress',
+        return view('pages.address', compact(
             'countries',
-            'currentCountry',
             'blacklistedCountries',
-            'raisedDecimals',
-            'progress',
-            'icoDataAvailable',
-            'icoRate',
-            'totalSupply'
+            'currentCountry',
+            'icoAddress',
+            'participant'
         ));
     }
 
@@ -148,7 +174,7 @@ class ContentController extends Controller
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
         if($availableCourses->has($course)) {
             if($lesson != 'intro') {
-                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+                return redirect(route('lesson', ['course' => $course, 'lesson' => 'intro']));
             }
 
             $hasLanding = file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'));
@@ -167,7 +193,7 @@ class ContentController extends Controller
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
         if($availableCourses->has($course)) {
             if(!file_exists(resource_path('views/pages/courses/'.$course.'/landing.blade.php'))) {
-                return redirect(route_lang('lesson', ['course' => $course, 'lesson' => 'intro']));
+                return redirect(route('lesson', ['course' => $course, 'lesson' => 'intro']));
             }
             return view('pages.courses.'.$course.'.landing');
         }
@@ -184,6 +210,6 @@ class ContentController extends Controller
             'web-developer' => 'full-stack-web-developer',
             'smart-contract-developer' => 'smart-contracts',
         ];
-        return redirect(route_lang('course', ['course' => $mappings[$course] ?? $course]), 301);
+        return redirect(route('course', ['course' => $mappings[$course] ?? $course]), 301);
     }
 }

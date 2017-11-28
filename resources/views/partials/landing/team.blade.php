@@ -12,7 +12,7 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
-                            <img class="team-member-image" src="{{ asset('team/andrius-putna.png') }}" alt="Andrius Putna">
+                            <img class="team-member-image" src="{{ asset_rev('team/andrius-putna.png') }}" alt="Andrius Putna">
                         </div>
                         <div class="team-member-data">
                             <h3 class="title">Andrius <b>Putna</b></h3>
@@ -31,7 +31,7 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
-                            <img class="team-member-image" src="{{ asset('team/roberto-santana-2.png') }}" alt="Roberto Santana">
+                            <img class="team-member-image" src="{{ asset_rev('team/roberto-santana-2.png') }}" alt="Roberto Santana">
                         </div>
                         <div class="team-member-data">
                             <h3 class="title">Roberto <b>Santana</b></h3>
@@ -49,7 +49,7 @@
                 <div class="col-xs-12 col-sm-4">
                     <div class="team-member">
                         <div class="team-member-image-holder">
-                            <img class="team-member-image" src="{{ asset('team/jeff-burton.png') }}" alt="Jeff Burton">
+                            <img class="team-member-image" src="{{ asset_rev('team/jeff-burton.png') }}" alt="Jeff Burton">
                         </div>
                         <div class="team-member-data">
                             <h3 class="title">Jeff <b>Burton</b></h3>
@@ -73,7 +73,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
-                            <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
+                            <img class="team-member-image" src="{{ asset_rev('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
                         </div>
 
                         <div class="team-member-data">
@@ -94,7 +94,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#ArnasModal">
-                                                <img class="team-member-image" src="{{ asset('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
+                                                <img class="team-member-image" src="{{ asset_rev('team/arnas-stuopelis.png') }}" alt="Arnas Stuopelis">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Arnas <b>Stuopelis</b></h3>
@@ -122,7 +122,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#MauriceModal">
-                            <img class="team-member-image" src="{{ asset('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
+                            <img class="team-member-image" src="{{ asset_rev('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
                         </div>
 
                         <div class="team-member-data">
@@ -142,7 +142,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#MauriceModal">
-                                                <img class="team-member-image" src="{{ asset('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
+                                                <img class="team-member-image" src="{{ asset_rev('team/maurice-de-hond.png') }}" alt="Maurice De Hond">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Maurice <b>De Hond</b></h3>
@@ -169,7 +169,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#JamesModal">
-                            <img class="team-member-image" src="{{ asset('team/james-scarborough.png') }}" alt="James K. Scarborough">
+                            <img class="team-member-image" src="{{ asset_rev('team/james-scarborough.png') }}" alt="James K. Scarborough">
                         </div>
 
                         <div class="team-member-data">
@@ -189,7 +189,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#JamesModal">
-                                                <img class="team-member-image" src="{{ asset('team/james-scarborough.png') }}" alt="James K. Scarborough">
+                                                <img class="team-member-image" src="{{ asset_rev('team/james-scarborough.png') }}" alt="James K. Scarborough">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">James K. <b>Scarborough</b></h3>
@@ -218,7 +218,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
-                            <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
+                            <img class="team-member-image" src="{{ asset_rev('team/oleg-belousov.png') }}" alt="Oleg Belousov">
                         </div>
 
                         <div class="team-member-data">
@@ -238,7 +238,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#OlegModal">
-                                                <img class="team-member-image" src="{{ asset('team/oleg-belousov.png') }}" alt="Oleg Belousov">
+                                                <img class="team-member-image" src="{{ asset_rev('team/oleg-belousov.png') }}" alt="Oleg Belousov">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Oleg <b>Belousov</b></h3>
@@ -273,7 +273,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
-                            <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                            <img class="team-member-image" src="{{ asset_rev('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
                         </div>
 
                         <div class="team-member-data">
@@ -294,7 +294,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#BalysModal">
-                                                <img class="team-member-image" src="{{ asset('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
+                                                <img class="team-member-image" src="{{ asset_rev('team/balys-kriksciunas.png') }}" alt="Balys Krikščiūnas">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Balys <b>Krikščiūnas</b></h3>
@@ -324,7 +324,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#AntanasModal">
-                            <img class="team-member-image" src="{{ asset('team/antanas-patasius.png') }}" alt="Antanas Patašius">
+                            <img class="team-member-image" src="{{ asset_rev('team/antanas-patasius.png') }}" alt="Antanas Patašius">
                         </div>
 
                         <div class="team-member-data">
@@ -345,7 +345,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#AntanasModal">
-                                                <img class="team-member-image" src="{{ asset('team/antanas-patasius.png') }}" alt="Antanas Patašius">
+                                                <img class="team-member-image" src="{{ asset_rev('team/antanas-patasius.png') }}" alt="Antanas Patašius">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Antanas <b>Patašius</b></h3>
@@ -373,7 +373,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#DonatasModal">
-                            <img class="team-member-image" src="{{ asset('team/donatas-abraitis.png') }}" alt="Donatas Abraitis">
+                            <img class="team-member-image" src="{{ asset_rev('team/donatas-abraitis.png') }}" alt="Donatas Abraitis">
                         </div>
 
                         <div class="team-member-data">
@@ -394,7 +394,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#DonatasModal">
-                                                <img class="team-member-image" src="{{ asset('team/donatas-abraitis.png') }}" alt="Donatas Abraitis">
+                                                <img class="team-member-image" src="{{ asset_rev('team/donatas-abraitis.png') }}" alt="Donatas Abraitis">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Donatas <b>Abraitis</b></h3>
@@ -422,7 +422,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#MartynasModal">
-                            <img class="team-member-image" src="{{ asset('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
+                            <img class="team-member-image" src="{{ asset_rev('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
                         </div>
 
                         <div class="team-member-data">
@@ -443,7 +443,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#MartynasModal">
-                                                <img class="team-member-image" src="{{ asset('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
+                                                <img class="team-member-image" src="{{ asset_rev('team/martynas-andriuskevicius.png') }}" alt="Martynas Andriuškevičius">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Martynas <b>Andriuškevičius</b></h3>
@@ -474,7 +474,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#ErvinasModal">
-                            <img class="team-member-image" src="{{ asset('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
+                            <img class="team-member-image" src="{{ asset_rev('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
                         </div>
 
                         <div class="team-member-data">
@@ -494,7 +494,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#ErvinasModal">
-                                                <img class="team-member-image" src="{{ asset('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
+                                                <img class="team-member-image" src="{{ asset_rev('team/ervinas-rimdeika.png') }}" alt="Ervinas Rimdeika">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Ervinas <b>Rimdeika</b></h3>
@@ -522,7 +522,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#RioModal">
-                            <img class="team-member-image" src="{{ asset('team/rio-asatiani.png') }}" alt="R.A.">
+                            <img class="team-member-image" src="{{ asset_rev('team/rio-asatiani.png') }}" alt="R.A.">
                         </div>
 
                         <div class="team-member-data">
@@ -542,7 +542,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#RioModal">
-                                                <img class="team-member-image" src="{{ asset('team/rio-asatiani.png') }}" alt="R.A.">
+                                                <img class="team-member-image" src="{{ asset_rev('team/rio-asatiani.png') }}" alt="R.A.">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Rio <b>Asatiani</b></h3>
@@ -569,7 +569,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#DanieliusModal">
-                            <img class="team-member-image" src="{{ asset('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
+                            <img class="team-member-image" src="{{ asset_rev('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
                         </div>
 
                         <div class="team-member-data">
@@ -589,7 +589,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#DanieliusModal">
-                                                <img class="team-member-image" src="{{ asset('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
+                                                <img class="team-member-image" src="{{ asset_rev('team/danielius-stasiulis.png') }}" alt="Danielius Stasiulis">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Danielius <b>Stasiulis</b></h3>
@@ -617,7 +617,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#DariusModal">
-                            <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
+                            <img class="team-member-image" src="{{ asset_rev('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
                         </div>
 
                         <div class="team-member-data">
@@ -637,7 +637,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#DariusModal">
-                                                <img class="team-member-image" src="{{ asset('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
+                                                <img class="team-member-image" src="{{ asset_rev('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Darius <b>Rugevičius</b></h3>
@@ -666,7 +666,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#EdgarasModal">
-                            <img class="team-member-image" src="{{ asset('team/edgaras-lukosevicius.png') }}" alt="Edgaras Lukoševičius">
+                            <img class="team-member-image" src="{{ asset_rev('team/edgaras-lukosevicius.png') }}" alt="Edgaras Lukoševičius">
                         </div>
 
                         <div class="team-member-data">
@@ -687,7 +687,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#EdgarasModal">
-                                                <img class="team-member-image" src="{{ asset('team/edgaras-lukosevicius.png') }}" alt="Edgaras Lukoševičius">
+                                                <img class="team-member-image" src="{{ asset_rev('team/edgaras-lukosevicius.png') }}" alt="Edgaras Lukoševičius">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Edgaras <b>Lukosevicius</b></h3>
@@ -716,7 +716,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#JulijaModal">
-                            <img class="team-member-image" src="{{ asset('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
+                            <img class="team-member-image" src="{{ asset_rev('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
                         </div>
 
                         <div class="team-member-data">
@@ -736,7 +736,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#JulijaModal">
-                                                <img class="team-member-image" src="{{ asset('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
+                                                <img class="team-member-image" src="{{ asset_rev('team/julija-sabaliauskaite.png') }}" alt="Julija Sabaliauskaitė">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Julija <b>Sabaliauskaitė</b></h3>
@@ -764,7 +764,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#SaruneModal">
-                            <img class="team-member-image" src="{{ asset('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
+                            <img class="team-member-image" src="{{ asset_rev('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
                         </div>
 
                         <div class="team-member-data">
@@ -784,7 +784,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#SaruneModal">
-                                                <img class="team-member-image" src="{{ asset('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
+                                                <img class="team-member-image" src="{{ asset_rev('team/sarune-saulyte.png') }}" alt="Šarūnė Šaulytė">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Šarūnė <b>Šaulytė</b></h3>
@@ -810,7 +810,7 @@
                     <div class="team-member">
 
                         <div class="team-member-image-holder" data-toggle="modal" data-target="#DovileModal">
-                            <img class="team-member-image" src="{{ asset('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
+                            <img class="team-member-image" src="{{ asset_rev('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
                         </div>
 
                         <div class="team-member-data">
@@ -830,7 +830,7 @@
                                         <div class="modal-body">
 
                                             <div class="team-member-image-holder" data-toggle="modal" data-target="#DovileModal">
-                                                <img class="team-member-image" src="{{ asset('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
+                                                <img class="team-member-image" src="{{ asset_rev('team/dovile-tarutyte.png') }}" alt="Dovilė Tarutytė">
                                             </div>
                                             <div class="team-member-data">
                                                 <h3 class="title">Dovilė <b>Tarutytė</b></h3>
@@ -860,7 +860,7 @@
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#RokasModal">
-                                <img class="team-member-image" src="{{ asset('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
+                                <img class="team-member-image" src="{{ asset_rev('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
                             </div>
 
                             <div class="team-member-data">
@@ -880,7 +880,7 @@
                                             <div class="modal-body">
 
                                                 <div class="team-member-image-holder" data-toggle="modal" data-target="#RokasModal">
-                                                    <img class="team-member-image" src="{{ asset('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
+                                                    <img class="team-member-image" src="{{ asset_rev('team/rokas-malakauskas.png') }}" alt="Rokas Malakauskas">
                                                 </div>
                                                 <div class="team-member-data">
                                                     <h3 class="title">Rokas <b>Malakauskas</b></h3>
@@ -908,7 +908,7 @@
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
-                                <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
+                                <img class="team-member-image" src="{{ asset_rev('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
                             </div>
 
                             <div class="team-member-data">
@@ -928,7 +928,7 @@
                                             <div class="modal-body">
 
                                                 <div class="team-member-image-holder" data-toggle="modal" data-target="#AurimasModal">
-                                                    <img class="team-member-image" src="{{ asset('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
+                                                    <img class="team-member-image" src="{{ asset_rev('team/aurimas-lapiene.png') }}" alt="Aurimas Lapienė">
                                                 </div>
                                                 <div class="team-member-data">
                                                     <h3 class="title">Aurimas <b>Lapienė</b></h3>
@@ -956,7 +956,7 @@
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#SkirmantasModal">
-                                <img class="team-member-image" src="{{ asset('team/skirmantas-juraska.png') }}" alt="Skirmantas Juraška">
+                                <img class="team-member-image" src="{{ asset_rev('team/skirmantas-juraska.png') }}" alt="Skirmantas Juraška">
                             </div>
 
                             <div class="team-member-data">
@@ -976,7 +976,7 @@
                                             <div class="modal-body">
 
                                                 <div class="team-member-image-holder" data-toggle="modal" data-target="#SkirmantasModal">
-                                                    <img class="team-member-image" src="{{ asset('team/skirmantas-juraska.png') }}" alt="Skirmantas Juraška">
+                                                    <img class="team-member-image" src="{{ asset_rev('team/skirmantas-juraska.png') }}" alt="Skirmantas Juraška">
                                                 </div>
                                                 <div class="team-member-data">
                                                     <h3 class="title">Skirmantas <b>Juraška</b></h3>
@@ -1003,7 +1003,7 @@
                         <div class="team-member">
 
                             <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                                <img class="team-member-image" src="{{ asset('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
+                                <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
                             </div>
 
                             <div class="team-member-data">
@@ -1023,7 +1023,7 @@
                                             <div class="modal-body">
 
                                                 <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                                                    <img class="team-member-image" src="{{ asset('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
+                                                    <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
                                                 </div>
                                                 <div class="team-member-data">
                                                     <h3 class="title">Ričardas <b>Pocius</b></h3>

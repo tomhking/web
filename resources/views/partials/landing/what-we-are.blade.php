@@ -3,7 +3,11 @@
         <div class="row">
             <div class="col-xs-12 text-center">
                 <div class="title-container">
-                    <h2 class="title">@lang('navigation.what-it-is')</h2>
+                    <!--
+                    <h2 class="title">@lang('home.header_title')</h2>
+                    <h3 class="subtitle">@lang('home.header_subtitle')</h3>
+                    -->
+                            <h2 class="title">@lang('navigation.what-it-is')</h2>
                     <h3 class="subtitle">
                         @lang('home.bitdegree_description_1')
                     </h3>

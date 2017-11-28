@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
+use App\EmailConfirmation;
 use App\Library\Mailer;
-use App\Participant;
+use App\User;
+use Carbon\Carbon;
 use GeoIp2\Database\Reader;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -59,25 +60,29 @@ class AppServiceProvider extends ServiceProvider
             return isset(config('platforms')[$value]);
         });
 
-        config([
-            'platforms' => [
-                'solidity' => [
-                    'name' => 'BitDegree Solidity Course',
-                    'audience' => env('PLATFORM_SOLIDITY_URL', 'http://localhost:4000'),
-                    'redirect' => env('PLATFORM_SOLIDITY_REDIRECT', 'http://localhost:4000/#auth:{token}'),
-                ]
-            ]
-        ]);
+        User::creating(function (User $self) {
+            $affiliateID = (int) request()->cookie('bd-aff', 0);
 
-        Participant::creating(function (Participant $self) {
-            /** @var Request $request */
-            $request = app()->make('request');
-            $affiliateID = (int) $request->cookie('bd-aff', 0);
-
-            if($affiliateID > 0 && Participant::find($affiliateID)->exists()) {
+            if($affiliateID > 0 && User::find($affiliateID)->exists()) {
                 $self->affiliate_id = $affiliateID;
             }
+
+            $self->ip = request()->ip();
         });
+
+        EmailConfirmation::creating(function(EmailConfirmation $self) {
+            $self->expires_at = Carbon::now()->addHours(12);
+        });
+
+        // Set the current language
+        $languages = app()->make('languages');
+        $languageFromSegment = request()->segment(1, 'en');
+        config()->set('app.locale', isset($languages[$languageFromSegment]) ? $languageFromSegment : config('app.fallback_locale'));
+        view()->share([
+            'languages' => $languages,
+            'currentLanguage' => config('app.locale'),
+            'defaultLanguage' => config('app.fallback_locale'),
+        ]);
     }
 
     /**
@@ -172,10 +177,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton('courses', function ($app) {
             return [
                 [
-                    'url' => route_lang('course', ['course' => 'smart-contracts']),
+                    'url' => route('course', ['course' => 'smart-contracts']),
                     'key' => 'smart-contracts',
-                    'image' => asset('smart-contracts.jpg'),
-                    'sponsor' => asset('nexchange.png'),
+                    'image' => asset_rev('smart-contracts.jpg'),
+                    'sponsor' => asset_rev('nexchange.png'),
                     'overlay' => 'purple available',
                     'description' => 'CLASSROOM OPENS: February, 2018',
                     'title' => trans('courses.title_smart_contracts'),
@@ -185,7 +190,7 @@ class AppServiceProvider extends ServiceProvider
                 [
                     'url' => 'https://www.bitdegree.org/learn/web-fundamentals/',
                     'key' => 'web-fundamentals',
-                    'image' => asset('web-development.png'),
+                    'image' => asset_rev('web-development.png'),
                     'overlay' => 'green available',
                     'title' => trans('courses.title_web_fundamentals'),
                     'description' => 'Available Beta',
@@ -193,132 +198,132 @@ class AppServiceProvider extends ServiceProvider
                     'isBeta' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'full-stack-web-developer']),
+                    'url' => route('course', ['course' => 'full-stack-web-developer']),
                     'key' => 'full-stack-web-developer',
-                    'image' => asset('coding-fundamentals.png'),
+                    'image' => asset_rev('coding-fundamentals.png'),
                     'overlay' => 'blue',
                     'description' => 'CLASSROOM OPENS: January, 2018',
                     'title' => trans('courses.title_coding_fundamentals'),
                     'isNew' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'zcoin-protocol']),
+                    'url' => route('course', ['course' => 'zcoin-protocol']),
                     'key' => 'zcoin-protocol',
-                    'image' => asset('zcoin-protocol.jpg'),
-                    'sponsor' => asset('zcoin.png'),
+                    'image' => asset_rev('zcoin-protocol.jpg'),
+                    'sponsor' => asset_rev('zcoin.png'),
                     'overlay' => 'pink',
                     'title' => trans('courses.title_zcoin_protocol'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'ai-development']),
+                    'url' => route('course', ['course' => 'ai-development']),
                     'key' => 'ai-development',
-                    'image' => asset('ai-development.png'),
-                    'sponsor' => asset('singularitynet.png'),
+                    'image' => asset_rev('ai-development.png'),
+                    'sponsor' => asset_rev('singularitynet.png'),
                     'overlay' => 'yellow',
                     'title' => trans('courses.title_ai_development'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'deep-learning']),
+                    'url' => route('course', ['course' => 'deep-learning']),
                     'key' => 'deep-learning',
-                    'image' => asset('deep-learning.png'),
+                    'image' => asset_rev('deep-learning.png'),
                     'overlay' => 'grey',
                     'title' => trans('courses.title_deep_learning'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'blockchain-basics']),
+                    'url' => route('course', ['course' => 'blockchain-basics']),
                     'key' => 'blockchain-basics',
-                    'image' => asset('blockchain-basics.jpg'),
+                    'image' => asset_rev('blockchain-basics.jpg'),
                     'overlay' => 'blue',
                     'title' => trans('courses.title_blockchain_basics'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'ethereum-development']),
+                    'url' => route('course', ['course' => 'ethereum-development']),
                     'key' => 'ethereum-development',
-                    'image' => asset('eth-development.jpg'),
+                    'image' => asset_rev('eth-development.jpg'),
                     'overlay' => 'purple',
                     'title' => trans('courses.title_ethereum_development'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'react']),
+                    'url' => route('course', ['course' => 'react']),
                     'key' => 'react',
-                    'image' => asset('react.png'),
+                    'image' => asset_rev('react.png'),
                     'overlay' => 'green',
                     'title' => trans('courses.title_react'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'vr-development']),
+                    'url' => route('course', ['course' => 'vr-development']),
                     'key' => 'vr-development',
-                    'image' => asset('vr-development.png'),
+                    'image' => asset_rev('vr-development.png'),
                     'overlay' => 'grey',
                     'title' => trans('courses.title_vr_development'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'robotics']),
+                    'url' => route('course', ['course' => 'robotics']),
                     'key' => 'robotics',
-                    'image' => asset('robotics.png'),
+                    'image' => asset_rev('robotics.png'),
                     'overlay' => 'blue',
                     'title' => trans('courses.title_robotics'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'neuro-marketing']),
+                    'url' => route('course', ['course' => 'neuro-marketing']),
                     'key' => 'neuro-marketing',
-                    'image' => asset('neuro-marketing.png'),
+                    'image' => asset_rev('neuro-marketing.png'),
                     'overlay' => 'pink',
                     'title' => trans('courses.title_neuro_marketing'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'digital-graphics']),
+                    'url' => route('course', ['course' => 'digital-graphics']),
                     'key' => 'digital-graphics',
-                    'image' => asset('digital-graphics.png'),
+                    'image' => asset_rev('digital-graphics.png'),
                     'overlay' => 'blue',
                     'title' => trans('courses.title_digital_graphics'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'build-website']),
+                    'url' => route('course', ['course' => 'build-website']),
                     'key' => 'build-website',
-                    'image' => asset('build-website.jpg'),
+                    'image' => asset_rev('build-website.jpg'),
                     'overlay' => 'grey',
                     'title' => trans('courses.title_build_website'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'building-apps']),
+                    'url' => route('course', ['course' => 'building-apps']),
                     'key' => 'building-apps',
-                    'image' => asset('mobile-app.jpg'),
+                    'image' => asset_rev('mobile-app.jpg'),
                     'overlay' => 'yellow',
                     'title' => trans('courses.title_building_apps'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'game-development']),
+                    'url' => route('course', ['course' => 'game-development']),
                     'key' => 'game-development',
-                    'image' => asset('game-development.jpg'),
+                    'image' => asset_rev('game-development.jpg'),
                     'overlay' => 'green',
                     'title' => trans('courses.title_game_development'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'crypto-intro']),
+                    'url' => route('course', ['course' => 'crypto-intro']),
                     'key' => 'crypto-intro',
-                    'image' => asset('cryptocurrency.jpg'),
+                    'image' => asset_rev('cryptocurrency.jpg'),
                     'overlay' => 'yellow',
                     'title' => trans('courses.title_crypto_intro'),
                     'isSoon' => true,
                 ],
                 [
-                    'url' => route_lang('course', ['course' => 'ethereum-basics']),
+                    'url' => route('course', ['course' => 'ethereum-basics']),
                     'key' => 'ethereum-basics',
-                    'image' => asset('ethereum-basics.jpg'),
+                    'image' => asset_rev('ethereum-basics.jpg'),
                     'overlay' => 'purple',
                     'title' => trans('courses.title_ethereum_basics'),
                     'isSoon' => true,

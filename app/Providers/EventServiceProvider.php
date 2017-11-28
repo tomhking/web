@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
-use App\Events\FreeTokenSignup;
-use App\Events\LogIn;
+use App\Events\SignUp;
 use App\Listeners\MailListener;
-use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -14,13 +15,28 @@ class EventServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $listen = [
-        FreeTokenSignup::class => [
-            MailListener::class,
-        ],
-        LogIn::class => [
-            MailListener::class,
-        ],
+    protected $listen = [ ];
+
+    /**
+     * The subscriber classes to register.
+     *
+     * @var array
+     */
+    protected $subscribe = [
+        MailListener::class,
     ];
 
+    /**
+     * Register any events for your application.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        parent::boot();
+
+        Event::listen(Registered::class, function (Registered $event) {
+            event(new SignUp($event->user));
+        });
+    }
 }

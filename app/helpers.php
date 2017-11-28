@@ -1,49 +1,56 @@
 <?php
 
-if (!function_exists('asset')) {
+if (!function_exists('asset_rev')) {
     /**
      * Returns asset url based on given path
      * @param $path
      * @return string
      */
-    function asset($path)
+    function asset_rev($path)
     {
         $buildNumberFile = base_path('build-number.txt');
         $version = trim(file_exists($buildNumberFile) ? "?static=true&v=" . file_get_contents($buildNumberFile) : "");
-        return base('assets/' . $path) . $version;
+        return url('assets/' . $path) . $version;
     }
 }
 
-if (!function_exists('base')) {
+if (!function_exists('language_prefix')) {
     /**
-     * Returns absolute URL to a given path
-     * @param string $path
-     * @return string
-     */
-    function base($path = '')
-    {
-        return app('url')->to(getenv('BASE_PATH', '/')) . '/' . ltrim($path, '/');
-    }
-}
-
-if (!function_exists('route_lang')) {
-    /**
-     * Returns URL to a given named route. Appends language parameter.
+     * Returns current language key
      *
-     * @param $name
-     * @param array $parameters
-     * @param null $secure
      * @return string
      */
-    function route_lang($name, $parameters = [], $secure = null)
+    function language_prefix()
     {
         /**
          * @var \Illuminate\Http\Request $request
          */
         $request = app()->make('request');
+        $languages = app()->make('languages');
 
-        return rtrim(str_replace(['[',']',], '', route($name, array_merge([
-            'lang' => $parameters['lang'] ?? $request->segment(1, 'en'),
-        ], $parameters), $secure)), '/');
+        $languageFromSegment = $request->segment(1, 'en');
+        config()->set('app.locale', isset($languages[$languageFromSegment]) ? $languageFromSegment : config('app.fallback_locale'));
+    }
+}
+
+
+
+if (!function_exists('current_route_class')) {
+    /**
+     * Prints out the given string if current route matches the given route name
+     *
+     * @param $route
+     * @param string $class
+     * @return string
+     */
+    function current_route_class($route, $class = 'active')
+    {
+        $instance = request()->route();
+
+        if ($instance instanceof \Illuminate\Routing\Route && $instance->getName() == $route) {
+            return $class;
+        }
+
+        return '';
     }
 }
