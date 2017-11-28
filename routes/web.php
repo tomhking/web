@@ -38,6 +38,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/participate', 'UserController@participate')->name('participate');
             Route::get('/participate2', 'UserController@participate2')->name('participate2');
             Route::get('/participate3', 'UserController@participate3')->name('participate3');
+            Route::get('/participatefaq', 'UserController@participatefaq')->name('participatefaq');
         });
 
         // Statistics and mailing list export
