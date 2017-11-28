@@ -16,6 +16,7 @@ set :rsync_options, %w[
 ]
 set :shared_paths, [
     '.env',
+    'bootstrap/cache',
     'storage/framework',
     'storage/logs',
     'storage/app'
