@@ -3,16 +3,8 @@
 @section('content')
 
     <div class="container-fluid">
-        <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
-            <h4>What's next?</h4>
-            <ul class="sidebar-nav">
-                <li class="step-done"><a href="#">Step 1</a></li>
-                <li class="step-done"><a href="#">Step 2</a></li>
-                <li class="step-active"><a href="#">Step 3</a></li>
-            </ul>
-        </div>
 
-        <div class="col-sm-12  col-md-10 col-md-offset-2 pt-3 ">
+        <div class="col-sm-12 col-md-12 ">
 
             @include('partials.dashboard-tabs')
 
