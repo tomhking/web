@@ -129,6 +129,11 @@ class UserController extends Controller
         return view('pages.participate');
     }
 
+    function participate2() {
+        return view('pages.participate2');
+    }
+
+
     function userdetails() {
         return view('pages.userdetails');
     }

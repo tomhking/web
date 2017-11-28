@@ -30,6 +30,7 @@ Route::group(['prefix' => config('app.locale')], function() {
             Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
             Route::get('/profile', 'UserController@userdetails')->name('userdetails');
             Route::get('/participate', 'UserController@participate')->name('participate');
+            Route::get('/participate2', 'UserController@participate2')->name('participate2');
         });
 
         // Statistics and mailing list export
