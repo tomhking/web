@@ -17,7 +17,9 @@ Route::get('/', [function () {
 
 Route::get('a/{id}', 'UserController@setAffiliateCookie')->name('affiliate-cookie');
 
-Route::group(['prefix' => config('app.locale')], function() {
+Route::group(['prefix' => $locale = language_prefix()], function() use ($locale) {
+    App::setLocale($locale);
+
     Route::group(['prefix' => '/token'], function () {
         Route::get('/', 'ContentController@home')->name('home');
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');

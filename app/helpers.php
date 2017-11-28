@@ -30,6 +30,8 @@ if (!function_exists('language_prefix')) {
 
         $languageFromSegment = $request->segment(1, 'en');
         config()->set('app.locale', isset($languages[$languageFromSegment]) ? $languageFromSegment : config('app.fallback_locale'));
+
+        return config('app.locale');
     }
 }
 

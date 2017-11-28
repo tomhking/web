@@ -35,7 +35,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">Join Crowdsale</button></div>
+                    <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">{{ config('ico.started') ? "Join Crowdsale" : "Sign Up" }}</button></div>
                 </div>
             </div>
             {!! csrf_field() !!}
