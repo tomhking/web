@@ -35,3 +35,25 @@ if (!function_exists('language_prefix')) {
         config()->set('app.locale', isset($languages[$languageFromSegment]) ? $languageFromSegment : config('app.fallback_locale'));
     }
 }
+
+
+
+if (!function_exists('current_route_class')) {
+    /**
+     * Prints out the given string if current route matches the given route name
+     *
+     * @param $route
+     * @param string $class
+     * @return string
+     */
+    function current_route_class($route, $class = 'active')
+    {
+        $instance = request()->route();
+
+        if ($instance instanceof \Illuminate\Routing\Route && $instance->getName() == $route) {
+            return $class;
+        }
+
+        return '';
+    }
+}

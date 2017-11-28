@@ -79,4 +79,23 @@ class User extends Authenticatable
     {
         return $this->hasMany(EmailConfirmation::class);
     }
+
+    /**
+     * Returns true if current user participated in airdrop
+     * @return bool
+     */
+    public function isAirdropParticipant()
+    {
+        return $this->email_verified && $this->created_at->timestamp < strtotime('2017-11-28 19:00:00');
+    }
+
+
+    /**
+     * Always save email in lowercase
+     * @param $value
+     */
+    public function setEmailAttribute($value)
+    {
+        $this->attributes['email'] = strtolower($value);
+    }
 }
