@@ -4,6 +4,6 @@
         <li class="instructions"><a href="{{ route('participate') }}">How to create an ether wallet</a></li>
         <li class="instructions"><a href="{{ route('participate2') }}">How to get Ethereum</a></li>
         <li class="instructions"><a href="{{ route('participate3') }}">Alternative ways to get tokens</a></li>
-        <li class="instructions"><a href="#">FAQ</a></li>
+        <li class="instructions"><a href="{{ route('participatefaq') }}">FAQ</a></li>
     </ul>
 </div>
