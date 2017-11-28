@@ -10,7 +10,7 @@ if (!function_exists('asset_rev')) {
     {
         $buildNumberFile = base_path('build-number.txt');
         $version = trim(file_exists($buildNumberFile) ? "?static=true&v=" . file_get_contents($buildNumberFile) : "");
-        return url('assets/' . $path) . $version;
+        return url(env('BASE_PATH', '/').'assets/' . $path) . $version;
     }
 }
 
