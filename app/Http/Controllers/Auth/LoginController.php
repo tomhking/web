@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Carbon\Carbon;
+use Firebase\JWT\JWT;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
@@ -39,7 +41,18 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->redirectTo = route('address');
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest')->except(['logout', 'platformLogin']);
+    }
+
+    /**
+     * Show the application's login form.
+     *
+     * @param null $destination
+     * @return \Illuminate\Http\Response
+     */
+    public function showLoginForm($destination = null)
+    {
+        return view('auth.login', compact('destination'));
     }
 
     /**
@@ -55,6 +68,16 @@ class LoginController extends Controller
             'password' => 'required|string|min:3',
             'email' => 'required|string|email|max:255',
         ]);
+
+        if($request->has('destination')) {
+            $platforms = config('platforms');
+
+            if(isset($platforms[$request->get('destination')])) {
+                $this->redirectTo = route('platform-login', [
+                    'destination' => $request->get('destination'),
+                ]);
+            }
+        }
 
         $user = User::withEmail($request->get('email'))->first();
 
@@ -83,5 +106,30 @@ class LoginController extends Controller
         auth()->login($user);
 
         return redirect($this->redirectTo);
+    }
+
+    /**
+     * @param $destination
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function platformLogin($destination)
+    {
+        $platform = config('platforms');
+
+        if(auth()->check()) {
+            if ($destination = $platform[$destination] ?? false) {
+                $jwt = JWT::encode([
+                    'iss' => route('root'),
+                    'aud' => $destination['audience'],
+                    'iat' => Carbon::now()->timestamp,
+                    'exp' => Carbon::now()->addDays(2)->timestamp,
+                    'user' => auth()->user(),
+                ], env('JWT_SECRET'));
+
+                return redirect()->away(str_replace('{token}', $jwt, $destination['redirect']));
+            }
+        }
+
+        return redirect()->route('login', ['destination' => $destination]);
     }
 }

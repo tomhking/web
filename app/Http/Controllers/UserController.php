@@ -25,49 +25,6 @@ class UserController extends Controller
     }
 
     /**
-     * @param $participant
-     * @param $token
-     * @param string $destination
-     * @return $this|\Illuminate\View\View
-     */
-    function auth($participant, $token, $destination = '') {
-        abort(403);
-        $participant = User::findOrFail($participant);
-        $authToken = $participant->authTokens()->byKey($token)->first();
-
-        if($authToken instanceof AuthToken && $authToken->isUsable()) {
-            if(!$participant->email_verified) {
-                $participant->email_verified = true;
-                $participant->save();
-            }
-
-            $authToken->use();
-
-            $platform = config('platforms');
-
-            if($destination = $platform[$destination] ?? false) {
-                $jwt = JWT::encode([
-                    'iss' => route('root'),
-                    'aud' => $destination['audience'],
-                    'iat' => Carbon::now()->timestamp,
-                    'exp' => Carbon::now()->addDays(2)->timestamp,
-                    'user' => $participant
-                ], env('JWT_SECRET'));
-
-                return redirect(str_replace('{token}', $jwt, $destination['redirect']));
-            }
-
-            return redirect(route('user'))->withCookie(
-                new Cookie('auth', $authToken->key, Carbon::now()->addSeconds(AuthToken::TTL), '/')
-            );
-        }
-
-        return view('pages.notification', [
-            'message' => trans('user.link_expired'),
-        ]);
-    }
-
-    /**
      * Updates the progile of a logged in user
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Laravel\Lumen\Http\Redirector
@@ -103,6 +60,7 @@ class UserController extends Controller
         if(!auth()->user()->isAirdropParticipant()) {
             return redirect()->route('address');
         }
+
         return view('pages.user');
     }
 
@@ -111,6 +69,11 @@ class UserController extends Controller
      */
     function address() {
         $ico = config('ico');
+
+        if(!$ico['started']) {
+            return redirect()->route('affiliate');
+        }
+
         $currentBonus = false;
         $rate = $ico['rate'];
 
@@ -125,10 +88,16 @@ class UserController extends Controller
         return view('pages.ico-address', compact('ico', 'currentBonus', 'rate'));
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function participate() {
         return view('pages.participate');
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function userdetails() {
         return view('pages.userdetails');
     }
@@ -137,7 +106,9 @@ class UserController extends Controller
      * @return \Illuminate\View\View
      */
     function affiliate() {
-        return view('pages.affiliate');
+        $banners = config('affiliate.banners');
+        $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
+        return view('pages.affiliate', compact('banners'));
     }
 
     /**
