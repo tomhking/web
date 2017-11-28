@@ -27,16 +27,18 @@ Route::group(['prefix' => config('app.locale')], function() {
             Route::get('/user', 'UserController@user')->name('user');
             Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
             Route::get('/address', 'UserController@address')->name('address');
-            Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
-            Route::get('/profile', 'UserController@userdetails')->name('userdetails');
+            // Route::post('/profile', 'UserController@updateProfile')->name('participant-profile'); @todo
+            Route::get('/profile', 'UserController@showDetails')->name('details');
+            Route::get('/password', 'UserController@showPassword')->name('password');
+            Route::post('/password', 'UserController@password');
             Route::get('/participate', 'UserController@participate')->name('participate');
             Route::get('/participate2', 'UserController@participate2')->name('participate2');
             Route::get('/participate3', 'UserController@participate3')->name('participate3');
         });
 
         // Statistics and mailing list export
-        Route::get('/admin/stats', 'AdminController@stats')->name('admin.stats');
-        Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails');
+        // Route::get('/admin/stats', 'AdminController@stats')->name('admin.stats'); @todo
+        // Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails'); @todo
 
         // Authentication Routes...
         Route::get('login/{destination?}', 'Auth\LoginController@showLoginForm')->name('login');

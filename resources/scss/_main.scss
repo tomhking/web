@@ -1949,6 +1949,11 @@ body.login-page {
     .personal-details {
       margin-bottom: 35px;
     }
+    .change-password {
+      .buttons{
+        margin-top:4rem;
+      }
+    }
     .dashboard-navigation{
       background: #191c2f;
       border-bottom: 1px solid rgba(255, 255, 255, 0.12);

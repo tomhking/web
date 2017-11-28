@@ -94,7 +94,7 @@
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">
-                                        <a href="{{ route('userdetails') }}" type="submit" class="btn btn-primary button-done">DONE</a>
+                                        <a href="{{ route('details') }}" type="submit" class="btn btn-primary button-done">DONE</a>
                                     </div>
                                 </div>
                             </div>

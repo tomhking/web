@@ -24,7 +24,7 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1 personal-details">
-                            <form action="{{ route('participant-profile') }}" method="post">
+                            <form action="{{ route('details') }}" method="post">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
