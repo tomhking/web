@@ -1,5 +1,5 @@
 <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
-    <h4>What's next?</h4>
+    <h4>How to participate?</h4>
     <ul class="sidebar-nav">
         <li class="instructions"><a href="{{ route('participate') }}">How to create an ether wallet</a></li>
         <li class="instructions"><a href="{{ route('participate2') }}">How to get Ethereum</a></li>
