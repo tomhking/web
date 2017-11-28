@@ -31,6 +31,7 @@
                     <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">Log In</button></div>
                 </div>
             </div>
+            <input type="hidden" name="destination" value="{{ $destination }}">
             {!! csrf_field() !!}
         </form>
         <div class="text-center login-signup-link">

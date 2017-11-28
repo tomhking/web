@@ -18,12 +18,9 @@ if (!function_exists('language_prefix')) {
     /**
      * Returns current language key
      *
-     * @param $name
-     * @param array $parameters
-     * @param null $secure
      * @return string
      */
-    function language_prefix($name, $parameters = [], $secure = null)
+    function language_prefix()
     {
         /**
          * @var \Illuminate\Http\Request $request

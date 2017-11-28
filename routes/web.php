@@ -38,7 +38,8 @@ Route::group(['prefix' => config('app.locale')], function() {
         Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails');
 
         // Authentication Routes...
-        Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+        Route::get('login/{destination?}', 'Auth\LoginController@showLoginForm')->name('login');
+        Route::get('platform/{destination}', 'Auth\LoginController@platformLogin')->name('platform-login');
         Route::post('login', 'Auth\LoginController@loginOrSignUp');
         Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
