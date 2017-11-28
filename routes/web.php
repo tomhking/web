@@ -32,6 +32,7 @@ Route::group(['prefix' => config('app.locale')], function() {
             Route::get('/password', 'UserController@showPassword')->name('password');
             Route::post('/password', 'UserController@password');
             Route::get('/participate', 'UserController@participate')->name('participate');
+            Route::get('/participate2', 'UserController@participate2')->name('participate2');
         });
 
         // Statistics and mailing list export

@@ -100,6 +100,11 @@ class UserController extends Controller
         return view('pages.participate');
     }
 
+    function participate2() {
+        return view('pages.participate2');
+    }
+
+
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
