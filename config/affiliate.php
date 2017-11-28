@@ -6,37 +6,37 @@ return [
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/en/160x600.jpg'),
+                'url' => '/assets/affiliates/en/160x600.jpg',
 
             ],
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/en/160x600-alt.jpg'),
+                'url' => '/assets/affiliates/en/160x600-alt.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/en/300x250.jpg'),
+                'url' => '/assets/affiliates/en/300x250.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/en/300x250-alt.jpg'),
+                'url' => '/assets/affiliates/en/300x250-alt.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/en/728x90.jpg'),
+                'url' => '/assets/affiliates/en/728x90.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/en/728x90-alt.jpg'),
+                'url' => '/assets/affiliates/en/728x90-alt.jpg',
 
             ],
         ],
@@ -44,37 +44,37 @@ return [
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/ru/160x600.jpg'),
+                'url' => '/assets/affiliates/ru/160x600.jpg',
 
             ],
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/ru/160x600-alt.jpg'),
+                'url' => '/assets/affiliates/ru/160x600-alt.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/ru/300x250.jpg'),
+                'url' => '/assets/affiliates/ru/300x250.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/ru/300x250-alt.jpg'),
+                'url' => '/assets/affiliates/ru/300x250-alt.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/ru/728x90.jpg'),
+                'url' => '/assets/affiliates/ru/728x90.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/ru/728x90-alt.jpg'),
+                'url' => '/assets/affiliates/ru/728x90-alt.jpg',
 
             ],
         ],
@@ -82,36 +82,36 @@ return [
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/cn/160x600.jpg'),
+                'url' => '/assets/affiliates/cn/160x600.jpg',
             ],
             [
                 'width' => 160,
                 'height' => 600,
-                'url' => asset('/assets/affiliates/cn/160x600-alt.jpg'),
+                'url' => '/assets/affiliates/cn/160x600-alt.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/cn/300x250.jpg'),
+                'url' => '/assets/affiliates/cn/300x250.jpg',
 
             ],
             [
                 'width' => 300,
                 'height' => 250,
-                'url' => asset('/assets/affiliates/cn/300x250-alt.jpg'),
+                'url' => '/assets/affiliates/cn/300x250-alt.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/cn/728x90.jpg'),
+                'url' => '/assets/affiliates/cn/728x90.jpg',
 
             ],
             [
                 'width' => 728,
                 'height' => 90,
-                'url' => asset('/assets/affiliates/cn/728x90-alt.jpg'),
+                'url' => '/assets/affiliates/cn/728x90-alt.jpg',
 
             ],
         ]

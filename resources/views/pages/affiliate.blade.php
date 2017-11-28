@@ -63,9 +63,9 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="banner-image">
-                                        <img src="{{ $banner['url'] }}" alt="BitDegree:From EA co-founder, former COURSERA Lead &amp; 29,000,000 users. Limited 15% discount - Get Tokens!">
+                                        <img src="{{ asset_rev($banner['url']) }}" alt="BitDegree:From EA co-founder, former COURSERA Lead &amp; 29,000,000 users. Limited 15% discount - Get Tokens!">
                                     </div>
-                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('home').'" target="_blank"><img src="'.$banner['url'].'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!"></a>'}}</textarea>
+                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('home').'" target="_blank"><img src="'.asset_rev($banner['url']).'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!"></a>'}}</textarea>
                                 </div>
                             </div>
                         @endforeach
