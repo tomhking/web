@@ -11,7 +11,7 @@
                 <img class="token-image" src="{{ asset_rev('token.png') }}" alt="BitDegree Token">
                 <p>@lang('user.congratulations', ['name' => auth()->user()->first_name ? : auth()->user()->email])</p>
                 <div class="amount-of-tokens">
-                    @lang('user.tokens_secured', ['number' => 1])
+                    @lang('user.tokens_secured', ['number' => 10])
                 </div>
                 <div class="col-md-8 col-md-offset-2 text-left">
                     <div class="well">

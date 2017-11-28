@@ -2951,6 +2951,12 @@ header .header-content {
   .communicate .contact {
     text-align: center;
     margin-top: 20px;
+    .cta-btn {
+      text-transform: none;
+      font-size:1.2em;
+      height:auto;
+      margin-bottom:1.4em;
+    }
   }
 }
 

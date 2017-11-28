@@ -107,17 +107,7 @@
                                 <p><a class="btn btn-account" href="{{ route('user') }}">@lang('user.my_account')</a></p>
                             @endauth
                             @guest
-                                @if($canGetFreeTokens)
-                                <form action="{{ route('join') }}" method="post">
-                                    <input class="suscribe-input" name="email" type="email" placeholder="@lang('user.enter_email')" value="{{ $email }}" required>
-                                    <button type="submit" class="submit">@lang('home.free_tokens')</button>
-                                </form>
-                                @else
-                                    <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                                        <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" value="{{ $email }}" required>
-                                        <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
-                                    </form>
-                                @endif
+                                <a class="cta-btn" href="{{ route('register') }}">Join BitDegree Now</a>
                             @endguest
                             <div class="contact-icons buttons">
                                 <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset_rev('telegram-logo.png') }}" alt="Telegram"></a>
