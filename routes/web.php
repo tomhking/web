@@ -31,6 +31,7 @@ Route::group(['prefix' => config('app.locale')], function() {
             Route::get('/profile', 'UserController@userdetails')->name('userdetails');
             Route::get('/participate', 'UserController@participate')->name('participate');
             Route::get('/participate2', 'UserController@participate2')->name('participate2');
+            Route::get('/participate3', 'UserController@participate3')->name('participate3');
         });
 
         // Statistics and mailing list export
