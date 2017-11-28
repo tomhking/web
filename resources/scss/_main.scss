@@ -2233,6 +2233,45 @@ body.login-page {
         }
       }
     }
+    &.instructions{
+      .card-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        h3{
+          font-size:28px;
+          margin:0;
+          padding:15px 0;
+        }
+      }
+      .card-body {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 25px;
+        p.instructions-note {
+          color: #fff;
+          background: 0;
+          font-family: "Work Sans", sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 1px;
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          border-radius: 0;
+          padding: 25px 35px;
+          margin: 35px 0;
+        }
+        h4 {
+          font-size: 20px;
+          font-weight: 300;
+          margin: 25px 0;
+        }
+        .instructions-button h3::before{
+          content: "\f067";
+          font-family: Fontawesome;
+          font-size: 16px;
+          color: #fff;
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
 
