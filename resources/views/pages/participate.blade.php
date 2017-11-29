@@ -15,6 +15,13 @@
                             <p class="subtitle">First of all you need to have an Ether wallet. Creating an ether wallet is a must in order to participate in the crowdsale and receive your tokens.</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="well">
+                                <p><b><span class="red">Do NOT send Ether from an exchange.</span></b> Use MyEtherWallet (recommended), MetaMask, Mist wallets, or other ERC20 compatible ones.</p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
@@ -62,7 +69,7 @@
                                             <p>Now that you have created the wallet you should now be able to see your Ethereum public address under the Your Address label or the Account Address section.</p>
                                             <img src="{{ asset_rev('instructions/myetherwallet-7.png') }}" alt="Myetherwallet">
                                             <p class="instructions-note"><span><b>NOTE:</b></span>
-                                                You will need to provide this public address during your registration for the BitDegree token sale.<br>
+                                                You will need to provide this public address during registration for the BitDegree token sale & to receive ETH to your wallet.<br>
                                                 You will need to provide this public address to transfer ETH to your wallet.<br>
                                                 Do not lose your password and the keystore file, as you will need to use them in the BitDegree token sale.</p>
                                         </div>
@@ -131,7 +138,7 @@
                                             <h4><b>Step 7:</b> Here is the account overview screen you will see once the download is complete, you can use <b>SEND</b> to send Ether. To receive the ether from other party, simply share the address from <b>Step 5.</b></h4>
                                             <img src="{{ asset_rev('instructions/mist-6.png') }}" alt="Mist">
 
-                                            <p class="instructions-note"><span><b>NOTE:</b></span> You will need to provide this public address during your registration for the BitDegree token sale.<br>
+                                            <p class="instructions-note"><span><b>NOTE:</b></span> You will need to provide this public address during registration for the BitDegree token sale & to receive ETH to your wallet.<br>
                                                 You will need to provide this public address to transfer ETH to your wallet.<br>
                                                 Do not lose your password and the keystore file, as you will need to use them in the BitDegree token sale.</p>
                                         </div>

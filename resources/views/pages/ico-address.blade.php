@@ -43,8 +43,99 @@
                             @if($currentBonus)
                                 <div class="crowdsale-info-table text-center">
                                     <div class="col-xs-4 col-sm-4 col-md-4">
-                                        <h4>{{ $currentBonus['name'] }}</h4>
-                                        <p>{{ ($currentBonus['bonus']-1) * 100 }}%</p>
+
+                                            <div class="bonuses-modal">
+
+                                                <div class="week-bonus" data-toggle="modal" data-target="#BonusModal">
+                                                    <h4>{{ $currentBonus['name'] }}</h4>
+                                                    <p>{{ ($currentBonus['bonus']-1) * 100 }}%</p>
+                                                </div>
+
+                                                <div class="modal fade" role="dialog" id="BonusModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            </div>
+
+                                                            <div class="modal-body">
+                                                                <div class="bonuses-table">
+                                                                    <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
+                                                                    <table>
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                            </td>
+                                                                            <td>
+                                                                                15% BONUS
+                                                                            </td>
+                                                                            <td>
+                                                                                WEEK 1
+                                                                            </td>
+                                                                            <td>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                            </td>
+                                                                            <td>
+                                                                                10% BONUS
+                                                                            </td>
+                                                                            <td>
+                                                                               WEEK 2
+                                                                            </td>
+                                                                            <td>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                            </td>
+                                                                            <td>
+                                                                                5% BONUS
+                                                                            </td>
+                                                                            <td>
+                                                                                WEEk 3
+                                                                            </td>
+                                                                            <td>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                            </td>
+                                                                            <td>
+                                                                                0% BONUS
+                                                                            </td>
+                                                                            <td>
+                                                                                WEEK 4
+                                                                            </td>
+                                                                            <td>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
                                     </div>
                                     <div class="col-xs-4 col-sm-4 col-md-4">
                                         <h4>Exchange rate with bonus</h4>

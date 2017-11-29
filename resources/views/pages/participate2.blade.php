@@ -55,7 +55,14 @@
 
                                             <h4><b>Step 7:</b> Enter the desired amount and press <b>Buy x with y.</b></h4>
 
-                                            <h3>PART 2 — Transferring ETH to your wallet</h3>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-12">
+                                                    <h3>PART 2 — Transferring ETH to your wallet</h3>
+                                                    <div class="well">
+                                                        <p><b><span class="red">Do NOT send Ether from an exchange.</span></b> Use MyEtherWallet (recommended), MetaMask, Mist wallets, or other ERC20 compatible ones.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             <h4><b>Step 1:</b> Login to your account and go to <b>Funding</b> tab. Select <b>Withdraw</b>. Press on <b>Ether (ETH).</b></h4>
                                             <img src="{{ asset_rev('instructions/kraken-7.png') }}" alt="Kraken">
@@ -104,7 +111,7 @@
                                             <img src="{{ asset_rev('instructions/cex-6.png') }}" alt="Cex">
                                             <p class="instructions-note"><span><b>NOTE:</b></span> The fee on Deposit and Withdrawal varies for various Debit/Credit card as well as the fiat currency. Make sure that you go through the <a href="https://cex.io/fee-schedule#/tab/payments" target="_blank" rel="nofollow">fee structure</a> prior to making the final payment.</p>
 
-                                            <h3>PART 1 — Transfer ETH to your wallet</h3>
+                                            <h3>PART 2 — Transfer ETH to your wallet</h3>
 
 
                                             <h4><b>Step 1:</b> Log in to your account and select <b>WITHDRAW</b></h4>
