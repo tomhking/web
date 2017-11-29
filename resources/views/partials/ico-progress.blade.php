@@ -52,43 +52,9 @@
                         <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
                         <table>
                             <tbody>
-                                <tr class="sold-out">
-                                    <td>
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                    </td>
-                                    <td>
-                                        25% BONUS
-                                    </td>
-                                    <td>
-                                        100,000 BDG
-                                    </td>
-                                    <td>
-                                       <span class="sold-out">Sold out!</span>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td>
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                    </td>
-                                    <td>
-                                        20% BONUS
-                                    </td>
-                                    <td>
-                                        100,000 BDG
-                                    </td>
-                                    <td>
-                                        <span class="tokens-left">Only 10,000 Left!</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
@@ -97,14 +63,15 @@
                                         15% BONUS
                                     </td>
                                     <td>
-                                        100,000 BDG
+                                        WEEK 1
                                     </td>
                                     <td>
-
+                                        <span class="tokens-left">AVAILABLE NOW!</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
@@ -112,7 +79,22 @@
                                         10% BONUS
                                     </td>
                                     <td>
-                                        100,000 BDG
+                                        WEEK 2
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                    </td>
+                                    <td>
+                                        5% BONUS
+                                    </td>
+                                    <td>
+                                        WEEK 3
                                     </td>
                                     <td>
 
@@ -123,10 +105,10 @@
                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                     </td>
                                     <td>
-                                        5% BONUS
+                                        0% BONUS
                                     </td>
                                     <td>
-                                        100,000 BDG
+                                        WEEK 4
                                     </td>
                                     <td>
 
