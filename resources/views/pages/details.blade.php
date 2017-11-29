@@ -40,7 +40,7 @@
                                             <div class="text-danger validation">Please select a country.</div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="input-email">ETH wallet address</label>
+                                            <label for="input-email">Your ETH wallet</label>
                                             <input type="email" data-validate="email" class="form-control" value="" name="email" id="input-eth-address" required>
                                         </div>
 
@@ -57,11 +57,11 @@
                                             <span class="text-danger validation-error"></span><div class="text-danger validation">Please specify your date of birth.</div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="input-invest">How much are you planning to invest?</label>
+                                            <label for="input-invest">I am platting to contribute:</label>
                                             <select name="invest" id="input-invest" class="form-control">
                                                 <option value="">- please select -</option>
-                                                <option value="More than 10">Less than 10 ETH</option>
-                                                <option value="less than 10">More than 10 ETH</option>
+                                                <option value="More than 10">Less than 1 ETH</option>
+                                                <option value="less than 10">More than 1 ETH</option>
                                             </select>
                                         </div>
                                     </div>
