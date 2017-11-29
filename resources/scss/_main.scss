@@ -5129,6 +5129,11 @@ p.subtitle {
     margin: 15px 0 25px 0;
     .time-amount {
       min-width: 80px;
+      span.time-value {
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 0;
+      }
     }
   }
 .get-tokens.logged-in{
