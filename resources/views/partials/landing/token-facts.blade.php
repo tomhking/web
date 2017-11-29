@@ -18,7 +18,7 @@
                         </div>
                         <h3 class="text-center">EQUAL OPPORTUNITY</h3>
                         <p>The Token sale offers the same rules and opportunities for everyone. All discounts are public, there will be no hidden bonuses or secret deals.<br>
-                            <a href="https://blog.bitdegree.org/" rel="nofollow" target="_blank">Read more</a></p>
+                            <a href="https://blog.bitdegree.org/the-bitdegree-token-crowdsale-pledge-d92a144b8bcb" rel="nofollow" target="_blank">Read more</a></p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="icon text-center">
