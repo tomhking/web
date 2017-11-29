@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Events\PasswordResetRequest;
 use App\Http\Controllers\Controller;
 use App\PasswordReset;
 use App\User;
@@ -56,9 +57,7 @@ class ForgotPasswordController extends Controller
             $passwordReset->token = Hash::make($token = str_random(32));
             $passwordReset->save();
 
-            // @todo emit event
-            Log::debug($passwordReset);
-            Log::debug($token);
+            event(new PasswordResetRequest($user, $passwordReset, $token));
 
             return $this->sendResetLinkResponse($response);
         }
