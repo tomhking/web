@@ -4052,8 +4052,35 @@ div#token-distribution .container {
 }
 
 @media (max-width: 1380px) {
+  body.login-page.get-tokens .eth-address .form-group input.form-control {
+    height: 72px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
   .side-nav {
     display: none;
+  }
+}
+
+@media (max-width: 1090px) {
+  body.login-page.get-tokens .eth-address .form-group input.form-control {
+    height: 60px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 664px) {
+  body.login-page.get-tokens .eth-address .form-group input.form-control {
+    height: 50px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
   }
 }
 
@@ -5088,6 +5115,37 @@ p.subtitle {
   }
 }
 @media (max-width: 600px) {
+  body.login-page.get-tokens .eth-address .form-group input.form-control {
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+ body.login-page.login-signup{
+   h1 {
+     font-size: 30px;
+     margin-bottom: 30px;
+     line-height: 36px;
+     letter-spacing: 0;
+   }
+  .dashboard-logo {
+     text-align: center;
+    a.login-logo {
+      margin-bottom: 0;
+    }
+   }
+   .personal-details.well{
+     .row, .col-md-12{
+       margin:0!important;
+       padding:0!important;
+       button.btn.btn-primary{
+         max-width: 100%;
+       }
+     }
+   }
+ }
+
 .get-tokens.logged-in{
   h1 {
     font-size: 36px;
@@ -5110,6 +5168,45 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+
+  body.login-page.get-tokens .eth-address {
+    padding:0;
+    .form-group input.form-control {
+      height: 50px;
+      padding: 4px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+  }
+  .crowdsale-info-table.text-center{
+    .col-md-4,
+    .bonus-countdown{
+      padding:0;
+      .countdown {
+        font-size: 30px!important;
+        line-height: 30px!important;
+      }
+      .time-amount {
+        min-width: 60px!important;
+        span.time-value {
+          letter-spacing: 0!important;
+        }
+      }
+    }
+  }
+  .content.dashboard-buttons{
+    .left,
+    .right{
+      display: block!important;
+      float:none!important;
+      a{
+        width:100%;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
 .get-tokens.logged-in{
   padding-top:50px;
   .dashboard-navigation{
