@@ -74,11 +74,11 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 buttons">
                             <div class="content dashboard-buttons">
                                 <div class="left text-left">
-                                    <a class="how-to-participate" href="">Back</a>
+                                    <a class="button-back" href="">Back</a>
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">
-                                        <a href="" type="submit" class="btn btn-primary button-done">SAVE</a></div>
+                                        <a href="" type="submit" class="btn btn-primary button-save">SAVE</a></div>
                                 </div>
                             </div>
                             </div>

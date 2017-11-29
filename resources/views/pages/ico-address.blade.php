@@ -172,7 +172,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                                 <div class="well">
-                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use MyEtherWallet, MetaMask, Mist, Parity or other compatible wallets.</p>
+                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use <a href="{{ route('participate') }}" style="color:#fff; text-decoration: underline;">MyEtherWallet, MetaMask, Mist, Tokenlot</a> or other compatible wallets.</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 buttons">
                             <div class="content dashboard-buttons">
                                 <div class="left text-left">
-                                    <a class="how-to-participate" href="">How to participate?</a>
+                                    <a class="how-to-participate" href="{{ route('participate') }}">How to participate?</a>
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">

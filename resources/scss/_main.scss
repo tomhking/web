@@ -1928,11 +1928,17 @@ body.login-page {
       position: relative;
       a.how-to-participate {
         color: #fff;
-        padding: 15px;
-        border: 1px solid #fff;
+        padding: 15px 20px;
+        border: 1px solid #c02b3f;
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 1px;
+        display: block;
+        background-color: #c02b3f;
+        &:hover {
+          background-color: #c02b3f;
+          box-shadow: 0 8px 30px rgba(215, 48, 48, 0.5);
+        }
       }
       .left{
         float:left;
@@ -1943,7 +1949,36 @@ body.login-page {
       .left, .right {
         display: inline-block;
         vertical-align: middle;
+        a.button-back {
+          border: 1px solid #fff;
+          background: none;
+          padding: 15px;
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 1px;
+          color:#fff;
+          min-width: 150px;
+          display: block;
+          text-align: center;
+        }
         a.btn.btn-primary.button-done {
+          border: 1px solid #fff;
+          background:none;
+          padding: 15px;
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 1px;
+          min-width: 150px;
+          &:focus, .btn-primary.focus {
+            color: #fff;
+            background: none;
+            border-color: #fff;
+          }
+          &:hover {
+            box-shadow: none!important;
+          }
+        }
+        a.btn.btn-primary.button-save {
           padding: 15px;
           text-transform: uppercase;
           font-weight: 300;
@@ -2018,16 +2053,16 @@ body.login-page {
             form{
               display: inline-block;
               button{
-                color:#fff;
-                font-size:13px;
+                color:rgba(255,255,255,0.6);
+                font-size:12px;
                 font-weight: 300;
                 background: none;
                 border:0;
               }
             }
             a{
-              color:#fff;
-              font-size:13px;
+              color:rgba(255,255,255,0.6);
+              font-size:12px;
               font-weight: 300;
             }
             .fa{
