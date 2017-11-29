@@ -16,9 +16,8 @@
                         <div class="referral-description">
                             <h4>How it works?</h4>
                             <ul>
-                                <li>Sign up for the referral program with your email.</li>
-                                <li>Get your personal link and use it to refer people to BitDegree.</li>
-                                <li>Select from a variety of banners to place on your website to refer people to BitDegree.</li>
+                                <li>Scroll down to find your unique referral link. Remember, sharing your link with friends and other interested parties is the easiest way to earn LOTS of tokens!</li>
+                                <li>Also, you can choose from a variety of banners to place on your website to refer people to BitDegree.</li>
                                 <li>Once a person that you referred signs up on BitDegree website with his email you will earn one stake.</li>
                                 <li>At the end of the crowdsale the total amount of stakes will be transformed into tokens and will be distributed among all participants based on the number of people they have referred.</li>
                                 <li>You will be receive the instructions on how to claim your BitDegree tokens via the email that you provided during registration.</li>
