@@ -2150,6 +2150,9 @@ body.login-page {
       .bonuses-modal{
         .week-bonus {
           cursor: pointer;
+          &:hover{
+            background: rgba(255,255,255,0.1);
+          }
         }
         .modal-dialog{
           width: 800px;
@@ -2208,9 +2211,11 @@ body.login-page {
         font-size: 16px;
         letter-spacing: 1px;
         opacity: 0.8;
+        padding-top:8px;
       }
       p{
         font-size: 18px;
+        padding-bottom:8px;
       }
     }
     .bonus-countdown{
@@ -2279,8 +2284,10 @@ body.login-page {
           height: auto!important;
         }
         label{
-          margin: 0!important;
-          font-weight: 300!important;
+          margin: 0 !important;
+          font-weight: 300 !important;
+          max-width: 95%;
+          float: right;
           a{
             color: #ffbcbc;
           }
