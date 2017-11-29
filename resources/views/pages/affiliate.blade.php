@@ -10,11 +10,18 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12 text-center">
                         <h1>BitDegree Referral Program</h1>
-                        <h3>Get Your Share of the 200 000 BDG Token Pool!</h3>
+                        <h3 class="subtitle">Get Your Share of the 200 000 BDG Token Pool!</h3>
                     </div>
+
+                    <div class="col-xs-12 col-md-12">
+                        <div class="well text-center">
+                            <p>By participating you agree to Bitdegree <a href="{{ asset_rev('files/referral-terms.pdf') }}" target="_blank"><b><span class="red">Referral Terms of Service</span></b></a>.</p>
+                        </div>
+                    </div>
+
                     <div class="col-md-12">
                         <div class="referral-description">
-                            <h4>How it works?</h4>
+                            <h3>How it works?</h3>
                             <ul>
                                 <li>Scroll down to find your unique referral link. Remember, sharing your link with friends and other interested parties is the easiest way to earn LOTS of tokens!</li>
                                 <li>Also, you can choose from a variety of banners to place on your website to refer people to BitDegree.</li>
@@ -22,7 +29,7 @@
                                 <li>At the end of the crowdsale the total amount of stakes will be transformed into tokens and will be distributed among all participants based on the number of people they have referred.</li>
                                 <li>You will be receive the instructions on how to claim your BitDegree tokens via the email that you provided during registration.</li>
                             </ul>
-                            <h4>Restrictions</h4>
+                            <h3>Restrictions</h3>
                             <ul>
                                 <li>No multiple signups</li>
                                 <li>No self-referrals</li>
@@ -52,7 +59,7 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <h2 class="text-center">Banners to use</h2>
+                        <h1 class="text-center">Banners to use</h1>
                         <p class="text-center subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
 
                         @foreach($banners as $banner)

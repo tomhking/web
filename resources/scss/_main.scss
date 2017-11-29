@@ -1675,6 +1675,13 @@ body.login-page {
     color: #fff;
     letter-spacing: 2px;
     line-height: 36px;
+    &.subtitle {
+      font-size: 22px;
+      line-height: 38px;
+      font-family: $source-code;
+      font-weight: 300;
+      text-transform: inherit;
+    }
   }
   p{
     color: #fff;
@@ -1762,8 +1769,14 @@ body.login-page {
       color:#ffbcbc;
     }
     &.well-important{
-      font-family: $source-code;
-      font-weight:600;
+      text-align: center;
+      height: 72px;
+      padding: 25px;
+      color: #000;
+      font-weight: 600;
+      letter-spacing: 2px;
+      background: #fff;
+      font-family: $work-sans;
       font-size:24px;
       word-wrap: break-word;
     }
