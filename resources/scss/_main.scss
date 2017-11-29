@@ -1611,6 +1611,12 @@ body.login-page {
   position: relative;
   background-size: cover;
   color: #fff;
+  .alert-success {
+    color: #c0dcc0;
+    background: none;
+    border: none;
+    text-align: center;
+  }
   .top-info-container {
     display: none;
   }

@@ -118,7 +118,9 @@ class UserController extends Controller
      */
     function showDetails()
     {
-        abort(404);
+        if(config('app.env') == "production") {
+            abort(404);
+        }
         return view('pages.details');
     }
 

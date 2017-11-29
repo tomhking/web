@@ -8,6 +8,7 @@
     @else
         <div class="col-md-8 col-md-push-2 text-center">
             <h1>Log In To BitDegree</h1>
+            <p style="padding-bottom: 35px;">Have an account, but no password? Just type in a new one below, or click "Reset password".</p>
         </div>
     @endif
 @endsection
