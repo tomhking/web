@@ -12,13 +12,28 @@
                         <h1>BitDegree Referral Program</h1>
                         <h3 class="subtitle">Get Your Share of the 200 000 BDG Token Pool!</h3>
                     </div>
-
+                </div>
+                <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <div class="well text-center">
-                            <p>By participating you agree to Bitdegree <a href="{{ asset_rev('files/referral-terms.pdf') }}" target="_blank"><b><span class="red">Referral Terms of Service</span></b></a>.</p>
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                    https://www.bitdegree.org/a/{{ auth()->user()->id }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                    @if($referralCount == 0)
+                                        1 referral (yourself)
+                                    @else
+                                        {{ $referralCount + 1 }} referrals
+                                    @endif
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
                     <div class="col-md-12">
                         <div class="referral-description">
                             <h3>How it works?</h3>
@@ -33,29 +48,11 @@
                             <ul>
                                 <li>No multiple signups</li>
                                 <li>No self-referrals</li>
-                                <li>No spam</li>
                             </ul>
                             <p>Breaking any of these rules will immediately ban you from the BitDegree affiliate program.</p>
                         </div>
                     </div>
                  </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <div class="well well-important">
-                                   https://www.bitdegree.org/a/{{ auth()->user()->id }}
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <div class="well well-important">
-                                    {{ auth()->user()->referrals()->count() }} referrals
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="row">
                     <div class="col-xs-12 col-md-12">

@@ -203,7 +203,8 @@ class UserController extends Controller
     {
         $banners = config('affiliate.banners');
         $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
-        return view('pages.affiliate', compact('banners'));
+        $referralCount = auth()->user()->referrals()->count();
+        return view('pages.affiliate', compact('banners', 'referralCount'));
     }
 
     /**

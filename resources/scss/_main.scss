@@ -377,11 +377,15 @@ p.subtitle {
   margin-bottom: 30px;
 }
 
-.referral-description ul {
-  margin: 2rem;
-  li {
-    margin-bottom: 0.5rem;
-    list-style-type: disc;
+.referral-description {
+  margin-top:0;
+  margin-bottom:6rem;
+  ul {
+    margin: 2rem;
+    li {
+      margin-bottom: 0.5rem;
+      list-style-type: disc;
+    }
   }
 }
 
