@@ -10,7 +10,7 @@ if (!function_exists('asset_rev')) {
     {
         $buildNumberFile = base_path('build-number.txt');
         $version = trim(file_exists($buildNumberFile) ? "?static=true&v=" . file_get_contents($buildNumberFile) : "");
-        return url(env('BASE_PATH', '/').'assets/' . $path) . $version;
+        return base('assets/' . $path) . $version;
     }
 }
 
@@ -35,7 +35,18 @@ if (!function_exists('language_prefix')) {
     }
 }
 
-
+if (!function_exists('base')) {
+    /**
+     * Returns path relative to base URL
+     *
+     * @param $path
+     * @return \Illuminate\Contracts\Routing\UrlGenerator|string
+     */
+    function base($path = '/')
+    {
+        return url(env('BASE_PATH', '/') . $path);
+    }
+}
 
 if (!function_exists('current_route_class')) {
     /**

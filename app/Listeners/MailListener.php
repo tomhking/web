@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Contracts\Mailable;
 use App\Events\Event;
+use App\Events\PasswordResetRequest;
 use App\Events\SignUp;
 use App\Library\Mailer;
 use Mailer\Formatters\Events;
@@ -19,6 +20,7 @@ class MailListener
      */
     private $mailableEvents = [
         SignUp::class,
+        PasswordResetRequest::class,
     ];
 
     /**
