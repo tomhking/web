@@ -19,20 +19,17 @@ class PasswordResetRequest extends Event implements Mailable
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     private $user;
-    private $passwordReset;
     private $token;
 
     /**
      * Create a new event instance.
      *
      * @param User $user
-     * @param PasswordReset $passwordReset
      * @param string $token
      */
-    public function __construct(User $user, PasswordReset $passwordReset, string $token)
+    public function __construct(User $user, string $token)
     {
         $this->user = $user;
-        $this->passwordReset = $passwordReset;
         $this->token = $token;
     }
 
@@ -59,8 +56,8 @@ class PasswordResetRequest extends Event implements Mailable
         $message->setFirstName($this->user->first_name);
         $message->setLastName($this->user->last_name);
         $message->setExtras([
-            'verification_link' => route('verify-email', [
-                'id' => $this->passwordReset->id,
+            'reset_link' => route('password.reset', [
+                'email' => $this->user->email,
                 'token' => $this->token,
             ]),
         ]);

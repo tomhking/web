@@ -57,7 +57,7 @@ class ForgotPasswordController extends Controller
             $passwordReset->token = Hash::make($token = str_random(32));
             $passwordReset->save();
 
-            event(new PasswordResetRequest($user, $passwordReset, $token));
+            event(new PasswordResetRequest($user, $token));
 
             return $this->sendResetLinkResponse($response);
         }
