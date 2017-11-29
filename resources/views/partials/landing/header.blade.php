@@ -8,9 +8,11 @@
                     $(window).on("load", function() {
                         var bg = $('#bgvid'), src = $('source', bg);
                         src.attr('src', src.attr('data-src'));
-                        bg[0].loop = true;
-                        bg[0].load();
-                        bg[0].play();
+                        if(bg.length > 0) {
+                            bg[0].loop = true;
+                            bg[0].load();
+                            bg[0].play();
+                        }
                     });
                 });
             </script>
