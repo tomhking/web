@@ -26,6 +26,8 @@
 
     @include('partials.dashboard-header')
 
+    @include('partials.dashboard-tabs')
+
     @yield('content')
 
     @if(!isset($hideFooter) || !$hideFooter) @include('partials.landing.footer') @endif
