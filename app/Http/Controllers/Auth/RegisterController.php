@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -20,7 +24,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    use RegistersUsers, ThrottlesLogins;
 
     /**
      * Where to redirect users after registration.
@@ -38,6 +42,59 @@ class RegisterController extends Controller
     {
         $this->redirectTo = route('address');
         $this->middleware('guest');
+    }
+
+    /**
+     * Handle a registration request for the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function register(Request $request)
+    {
+        $user = User::withEmail($request->get('email'))->first();
+
+        // Check if account already exists
+        if($user instanceof User) {
+            // Throttling
+            if ($this->hasTooManyLoginAttempts($request)) {
+                $this->fireLockoutEvent($request);
+
+                return $this->sendLockoutResponse($request);
+            }
+
+            // Set new password if field is empty
+            if(empty($user->password)) {
+                $this->validate($request, [
+                    'password' => 'required|string|min:3',
+                ]);
+
+                $user->password = Hash::make($request->get('password'));
+                $user->save();
+
+                auth()->login($user);
+                return redirect($this->redirectPath());
+            }
+
+            // Log in if password is correct if password is set
+            if(Hash::check($request->get('password'), $user->password)) {
+                auth()->login($user);
+                return redirect($this->redirectPath());
+            }
+
+            // Redirect to login page
+            $this->incrementLoginAttempts($request);
+            return redirect()->route('login')->withErrors(__('auth.failed'))->withInput();
+        }
+
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());
     }
 
     /**
@@ -67,5 +124,15 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    /**
+     * Get the login username to be used by the controller.
+     *
+     * @return string
+     */
+    public function username()
+    {
+        return 'email';
     }
 }
