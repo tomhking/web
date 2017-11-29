@@ -494,9 +494,6 @@ form .notice {
       text-align: center;
     }
   }
-  header .header-content h1, header .header-content h2, header .header-content h3 {
-    font-size: 60px!important;
-  }
 }
 
 .contact-icons {
@@ -4244,7 +4241,7 @@ div#token-distribution .container {
     }
   }
   .front-page header {
-    background-image: url('../mobile-bg-min.jpg');
+    background-image: url('../ico_bg.jpg');
   }
   div#roadmap .container {
     padding-right: 0;
@@ -5045,8 +5042,8 @@ p.subtitle {
 @media screen and (max-width: 767px) and (min-width: 551px) {
   header .header-content {
     h1, h2, h3 {
-      font-size: 60px;
-      line-height: 56px;
+      font-size: 36px;
+      line-height: 36px;
     }
   }
   .token-sale-terms h2.title, .communicate.cta-block h2 {
@@ -5092,6 +5089,14 @@ p.subtitle {
   }
 }
 @media (max-width: 600px) {
+  header .countdown {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 15px 0 25px 0;
+    .time-amount {
+      min-width: 100px;
+    }
+  }
 .get-tokens.logged-in{
   h1 {
     font-size: 36px;
@@ -5114,6 +5119,18 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+  .header-content .ico-progress h1 {
+    font-size: 20px;
+    margin: 0;
+  }
+  header .countdown {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 15px 0 25px 0;
+    .time-amount {
+      min-width: 80px;
+    }
+  }
 .get-tokens.logged-in{
   padding-top:50px;
   .dashboard-navigation{
@@ -5375,7 +5392,7 @@ p.subtitle {
     padding: 0 15px;
   }
   header .description {
-    margin: 25px auto 35px auto;
+    margin: 15px auto 15px auto;
   }
   header .bullet-points p {
     font-size: 14px!important;
