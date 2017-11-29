@@ -105,7 +105,7 @@
                                                 <h1 class="text-center">Crowdsale starts in:</h1>
                                             </div>
                                         </div>
-                                        @include('partials.countdown', ['timeLeft' => 1515213])
+                                        @include('partials.countdown', ['timeLeft' => 120213])
                                 </div>
                             </div>
                         </div>
