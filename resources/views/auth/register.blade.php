@@ -19,23 +19,23 @@
         <form action="{{ route('register') }}" method="post">
             <div class="form-group">
                 <label for="input-email">Email</label>
-                <input type="email" data-validate="email" class="form-control" value="{{ old('email') }}" name="email" placeholder="Your email" id="input-email" autofocus required>
+                <input tabindex="1" type="email" data-validate="email" class="form-control" value="{{ old('email') }}" name="email" placeholder="Your email" id="input-email" autofocus required>
             </div>
             <div class="form-group">
                 <label for="input-password">Password</label>
-                <input class="form-control" type="password" name="password" required minlength="3">
+                <input tabindex="2" class="form-control" type="password" name="password" required minlength="3">
             </div>
 
             <div class="row">
                 <div class="agreement col-md-12 ">
-                    <input type="checkbox" id="agreeToTerms" name="agreement" {{ old('agreement', false) ? 'checked' : '' }} value="1">
+                    <input tabindex="3" type="checkbox" id="agreeToTerms" name="agreement" {{ old('agreement', false) ? 'checked' : '' }} value="1">
                     <label for="agreeToTerms">I hereby agree to Bitdegree Token Sale <a href="{{ asset_rev('files/terms-of-service.pdf') }}" target="_blank">Terms of Service</a> and <a href="{{ asset_rev('files/privacy-policy.pdf') }}" target="_blank">Privacy Policy</a>.</label>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center login-cta cta"><button type="submit" class="btn btn-primary">{{ config('ico.started') ? "Join Crowdsale" : "Sign Up" }}</button></div>
+                    <div class="text-center login-cta cta"><button tabindex="4" type="submit" class="btn btn-primary">{{ config('ico.started') ? "Join Crowdsale" : "Sign Up" }}</button></div>
                 </div>
             </div>
             {!! csrf_field() !!}
