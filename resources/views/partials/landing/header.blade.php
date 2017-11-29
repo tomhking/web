@@ -1,12 +1,6 @@
 
 <header class="{{ $navBarOnly ?? false ? 'container-fluid' : '' }}">
     @if(!($navBarOnly ?? false))
-        <div class="medusae-overlay">
-        <video  id="bgvid" poster="{{ asset_rev('landing-bg.jpg') }}" class="hidden-xs hidden-sm" style="position: absolute; height: 1006px; top:-105px;">
-            <source data-src="{{ asset_rev('bg.mp4') }}" type="video/mp4">
-            @lang('misc.video-unsupported')
-        </video>
-        </div>
 
         @push('body-scripts')
             <script>
@@ -100,6 +94,23 @@
                     <div class="description">
                         <p>@lang('home.header_subtitle')</p>
                     </div>
+
+                    <div class="ico-progress">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h1 class="text-center">Crowdsale starts in:</h1>
+                                            </div>
+                                        </div>
+                                        @include('partials.countdown', ['timeLeft' => 1515213])
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="communicate">
                         <div class="contact">
                             @auth
@@ -113,15 +124,6 @@
                                 <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset_rev('telegram-logo.png') }}" alt="Telegram"></a>
                                 <a class="contact-icon" href="https://twitter.com/bitdegree_org" rel="nofollow" target="_blank"><img src="{{ asset_rev('twitter-logo.png') }}" alt="Twitter"></a>
                             </div>
-                        </div>
-
-                        <div class="bullet-points">
-                            <p>
-                                @lang('home.incentives')  &#8226;
-                                @lang('home.moocs')  &#8226;
-                                @lang('home.ethereum')  &#8226;
-                                @lang('home.decentralized')
-                            </p>
                         </div>
 
                     </div>
