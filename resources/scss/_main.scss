@@ -622,12 +622,7 @@ form .notice {
     text-align: center;
     margin: 15px 0;
   }
-  .modal-header {
-    border-bottom: none;
-  }
   .modal-body {
-    position: relative;
-    padding: 0 45px;
     label {
       display: inline-block;
       max-width: 100%;
@@ -636,6 +631,9 @@ form .notice {
       font-weight: 500;
       font-size: 16px;
       margin-top: 8px;
+    }
+    input {
+      border: 1px solid #cacaca;
     }
     .form-control {
       height: 46px;
@@ -1611,6 +1609,9 @@ body.login-page {
   position: relative;
   background-size: cover;
   color: #fff;
+  .modal-content{
+    color:#000;
+  }
   .alert-success {
     color: #c0dcc0;
     background: none;
@@ -2157,6 +2158,10 @@ body.login-page {
         .modal-dialog{
           width: 800px;
           max-width: 100%;
+          .modal-body {
+            position: relative;
+            padding: 35px;
+          }
           .modal-content{
             padding-bottom: 35px;
           }
@@ -2284,10 +2289,8 @@ body.login-page {
           height: auto!important;
         }
         label{
-          margin: 0 !important;
-          font-weight: 300 !important;
-          max-width: 95%;
-          float: right;
+          margin: 0!important;
+          font-weight: 300!important;
           a{
             color: #ffbcbc;
           }
@@ -2320,18 +2323,53 @@ body.login-page {
           letter-spacing: 2px;
           background: #fff;
         }
-        p#copy-address span.text-success.copied{
-          color:#7bde92;
-          text-transform: uppercase;
-          font-size: 14px;
+        .token-calc-modal {
+          display: inline-block;
+          border-left: 1px solid rgba(255,255,255,0.6);
+          .token-calculator-btn{
+            a{
+              color:#fff;
+              text-transform: uppercase;
+              font-family: $work-sans;
+              text-decoration: underline;
+            }
+          }
+          h4{
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+            font-family: $work-sans;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 8px;
+          }
+          .modal-dialog {
+            width: 800px;
+            max-width: 100%;
+            .modal-body {
+              position: relative;
+              padding: 35px;
+            }
+          }
         }
-        p#copy-address a{
-          color:#fff;
-          text-transform: uppercase;
-          text-decoration: underline;
-          font-size: 14px;
-          margin:15px 0 0 0;
-          text-align: right;
+        .copy-address {
+          margin: 15px 0 0 0;
+          display: inline-block;
+          a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 14px;
+            text-align: right;
+            font-family: $work-sans;
+          }
+          span.text-success.copied{
+            color:#7bde92;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: $work-sans;
+          }
         }
       }
       .well{

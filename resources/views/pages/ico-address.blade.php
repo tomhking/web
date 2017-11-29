@@ -30,10 +30,55 @@
                             <h1 class="text-center">Send ETH to this address and receive BDG tokens <b>NOW!</b></h1>
                             <div class="form-group">
                                 <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address">
-                                <p class="text-right" id="copy-address">
-                                    <span class="text-success copied" style="display: none">Copied!</span>
-                                    <a class="btn">Copy Address</a>
-                                </p>
+                                <div class="text-right">
+                                    <div class="copy-address text-right" id="copy-address">
+                                        <span class="text-success copied" style="display: none">Copied!</span>
+                                        <a class="btn">Copy Address</a>
+                                    </div>
+
+                                    <div class="token-calc-modal">
+
+                                        <div class="token-calculator" data-toggle="modal" data-target="#CalcModal">
+                                            <div class="token-calculator-btn">
+                                                <a class="btn" data-toggle="collapse" href="#token-calculator">Token Calculator</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal fade" role="dialog" id="CalcModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                        <div class="modal-title">
+                                                            <h2>Token calculator</h2>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="modal-body text-left">
+                                                        <div class="content">
+                                                            <div class="row" id="token-calculator">
+                                                                <div class="col-md-4">
+                                                                    <h4>Amount of Ether</h4>
+                                                                    <input type="number" id="amt-eth">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <h4>Tokens to Be Received</h4>
+                                                                    <input type="number" id="amt-tokens">
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <h4>% of total supply</h4>
+                                                                    <input type="number" id="amt-supply">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -56,11 +101,13 @@
                                                         <div class="modal-content">
                                                             <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                                <div class="modal-title">
+                                                                    <h2>Send ETH and receive BitDegree Tokens immediately!</h2>
+                                                                </div>
                                                             </div>
 
                                                             <div class="modal-body">
                                                                 <div class="bonuses-table">
-                                                                    <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
                                                                     <table>
                                                                         <tbody>
                                                                         <tr>
@@ -71,10 +118,10 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
                                                                             <td>
-                                                                                15% BONUS
+                                                                                WEEK 1
                                                                             </td>
                                                                             <td>
-                                                                                WEEK 1
+                                                                                15% BONUS
                                                                             </td>
                                                                             <td>
 
@@ -85,14 +132,14 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                            </td>
+                                                                            <td>
+                                                                                WEEK 2
                                                                             </td>
                                                                             <td>
                                                                                 10% BONUS
                                                                             </td>
                                                                             <td>
-                                                                               WEEK 2
-                                                                            </td>
-                                                                            <td>
 
                                                                             </td>
                                                                         </tr>
@@ -100,14 +147,14 @@
                                                                             <td>
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                            </td>
-                                                                            <td>
-                                                                                5% BONUS
                                                                             </td>
                                                                             <td>
                                                                                 WEEk 3
                                                                             </td>
                                                                             <td>
+                                                                                5% BONUS
+                                                                            </td>
+                                                                            <td>
 
                                                                             </td>
                                                                         </tr>
@@ -116,10 +163,10 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
                                                                             <td>
-                                                                                0% BONUS
+                                                                                WEEK 4
                                                                             </td>
                                                                             <td>
-                                                                                WEEK 4
+                                                                                0% BONUS
                                                                             </td>
                                                                             <td>
 
@@ -220,4 +267,5 @@
             });
         })
     </script>
+
 @endpush
