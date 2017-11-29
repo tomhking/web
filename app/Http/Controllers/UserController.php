@@ -10,6 +10,7 @@ use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Cookie;
 
@@ -28,31 +29,61 @@ class UserController extends Controller
     /**
      * Updates the progile of a logged in user
      * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Laravel\Lumen\Http\Redirector
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function updateProfile(Request $request)
+    public function details(Request $request)
     {
-        $participant = User::getCurrent();
-
-        $validator = Validator::make($request->all(), [
+        $this->validate($request, [
             'first_name' => 'required|string|min:2|max:35',
             'last_name' => 'required|string|min:2|max:35',
             'country' => 'required|string|valid-country',
             'birthday' => 'required|date',
+
+            // for some strange reason absence of 'required' rule does not stop other rules from running when input is empty
+            'wallet' => !empty($request->get('wallet')) ? 'required|string|size:42' : '',
         ]);
 
-        if ($validator->fails()) {
-            return redirect(route('ico-address'));
+        $user = auth()->user();
+
+        $user->first_name = $request->get('first_name');
+        $user->last_name = $request->get('last_name');
+        $user->country = $request->get('country');
+        $user->birthday = $request->get('birthday');
+        $user->wallet = $request->get('wallet');
+
+        $user->save();
+
+        if (empty($user->identification) && $request->hasFile('file') && $request->file('file')->isValid()) {
+            $this->validate($request, [
+                'file' => 'required|image|max:10240',
+            ]);
+
+            $file = $request->file('file');
+
+            try {
+                $path = $file->storeAs(config('app.env') . '-kyc', str_random(64), 's3');
+
+                if (!$path) {
+                    throw new \Exception('Upload failed');
+                }
+
+                $user->identification = [
+                    'path' => $path,
+                    'extension' => $file->guessExtension(),
+                    'mime' => $file->getMimeType(),
+                    'size' => $file->getSize(),
+                ];
+
+                $user->save();
+            } catch (\Exception $e) {
+                Log::error("Upload failed", [
+                    'message' => $e->getMessage(),
+                ]);
+                return back()->withErrors('File upload was unsuccessful. Please try again.');
+            }
         }
 
-        $participant->first_name = $request->get('first_name');
-        $participant->last_name = $request->get('last_name');
-        $participant->country = $request->get('country');
-        $participant->birthday = $request->get('birthday');
-
-        $participant->save();
-
-        return redirect(route('ico-address'));
+        return back()->with('status', 'Your profile has been saved.');
     }
 
     /**
@@ -114,14 +145,29 @@ class UserController extends Controller
 
 
     /**
+     * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    function showDetails()
+    function showDetails(Request $request)
     {
-        if(config('app.env') == "production") {
-            abort(404);
+        $currentCountry = false;
+
+        try {
+            $result = app()->make('geoip')->country($request->ip());
+
+            if($result instanceof \GeoIp2\Model\Country) {
+                $currentCountry = $result->country->isoCode;
+            }
+        }catch (\GeoIp2\Exception\AddressNotFoundException $e) {
+            //
         }
-        return view('pages.details');
+
+        return view('pages.details', [
+            'user' => auth()->user(),
+            'countries' => app()->make('countries'),
+            'blacklistedCountries' => ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP', 'CN'],
+            'currentCountry' => $currentCountry,
+        ]);
     }
 
     /**

@@ -98,4 +98,23 @@ class User extends Authenticatable
     {
         $this->attributes['email'] = strtolower($value);
     }
+
+    /**
+     * Identity mutator
+     * @param $value
+     */
+    public function setIdentificationAttribute($value)
+    {
+        $this->attributes['identification'] = is_null($value) ? null : json_encode($value);
+    }
+
+    /**
+     * Identity accessor
+     * @param $value
+     * @return mixed
+     */
+    public function getIdentificationAttribute($value)
+    {
+        return is_null($value) ? $value : json_decode($value);
+    }
 }

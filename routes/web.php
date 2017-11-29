@@ -31,8 +31,8 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/user', 'UserController@user')->name('user');
             Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
             Route::get('/address', 'UserController@address')->name('address');
-            Route::post('/profile', 'UserController@updateProfile')->name('participant-profile');
             Route::get('/profile', 'UserController@showDetails')->name('details');
+            Route::post('/profile', 'UserController@details');
             Route::get('/password', 'UserController@showPassword')->name('password');
             Route::post('/password', 'UserController@password');
             Route::get('/participate', 'UserController@participate')->name('participate');

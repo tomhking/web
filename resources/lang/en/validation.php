@@ -113,6 +113,9 @@ return [
         'agreement' => [
             'required' => 'You must agree with the Terms of Service in order to proceed.',
             'accepted' => 'You must agree with the Terms of Service in order to proceed.',
+        ],
+        'wallet' => [
+            'size' => 'The ETH address you\'ve provided does not appear to be valid',
         ]
     ],
 
