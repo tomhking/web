@@ -688,7 +688,7 @@
                     </div>
                     <div id="015" class="panel-collapse collapse" role="tabpanel" aria-labelledby="015">
                         <div class="panel-body">
-                            <p>Will be published on website <b>bitdegree.org</b> 48hrs before crowdsale launch date. Also available on <a href="https://github.com/bitdegree" target="_blank">github</a></p>
+                            <p>Smart Contract address will be published on website bitdegree.org on December 1st. 2017, 14:00 UTC.</p>
                         </div>
                     </div>
                 </div>
