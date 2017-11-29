@@ -63,16 +63,18 @@
                         <p class="text-center subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
 
                         @foreach($banners as $banner)
+                            <div class="col-xs-12 col-md-6">
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
                                     <h4>Banner <span class="label label-default pull-left">{{ $banner['width'].'x'.$banner['height'] }}</span></h4>
                                 </div>
                                 <div class="panel-body">
-                                    <div class="banner-image">
+                                    <div class="banner-image text-center">
                                         <img src="{{ asset_rev($banner['url']) }}" alt="BitDegree:From EA co-founder, former COURSERA Lead &amp; 29,000,000 users. Limited 15% discount - Get Tokens!">
                                     </div>
                                     <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('affiliate-cookie', auth()->id()).'" target="_blank"><img src="'.asset_rev($banner['url']).'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!"></a>'}}</textarea>
                                 </div>
+                            </div>
                             </div>
                         @endforeach
                     </div>
