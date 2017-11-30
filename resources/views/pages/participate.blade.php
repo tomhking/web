@@ -15,6 +15,7 @@
                             <p class="subtitle">@lang('ico-instructions.intro')</p>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
                             <div class="well">
@@ -25,16 +26,18 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
-                            <div id="accordion" role="tablist">
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingOne">
-                                        <div class="instructions-button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <h3>@lang('ico-instructions.option-mew')</h3>
+                            <div class="panel-group faq-block" role="tablist" aria-multiselectable="true">
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#001" aria-expanded="false" aria-controls="001">
+                                            <h3 class="panel-title instructions-title">
+                                                @lang('ico-instructions.option-mew')
+                                            </h3>
                                         </div>
                                     </div>
-
-                                    <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
+                                    <div id="001" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="001">
+                                        <div class="panel-body">
                                             <h4>@lang('ico-instructions.mew-step-1')</h4>
                                             <img src="{{ asset_rev('instructions/myetherwallet-1.png') }}" alt="MyEtherWallet">
 
@@ -60,10 +63,10 @@
                                             <h4>@lang('ico-instructions.mew-step-6')</h4>
                                             <img src="{{ asset_rev('instructions/myetherwallet-6.png') }}" alt="MyEtherWallet">
                                             <p>@lang('ico-instructions.mew-note-6')</p>
-                                                <ul>
-                                                    <li>@lang('ico-instructions.mew-note-7')</li>
-                                                    <li>@lang('ico-instructions.mew-note-8')</li>
-                                                </ul>
+                                            <ul>
+                                                <li>@lang('ico-instructions.mew-note-7')</li>
+                                                <li>@lang('ico-instructions.mew-note-8')</li>
+                                            </ul>
 
                                             <h4>@lang('ico-instructions.mew-step-7')</h4>
                                             <p>@lang('ico-instructions.mew-note-9')</p>
@@ -75,14 +78,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingTwo">
-                                        <div class="instructions-button" data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                            <h3>@lang('ico-instructions.option-mm')</h3>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#002" aria-expanded="false" aria-controls="002">
+                                            <h3 class="panel-title instructions-title">
+                                                @lang('ico-instructions.option-mm')
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
+                                    <div id="002" class="panel-collapse collapse" role="tabpanel" aria-labelledby="002">
+                                        <div class="panel-body">
                                             <p>@lang('ico-instructions.mm-description')</p>
 
                                             <h4>@lang('ico-instructions.mm-step-1')</h4>
@@ -105,19 +111,20 @@
 
                                             <h4>@lang('ico-instructions.mm-step-7')</h4>
                                             <img src="{{ asset_rev('instructions/metamask-7.png') }}" alt="MetaMask">
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-header" role="tab" id="headingThree">
-                                        <div class="instructions-button" data-toggle="collapse" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                            <h3>@lang('ico-instructions.option-mist')</h3>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#003" aria-expanded="false" aria-controls="003">
+                                            <h3 class="panel-title instructions-title">
+                                                @lang('ico-instructions.option-mist')
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body">
-
+                                    <div id="003" class="panel-collapse collapse" role="tabpanel" aria-labelledby="003">
+                                        <div class="panel-body">
                                             <h4>@lang('ico-instructions.mist-step-1')</h4>
                                             <img src="{{ asset_rev('instructions/mist-1.png') }}" alt="Mist">
 
@@ -148,12 +155,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-
-
 @endsection
 
