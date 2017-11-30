@@ -27,20 +27,30 @@ class ContentController extends Controller
     function home(Request $request)
     {
         $tokenDecimals = config('ico.decimals');
-        $raisedDecimals = env('ICO_RAISED_DECIMALS', 2);
+        $raisedDecimals = env('ICO_RAISED_DECIMALS', 0);
         $softCap = config('ico.softCap');
         $hardCap = config('ico.hardCap');
         $tokensSoldRaw = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
 
         $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals - $raisedDecimals)) / pow(10, $raisedDecimals);
 
+        $currentBonus = false;
+
+        foreach (config('ico.bonuses') as $item) {
+            if (Carbon::now()->between($item['from'], $item['to'])) {
+                $currentBonus = $item;
+                break;
+            }
+        }
+
         return response(view('pages.home', [
             'softCap' => $softCap,
             'hardCap' => $hardCap,
-            'progress' => $tokensSold / $hardCap,
+            'progress' => ($tokensSold / $hardCap) * 100,
             'tokensSold' => $tokensSold,
             'raisedDecimals' => $raisedDecimals,
             'canGetFreeTokens' => false,
+            'currentBonus' => $currentBonus,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)
         ])->render());
@@ -114,52 +124,6 @@ class ContentController extends Controller
             'icoRate',
             'totalSupply',
             'displaySignUp'
-        ));
-    }
-
-    /**
-     * Displays ICO address
-     *
-     * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
-     */
-    public function icoAddress(Request $request) {
-        $icoAddress = env('ICO_ADDRESS');
-
-        if(empty($icoAddress)) {
-            throw new UnauthorizedHttpException('ICO address is not yet available.');
-        }
-
-        // Retrieve participant details
-
-        $participant = Participant::getCurrent();
-
-        if(!$participant instanceof Participant) {
-            return redirect(route('ico') . '?email');
-        }
-
-        // Handle countries
-
-        $countries = app()->make('countries');
-        $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP', 'CN'];
-        $currentCountry = false;
-
-        try {
-            $result = app()->make('geoip')->country($request->ip());
-
-            if($result instanceof \GeoIp2\Model\Country) {
-                $currentCountry = $result->country->isoCode;
-            }
-        }catch (\GeoIp2\Exception\AddressNotFoundException $e) {
-            //
-        }
-
-        return view('pages.address', compact(
-            'countries',
-            'blacklistedCountries',
-            'currentCountry',
-            'icoAddress',
-            'participant'
         ));
     }
 
