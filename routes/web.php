@@ -33,6 +33,8 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/address', 'UserController@address')->name('address');
             Route::get('/profile', 'UserController@showDetails')->name('details');
             Route::post('/profile', 'UserController@details');
+            Route::get('/identification', 'UserController@showIdentification')->name('identification');
+            Route::post('/identification', 'UserController@identification');
             Route::get('/password', 'UserController@showPassword')->name('password');
             Route::post('/password', 'UserController@password');
             Route::get('/participate', 'UserController@participate')->name('participate');
