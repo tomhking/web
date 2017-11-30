@@ -79,11 +79,11 @@ class UserController extends Controller
                 Log::error("Upload failed", [
                     'message' => $e->getMessage(),
                 ]);
-                return back()->withErrors('File upload was unsuccessful. Please try again.');
+                return back()->withErrors(__('user.upload-failed'));
             }
         }
 
-        return back()->with('status', 'Your profile has been saved.');
+        return back()->with('status', __('user.profile-saved'));
     }
 
     /**
@@ -165,7 +165,6 @@ class UserController extends Controller
         return view('pages.details', [
             'user' => auth()->user(),
             'countries' => app()->make('countries'),
-            'blacklistedCountries' => ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP', 'CN'],
             'currentCountry' => $currentCountry,
         ]);
     }
@@ -193,7 +192,7 @@ class UserController extends Controller
         $user->password = Hash::make($request->get('password'));
         $user->save();
 
-        return back()->with('status', 'Your password has been changed.');
+        return back()->with('status', __('user.password-changed'));
     }
 
     /**
@@ -203,7 +202,8 @@ class UserController extends Controller
     {
         $banners = config('affiliate.banners');
         $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
-        return view('pages.affiliate', compact('banners'));
+        $referralCount = auth()->user()->referrals()->count();
+        return view('pages.affiliate', compact('banners', 'referralCount'));
     }
 
     /**

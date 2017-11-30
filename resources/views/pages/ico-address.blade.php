@@ -4,11 +4,11 @@
 
     <div class="container-fluid">
         <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
-            <h4>What's next?</h4>
+            <h4>@lang('ico.whats-next')</h4>
             <ul class="sidebar-nav">
-                <li class="step-done"><a href="#">Step 1</a></li>
-                <li class="step-active"><a href="{{ route('address') }}">Step 2</a></li>
-                <li class="step-other"><a href="{{ route('details') }}"><span>Other</span></a></li>
+                <li class="step-done"><a href="#">@lang('ico.step', ['number' => 1])</a></li>
+                <li class="step-active"><a href="{{ route('address') }}">@lang('ico.step', ['number' => 2])</a></li>
+                <li class="step-other"><a href="{{ route('details') }}"><span>@lang('ico.other')</span></a></li>
             </ul>
         </div>
 
@@ -19,28 +19,28 @@
                     @if($ico['end']->isPast())
                         <div class="row">
                             <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
-                                <img src="{{ asset_rev('token.png') }}" alt="BDG Token">
-                                <h1>Crowdsale ended!</h1>
-                                <h4>Thank you for participating!</h4>
+                                <img src="{{ asset_rev('token.png') }}" alt="@lang('ico.bdg')">
+                                <h1>@lang('ico.ico-ended')</h1>
+                                <h4>@lang('ico.ico-thanks')</h4>
                             </div>
                         </div>
                     @else
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1 eth-address">
-                            <h1 class="text-center">Send ETH to this address and receive BDG tokens <b>NOW!</b></h1>
+                            <h1 class="text-center">@lang('ico.headline')</h1>
                             <div class="form-group">
                                 <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address">
                                 <div class="text-right">
                                     <div class="copy-address text-right" id="copy-address">
-                                        <span class="text-success copied" style="display: none">Copied!</span>
-                                        <a class="btn">Copy Address</a>
+                                        <span class="text-success copied" style="display: none">@lang('ico.copied')</span>
+                                        <a class="btn">@lang('ico.copy')</a>
                                     </div>
 
                                     <div class="token-calc-modal">
 
                                         <div class="token-calculator" data-toggle="modal" data-target="#CalcModal">
                                             <div class="token-calculator-btn">
-                                                <a class="btn" data-toggle="collapse" href="#token-calculator">Token Calculator</a>
+                                                <a class="btn" data-toggle="collapse" href="#token-calculator">@lang('ico.calculator')</a>
                                             </div>
                                         </div>
 
@@ -50,7 +50,7 @@
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                                         <div class="modal-title">
-                                                            <h2>Token calculator</h2>
+                                                            <h2>@lang('ico.calculator')</h2>
                                                         </div>
                                                     </div>
 
@@ -58,15 +58,15 @@
                                                         <div class="content">
                                                             <div class="row" id="token-calculator">
                                                                 <div class="col-md-4">
-                                                                    <h4>Amount of Ether</h4>
+                                                                    <h4>@lang('ico.amount-eth')</h4>
                                                                     <input type="number" id="amt-eth">
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <h4>Tokens to Be Received</h4>
+                                                                    <h4>@lang('ico.amount-tokens')</h4>
                                                                     <input type="number" id="amt-tokens">
                                                                 </div>
                                                                 <div class="col-md-4">
-                                                                    <h4>% of total supply</h4>
+                                                                    <h4>@lang('ico.percentage-supply')</h4>
                                                                     <input type="number" id="amt-supply">
                                                                 </div>
                                                             </div>
@@ -92,7 +92,7 @@
                                             <div class="bonuses-modal">
 
                                                 <div class="week-bonus" data-toggle="modal" data-target="#BonusModal">
-                                                    <h4>{{ $currentBonus['name'] }}</h4>
+                                                    <h4>@lang($currentBonus['name'])</h4>
                                                     <p>{{ ($currentBonus['bonus']-1) * 100 }}%</p>
                                                 </div>
 
@@ -102,7 +102,7 @@
                                                             <div class="modal-header">
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                                                 <div class="modal-title">
-                                                                    <h2>Send ETH and receive BitDegree Tokens immediately!</h2>
+                                                                    <h2>@lang('ico.receive')</h2>
                                                                 </div>
                                                             </div>
 
@@ -117,12 +117,8 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
-                                                                            <td>
-                                                                                WEEK 1
-                                                                            </td>
-                                                                            <td>
-                                                                                15% BONUS
-                                                                            </td>
+                                                                            <td>@lang('ico.week-num', ['number' => 1])</td>
+                                                                            <td>@lang('ico.bonus-percent', ['amount' => 15])</td>
                                                                             <td>
 
                                                                             </td>
@@ -133,12 +129,8 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
-                                                                            <td>
-                                                                                WEEK 2
-                                                                            </td>
-                                                                            <td>
-                                                                                10% BONUS
-                                                                            </td>
+                                                                            <td>@lang('ico.week-num', ['number' => 2])</td>
+                                                                            <td>@lang('ico.bonus-percent', ['amount' => 10])</td>
                                                                             <td>
 
                                                                             </td>
@@ -148,12 +140,8 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
-                                                                            <td>
-                                                                                WEEk 3
-                                                                            </td>
-                                                                            <td>
-                                                                                5% BONUS
-                                                                            </td>
+                                                                            <td>@lang('ico.week-num', ['number' => 3])</td>
+                                                                            <td>@lang('ico.bonus-percent', ['amount' => 5])</td>
                                                                             <td>
 
                                                                             </td>
@@ -162,12 +150,8 @@
                                                                             <td>
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
-                                                                            <td>
-                                                                                WEEK 4
-                                                                            </td>
-                                                                            <td>
-                                                                                0% BONUS
-                                                                            </td>
+                                                                            <td>@lang('ico.week-num', ['number' => 4])</td>
+                                                                            <td>@lang('ico.bonus-percent', ['amount' => 0])</td>
                                                                             <td>
 
                                                                             </td>
@@ -185,30 +169,30 @@
 
                                     </div>
                                     <div class="col-xs-4 col-sm-4 col-md-4">
-                                        <h4>Exchange rate with bonus</h4>
+                                        <h4>@lang('ico.rate-with-bonus')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
                                     <div class="col-xs-4 col-sm-4 col-md-4 last">
-                                        <h4>Gas Limit</h4>
+                                        <h4>@lang('ico.gas-limit')</h4>
                                         <p>200,000</p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
-                                        <h2>{{ $currentBonus['name'] }} ends in:</h2>
+                                        <h2>@lang('ico.bonus-ends-in', ['bonusName' => __($currentBonus['name'])])</h2>
                                         @include('partials.countdown', ['timeLeft' => $currentBonus['to']->timestamp - time()])
                                     </div>
                                 </div>
                             @else
                                 <div class="crowdsale-info-table text-center">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <h4>Exchange rate</h4>
+                                        <h4>@lang('ico.exchange-rate')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <h4>Gas Limit</h4>
+                                        <h4>@lang('ico.gas-limit')</h4>
                                         <p>200,000</p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
-                                    <h2>Crowdsale ends in:</h2>
+                                    <h2>@lang('ico.ends-in')</h2>
                                         @include('partials.countdown', ['timeLeft' => $ico['end']->timestamp - time()])
                                     </div>
                                 </div>
@@ -219,7 +203,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                                 <div class="well">
-                                <p>Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use <a href="{{ route('participate') }}" style="color:#fff; text-decoration: underline;">MyEtherWallet, MetaMask, Mist, Tokenlot</a> or other compatible wallets.</p>
+                                <p>@lang('ico.notice', ['commaSeparatedWalletList' => '<a href="'.route('participate').'" style="color:#fff; text-decoration: underline;">MyEtherWallet, MetaMask, Mist, Tokenlot</a>'])</p>
                             </div>
                         </div>
                     </div>
@@ -228,11 +212,11 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 buttons">
                             <div class="content dashboard-buttons">
                                 <div class="left text-left">
-                                    <a class="how-to-participate" href="{{ route('participate') }}">How to participate?</a>
+                                    <a class="how-to-participate" href="{{ route('participate') }}">@lang('ico.how-to')</a>
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">
-                                        <a href="{{ route('details') }}" type="submit" class="btn btn-primary button-done">DONE</a>
+                                        <a href="{{ route('details') }}" type="submit" class="btn btn-primary button-done">@lang('ico.done')</a>
                                     </div>
                                 </div>
                             </div>

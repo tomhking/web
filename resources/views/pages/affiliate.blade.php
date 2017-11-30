@@ -9,64 +9,67 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-md-12 text-center">
-                        <h1>BitDegree Referral Program</h1>
-                        <h3 class="subtitle">Get Your Share of the 200 000 BDG Token Pool!</h3>
+                        <h1>@lang('affiliate.headline')</h1>
+                        <h3 class="subtitle">@lang('affiliate.subtitle')</h3>
                     </div>
-
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                    https://stude.co/{{ auth()->user()->id }}
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="well well-important">
+                                    @if($referralCount == 0)
+                                        @lang('affiliate.1-referral')
+                                    @else
+                                        @lang('affiliate.n-referrals', ['number' => $referralCount + 1])
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-12">
                         <div class="referral-description">
-                            <h3>How it works?</h3>
+                            <h3>@lang('affiliate.how')</h3>
                             <ul>
-                                <li>Scroll down to find your unique referral link. Remember, sharing your link with friends and other interested parties is the easiest way to earn LOTS of tokens!</li>
-                                <li>Also, you can choose from a variety of banners to place on your website to refer people to BitDegree.</li>
-                                <li>Once a person that you referred signs up on BitDegree website with his email you will earn one stake.</li>
-                                <li>At the end of the crowdsale the total amount of stakes will be transformed into tokens and will be distributed among all participants based on the number of people they have referred.</li>
-                                <li>You will be receive the instructions on how to claim your BitDegree tokens via the email that you provided during registration.</li>
+                                <li>@lang('affiliate.how-descr-1')</li>
+                                <li>@lang('affiliate.how-descr-2')</li>
+                                <li>@lang('affiliate.how-descr-3')</li>
+                                <li>@lang('affiliate.how-descr-4')</li>
+                                <li>@lang('affiliate.how-descr-5')</li>
                             </ul>
-                            <h3>Restrictions</h3>
+                            <h3>@lang('affiliate.restrictions')</h3>
                             <ul>
-                                <li>No multiple signups</li>
-                                <li>No self-referrals</li>
-                                <li>No spam</li>
+                                <li>@lang('affiliate.restriction-1')</li>
+                                <li>@lang('affiliate.restriction-2')</li>
                             </ul>
-                            <p>Breaking any of these rules will immediately ban you from the BitDegree affiliate program.</p>
+                            <p>@lang('affiliate.breaking')</p>
                         </div>
                     </div>
                  </div>
 
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <div class="well well-important">
-                                   https://www.bitdegree.org/a/{{ auth()->user()->id }}
-                                </div>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <div class="well well-important">
-                                    {{ auth()->user()->referrals()->count() }} referrals
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <h1 class="text-center">Banners to use</h1>
-                        <p class="text-center subtitle">Use these banners and get tokens for bringing traffic to Bitdegree</p>
+                        <h1 class="text-center">@lang('affiliate.banners-to-use')</h1>
+                        <p class="text-center subtitle">@lang('affiliate.banners-to-use-subtitle')</p>
 
                         @foreach($banners as $banner)
                             <div class="col-xs-12 col-md-6">
                             <div class="panel panel-primary">
                                 <div class="panel-heading">
-                                    <h4>Banner <span class="label label-default pull-left">{{ $banner['width'].'x'.$banner['height'] }}</span></h4>
+                                    <h4>@lang('affiliate.banner') <span class="label label-default pull-left">{{ $banner['width'].'x'.$banner['height'] }}</span></h4>
                                 </div>
                                 <div class="panel-body">
                                     <div class="banner-image text-center">
-                                        <img src="{{ asset_rev($banner['url']) }}" alt="BitDegree:From EA co-founder, former COURSERA Lead &amp; 29,000,000 users. Limited 15% discount - Get Tokens!">
+                                        <img src="{{ asset_rev($banner['url']) }}" alt="@lang('affiliate.banner-alt')">
                                     </div>
-                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('affiliate-cookie', auth()->id()).'" target="_blank"><img src="'.asset_rev($banner['url']).'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!"></a>'}}</textarea>
+                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('affiliate-cookie', auth()->id()).'" target="_blank"><img src="'.asset_rev($banner['url']).'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="'.__('affiliate.banner-alt').'"></a>'}}</textarea>
                                 </div>
                             </div>
                             </div>

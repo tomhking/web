@@ -29,4 +29,7 @@ return [
     'coming_soon' => 'Coming Soon',
     'enrollment_date' => 'Enrollment date',
     'lesson_number' => 'Lesson :number',
+    'description-18-feb' => 'CLASSROOM OPENS: February, 2018',
+    'description-beta' => 'Available Beta',
+    'description-18-jan' => 'CLASSROOM OPENS: January, 2018',
 ];
