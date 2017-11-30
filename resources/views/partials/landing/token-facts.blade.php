@@ -56,20 +56,17 @@
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
-                    <h4>@lang('home.ico_section_minimum')</h4>
-                    <p>~550 ETH*</p>
-
                     <h4>@lang('home.ico_section_maximum')</h4>
                     <p>~30,000 ETH*</p>
 
                     <h4>@lang('home.ico_tokens_total')</h4>
                     <p>@lang('home.ico_tokens_total_2')</p>
+
+                    <h4>@lang('home.ico_accepted_currencies')</h4>
+                    <p>ETH <span style="font-size:14px; letter-spacing: 0;">(@lang('home.other-tokenlot'))</span></p>
                 </div>
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
-                    <h4>@lang('home.ico_accepted_currencies')</h4>
-                    <p>ETH (@lang('home.other-tokenlot'))</p>
-
 
                     <h4>@lang('home.ico_section_legal_form')</h4>
                     <p>@lang('home.ico_section_legal_form2')</p>
@@ -79,11 +76,7 @@
 
                 </div>
 
-
                 <div class="col-xs-6 col-sm-3 col-md-3">
-
-                    <h4>@lang('home.ico_section_kyc')</h4>
-                    <p>@lang('home.ico_section_kyc2')</p>
 
                     <h4>@lang('home.ico_section_escrow')</h4>
                     <p>@lang('home.ico_section_escrow2')</p>

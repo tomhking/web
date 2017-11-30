@@ -59,7 +59,7 @@ return [
     'login-headline' => 'Log In To BitDegree',
     'signup-headline' => 'Sign Up To BitDegree',
     'login-subtitle' => 'Have an account, but no password? Just type in a new one below, or click "Forgot password".',
-    'terms' => 'I hereby agree to Bitdegree Token Sale <a href=":termsLink" target="_blank">Terms of Service</a> and <a href=":privacyLink" target="_blank">Privacy Policy</a>.',
+    'terms' => 'By signing up you agree Bitdegree <a href=":termsLink" target="_blank">Terms of Service</a> and <a href=":privacyLink" target="_blank">Privacy Policy</a>.',
     'verified-headline' => 'Email Verification',
     'verified-success' => 'Your email has been successfully verified.',
     'verified-failure' => 'The confirmation link is either incorrect or it had already expired. Please request a new one.',

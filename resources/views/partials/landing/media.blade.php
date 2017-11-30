@@ -11,10 +11,10 @@
             <div class="col-md-12">
                 <div class="row row-articles">
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://cointelegraph.com/news/ec-releases-report-on-possible-blockchain-applications-in-education" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/blockchain-in-education.jpg') }}" alt="EC: Blockchain Applications in Education">
-                            <h4>EC: Blockchain Applications in Education</h4>
-                            <p class="article-date"><span>Nov 17, 2017</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/guaranteed-value-return-for-bitdegree-token-holders-backed-by-hostinger-services-ac5a675b9528" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/backed-by.jpg') }}" alt="Token Backed by Hostinger services">
+                            <h4>Token Value Backed by Hostinger services</h4>
+                            <p class="article-date"><span>Nov 23, 2017</span></p>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
@@ -63,10 +63,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://blog.bitdegree.org/guaranteed-value-return-for-bitdegree-token-holders-backed-by-hostinger-services-ac5a675b9528" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/backed-by.jpg') }}" alt="Token Backed by Hostinger services">
-                            <h4>Token Value Backed by Hostinger services</h4>
-                            <p class="article-date"><span>Nov 23, 2017</span></p>
+                        <a class="article-thumbnail" href="https://cointelegraph.com/news/ec-releases-report-on-possible-blockchain-applications-in-education" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/blockchain-in-education.jpg') }}" alt="EC: Blockchain Applications in Education">
+                            <h4>EC: Blockchain Applications in Education</h4>
+                            <p class="article-date"><span>Nov 17, 2017</span></p>
                         </a>
                     </div>
             </div>
