@@ -64,8 +64,8 @@
                                             <select tabindex="6" name="kyc" id="input-kyc" class="form-control" {{ $user->identification ? "disabled" : "" }}>
                                                 @foreach([
                                                     -1 => __('user.please-select'),
-                                                    0 => __('user.less-eth', ['number' => 1]),
-                                                    1 => __('user.more-eth', ['number' => 1]),
+                                                    0 => __('user.less-eth', ['number' => 5]),
+                                                    1 => __('user.more-eth', ['number' => 5]),
                                                 ] as $state => $name)
                                                     <option value="{{ $state }}" {{ old('kyc', $user->identification ? 1 : -1) == $state ? "selected" : "" }}>{{ $name }}</option>
                                                 @endforeach

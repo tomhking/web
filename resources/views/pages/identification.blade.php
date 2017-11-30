@@ -30,12 +30,10 @@
                                     </div>
                                 </div>
                                 @if(auth()->user()->identification)
-                                    <h4>@lang('user.identity-verification')</h4>
                                     <p>@lang('user.identity-submitted')</p>
                                 @else
                                     <div class="row" id="kyc-upload">
                                         <div class="col-md-12">
-                                            <h4>@lang('user.identity-verification')</h4>
                                             <p>@lang('user.identity-verification-description')</p>
                                             <input type="file" name="file">
                                         </div>
