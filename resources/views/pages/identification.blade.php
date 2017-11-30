@@ -21,7 +21,7 @@
                         <h1 class="text-center">@lang('user.identity')</h1>
                     </div>
 
-                    <form action="{{ route('details') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('identification') }}" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="col-xs-12 col-md-10 col-md-offset-1 personal-details">
                                 <div class="row">
@@ -48,9 +48,12 @@
                                     <div class="left text-left">
                                         <a class="button-back" href="{{ route('details') }}">@lang('user.back')</a>
                                     </div>
-                                    <div class="right text-right">
-                                        <button tabindex="8" type="submit" class="btn btn-primary button-save">@lang('user.save')</button>
-                                    </div>
+
+                                    @if(!auth()->user()->identification)
+                                        <div class="right text-right">
+                                            <button tabindex="8" type="submit" class="btn btn-primary button-save">@lang('user.save')</button>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>

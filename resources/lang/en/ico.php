@@ -17,7 +17,7 @@ return [
     'rate-with-bonus' => 'Exchange rate with bonus',
     'gas-limit' => 'Gas Limit',
     'exchange-rate' => 'Exchange rate',
-    'ends-in' => 'Crowdsale ends in:',
+    'ends-in' => 'Token sale ends in:',
     'how-to' => 'How to participate?',
     'bdg' => 'BDG Token',
     'whats-next' => 'What\'s next?',
@@ -48,4 +48,6 @@ return [
     'tokens-sold' => 'Tokens Sold: :number',
     'eth-raised' => 'ETH Raised: :number',
     'eth-calc-included' => ':amount% bonus included',
+    'bonus-ended' => 'Bonus ended!',
+    'available-now' => 'Available now!',
 ];

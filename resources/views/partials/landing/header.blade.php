@@ -118,11 +118,11 @@
                                             <h1>JOIN CROWDSALE <b>NOW!</b> BONUS ENDS IN:</h1>
                                             @include('partials.countdown', ['timeLeft' => $currentBonus['to']->diffInSeconds()])
                                         @else
-                                            <h1>Token sale ends in:</h1>
-                                            @include('partials.countdown', ['timeLeft' => config('ico.end')->diffInSeconds()])
+                                            <h1>@lang('ico.ends-in')</h1>
+                                            @include('partials.countdown', ['timeLeft' => config('ico.end')->isPast() ? 0 : config('ico.end')->diffInSeconds()])
                                         @endif
 
-                                        <h4 class="ico-progress-percentage text-left">Progress: {{ number_format($progress, 1) }}% ({{ number_format($tokensSold, $raisedDecimals, ".", ",") }} BDG)</h4>
+                                        <h4 class="ico-progress-percentage text-left">@lang('ico.progress', ['number' => number_format($progress, 1) ]) ({{ number_format($tokensSold, $raisedDecimals, ".", ",") }} BDG)</h4>
 
                                         <div class="progress-bar-wrapper">
                                             <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
@@ -131,73 +131,49 @@
                                             </div>
 
                                             <!-- hard cap marker -->
-                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
+                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
                                         </div>
 
                                         <div class="bonuses-table">
-                                            <h4 class="text-center">Send ETH & receive BitDegree Tokens immediately!</h4>
+                                            <h4 class="text-center">@lang('ico.receive')</h4>
                                             <table>
                                                 <tbody>
-                                                <tr>
-                                                    <td class="text-left">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                    </td>
-                                                    <td>
-                                                        15% BONUS
-                                                    </td>
-                                                    <td>
-                                                        WEEK 1
-                                                    </td>
-                                                    <td>
-                                                        <span class="tokens-left">AVAILABLE NOW!</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-left">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                    </td>
-                                                    <td>
-                                                        10% BONUS
-                                                    </td>
-                                                    <td>
-                                                        WEEK 2
-                                                    </td>
-                                                    <td>
-
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-left">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                    </td>
-                                                    <td>
-                                                        5% BONUS
-                                                    </td>
-                                                    <td>
-                                                        WEEK 3
-                                                    </td>
-                                                    <td>
-
-                                                    </td>
-                                                </tr>
+                                                @foreach(config('ico.bonuses') as $bonus)
+                                                    @php($amount = ($bonus['bonus']-1)*100)
+                                                    @php($iconCount = bcdiv($amount, 5))
+                                                    @php($weekNum = ($weekNum ?? 0) + 1)
+                                                    @php($hasEnded = $bonus['to']->isPast())
+                                                    @php($bonusActive = \Carbon\Carbon::now()->between($bonus['from'], $bonus['to']))
+                                                    @php($hasActiveBonuses = ($hasActiveBonuses ?? false) || $bonusActive)
+                                                    <tr class="{{ $hasEnded ? "ended" : "" }}">
+                                                        <td class="text-left">
+                                                            @for($i = $iconCount; $i >= 0; $i--)
+                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                            @endfor
+                                                        </td>
+                                                        <td>@lang('ico.bonus-percent', ['amount' => $amount])</td>
+                                                        <td>@lang('ico.week-num', ['number' => $weekNum])</td>
+                                                        <td>
+                                                            @if($hasEnded)
+                                                                <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                            @elseif($bonusActive)
+                                                                <span class="tokens-left">@lang('ico.available-now')</span>
+                                                            @endif
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
                                                 <tr>
                                                     <td class="text-left">
                                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                     </td>
+                                                    <td>@lang('ico.bonus-percent', ['amount' => 0])</td>
+                                                    <td>@lang('ico.week-num', ['number' => 4])</td>
                                                     <td>
-                                                        0% BONUS
-                                                    </td>
-                                                    <td>
-                                                        WEEK 4
-                                                    </td>
-                                                    <td>
-
+                                                        @if(config('ico.end')->isPast())
+                                                            <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                        @elseif(!$hasActiveBonuses)
+                                                            <span class="tokens-left">@lang('ico.available-now')</span>
+                                                        @endif
                                                     </td>
                                                 </tr>
                                                 </tbody>
