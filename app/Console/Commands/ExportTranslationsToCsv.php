@@ -52,7 +52,7 @@ class ExportTranslationsToCsv extends Command
                 continue;
             }
             $out = fopen('php://output', 'w');
-            fputcsv($out, [$key, $message]);
+            fputcsv($out, [$key, $message, ($fallbackMessages[$key] ?? false) == $message ? 0 : 1]);
             fclose($out);
         }
     }
