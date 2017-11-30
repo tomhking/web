@@ -28,7 +28,7 @@
             </div>
 
             <div class="row">
-                <div class="agreement col-md-12 ">
+                <div class="agreement">
                     <input tabindex="3" type="checkbox" id="agreeToTerms" name="agreement" {{ old('agreement', false) ? 'checked' : '' }} value="1">
                     <label for="agreeToTerms">@lang('user.terms', [
                         'termsLink' => asset_rev('files/terms-of-service.pdf'),

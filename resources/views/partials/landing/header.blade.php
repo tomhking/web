@@ -115,7 +115,7 @@
                                     @else
 
                                         @if($currentBonus)
-                                            <h1>{{ $currentBonus['name'] }} bonus ends in:</h1>
+                                            <h1>JOIN CROWDSALE <b>NOW!</b> BONUS ENDS IN:</h1>
                                             @include('partials.countdown', ['timeLeft' => $currentBonus['to']->diffInSeconds()])
                                         @else
                                             <h1>Token sale ends in:</h1>
@@ -135,7 +135,7 @@
                                         </div>
 
                                         <div class="bonuses-table">
-                                            <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
+                                            <h4 class="text-center">Send ETH & receive BitDegree Tokens immediately!</h4>
                                             <table>
                                                 <tbody>
                                                 <tr>
@@ -213,8 +213,7 @@
                     <div class="communicate">
                         <div class="contact">
                             @auth
-                                <p><strong>@lang('user.welcome_back', ['name' => auth()->user()->first_name ?: auth()->user()->email])</strong></p>
-                                <p><a class="btn btn-account" href="{{ route('user') }}">@lang('user.my_account')</a></p>
+                                <a class="cta-btn" href="{{ route('user') }}">@lang('ico.join-now-c2a')</a>
                             @endauth
                             @guest
                                 <a class="cta-btn" href="{{ route('register') }}">@lang('ico.join-now-c2a')</a>
