@@ -11,7 +11,7 @@ return [
     'amount-eth' => 'You send',
     'amount-tokens' => 'You receive',
     'percentage-supply' => '% of total supply',
-    'receive' => 'Send ETH and receive BitDegree Tokens immediately!',
+    'receive' => 'Send ETH & receive BitDegree Tokens immediately!',
     'week-num' => 'WEEK :number',
     'bonus-percent' => ':amount% BONUS',
     'rate-with-bonus' => 'Exchange rate with bonus',

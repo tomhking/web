@@ -48,7 +48,13 @@
                     </button>
 
                 </div>
+
+                @auth
+                <a class="login-link" href="{{ route('login') }}">• My account</a>
+                @endauth
+                @guest
                 <a class="login-link" href="{{ route('login') }}">• Login</a>
+                @endguest
 
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
                     <ul class="nav navbar-nav navbar-right">
