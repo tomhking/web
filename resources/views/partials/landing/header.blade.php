@@ -48,6 +48,8 @@
                     </button>
 
                 </div>
+                <a class="login-link" href="{{ route('login') }}">• Login</a>
+
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>

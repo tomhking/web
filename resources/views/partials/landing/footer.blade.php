@@ -31,8 +31,6 @@
                         </ul>
 
                         <a class="login-link" href="{{ route('login') }}">User Login</a>
-
-
                     </div>
                 </div>
             </div>

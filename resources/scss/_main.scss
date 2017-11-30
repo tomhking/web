@@ -3259,6 +3259,13 @@ body.course-landing header{
 
 header {
   padding-top: 39px;
+  a.login-link {
+    position: absolute;
+    right: 0;
+    padding: 0 35px;
+    top: -20px;
+    font-size: 13px;
+  }
   .description {
     font-family: $source-code;
     font-weight: 300;
