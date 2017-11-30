@@ -21,7 +21,7 @@ return [
     'or_login' => 'or Log In',
     'congrats' => 'Congratulations, {{ $participant->first_name or $participant->email }}!',
     'tokens_secured' => '<h3>You have</h3 ><h1>:number BDG</h1> <h3>Tokens secured</h3>',
-    'share' => 'Share or join to get more <b>FREE</b> tokens:',
+    'share' => 'Share to get more <b>FREE</b> tokens:',
     'congratulations' => 'Congratulations, :name!',
     'logout' => 'Log out',
     'back' => 'Back',
