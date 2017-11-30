@@ -17,16 +17,14 @@
                             <img src="{{ asset_rev('equality.png') }}" alt="Equal opportunity">
                         </div>
                         <h3 class="text-center">@lang('home.ico_point_opportunity')</h3>
-                        <p>@lang('home.ico_point_description_opportunity')<br>
-                            <a href="https://blog.bitdegree.org/the-bitdegree-token-crowdsale-pledge-d92a144b8bcb" rel="nofollow" target="_blank">@lang('home.read-more')</a></p>
+                        <p>@lang('home.ico_point_description_opportunity')</p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="icon text-center">
                             <img src="{{ asset_rev('law.png') }}" alt="Compliant with law">
                         </div>
                         <h3 class="text-center">@lang('home.ico_point_law')</h3>
-                        <p>@lang('home.ico_section_description')<br>
-                            <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" rel="nofollow" target="_blank">@lang('home.read-more')</a></p>
+                        <p>@lang('home.ico_section_description')</p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="icon text-center">
