@@ -10,7 +10,10 @@ return [
     'end' => $endTime,
     'started' => $startTime->isPast(),
     'ended' => $endTime->isPast(),
-    'rate' => 10000,
+    'rate' => env('ICO_RATE'),
+    'hardCap' => env('ICO_HARD_CAP'),
+    'softCap' => env('ICO_SOFT_CAP'),
+    'decimals' => 18,
     'bonuses' => [
         [
             'name' => 'ico.bonus_1',

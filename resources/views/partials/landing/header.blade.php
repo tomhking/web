@@ -101,13 +101,29 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12 col-md-8 col-md-offset-2">
-
+                                    @if(config('ico.start')->isFuture())
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <h1 class="text-center">@lang('ico.home-countdown')</h1>
                                             </div>
                                         </div>
                                         @include('partials.countdown', ['timeLeft' => config('ico.start')->timestamp - time()])
+                                    @else
+                                        <h3 class="ico-progress-percentage">Progress: {{ number_format($progress, 1) }}% ({{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG)</h3>
+
+                                        <div class="progress-bar-wrapper">
+                                            <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
+                                                <!-- progress bar -->
+                                                <div style="width: {{ $progress }}%; height: 30px; background-image: linear-gradient(-180deg, #F93800 4%, #c02b3f 99%); box-shadow: inset 0 2px 0 0 #ff6868; position: relative;"></div>
+                                            </div>
+
+                                            <!-- soft cap marker -->
+                                            <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCap / $hardCap * 100 }}%; background: #fff;"> <h3 class="soft-cap-text">Soft Cap: {{ number_format($softCap, 0, ".", ",") }} BDG</h3></div>
+
+                                            <!-- hard cap marker -->
+                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", ",") }} BDG</h3></div>
+                                        </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>

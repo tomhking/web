@@ -26,7 +26,20 @@ class ContentController extends Controller
      */
     function home(Request $request)
     {
+        $tokenDecimals = config('ico.decimals');
+        $raisedDecimals = env('ICO_RAISED_DECIMALS', 2);
+        $softCap = config('ico.softCap');
+        $hardCap = config('ico.hardCap');
+        $tokensSoldRaw = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
+
+        $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals - $raisedDecimals)) / pow(10, $raisedDecimals);
+
         return response(view('pages.home', [
+            'softCap' => $softCap,
+            'hardCap' => $hardCap,
+            'progress' => $tokensSold / $hardCap,
+            'tokensSold' => $tokensSold,
+            'raisedDecimals' => $raisedDecimals,
             'canGetFreeTokens' => false,
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)

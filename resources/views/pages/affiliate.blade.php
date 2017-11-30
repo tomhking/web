@@ -67,9 +67,9 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="banner-image text-center">
-                                        <img src="{{ asset_rev($banner['url']) }}" alt="@lang('affiliate.banner-alt')">
+                                        <img src="{{ $banner['url'] }}" alt="@lang('affiliate.banner-alt')">
                                     </div>
-                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('affiliate-cookie', auth()->id()).'" target="_blank"><img src="'.asset_rev($banner['url']).'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="'.__('affiliate.banner-alt').'"></a>'}}</textarea>
+                                    <textarea readonly onclick="this.setSelectionRange(0, this.value.length)" class="form-control select-all">{{ '<a href="'.route('affiliate-cookie', auth()->id()).'" target="_blank"><img src="'.$banner['url'].'" width="'.$banner['width'].'" height="'.$banner['height'].'" alt="'.__('affiliate.banner-alt').'"></a>'}}</textarea>
                                 </div>
                             </div>
                             </div>
