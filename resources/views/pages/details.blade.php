@@ -9,7 +9,9 @@
                 <li class="step-done"><a href="#">@lang('ico.step', ['number' => 1])</a></li>
                 <li class="step-done"><a href="{{ route('address') }}">@lang('ico.step', ['number' => 2])</a></li>
                 <li class="step-active"><a href="{{ route('details') }}">@lang('ico.step', ['number' => 3])</a></li>
-                <li class="step-other"><a href="{{ route('identification') }}"><span>@lang('ico.other')</span></a></li>
+                @if($user->contribution >= 5)
+                    <li class="step-other"><a href="{{ route('identification') }}"><span>@lang('ico.other')</span></a></li>
+                @endif
             </ul>
         </div>
 
@@ -21,7 +23,7 @@
                         <h1 class="text-center">@lang('user.profile')</h1>
                     </div>
 
-                    <form action="{{ route('details') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('details') }}" method="post">
                         <div class="row">
                             <div class="col-xs-12 col-md-10 col-md-offset-1 personal-details">
                                 <div class="row">
@@ -60,14 +62,14 @@
                                             <input tabindex="4" type="date" class="form-control" id="input-birthday" value="{{ old('birthday', $user->birthday) }}" name="birthday" max="{{ \Carbon\Carbon::today()->subYears(16)->toDateString() }}" min="{{ \Carbon\Carbon::today()->subYears(100)->toDateString() }}" required>
                                         </div>
                                         <div class="form-group">
-                                            <label for="input-kyc">@lang('user.contribution')</label>
-                                            <select tabindex="6" name="kyc" id="input-kyc" class="form-control" {{ $user->identification ? "disabled" : "" }}>
+                                            <label for="input-contribution">@lang('user.contribution')</label>
+                                            <select tabindex="6" name="contribution" id="input-contribution" class="form-control">
+                                                <option value="" disabled {{ empty(old('contribution', $user->contribution)) ? "selected" : ""  }}>@lang('user.please-select')</option>
                                                 @foreach([
-                                                    -1 => __('user.please-select'),
-                                                    0 => __('user.less-eth', ['number' => 5]),
-                                                    1 => __('user.more-eth', ['number' => 5]),
+                                                    1 => __('user.less-eth', ['number' => 5]),
+                                                    5 => __('user.more-eth', ['number' => 5]),
                                                 ] as $state => $name)
-                                                    <option value="{{ $state }}" {{ old('kyc', $user->identification ? 1 : -1) == $state ? "selected" : "" }}>{{ $name }}</option>
+                                                    <option value="{{ $state }}" {{ old('contribution', $user->contribution) == $state ? "selected" : "" }}>{{ $name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -96,21 +98,4 @@
         </div>
     </div>
 
-
 @endsection
-
-@push('body-scripts')
-    @if(!$user->identification)
-        <script>
-            jqWait(function () {
-                var previousKyc = localStorage.getItem('kyc-choice');
-                if(previousKyc) $('#input-kyc').val(previousKyc);
-                $('#input-kyc').change(function () {
-                    var choice = parseInt($(this).val());
-                    localStorage.setItem('kyc-choice', choice);
-                    choice === 1 ? $('#kyc-upload').fadeIn() : $('#kyc-upload').hide();
-                }).change();
-            });
-        </script>
-    @endif
-@endpush

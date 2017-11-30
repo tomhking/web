@@ -2,16 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\AuthToken;
-use App\Events\LogIn;
-use App\User;
 use Carbon\Carbon;
-use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Cookie;
 
 class UserController extends Controller
@@ -38,6 +32,7 @@ class UserController extends Controller
             'last_name' => 'required|string|min:2|max:35',
             'country' => 'required|string|valid-country',
             'birthday' => 'required|date',
+            'contribution' => 'required|integer|min:0',
 
             // for some strange reason absence of 'required' rule does not stop other rules from running when input is empty
             'wallet' => !empty($request->get('wallet')) ? 'required|string|size:42' : '',
@@ -50,38 +45,9 @@ class UserController extends Controller
         $user->country = $request->get('country');
         $user->birthday = $request->get('birthday');
         $user->wallet = $request->get('wallet');
+        $user->contribution = $request->get('contribution');
 
         $user->save();
-
-        if (empty($user->identification) && $request->hasFile('file') && $request->file('file')->isValid()) {
-            $this->validate($request, [
-                'file' => 'required|image|max:10240',
-            ]);
-
-            $file = $request->file('file');
-
-            try {
-                $path = $file->storeAs(config('app.env') . '-kyc', str_random(64), 's3');
-
-                if (!$path) {
-                    throw new \Exception('Upload failed');
-                }
-
-                $user->identification = [
-                    'path' => $path,
-                    'extension' => $file->guessExtension(),
-                    'mime' => $file->getMimeType(),
-                    'size' => $file->getSize(),
-                ];
-
-                $user->save();
-            } catch (\Exception $e) {
-                Log::error("Upload failed", [
-                    'message' => $e->getMessage(),
-                ]);
-                return back()->withErrors(__('user.upload-failed'));
-            }
-        }
 
         return back()->with('status', __('user.profile-saved'));
     }
@@ -201,6 +167,51 @@ class UserController extends Controller
         $user->save();
 
         return back()->with('status', __('user.password-changed'));
+    }
+
+    /**
+     * @param Request $request
+     * @return $this|\Illuminate\Http\RedirectResponse
+     */
+    public function identification(Request $request){
+        if(auth()->user()->identification) {
+            return back();
+        }
+
+        $this->validate($request, [
+            'file' => 'required|image|max:10240',
+        ]);
+
+        $user = auth()->user();
+
+        try {
+            if ($request->hasFile('file') && $request->file('file')->isValid()) {
+                $file = $request->file('file');
+                $path = $file->storeAs(config('app.env') . '-kyc', str_random(64), 's3');
+
+                if (!$path) {
+                    throw new \Exception('Upload failed');
+                }
+
+                $user->identification = [
+                    'path' => $path,
+                    'extension' => $file->guessExtension(),
+                    'mime' => $file->getMimeType(),
+                    'size' => $file->getSize(),
+                ];
+
+                $user->save();
+            } else {
+                throw new \Exception('File was either not given or it is invalid.');
+            }
+        } catch (\Exception $e) {
+            Log::error("Upload failed", [
+                'message' => $e->getMessage(),
+            ]);
+            return back()->withErrors(__('user.upload-failed'));
+        }
+
+        return redirect()->back();
     }
 
     /**
