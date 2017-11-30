@@ -1,3 +1,8 @@
+@php
+$bonusAvailable = !!$currentBonus;
+$bonus = (($currentBonus['bonus'] ?? 1)-1) * 100;
+$rate = config('ico.rate') * ($currentBonus['bonus'] ?? 1);
+@endphp
 <div class="modal fade" role="dialog" id="token-calc-modal" tabindex="-1" aria-labelledby="gridModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -11,18 +16,21 @@
             <div class="modal-body text-left">
                 <div class="content">
                     <div class="row" id="token-calculator">
-                        <div class="col-md-4">
+                        <div class="{{ $bonus > 0 ? "col-md-4" : "col-md-6" }}">
                             <h4>@lang('ico.amount-eth')</h4>
                             <input type="number" id="amt-eth">
                         </div>
-                        <div class="col-md-4">
+                        <div class="{{ $bonus > 0 ? "col-md-4" : "col-md-6" }}">
                             <h4>@lang('ico.amount-tokens')</h4>
                             <input type="number" id="amt-tokens">
                         </div>
-                        <div class="col-md-4">
-                            <h4>@lang('ico.percentage-supply')</h4>
-                            <input type="number" id="amt-supply">
-                        </div>
+                        @if($bonus > 0)
+                            <div class="col-md-4">
+                                <span class="label label-success">@lang('ico.eth-calc-included', [
+                                    'amount' => $bonus,
+                                ])</span>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -37,42 +45,27 @@
             var
                 amtEth = $("#amt-eth"),
                 amtTokens = $("#amt-tokens"),
-                amtSupply = $("#amt-supply"),
                 totalSupply = new Big({{ config('ico.hardCap') }}),
-                rate = new Big({{ config('ico.rate') }});
+                rate = new Big({{ $rate }});
 
             amtEth.val(150);
             ethChanged();
 
             amtEth.keyup(ethChanged).change(ethChanged);
             amtTokens.keyup(tokensChanged).change(tokensChanged);
-            amtSupply.keyup(supplyChanged).change(supplyChanged);
 
-            function ethChanged(e) {
+            function ethChanged() {
                 var amt = parseFloat(amtEth.val().replace(",", "."));
 
                 amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > totalSupply / rate ? totalSupply / rate : amt));
-
-                amtTokens.val(amt.times(rate));
-                amtSupply.val(amt.times(rate).div(totalSupply).times(100).toFixed(4));
+                amtTokens.val(amt.times(rate).toFixed(0));
             }
 
-            function tokensChanged(e) {
+            function tokensChanged() {
                 var amt = parseFloat(amtTokens.val().replace(",", "."));
 
                 amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > totalSupply ? totalSupply : amt));
-
-                amtEth.val(amt.div(rate));
-                amtSupply.val(amt.div(totalSupply).times(100).toFixed(4));
-            }
-
-            function supplyChanged(e) {
-                var amt = parseFloat(amtSupply.val().replace(",", "."));
-
-                amt = new Big(isNaN(amt) || amt <= 0 ? 0 : (amt > 100 ? 100 : amt));
-
-                amtEth.val(totalSupply.times(amt).div(100).div(rate));
-                amtTokens.val(totalSupply.times(amt));
+                amtEth.val(amt.div(rate).toFixed(2));
             }
         });
     </script>

@@ -47,4 +47,5 @@ return [
     'get-tokens-now' => 'Get Tokens Now',
     'tokens-sold' => 'Tokens Sold: :number',
     'eth-raised' => 'ETH Raised: :number',
+    'eth-calc-included' => ':amount% bonus included',
 ];

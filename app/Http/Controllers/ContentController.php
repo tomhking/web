@@ -22,7 +22,7 @@ class ContentController extends Controller
 
     /**
      * @param Request $request
-     * @return \Illuminate\Http\Response|\Laravel\Lumen\Http\ResponseFactory
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
      */
     function home(Request $request)
     {
@@ -57,77 +57,6 @@ class ContentController extends Controller
     }
 
     /**
-     * @param Request $request
-     * @return \Illuminate\View\View
-     */
-    function ico(Request $request) {
-        if (env('APP_ENV', 'production') != 'local' && $request->get('key') != env('ICO_PREVIEW_KEY')) {
-            abort(404);
-        }
-
-        $icoStart = Carbon::createFromTimestamp(env('ICO_STARTS_AT'));
-        $icoEnd = Carbon::createFromTimestamp(env('ICO_ENDS_AT'));
-
-        $showAddress = !!$request->cookie('participant', false);
-        $displaySignUp = $request->has('email');
-
-        $raisedDecimals = env('SOLD_COUNTER_DECIMALS', 0);
-        $tokensSold = bcdiv(Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0, bcpow(10, env('TOKEN_DECIMALS') - $raisedDecimals)) / pow(10, $raisedDecimals);
-
-        $hardCap = env('ICO_HARD_CAP');
-        $softCap = env('ICO_SOFT_CAP');
-
-        $progress = $tokensSold / $hardCap * 100;
-
-        $icoAddress = env('ICO_ADDRESS');
-        $icoRate = env('ICO_RATE');
-        $totalSupply = env('TOKEN_SUPPLY');
-
-
-        if($request->get('key') == env('ICO_PREVIEW_KEY') && $request->has('mock')) {
-            switch ($request->get('mock')) {
-                case "pre_ico_addr_unavailable":
-                case "pre_ico_addr_available":
-                    $icoStart = Carbon::today()->addDay();
-                    $icoEnd = $icoStart->copy()->addDay();
-                    break;
-                case "ico_started_pre_softcap":
-                case "ico_started_pre_hardcap":
-                    $icoStart = Carbon::today()->subDay();
-                    $icoEnd = Carbon::today()->addDays(2);
-                    $tokensSold = ($request->get('mock') == "ico_started_pre_softcap" ? $softCap : $hardCap) / 2;
-                    break;
-                case "ico_ended_pre_softcap":
-                case "ico_ended_pre_hardcap":
-                case "ico_ended_hardcap":
-                    $icoStart = Carbon::today()->subDay();
-                    $icoEnd = Carbon::today();
-                    $tokensSold = ($request->get('mock') == "ico_ended_pre_softcap" ? $softCap : $hardCap) / 2;
-                    $tokensSold = $request->get('mock') == "ico_ended_hardcap" ? $hardCap : $tokensSold;
-                    break;
-            }
-
-            $showAddress = $request->has('participant');
-            $progress = $tokensSold / $hardCap * 100;
-        }
-
-        return view('pages.ico', compact(
-            'icoStart',
-            'icoEnd',
-            'icoAddress',
-            'hardCap',
-            'softCap',
-            'tokensSold',
-            'showAddress',
-            'raisedDecimals',
-            'progress',
-            'icoRate',
-            'totalSupply',
-            'displaySignUp'
-        ));
-    }
-
-    /**
      * @return \Illuminate\View\View
      */
     function mvp() {
@@ -145,7 +74,7 @@ class ContentController extends Controller
     /**
      * @param $course
      * @param $lesson
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
      */
     function lesson($course, $lesson) {
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
@@ -164,7 +93,7 @@ class ContentController extends Controller
 
     /**
      * @param $course
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View|\Laravel\Lumen\Http\Redirector
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
      */
     function course($course) {
         $availableCourses = collect(app()->make('courses'))->keyBy('key');
@@ -180,7 +109,7 @@ class ContentController extends Controller
 
     /**
      * @param $course
-     * @return \Illuminate\Http\RedirectResponse|\Laravel\Lumen\Http\Redirector
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     function redirectLanding($course) {
         $mappings = [
