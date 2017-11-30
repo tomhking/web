@@ -13,12 +13,6 @@
                         <h3 class="subtitle">Get Your Share of the 200 000 BDG Token Pool!</h3>
                     </div>
 
-                    <div class="col-xs-12 col-md-12">
-                        <div class="well text-center">
-                            <p>By participating you agree to Bitdegree <a href="{{ asset_rev('files/referral-terms.pdf') }}" target="_blank"><b><span class="red">Referral Terms of Service</span></b></a>.</p>
-                        </div>
-                    </div>
-
                     <div class="col-md-12">
                         <div class="referral-description">
                             <h3>How it works?</h3>

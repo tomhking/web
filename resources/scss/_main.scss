@@ -2306,12 +2306,22 @@ body.login-page {
         margin:25px 0 25px 0;
         input{
           height: auto!important;
+          display: inline-block;
+          vertical-align: top;
+          width:5%;
+          &[type=checkbox] {
+            font-size: x-large;
+          }
         }
         label{
-          margin: 0!important;
-          font-weight: 300!important;
-          max-width: 95%;
-          float:right;
+          width:95%;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 !important;
+          font-weight: 300 !important;
+          float: right;
+          font-size: 14px;
+          letter-spacing: 0;
           a{
             color: #ffbcbc;
           }
