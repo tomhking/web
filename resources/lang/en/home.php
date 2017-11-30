@@ -3,6 +3,8 @@
 return [
     'title' => 'BitDegree ICO - Revolutionizing education with blockchain',
     'meta_description' => 'Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world\'s first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.',
+    'meta_description_dashboard'=> 'Bitdegree Crowdsale starts 1st of December. Login or Register and contribute to the world\'s first blockchain-powered online education platform with token scholarships &amp; tech talent acquisition',
+    'meta_description_courses' => 'Bitdegree - the world\'s first blockchain-powered online education platform with token scholarships will be offering a variety of courses. Join Solidity Smart Contract Development and start learning now.',
     'meta_keywords' => 'ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education',
     'header_title' => 'Revolutionizing education with blockchain',
     'header_subtitle' => 'The world\'s first blockchain-powered online education platform with token scholarships &amp; tech talent acquisition',

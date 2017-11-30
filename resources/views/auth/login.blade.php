@@ -4,6 +4,7 @@
     @if(config('ico.started'))
         <div class="col-md-8 col-md-push-2 text-center">
             <h1>@lang('ico.join-now-headline')</h1>
+            <h3 class="subtitle">@lang('user.login-subheadline')</h3>
         </div>
     @else
         <div class="col-md-8 col-md-push-2 text-center">

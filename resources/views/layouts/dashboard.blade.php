@@ -8,7 +8,7 @@
 
     @include('partials.tag-manager-head')
 
-    <meta name="description" content="@lang('home.meta_description')">
+    <meta name="description" content="@lang('home.meta_description_dashboard')">
     <meta name="keywords" content="@lang('home.meta_keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,6 @@
 
 <body class="landing {{ $bodyClass or 'front-page' }} lang-{{ $languages[$currentLanguage] }}" data-spy="scroll" data-target="#sidebar" data-offset="150">
     @include('partials.tag-manager-body')
-
 
     @include('partials.dashboard-header')
 

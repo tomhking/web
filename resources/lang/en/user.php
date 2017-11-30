@@ -57,6 +57,7 @@ return [
     'password' => 'Password',
     'forgot-pass' => 'Forgot password?',
     'login-headline' => 'Log In To BitDegree',
+    'login-subheadline' => 'Education is the foundation upon which we build our future. Sign in and contribute!',
     'signup-headline' => 'Sign Up To BitDegree',
     'login-subtitle' => 'Have an account, but no password? Just type in a new one below, or click "Forgot password".',
     'terms' => 'By signing up you agree Bitdegree <a href=":termsLink" target="_blank">Terms of Service</a> and <a href=":privacyLink" target="_blank">Privacy Policy</a>.',

@@ -8,7 +8,7 @@
 
     @include('partials.tag-manager-head')
 
-    <meta name="description" content="@lang('home.meta_description')">
+    <meta name="description" content="@lang('home.meta_description_courses')">
     <meta name="keywords" content="@lang('home.meta_keywords')">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

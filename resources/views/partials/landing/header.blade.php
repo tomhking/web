@@ -109,7 +109,7 @@
                                         </div>
                                         @include('partials.countdown', ['timeLeft' => config('ico.start')->timestamp - time()])
                                     @else
-                                        <h3 class="ico-progress-percentage">Progress: {{ number_format($progress, 1) }}% ({{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG)</h3>
+                                        <h4 class="ico-progress-percentage text-left">Progress: {{ number_format($progress, 1) }}% ({{ number_format($tokensSold, $raisedDecimals, ".", "") }} BDG)</h4>
 
                                         <div class="progress-bar-wrapper">
                                             <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
@@ -118,11 +118,82 @@
                                             </div>
 
                                             <!-- soft cap marker -->
-                                            <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCap / $hardCap * 100 }}%; background: #fff;"> <h3 class="soft-cap-text">Soft Cap: {{ number_format($softCap, 0, ".", ",") }} BDG</h3></div>
+                                        <!--<div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCap / $hardCap * 100 }}%; background: #fff;"> <h3 class="soft-cap-text">Soft Cap: {{ number_format($softCap, 0, ".", ",") }} BDG</h3></div>->
 
                                             <!-- hard cap marker -->
-                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h3 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", ",") }} BDG</h3></div>
+                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">Hard Cap: {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
                                         </div>
+
+                                        <div class="bonuses-table">
+                                            <h4 class="text-center">Send ETH and receive BitDegree Tokens immediately!</h4>
+                                            <table>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                    </td>
+                                                    <td>
+                                                        15% BONUS
+                                                    </td>
+                                                    <td>
+                                                        WEEK 1
+                                                    </td>
+                                                    <td>
+                                                        <span class="tokens-left">AVAILABLE NOW!</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                    </td>
+                                                    <td>
+                                                        10% BONUS
+                                                    </td>
+                                                    <td>
+                                                        WEEK 2
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                    </td>
+                                                    <td>
+                                                        5% BONUS
+                                                    </td>
+                                                    <td>
+                                                        WEEK 3
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-left">
+                                                        <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                    </td>
+                                                    <td>
+                                                        0% BONUS
+                                                    </td>
+                                                    <td>
+                                                        WEEK 4
+                                                    </td>
+                                                    <td>
+
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
                                     @endif
                                 </div>
                             </div>
