@@ -37,48 +37,13 @@
                                     </div>
 
                                     <div class="token-calc-modal">
-
                                         <div class="token-calculator" data-toggle="modal" data-target="#CalcModal">
                                             <div class="token-calculator-btn">
-                                                <a class="btn" data-toggle="collapse" href="#token-calculator">@lang('ico.calculator')</a>
+                                                <a class="btn" data-toggle="modal" href="#token-calc-modal">@lang('ico.calculator')</a>
                                             </div>
                                         </div>
-
-                                        <div class="modal fade" role="dialog" id="CalcModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                                        <div class="modal-title">
-                                                            <h2>@lang('ico.calculator')</h2>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="modal-body text-left">
-                                                        <div class="content">
-                                                            <div class="row" id="token-calculator">
-                                                                <div class="col-md-4">
-                                                                    <h4>@lang('ico.amount-eth')</h4>
-                                                                    <input type="number" id="amt-eth">
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <h4>@lang('ico.amount-tokens')</h4>
-                                                                    <input type="number" id="amt-tokens">
-                                                                </div>
-                                                                <div class="col-md-4">
-                                                                    <h4>@lang('ico.percentage-supply')</h4>
-                                                                    <input type="number" id="amt-supply">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -228,7 +193,7 @@
         </div>
     </div>
 
-
+    @include('partials.token-calculator')
 @endsection
 
 @push('body-scripts')

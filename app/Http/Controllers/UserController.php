@@ -172,6 +172,14 @@ class UserController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+    public function showIdentification()
+    {
+        return view('pages.identification');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     function showPassword()
     {
         return view('pages.password');

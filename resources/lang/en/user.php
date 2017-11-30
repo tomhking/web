@@ -71,4 +71,5 @@ return [
     'password-confirmation' => 'Password Confirmation',
     'save-new-pass' => 'Save New Password',
     'reset-new-pass-headline' => 'Set a New Password',
+    'identity' => 'Verify Your Identity',
 ];

@@ -9,6 +9,7 @@
                 <li class="step-done"><a href="#">@lang('ico.step', ['number' => 1])</a></li>
                 <li class="step-done"><a href="{{ route('address') }}">@lang('ico.step', ['number' => 2])</a></li>
                 <li class="step-active"><a href="{{ route('details') }}">@lang('ico.step', ['number' => 3])</a></li>
+                <li class="step-other"><a href="{{ route('identification') }}"><span>@lang('ico.other')</span></a></li>
             </ul>
         </div>
 
@@ -72,18 +73,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                @if($user->identification)
-                                    <h4>@lang('user.identity-verification')</h4>
-                                    <p>@lang('user.identity-submitted')</p>
-                                @else
-                                    <div class="row" style="display: none;" id="kyc-upload">
-                                        <div class="col-md-12">
-                                            <h4>@lang('user.identity-verification')</h4>
-                                            <p>@lang('user.identity-verification-description')</p>
-                                            <input type="file" name="file">
-                                        </div>
-                                    </div>
-                                @endif
                             </div>
                         </div>
 
