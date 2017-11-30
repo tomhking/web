@@ -104,7 +104,7 @@
 
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <h1 class="text-center">Crowdsale starts in:</h1>
+                                                <h1 class="text-center">@lang('ico.home-countdown')</h1>
                                             </div>
                                         </div>
                                         @include('partials.countdown', ['timeLeft' => config('ico.start')->timestamp - time()])
@@ -120,7 +120,7 @@
                                 <p><a class="btn btn-account" href="{{ route('user') }}">@lang('user.my_account')</a></p>
                             @endauth
                             @guest
-                                <a class="cta-btn" href="{{ route('register') }}">Join BitDegree Now</a>
+                                <a class="cta-btn" href="{{ route('register') }}">@lang('ico.join-now-c2a')</a>
                             @endguest
                             <div class="contact-icons buttons">
                                 <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset_rev('telegram-logo.png') }}" alt="Telegram"></a>

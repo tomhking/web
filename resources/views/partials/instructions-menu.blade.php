@@ -1,9 +1,9 @@
 <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
-    <h4>How to participate?</h4>
+    <h4>@lang('ico-instructions.how-to-participate')</h4>
     <ul class="sidebar-nav">
-        <li class="instructions"><a href="{{ route('participate') }}">How to create an ether wallet</a></li>
-        <li class="instructions"><a href="{{ route('participate2') }}">How to get Ethereum</a></li>
-        <li class="instructions"><a href="{{ route('participate3') }}">Alternative ways to get tokens</a></li>
-        <li class="instructions"><a href="{{ route('participatefaq') }}">FAQ</a></li>
+        <li class="instructions"><a href="{{ route('participate') }}">@lang('ico-instructions.article-get-wallet')</a></li>
+        <li class="instructions"><a href="{{ route('participate2') }}">@lang('ico-instructions.article-get-eth')</a></li>
+        <li class="instructions"><a href="{{ route('participate3') }}">@lang('ico-instructions.article-get-tokens')</a></li>
+        <li class="instructions"><a href="{{ route('participatefaq') }}">@lang('ico-instructions.article-faq')</a></li>
     </ul>
 </div>

@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="text-center cta-link">
-            <a href="https://blog.bitdegree.org/" class="cta-btn">All articles</a>
+            <a href="https://blog.bitdegree.org/" class="cta-btn">@lang('home.all-articles')</a>
         </div>
 
     </div>

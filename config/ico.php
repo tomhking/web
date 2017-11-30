@@ -13,19 +13,19 @@ return [
     'rate' => 10000,
     'bonuses' => [
         [
-            'name' => 'Week 1 Bonus',
+            'name' => 'ico.bonus_1',
             'from' => $startTime->copy(),
             'to' => $startTime->copy()->addWeeks(1)->subSecond(),
             'bonus' => 1.15,
         ],
         [
-            'name' => 'Week 2 Bonus',
+            'name' => 'ico.bonus_2',
             'from' => $startTime->copy()->addWeek(1),
             'to' => $startTime->copy()->addWeeks(2)->subSecond(),
             'bonus' => 1.10,
         ],
         [
-            'name' => 'Week 3 Bonus',
+            'name' => 'ico.bonus_3',
             'from' => $startTime->copy()->addWeeks(2),
             'to' => $startTime->copy()->addWeeks(3)->subSecond(),
             'bonus' => 1.05,

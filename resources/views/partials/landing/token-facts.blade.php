@@ -16,24 +16,24 @@
                         <div class="icon text-center">
                             <img src="{{ asset_rev('equality.png') }}" alt="Equal opportunity">
                         </div>
-                        <h3 class="text-center">EQUAL OPPORTUNITY</h3>
-                        <p>The Token sale offers the same rules and opportunities for everyone. All discounts are public, there will be no hidden bonuses or secret deals.<br>
-                            <a href="https://blog.bitdegree.org/the-bitdegree-token-crowdsale-pledge-d92a144b8bcb" rel="nofollow" target="_blank">Read more</a></p>
+                        <h3 class="text-center">@lang('home.ico_point_opportunity')</h3>
+                        <p>@lang('home.ico_point_description_opportunity')<br>
+                            <a href="https://blog.bitdegree.org/the-bitdegree-token-crowdsale-pledge-d92a144b8bcb" rel="nofollow" target="_blank">@lang('home.read-more')</a></p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="icon text-center">
                             <img src="{{ asset_rev('law.png') }}" alt="Compliant with law">
                         </div>
-                        <h3 class="text-center">100% compliant with law</h3>
+                        <h3 class="text-center">@lang('home.ico_point_law')</h3>
                         <p>@lang('home.ico_section_description')<br>
-                            <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" rel="nofollow" target="_blank">Read more</a></p>
+                            <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" rel="nofollow" target="_blank">@lang('home.read-more')</a></p>
                     </div>
                     <div class="col-xs-12 col-sm-4">
                         <div class="icon text-center">
                             <img src="{{ asset_rev('transparency.png') }}" alt="transparency">
                         </div>
-                        <h3 class="text-center">Transparency</h3>
-                        <p>Smart Contract is open source and available for everyone on <a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts" rel="nofollow" target="_blank">Github</a>. There are no hidden rules or possibilities. The participants will receive their tokens instantly after payment.</p>
+                        <h3 class="text-center">@lang('home.ico_point_transparent')</h3>
+                        <p>@lang('home.ico_point_description_transparent')</p>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
 
                 <div class="col-xs-6 col-sm-3 col-md-3">
                     <h4>@lang('home.ico_accepted_currencies')</h4>
-                    <p>ETH (all other - via Tokenlot)</p>
+                    <p>ETH (@lang('home.other-tokenlot'))</p>
 
 
                     <h4>@lang('home.ico_section_legal_form')</h4>

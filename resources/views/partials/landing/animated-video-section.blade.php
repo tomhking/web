@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col-xs-12 animated-video-desc">
-               <p>Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.</p>
+               <p>@lang('home.video-description')</p>
             </div>
         </div>
     </div>

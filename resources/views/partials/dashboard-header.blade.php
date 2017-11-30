@@ -12,10 +12,10 @@
         <div class="col-xs-6 col-md-4 col-md-push-5 text-right">
             <div class="user-menu">
                 <ul>
-                    <li><a href="{{ route('password') }}"><i class="fa fa-user" aria-hidden="true"></i> Change password</a></li>
+                    <li><a href="{{ route('password') }}"><i class="fa fa-user" aria-hidden="true"></i> @lang('user.change-pass')</a></li>
                     <li>
                         <form method="post" action="{{ route('logout') }}">
-                            <button type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</button>
+                            <button type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> @lang('user.logout')</button>
                             {!! csrf_field() !!}
                         </form>
                     </li>
