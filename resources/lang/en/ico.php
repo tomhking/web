@@ -37,4 +37,13 @@ return [
     'home-countdown' => 'Crowdsale starts in:',
     'join-now-c2a' => 'Join BitDegree Now',
     'all-articles' => 'All articles',
+    'sale-live' => 'Token sale is live',
+    'progress' => 'Progress: :number%',
+    'soft-cap-num' => 'Soft Cap: :number',
+    'soft-cap' => 'Soft Cap',
+    'hard-cap-num' => 'Hard Cap :number',
+    'hard-cap' => 'Hard Cap',
+    'get-tokens-now' => 'Get Tokens Now',
+    'tokens-sold' => 'Tokens Sold: :number',
+    'eth-raised' => 'ETH Raised: :number',
 ];
