@@ -6,7 +6,7 @@
             </div>
         </div>
 
-        <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
             <div class="row">
                 <div class="col-xs-6 col-sm-4 text-center">
                     <div class="partner-logo">
