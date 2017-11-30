@@ -1948,6 +1948,34 @@ body.login-page {
     padding-top: 80px;
   }
   &.get-tokens{
+    #token-calc-modal {
+      h4{
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-family: $work-sans;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+      .modal-body {
+        position: relative;
+        padding: 35px;
+      }
+    }
+    .token-calc-modal {
+      display: inline-block;
+      border-left: 1px solid rgba(255,255,255,0.6);
+      .token-calculator-btn{
+        a{
+          color:#fff;
+          text-transform: uppercase;
+          font-family: $work-sans;
+          text-decoration: underline;
+        }
+      }
+    }
     .container {
       width: auto;
     }
@@ -2375,36 +2403,6 @@ body.login-page {
           font-family: $work-sans;
           letter-spacing: 2px;
           background: #fff;
-        }
-        .token-calc-modal {
-          display: inline-block;
-          border-left: 1px solid rgba(255,255,255,0.6);
-          .token-calculator-btn{
-            a{
-              color:#fff;
-              text-transform: uppercase;
-              font-family: $work-sans;
-              text-decoration: underline;
-            }
-          }
-          h4{
-            display: inline-block;
-            max-width: 100%;
-            margin-bottom: 5px;
-            font-family: $work-sans;
-            text-transform: uppercase;
-            font-weight: 400;
-            font-size: 14px;
-            margin-top: 8px;
-          }
-          .modal-dialog {
-            width: 800px;
-            max-width: 100%;
-            .modal-body {
-              position: relative;
-              padding: 35px;
-            }
-          }
         }
         .copy-address {
           margin: 15px 0 0 0;
