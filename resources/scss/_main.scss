@@ -1588,6 +1588,11 @@ h2.current-amount {
 }
 
 div#token-calculator {
+  .col-md-4{
+    padding-left:5px;
+    padding-right:5px;
+    position:relative;
+  }
   h3 {
     font-weight: 600;
   }
@@ -1595,9 +1600,31 @@ div#token-calculator {
     height: 42px;
     padding: 6px;
     font-family: $work-sans;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
-    width: 90%;
+    width: 100%;
+  }
+  .label-success {
+    background-color: #431986;
+    padding: 12px 10px;
+    font-size: 15px;
+    max-width: 100%;
+    display: block;
+    height: 42px;
+    margin-top: 28px;
+    border-radius: 0;
+    position: relative;
+    &::before{
+      content: " ";
+      position: absolute;
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #431986;
+      left: -6px;
+    }
   }
 }
 
