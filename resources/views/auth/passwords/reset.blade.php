@@ -35,7 +35,7 @@
             {!! csrf_field() !!}
         </form>
         <div class="text-center login-signup-link">
-            <a href="{{ route('password.request') }}">@lang('user.login')</a> |
+            <a href="{{ route('login') }}">@lang('user.login')</a> |
             <a href="{{ route('register') }}">@lang('user.signup')</a>
         </div>
     </div>
