@@ -1,6 +1,13 @@
 <?php 
 
 return array (
+  'title_zcoin_protocol' => 'Zerocoin协议和密码学',
+  'mvp' => 'MVP',
+  'beta' => '可用的Beta',
+  'soon' => '即将开放',
+  'description-18-feb' => '课堂开启: 	二月, 2018',
+  'description-beta' => '可用测试',
+  'description-18-jan' => '课堂开启: 一月, 2018',
   'title_web_fundamentals' => 'Web开发理论',
   'title_coding_fundamentals' => '编码基础',
   'title_deep_learning' => '深度学习',

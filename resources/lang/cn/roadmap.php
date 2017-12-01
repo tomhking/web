@@ -1,7 +1,8 @@
 <?php 
 
 return array (
-  'title' => 'Roadmap',
+  'title' => '路线图',
+  'date_25m' => '2007-2016',
   'title_25m' => '超过290万用户基础',
   'title_fundamentals' => 'Web基础',
   'title_ico' => 'BitDegree ICO',
@@ -9,7 +10,6 @@ return array (
   'title_hype' => '学习者行为分析',
   'title_platform' => '运行商业平台',
   'title_future' => '未来',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => '2017 春',
   'date_ico' => '2017 夏/秋',
   'date_courses' => '2018 冬/春',

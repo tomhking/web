@@ -1,10 +1,14 @@
 <?php 
 
 return array (
+  'one-pager' => 'One Pager',
+  'ico' => 'ICO &amp; 路线图',
+  'roadmap' => '路线图',
+  'mvp' => 'MVP',
+  'token' => '货币',
+  'affiliate' => '加盟',
   'what-is' => '什么是BitDegree',
   'people' => '幕后人员',
-  'one-pager' => 'One Pager',
-  'ico' => 'ICO &amp; Roadmap',
   'faq' => '常见问题',
   'blog' => '博客',
   'what-it-is' => '什么是BitDegree？',
@@ -15,11 +19,9 @@ return array (
   'demand' => 'IT行业工作需求',
   'economy' => '货币经济',
   'team' => '团队',
-  'roadmap' => 'Roadmap',
   'top' => '顶部',
   'subscribe' => '订阅',
   'email_placeholder' => '输入邮箱来获取更新',
-  'mvp' => 'MVP',
   'bitcointalk' => '赏金',
   'white-paper' => '白皮书',
   'no_account' => '提供的邮箱帐号不存在.',
