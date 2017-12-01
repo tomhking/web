@@ -1576,6 +1576,20 @@ h2.current-amount {
   right: 0;
 }
 
+.batches {
+  margin-top:-1.8em;
+  .batch {
+    display: inline-block;
+    width: (100% / 33);
+    float:left;
+    &.batch-current{
+      opacity:0.5;
+    }
+    &.batch-future{
+      opacity:0.2;
+    }
+  }
+}
 
 .crowdsale-info h2 {
   font-size: 24px;

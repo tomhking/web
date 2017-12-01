@@ -27,13 +27,18 @@ class ContentController extends Controller
     function home(Request $request)
     {
         $tokenDecimals = config('ico.decimals');
-        $raisedDecimals = env('ICO_RAISED_DECIMALS', 0);
         $softCap = config('ico.softCap');
         $hardCap = config('ico.hardCap');
         $tokensSoldRaw = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
 
-        $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals - $raisedDecimals)) / pow(10, $raisedDecimals);
+        $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals));
 
+        $batchCount = 33;
+        $batchSize = bcdiv($hardCap, $batchCount);
+        $currentBatchNumber = bcdiv($tokensSold, $batchSize);
+        $currentBatchSold = bcmod($tokensSold, $batchSize);
+
+        $softCapPart = 45;
         $currentBonus = false;
 
         foreach (config('ico.bonuses') as $item) {
@@ -43,16 +48,24 @@ class ContentController extends Controller
             }
         }
 
+        $progress = $softCapPart + (100-$softCapPart) * ($tokensSold / $hardCap);
+
         return response(view('pages.home', [
             'softCap' => $softCap,
             'hardCap' => $hardCap,
             'softCapReached' => $tokensSold >= $softCap,
             'progressSoftCap' => $tokensSold <= $softCap ? ($tokensSold / $softCap) * 100 : 100,
-            'progress' => ($tokensSold / $hardCap) * 100,
+            'progress' => $progress,
             'tokensSold' => $tokensSold,
-            'raisedDecimals' => $raisedDecimals,
             'canGetFreeTokens' => false,
             'currentBonus' => $currentBonus,
+
+            'softCapPart' => $softCapPart,
+            'batchCount' => $batchCount,
+            'batchSize' => $batchSize,
+            'currentBatchNumber' => $currentBatchNumber,
+            'currentBatchSold' => $currentBatchSold,
+
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)
         ])->render());
