@@ -1,12 +1,16 @@
 <?php 
 
 return array (
+  'blog' => 'Blog',
+  'mvp' => 'MVP',
+  'token' => 'Token',
+  'affiliate' => 'Afiliado',
+  'distribution' => 'Distribución de Token',
   'what-is' => 'Qué es BitDegree',
   'people' => 'El Equipo',
   'one-pager' => 'Localizador',
   'ico' => 'ICO &amp; Mapa de Ruta',
   'faq' => 'Preguntas Frecuentes',
-  'blog' => 'Blog',
   'what-it-is' => '¿Qué es BitDegree?',
   'users' => 'Nuestros Usuarios',
   'problems' => '¿Qué problemas solucionamos?',
@@ -19,7 +23,6 @@ return array (
   'top' => 'Parte superior',
   'subscribe' => 'Suscribir',
   'email_placeholder' => 'Ingresa tu email para recibir nuestras actualizaciones',
-  'mvp' => 'MVP',
   'bitcointalk' => 'Generosidad',
   'white-paper' => 'Transparencia',
   'no_account' => 'No existe una cuenta con el correo electrónico brindado.',
