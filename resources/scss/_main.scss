@@ -2929,6 +2929,14 @@ ul.cta-menu li .navbar-cta {
   font-weight: 300;
   letter-spacing: 1px;
   text-decoration: none;
+  &.navbar-cta-red{
+    background:#D93129;
+    border:none;
+    &:hover {
+      background:darken(#D93129, 5%);
+      color:#fff;
+    }
+  }
   &:hover {
     color: #000;
     background: #fff;

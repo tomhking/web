@@ -50,10 +50,10 @@
                 </div>
 
                 @auth
-                <a class="login-link" href="{{ route('user') }}">• @lang('user.my_account')</a>
+                    <a class="login-link hidden-xs" href="{{ route('user') }}">• @lang('user.my_account')</a>
                 @endauth
                 @guest
-                <a class="login-link" href="{{ route('login') }}">• @lang('user.login')</a>
+                    <a class="login-link hidden-xs" href="{{ route('login') }}">• @lang('user.login')</a>
                 @endguest
 
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
@@ -65,13 +65,22 @@
                         <li class="narrow"><a href="{{ route('home') }}#token-distribution" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.token')</a></li>
                         @if($currentLanguage == "cn")
                             <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                            <li class="visible-xs-block"><a href="https://www.bitdegree.org/white-paper-cn.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @elseif($currentLanguage == "ru")
                             <li class="narrow middle"><a href="{{ asset_rev('files/onepager-ru.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                            <li class="visible-xs-block"><a href="https://www.bitdegree.org/white-paper-ru.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @else
                             <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
+                            <li class="visible-xs-block"><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @endif
+                        @guest
+                            <li class="visible-xs-block"><a href="{{ route('login') }}">@lang('user.login')</a></li>
+                        @endguest
+                        @auth
+                            <li class="visible-xs-block"><a href="{{ route('address') }}">@lang('user.my_account')</a></li>
+                        @endauth
                     </ul>
-                    <ul class="cta-menu">
+                    <ul class="cta-menu hidden-xs">
                         @if($currentLanguage == "cn")
                             <li><a href="https://www.bitdegree.org/white-paper-cn.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @elseif($currentLanguage == "ru")
@@ -79,7 +88,9 @@
                         @else
                             <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                         @endif
-
+                    </ul>
+                    <ul class="cta-menu visible-xs-block">
+                        <li><a href="{{ route(auth()->check() ? 'address' : 'register') }}" class="navbar-cta navbar-cta-red">@lang('ico.get-tokens-now')</a></li>
                     </ul>
 
                     <div class="dropdown lang-menu">
