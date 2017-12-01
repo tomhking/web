@@ -15,7 +15,9 @@ Route::get('/', [function () {
     return redirect(route('home'));
 }])->name('root');
 
-Route::get('a/{id}', 'UserController@setAffiliateCookie')->name('affiliate-cookie');
+Route::get('a/{id}', function ($id) {
+    return redirect()->route('affiliate-cookie', $id);
+});
 
 Route::group(['prefix' => $locale = language_prefix()], function() use ($locale) {
     App::setLocale($locale);
@@ -26,6 +28,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');
         Route::get('/mvp', 'ContentController@mvp')->name('mvp');
         Route::get('/faq', 'ContentController@faq')->name('faq');
+        Route::get('/aff/{id}', 'UserController@setAffiliateCookie')->name('affiliate-cookie');
 
         // User area
         Route::group(['middleware' => 'auth'], function () {
