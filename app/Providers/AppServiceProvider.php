@@ -67,6 +67,7 @@ class AppServiceProvider extends ServiceProvider
                 $self->affiliate_id = $affiliateID;
             }
 
+            $self->airdrop = session()->pull('airdrop', 0);
             $self->ip = request()->ip();
         });
 

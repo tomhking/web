@@ -57,6 +57,19 @@ class ContentController extends Controller
     }
 
     /**
+     * Airdrop route
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function airdrop(Request $request) {
+        if(!auth()->check()) {
+            session()->put('airdrop', 10);
+        }
+        return redirect()->route('home');
+    }
+
+    /**
      * @return \Illuminate\View\View
      */
     function mvp() {
