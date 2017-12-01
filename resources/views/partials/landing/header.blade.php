@@ -144,7 +144,7 @@
                                                 <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCapPart }}%; background: #fff;"> <h5 class="soft-cap-text">@lang('ico.soft-cap')</h5></div>
 
                                                 <!-- hard cap marker -->
-                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($softCap, 0, ".", ",") }} BDG</h5></div>
+                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
                                             @endif
                                         </div>
 
