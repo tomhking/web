@@ -1,11 +1,15 @@
 <?php 
 
 return array (
+  'one-pager' => 'One Pager',
+  'faq' => 'ЧаВо',
+  'mvp' => 'MVP',
+  'bitcointalk' => 'Bounty',
+  'token' => 'Токен',
+  'affiliate' => 'Партнёрка',
   'what-is' => 'Что такое BitDegree',
   'people' => 'Команда Проекта',
-  'one-pager' => 'One Pager',
   'ico' => 'ICO и Цели Проекта',
-  'faq' => 'FAQ',
   'blog' => 'Блог',
   'what-it-is' => 'Что такое BitDegree?',
   'users' => 'Наши Пользователи',
@@ -19,8 +23,6 @@ return array (
   'top' => 'Вверх',
   'subscribe' => 'Подписаться',
   'email_placeholder' => 'Введите ваш e-mail для получения обновлений',
-  'mvp' => 'MVP',
-  'bitcointalk' => 'Bounty',
   'white-paper' => 'Белая книга',
   'no_account' => 'Учетная запись с указанным адресом электронной почты не существует.',
   'link_expired' => 'Извините, эта ссылка недействительна или срок её действия уже истёк. Пожалуйста, повторите попытку входа.',
