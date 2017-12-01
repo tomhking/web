@@ -1,6 +1,40 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'attribute-name' => 
+    array (
+      'rule-name' => 'custom-message',
+    ),
+    'agreement' => 
+    array (
+      'required' => 'Devi accettare i Termini di servizio per poter procedere.',
+      'accepted' => 'Devi accettare i Termini di servizio per poter procedere.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'L\' indirizzo ETH fornito non sembra valido',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Il paese selezionato non è valido.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'È necessario selezionare questa casella per dimostrare di non essere un bot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'La mail data non è stata trovata nel nostro database. Devi iscriverti prima.',
+    ),
+  ),
+  'attributes' => 
+  array (
+    'g-recaptcha-response' => 'Convalida di reCaptcha',
+    'first-name' => 'Nome',
+    'last-name' => 'Cognome',
+  ),
   'accepted' => ':attribute deve essere accettato.',
   'active_url' => ':attribute non è un URL valido.',
   'after' => ':attribute deve essere una data posteriore a :date.',
@@ -77,29 +111,4 @@ return array (
   'unique' => ':attribute è stato già preso.',
   'uploaded' => ':attribute ha fallito il caricamento.',
   'url' => ':attribute non è valido.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'custom-message',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Il paese selezionato non è valido.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'È necessario selezionare questa casella per dimostrare di non essere un bot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'La mail data non è stata trovata nel nostro database. Devi iscriverti prima.',
-    ),
-  ),
-  'attributes' => 
-  array (
-    'first-name' => 'Nome',
-    'last-name' => 'Cognome',
-    'g-recaptcha-response' => 'reCaptcha validation',
-  ),
 );
