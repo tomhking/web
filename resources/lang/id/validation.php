@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Anda harus menyetuji Ketentuan Penggunaan agar bisa lanjut ke langkah berikutnya.',
+      'accepted' => 'Anda harus menyetuji Ketentuan Penggunaan agar bisa lanjut ke langkah berikutnya.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Alamat ETH yang Anda masukkan tampaknya tidak valid.',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'pesan-khusus',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Negara yang Anda pilih tidak valid.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Pilih kotak ini jika Anda bukan robot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Email yang dimasukkan tidak ditemukan di dalam database kami. Anda harus mendaftar terlebih dulu.',
+    ),
+  ),
   'accepted' => ':attribute harus disetujui.',
   'active_url' => ':attribute bukan URL yang valid.',
   'after' => ':attribute harus tanggal setelah :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute telah digunakan.',
   'uploaded' => ':attribute gagal untuk diunggah',
   'url' => 'Format :attribute tidak valid',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'pesan-khusus',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Negara yang Anda pilih tidak valid.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Pilih kotak ini jika Anda bukan robot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'Email yang dimasukkan tidak ditemukan di dalam database kami. Anda harus mendaftar terlebih dulu.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Nama Pertama',
