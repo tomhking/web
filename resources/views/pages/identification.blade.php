@@ -23,7 +23,7 @@
 
                     <form action="{{ route('identification') }}" method="post" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="col-xs-12 col-md-10 col-md-offset-1 personal-details">
+                            <div class="col-xs-12 col-md-10 col-md-offset-1 identity-verification">
                                 <div class="row">
                                     <div class="col-md-12">
                                         @include('partials.status')
@@ -35,7 +35,10 @@
                                     <div class="row" id="kyc-upload">
                                         <div class="col-md-12">
                                             <p>@lang('user.identity-verification-description')</p>
-                                            <input type="file" name="file">
+                                            <div class="file-input">
+                                                <input type="file" name="file">
+                                            </div>
+                                            <span class="text-muted">@lang('user.identity-file-constraints')</span>
                                         </div>
                                     </div>
                                 @endif

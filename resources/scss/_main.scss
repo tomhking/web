@@ -2388,6 +2388,20 @@ body.login-page {
       .dashboard-logo{
       padding:0 25px;
     }
+    .identity-verification{
+      .file-input{
+        margin:1.5em 0 0.5em;
+        >input {
+          height:auto;
+        }
+      }
+      .text-muted {
+        font-family:"Work Sans", sans-serif;
+        font-size: 0.9em;
+        margin-bottom:2em;
+        display:block;
+      }
+    }
     .personal-details{
       label {
         font-size:16px;
