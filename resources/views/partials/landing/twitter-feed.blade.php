@@ -17,6 +17,7 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
+                            <li><a href="https://blog.bitdegree.org/the-crowdsale-is-live-e6bb5e3d8b3d" rel="nofollow" target="_blank"><b>The Crowdsale is Live!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/bitdegree-token-sale-six-things-you-need-to-know-7331d128ee6e" rel="nofollow" target="_blank"><b>BitDegree token sale: six things you need to know!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/q-a-with-darius-rugevi%C4%8Dius-bitdegrees-blockchain-evangelist-8d5fe49a7f47" rel="nofollow" target="_blank"><b>Q&A with Darius Rugevičius, BitDegree’s blockchain evangelist</b></a></li>
                             <li><a href="https://blog.bitdegree.org/take-a-look-behind-the-scenes-of-bitdegree-609ec35ba184" rel="nofollow" target="_blank"><b>Take a look behind the scenes of BitDegree!</b></a></li>
