@@ -59,7 +59,7 @@
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
                     <div class="mobile-language-dropdown visible-xs-block">
                         <a class="active" href="#language-toggle" data-toggle="collapse">
-                            <img src="{{asset_rev('flags/'.$currentLanguage.'.png')}}"> {{ $languages[$currentLanguage] }}
+                            <img src="{{asset_rev('flags/'.$languages[$currentLanguage].'.png')}}"> {{ $languages[$currentLanguage] }}
                         </a>
                         <div class="collapse list" id="language-toggle">
                             @foreach($languages as $code => $name)
@@ -180,6 +180,17 @@
                                             @endif
                                         </div>
 
+                                        <div class="communicate">
+                                            <div class="contact">
+                                                @auth
+                                                    <a class="cta-btn visible-xs-block" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                                                @endauth
+                                                @guest
+                                                    <a class="cta-btn visible-xs-block" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                                                @endguest
+                                            </div>
+                                        </div>
+
                                         <div class="bonuses-table">
                                             <h4 class="text-center">@lang('ico.receive')</h4>
                                             <table>
@@ -192,14 +203,24 @@
                                                     @php($bonusActive = \Carbon\Carbon::now()->between($bonus['from'], $bonus['to']))
                                                     @php($hasActiveBonuses = ($hasActiveBonuses ?? false) || $bonusActive)
                                                     <tr class="{{ $hasEnded ? "ended" : "" }}">
-                                                        <td class="text-left">
+                                                        <td class="text-left" style="width:175px;">
                                                             @for($i = $iconCount; $i >= 0; $i--)
                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                             @endfor
                                                         </td>
-                                                        <td>@lang('ico.bonus-percent', ['amount' => $amount])</td>
-                                                        <td>@lang('ico.week-num', ['number' => $weekNum])</td>
                                                         <td>
+                                                            @lang('ico.bonus-percent', ['amount' => $amount])
+                                                            <div class="visible-xs-block">
+                                                                @lang('ico.week-num', ['number' => $weekNum])
+                                                            </div>
+                                                            @if($hasEnded)
+                                                                <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                            @elseif($bonusActive)
+                                                                <span class="tokens-left">@lang('ico.available-now')</span>
+                                                            @endif
+                                                        </td>
+                                                        <td class="hidden-xs">@lang('ico.week-num', ['number' => $weekNum])</td>
+                                                        <td class="hidden-xs">
                                                             @if($hasEnded)
                                                                 <span class="tokens-left">@lang('ico.bonus-ended')</span>
                                                             @elseif($bonusActive)
@@ -212,9 +233,19 @@
                                                     <td class="text-left">
                                                         <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                     </td>
-                                                    <td>@lang('ico.bonus-percent', ['amount' => 0])</td>
-                                                    <td>@lang('ico.week-num', ['number' => 4])</td>
                                                     <td>
+                                                        @lang('ico.bonus-percent', ['amount' => 0])
+                                                        <div class="visible-xs-block">
+                                                            @lang('ico.week-num', ['number' => 4])
+                                                            @if(config('ico.end')->isPast())
+                                                                <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                            @elseif(!$hasActiveBonuses)
+                                                                <span class="tokens-left">@lang('ico.available-now')</span>
+                                                            @endif
+                                                        </div>
+                                                    </td>
+                                                    <td class="hidden-xs">@lang('ico.week-num', ['number' => 4])</td>
+                                                    <td class="hidden-xs">
                                                         @if(config('ico.end')->isPast())
                                                             <span class="tokens-left">@lang('ico.bonus-ended')</span>
                                                         @elseif(!$hasActiveBonuses)

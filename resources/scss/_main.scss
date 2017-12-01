@@ -481,6 +481,12 @@ form .notice {
   display: none !important;
 }
 
+@media(max-width: 550px) {
+  .progress-bar-wrapper, .ico-progress-percentage {
+    margin: 15px;
+  }
+}
+
 @media (min-width: 1500px) {
   .login-page .container {
     width: 1270px!important;
@@ -1617,6 +1623,12 @@ h2.current-amount {
   padding-right: 8px;
   position: absolute;
   right: 0;
+}
+
+@media(max-width: 430px) {
+  .hard-cap-text {
+    padding-top:65px;
+  }
 }
 
 .batches {
@@ -5674,23 +5686,23 @@ p.subtitle {
     }
   }
   .soft-cap-marker, .hard-cap-marker {
-    width: 100%!important;
-    position: relative!important;
-    background: none!important;
-    height: auto!important;
-    display: block!important;
-    left: 0!important;
+    //width: 100%!important;
+    //position: relative!important;
+    //background: none!important;
+    //height: auto!important;
+    //display: block!important;
+    //left: 0!important;
   }
   .soft-cap-text, .hard-cap-text {
-    font-size: 15px;
-    line-height: inherit;
-    width: 100%;
-    padding-top: 0;
-    border-right: 0;
-    padding-right: 8px;
-    position: relative;
-    right: auto;
-    left: 0!important;
+    //font-size: 15px;
+    //line-height: inherit;
+    //width: 100%;
+    //padding-top: 0;
+    //border-right: 0;
+    //padding-right: 8px;
+    //position: relative;
+    //right: auto;
+    //left: 0!important;
   }
   .btn-primary {
     padding: 22px 20px;
