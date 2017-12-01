@@ -4470,6 +4470,10 @@ div#token-distribution .container {
     &.nav.navbar-nav.navbar-right {
       float: none !important;
       padding: 25px;
+      &.no-padding{
+        padding-top: 0;
+        margin-top: -25px;
+      }
     }
   }
   .nav {
