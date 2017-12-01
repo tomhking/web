@@ -29,7 +29,7 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 eth-address">
                             <h1 class="text-center">@lang('ico.headline')</h1>
                             <div class="form-group">
-                                <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address">
+                                <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address" style="text-transform: none !important;">
                                 <div class="text-right">
                                     <div class="copy-address text-right" id="copy-address">
                                         <span class="text-success copied" style="display: none">@lang('ico.copied')</span>
