@@ -34,7 +34,7 @@ class ResetPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->redirectTo = route('home');
+        $this->redirectTo = route('address');
         $this->middleware('guest');
     }
 }

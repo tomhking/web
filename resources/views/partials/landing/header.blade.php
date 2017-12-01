@@ -195,7 +195,7 @@
                     <div class="communicate">
                         <div class="contact">
                             @auth
-                                <a class="cta-btn" href="{{ route('user') }}">@lang('ico.join-now-c2a')</a>
+                                <a class="cta-btn" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
                             @endauth
                             @guest
                                 <a class="cta-btn" href="{{ route('register') }}">@lang('ico.join-now-c2a')</a>
