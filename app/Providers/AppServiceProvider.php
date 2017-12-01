@@ -67,11 +67,12 @@ class AppServiceProvider extends ServiceProvider
                 $self->affiliate_id = $affiliateID;
             }
 
+            $self->airdrop = session()->pull('airdrop', 0);
             $self->ip = request()->ip();
         });
 
         EmailConfirmation::creating(function(EmailConfirmation $self) {
-            $self->expires_at = Carbon::now()->addHours(12);
+            $self->expires_at = Carbon::now()->addDays(30);
         });
 
         // Set the current language

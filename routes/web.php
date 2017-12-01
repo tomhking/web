@@ -22,6 +22,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
 
     Route::group(['prefix' => '/token'], function () {
         Route::get('/', 'ContentController@home')->name('home');
+        Route::get('/gift', 'ContentController@airdrop')->name('airdrop-gift');
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');
         Route::get('/mvp', 'ContentController@mvp')->name('mvp');
         Route::get('/faq', 'ContentController@faq')->name('faq');

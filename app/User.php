@@ -86,9 +86,8 @@ class User extends Authenticatable
      */
     public function isAirdropParticipant()
     {
-        return $this->email_verified && $this->created_at->timestamp < strtotime('2017-11-28 19:00:00');
+        return $this->airdrop > 0;
     }
-
 
     /**
      * Always save email in lowercase

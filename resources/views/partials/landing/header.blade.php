@@ -198,7 +198,7 @@
                                 <a class="cta-btn" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
                             @endauth
                             @guest
-                                <a class="cta-btn" href="{{ route('register') }}">@lang('ico.join-now-c2a')</a>
+                                <a class="cta-btn" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
                             @endguest
                             <div class="contact-icons buttons">
                                 <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset_rev('telegram-logo.png') }}" alt="Telegram"></a>
