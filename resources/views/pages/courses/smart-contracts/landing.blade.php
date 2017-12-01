@@ -12,9 +12,10 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-md-10 col-md-push-1 text-center">
                                             <h6>BitDegree Program</h6>
-                                                <h1>Become Smart Contract Developer</h1>
+                                            <h1>Become Smart Contract Developer</h1>
                                             <p class="subtitle"><b>Solidity</b> is a programming language for writing smart contracts which run on Ethereum Virtual Machine on Blockchain. It is a contract-oriented, high-level language whose syntax is similar to that of JavaScript. It's designed to target the Ethereum Virtual Machine. Master this course to become a Smart Contract Developer.</p>
-                                                <p>Enroll by <b>February, 2018</b></p>
+                                            <p><a href="https://solidity.bitdegree.org/" class="cta-btn mvp-link-small">@lang('home.mvp-c2a-2')</a></p>
+                                            <p>Enroll by <b>February, 2018</b></p>
                                         </div>
                                         @include('partials.sign-up-for-solidity')
                                     </div>

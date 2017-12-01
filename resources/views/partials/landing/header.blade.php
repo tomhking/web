@@ -50,7 +50,7 @@
                 </div>
 
                 @auth
-                <a class="login-link" href="{{ route('login') }}">• My account</a>
+                <a class="login-link" href="{{ route('user') }}">• My account</a>
                 @endauth
                 @guest
                 <a class="login-link" href="{{ route('login') }}">• Login</a>

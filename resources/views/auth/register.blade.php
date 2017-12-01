@@ -26,8 +26,6 @@
                 <label for="input-password">@lang('user.password')</label>
                 <input tabindex="2" class="form-control" type="password" name="password" required minlength="3">
             </div>
-
-            <div class="row">
                 <div class="agreement">
                     <input tabindex="3" type="checkbox" id="agreeToTerms" name="agreement" {{ old('agreement', false) ? 'checked' : '' }} value="1">
                     <label for="agreeToTerms">@lang('user.terms', [
@@ -35,7 +33,6 @@
                         'privacyLink' => asset_rev('files/privacy-policy.pdf'),
                     ])</label>
                 </div>
-            </div>
 
             <div class="row">
                 <div class="col-md-12">
