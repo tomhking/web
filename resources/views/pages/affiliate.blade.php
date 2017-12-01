@@ -16,12 +16,14 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <div class="row">
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-6 text-center referral-box">
+                                <h4 class="referral-box-label">@lang('affiliate.referral_link_label')</h4>
                                 <div class="well well-important">
                                     https://stude.co/{{ auth()->user()->id }}
                                 </div>
                             </div>
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-6 text-center referral-box">
+                                <h4 class="referral-box-label">@lang('affiliate.referrals_count_label')</h4>
                                 <div class="well well-important">
                                     @if($referralCount == 0)
                                         @lang('affiliate.1-referral')

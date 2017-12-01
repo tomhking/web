@@ -1995,6 +1995,17 @@ body.login-page {
     padding-top: 80px;
   }
   &.get-tokens{
+   .referral-box{
+     margin-top:25px;
+     h4{
+       text-transform: uppercase;
+       font-weight:300;
+       letter-spacing:2px;
+     }
+      .well{
+        margin-top:15px;
+      }
+    }
     #token-calc-modal {
       h4{
         display: inline-block;

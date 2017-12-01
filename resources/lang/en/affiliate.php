@@ -15,8 +15,10 @@ return [
     'breaking' => 'Breaking any of these rules or any form of abuse will immediately ban you from the BitDegree affiliate program.',
     'banners-to-use' => 'Banners to use',
     'banners-to-use-subtitle' => 'Use BitDegree banners and get more tokens for free! Simply copy & paste the provided embed codes to your websites and publish.',
-    '1-referral' => '1 referral (yourself)',
+    '1-referral' => '1 referral',
     'n-referrals' => ':number referrals',
+    'referrals_count_label' => 'Your token stakes (referred users):',
+    'referral_link_label' => 'Your personal referral link:',
     'banner' => 'Banner',
     'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!',
 ];
