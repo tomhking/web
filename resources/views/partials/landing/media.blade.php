@@ -106,6 +106,5 @@
         <div class="text-center cta-link">
             <a href="https://blog.bitdegree.org/" class="cta-btn">@lang('home.read_articles')</a>
         </div>
-
     </div>
 </div>

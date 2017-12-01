@@ -3528,19 +3528,6 @@ h3.subtitle {
   max-width: 585px;
   position: relative;
   margin: 0 auto;
-  &::after {
-    content: " ";
-    position: absolute;
-    bottom: 0;
-    background: #fff;
-    left: 0;
-    right: 0;
-    border-top: 1px solid #d2d2d2;
-    padding: 8px;
-    height: 27px;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-  }
   .medium-posts-head {
     position: absolute;
     top: 0;
@@ -3575,6 +3562,25 @@ h3.subtitle {
         color: #4e4e4e;
         font-weight: 300;
       }
+    }
+  }
+  .medium-link {
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #d2d2d2;
+    padding: 8px;
+    height: 65px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    a{
+      padding:10px 12px;
+      font-size:16px;
+      height:auto;
+      font-family: $work-sans;
+      text-transform:inherit;
     }
   }
 }
