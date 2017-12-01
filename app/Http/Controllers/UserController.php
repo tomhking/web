@@ -49,6 +49,10 @@ class UserController extends Controller
 
         $user->save();
 
+        if(!$user->identification && $user->contribution >= 5) {
+            return redirect()->route('identification')->with('status', __('user.profile-saved'));
+        }
+
         return back()->with('status', __('user.profile-saved'));
     }
 
