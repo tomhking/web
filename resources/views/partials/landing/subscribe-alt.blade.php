@@ -1,18 +1,26 @@
 <div id="subscribe-to-get-bonus" class="main container-fluid communicate light-violet-bkg cta-block bottom">
-    <div class="container">
+    <div class="container text-center">
         <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
-                <h2 class="title">@lang('subscribe.title_alt')</h2>
-            </div>
-            <div class="row find-out-more">
-                <div class="col-xs-12 text-center">
-                    <div class="contact">
-                        <form action="https://xyz.us16.list-manage.com/subscribe/post?u=528cc9372b916077746636344&amp;id=f79db67249" method="post">
-                            <input class="suscribe-input" name="EMAIL" type="email" placeholder="@lang('subscribe.email_placeholder')" required>
-                            <input type="submit" class="submit" value="@lang('subscribe.button')" name="subscribe">
-                        </form>
-                        @include('partials.contact-icons')
-                    </div>
+            @if($currentBonus)
+                <h1>JOIN CROWDSALE <b>NOW!</b> BONUS ENDS IN:</h1>
+                @include('partials.countdown', ['timeLeft' => $currentBonus['to']->diffInSeconds()])
+            @else
+                <h1>@lang('ico.ends-in')</h1>
+                @include('partials.countdown', ['timeLeft' => config('ico.end')->isPast() ? 0 : config('ico.end')->diffInSeconds()])
+            @endif
+        </div>
+
+        <div class="row find-out-more">
+            <div class="col-xs-12 text-center">
+                <div class="contact">
+                    @auth
+                    <a class="cta-btn" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                    @endauth
+                    @guest
+                    <a class="cta-btn" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                    @endguest
+
+                    @include('partials.contact-icons')
                 </div>
             </div>
         </div>
