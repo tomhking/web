@@ -1,6 +1,13 @@
 <?php 
 
 return array (
+  'title_zcoin_protocol' => 'Protocolo de Criptografia y Zerocoin',
+  'mvp' => 'MVP',
+  'beta' => 'Beta Disponible',
+  'soon' => 'Próximamente',
+  'description-18-feb' => 'LAS CLASES COMIENZAN: Febrero de 2018',
+  'description-beta' => 'Beta Disponible',
+  'description-18-jan' => 'LAS CLASES COMIENZAN: Enero de 2018',
   'title_web_fundamentals' => 'Teoría del Desarrollo Web',
   'title_coding_fundamentals' => 'Fundamentos de Codificación',
   'title_deep_learning' => 'Aprendizaje Profundo',

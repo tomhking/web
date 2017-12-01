@@ -1,7 +1,10 @@
 <?php 
 
 return array (
-  'title' => 'Roadmap',
+  'title' => 'Tabella di marcia',
+  'date_25m' => '2007-2016',
+  'date_hype' => '2018 Q2/Q3',
+  'date_platform' => '2018 Q4',
   'title_25m' => '29M+ utenti',
   'title_fundamentals' => 'Principi Web',
   'title_ico' => 'BitDegree ICO',
@@ -9,12 +12,9 @@ return array (
   'title_hype' => 'Hype sul settore Studenti',
   'title_platform' => 'Lancio della piattaforma aziendale',
   'title_future' => 'Futuro',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => 'Primavera 2017',
   'date_ico' => 'Estate/Autunno 2017',
   'date_courses' => 'Inverno/Primavera 2018',
-  'date_hype' => '2018 Q2/Q3',
-  'date_platform' => '2018 Q4',
   'date_future' => 'Futuro',
   'description_25m' => '000webhost e Hostinger, ha raggiunto 29 milioni di utenti sulla piattaforma di apprendimento gratuito di sviluppo di servizi di web hosting. La maggior parte degli utenti sono giovani esperti di tecnologia con una profonda volontà di apprendere, costruire e crescere. <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow">Gli utenti ci amano</a> già come piattaforma di apprendimento online.',
   'description_fundamentals' => 'Sommario di 500 articoli su <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank">principi di sviluppo web</a>. Migliora la strategia aziendale. Avvicinati ai primi partner commerciali. Fai consulenza con numerose università e aziende blockchain per sviluppare i primi corsi.',

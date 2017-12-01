@@ -1,10 +1,17 @@
 <?php 
 
 return array (
+  'title_react' => 'React',
+  'title_zcoin_protocol' => 'Протокол и Криптография Zerocoin',
+  'mvp' => 'MVP',
+  'beta' => 'Доступно Бета',
+  'soon' => 'Скоро',
+  'description-18-feb' => 'НАЧАЛО ЗАНЯТИЙ: Февраль, 2018',
+  'description-beta' => 'Доступно Бета',
+  'description-18-jan' => 'НАЧАЛО ЗАНЯТИЙ: Январь, 2018',
   'title_web_fundamentals' => 'Теория Веб-разработки',
   'title_coding_fundamentals' => 'Основы Программирования',
   'title_deep_learning' => 'Глубокое Обучение',
-  'title_react' => 'React',
   'title_vr_development' => 'Разработка VR ',
   'title_ai_development' => 'Разработка AI ',
   'title_robotics' => 'Робототехника',

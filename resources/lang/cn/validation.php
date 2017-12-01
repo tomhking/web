@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => '您需要同意服务协议才能继续操作.',
+      'accepted' => '您需要同意服务协议才能继续操作.',
+    ),
+    'wallet' => 
+    array (
+      'size' => '您提供的ETH地址无效.',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => '自定义消息',
+    ),
+    'country' => 
+    array (
+      'valid_country' => '您选择的国家有误.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => '您需要完成下方的验证以确认您的身份.',
+    ),
+    'email' => 
+    array (
+      'exists' => '提供的邮箱未能在数据库中找到. 请先注册.',
+    ),
+  ),
   'accepted' => ':attribute 必须是可接受的.',
   'active_url' => ':attribute不是一个有效的URL.',
   'after' => ':attribute 必须是在 :date之后的日期.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute 已存在.',
   'uploaded' => ':attribute 上传失败.',
   'url' => ':attribute 格式有误.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => '自定义消息',
-    ),
-    'country' => 
-    array (
-      'valid_country' => '您选择的国家有误.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => '您需要完成下方的验证以确认您的身份.',
-    ),
-    'email' => 
-    array (
-      'exists' => '提供的邮箱未能在数据库中找到. 请先注册.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => '姓',

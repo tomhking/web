@@ -1,6 +1,7 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
   'title' => 'Цели проекта',
   'title_25m' => '29M+ база пользователей',
   'title_fundamentals' => 'Основы Web',
@@ -9,7 +10,6 @@ return array (
   'title_hype' => 'Популярность в Студенческом секторе',
   'title_platform' => 'Запуск Бизнес платформы',
   'title_future' => 'Будущее',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => '2017 весна',
   'date_ico' => '2017 лето/осень',
   'date_courses' => '2018 зима/весна',

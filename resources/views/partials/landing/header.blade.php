@@ -50,10 +50,10 @@
                 </div>
 
                 @auth
-                <a class="login-link" href="{{ route('user') }}">• My account</a>
+                <a class="login-link" href="{{ route('user') }}">• @lang('user.my_account')</a>
                 @endauth
                 @guest
-                <a class="login-link" href="{{ route('login') }}">• Login</a>
+                <a class="login-link" href="{{ route('login') }}">• @lang('user.login')</a>
                 @endguest
 
                 <div id="navbar" class="collapse navbar-collapse navbar-container">

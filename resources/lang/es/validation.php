@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'attribute-name' => 
+    array (
+      'rule-name' => 'mensaje personalizado',
+    ),
+    'agreement' => 
+    array (
+      'required' => 'Para poder continuar debes aceptar los Términos del Servicio',
+      'accepted' => 'Para poder continuar debes aceptar los Términos del Servicio',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'La dirección ETH que ha proporcionado no parece ser válida',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'El país que ha seleccionado no es válido.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Debes seleccionar esta casilla para demostrar que no eres un bot',
+    ),
+    'email' => 
+    array (
+      'exists' => 'El correo electrónico no se encontró en nuestra base de datos. Debes registrarte primero.',
+    ),
+  ),
   'accepted' => ':attribute debe ser aceptado.',
   'active_url' => ':attribute is not a valid URL.',
   'after' => ':attribute debe ser una fecha posterior a :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute ya ha sido tomado',
   'uploaded' => 'The :attribute no pudo subirse',
   'url' => ':attribute el formato no es válido.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'custom-message',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'El país que ha seleccionado no es válido.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Debes seleccionar esta casilla para demostrar que no eres un bot',
-    ),
-    'email' => 
-    array (
-      'exists' => 'El correo electrónico no se encontró en nuestra base de datos. Debes registrarte primero.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Nombre',

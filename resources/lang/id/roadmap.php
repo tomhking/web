@@ -1,6 +1,7 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
   'title' => 'Skala Pertumbuhan',
   'title_25m' => 'Lebih dari 29 juta basis pengguna',
   'title_fundamentals' => 'Dasar-dasar web',
@@ -9,7 +10,6 @@ return array (
   'title_hype' => 'Populer di kalangan Siswa',
   'title_platform' => 'Platform Bisnis diluncurkan',
   'title_future' => 'Masa depan',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => 'Musim semi 2017',
   'date_ico' => 'Musim panas/gugur 2017',
   'date_courses' => 'Musim dingin/semi 2018',
