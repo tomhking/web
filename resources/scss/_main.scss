@@ -1616,13 +1616,12 @@ h2.current-amount {
   font-size: 13px;
   font-weight: 300;
   line-height: inherit;
-  width: max-content;
-  width: -moz-max-content;
   padding-top: 35px;
   border-right: 1px solid #fff;
   padding-right: 8px;
   position: absolute;
   right: 0;
+  white-space:nowrap;
 }
 
 @media(max-width: 430px) {
