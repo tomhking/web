@@ -105,4 +105,5 @@ return [
     'backed-by-read-more' => 'Read more here',
     'read-more' => 'Read more',
     'other-tokenlot' => 'all other - via <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank" rel="nofollow">Tokenlot</a>',
+    'join_crowdsale_main_header' => 'JOIN CROWDSALE <b>NOW</b>! BONUS ENDS IN:',
 ];
