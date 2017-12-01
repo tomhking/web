@@ -35,7 +35,7 @@ return [
     'countdown-hours' => 'hours',
     'countdown-minutes' => 'minutes',
     'countdown-seconds' => 'seconds',
-    'home-countdown' => 'Start: December 1st, 2017 14:00 UTC',
+    'home-countdown' => 'Start: <b>December 1st</b>, 2017 14:00 UTC',
     'join-now-c2a' => 'Join BitDegree Now',
     'all-articles' => 'All articles',
     'sale-live' => 'Token sale is live',
