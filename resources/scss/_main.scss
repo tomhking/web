@@ -440,6 +440,47 @@ form .notice {
   background-color: #f0f0f0;
 }
 
+
+.mobile-language-dropdown {
+  .active {
+    position:absolute;
+    top: 15px;
+    left: 15px;
+    display: block;
+    padding: 8px;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    text-decoration: none;
+  }
+  .list {
+    text-align:left;
+    padding: 0 1.6em;
+    padding-top:1em;
+    .language {
+      display: inline-block;
+      a {
+        background:rgba(255,255,255,0.05);
+        margin-bottom: 8px;
+        margin-left: 8px;
+        display:block;
+        padding: 15px;
+        width: 100px;
+        color: #fff;
+        &:hover {
+          background:rgba(255,255,255,0.3);
+        }
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+.collapsing .mobile-language-dropdown {
+  display: none !important;
+}
+
 @media (min-width: 1500px) {
   .login-page .container {
     width: 1270px!important;
@@ -461,6 +502,7 @@ form .notice {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 15px;
     .dropdown-toggle{
       border:0!important;
     }
@@ -490,6 +532,7 @@ form .notice {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top:15px;
     .dropdown-toggle{
       border:0!important;
     }

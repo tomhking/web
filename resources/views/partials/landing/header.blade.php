@@ -57,6 +57,21 @@
                 @endguest
 
                 <div id="navbar" class="collapse navbar-collapse navbar-container">
+                    <div class="mobile-language-dropdown visible-xs-block">
+                        <a class="active" href="#language-toggle" data-toggle="collapse">
+                            <img src="{{asset_rev('flags/'.$currentLanguage.'.png')}}"> {{ $languages[$currentLanguage] }}
+                        </a>
+                        <div class="collapse list" id="language-toggle">
+                            @foreach($languages as $code => $name)
+                                <div class="language {{ $name }} {{ $code == $currentLanguage ? "current" : "" }}">
+                                    <a href="{{ url('/'.$code.'/token') }}" class="{{ $code == $currentLanguage }}">
+                                        <img src="{{asset_rev('flags/'.$name.'.png')}}"> {{ $name }}
+                                    </a>
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
                         <li class="narrow"><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
@@ -70,10 +85,6 @@
                         @else
                             <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                         @endif
-                        @guest
-                        @endguest
-                        @auth
-                        @endauth
                     </ul>
                     <ul class="nav navbar-nav navbar-right no-padding visible-xs-block">
                         @if($currentLanguage == "cn")
@@ -103,7 +114,7 @@
                         <li><a href="{{ route(auth()->check() ? 'address' : 'register') }}" class="navbar-cta navbar-cta-red">@lang('ico.get-tokens-now')</a></li>
                     </ul>
 
-                    <div class="dropdown lang-menu">
+                    <div class="dropdown lang-menu hidden-xs">
                         <button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="{{asset_rev('flags/'.$languages[$currentLanguage].'.png')}}"> <span class="caret"></span></button>
                         <ul class="dropdown-menu ">
                             @foreach($languages as $code => $name)
