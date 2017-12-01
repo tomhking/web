@@ -5,6 +5,6 @@
             var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
             c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
         })(document);
-        smartlook('init', '229dbde43333099d08b9e21ec1e9d40db05d4266');
+        smartlook('init', '274e28db315e0f247c928dd8a7f9e524bf74e7a8');
     </script>
 @endif
