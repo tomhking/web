@@ -46,6 +46,8 @@ class ContentController extends Controller
         return response(view('pages.home', [
             'softCap' => $softCap,
             'hardCap' => $hardCap,
+            'softCapReached' => $tokensSold >= $softCap,
+            'progressSoftCap' => $tokensSold <= $softCap ? ($tokensSold / $softCap) * 100 : 100,
             'progress' => ($tokensSold / $hardCap) * 100,
             'tokensSold' => $tokensSold,
             'raisedDecimals' => $raisedDecimals,

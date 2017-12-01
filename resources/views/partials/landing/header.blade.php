@@ -133,11 +133,16 @@
                                         <div class="progress-bar-wrapper">
                                             <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
                                                 <!-- progress bar -->
-                                                <div style="width: {{ $progress }}%; height: 30px; background-image: linear-gradient(-180deg, #F93800 4%, #c02b3f 99%); box-shadow: inset 0 2px 0 0 #ff6868; position: relative;"></div>
+                                                <div style="width: {{ $softCapReached ? $progress : $progressSoftCap}}%; height: 30px; background-image: linear-gradient(-180deg, #F93800 4%, #c02b3f 99%); box-shadow: inset 0 2px 0 0 #ff6868; position: relative;"></div>
                                             </div>
 
-                                            <!-- hard cap marker -->
-                                            <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
+                                            @if($softCapReached)
+                                                <!-- hard cap marker -->
+                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
+                                            @else
+                                                <!-- soft cap marker -->
+                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.soft-cap'): {{ number_format($softCap, 0, ".", ",") }} BDG</h5></div>
+                                            @endif
                                         </div>
 
                                         <div class="bonuses-table">
