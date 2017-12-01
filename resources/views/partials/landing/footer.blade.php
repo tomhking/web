@@ -11,7 +11,7 @@
                     <div id="navbar-2" class="navbar-container">
                         <ul class="nav navbar-nav">
                             <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
-                            <li><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
+                            <li class="narrow"><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
                             <li class="narrow"><a href="{{ route('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                             <li class="narrow"><a href="{{ route('faq') }}">@lang('navigation.faq')</a></li>
                             <li><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts">@lang('home.ico_token_source')</a></li>
@@ -30,7 +30,9 @@
                             @endif
                         </ul>
 
-                        <a class="login-link" href="{{ route('login') }}">User Login</a>
+                        <div class="footer-login">
+                            <a class="login-link" href="{{ route('user') }}">Login</a> | <a class="login-link" href="{{ route('register') }}">Referral Program</a>
+                        </div>
                     </div>
                 </div>
             </div>
