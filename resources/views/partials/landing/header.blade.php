@@ -213,11 +213,13 @@
                                                             <div class="visible-xs-block">
                                                                 @lang('ico.week-num', ['number' => $weekNum])
                                                             </div>
-                                                            @if($hasEnded)
-                                                                <span class="tokens-left">@lang('ico.bonus-ended')</span>
-                                                            @elseif($bonusActive)
-                                                                <span class="tokens-left">@lang('ico.available-now')</span>
-                                                            @endif
+                                                            <div class="visible-xs-block">
+                                                                @if($hasEnded)
+                                                                    <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                                @elseif($bonusActive)
+                                                                    <span class="tokens-left">@lang('ico.available-now')</span>
+                                                                @endif
+                                                            </div>
                                                         </td>
                                                         <td class="hidden-xs">@lang('ico.week-num', ['number' => $weekNum])</td>
                                                         <td class="hidden-xs">
@@ -237,6 +239,8 @@
                                                         @lang('ico.bonus-percent', ['amount' => 0])
                                                         <div class="visible-xs-block">
                                                             @lang('ico.week-num', ['number' => 4])
+                                                        </div>
+                                                        <div class="visible-xs-block">
                                                             @if(config('ico.end')->isPast())
                                                                 <span class="tokens-left">@lang('ico.bonus-ended')</span>
                                                             @elseif(!$hasActiveBonuses)
