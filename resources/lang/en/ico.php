@@ -39,7 +39,7 @@ return [
     'join-now-c2a' => 'Join BitDegree Now',
     'all-articles' => 'All articles',
     'sale-live' => 'Token sale is live',
-    'progress' => 'Progress: :number%',
+    'progress' => 'Progress:',
     'soft-cap-num' => 'Soft Cap: :number',
     'soft-cap' => 'Soft Cap',
     'hard-cap-num' => 'Hard Cap :number',

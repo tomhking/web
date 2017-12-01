@@ -41,7 +41,7 @@ return array (
   'join-now-c2a' => 'Gabung BitDegree Sekarang',
   'all-articles' => 'Semua artikel',
   'sale-live' => 'Sale Token sudah dimulai',
-  'progress' => 'Kemajuan: :number%',
+  'progress' => 'Kemajuan:',
   'soft-cap-num' => 'Soft Cap: :number',
   'soft-cap' => 'Soft Cap',
   'hard-cap-num' => 'Hard Cap :number',

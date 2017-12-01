@@ -41,7 +41,7 @@ return array (
   'join-now-c2a' => '现在加入BitDegree',
   'all-articles' => '所有文章',
   'sale-live' => '货币销售已开始',
-  'progress' => '进度: :number%',
+  'progress' => '进度:',
   'soft-cap-num' => 'Soft Cap: :number',
   'soft-cap' => 'Soft Cap',
   'hard-cap-num' => 'Hard Cap :number',

@@ -41,7 +41,7 @@ return array (
   'join-now-c2a' => 'Únete a BitDegree ahora',
   'all-articles' => 'Todos los artículos',
   'sale-live' => 'La venta de tokens es en vivo',
-  'progress' => 'Progress: :number%',
+  'progress' => 'Progress:',
   'soft-cap-num' => 'Tapa Suave: :number',
   'soft-cap' => 'Tapa Suave',
   'hard-cap-num' => 'Tapa Dura :number',

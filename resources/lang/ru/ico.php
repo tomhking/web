@@ -41,7 +41,7 @@ return array (
   'join-now-c2a' => 'Присоединиться к BitDegree Сейчас',
   'all-articles' => 'Все статьи',
   'sale-live' => 'Продажа токенов началась',
-  'progress' => 'Прогресс: :number%',
+  'progress' => 'Прогресс:',
   'soft-cap-num' => 'Минимальная планка: :number',
   'soft-cap' => 'Минимальная планка',
   'hard-cap-num' => 'Максимальная планка: :number',

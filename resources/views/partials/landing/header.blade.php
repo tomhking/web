@@ -128,7 +128,7 @@
                                             @include('partials.countdown', ['timeLeft' => config('ico.end')->isPast() ? 0 : config('ico.end')->diffInSeconds()])
                                         @endif
 
-                                        <h4 class="ico-progress-percentage text-left">@lang('ico.progress', ['number' => number_format($progress, 1) ]) ({{ number_format($tokensSold, $raisedDecimals, ".", ",") }} BDG)</h4>
+                                        <h4 class="ico-progress-percentage text-left">@lang('ico.progress', ['number' => number_format($progress, 1) ]) {{ number_format($tokensSold, $raisedDecimals, ".", ",") }} BDG</h4>
 
                                         <div class="progress-bar-wrapper">
                                             <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
