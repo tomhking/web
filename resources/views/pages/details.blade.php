@@ -48,9 +48,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="input-wallet">@lang('user.eth-wallet')</label>
-                                            <input tabindex="5" type="text" class="form-control" value="{{ old('wallet', $user->wallet) }}" name="wallet" id="input-wallet">
+                                            <input {{ !empty($user->wallet) ? "disabled" : "" }} tabindex="5" type="text" class="form-control" value="{{ old('wallet', $user->wallet) }}" name="wallet" id="input-wallet">
                                         </div>
-
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">

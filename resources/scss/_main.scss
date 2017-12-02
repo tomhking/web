@@ -2496,6 +2496,10 @@ body.login-page {
         height: 46px;
         font-family: $work-sans;
         text-transform: inherit;
+        &[disabled] {
+          background: #eeeeee;
+          color: #8b8b8b;
+        }
       }
       .form-control {
         height: 46px;

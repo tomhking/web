@@ -21,7 +21,7 @@ class UserController extends Controller
     }
 
     /**
-     * Updates the progile of a logged in user
+     * Updates the profile of a logged in user
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
@@ -33,18 +33,24 @@ class UserController extends Controller
             'country' => 'required|string|valid-country',
             'birthday' => 'required|date',
             'contribution' => 'required|integer|min:0',
-
-            // for some strange reason absence of 'required' rule does not stop other rules from running when input is empty
-            'wallet' => !empty($request->get('wallet')) ? 'required|string|size:42' : '',
         ]);
 
         $user = auth()->user();
+
+        if(empty($user->wallet)) {
+            $this->validate($request, [
+                // for some strange reason absence of 'required' rule does not stop other rules from running when input is empty
+                'wallet' => !empty($request->get('wallet')) ? 'required|string|size:42' : ''
+            ]);
+
+            $user->wallet = $request->get('wallet');
+            $user->wallet_updated_at = Carbon::now();
+        }
 
         $user->first_name = $request->get('first_name');
         $user->last_name = $request->get('last_name');
         $user->country = $request->get('country');
         $user->birthday = $request->get('birthday');
-        $user->wallet = $request->get('wallet');
         $user->contribution = $request->get('contribution');
 
         $user->save();
@@ -54,6 +60,31 @@ class UserController extends Controller
         }
 
         return back()->with('status', __('user.profile-saved'));
+    }
+
+    /**
+     * Updates the wallet address of the user
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function wallet(Request $request)
+    {
+        $user = auth()->user();
+
+        if (!empty($user->wallet)) {
+            return redirect()->route('address');
+        }
+
+        $this->validate($request, [
+            'wallet' => 'required|string|size:42',
+        ]);
+
+        $user->wallet = $request->get('wallet');
+        $user->wallet_updated_at = Carbon::now();
+
+        $user->save();
+
+        return redirect()->route('address');
     }
 
     /**
@@ -73,6 +104,12 @@ class UserController extends Controller
      */
     function address()
     {
+        $user = auth()->user();
+
+        if(!empty($user->affiliate_id) && empty($user->wallet)) {
+            return redirect()->route('wallet');
+        }
+
         $ico = config('ico');
 
         if (!$ico['started']) {
@@ -111,6 +148,14 @@ class UserController extends Controller
 
     function participatefaq() {
         return view('pages.participatefaq');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    function showWallet()
+    {
+        return view('pages.wallet');
     }
 
 

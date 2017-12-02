@@ -38,6 +38,10 @@ class User extends Authenticatable
         'captcha_verified' => 'bool',
     ];
 
+    protected $dates = [
+        'wallet_updated_at',
+    ];
+
     /**
      * Limits results to a given email
      *
