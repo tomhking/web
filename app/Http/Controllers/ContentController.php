@@ -17,15 +17,6 @@ class ContentController extends Controller
      */
     public function __construct()
     {
-        //
-    }
-
-    /**
-     * @param Request $request
-     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
-     */
-    function home(Request $request)
-    {
         $tokenDecimals = config('ico.decimals');
         $softCap = config('ico.softCap');
         $hardCap = config('ico.hardCap');
@@ -38,7 +29,6 @@ class ContentController extends Controller
         $currentBatchNumber = bcdiv($tokensSold, $batchSize);
         $currentBatchSold = bcmod($tokensSold, $batchSize);
 
-        $softCapPart = 45;
         $currentBonus = false;
 
         foreach (config('ico.bonuses') as $item) {
@@ -48,24 +38,35 @@ class ContentController extends Controller
             }
         }
 
+        $softCapPart = 45;
+
         $progress = $softCapPart + (100-$softCapPart) * ($tokensSold / $hardCap);
 
-        return response(view('pages.home', [
+        view()->share([
             'softCap' => $softCap,
             'hardCap' => $hardCap,
             'softCapReached' => $tokensSold >= $softCap,
             'progressSoftCap' => $tokensSold <= $softCap ? ($tokensSold / $softCap) * 100 : 100,
             'progress' => $progress,
             'tokensSold' => $tokensSold,
-            'canGetFreeTokens' => false,
             'currentBonus' => $currentBonus,
+            'canGetFreeTokens' => false,
 
             'softCapPart' => $softCapPart,
             'batchCount' => $batchCount,
             'batchSize' => $batchSize,
             'currentBatchNumber' => $currentBatchNumber,
             'currentBatchSold' => $currentBatchSold,
+        ]);
+    }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Symfony\Component\HttpFoundation\Response
+     */
+    function home(Request $request)
+    {
+        return response(view('pages.home', [
             'email' => filter_var($request->get('email'), FILTER_VALIDATE_EMAIL) ? $request->get('email') : '',
             'courses' => array_slice($courses = app()->make('courses'), 0, 6)
         ])->render());

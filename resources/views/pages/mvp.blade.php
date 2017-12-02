@@ -1,4 +1,4 @@
-@extends('layouts.landing', ['navBarOnly' => true, 'bodyClass' => 'degree-list'])
+@extends('layouts.landing')
 @section('content')
 
     <div id="bitdegrees-list" class="main bitdegrees-list white-bkg">

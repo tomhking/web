@@ -76,7 +76,7 @@
                         <li><a href="{{ route('home') }}#what-are-we" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.what-is')</a></li>
                         <li class="narrow"><a href="{{ route('home') }}#team" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.people')</a></li>
                         <li class="narrow middle"><a href="{{ route('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
-                        <li class="narrow middle"><a href="{{ route('faq') }}">@lang('navigation.faq')</a></li>
+                        <li class="narrow middle"><a href="{{ route('faq') }}#faqs">@lang('navigation.faq')</a></li>
                         <li class="narrow"><a href="{{ route('home') }}#token-distribution" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.token')</a></li>
                         @if($currentLanguage == "cn")
                             <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
@@ -152,13 +152,7 @@
                                         @include('partials.countdown', ['timeLeft' => config('ico.start')->diffInSeconds()])
                                     @else
 
-                                        @if($currentBonus)
-                                            <h1>@lang('home.join_crowdsale_main_header')</h1>
-                                            @include('partials.countdown', ['timeLeft' => $currentBonus['to']->diffInSeconds()])
-                                        @else
-                                            <h1>@lang('ico.ends-in')</h1>
-                                            @include('partials.countdown', ['timeLeft' => config('ico.end')->isPast() ? 0 : config('ico.end')->diffInSeconds()])
-                                        @endif
+                                        @include('partials.ico-countdown')
 
                                         <h4 class="ico-progress-percentage text-left">@lang('ico.progress', ['number' => number_format($progress, 1) ]) {{ number_format($tokensSold, 0, ".", ",") }} BDG</h4>
 
