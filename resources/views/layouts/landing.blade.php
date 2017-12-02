@@ -14,6 +14,7 @@
 
     <meta property="og:title" content="@lang('home.title')" />
     <meta property="og:description" content="@lang('home.meta_description')" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
     @include('partials.social-meta')
     @include('partials.stylesheets')
