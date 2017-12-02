@@ -238,6 +238,8 @@ class UserController extends Controller
     public function setAffiliateCookie($id)
     {
         session()->put('affiliate', (int)$id > 0 ? (int)$id : 0);
-        return redirect()->route('home');
+        return redirect()->route('home')->cookie(
+            new Cookie('bd-aff', (int)$id > 0 ? (int)$id : 0, Carbon::now()->addMonths(3))
+        );
     }
 }
