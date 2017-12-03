@@ -39,6 +39,7 @@ class User extends Authenticatable
     ];
 
     protected $dates = [
+        'birthday',
         'wallet_updated_at',
     ];
 

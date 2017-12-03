@@ -50,7 +50,7 @@ class UserController extends Controller
         $user->first_name = $request->get('first_name');
         $user->last_name = $request->get('last_name');
         $user->country = $request->get('country');
-        $user->birthday = $request->get('birthday');
+        $user->birthday = Carbon::createFromTimestamp(strtotime($request->get('birthday')));
         $user->contribution = $request->get('contribution');
 
         $user->save();
