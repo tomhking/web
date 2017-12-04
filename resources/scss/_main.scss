@@ -2086,6 +2086,17 @@ body.login-page {
       -o-transform: translate(0, 50%)!important;
       transform: translate(0, 50%)!important;
     }
+    p{
+      span.red{
+        color:#ffbcbc;
+      }
+      span.announcement{
+        background:#c02b3f;
+        padding:8px 10px;
+        margin:35px 0 25px 0;
+        display:block;
+      }
+    }
    .referral-box{
      margin-top:25px;
      h4{
@@ -2614,9 +2625,6 @@ body.login-page {
           font-size:15px;
           line-height:22px;
           font-weight: 300;
-          span.red{
-            color:#ffbcbc;
-          }
         }
       }
     }

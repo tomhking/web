@@ -9,6 +9,7 @@ return [
     'how-descr-3' => 'Once a person referred via your link or banner signs up on BitDegree website, you will instantly earn ONE stake of tokens!',
     'how-descr-4' => 'At the end of the crowdsale the total amount of stakes will be transformed into BDG tokens & will be distributed among all participants based on the number of people they have referred.',
     'how-descr-5' => 'Make sure you have joined BitDegree on Telegram & Twitter, it\'s important! You will receive the instructions on how to claim your BitDegree tokens via the email that you provided during the registration.',
+    'how-descr-6' => 'If your referred client makes a purchase of BDG tokens via your unique referral link, you will earn 5% token commissions from the purchase sum. The tokens will be distributed after the Crowdsale ends.',
     'restrictions' => 'Restrictions',
     'restriction-1' => 'No multiple signups!',
     'restriction-2' => 'No self-referrals!',
@@ -21,4 +22,5 @@ return [
     'referral_link_label' => 'Your personal referral link:',
     'banner' => 'Banner',
     'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!',
+    'announcement' => '<b>Dec. 4: !UPDATE!</b> Earn even MORE! Now you get <b>5% commission</b> from your referred clients purchased tokens sum!',
 ];

@@ -11,6 +11,7 @@
                     <div class="col-xs-12 col-md-12 text-center">
                         <h1>@lang('affiliate.headline')</h1>
                         <h3 class="subtitle">@lang('affiliate.subtitle')</h3>
+                        <p><span class="announcement" style="font-size:18px;">@lang('affiliate.announcement')</span></p>
                     </div>
                 </div>
                 <div class="row">
@@ -89,6 +90,7 @@
                                 <li>@lang('affiliate.how-descr-3')</li>
                                 <li>@lang('affiliate.how-descr-4')</li>
                                 <li>@lang('affiliate.how-descr-5')</li>
+                                <li>@lang('affiliate.how-descr-6')</li>
                             </ul>
                             <h3>@lang('affiliate.restrictions')</h3>
                             <ul>
