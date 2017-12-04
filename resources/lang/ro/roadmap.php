@@ -1,6 +1,9 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
+  'date_hype' => '2018 Q2/Q3',
+  'date_platform' => '2018 Q4',
   'title' => 'Foaia de parcurs',
   'title_25m' => '29M+ baza de utilizatori',
   'title_fundamentals' => 'Fundamente web',
@@ -9,12 +12,9 @@ return array (
   'title_hype' => 'Atragerea interesului studenților',
   'title_platform' => 'Lansarea platformei de afaceri',
   'title_future' => 'Viitor',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => 'Primăvara 2017',
   'date_ico' => 'Vara/toamna 2017',
   'date_courses' => 'Iarna/primavara 2018',
-  'date_hype' => '2018 Q2/Q3',
-  'date_platform' => '2018 Q4',
   'date_future' => 'Viitor',
   'description_25m' => 'Am atins 29 de milioane de utilizatori pe platforma 000webhost - platformă de dezvoltare web gratuită, și Hostinger - servicii de găzduire web. Cea mai mare parte a utilizatorilor sunt tineri tehnici savvy, cu voință profundă de a învăța, de a construi și de a crește. <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow">Utilizatorii ne iubesc</a> platforma de învățare online deja.',
   'description_fundamentals' => 'Rezumatul celor 500 de articole despre <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank">fundamente de codare web</a> a fost pregătit. Șlefuirea strategiei de afaceri. Abordarea primilor parteneri de afaceri. Consultarea cu numeroase universități și companii blockchain pentru a dezvolta primele cursuri.',

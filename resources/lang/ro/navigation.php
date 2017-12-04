@@ -1,12 +1,16 @@
 <?php 
 
 return array (
+  'blog' => 'Blog',
+  'mvp' => 'MVP',
+  'token' => 'Token',
+  'affiliate' => 'Afiliat',
+  'distribution' => 'Distribuția Token',
   'what-is' => 'Ce este',
   'people' => 'Oamenii din spate',
   'one-pager' => 'Prezentare',
   'ico' => 'ICO &amp; Foaia de parcurs',
   'faq' => 'Întrebări frecvente',
-  'blog' => 'Blog',
   'what-it-is' => 'Ce este BitDegree?',
   'users' => 'Utilizatorii noștri',
   'problems' => 'Ce probleme rezolvăm?',
@@ -19,7 +23,6 @@ return array (
   'top' => 'Sus',
   'subscribe' => 'Abonează-te',
   'email_placeholder' => 'Scrieți un email pentru a primi știri',
-  'mvp' => 'MVP',
   'bitcointalk' => 'Răsplată',
   'white-paper' => 'Carte-Albă',
   'no_account' => 'Nu există un cont cu email-ul furnizat.',

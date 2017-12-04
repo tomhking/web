@@ -1,10 +1,17 @@
 <?php 
 
 return array (
+  'title_react' => 'React',
+  'title_zcoin_protocol' => 'Protocol și criptografie Zerocoin',
+  'mvp' => 'MVP',
+  'beta' => 'Disponibil beta ',
+  'soon' => 'În curând',
+  'description-18-feb' => 'DESCHIDEREA CLASEI: Februarie, 2018',
+  'description-beta' => 'Disponibil Beta',
+  'description-18-jan' => 'DESCHIDEREA CLASEI: Ianuarie, 2018',
   'title_web_fundamentals' => 'Teorie dezvoltare web',
   'title_coding_fundamentals' => 'Fundamente codare',
   'title_deep_learning' => 'Învățare profundă',
-  'title_react' => 'React',
   'title_vr_development' => 'Dezvoltare VR',
   'title_ai_development' => 'Dezvoltare AI',
   'title_robotics' => 'Robotică',

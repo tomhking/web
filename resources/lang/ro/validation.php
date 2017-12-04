@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Trebuie să fiți de acord cu Termenii și condițiile pentru a continua.',
+      'accepted' => 'Trebuie să fiți de acord cu Termenii și condițiile pentru a continua.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Adresa ETH pe care ați furnizat-o nu pare a fi validă',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'mesaj-personalizat',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Țara pe care ai selectat-o nu este validă.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Trebuie să selectați această casetă pentru a dovedi că nu sunteți un bot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'E-mailul furnizat nu a fost găsit în baza noastră de date. Ar trebui să vă înscrieți mai întâi.',
+    ),
+  ),
   'accepted' => ':attribute trebuie să fie acceptată.',
   'active_url' => ':attribute nu este o adresă URL validă.',
   'after' => ':attribute trebuie să fie o dată ulterioară :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute a fost deja luat.',
   'uploaded' => ':attribute nu s-a încărcat.',
   'url' => 'Formatul :attribute este invalid.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'mesaj-personalizat',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Țara pe care ai selectat-o nu este validă.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Trebuie să selectați această casetă pentru a dovedi că nu sunteți un bot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'E-mailul furnizat nu a fost găsit în baza noastră de date. Ar trebui să vă înscrieți mai întâi.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Prenume',
