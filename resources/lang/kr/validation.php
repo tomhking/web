@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => '다음단계로 가기전에 이용약관에 동의하셔야 합니다.',
+      'accepted' => '다음 단계로 가기전에 이용약관에 동의하셔야 합니다.',
+    ),
+    'wallet' => 
+    array (
+      'size' => ' 당신이 제공한 ETH 주소는 유효하지 않습니다.',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => '맞춤형 메세지',
+    ),
+    'country' => 
+    array (
+      'valid_country' => '당신이 선택한 국가는 유효하지 않습니다.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => '당신은 로봇이 아닌 것을 증명하기 위해 이 박스를 체크해야합니다',
+    ),
+    'email' => 
+    array (
+      'exists' => '입력하신 이메일이 우리의 데이터베이스에 없습니다. 먼저 가입해 주십시오.',
+    ),
+  ),
   'accepted' => ':attribute이 수용되어야 합니다',
   'active_url' => ':attribute 은 유효안 URL이 아닙니다',
   'after' => ':attribute은 :date 이후의 날짜여야합니다',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute가 이미 실행되었습니다.',
   'uploaded' => ':attribute는 업로드를 실패하였습니다.',
   'url' => ':attribute 형식은 유효하지 않습니다.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => '맞춤형 메세지',
-    ),
-    'country' => 
-    array (
-      'valid_country' => '당신이 선택한 국가는 유효하지 않습니다.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => '당신은 로봇이 아닌 것을 증명하기 위해 이 박스를 체크해야합니다',
-    ),
-    'email' => 
-    array (
-      'exists' => '입력하신 이메일이 우리의 데이터베이스에 없습니다. 먼저 가입해 주십시오.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => '성',

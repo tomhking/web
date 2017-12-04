@@ -1,6 +1,13 @@
 <?php 
 
 return array (
+  'title_zcoin_protocol' => '제로코인 프로토콜과 크립토그래피',
+  'mvp' => 'MVP',
+  'beta' => '사용가능한 베타버전',
+  'soon' => '곧 시작합니다',
+  'description-18-feb' => '교실 오픈: 2018년 2월',
+  'description-beta' => '사용가능한 베타버전',
+  'description-18-jan' => '2018 교실 오픈: 2018년 1월',
   'title_web_fundamentals' => '웹 전략 이론',
   'title_coding_fundamentals' => '코딩 기초',
   'title_deep_learning' => '딥 러닝',
@@ -19,7 +26,7 @@ return array (
   'title_smart_contracts' => '스마트 컨트렉트 개발 및 내실화',
   'title_ethereum_development' => '이더리움 개발: Truffle 과 Open Zeppelin',
   'title' => 'BitDegree는 어떠한 문제점들을 해결할까요?',
-  'subtitle' => '우리는 로열하며, 웹 열정적이고, 창의적인 월드와이드 오픈 커퓨니티인 Hostinger와 000webhost의 2천900만 사용자들의 탄탄한 배경에 기반하여 BitDegree를 만들 것입니다. Hostinger에 있어서 우리의 비전은 전세계적으로 몇백만명의  사람들이 인터넷의 힘을 접하도록 도와주고, 그들에게 배우고, 만들고, 성장할 수 있는 힘을 주는 것입니다. ',
+  'subtitle' => '우리는 특별하며, 웹 열정적이고, 창의적이며 월드와이드 오픈 커퓨니티인 Hostinger와 000webhost의 2천900만 사용자들의 탄탄한 배경에 기반하여 BitDegree를 만들 것입니다. Hostinger의 비전은 전세계적으로 몇백만명의  사람들이 인터넷의 힘을 접하도록 도와주고, 그들에게 배우고, 만들고, 성장할 수 있는 힘을 주는 것입니다. ',
   'free' => '무료',
   'new' => '신규',
   'coming_soon' => '곧 출시',

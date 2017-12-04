@@ -1,6 +1,12 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
+  'date_fundamentals' => '2017 Q1/Q2',
+  'date_ico' => '2017 Q3/Q4',
+  'date_courses' => '2018 Q1',
+  'date_hype' => '2018 Q2/Q3',
+  'date_platform' => '2018 Q4',
   'title' => '로드맵',
   'title_25m' => '29,000,000이상의 유저 기반',
   'title_fundamentals' => '웹 기반시설',

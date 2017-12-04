@@ -1,14 +1,17 @@
 <?php 
 
 return array (
+  'mvp' => 'MVP',
+  'faq' => 'FAQ',
+  'token' => '토큰',
+  'affiliate' => '제휴',
+  'distribution' => '토큰 분배',
   'what-is' => 'BitDegree가 무엇인가요?',
   'people' => '도와준 사람들',
-  'mvp' => 'MVP',
   'bitcointalk' => '바운티',
-  'one-pager' => '한 페이지의',
+  'one-pager' => '요약',
   'white-paper' => '백서',
   'ico' => 'ICO와 로드맵',
-  'faq' => 'FAQ',
   'blog' => '블로그',
   'what-it-is' => 'BitDegree가 무엇인가요?',
   'users' => '우리의 사용자들',
