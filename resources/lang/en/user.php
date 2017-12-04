@@ -73,4 +73,5 @@ return [
     'reset-new-pass-headline' => 'Set a New Password',
     'identity' => 'Crowdsale contributor’s<br> identity verification',
     'identity-file-constraints' => 'Max 10MB. Only PNG and JPEG images accepted.',
+    'copy' => 'Copy',
 ];

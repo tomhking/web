@@ -58,7 +58,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="input-birthday">@lang('user.birthday')</label>
-                                            <input tabindex="4" placeholder="YYYY-MM-DD" type="date" class="form-control" id="input-birthday" value="{{ old('birthday', $user->birthday instanceof \Carbon\Carbon ? $user->birthday->format('Y-m-d') : null) }}" name="birthday" max="{{ \Carbon\Carbon::today()->subYears(16)->toDateString() }}" min="{{ \Carbon\Carbon::today()->subYears(100)->toDateString() }}" required>
+                                            <input tabindex="4" placeholder="YYYY-MM-DD" type="date" class="form-control" id="input-birthday" value="{{ old('birthday', $user->birthday instanceof \Carbon\Carbon ? $user->birthday->format('Y-m-d') : null) }}" name="birthday" max="{{ \Carbon\Carbon::today()->subYears(8)->toDateString() }}" min="{{ \Carbon\Carbon::today()->subYears(100)->toDateString() }}" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="input-contribution">@lang('user.contribution')</label>
