@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Devam etmek için Hizmet Şartları\'nı kabul etmelisiniz.',
+      'accepted' => 'Devam etmek için Hizmet Şartları\'nı kabul etmelisiniz.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Sağladığınız ETH adresi geçerli görünmüyor',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'ozel-mesaj',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Seçtiğiniz ülke geçersizdir.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Bot olmadığınızı kanıtlamak için bu kutuya tıklamalısınız.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Verilen e-posta adresi veritabanımızda bulunmadı. Önce kaydolmalısınız.',
+    ),
+  ),
   'accepted' => ':attribute kabul edilmelidir.',
   'active_url' => ':attribute geçerli bir URL değildir.',
   'after' => ':attribute :date tarihinden sonra olmalıdır.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute zaten alınmış.',
   'uploaded' => ':attribute yüklenirken başarısız oldu.',
   'url' => ':attribute formatı geçersizdir.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'ozel-mesaj',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Seçtiğiniz ülke geçersizdir.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Bot olmadığınızı kanıtlamak için bu kutuya tıklamalısınız.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'Verilen e-posta adresi veritabanımızda bulunmadı. Önce kaydolmalısınız.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Ad',

@@ -1,10 +1,17 @@
 <?php 
 
 return array (
+  'title_react' => 'Harekete Geç',
+  'title_zcoin_protocol' => 'Zerocoin Protokolü ve Şifreleme',
+  'mvp' => 'MVP',
+  'beta' => 'Beta Sürümü Hazır',
+  'soon' => 'Çok Yakında',
+  'description-18-feb' => 'SINIF AÇILIŞ TARİHİ: Şubat, 2018',
+  'description-beta' => 'Beta Sürümü Hazır',
+  'description-18-jan' => 'SINIF AÇILIŞ TARİHİ: Ocak, 2018',
   'title_web_fundamentals' => 'Web Geliştirme Teorisi',
   'title_coding_fundamentals' => 'Kodlama Temelleri',
   'title_deep_learning' => 'Derin Öğrenme (Deep Learning)',
-  'title_react' => 'React',
   'title_vr_development' => 'VR Geliştirme',
   'title_ai_development' => 'AI Geliştirme',
   'title_robotics' => 'Robotik',

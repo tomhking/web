@@ -1,6 +1,7 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
   'title' => 'Yol Haritası',
   'title_25m' => '29M+ kullanıcı tabanı',
   'title_fundamentals' => 'Web temelleri',
@@ -9,7 +10,6 @@ return array (
   'title_hype' => 'Öğrenci sektöründe heyecan',
   'title_platform' => 'Business Platformu yayını',
   'title_future' => 'Gelecek',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => '2017 ilkbahar',
   'date_ico' => '2017 yaz/sonbahar',
   'date_courses' => '2018 kış/ilkbahar',
