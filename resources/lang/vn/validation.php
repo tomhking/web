@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'attribute-name' => 
+    array (
+      'rule-name' => 'loi-nhan-tu-chon',
+    ),
+    'agreement' => 
+    array (
+      'required' => 'Bạn phải đồng ý với Điều Khoản Dịch Vụ để tiếp tục.',
+      'accepted' => 'Bạn phải đồng ý với Điều Khoản Dịch Vụ để tiếp tục.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Địa chỉ ETH bạn cung cấp có vẻ như không đúng',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Quốc gia bạn chọn không hợp lệ.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Bạn phải chọn ô này để xác nhận bạn không phải là bot máy tính',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Email của bạn không tìm thấy trên dữ liệu của chúng tôi. Bạn cần đăng ký trước.',
+    ),
+  ),
   'accepted' => ':attribute phải được chấp nhận.',
   'active_url' => ':attribute không phải URL hợp lệ.',
   'after' => ':attribute phải là ngày sau ngày :date.',
@@ -77,29 +105,10 @@ return array (
   'unique' => ':attribute đã được lấy.',
   'uploaded' => ':attribute upload thất bại.',
   'url' => ':attribute format không đúng.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'custom-message',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Quốc gia bạn chọn không hợp lệ.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Bạn phải chọn ô này để xác nhận bạn không phải là bot máy tính',
-    ),
-    'email' => 
-    array (
-      'exists' => 'Email của bạn không tìm thấy trên dữ liệu của chúng tôi. Bạn cần đăng ký trước.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Tên',
     'last-name' => 'Họ',
-    'g-recaptcha-response' => 'xác thực lại mã capcha',
+    'g-recaptcha-response' => 'Xác thực lại mã capcha',
   ),
 );

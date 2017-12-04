@@ -1,6 +1,8 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
+  'date_platform' => '2018 Q4',
   'title' => 'Lộ trình',
   'title_25m' => 'Nền tảng người dùng hơn 29 Triệu',
   'title_fundamentals' => 'Nguyên tắc cơ bản của Web',
@@ -9,12 +11,10 @@ return array (
   'title_hype' => 'Phân khúc sinh viên lớn mạnh',
   'title_platform' => 'Phát hành nền tảng kinh doanh',
   'title_future' => 'Tương lai',
-  'date_25m' => '2007-2016',
   'date_fundamentals' => 'Xuân 2017',
   'date_ico' => 'Xuân/thu 2017',
   'date_courses' => 'Đông/xuân 2018',
   'date_hype' => '2018 Q2/3',
-  'date_platform' => '2018 Q4',
   'date_future' => 'Tương lai',
   'description_25m' => 'Tiếp cận 29 triệu người dùng trên 000webhost - một nền tảng học phát triển web miễn phí, và Hostinger - dịch vụ web hosting. Hầu hết người dùng là những tài năng trẻ yêu thích công nghệ và sẵn lòng học tập sâu thêm, tự đào tạo bản thân và phát tiển.  <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow">Người dùng đã yêu thích</a> và xem chúng tôi như là một nền tảng để học hỏi trực tuyến từ lâu. ',
   'description_fundamentals' => 'Tổng hợp của hơn 500 bài viết về <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank">Cơ bản lập trình web</a> đã được chuẩn bị. Hoàn thiện chiến lược kinh doanh. Tiếp cận đối tác doanh nghiệp đầu tiên. Nhận tư vấn từ nhiều trường đại học và các công ty blockchain để phát triển khóa học đầu tiên. ',
