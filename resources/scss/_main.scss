@@ -1982,15 +1982,16 @@ body.login-page {
   .share {
     position:relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.48);
-    padding-bottom: 5px;
+    padding-bottom: 25px;
     .share-arrow::after{
       content: " ";
       background: url('../share-arrow.png') no-repeat;
+      background-size: 100%;
       position: absolute;
-      width: 100px;
+      width: 90px;
       height: 100px;
-      top: 15px;
-      right: 0;
+      top: -25px;
+      left: -15px;
     }
     h3 {
       margin-bottom: 20px;
@@ -2008,6 +2009,7 @@ body.login-page {
       a{
         min-width:auto!important;
         padding:5px 2px!important;
+        float:none;
       }
       .a2a_svg {
         height: 30px;

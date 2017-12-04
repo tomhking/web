@@ -40,16 +40,16 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="share">
-                            <h3>@lang('user.share')</h3>
+                    <div class="col-md-12 share">
+                        <div class="col-md-6 text-center">
+                            <div class="share-arrow"></div>
                             <div class="share-buttons large">
                                 <a class="telegram-share" href="javascript:window.open('https://t.me/share/url?url=https://stude.co/{{ auth()->user()->id }}', '_blank')">
                                     <i></i>
-                                    <span>Telegram</span>
+                                    <span>Share on Telegram</span>
                                 </a>
                                 <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree_org&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
-                                    <i class="fa fa-twitter"></i> Tweet
+                                    <i class="fa fa-twitter"></i> Share on Twitter
                                 </a>
 
                                 <!-- AddToAny BEGIN -->
@@ -60,7 +60,6 @@
                                     <a class="a2a_button_reddit"></a>
                                     <a class="a2a_button_tumblr"></a>
                                     <a class="a2a_button_vk"></a>
-                                    <a class="a2a_button_yahoo_mail"></a>
                                     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                 </div>
                                 <script>
@@ -90,7 +89,6 @@
                                 <li>@lang('affiliate.how-descr-3')</li>
                                 <li>@lang('affiliate.how-descr-4')</li>
                                 <li>@lang('affiliate.how-descr-5')</li>
-                                <li>@lang('affiliate.how-descr-6')</li>
                             </ul>
                             <h3>@lang('affiliate.restrictions')</h3>
                             <ul>
