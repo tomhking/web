@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Morate se složiti s Uvjetima pružanja usluge kako biste nastavili.',
+      'accepted' => 'Morate se složiti s Uvjetima pružanja usluge kako biste nastavili.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Vaša adresa ETH-a nije važeća',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'vlastita-poruka',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'Zemlja koju ste odabrali nije validna',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Morate odabrati kutiju kako bi dokazali da niste robot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Email adresu koju ste nam dali nije pronađena. Morate se prvo prijaviti.',
+    ),
+  ),
   'accepted' => ':attribute mora biti prihvaćen.',
   'active_url' => ':attribute nije validan URL.',
   'after' => ':attribute mora biti datum nakon :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => ':attribute je već zauzet.',
   'uploaded' => ':attribute nije uspio učitavanje.',
   'url' => ':attribute neispravnog je formata.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'vlastita-poruka',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'Zemlja koju ste odabrali nije validna',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Morate odabrati kutiju kako bi dokazali da niste robot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'Email adresu koju ste nam dali nije pronađena. Morate se prvo prijaviti.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Ime',

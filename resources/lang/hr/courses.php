@@ -1,6 +1,14 @@
 <?php 
 
 return array (
+  'title_neuro_marketing' => 'Neuro Marketing',
+  'title_zcoin_protocol' => 'Zerocoin Protokol i Kriptografija',
+  'mvp' => 'MVP',
+  'beta' => 'Dostupna Beta',
+  'soon' => 'Dolazi uskoro',
+  'description-18-feb' => 'UČIONICA SE OTVARA: Veljača, 2018',
+  'description-beta' => 'Dostupna Beta',
+  'description-18-jan' => 'UČIONICA SE OTVARA: Siječanj, 2018',
   'title_web_fundamentals' => 'Teorija web razvoja',
   'title_coding_fundamentals' => 'Osnove kodiranja',
   'title_deep_learning' => 'Temeljto učenje',
@@ -8,7 +16,6 @@ return array (
   'title_vr_development' => 'VR Razvoj',
   'title_ai_development' => 'AI Razvoj',
   'title_robotics' => 'Robotika',
-  'title_neuro_marketing' => 'Neuro Marketing',
   'title_digital_graphics' => 'Digitalni Dizajn',
   'title_build_website' => 'Napravite web stranicu ispočetka',
   'title_building_apps' => 'Kreirajte Android Aplikacije',

@@ -1,15 +1,18 @@
 <?php 
 
 return array (
+  'mvp' => 'MVP',
+  'faq' => 'FAQ',
+  'blog' => 'Blog',
+  'token' => 'Token',
+  'affiliate' => 'Affiliate',
+  'distribution' => 'Distribucija Tokena',
   'what-is' => 'Što je BitDegree',
   'people' => 'Ljudi u pozadini',
-  'mvp' => 'MVP',
   'bitcointalk' => 'Nagrada',
   'one-pager' => 'Jedan Pager',
   'white-paper' => 'Dokumenti',
   'ico' => 'ICO &amp; Plan',
-  'faq' => 'FAQ',
-  'blog' => 'Blog',
   'what-it-is' => 'Što je BitDegree?',
   'users' => 'Naši Korisnici',
   'problems' => 'Koje probleme riješavamo?',

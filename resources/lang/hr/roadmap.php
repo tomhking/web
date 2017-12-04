@@ -1,6 +1,12 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
+  'date_fundamentals' => '2017 Q1/Q2',
+  'date_ico' => '2017 Q3/Q4',
+  'date_courses' => '2018 Q1',
+  'date_hype' => '2018 Q2/Q3',
+  'date_platform' => '2018 Q4',
   'title' => 'Plan',
   'title_25m' => '29M+ korisnička baza',
   'title_fundamentals' => 'Web osnove',
@@ -9,12 +15,6 @@ return array (
   'title_hype' => 'Hype na Studentskom sektoru',
   'title_platform' => 'Pokretanje poslovne platforme',
   'title_future' => 'Budućnost',
-  'date_25m' => '2007-2016',
-  'date_fundamentals' => '2017 Q1/Q2',
-  'date_ico' => '2017 Q3/Q4',
-  'date_courses' => '2018 Q1',
-  'date_hype' => '2018 Q2/Q3',
-  'date_platform' => '2018 Q4',
   'date_future' => 'Budućnost',
   'description_25m' => 'Dosegnuli smo 29 milijuna korisnika na platformi za učenje za web razvoj bez potrebe za kupovinom 000webhost i Hostinger - web hosting usluge. Najveći dio korisnika su mladi tehnološko pametni ljudi s dubokom voljom za učenje, izgradnju i rast. <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow"> Korisnici nas vole </a> i koriste kao platformu za online učenje.',
   'description_fundamentals' => 'Sažetak od 500 + članaka o <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank"> osnovama za web-kodiranje </a> već je spreman. Poliranje poslovne strategije. Približavanje prvih poslovnih partnera. Konzalting s brojnim sveučilištima i blockchain tvrtkama za razvoj prvih tečajeva.',
