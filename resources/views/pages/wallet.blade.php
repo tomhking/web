@@ -17,7 +17,7 @@
             <div class="main container-main">
                 <div class="container">
                     <div class="row">
-                        <h1 class="text-center">@lang('user.eth-wallet')</h1>
+                        <h1 class="text-center">Enter Your ETH wallet</h1>
                     </div>
 
                     <form action="{{ route('wallet') }}" method="post">
@@ -30,7 +30,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        Please provide your personal ETH-address from an wallet that supports ERC20-Tokens (For example MyEtherWallet). This is the address you will be sending ETH from. If you have no ETH-address, check <a href="{{ route('participate') }}">this tutorial</a> or <a href="https://t.me/bitdegree" target="_blank">contact our Support</a>.
+                                        <p>Not sure what ETH wallet is &amp; how to create it? <a href="https://blog.bitdegree.org/how-to-participate-in-the-bitdegree-ico-721c4a8ed166" target="_blank">Click here to find out.</a></p>
+                                        <p>Please provide your personal ETH-address from an wallet that supports ERC20-Tokens (For example MyEtherWallet). This is the address you will be sending ETH from. If you have no ETH-address, check <a href="{{ route('participate') }}">this tutorial</a> or <a href="https://t.me/bitdegree" target="_blank">contact our Support</a>.</p>
                                         <div class="form-group">
                                             <label for="input-wallet">@lang('user.eth-wallet')</label>
                                             <input tabindex="5" type="text" class="form-control" value="{{ old('wallet') }}" placeholder="0x" name="wallet" id="input-wallet">
@@ -44,7 +45,7 @@
                             <div class="col-xs-12 col-md-10 col-md-offset-1 buttons">
                                 <div class="content dashboard-buttons">
                                     <div class="right text-right">
-                                        <button tabindex="8" type="submit" class="btn btn-primary button-save">@lang('user.save')</button>
+                                        <button tabindex="8" type="submit" class="btn btn-primary button-save">Continue</button>
                                     </div>
                                 </div>
                             </div>
