@@ -40,45 +40,43 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="col-md-12 share text-center">
+                        <div class="share">
                             <h3>@lang('user.share')</h3>
-                            <div class="share-arrow"></div>
                             <div class="share-buttons large">
                                 <a class="telegram-share" href="javascript:window.open('https://t.me/share/url?url=https://stude.co/{{ auth()->user()->id }}', '_blank')">
-
-
-
                                     <i></i>
                                     <span>Telegram</span>
                                 </a>
-                                <a class="twitter-share" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree_org&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
+                                <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=World's%20first%20blockchain-powered%20education%20platform%20with%20scholarships&via=bitdegree_org&hashtags=education%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
                                     <i class="fa fa-twitter"></i> Tweet
                                 </a>
 
+                                <!-- AddToAny BEGIN -->
+                                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                    <a class="a2a_button_facebook"></a>
+                                    <a class="a2a_button_google_plus"></a>
+                                    <a class="a2a_button_linkedin"></a>
+                                    <a class="a2a_button_reddit"></a>
+                                    <a class="a2a_button_tumblr"></a>
+                                    <a class="a2a_button_vk"></a>
+                                    <a class="a2a_button_yahoo_mail"></a>
+                                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                                </div>
+                                <script>
+                                    var a2a_config = a2a_config || {};
+                                    a2a_config.linkname = "BitDegree";
+                                    a2a_config.linkurl = "https://stude.co/{{ auth()->user()->id }}";
+                                    a2a_config.color_main = "D7E5ED";
+                                    a2a_config.color_border = "AECADB";
+                                    a2a_config.color_link_text = "333333";
+                                    a2a_config.color_link_text_hover = "333333";
+                                </script>
+                                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                                <!-- AddToAny END -->
+
                             </div>
-                            <!-- AddToAny BEGIN -->
-                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                                <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                                <a class="a2a_button_facebook"></a>
-                                <a class="a2a_button_google_plus"></a>
-                                <a class="a2a_button_linkedin"></a>
-                                <a class="a2a_button_reddit"></a>
-                                <a class="a2a_button_tumblr"></a>
-                            </div>
-                            <script>
-                                var a2a_config = a2a_config || {};
-                                a2a_config.linkname = "BitDegree";
-                                a2a_config.linkurl = "https://stude.co/{{ auth()->user()->id }}";
-                                a2a_config.color_main = "D7E5ED";
-                                a2a_config.color_border = "AECADB";
-                                a2a_config.color_link_text = "333333";
-                                a2a_config.color_link_text_hover = "333333";
-                            </script>
-                            <script async src="https://static.addtoany.com/menu/page.js"></script>
-                            <!-- AddToAny END -->
                         </div>
                     </div>
-
                 </div>
 
                 <div class="row">

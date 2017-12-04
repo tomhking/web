@@ -1980,8 +1980,9 @@ body.login-page {
     letter-spacing: 1px;
   }
   .share {
-    margin-top: 20px;
     position:relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+    padding-bottom: 5px;
     .share-arrow::after{
       content: " ";
       background: url('../share-arrow.png') no-repeat;
@@ -1994,22 +1995,29 @@ body.login-page {
     h3 {
       margin-bottom: 20px;
       font-size: 22px;
+      display: inline-block;
+      vertical-align:top;
+      margin-top: 5px;
+      margin-right:10px;
     }
     .a2a_kit {
       margin:0 auto;
       text-align: center;
-      display: inline-block;
+      display: block;
+      margin-top:10px;
+      a{
+        min-width:auto!important;
+        padding:5px 2px!important;
+      }
       .a2a_svg {
-        height: 28px;
-        line-height: 28px;
-        width: 28px;
+        height: 30px;
+        line-height: 30px;
+        width: 30px;
       }
     }
     .share-buttons.large {
-      display: block;
-      margin-bottom: 35px;
-      padding-bottom: 35px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+      display: inline-block;
+      vertical-align:top;
       a {
         font-size: 18px;
         padding: 10px 15px;
