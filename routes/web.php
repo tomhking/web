@@ -51,7 +51,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
 
         // Statistics and mailing list export
         // Route::get('/admin/stats', 'AdminController@stats')->name('admin.stats'); @todo
-        // Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails'); @todo
+        Route::get('/admin/emails', 'AdminController@emails')->name('admin.emails');
 
         // Authentication Routes...
         Route::get('login/{destination?}', 'Auth\LoginController@showLoginForm')->name('login');
