@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Πρέπει να συμφωνήσετε με τους Όρους Παροχής Υπηρεσιών για να προχωρήσετε.',
+      'accepted' => 'Πρέπει να συμφωνήσετε με τους Όρους Παροχής Υπηρεσιών για να προχωρήσετε.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'Η διεύθυνση ETH που δώσατε δεν φαίνεται να είναι έγκυρη',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'προσαρμοσμένο μήνυμα',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'H χώρα που επιλέξατε δεν είναι έγκυρη.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Πρέπει να επιλέξετε αυτο το κουτί για να αποδείξετε ότι δεν είστε bot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'Το email που εισαγάγατε δεν βρέθηκε στη βάση δεδομένων μας. Θα πρέπει πρώτα να εγγραφείτε.',
+    ),
+  ),
   'accepted' => 'Η τιμή :attribute πρέπει να είναι αποδεκτή',
   'active_url' => 'Η τιμή :attribute δεν είναι έγκυρο URL',
   'after' => 'Η τιμη :attribute πρέπει να είναι μία ημερομηνία μετά από τις :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => 'Η τιμή :attribute έχει ήδη κατοχυρωθεί.',
   'uploaded' => 'Το :attribute απέτυχε να ανέβει.',
   'url' => 'Η :attribute διεύθυνση δεν είναι έγκυρη.',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'προσαρμοσμένο μήνυμα',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'H χώρα που επιλέξατε δεν είναι έγκυρη.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Πρέπει να επιλέξετε αυτο το κουτί για να αποδείξετε ότι δεν είστε bot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'Το email που εισαγάγατε δεν βρέθηκε στη βάση δεδομένων μας. Θα πρέπει πρώτα να εγγραφείτε.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Όνομα',

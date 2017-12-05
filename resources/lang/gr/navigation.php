@@ -1,15 +1,18 @@
 <?php 
 
 return array (
+  'mvp' => 'MVP',
+  'blog' => 'Μπλογκ',
+  'token' => 'Token',
+  'affiliate' => 'Προγραμμα επιβραβευσης',
+  'distribution' => 'Διανομη Token',
   'what-is' => 'Τι ειναι το BitDegree',
   'people' => 'Η Ομαδα',
-  'mvp' => 'MVP',
   'bitcointalk' => 'Αμοιβες',
   'one-pager' => 'Μονοσελιδο',
   'white-paper' => 'Λευκη-Βιβλος',
   'ico' => 'ICO &amp; Σχεδιο Δρασης',
   'faq' => 'Ερωτοαπαντησεις',
-  'blog' => 'Blog',
   'what-it-is' => 'Τι ειναι το BitDegree?',
   'users' => 'Οι χρηστες μας',
   'problems' => 'Ποια προβληματα επιλυουμε;',
