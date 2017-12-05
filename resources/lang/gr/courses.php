@@ -1,10 +1,17 @@
 <?php 
 
 return array (
+  'title_react' => 'React',
+  'title_zcoin_protocol' => 'Πρωτoκολλο και κρυπτογραφια Zerocoin',
+  'mvp' => 'MVP',
+  'beta' => 'Διαθεσιμη Beta',
+  'soon' => 'Ερχεται συντομα',
+  'description-18-feb' => 'H ΑΙΘΟΥΣΑ ΑΝΟΙΓΕΙ: Φεβρουάριος, 2018',
+  'description-beta' => 'Διαθεσιμη Beta',
+  'description-18-jan' => 'H ΑΙΘΟΥΣΑ ΑΝΟΙΓΕΙ: Ιανουάριος, 2018',
   'title_web_fundamentals' => 'Θεωρια αναπτυξης ιστοσελιδων',
   'title_coding_fundamentals' => 'Βασικος Προγραμματισμος',
   'title_deep_learning' => 'Βαθια μαθηση',
-  'title_react' => 'React',
   'title_vr_development' => 'Αναπτυξη VR',
   'title_ai_development' => 'Αναπτυξη ΑΙ',
   'title_robotics' => 'Ρομποτικη',
