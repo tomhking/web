@@ -17,6 +17,12 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
+                            <li><a href="https://blog.bitdegree.org/dont-miss-out-claim-a-15-bonus-on-your-bitdegree-tokens-today-52dee808608" rel="nofollow" target="_blank"><b>Don’t miss out — claim a 15% bonus on your BitDegree tokens today!</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/earn-5-from-each-referred-transaction-fully-refreshed-bitdegree-referral-program-is-open-6b996a07d098" rel="nofollow" target="_blank"><b>Earn 5% from each referred transaction — fully refreshed BitDegree Referral Program is open!</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/raising-soft-cap-the-first-day-bonus-tokens-available-till-friday-weekly-roundup-5af7ef02d7e4" rel="nofollow" target="_blank"><b>Raising Soft cap the first day, Bonus tokens available till Friday</b>| Weekly Roundup</a></li>
+                            <li><a href="https://blog.bitdegree.org/ibitdegree-amongst-top-10-finalists-of-moonrise-2017-blockchain-startup-competition-in-estonia-cd9b27bd98b8" rel="nofollow" target="_blank"><b>BitDegree amongst top 10 finalists of Moonrise 2017 blockchain startup competition in Estonia</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/looking-how-your-bdg-token-transaction-succeeded-and-how-much-you-got-check-it-now-7640150f4347" rel="nofollow" target="_blank"><b>Looking how your BDG token transaction succeeded and how much you got? Check it now!</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/how-to-buy-bdg-tokens-with-myetherwallet-810275ebe882" rel="nofollow" target="_blank"><b>How to transfer ETH from MyEtherWallet to receive BDG tokens</b></a></li>
                             <li><a href="https://blog.bitdegree.org/the-crowdsale-is-live-e6bb5e3d8b3d" rel="nofollow" target="_blank"><b>The Crowdsale is Live!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/bitdegree-token-sale-six-things-you-need-to-know-7331d128ee6e" rel="nofollow" target="_blank"><b>BitDegree token sale: six things you need to know!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/q-a-with-darius-rugevi%C4%8Dius-bitdegrees-blockchain-evangelist-8d5fe49a7f47" rel="nofollow" target="_blank"><b>Q&A with Darius Rugevičius, BitDegree’s blockchain evangelist</b></a></li>
