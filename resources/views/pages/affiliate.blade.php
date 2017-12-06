@@ -11,7 +11,8 @@
                     <div class="col-xs-12 col-md-12 text-center">
                         <h1>@lang('affiliate.headline')</h1>
                         <h3 class="subtitle">@lang('affiliate.subtitle')</h3>
-                        <p><span class="announcement" style="font-size:18px;">@lang('affiliate.announcement')</span></p>
+                        <img class="token" src="{{ asset_rev('commission-banner.jpg') }}" alt="BitDegree Token">
+                        <!--<p><span class="announcement" style="font-size:18px;">@lang('affiliate.announcement')</span></p>-->
                     </div>
                 </div>
                 <div class="row">
