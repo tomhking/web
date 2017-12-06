@@ -56,6 +56,17 @@ class User extends Authenticatable
     }
 
     /**
+     * Limits results to users with wallets
+     *
+     * @param Builder $query
+     * @return Builder
+     */
+    public function scopeWithWallet(Builder $query)
+    {
+        return $query->whereNotNull('wallet');
+    }
+
+    /**
      * Referrals relationship
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany

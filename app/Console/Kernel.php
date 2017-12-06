@@ -17,6 +17,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\ExportTranslationsToCsv::class,
         \App\Console\Commands\ImportTranslationsFromCsv::class,
         \App\Console\Commands\UpdateIcoProgress::class,
+        \App\Console\Commands\UpdateIcoTxns::class,
     ];
 
     /**
@@ -34,6 +35,7 @@ class Kernel extends ConsoleKernel
 
             return $start->subDay()->isPast() && $end->addDay()->isFuture();
         });
+        $schedule->command('ico:update-txns');
     }
 
     /**
