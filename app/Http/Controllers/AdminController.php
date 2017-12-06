@@ -47,7 +47,15 @@ class AdminController
             abort(404, 'Transactions unavailable.');
         }
 
-        $users = User::withWallet()->orderBy('wallet_updated_at', 'desc')->distinct('wallet')->get()->keyBy('wallet');
+        $txns = $txns->map(function ($tx) {
+            $tx->from = strtolower($tx->from);
+            return $tx;
+        });
+
+        $users = User::withWallet()->orderBy('wallet_updated_at', 'desc')->distinct('wallet')->get()->map(function ($user) {
+            $user->wallet = strtolower($user->wallet);
+            return $user;
+        })->keyBy('wallet');
 
         // ETH raised
         $raisedEth = '0';

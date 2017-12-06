@@ -104,7 +104,7 @@
                                 @if($users->has($address))
                                     @php($user = $uers->get($address))
                                     {{ trim($user->first_name. " " . $user->last_name) ? : "name not set" }} <br>
-                                    {{ $user->birthday ?? "birthday not set"}} <br>
+                                    {{ $user->birthday ? $user->birthday->format('Y-m-d') : "birthday not set"}} <br>
                                     @if($user->identification)
                                         <div class="text-success">identification uploaded</div>
                                     @else
