@@ -96,13 +96,13 @@
                     </thead>
                     <tbody>
                     @foreach($holders->slice(0,10) as $address => $txns)
+                        @php($user = $users->get($address))
                         <tr>
                             <td style="font-size:1.5rem"><code><a target="_blank" href="https://etherscan.io/address/{{ $address }}">{{ substr($address,0,16) }}...</a></code></td>
                             <td class="text-right">{{ number_format($txns->sum('value')/bcpow(10,18),2) }} ETH</td>
-                            <td>{{ $tx->country ?? "UNKNOWN" }}</td>
+                            <td>{{ $user->country ?? "UNKNOWN" }}</td>
                             <td>
-                                @if($users->has($address))
-                                    @php($user = $users->get($address))
+                                @if($user)
                                     {{ trim($user->first_name. " " . $user->last_name) ? : "name not set" }} <br>
                                     {{ $user->birthday ? $user->birthday->format('Y-m-d') : "birthday not set"}} <br>
                                     @if($user->identification)
@@ -153,7 +153,7 @@
                             <td>
                                 @if($tx->user)
                                     {{ trim($tx->user->first_name. " " . $tx->user->last_name) ? : "name not set" }} <br>
-                                    {{ $tx->user->birthday ?? "birthday not set"}} <br>
+                                    {{ $tx->user->birthday ? $tx->user->birthday->format('Y-m-d') :  "birthday not set"}} <br>
                                     @if($tx->user->identification)
                                         <div class="text-success">identification uploaded</div>
                                     @else
