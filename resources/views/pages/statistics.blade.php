@@ -102,7 +102,7 @@
                             <td>{{ $tx->country ?? "UNKNOWN" }}</td>
                             <td>
                                 @if($users->has($address))
-                                    @php($user = $uers->get($address))
+                                    @php($user = $users->get($address))
                                     {{ trim($user->first_name. " " . $user->last_name) ? : "name not set" }} <br>
                                     {{ $user->birthday ? $user->birthday->format('Y-m-d') : "birthday not set"}} <br>
                                     @if($user->identification)
