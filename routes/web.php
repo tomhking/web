@@ -34,6 +34,9 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
         Route::group(['middleware' => 'auth'], function () {
             Route::get('/user', 'UserController@user')->name('user');
             Route::get('/affiliate', 'UserController@affiliate')->name('affiliate');
+            Route::get('/affiliate2', 'UserController@affiliate2')->name('affiliate2');
+            Route::get('/affiliate3', 'UserController@affiliate3')->name('affiliate3');
+            Route::get('/affiliate4', 'UserController@affiliate4')->name('affiliate4');
             Route::get('/address', 'UserController@address')->name('address');
             Route::get('/profile', 'UserController@showDetails')->name('details');
             Route::post('/profile', 'UserController@details');

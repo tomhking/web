@@ -1981,7 +1981,6 @@ body.login-page {
   }
   .share {
     position:relative;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
     padding-bottom: 25px;
     .share-arrow::after{
       content: " ";
@@ -2097,6 +2096,7 @@ body.login-page {
         padding:8px 10px;
         margin:35px 0 25px 0;
         display:block;
+        cursor:pointer;
       }
     }
    .referral-box{
@@ -2336,6 +2336,7 @@ body.login-page {
           position: relative;
           a{
             color:#fff;
+            font-size: 15px;
             font-weight: 300;
             &::before {
               width: 12px;
@@ -5485,6 +5486,10 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+  .mvp-available h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
   .header-content .ico-progress h1 {
     font-size: 20px;
     margin: 0;

@@ -133,6 +133,7 @@ class UserController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
+
     function participate()
     {
         return view('pages.participate');
@@ -273,6 +274,33 @@ class UserController extends Controller
         $referralCount = auth()->user()->referrals()->count();
         return view('pages.affiliate', compact('banners', 'referralCount'));
     }
+
+    function affiliate2()
+    {
+        $banners = config('affiliate.banners');
+        $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
+        $referralCount = auth()->user()->referrals()->count();
+        return view('pages.affiliate2', compact('banners', 'referralCount'));
+    }
+
+    function affiliate3()
+    {
+        $banners = config('affiliate.banners');
+        $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
+        $referralCount = auth()->user()->referrals()->count();
+        return view('pages.affiliate3', compact('banners', 'referralCount'));
+    }
+
+    function affiliate4()
+    {
+        $banners = config('affiliate.banners');
+        $banners = $banners[config('app.locale')] ?? $banners[config('app.fallback_locale')];
+        $referralCount = auth()->user()->referrals()->count();
+        return view('pages.affiliate4', compact('banners', 'referralCount'));
+    }
+
+
+
 
     /**
      * Sets affiliate cookie

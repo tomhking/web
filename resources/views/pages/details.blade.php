@@ -49,6 +49,7 @@
                                         <div class="form-group">
                                             <label for="input-wallet">@lang('user.eth-wallet')</label>
                                             <input {{ !empty($user->wallet) ? "disabled" : "" }} tabindex="5" type="text" class="form-control" value="{{ old('wallet', $user->wallet) }}" name="wallet" id="input-wallet">
+                                            <p><span class="red" style="font-size:13px; line-height:18px; margin-top:15px; display: block;">@lang('user.eth-wallet-note')</span></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">

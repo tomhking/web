@@ -28,6 +28,30 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1 eth-address">
                             <h1 class="text-center">@lang('ico.headline')</h1>
+                            <div class="bonuses-modal">
+                                <div class="" data-toggle="modal" data-target="#Gas1Modal">
+                                    <p><span class="text-center announcement">Want a smooth & fast transaction without rejection? Set GAS LIMIT to <b>200,000</b> it's the MUST!</span></p>
+                                </div>
+
+                                <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                <div class="modal-title">
+                                                    <h2>GAS LIMIT</h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="{{ asset_rev('gas-limit2.png') }}" alt="Gas Lmit">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" readonly value="{{ $ico['address'] }}" onclick="this.setSelectionRange(0, this.value.length)" id="ico-address" style="text-transform: none !important;">
                                 <div class="text-right">
@@ -45,6 +69,7 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -138,7 +163,31 @@
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
                                     <div class="col-xs-4 col-sm-4 col-md-4 last">
-                                        <h4>@lang('ico.gas-limit')</h4>
+                                        <h4 style="display: inline-block;">@lang('ico.gas-limit')</h4>
+                                        <div style="display: inline-block;" class="bonuses-modal">
+                                            <div class="" data-toggle="modal" data-target="#Gas1Modal">
+                                                <p style="text-decoration:underline; color: #ffbcbc; font-size:16px; cursor:pointer;">(SEE HOW)</p>
+                                            </div>
+
+                                            <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            <div class="modal-title">
+                                                                <h2>GAS LIMIT</h2>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <img src="{{ asset_rev('gas-limit2.png') }}" alt="Gas Lmit">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                         <p>200,000</p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
