@@ -24,10 +24,11 @@ class ContentController extends Controller
 
         $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals));
 
-        $batchCount = 33;
-        $batchSize = bcdiv($hardCap, $batchCount);
-        $currentBatchNumber = bcdiv($tokensSold, $batchSize);
-        $currentBatchSold = bcmod($tokensSold, $batchSize);
+        $milestoneStep = bcpow(10,6);
+        $milestoneCompleted = bcmod($tokensSold, bcpow(10, 6 ));
+        $milestoneRemaining = bcsub($milestoneStep, $milestoneCompleted);
+        $milestoneProgress = ($milestoneCompleted / $milestoneStep) * 100;
+        $nextMilestone = bcadd($tokensSold, $milestoneRemaining);
 
         $currentBonus = false;
 
@@ -38,7 +39,7 @@ class ContentController extends Controller
             }
         }
 
-        $softCapPart = 45;
+        $softCapPart = 33;
 
         $progress = $softCapPart + (100-$softCapPart) * ($tokensSold / $hardCap);
 
@@ -53,10 +54,8 @@ class ContentController extends Controller
             'canGetFreeTokens' => false,
 
             'softCapPart' => $softCapPart,
-            'batchCount' => $batchCount,
-            'batchSize' => $batchSize,
-            'currentBatchNumber' => $currentBatchNumber,
-            'currentBatchSold' => $currentBatchSold,
+            'milestoneProgress' => $milestoneProgress,
+            'nextMilestone' => $nextMilestone,
         ]);
     }
 

@@ -1656,10 +1656,210 @@ h2.current-amount {
   font-weight: 300;
 }
 
-.progress-bar-wrapper {
+.progress-values {
   padding-bottom: 35px;
-  position:relative;
+  position: relative;
+  .stage {
+    position:absolute;
+    right: 0.8rem;
+    top: 0.5rem;
+    font-size: 1.1rem;
+    @media(max-width: 550px) {
+      top: -1.2rem;
+      right:2.5rem;
+    }
+  }
+  .main-progress {
+    font-weight: 300;
+    font-size: 15px;
+    padding-top:1rem;
+    strong{
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
 }
+
+.progress-bar-wrapper {
+  position:relative;
+  font-family: $work-sans;
+  .slider-container {
+    background: rgba(67, 67, 67, 0.7);
+    font-size:1.3rem;
+    position: relative;
+    height: 30px;
+    .slider {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      z-index: 10;
+    }
+    &.main-slider {
+      .slider {
+        background-color: #e10f2d;
+      }
+      @media(max-width: 700px) {
+        height: 60px;
+        .annotation {
+          height: 60px;
+          padding: 1rem;
+          white-space: normal;
+          line-height: 15px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .annotation {
+      height: 30px;
+      line-height: 30px;
+      position:absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 20;
+      white-space: nowrap;
+
+      &.soft-cap{
+        top: 0;
+        bottom: 0;
+        right: 66%;
+        left: 0;
+        .marker:nth-child(2) {
+          background: #f18191;
+        }
+      }
+
+      &.hard-cap{
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 66%;
+        color: #606060;
+      }
+
+      &.medium-cap{
+        top: 0;
+        bottom: 0;
+        right: 33%;
+        left: 33%;
+        color: #777777;
+      }
+
+      &.milestone {
+        left: 0;
+        right: 0;
+        .marker {
+          top: 0;
+          bottom: -5px;
+        }
+      }
+
+      .marker {
+        background: rgba(255,255,255,0.3);
+        width: 1px;
+        bottom: -1px;
+        right: 0;
+        top: -10px;
+        display: block;
+        position: absolute;
+        &.marker-front{
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+
+    &.milestone-slider {
+      margin-top:1px;
+      height: 20px;
+      background: rgba(52, 52, 52, 0.7);
+      .slider {
+        background: #fc0606;
+        background: -moz-linear-gradient(top, #fc0606 0%, #c50303 100%);
+        background: -webkit-linear-gradient(top, #fc0606 0%,#c50303 100%);
+        background: linear-gradient(to bottom, #fc0606 0%,#c50303 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc0606', endColorstr='#c50303',GradientType=0 );
+        &:after {
+          content: " ";
+          position: absolute;
+          top:0;
+          left: 0;
+          right: 0;
+          bottom:0;
+          background: url('../progress-bg.png') repeat;
+        }
+        .pulse {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: linear-gradient(
+                          left,
+                          transparent 30%,
+                          rgba(255, 255, 255, 0.3) 80%,
+                          transparent 100%
+          ) no-repeat;
+          background: -webkit-linear-gradient(
+                          left,
+                          transparent 30%,
+                          rgba(255, 255, 255, 0.3) 80%,
+                          transparent 100%
+          ) no-repeat;
+          background: -moz-linear-gradient(
+                          left,
+                          transparent 30%,
+                          rgba(255, 255, 255, 0.3) 80%,
+                          transparent 100%
+          ) no-repeat;
+          -webkit-background-size: 100% 100%;
+          -webkit-animation-name: moving-gradient;
+          -webkit-animation-duration: 3500ms;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+          -moz-background-size: 100% 100%;
+          -moz-animation-name: moving-gradient;
+          -moz-animation-duration: 3500ms;
+          -moz-animation-iteration-count: infinite;
+          -moz-animation-timing-function: linear;
+          background-size: 100% 100%;
+          animation-name: moving-gradient;
+          animation-duration: 3500ms;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
+    }
+  }
+}
+
+@keyframes moving-gradient {
+  0% {
+    background-position: -2000px bottom;
+  }
+  100% {
+    background-position: 2000px bottom;
+  }
+}
+
+@-moz-keyframes moving-gradient {
+  0% {
+    background-position: -2000px bottom;
+  }
+  100% {
+    background-position: 2000px bottom;
+  }
+}
+
+@-webkit-keyframes moving-gradient {
+  0% {
+    background-position: -2000px bottom;
+  }
+  100% {
+    background-position: 2000px bottom;
+  }
+}
+
 
 .row.token-calculator-btn a {
   font-size: 18px;

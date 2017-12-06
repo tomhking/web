@@ -149,24 +149,41 @@
 
                                         @include('partials.ico-countdown')
 
-                                        <h4 class="ico-progress-percentage text-left">@lang('ico.progress', ['number' => number_format($progress, 1) ]) {{ number_format($tokensSold, 0, ".", ",") }} BDG</h4>
-
                                         <div class="progress-bar-wrapper">
-                                            <div style="position: relative; margin-bottom: 2em; background: rgba(177, 177, 177, 0.52); box-shadow: inset 0 1px 0 0 rgba(249, 249, 249, 0.11);">
-                                                <!-- progress bar -->
-                                                <div style="width: {{ $softCapReached ? $progress : $progressSoftCap}}%; height: 30px; background-image: linear-gradient(-180deg, #F93800 4%, #c02b3f 99%); box-shadow: inset 0 2px 0 0 #ff6868; position: relative;"></div>
+                                            <div class="slider-container main-slider">
+                                                <div class="soft-cap annotation">
+                                                    <span>1. Soft Cap: reached</span>
+                                                    <span class="marker"></span>
+                                                    <span class="marker marker-front"></span>
+                                                </div>
+                                                <div class="medium-cap annotation">
+                                                    <span>2. Half Hard Cap: in progress</span>
+                                                    <span class="marker"></span>
+                                                </div>
+                                                <div class="hard-cap annotation">
+                                                    <span>3. Hard Cap: {{ number_format($hardCap) }} BDG</span>
+                                                    <span class="marker"></span>
+                                                </div>
+                                                <div style="width: {{ $progress }}%;" class="slider"></div>
                                             </div>
+                                            <div class="slider-container milestone-slider">
+                                                <div class="milestone annotation">
+                                                    <span class="marker"></span>
+                                                    <span class="marker marker-front"></span>
+                                                </div>
+                                                <div class="slider" style="width: {{ $milestoneProgress }}%;">
+                                                    <div class="pulse"></div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                            @if(!$softCapReached)
-                                                <!-- soft cap marker -->
-                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.soft-cap'): {{ number_format($softCap, 0, ".", ",") }} BDG</h5></div>
-                                            @else
-                                                <!-- soft cap marker -->
-                                                <div class="soft-cap-marker" style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; left: {{ $softCapPart }}%; background: #fff;"> <h5 class="soft-cap-text">@lang('ico.soft-cap')</h5></div>
-
-                                                <!-- hard cap marker -->
-                                                <div class="hard-cap-marker"  style="z-index: 20; position: absolute; top: 0; bottom:0; width: 1px; height: 30px; right: 0; background: #fff;"> <h5 class="hard-cap-text">@lang('ico.hard-cap'): {{ number_format($hardCap, 0, ".", ",") }} BDG</h5></div>
-                                            @endif
+                                        <div class="progress-values">
+                                            @php($milestoneInMillions = bcdiv($nextMilestone, bcpow(10,6))-1)
+                                            @php($hardCapInMillions = bcdiv($hardCap, bcpow(10,6)))
+                                            <div class="stage">Stage: {{ $milestoneInMillions }}M of {{ $hardCapInMillions }}M</div>
+                                            <div class="main-progress">
+                                                Progress: <strong>{{ number_format($tokensSold) }}</strong> BDG
+                                            </div>
                                         </div>
 
                                         <div class="communicate">
