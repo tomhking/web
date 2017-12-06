@@ -2244,6 +2244,7 @@ body.login-page {
             color:#fff;
             border-radius:0;
             font-weight:300;
+            font-size: 14px;
             .fa{
               margin-right:5px;
             }
@@ -4371,6 +4372,13 @@ div#token-distribution .container {
     font-weight: 600;
     letter-spacing: 0;
   }
+  .countdown{
+    font-size: 60px;
+    line-height: 60px;
+    .time-amount {
+      min-width: 100px;
+    }
+  }
   body.get-tokens.login-signup{
    h3.subtitle {
       font-size: 16px;
@@ -5486,6 +5494,13 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+  .medium-posts-feed .medium-posts-head h2 {
+    padding-bottom: 0;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 300;
+    text-align: left;
+  }
   .mvp-available h1 {
     font-size: 40px;
     line-height: 44px;
@@ -5493,6 +5508,7 @@ p.subtitle {
   .header-content .ico-progress h1 {
     font-size: 20px;
     margin: 0;
+    line-height: 24px;
   }
   header .countdown {
     font-size: 40px;
@@ -5547,7 +5563,6 @@ p.subtitle {
     }
   }
 .get-tokens.logged-in{
-  padding-top:50px;
   .dashboard-navigation{
     height:88px!important;
     ul.nav.nav-tabs{
@@ -5720,12 +5735,11 @@ p.subtitle {
     background: #f0f0f0;
     margin-bottom: 25px;
     position: relative;
-    min-height: 650px;
   }
   .countdown {
     font-size: 30px;
     line-height: 36px;
-    margin: 15px 0;
+    margin: 35px auto 35px auto!important;
     .time-amount {
       min-width: 80px;
     }
@@ -5975,7 +5989,16 @@ p.subtitle {
   margin-bottom: 5px;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
+  .partners .col-sm-4 {
+    width: 100%;
+  }
+  body.login-page.get-tokens .eth-address .form-group .copy-address a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 350px){
   .row.find-out-more .col-xs-12.text-center {
     padding: 0;
   }
