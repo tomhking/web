@@ -30,7 +30,7 @@
                             <h1 class="text-center">@lang('ico.headline')</h1>
                             <div class="bonuses-modal">
                                 <div class="" data-toggle="modal" data-target="#Gas1Modal">
-                                    <p><span class="announcement"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> To make smooth & fast transaction without rejection, set GAS LIMIT to <b>200,000</b> and gas price to <b>50 GWEI</b>.</span></p>
+                                    <p><span class="announcement"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> To make smooth & fast transaction without rejection, set GAS LIMIT to <b>200,000</b> and gas price to <b>120 GWEI</b> or more.</span></p>
                                 </div>
 
                                 <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
