@@ -18,7 +18,7 @@ return [
     'gas-limit' => 'Set Gas Limit',
     'exchange-rate' => 'Exchange rate',
     'ends-in' => 'Token sale ends in:',
-    'how-to' => 'What\'s next: How to participate?',
+    'how-to' => 'How to participate?',
     'bdg' => 'BDG Token',
     'whats-next' => 'What\'s next?',
     'other' => 'Other',

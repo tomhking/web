@@ -10,6 +10,9 @@
                 <li class="step-active"><a href="{{ route('address') }}">@lang('ico.step', ['number' => 2])</a></li>
                 <li class="step-other"><a href="{{ route('details') }}"><span>@lang('ico.other')</span></a></li>
             </ul>
+            <div class="how-to-btn">
+                <a class="how-to-participate" href="{{ route('participate') }}">@lang('ico.how-to')</a>
+            </div>
         </div>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 pt-3 ">

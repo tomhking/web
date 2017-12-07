@@ -2338,9 +2338,26 @@ body.login-page {
       position: fixed;
       bottom: 0;
       top: 0;
-      padding-top: 155px;
+      padding-top: 135px;
       z-index: 110;
       left: 0;
+      .how-to-btn a {
+        color: #fff;
+        padding: 10px 10px;
+        border: 1px solid #c02b3f;
+        text-transform: uppercase;
+        font-weight: 300;
+        background-color: #c02b3f;
+        font-size: 14px;
+        margin-top: 25px;
+        display: inline-block;
+        margin-left: -5px;
+        margin-right: -5px;
+        &:hover{
+          background-color: #c02b3f;
+          box-shadow: 0 8px 30px rgba(215, 48, 48, 0.5);
+        }
+      }
       h4{
         text-transform: uppercase;
         font-size: 20px;
@@ -2465,7 +2482,6 @@ body.login-page {
         font-weight: 300;
         text-transform: uppercase;
         font-size: 16px;
-        letter-spacing: 1px;
         opacity: 0.8;
         padding-top:8px;
       }
@@ -4451,6 +4467,14 @@ div#token-distribution .container {
       padding: 4px 0 4px 15px;
       position: relative;
     }
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid #c02b3f;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    background-color: #c02b3f;
   }
   .milestone-left .milestone-tooltip {
     margin-right: 0!important;
