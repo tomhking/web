@@ -13,7 +13,11 @@
                         <div class="col-xs-12 col-md-12 text-center">
                             <h1>@lang('affiliate.headline')</h1>
                             <h3 class="subtitle">@lang('affiliate.subtitle')</h3>
-                            <img class="token" src="{{ asset_rev('commission-banner.jpg') }}" alt="BitDegree Token">
+                        </div>
+                        <div class="col-xs-12 col-md-12 text-center commission-announcement">
+                            <h3>Now earn even MORE! Get</h3>
+                            <h1><span class="percent">5%</span> commission</h1>
+                            <h3>of your referred clients contribution</h3>
                         </div>
                     </div>
                     <div class="row">
