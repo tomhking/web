@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container-fluid">
-        <div class="col-sm-3 col-md-2 hidden-xs-down sidebar">
+        <div class="col-sm-3 col-md-2 hidden-xs-down sidebar steps">
             <h4>@lang('ico.whats-next')</h4>
             <ul class="sidebar-nav">
                 <li class="step-done"><a href="#">@lang('ico.step', ['number' => 1])</a></li>
@@ -12,7 +12,7 @@
             </ul>
         </div>
 
-        <div class="col-sm-12 col-md-10 col-md-offset-2 pt-3 ">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 pt-3 ">
 
             <div class="main container-main">
                 <div class="container">
