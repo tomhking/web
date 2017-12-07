@@ -616,18 +616,18 @@
                 <div class="col-xs-12 col-sm-3">
                     <div class="team-member">
 
-                        <div class="team-member-image-holder" data-toggle="modal" data-target="#DariusModal">
-                            <img class="team-member-image" src="{{ asset_rev('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
+                        <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
+                            <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
                         </div>
 
                         <div class="team-member-data">
-                            <h3 class="title">Darius <b>Rugevičius</b></h3>
-                            <p>@lang('team.position_darius')</p>
+                            <h3 class="title">Ričardas <b>Pocius</b></h3>
+                            <p>@lang('team.position_ricardas')</p>
                             <div class="handles">
-                                <a href="https://www.linkedin.com/in/dariusrugevicius/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                             </div>
 
-                            <div class="modal fade" role="dialog" id="DariusModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                            <div class="modal fade" role="dialog" id="RicardasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -636,20 +636,21 @@
 
                                         <div class="modal-body">
 
-                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#DariusModal">
-                                                <img class="team-member-image" src="{{ asset_rev('team/darius-rugevicius.png') }}" alt="Darius Rugevičius">
+                                            <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
+                                                <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
                                             </div>
                                             <div class="team-member-data">
-                                                <h3 class="title">Darius <b>Rugevičius</b></h3>
-                                                <p>@lang('team.position_darius')</p>
+                                                <h3 class="title">Ričardas <b>Pocius</b></h3>
+                                                <p>@lang('team.position_ricardas')</p>
                                                 <div class="handles">
-                                                    <a href="https://www.linkedin.com/in/dariusrugevicius/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                                                    <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                                                 </div>
-                                                <div class="team-member-desc">
-                                                    <p>@lang('team.description_darius')</p>
-                                                </div>
-                                            </div>
 
+                                                <div class="team-member-desc">
+                                                    <p>@lang('team.description_ricardas')</p>
+                                                </div>
+
+                                            </div>
                                         </div>
 
                                     </div>
@@ -658,7 +659,9 @@
 
                         </div>
                     </div>
+
                 </div>
+
             </div>
 
             <div class="row reg team-members">
@@ -999,54 +1002,6 @@
 
                     </div>
 
-                    <div class="col-xs-12 col-sm-3">
-                        <div class="team-member">
-
-                            <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                                <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
-                            </div>
-
-                            <div class="team-member-data">
-                                <h3 class="title">Ričardas <b>Pocius</b></h3>
-                                <p>@lang('team.position_ricardas')</p>
-                                <div class="handles">
-                                    <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                </div>
-
-                                <div class="modal fade" role="dialog" id="RicardasModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            </div>
-
-                                            <div class="modal-body">
-
-                                                <div class="team-member-image-holder" data-toggle="modal" data-target="#RicardasModal">
-                                                    <img class="team-member-image" src="{{ asset_rev('team/ricardas-pocius-2.png') }}" alt="Ričardas Pocius">
-                                                </div>
-                                                <div class="team-member-data">
-                                                    <h3 class="title">Ričardas <b>Pocius</b></h3>
-                                                    <p>@lang('team.position_ricardas')</p>
-                                                    <div class="handles">
-                                                        <a href="https://www.linkedin.com/in/ri%C4%8Dardas-pocius-8bab58a5/" rel="nofollow" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                                    </div>
-
-                                                    <div class="team-member-desc">
-                                                        <p>@lang('team.description_ricardas')</p>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
 
             </div>
