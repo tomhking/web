@@ -166,7 +166,7 @@
                                         <h4 style="display: inline-block;">@lang('ico.gas-limit')</h4>
                                         <div style="display: inline-block;" class="bonuses-modal">
                                             <div class="" data-toggle="modal" data-target="#Gas1Modal">
-                                                <p style="text-decoration:underline; color: #ffbcbc; font-size:16px; cursor:pointer;">(SEE HOW)</p>
+                                                <p style="text-decoration:underline; color: #ffbcbc; font-size:16px; cursor:pointer; margin:0; padding:0;">(SEE HOW)</p>
                                             </div>
 
                                             <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
