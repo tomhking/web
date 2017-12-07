@@ -41,7 +41,8 @@
                                         <span>Share on Telegram</span>
                                     </a>
 
-                                    <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=BitDegree%20-%20the%20most%20promising%20Token%20Sale%20with%20100%25%20token%20value%20return%20guarantee%20and%20limited%2015%25%20bonus%20until%20Friday.%20Don't%20miss%20it%20out:&via=bitdegree_org&hashtags=crowdsale%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
+                                    <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}
+                                            &text=BitDegree%20-%20the%20most%20promising%20Token%20Sale%20with%2029%20million%20user%20base%20and%20limited%2015%25%20bonus%20until%20Friday.%20Don't%20miss%20it%20out:&via=bitdegree_org&hashtags=crowdsale%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
                                         <i class="fa fa-twitter"></i> Share on Twitter
                                     </a>
 
