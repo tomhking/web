@@ -5,7 +5,7 @@ return array (
   'people' => 'Emberek mögötte',
   'mvp' => 'MVP',
   'bitcointalk' => 'Adomány',
-  'one-pager' => 'Egy oldalas',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => 'Fehér papír',
   'ico' => 'ICO &amp; Roadmap',
   'faq' => 'GYIK',

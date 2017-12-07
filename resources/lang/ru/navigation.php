@@ -1,7 +1,7 @@
 <?php 
 
 return array (
-  'one-pager' => 'One Pager',
+  'one-pager' => 'Pitch Deck',
   'faq' => 'ЧаВо',
   'mvp' => 'MVP',
   'bitcointalk' => 'Bounty',

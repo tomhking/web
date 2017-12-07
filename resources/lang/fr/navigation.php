@@ -3,7 +3,7 @@
 return array (
   'what-is' => 'Qu\'est-ce que BitDegree',
   'people' => 'Le Staff',
-  'one-pager' => 'Une page',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; Feuille de route',
   'faq' => 'FAQ',
   'blog' => 'Blog',

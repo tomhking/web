@@ -3,7 +3,7 @@
 return array (
   'what-is' => 'Kas ir BitDegree',
   'people' => 'Veidotāji',
-  'one-pager' => 'Viena lapa',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO un karte',
   'faq' => 'BUJ',
   'blog' => 'Blogs',

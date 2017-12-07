@@ -8,7 +8,7 @@ return array (
   'distribution' => 'Distribución de Token',
   'what-is' => 'Qué es BitDegree',
   'people' => 'El Equipo',
-  'one-pager' => 'Localizador',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; Mapa de Ruta',
   'faq' => 'Preguntas Frecuentes',
   'what-it-is' => '¿Qué es BitDegree?',

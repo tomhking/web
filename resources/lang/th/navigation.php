@@ -5,7 +5,7 @@ return array (
   'people' => 'บุคคลเบื้องหลัง',
   'mvp' => 'MVP',
   'bitcointalk' => 'ของรางวัล',
-  'one-pager' => 'One Pager',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => 'White-paper',
   'ico' => 'ICO &amp; Roadmap',
   'faq' => 'FAQ',

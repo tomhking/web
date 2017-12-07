@@ -3,7 +3,7 @@
 return array (
   'what-is' => 'Mis on BitDegree',
   'people' => 'Inimesed',
-  'one-pager' => 'Üheleheline Kokkuvõte',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; Tegevuskava',
   'faq' => 'KKK',
   'blog' => 'Blogi',

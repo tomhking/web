@@ -10,7 +10,7 @@ return array (
   'what-is' => 'Što je BitDegree',
   'people' => 'Ljudi u pozadini',
   'bitcointalk' => 'Nagrada',
-  'one-pager' => 'Jedan Pager',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => 'Dokumenti',
   'ico' => 'ICO &amp; Plan',
   'what-it-is' => 'Što je BitDegree?',

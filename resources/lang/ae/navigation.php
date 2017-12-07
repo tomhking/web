@@ -3,7 +3,7 @@
 return array (
   'what-is' => 'ما هو BitDegree',
   'people' => 'أشخاص وراء هذا',
-  'one-pager' => 'صفحة واحدة',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'عرض العملة الأولي وخارطة الطريق',
   'faq' => 'الأسئلة المتكررة',
   'blog' => 'مدونة',

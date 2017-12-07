@@ -1,7 +1,7 @@
 <?php 
 
 return array (
-  'one-pager' => 'One Pager',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; Tabella di marcia',
   'faq' => 'FAQ',
   'blog' => 'Blog',

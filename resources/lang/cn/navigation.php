@@ -1,7 +1,7 @@
 <?php 
 
 return array (
-  'one-pager' => 'One Pager',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; 路线图',
   'roadmap' => '路线图',
   'mvp' => 'MVP',

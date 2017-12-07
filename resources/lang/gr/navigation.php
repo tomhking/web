@@ -9,7 +9,7 @@ return array (
   'what-is' => 'Τι ειναι το BitDegree',
   'people' => 'Η Ομαδα',
   'bitcointalk' => 'Αμοιβες',
-  'one-pager' => 'Μονοσελιδο',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => 'Λευκη-Βιβλος',
   'ico' => 'ICO &amp; Σχεδιο Δρασης',
   'faq' => 'Ερωτοαπαντησεις',

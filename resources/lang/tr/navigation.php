@@ -8,7 +8,7 @@ return array (
   'distribution' => 'Token Dağıtımı',
   'what-is' => 'BitDegree nedir',
   'people' => 'Arkasındaki İnsanlar',
-  'one-pager' => 'Tek Sayfa',
+  'one-pager' => 'Pitch Deck',
   'ico' => 'ICO &amp; Yol Haritası',
   'faq' => 'S.S.S.',
   'what-it-is' => 'BitDegree nedir?',

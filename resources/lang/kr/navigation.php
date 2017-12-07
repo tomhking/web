@@ -9,7 +9,7 @@ return array (
   'what-is' => 'BitDegree가 무엇인가요?',
   'people' => '도와준 사람들',
   'bitcointalk' => '바운티',
-  'one-pager' => '요약',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => '백서',
   'ico' => 'ICO와 로드맵',
   'blog' => '블로그',

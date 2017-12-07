@@ -5,7 +5,7 @@ return array (
   'people' => 'Het Team',
   'mvp' => 'MVP',
   'bitcointalk' => 'Bounty',
-  'one-pager' => 'One Pager',
+  'one-pager' => 'Pitch Deck',
   'white-paper' => 'Whitepaper',
   'ico' => 'ICO &amp; Roadmap',
   'faq' => 'FAQ',
