@@ -5794,6 +5794,13 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
+  body.login-page.get-tokens .crowdsale-info-table .col-md-3{
+    border-right: none;
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    min-height: 100px;
+    padding:15px
+  }
+
   .twitter-feed.main{
     .col-xs-12.col-md-6.text-center {
       margin-bottom: 25px;

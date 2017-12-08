@@ -80,7 +80,7 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                             @if($currentBonus)
                                 <div class="crowdsale-info-table text-center">
-                                    <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <div class="col-xs-12 col-sm-3 col-md-3">
                                             <div class="bonuses-modal">
 
                                                 <div class="week-bonus" data-toggle="modal" data-target="#BonusModal">
@@ -158,12 +158,12 @@
 
                                             </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <div class="col-xs-12 col-sm-3 col-md-3">
                                         <h4>@lang('ico.rate-with-bonus')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
 
-                                    <div class="col-xs-6 col-sm-3 col-md-3">
+                                    <div class="col-xs-12 col-sm-3 col-md-3">
                                         <div class="bonuses-modal">
                                             <div class="" data-toggle="modal" data-target="#Gas1Modal">
                                                 <h4>@lang('ico.gas-limit') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
@@ -191,7 +191,7 @@
                                         <p>200,000</p>
                                     </div>
 
-                                    <div class="col-xs-6 col-sm-3 col-md-3 last">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 last">
                                         <h4 style="display: inline-block;">@lang('ico.gas-price')</h4>
                                         <div style="display: inline-block;" class="bonuses-modal">
                                         </div>
