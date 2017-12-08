@@ -1,6 +1,12 @@
 <?php 
 
 return array (
+  'date_25m' => '2007-2016',
+  'date_fundamentals' => 'Q1/Q2 2017',
+  'date_ico' => 'Q3/Q4 2017',
+  'date_courses' => 'Q1 2018 ',
+  'date_hype' => 'Q2/Q3 2018',
+  'date_platform' => 'Q4 2018',
   'title' => 'Roteiro',
   'title_25m' => '29M+ Base de usuarios',
   'title_fundamentals' => 'Fundamentos da Web',
@@ -9,12 +15,6 @@ return array (
   'title_hype' => 'Hype no setor de estudantes',
   'title_platform' => 'Lançamento da Plataforma Empresarial',
   'title_future' => 'Futuro',
-  'date_25m' => '2007-2016',
-  'date_fundamentals' => '2017 Q1/Q2',
-  'date_ico' => '2017 Q3/Q4',
-  'date_courses' => '2018 Q1',
-  'date_hype' => '2018 Q2/Q3',
-  'date_platform' => '2018 Q4',
   'date_future' => 'Futuro',
   'description_25m' => 'Chegou a 29 milhões de usuários em 000webhost - plataforma de aprendizado de desenvolvimento web grátis e Hostinger - serviços de hospedagem na web. A maior parte dos usuários é uma nova tecnologia com profunda vontade de aprender, construir e crescer. <a href="https://www.trustpilot.com/review/www.000webhost.com" target="_blank" rel="nofollow"> os usuários já nos adoram</a> como plataforma de aprendizado online.',
   'description_fundamentals' => 'Foi preparado um resumo de mais de 500 artigos sobre <a href="https://www.bitdegree.org/learn/web-fundamentals" target="_blank"> fundamentos de codificação da web </a>. Polimento da estratégia de negócios. Aproximando os primeiros parceiros de negócios. Consultando com inúmeras universidades e empresas e blockchain para desenvolver os primeiros cursos.',

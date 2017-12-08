@@ -1,6 +1,34 @@
 <?php 
 
 return array (
+  'custom' => 
+  array (
+    'agreement' => 
+    array (
+      'required' => 'Você deve estar de acordo com os Termos de Serviço para continuar.',
+      'accepted' => 'Você deve estar de acordo com os Termos de Serviço para continuar.',
+    ),
+    'wallet' => 
+    array (
+      'size' => 'O endereço ETH que você informou parece não ser válido.',
+    ),
+    'attribute-name' => 
+    array (
+      'rule-name' => 'mensagem personalizada',
+    ),
+    'country' => 
+    array (
+      'valid_country' => 'O país selecionado não é válido.',
+    ),
+    'g-recaptcha-response' => 
+    array (
+      'required' => 'Você deve selecionar esta caixa para provar que você não é um bot.',
+    ),
+    'email' => 
+    array (
+      'exists' => 'O email fornecido não foi encontrado em nosso banco de dados. Você deve se inscrever primeiro.',
+    ),
+  ),
   'accepted' => 'O :attribute deve ser aceito.',
   'active_url' => 'O :attribute não é um URL válido.',
   'after' => 'O :attribute deve ser uma data após :date.',
@@ -77,25 +105,6 @@ return array (
   'unique' => 'O :attribute já foi tirado.',
   'uploaded' => 'O :attribute não foi possível carregar.',
   'url' => 'O :atributo formato é invalido',
-  'custom' => 
-  array (
-    'attribute-name' => 
-    array (
-      'rule-name' => 'mensagem personalizada',
-    ),
-    'country' => 
-    array (
-      'valid_country' => 'O país selecionado não é válido.',
-    ),
-    'g-recaptcha-response' => 
-    array (
-      'required' => 'Você deve selecionar esta caixa para provar que você não é um bot.',
-    ),
-    'email' => 
-    array (
-      'exists' => 'O email fornecido não foi encontrado em nosso banco de dados. Você deve se inscrever primeiro.',
-    ),
-  ),
   'attributes' => 
   array (
     'first-name' => 'Primeiro nome',

@@ -1,6 +1,13 @@
 <?php 
 
 return array (
+  'title_zcoin_protocol' => 'Zerocoin Protocolo e Criptografia',
+  'mvp' => 'MVP',
+  'beta' => 'Beta Disponível',
+  'soon' => 'Em Breve',
+  'description-18-feb' => 'AULAS ABERTAS EM : Fevereiro, 2018',
+  'description-beta' => 'Beta Disponível',
+  'description-18-jan' => 'AULAS ABERTAS EM: Janeiro, 2018',
   'title_web_fundamentals' => 'Teoria do Desenvolvimento Web',
   'title_coding_fundamentals' => 'Fundamentos da Codificação',
   'title_deep_learning' => 'Aprendizagem aprofundada',
@@ -20,7 +27,7 @@ return array (
   'title_ethereum_development' => 'Desenvolvimento Ethereum: Truffle e Open Zeppelin',
   'title' => 'Quais problemas o BitDegree pode resolver?',
   'subtitle' => 'Nós estamos estabelecendo o BitDegree em um terreno sólido de 29 milhões de usuários existentes em nossa base da Hostinger e 000Webhost - Comunidade fiel, paixão pela web, comunidade global interessada em aprender e inovar. Nossa visão na hostinger é permitir que milhões de pessoas em todo o mundo desbloqueiem o poder da internet e dê-lhes o poder de aprender, criar e crecer.',
-  'free' => 'GRATÚITO',
+  'free' => 'GRATUITO',
   'new' => 'NOVO',
   'coming_soon' => 'Em breve',
   'enrollment_date' => 'Data de inscrição',
