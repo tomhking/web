@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 referencia',
   'n-referrals' => ':Número de Referências',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!',
+  'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 10% discount - Get Tokens!',
 );
