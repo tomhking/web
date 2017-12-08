@@ -2407,6 +2407,11 @@ body.login-page {
             }
           }
         }
+        li:active {
+          a::before{
+            background: #c02b3f;
+          }
+        }
       }
     }
     .crowdsale-info-table {
