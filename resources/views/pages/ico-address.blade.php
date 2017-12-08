@@ -80,8 +80,7 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                             @if($currentBonus)
                                 <div class="crowdsale-info-table text-center">
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
-
+                                    <div class="col-xs-6 col-sm-3 col-md-3">
                                             <div class="bonuses-modal">
 
                                                 <div class="week-bonus" data-toggle="modal" data-target="#BonusModal">
@@ -158,18 +157,16 @@
                                                 </div>
 
                                             </div>
-
-
                                     </div>
-                                    <div class="col-xs-4 col-sm-4 col-md-4">
+                                    <div class="col-xs-6 col-sm-3 col-md-3">
                                         <h4>@lang('ico.rate-with-bonus')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
-                                    <div class="col-xs-4 col-sm-4 col-md-4 last">
-                                        <h4 style="display: inline-block;">@lang('ico.gas-limit')</h4>
-                                        <div style="display: inline-block;" class="bonuses-modal">
+
+                                    <div class="col-xs-6 col-sm-3 col-md-3">
+                                        <div class="bonuses-modal">
                                             <div class="" data-toggle="modal" data-target="#Gas1Modal">
-                                                <p style="text-decoration:underline; color: #ffbcbc; font-size:16px; cursor:pointer; margin:0; padding:0;">(SEE HOW)</p>
+                                                <h4>@lang('ico.gas-limit') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
                                             </div>
 
                                             <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
@@ -193,6 +190,14 @@
                                         </div>
                                         <p>200,000</p>
                                     </div>
+
+                                    <div class="col-xs-6 col-sm-3 col-md-3 last">
+                                        <h4 style="display: inline-block;">@lang('ico.gas-price')</h4>
+                                        <div style="display: inline-block;" class="bonuses-modal">
+                                        </div>
+                                        <p>120 GWEI</p>
+                                    </div>
+
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
                                         <h2>@lang('ico.bonus-ends-in', ['bonusName' => __($currentBonus['name'])])</h2>
                                         @include('partials.countdown', ['timeLeft' => $currentBonus['to']->timestamp - time()])

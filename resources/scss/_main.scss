@@ -2615,10 +2615,11 @@ body.login-page {
       }
     }
     .crowdsale-info-table {
-      .col-md-4{
+      .col-md-3{
         border-right: 1px solid rgba(255, 255, 255, 0.5);
+        min-height:100px;
       }
-      .col-md-4.last{
+      .col-md-3.last{
         border-right: 0;
       }
       .bonuses-modal{
@@ -2689,10 +2690,13 @@ body.login-page {
         font-size: 16px;
         opacity: 0.8;
         padding-top:8px;
+        margin:0;
       }
       p{
+        margin-top:10px;
         font-size: 18px;
         padding-bottom:8px;
+        letter-spacing:0;
       }
     }
     .bonus-countdown{

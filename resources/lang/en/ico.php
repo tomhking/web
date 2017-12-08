@@ -16,6 +16,7 @@ return [
     'bonus-percent' => ':amount% BONUS',
     'rate-with-bonus' => 'Exchange rate with bonus',
     'gas-limit' => 'Set Gas Limit',
+    'gas-price' => 'Gas Price',
     'exchange-rate' => 'Exchange rate',
     'ends-in' => 'Token sale ends in:',
     'how-to' => 'How to participate?',
