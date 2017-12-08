@@ -920,6 +920,19 @@ form .notice {
   }
 }
 
+.award.main {
+  background: #f0f0f0 url(../network-bg.png) no-repeat top;
+  position: relative;
+  overflow: hidden;
+  img{
+    margin-bottom:15px;
+  }
+  h3{
+    font-family: $work-sans;
+    font-size:20px;
+  }
+}
+
 .twitter-feed.main {
   background: #f0f0f0 url(../network-bg.png) no-repeat center;
   position: relative;
@@ -3905,7 +3918,6 @@ h3.subtitle {
 }
 
 .media-articles {
-  margin-bottom: 45px;
   .text-center.cta-link a {
     background: none;
     box-shadow: none;

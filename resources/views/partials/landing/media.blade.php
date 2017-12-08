@@ -1,6 +1,5 @@
-<div class="media-articles">
+<div class="media-articles main">
     <div class="container">
-        <hr>
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
                 <h2 class="title">@lang('home.media_title')</h2>

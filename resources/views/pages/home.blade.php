@@ -2,6 +2,7 @@
 
 @section('content')
     @include('partials.landing.what-we-are')
+    @include('partials.landing.award-block')
     @include('partials.landing.media')
     @include('partials.landing.twitter-feed')
     @include('partials.landing.starting-point')
