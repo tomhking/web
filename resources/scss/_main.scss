@@ -4674,6 +4674,12 @@ div#token-distribution .container {
 }
 
 @media (max-width: 768px) {
+  body.login-page.get-tokens .crowdsale-info-table .col-md-3{
+    border-right: none;
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);
+    min-height: 100px;
+    padding:15px
+  }
   body.login-page.get-tokens .dashboard-navigation ul {
     border: 0;
     display: block;
@@ -5733,6 +5739,13 @@ p.subtitle {
   }
 }
 @media (max-width: 600px) {
+  body.login-page.get-tokens .dashboard-navigation ul li a {
+    padding: 10px;
+    color: #fff;
+    border-radius: 0;
+    font-weight: 300;
+    font-size: 13px;
+  }
   header .countdown {
     font-size: 60px;
     line-height: 60px;
@@ -5794,12 +5807,6 @@ p.subtitle {
   }
 }
 @media (max-width: 550px) {
-  body.login-page.get-tokens .crowdsale-info-table .col-md-3{
-    border-right: none;
-    border-bottom:1px solid rgba(255, 255, 255, 0.5);
-    min-height: 100px;
-    padding:15px
-  }
 
   .twitter-feed.main{
     .col-xs-12.col-md-6.text-center {
