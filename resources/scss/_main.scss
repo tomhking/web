@@ -1512,11 +1512,23 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
         margin: -5px 0;
         font-size: 16px;
       }
-      td::before {
-        content: " ";
-        position: absolute;
-        left: 0; top: 50%; width: 100%;
-        border-bottom: 1px solid #fff;
+      td {
+        @media (max-width: 767px) {
+          &::before {
+            display: none;
+          }
+          &:nth-child(2) {
+            .text {
+              text-decoration: line-through;
+            }
+          }
+        }
+        &::before {
+          content: " ";
+          position: absolute;
+          left: 0; top: 50%; width: 100%;
+          border-bottom: 1px solid #fff;
+        }
       }
       td {
         opacity: 0.7;

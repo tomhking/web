@@ -215,9 +215,9 @@
                                                             @endfor
                                                         </td>
                                                         <td>
-                                                            @lang('ico.bonus-percent', ['amount' => $amount])
+                                                            <span class="text">@lang('ico.bonus-percent', ['amount' => $amount])</span>
                                                             <div class="visible-xs-block">
-                                                                @lang('ico.week-num', ['number' => $weekNum])
+                                                                <span class="text">@lang('ico.week-num', ['number' => $weekNum])</span>
                                                             </div>
                                                             <div class="visible-xs-block">
                                                                 @if($hasEnded)
