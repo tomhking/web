@@ -23,7 +23,7 @@ return [
     'bdg' => 'BDG Token',
     'whats-next' => 'What\'s next?',
     'other' => 'Other',
-    'notice' => 'Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">Do not use any exchange address!</span></b> Use :commaSeparatedWalletList or other compatible wallets.',
+    'notice' => 'Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens. <b><span class="red">DO NOT send ETH from any exchange addresses!</span></b> Use :commaSeparatedWalletList or other compatible wallets.',
     'done' => 'DONE',
     'bonus-ends-in' => ':bonusName ends in:',
     'bonus_1' => 'Week 1 Bonus',
