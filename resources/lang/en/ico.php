@@ -49,6 +49,6 @@ return [
     'tokens-sold' => 'Tokens Sold: :number',
     'eth-raised' => 'ETH Raised: :number',
     'eth-calc-included' => ':amount% bonus included',
-    'bonus-ended' => 'Bonus ended!',
+    'bonus-ended' => 'SOLD OUT!',
     'available-now' => 'Available now!',
 ];

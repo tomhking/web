@@ -1476,17 +1476,6 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
         font-weight: 300;
         font-size: 13px;
         letter-spacing: 1px;
-        span.sold-out{
-          background:#c02b3f;
-          display: block;
-          padding: 5px;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: 600;
-          letter-spacing: 2px;
-          margin: -5px 0;
-          font-size: 16px;
-        }
         span.tokens-left{
           display: block;
           text-align: center;
@@ -1498,6 +1487,17 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
       }
     }
     tr.sold-out {
+      span.tokens-left{
+        background:#c02b3f;
+        display: block;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin: -5px 0;
+        font-size: 16px;
+      }
       td::before {
         content: " ";
         position: absolute;

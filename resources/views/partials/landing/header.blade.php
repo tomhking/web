@@ -208,7 +208,7 @@
                                                     @php($hasEnded = $bonus['to']->isPast())
                                                     @php($bonusActive = \Carbon\Carbon::now()->between($bonus['from'], $bonus['to']))
                                                     @php($hasActiveBonuses = ($hasActiveBonuses ?? false) || $bonusActive)
-                                                    <tr class="{{ $hasEnded ? "ended" : "" }}">
+                                                    <tr class="{{ $hasEnded ? "sold-out" : "" }}">
                                                         <td class="text-left" style="width:175px;">
                                                             @for($i = $iconCount; $i >= 0; $i--)
                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">

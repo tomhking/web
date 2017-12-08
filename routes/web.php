@@ -37,6 +37,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/affiliate2', 'UserController@affiliate2')->name('affiliate2');
             Route::get('/affiliate3', 'UserController@affiliate3')->name('affiliate3');
             Route::get('/affiliate4', 'UserController@affiliate4')->name('affiliate4');
+            Route::get('/affiliate5', 'UserController@affiliate5')->name('affiliate5');
             Route::get('/address', 'UserController@address')->name('address');
             Route::get('/profile', 'UserController@showDetails')->name('details');
             Route::post('/profile', 'UserController@details');
@@ -50,6 +51,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/participate2', 'UserController@participate2')->name('participate2');
             Route::get('/participate3', 'UserController@participate3')->name('participate3');
             Route::get('/participate4', 'UserController@participate4')->name('participate4');
+            Route::get('/participate5', 'UserController@participate5')->name('participate5');
             Route::get('/participatefaq', 'UserController@participatefaq')->name('participatefaq');
         });
 
