@@ -3,9 +3,7 @@
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
                 <div class="title-container">
-                    <h2 class="title">@lang('home.backed-by-headline')<br>
-                    <a href="https://hostinger.com" rel="nofollow" target="_blank"><img src="{{ asset_rev('hostinger.png') }}" alt="@lang('home.backed-by-alt')"></a>
-                    </h2>
+                    <h2 class="title">@lang('home.backed-by-headline')</h2>
                     <img src="{{ asset_rev('token-value-graph.png') }}" alt="Token backed by Hostinger">
                     <p class="subtitle">@lang('home.backed-by-description')</p>
                 </div>

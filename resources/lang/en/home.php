@@ -99,7 +99,7 @@ return [
     'mvp-description' => 'The Solidity course material for programming smart contracts is ready. Start learning now and gain skills needed to become a Smart Contract Developer.',
     'mvp-c2a' => 'START LEARNING',
     'mvp-c2a-2' => 'START LEARNING (MVP)',
-    'backed-by-headline' => 'TOKEN IS BACKED BY',
+    'backed-by-headline' => 'TOKEN IS BACKED BY REAL COMPANY',
     'backed-by-alt' => 'Token backed by Hostinger',
     'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> will accept BDG tokens in exchange of its services.<br>The exchange rate is 100% fixed to crowdsale price for first year: 1 BDG = 0.03 USD - the rate you paid during crowdsale. This is a guarantee that your tokens will be exchangeable in equivalent to Hostinger services to the fixed price.',
     'backed-by-read-more' => 'Read more here',
