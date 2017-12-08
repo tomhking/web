@@ -63,10 +63,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://cointelegraph.com/news/ec-releases-report-on-possible-blockchain-applications-in-education" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/blockchain-in-education.jpg') }}" alt="EC: Blockchain Applications in Education">
-                            <h4>EC: Blockchain Applications in Education</h4>
-                            <p class="article-date"><span>Nov 17, 2017</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/bitdegree-wins-moonrise-2017-blockchain-startup-competition-1c8b339450de" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/moonrise-win.jpg') }}" alt=">BitDegree WINS Moonrise 2017 blockchain startup competition!">
+                            <h4>BitDegree WINS Moonrise 2017 blockchain startup competition!</h4>
+                            <p class="article-date"><span>Dec 6, 2017</span></p>
                         </a>
                     </div>
             </div>
