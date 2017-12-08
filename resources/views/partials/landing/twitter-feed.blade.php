@@ -17,6 +17,8 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
+                            <li><a href="https://blog.bitdegree.org/very-important-set-these-parameters-to-be-sure-your-transaction-is-completed-in-time-c0d354e0c86f" rel="nofollow" target="_blank"><b>Very important: set these parameters to be sure your transaction is completed in time</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/q-a-with-arnas-stuopelis-hostinger-ceo-and-bitdegree-co-founder-cf362d04f160" rel="nofollow" target="_blank"><b>Q&A with Arnas Stuopelis, Hostinger CEO and BitDegree co-founder</b></a></li>
                             <li><a href="https://blog.bitdegree.org/dont-miss-out-claim-a-15-bonus-on-your-bitdegree-tokens-today-52dee808608" rel="nofollow" target="_blank"><b>Don’t miss out — claim a 15% bonus on your BitDegree tokens today!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/earn-5-from-each-referred-transaction-fully-refreshed-bitdegree-referral-program-is-open-6b996a07d098" rel="nofollow" target="_blank"><b>Earn 5% from each referred transaction — fully refreshed BitDegree Referral Program is open!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/raising-soft-cap-the-first-day-bonus-tokens-available-till-friday-weekly-roundup-5af7ef02d7e4" rel="nofollow" target="_blank"><b>Raising Soft cap the first day, Bonus tokens available till Friday</b>| Weekly Roundup</a></li>
