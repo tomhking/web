@@ -25,7 +25,7 @@
                     </div>
                     <div id="1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="1">
                         <div class="panel-body">
-                            <p> BitDegree is the world's first blockchain-powered, smart-incentive based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
+                            <p>BitDegree is the world's first blockchain-powered, smart-incentive based online education platform which will revolutionize global education and tech recruiting. BitDegree shall directly align the incentives of students and anyone who wants them to become digitally smarter - like current or potential employers, digital service providers and sponsors.</p>
                             <p>BitDegree is an educational platform for everyone who is willing to study and get IT job.</p>
                         </div>
                     </div>
@@ -489,7 +489,7 @@
                     </div>
                     <div id="003" class="panel-collapse collapse" role="tabpanel" aria-labelledby="003">
                         <div class="panel-body">
-                            <p>Soft-cap is 500 ETH and Hard-cap is 32,500 ETH</p>
+                            <p>Soft-cap is 6250000 BDG and Hard-cap is 336600000 BDG tokens.</p>
                         </div>
                     </div>
                 </div>
@@ -595,11 +595,28 @@
                     </div>
                     <div id="009" class="panel-collapse collapse" role="tabpanel" aria-labelledby="009">
                         <div class="panel-body">
-                            <p>We have received requests from 2 Exchanges to list BitDegree token. In general all crypto currency exchanges are able to add ERC20 tokens to their trading platform. This is the information we can provide right now. More information about exchanges will be provided after the token sale.</p>
+                            <p>We have received requests from 2 Exchanges to list BitDegree token. In general all crypto currency exchanges are able to add ERC20 tokens to their trading platform. This is the information we can provide right now. More information about exchanges will be provided after the crowdsale.</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0091" aria-expanded="false" aria-controls="0091">
+                            <h3 class="panel-title">
+                                When will tokens be listed in the exchanges?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0091" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0091">
+                        <div class="panel-body">
+                            <p>BDG tokens will be tradable in 2 weeks after the crowdsale ends. All exchanges will be publicly named in the period after crowdsale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#010" aria-expanded="false" aria-controls="010">
@@ -689,6 +706,23 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0152" aria-expanded="false" aria-controls="0152">
+                            <h3 class="panel-title">
+                                When will I receive the tokens?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0152" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0152">
+                        <div class="panel-body">
+                            <p>You will receive your tokens immediately once you send your ETH to our smart contract address. They will become tradable 2 weeks after token sale. Read our guidelines how to send ETH to our smart contract to avoid problems receiving your tokens instantly.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
@@ -713,13 +747,13 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#017" aria-expanded="false" aria-controls="017">
                             <h3 class="panel-title">
-                                Does the recent SEC bulletin affect Token?
+                                What kind of information do I need to provide to participate in token sale?
                             </h3>
                         </div>
                     </div>
                     <div id="017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="017">
                         <div class="panel-body">
-                            <p>SEC jurisdiction lies in the United States federal government and as they personally state only affects token sales that are issuing tokens in the United States or for the citizens of the US. As we won't issue tokens through the US and will not let the US citizens or green card holders to participate in token sale. Moreover Bitdegree Token will be more like payment measure and not the security and therefore are not under the scope of SEC’s jurisdictions.</p>
+                            <p>Your name, last name, email, phone number, country of residence, date of birth and your public wallet address</p>
                         </div>
                     </div>
                 </div>
@@ -728,16 +762,68 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#018" aria-expanded="false" aria-controls="018">
                             <h3 class="panel-title">
-                                What kind of information do I need to provide to participate in token sale?
+                                What's the minimum amount of ETH you can use to buy BDG?
                             </h3>
                         </div>
                     </div>
                     <div id="018" class="panel-collapse collapse" role="tabpanel" aria-labelledby="018">
                         <div class="panel-body">
-                            <p>Your name, last name, email, phone number, country of residence, date of birth and your public wallet address.</p>
+                            <p>The minimum amount of ETH you can buy to use with purchases for BDG is the minimum of ETH = 1 WEI.</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0182" aria-expanded="false" aria-controls="0182">
+                            <h3 class="panel-title">
+                                What is the period of time for BDG value return?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0182" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0182">
+                        <div class="panel-body">
+                            <p>BDG tokens in exchange of its services backing means that the exchange rate is 100% fixed to the crowdsale price for the first year.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0183" aria-expanded="false" aria-controls="0183">
+                            <h3 class="panel-title">
+                                I haven’t created a password, how to login now?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0183" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0183">
+                        <div class="panel-body">
+                            <p>If you have participated in the airdrop, you only needed to verify your email. To log in follow these steps:</p>
+                            <p>Press “Join BitDegree Now” and you will be prompted to a sign up page.</p>
+                            <p>Press Log In button below and fill in your email address and a new password. You are done.</p>
+                            <p> If you have any further issues press “Forgot password?” and you will receive an email.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0184" aria-expanded="false" aria-controls="0184">
+                            <h3 class="panel-title">
+                                Will the unsold tokens be burned?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0184" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0184">
+                        <div class="panel-body">
+                            <p>All unsold BitDegree tokens (BDG) will be put in a reserve fund. Reserve fund tokens will be locked for 1 year although they could be used for utility purposes right away. All unsold BitDegree tokens (BDG) will be put in a reserve fund. Reserve fund tokens will be locked for 1 year although they could be used for utility purposes right away. This will stimulate strategic buyers to buy our tokens, but not speculative ones. Tokens will be held according to our pledge.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
