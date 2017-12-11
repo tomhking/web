@@ -20,5 +20,5 @@ return array (
   '1-referral' => '1 preporuka',
   'n-referrals' => ':number preporuka',
   'banner' => 'Baneri za korištenje',
-  'banner-alt' => 'BitDegree: od suosnivača EA-e, bivšeg COURSERA Lead i 29 milijuna korisnika. Ograničen 15% popusta - Nabavite token!',
+  'banner-alt' => 'BitDegree: od suosnivača EA-e, bivšeg COURSERA Lead i 29 milijuna korisnika. Ograničen 10% popusta - Nabavite token!',
 );

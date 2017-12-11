@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 推广',
   'n-referrals' => ':number 推广',
   'banner' => '条幅',
-  'banner-alt' => 'BitDegree:由EA联合创始人和前COURSERA高层创建,拥有2900万用户。限时15%的折扣 - 获得虚拟货币！',
+  'banner-alt' => 'BitDegree:由EA联合创始人和前COURSERA高层创建,拥有2900万用户。限时10%的折扣 - 获得虚拟货币！',
 );

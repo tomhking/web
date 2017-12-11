@@ -41,7 +41,8 @@
                                     <div class="col-xs-12 col-md-12 buttons">
                                         <div class="content dashboard-buttons">
                                             <div class="right align-right">
-                                                <button tabindex="8" type="submit" class="btn btn-primary button-save">Continue</button>
+                                                <button tabindex="8" type="submit" class="btn btn-primary button-save pull-right">Continue</button>
+                                                <a href="{{ route('address') }}" class="btn btn-default skip pull-right">Skip</a>
                                             </div>
                                         </div>
                                     </div>

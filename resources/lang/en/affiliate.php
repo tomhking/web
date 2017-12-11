@@ -21,6 +21,6 @@ return [
     'referrals_count_label' => 'Your token stakes (referred users):',
     'referral_link_label' => 'Share your personal referral link and get tokens.',
     'banner' => 'Banner',
-    'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 15% discount - Get Tokens!',
+    'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 10% discount - Get Tokens!',
     'announcement' => '<b>Dec 4 UPDATE:</b> Now earn even MORE! Get <b>5% commission</b> of your referred clients contribution!',
 ];

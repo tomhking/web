@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 referido',
   'n-referrals' => ':number referidos',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree: del cofundador de EA, antiguo líder de COURSERA y 29,000,000 de usuarios. Descuento limitado del 15% - ¡Obtén fichas!',
+  'banner-alt' => 'BitDegree: del cofundador de EA, antiguo líder de COURSERA y 29,000,000 de usuarios. Descuento limitado del 10% - ¡Obtén fichas!',
 );
