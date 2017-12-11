@@ -8,7 +8,7 @@ return array (
   'distribution' => 'Distribuția Token',
   'what-is' => 'Ce este',
   'people' => 'Oamenii din spate',
-  'one-pager' => 'Pitch Deck',
+  'one-pager' => 'Prezentare',
   'ico' => 'ICO &amp; Foaia de parcurs',
   'faq' => 'Întrebări frecvente',
   'what-it-is' => 'Ce este BitDegree?',
