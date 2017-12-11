@@ -18,21 +18,23 @@
                     <div class="col-xs-12 col-sm-4">
                         <div class="card left">
                             <a href="{{ $course['url'] }}">
-                                @if($course['isFree'] ?? false)
-                                    <div class="badge"><span>{{ trans('courses.free') }}</span></div>
-                                @endif
-                                @if($course['isMvp'] ?? false)
-                                    <div class="badge-mvp"><span>{{ trans('courses.mvp') }}</span></div>
-                                @endif
-                                @if($course['isNew'] ?? false)
-                                    <div class="badge"><span>{{ trans('courses.new') }}</span></div>
-                                @endif
-                                @if($course['isBeta'] ?? false)
-                                    <div class="badge-mvp"><span>{{ trans('courses.beta') }}</span></div>
-                                @endif
-                                @if($course['isSoon'] ?? false)
-                                    <div class="badge"><span>{{ trans('courses.soon') }}</span></div>
-                                @endif
+                                <div class="courses-badges">
+                                    @if($course['isFree'] ?? false)
+                                        <div class="badge"><span>{{ trans('courses.free') }}</span></div>
+                                    @endif
+                                    @if($course['isMvp'] ?? false)
+                                        <div class="badge-mvp"><span>{{ trans('courses.mvp') }}</span></div>
+                                    @endif
+                                    @if($course['isNew'] ?? false)
+                                        <div class="badge"><span>{{ trans('courses.new') }}</span></div>
+                                    @endif
+                                    @if($course['isBeta'] ?? false)
+                                        <div class="badge-mvp"><span>{{ trans('courses.beta') }}</span></div>
+                                    @endif
+                                    @if($course['isSoon'] ?? false)
+                                        <div class="badge"><span>{{ trans('courses.soon') }}</span></div>
+                                    @endif
+                                </div>
                                 <div class="degree-header">
                                     <div class="degree-overlay {{ $course['overlay'] }}"></div>
                                     <img class="degree-img" src="{{ $course['image']}}" alt="">

@@ -1140,47 +1140,45 @@ body.landing.degree-list header {
   }
 }
 
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 4px 7px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-  color: #c02b3f;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-color: #fff;
-  border-radius: 0;
-  letter-spacing: 1px;
-  z-index: 5000;
-  text-transform: uppercase;
-  box-shadow: 4px 6px 8px 0 rgba(46, 61, 73, 0.2);
-  position: absolute;
-  margin: 5px;
-}
 
-.badge-mvp {
-  display: inline-block;
-  min-width: 10px;
-  padding: 4px 7px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  background-color: #c02b3f;
-  border-radius: 0;
-  letter-spacing: 1px;
-  z-index: 5000;
-  text-transform: uppercase;
-  box-shadow: 4px 6px 8px 0 rgba(46, 61, 73, 0.2);
+.courses-badges {
   position: absolute;
-  margin: 5px;
-  left:50px;
+  top: 0;
+  z-index: 100;
+  .badge {
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #c02b3f;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 4px 6px 8px 0 rgba(46, 61, 73, 0.2);
+    margin: 5px 0 5px 5px;
+  }
+  .badge-mvp {
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #c02b3f;
+    border-radius: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 4px 6px 8px 0 rgba(46, 61, 73, 0.2);
+    margin: 5px 0 5px 5px;
+  }
 }
 
 .bitdegrees-list .cards .card .info {
