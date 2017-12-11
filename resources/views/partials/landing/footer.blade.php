@@ -15,15 +15,12 @@
                             <li class="narrow"><a href="{{ route('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                             <li class="narrow"><a href="{{ route('faq') }}">@lang('navigation.faq')</a></li>
                             <li><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts">@lang('home.ico_token_source')</a></li>
-
+                            <li class="narrow"><a href="{{ asset_rev('files/pitch-deck.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                             @if($currentLanguage == "cn")
-                                <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                                 <li><a href="https://www.bitdegree.org/white-paper-cn.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @elseif($currentLanguage == "ru")
-                                <li class="narrow"><a href="{{ asset_rev('files/onepager-ru.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                                 <li><a href="https://www.bitdegree.org/white-paper-ru.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @else
-                                <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                                 <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @endif
 
