@@ -16,8 +16,6 @@
                             <li class="narrow"><a href="{{ route('faq') }}">@lang('navigation.faq')</a></li>
                             <li><a href="https://github.com/bitdegree/bitdegree-token-crowdsale/tree/master/contracts">@lang('home.ico_token_source')</a></li>
 
-
-
                             @if($currentLanguage == "cn")
                                 <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
                                 <li><a href="https://www.bitdegree.org/white-paper-cn.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
@@ -28,6 +26,8 @@
                                 <li class="narrow"><a href="/bitdegree-ico-one-pager.pdf" target="_blank">@lang('navigation.one-pager')</a></li>
                                 <li><a href="https://www.bitdegree.org/white-paper.pdf" class="navbar-cta" target="_blank">@lang('navigation.white-paper')</a></li>
                             @endif
+
+                            <li class="narrow"><a href=https://blog.bitdegree.org/">Blog</a></li>
                         </ul>
 
                         <div class="footer-login">

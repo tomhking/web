@@ -934,6 +934,35 @@ form .notice {
   }
 }
 
+.referral-block .commission-announcement{
+  background: #7b3fff;
+  padding: 15px 15px 35px 15px;
+  h1{
+    font-size: 68px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-family:$work-sans;
+
+    color:#fff;
+  }
+  h3{
+    text-transform: inherit;
+    font-size: 32px;
+    margin: 15px;
+    font-family:$work-sans;
+    color:#fff;
+  }
+  a{
+    background: #fff;
+    padding:15px;
+    text-transform: uppercase;
+    color:#000;
+    display: block;
+    max-width: 280px;
+    margin: 25px auto 0 auto;
+  }
+}
+
 .twitter-feed.main {
   background: #f0f0f0 url(../network-bg.png) no-repeat center;
   position: relative;
@@ -3918,13 +3947,14 @@ h3.subtitle {
   }
 }
 
+.text-center.cta-link a {
+  background: none;
+  box-shadow: none;
+  color: #c02b3f;
+  text-decoration: underline;
+}
+
 .media-articles {
-  .text-center.cta-link a {
-    background: none;
-    box-shadow: none;
-    color: #c02b3f;
-    text-decoration: underline;
-  }
   h2 {
     margin: 35px 0 55px 0;
   }
