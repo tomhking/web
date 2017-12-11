@@ -14,7 +14,7 @@ return array (
   'amount-tokens' => 'Primiți',
   'percentage-supply' => '% din totalul ofertei',
   'receive' => 'Trimiteți ETH și primiți token-uri BitDegree imediat!',
-  'week-num' => 'Bonus săptămâna 1',
+  'week-num' => 'Bonus săptămâna :number',
   'bonus-percent' => ':amount% BONUS',
   'rate-with-bonus' => 'Cursul de schimb cu bonus',
   'gas-limit' => 'Limită gaz',
