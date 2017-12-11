@@ -26,7 +26,7 @@ return array (
     ),
     'email' => 
     array (
-      'exists' => 'O email fornecido não foi encontrado em nosso banco de dados. Você deve se inscrever primeiro.',
+      'exists' => 'O email fornecido não foi encontrado em nosso banco de dados. Você deve inscrever se primeiro.',
     ),
   ),
   'accepted' => 'O :attribute deve ser aceito.',
@@ -56,7 +56,7 @@ return array (
   'dimensions' => 'O :attribute tem dimensões de imagem inválidas.',
   'distinct' => 'O :attribute campo tem um valor duplicado.',
   'email' => 'O :attribute deve ser um endereço de e-mail válido.',
-  'exists' => 'O :attribute selectedo invalido.',
+  'exists' => 'O :attribute selecionado é inválido.',
   'file' => 'O :attribute deve ser um arquivo.',
   'filled' => 'O :attribute campo é necessário.',
   'image' => 'O :attribute deve ser uma imagem.',
