@@ -32,6 +32,7 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo;
+    protected $forceRedirectPath = false;
 
     /**
      * Create a new controller instance.
@@ -76,6 +77,7 @@ class LoginController extends Controller
                 $this->redirectTo = route('platform-login', [
                     'destination' => $request->get('destination'),
                 ]);
+                $this->forceRedirectPath = true;
             }
         }
 
@@ -90,7 +92,7 @@ class LoginController extends Controller
 
                 auth()->login($user);
 
-                return redirect($this->redirectTo);
+                return redirect($this->redirectPath());
             }
 
             // Validate login data for the rest
@@ -105,7 +107,7 @@ class LoginController extends Controller
 
         auth()->login($user);
 
-        return redirect($this->redirectTo);
+        return redirect($this->redirectPath());
     }
 
     /**
@@ -131,5 +133,23 @@ class LoginController extends Controller
         }
 
         return redirect()->route('login', ['destination' => $destination]);
+    }
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        if(
+            !$this->forceRedirectPath &&
+            auth()->check() && auth()->user()->affiliate instanceof User &&
+            empty(auth()->user()->wallet)
+        ) {
+            return route('wallet');
+        }
+
+        return $this->redirectTo;
     }
 }

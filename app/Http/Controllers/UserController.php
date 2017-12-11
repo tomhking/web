@@ -104,12 +104,6 @@ class UserController extends Controller
      */
     function address()
     {
-        $user = auth()->user();
-
-        if(!empty($user->affiliate_id) && empty($user->wallet)) {
-            return redirect()->route('wallet');
-        }
-
         $ico = config('ico');
 
         if (!$ico['started']) {

@@ -135,4 +135,18 @@ class RegisterController extends Controller
     {
         return 'email';
     }
+
+    /**
+     * Get the post register / login redirect path.
+     *
+     * @return string
+     */
+    public function redirectPath()
+    {
+        if(auth()->check() && auth()->user()->affiliate instanceof User) {
+            return route('wallet');
+        }
+
+        return $this->redirectTo;
+    }
 }

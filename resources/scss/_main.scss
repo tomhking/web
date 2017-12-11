@@ -2422,6 +2422,22 @@ body.login-page {
       .left, .right {
         display: inline-block;
         vertical-align: middle;
+        .btn-default {
+          display: block;
+          text-align: center;
+          padding: 15px;
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 1px;
+          background: transparent;
+          color: #fff;
+          min-width: 150px;
+          font-size: 18px;
+          box-sizing: border-box;
+          &.pull-right {
+            margin-right: 1.5rem;
+          }
+        }
         button.btn.btn-primary.button-save{
           display: block;
           text-align: center;
