@@ -4744,9 +4744,13 @@ div#token-distribution .container {
   body.login-page.get-tokens .sidebar{
     display: block;
     position: relative;
-    padding-top: 25px;
     margin-left: -15px;
     margin-right: -15px;
+    color: #fff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0;
     &.steps{
       display:none;
     }
@@ -4755,14 +4759,6 @@ div#token-distribution .container {
       padding: 4px 0 4px 15px;
       position: relative;
     }
-    color: #fff;
-    padding: 15px 20px;
-    border: 1px solid #c02b3f;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1px;
-    display: block;
-    background-color: #c02b3f;
   }
   .milestone-left .milestone-tooltip {
     margin-right: 0!important;
