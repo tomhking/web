@@ -98,7 +98,6 @@
             <div class="col-md-12">
 
                 <div class="text-center">
-                    <p>@lang('home.ico_section_cta_text')</p>
                     <a href="#top" class="cta-btn">@lang('home.ico_section_cta_btn')</a>
                 </div>
             </div>
