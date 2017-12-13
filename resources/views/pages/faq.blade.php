@@ -521,7 +521,7 @@
                         <div class="panel-body">
                             <p>ERC20 utility token built on top of Ethereum blockchain. BitDegree token as a mean of exchange can be used among users of the platform: Students, Sponsors, and third party Digital Service Providers. </p>
                             <p>Token can be used to create smart-incentives for educational accomplishments, to purchase advertising and recruitment services, and various other digital services offered by third parties on the BitDegree platform. </p>
-                            <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and recruitment of tech talent. The demand of BitDegree Token is closely aligned with the gargantuan $200 billion recruitment industry. Due to limited supply, the demand for BitDegree platform’s services will drive the token price up.</p>
+                            <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and recruitment of tech talent.</p>
                         </div>
                     </div>
                 </div>
