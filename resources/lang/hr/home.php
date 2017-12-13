@@ -58,7 +58,7 @@ return array (
   'mvp-c2a' => 'ZAPOČNITE S UČENJEM',
   'backed-by-headline' => 'TOKEN PREMA OSOBAMA',
   'backed-by-alt' => 'Tokena zakupljeno  od Hostingera',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank"> Hostinger </a> prihvaća BDG znakove u zamjenu za usluge. <br> Tečaj je 100% fiksan za cijena za prvu godinu: 1 BDG = 0,03 USD - stopa koju ste platili tijekom crowdsalea. To je jamstvo da će vaš tokeni biti zamjenjiv u ekvivalentu uslugama usluge Hostinger s fiksnom cijenom.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank"> Hostinger </a> prihvaća BDG znakove u zamjenu za usluge. <br> Tečaj je 100% fiksan za cijena za prvu godinu: 1 BDG = 0,04 USD - stopa koju ste platili tijekom crowdsalea. To je jamstvo da će vaš tokeni biti zamjenjiv u ekvivalentu uslugama usluge Hostinger s fiksnom cijenom.',
   'backed-by-read-more' => 'Pročitajte više ovdje',
   'read-more' => 'Pročitajte više',
   'other-tokenlot' => 'sve ostalo - putem Tokenlot',

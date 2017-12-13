@@ -57,7 +57,7 @@ return array (
   'mvp-c2a' => 'ÖĞRENMEYE BAŞLA',
   'backed-by-headline' => 'TOKEN DESTEKÇİSİ:',
   'backed-by-alt' => 'Token Hostinger tarafından desteklenmektedir.',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> servisleri karşılığında BDG tokenlerini kabul edecektir.<br>İlk yıl için döviz kuru %100 sabitlenmiştir. 1 BDG = 0.03 USD - crowdsale esnasında ödediğiniz oran. Bu tokenlerinizi Hostinger servisleri ile sabitlenmiş ücrette takas edebileceğinizin garantisidir.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> servisleri karşılığında BDG tokenlerini kabul edecektir.<br>İlk yıl için döviz kuru %100 sabitlenmiştir. 1 BDG = 0.04 USD - crowdsale esnasında ödediğiniz oran. Bu tokenlerinizi Hostinger servisleri ile sabitlenmiş ücrette takas edebileceğinizin garantisidir.',
   'backed-by-read-more' => 'Daha fazla oku',
   'read-more' => 'Daha fazla',
   'other-tokenlot' => 'tüm diğerler - Tokenlot aracılığıyla',

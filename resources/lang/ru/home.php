@@ -20,7 +20,7 @@ return array (
   'mvp-c2a' => 'НАЧАТЬ ОБУЧЕНИЕ',
   'backed-by-headline' => 'ТОКЕНЫ ПОДДЕРЖАНЫ',
   'backed-by-alt' => 'Токены поддержаны Hostinger',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> будет принимать токены BDG в обмен на свои услуги.<br>Обменный курс будет 100% фиксированным к цене Crowdsale на первый год: 1 BDG = 0.03 USD - курс, который будет во время Crowdsale. Это гарантия того, что ваши токены могут быть обменены на эквивалент услуг Hostinger по фиксированной цене.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> будет принимать токены BDG в обмен на свои услуги.<br>Обменный курс будет 100% фиксированным к цене Crowdsale на первый год: 1 BDG = 0.04 USD - курс, который будет во время Crowdsale. Это гарантия того, что ваши токены могут быть обменены на эквивалент услуг Hostinger по фиксированной цене.',
   'backed-by-read-more' => 'Узнать больше',
   'read-more' => 'Узнать больше',
   'other-tokenlot' => 'любая другая - через Tokenlot',

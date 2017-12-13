@@ -55,7 +55,7 @@ return array (
   'mvp-c2a' => 'ÎNCEPEȚI SĂ ÎNVĂȚAȚI',
   'backed-by-headline' => 'TOKEN-UL ESTE SUSȚINUT DE CĂTRE',
   'backed-by-alt' => 'Token susținut de Hostinger',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> va accepta token-uri BDG în schimbul serviciilor sale.<br>Rata de schimb este 100% fixată la prețul de la crowdsale-ul pentru primul an: 1 BDG = 0.03 USD - rata pe care ați plătit-o în timpul crowdsale-ului. Aceasta este o garanție că token-urile dvs. vor fi schimbabile în echivalent cu serviciile Hostinger la prețul fix.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> va accepta token-uri BDG în schimbul serviciilor sale.<br>Rata de schimb este 100% fixată la prețul de la crowdsale-ul pentru primul an: 1 BDG = 0.04 USD - rata pe care ați plătit-o în timpul crowdsale-ului. Aceasta este o garanție că token-urile dvs. vor fi schimbabile în echivalent cu serviciile Hostinger la prețul fix.',
   'backed-by-read-more' => 'Citiți mai multe aici',
   'read-more' => 'Citiți mai mult',
   'other-tokenlot' => 'toate celelalte - prin intermediul Tokenlot',
