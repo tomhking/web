@@ -94,7 +94,7 @@ class AdminController
                 'affiliate' => null,
                 'users' => $users,
                 'contributed' => $users->sum('contributed'),
-                'contributed_after' => $contribution = $users->sum('contributed_after') + bcmul(time(), bcpow(10,mt_rand(8,15))),
+                'contributed_after' => $contribution = $users->sum('contributed_after'),
                 'estimated_commission' => $contribution * 0.05 * 10000,
             ];
         })->sortByDesc(function($referral) {
