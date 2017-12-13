@@ -4,7 +4,7 @@ return [
     'position_andrius' => 'Co-founder,<br>CEO',
     'position_danielius' => 'Co-founder, CBDO (BizDev)',
     'position_martynas' => 'Smart Contract Developer',
-    'position_ervinas' => 'Legal',
+    'position_ervinas' => 'Co-founder, Attorney at Law',
     'position_darius' => 'BitDegree blockchain evangelist',
     'position_rio' => 'CMO',
     'position_julija' => 'Business Assistant',
