@@ -2527,9 +2527,14 @@ body.login-page {
       border-top: 1px solid rgba(255, 255, 255, 0.12);
       min-height: 44px;
       border-right: 0;
+      border-left:0;
+      .container-fluid{
+        padding:0;
+      }
     }
     .dashboard-navigation{
       margin: 0;
+      padding:0;
       li.dropdown {
         display: none;
       }
@@ -2537,6 +2542,7 @@ body.login-page {
         border:0;
         display: block;
         float: right;
+        padding: 0;
         li{
           border-left:1px solid rgba(255, 255, 255, 0.12);
           width:auto;
