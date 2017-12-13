@@ -47,6 +47,7 @@
                     </tbody>
                     </table>
                 </div>
+                @if(false)
                 <h2>Top Affiliates</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -72,6 +73,7 @@
                         </tbody>
                     </table>
                 </div>
+                @endif
                 <h2 id="term-stats">
                     @if($hasDate)
                         Statistics for {{ $date }}

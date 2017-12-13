@@ -84,7 +84,7 @@ class AdminController
         });
 
         // Affiliate
-        $referrals = User::withWallet()->whereNotNull('affiliate_id')->get()->groupBy('affiliate_id')->map(function($users) use ($txns) {
+        /*$referrals = User::withWallet()->whereNotNull('affiliate_id')->get()->groupBy('affiliate_id')->map(function($users) use ($txns) {
             $users = $users->map(function ($user) use ($txns) {
                 $user->contributed = $user->wallet ? $txns->where('from', '=', $user->wallet)->sum('value'): 0;
                 $user->contributed_after = $user->wallet && $user->wallet_updated_at instanceof Carbon ? $txns->where('from', '=', $user->wallet)->where('timestamp','>', $user->wallet_updated_at->timestamp)->sum('value'): 0;
@@ -105,7 +105,7 @@ class AdminController
             $referralData = $referrals->get($affiliate->id);
             $referralData['affiliate'] = $affiliate;
             $referrals->put($affiliate->id, $referralData);
-        });
+        });*/
 
         return view('pages.statistics', compact('raisedEth',  'txns', 'txnsByDay', 'countryTxns', 'filteredTxns', 'hasDate', 'date', 'holders', 'users', 'key', 'referrals'));
     }
