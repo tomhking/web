@@ -42,7 +42,7 @@
                             <p>● In the Gas Limit field, change the minimum amount to <span class="red"><b>200,000 gas</b></span>. This will ensure that your transaction is processed.</p>
                             <img src="{{ asset_rev('instructions/transfer-1.png') }}" alt="transfer">
 
-                            <p>● In the upper right corner set the GAS price to <span class="red"><b>120 GWEI</b></span>. Due to constant clog of the Ethereum network it is recommended to increase the GAS price for the transaction to go through.</p>
+                            <p>● In the upper right corner set the GAS price to <span class="red"><b>100 GWEI</b></span>. Due to constant clog of the Ethereum network it is recommended to increase the GAS price for the transaction to go through.</p>
                             <img src="{{ asset_rev('instructions/transfer-2.png') }}" alt="transfer">
 
                             <div class="row">
@@ -51,7 +51,7 @@
                                         <p><span class="red"><b>NOTE:</b> transactions without GAS limit will be invalid.</span><br>
                                             Due to high demand of the BitDegree tokens and constant clogging of the Ethereum Network we recommend using these parameters so that your transactions would go through:<br>
                                             <b>GAS limit: 200 000</b><br>
-                                            <b>GAS price: 120 Gwei or higher</b></p>
+                                            <b>GAS price: 100 Gwei or higher</b></p>
                                     </div>
                                 </div>
                             </div>
