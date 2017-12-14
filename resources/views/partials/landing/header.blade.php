@@ -210,36 +210,39 @@
                                                     @php($iconCount = bcdiv($amount, 5))
                                                     @php($weekNum = ($weekNum ?? 0) + 1)
                                                     @php($hasEnded = $bonus['to']->isPast())
+                                                    @php($isStale = $bonus['to']->copy()->addWeek()->isPast())
                                                     @php($bonusActive = \Carbon\Carbon::now()->between($bonus['from'], $bonus['to']))
                                                     @php($hasActiveBonuses = ($hasActiveBonuses ?? false) || $bonusActive)
-                                                    <tr class="{{ $hasEnded ? "sold-out" : "" }}">
-                                                        <td class="text-left" style="width:175px;">
-                                                            @for($i = $iconCount; $i >= 0; $i--)
-                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                            @endfor
-                                                        </td>
-                                                        <td>
-                                                            <span class="text">@lang('ico.bonus-percent', ['amount' => $amount])</span>
-                                                            <div class="visible-xs-block">
-                                                                <span class="text">@lang('ico.week-num', ['number' => $weekNum])</span>
-                                                            </div>
-                                                            <div class="visible-xs-block">
+                                                    @if(!$isStale)
+                                                        <tr class="{{ $hasEnded ? "sold-out" : "" }}">
+                                                            <td class="text-left" style="width:175px;">
+                                                                @for($i = $iconCount; $i >= 0; $i--)
+                                                                    <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
+                                                                @endfor
+                                                            </td>
+                                                            <td>
+                                                                <span class="text">@lang('ico.bonus-percent', ['amount' => $amount])</span>
+                                                                <div class="visible-xs-block">
+                                                                    <span class="text">@lang('ico.week-num', ['number' => $weekNum])</span>
+                                                                </div>
+                                                                <div class="visible-xs-block">
+                                                                    @if($hasEnded)
+                                                                        <span class="tokens-left">@lang('ico.bonus-ended')</span>
+                                                                    @elseif($bonusActive)
+                                                                        <span class="tokens-left">@lang('ico.available-now')</span>
+                                                                    @endif
+                                                                </div>
+                                                            </td>
+                                                            <td class="hidden-xs">@lang('ico.week-num', ['number' => $weekNum])</td>
+                                                            <td class="hidden-xs">
                                                                 @if($hasEnded)
                                                                     <span class="tokens-left">@lang('ico.bonus-ended')</span>
                                                                 @elseif($bonusActive)
                                                                     <span class="tokens-left">@lang('ico.available-now')</span>
                                                                 @endif
-                                                            </div>
-                                                        </td>
-                                                        <td class="hidden-xs">@lang('ico.week-num', ['number' => $weekNum])</td>
-                                                        <td class="hidden-xs">
-                                                            @if($hasEnded)
-                                                                <span class="tokens-left">@lang('ico.bonus-ended')</span>
-                                                            @elseif($bonusActive)
-                                                                <span class="tokens-left">@lang('ico.available-now')</span>
-                                                            @endif
-                                                        </td>
-                                                    </tr>
+                                                            </td>
+                                                        </tr>
+                                                    @endif
                                                 @endforeach
                                                 <tr>
                                                     <td class="text-left">

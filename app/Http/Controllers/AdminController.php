@@ -42,7 +42,7 @@ class AdminController
         }
 
         $txns = cache()->get('ico-txns');
-        $referrals = cache()->get('ico-affiliates');
+        $referrals = cache()->get('ico-affiliates', []);
 
         if (empty($txns)) {
             abort(404, 'Transactions unavailable.');
