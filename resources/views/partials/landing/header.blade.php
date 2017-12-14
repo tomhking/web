@@ -78,7 +78,11 @@
                         <li class="narrow middle"><a href="{{ route('home') }}#mvp" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.mvp')</a></li>
                         <li class="narrow middle"><a href="{{ route('faq') }}#faqs">@lang('navigation.faq')</a></li>
                         <li class="narrow"><a href="{{ route('home') }}#token-distribution" data-toggle="collapse" data-target=".navbar-collapse.in">@lang('navigation.token')</a></li>
+                        @if($currentLanguage == "cn")
+                         <li class="narrow"><a href="{{ asset_rev('files/onepager-cn.pdf') }}" target="_blank">ONE-PAGER</a></li>
+                        @else
                         <li class="narrow"><a href="{{ asset_rev('files/pitch-deck.pdf') }}" target="_blank">@lang('navigation.one-pager')</a></li>
+                        @endif
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right no-padding visible-xs-block">
