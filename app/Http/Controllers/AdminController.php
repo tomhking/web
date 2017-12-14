@@ -42,6 +42,7 @@ class AdminController
         }
 
         $txns = cache()->get('ico-txns');
+        $referrals = cache()->get('ico-affiliates');
 
         if (empty($txns)) {
             abort(404, 'Transactions unavailable.');
@@ -82,30 +83,6 @@ class AdminController
         $holders = $filteredTxns->groupBy('from')->sortByDesc(function ($txns) {
             return $txns->sum('value');
         });
-
-        // Affiliate
-        /*$referrals = User::withWallet()->whereNotNull('affiliate_id')->get()->groupBy('affiliate_id')->map(function($users) use ($txns) {
-            $users = $users->map(function ($user) use ($txns) {
-                $user->contributed = $user->wallet ? $txns->where('from', '=', $user->wallet)->sum('value'): 0;
-                $user->contributed_after = $user->wallet && $user->wallet_updated_at instanceof Carbon ? $txns->where('from', '=', $user->wallet)->where('timestamp','>', $user->wallet_updated_at->timestamp)->sum('value'): 0;
-                return $user;
-            });
-            return [
-                'affiliate' => null,
-                'users' => $users,
-                'contributed' => $users->sum('contributed'),
-                'contributed_after' => $contribution = $users->sum('contributed_after'),
-                'estimated_commission' => $contribution * 0.05 * 10000,
-            ];
-        })->sortByDesc(function($referral) {
-            return $referral['contributed_after'];
-        })->slice(0,10);
-
-        $users = User::whereIn('id', $referrals->keys())->get()->each(function($affiliate) use ($referrals) {
-            $referralData = $referrals->get($affiliate->id);
-            $referralData['affiliate'] = $affiliate;
-            $referrals->put($affiliate->id, $referralData);
-        });*/
 
         return view('pages.statistics', compact('raisedEth',  'txns', 'txnsByDay', 'countryTxns', 'filteredTxns', 'hasDate', 'date', 'holders', 'users', 'key', 'referrals'));
     }
