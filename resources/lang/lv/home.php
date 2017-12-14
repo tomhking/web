@@ -44,7 +44,7 @@ return array (
   'economy_subtitle' => 'BitDegree uzsāks revolūciju izglītībā, radot žetonus, kas var tikt apmainīti starp platformas lietotājiem - studentiem, sponsoriem un trešajām personām. ',
   'economy_point_1' => '<b>01.</b> Uzņēmumi kā sponsori ir ilgtspējīgs dzinējspēks BitDegree ekonomijai. Ekonomiskais stimuls sponsoriem iegādāties BitDegree žetonus ir <strong>tehnoloģiju darbinieku atrašana</strong>, vairojot uzņēmumu zīmolu popularitāti.',
   'economy_point_2' => '<b>02.</b> BitDegree žetoni var tikt izmantoti, lai veidotu <strong>gudros atalgojumus kā stipendijas</strong> par studentu mācību progresu, kas var tikt izmantots, lai saņemtu dažādus digitālus pakalpojumus, kurus piedāvā trešo personu platformas, apmaiņā pret žetoniem.',
-  'economy_point_3' => '<b>03.</b> Pieņemot BitDegree žetonu, trešās personas kļūst par starpniekiem žetonu ekonomikā. Sponsori, tā pat, kā studenti varēs mainīties ar žetoniem un izpirkt savus žetonus plašajā partneru industrijas tirgū vai iemanīt tos pret digitālām precēm un pakalpojumiem. BitDegree žetonu potenciālais <strong>pieprasījums</strong> ir tuvu <strong>200 miljardus USD</strong> vērtajai darba industrijai. Ierobežotais žetonu daudzums nodrošinās augošo pieprasījumu pēc BitDegree platformas pakalpojumiem tuvākajā nākotnē.',
+  'economy_point_3' => '<b>03.</b> Pieņemot BitDegree žetonu, trešās personas kļūst par starpniekiem žetonu ekonomikā. Sponsori, tā pat, kā studenti varēs mainīties ar žetoniem un izpirkt savus žetonus plašajā partneru industrijas tirgū vai iemanīt tos pret digitālām precēm un pakalpojumiem.',
   'trust_title' => 'Kā redzēts',
   'partners_title' => 'Partneri',
   'free_tokens' => 'SAŅEMEIT BEZMAKSAS ŽETONUS',

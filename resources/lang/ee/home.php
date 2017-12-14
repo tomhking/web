@@ -47,5 +47,5 @@ return array (
   'economy_subtitle' => 'BitDegree uuendab haridust, luues uue tokeni (žetooni), mida saavad kasutajad omavahel jagada: õpilased, sponsorid ja teised.',
   'economy_point_1' => '<b>01.</b> Ettevõtted ja sponsorid on BitDegree majanduse aluseks. Tokenite ostmine ettevõtete poolt tähendab <strong>tööjõu värbamist</strong>, ettevõtte brändi laiendamist ja reklaami.',
   'economy_point_2' => '<b>02.</b> BitDegree tokeneid saab kasutada <strong>stipendiumite</strong> jaoks, et väärtustada õpilasi. Tokeneid saab vahetada samal platvormil olevate teiste ettevõtete teenuste vastu.',
-  'economy_point_3' => '<b>03.</b> Sponsorid ning õpilased saavad tokeneid vahetada ja kasutada erinevate teenuste jaoks, mida pakuvad samal platvormil töötavad ettevõtted. BitDegree token\'i <strong>nõudlus</strong> on lähedalt seotud <strong>200 000 000 000$</strong> tööjõu värbamise kapitaliga. Piiratud arv tokeneid tähendab, et nõudlus BitDegree platvormi poolt pakutavate teenuste vastu suureneb lähitulevikus.',
+  'economy_point_3' => '<b>03.</b> Sponsorid ning õpilased saavad tokeneid vahetada ja kasutada erinevate teenuste jaoks, mida pakuvad samal platvormil töötavad ettevõtted.',
 );
