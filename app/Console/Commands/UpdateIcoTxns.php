@@ -46,12 +46,15 @@ class UpdateIcoTxns extends Command
      */
     public function handle()
     {
+        $lastBlock = cache()->get('last-block', 0);
+        $this->line('Retrieving transactions from block #'.$lastBlock);
+
         $response = $this->client->get('https://api.etherscan.io/api', [
             'query' => [
                 'module' => 'account',
                 'action' => 'txlist',
                 'address' => env('ICO_ADDRESS'),
-                'startblock' => 0,
+                'startblock' => $lastBlock,
                 'endblock' => '999999999999990',
                 'apikey' => env('ETHERSCAN_API_KEY'),
                 'sort' => 'asc',
@@ -73,21 +76,24 @@ class UpdateIcoTxns extends Command
 
         $response = json_decode($content);
 
-        if(!isset($response->result)){
-            $this->line('Etherscan returned results in an unknown format: '.$content);
+        if(!isset($response->result)) {
+            $this->line('Etherscan returned results in an unknown format: ' . $content);
             Log::error('Etherscan returned results in an unknown format', [
                 'body' => $response,
             ]);
             return;
         }
 
-        $txns = collect($response->result)->filter(function($tx) {
+        $newTxns = collect($response->result)->filter(function($tx) {
             return $tx->isError == 0 && $tx->value != 0;
         })->keyBy('hash');
 
-        $this->line('Transactions updated.');
+        $txns = cache()->get('ico-txns', collect([]))->merge($newTxns);
 
+        cache()->forever('last-block', $txns->last()->blockNumber);
         cache()->forever('ico-txns', $txns);
+
+        $this->line('Transactions updated.');
 
         $affiliates = User::withWallet()->whereNotNull('affiliate_id')->get()->groupBy('affiliate_id')->map(function($users, $affiliateId) use ($txns) {
             $contributed = 0;
