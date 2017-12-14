@@ -83,16 +83,8 @@ class UpdateIcoTxns extends Command
             return $tx->isError == 0 && $tx->value != 0;
         })->keyBy('hash');
 
-        $holders = $txns->groupBy('from')->sortBy(function ($txns) {
-            foreach($txns as $tx) {
-                $sum = bcadd($sum ?? 0, $tx->value);
-            }
-            return $sum ?? 0;
-        })->reverse();
+        $this->line('Transactions updated.');
 
-        $this->line('Transactions and holders updated.');
-
-        cache()->forever('token-holders', $holders);
         cache()->forever('ico-txns', $txns);
     }
 }

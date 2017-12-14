@@ -45,8 +45,35 @@
                         </tr>
                     @endforeach
                     </tbody>
-                </table>
+                    </table>
                 </div>
+                @if(false)
+                <h2>Top Affiliates</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Affiliate</th>
+                            <th class="text-right">Referrals</th>
+                            <th class="text-right">Referral Contributions</th>
+                            <th class="text-right">Credible Referral Contributions</th>
+                            <th>Estimated Commission</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @foreach($referrals as $item)
+                            <tr>
+                                <td>{{ $item['affiliate']->first_name . " " . $item['affiliate']->last_name }}<div>{{ $item['affiliate']->email }}</div></td>
+                                <td class="text-right">{{ $item['users']->count() }}</td>
+                                <td class="text-right">{{ number_format($item['contributed']/bcpow(10,18),2) }} ETH</td>
+                                <td class="text-right">{{ number_format($item['contributed_after']/bcpow(10,18),2) }} ETH</td>
+                                <td class="text-right">{{ number_format($item['estimated_commission']/bcpow(10,18),2) }} BDG</td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+                @endif
                 <h2 id="term-stats">
                     @if($hasDate)
                         Statistics for {{ $date }}
@@ -143,12 +170,14 @@
                     </tr>
                     </thead>
                     <tbody>
+                    @php($maxContribution = $filteredTxns->max('value'))
+                    @php($maxContribution = $maxContribution = $maxContribution > 300 * bcpow(10,18) ? 300 * bcpow(10,18) : $maxContribution)
                     @foreach($filteredTxns->reverse() as $tx)
                         <tr style="font-size: 1.4rem">
                             <td title="{{ date('Y-m-d H:i:s', $tx->timeStamp) }}">{{ Carbon\Carbon::createFromTimestamp($tx->timeStamp)->diffForHumans() }}</td>
                             <td><code><a target="_blank" href="https://etherscan.io/tx/{{ $tx->hash }}">{{ substr($tx->hash,0,32) }}...</a></code></td>
                             <td><code><a target="_blank" href="https://etherscan.io/address/{{ $tx->from }}">{{ $tx->from }}</a></code></td>
-                            <td class="text-right">{{ number_format($tx->value / bcpow(10,18), 4) }} ETH</td>
+                            <td style="background-color: rgba(52,222,131, {{ $tx->value/$maxContribution }})" class="text-right">{{ number_format($tx->value / bcpow(10,18), 4) }} ETH</td>
                             <td>{{ $tx->country }}</td>
                             <td>
                                 @if($tx->user)
