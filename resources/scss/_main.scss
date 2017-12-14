@@ -983,6 +983,16 @@ form .notice {
   }
 }
 
+body.landing.front-page.lang-CN{
+  .twitter-feed-col {
+    display:none;
+  }
+  .medium-feed-col{
+    float:none;
+    margin:0 auto;
+  }
+}
+
 
 /*MVP Page*/
 

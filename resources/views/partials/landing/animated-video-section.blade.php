@@ -9,7 +9,11 @@
         <div class="row">
             <div class="col-xs-12 col-md-12 text-center">
                 <div class="video-block">
-                    <iframe width="820" height="461" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    @if($currentLanguage == "cn")
+                        <iframe width="820" height="461" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    @else
+                        <iframe width="820" height="461" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    @endif
                 </div>
             </div>
             <div class="col-xs-12 animated-video-desc">
