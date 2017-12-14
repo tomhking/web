@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\User;
+use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -86,5 +88,45 @@ class UpdateIcoTxns extends Command
         $this->line('Transactions updated.');
 
         cache()->forever('ico-txns', $txns);
+
+        $affiliates = User::withWallet()->whereNotNull('affiliate_id')->get()->groupBy('affiliate_id')->map(function($users, $affiliateId) use ($txns) {
+            $contributed = 0;
+            $contributedAfter = 0;
+
+            $users = $users->map(function ($user) use ($txns, &$contributed, &$contributedAfter) {
+                $userTxns = $txns->where('from', '=', $user->wallet);
+                $user->contributed = $user->wallet ? $userTxns->sum('value'): 0;
+                $user->contributed_after = $user->wallet && $user->wallet_updated_at instanceof Carbon ? $userTxns->where('timeStamp','>', $user->wallet_updated_at->timestamp)->sum('value'): 0;
+                $contributed = bcadd($contributed, $user->contributed);
+                $contributedAfter = bcadd($contributedAfter, $user->contributed_after);
+                return $user;
+            });
+
+            $this->line("Iterating through affiliate ".$affiliateId." (".$users->count()." referrals)");
+
+            return [
+                'affiliate' => null,
+                'users' => $users,
+                'contributed' => $contributed,
+                'contributed_after' => $contributedAfter,
+                'estimated_commission' => $contributedAfter * 0.05 * 10000,
+            ];
+        })->sort(function($a, $b) {
+            if($b['contributed_after'] > 0 || $a['contributed_after'] > 0) {
+                return bccomp($b['contributed_after'],$a['contributed_after']);
+            }
+            return bccomp($b['contributed'],$a['contributed']);
+        })->slice(0,10);
+
+        User::whereIn('id', $affiliates->keys())->get()->each(function($affiliate) use ($affiliates) {
+            $referralData = $affiliates->get($affiliate->id);
+            $referralData['affiliate'] = $affiliate;
+            $affiliates->put($affiliate->id, $referralData);
+        });
+
+
+        $this->line('Affiliates updated.');
+
+        cache()->forever('ico-affiliates', $affiliates);
     }
 }

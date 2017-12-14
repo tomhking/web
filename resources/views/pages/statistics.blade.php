@@ -47,7 +47,7 @@
                     </tbody>
                     </table>
                 </div>
-                @if(false)
+
                 <h2>Top Affiliates</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -56,7 +56,7 @@
                             <th>Affiliate</th>
                             <th class="text-right">Referrals</th>
                             <th class="text-right">Referral Contributions</th>
-                            <th class="text-right">Credible Referral Contributions</th>
+                            <th class="text-right">Confirmed Contributions</th>
                             <th>Estimated Commission</th>
                         </tr>
                         </thead>
@@ -73,7 +73,7 @@
                         </tbody>
                     </table>
                 </div>
-                @endif
+
                 <h2 id="term-stats">
                     @if($hasDate)
                         Statistics for {{ $date }}
