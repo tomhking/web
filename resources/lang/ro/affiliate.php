@@ -20,5 +20,5 @@ return array (
   '1-referral' => '1 referral',
   'n-referrals' => ':number referrali',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree: De la co-fondatorul EA, fostul conducător al COURSERA & 29,000,000 utilizatori. Reducere limitată de 10% - obține token-uri!',
+  'banner-alt' => 'BitDegree: De la co-fondatorul EA, fostul conducător al COURSERA & 29,000,000 utilizatori. Reducere limitată de 5% - obține token-uri!',
 );

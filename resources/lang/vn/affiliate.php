@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 referral',
   'n-referrals' => ':number referrals',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree:Từ là nhà đồng sáng lập EA, thành viên chính của COURSERA Lead & 29,000,000 người dùng. Giới hạn giảm 10% - Nhận Tokens!',
+  'banner-alt' => 'BitDegree:Từ là nhà đồng sáng lập EA, thành viên chính của COURSERA Lead & 29,000,000 người dùng. Giới hạn giảm 5% - Nhận Tokens!',
 );

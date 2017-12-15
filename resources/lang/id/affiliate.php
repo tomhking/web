@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 referral',
   'n-referrals' => ':number referral',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree:Mulai dari EA co-founder, mantan Direktur COURSERA, sampai 29,000,000 pengguna. Diskon 10% terbatas - Segera Dapatkan Token!',
+  'banner-alt' => 'BitDegree:Mulai dari EA co-founder, mantan Direktur COURSERA, sampai 29,000,000 pengguna. Diskon 5% terbatas - Segera Dapatkan Token!',
 );
