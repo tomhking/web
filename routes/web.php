@@ -28,6 +28,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
         Route::get('/airdrop', 'ContentController@home')->name('airdrop');
         Route::get('/mvp', 'ContentController@mvp')->name('mvp');
         Route::get('/faq', 'ContentController@faq')->name('faq');
+        Route::get('/ico.json', 'ContentController@icoData')->name('ico-data');
         Route::get('/aff/{id}', 'UserController@setAffiliateCookie')->name('affiliate-cookie');
 
         // User area

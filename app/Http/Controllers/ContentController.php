@@ -10,6 +10,8 @@ use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
 
 class ContentController extends Controller
 {
+    private $icoData = [];
+
     /**
      * Create a new controller instance.
      *
@@ -29,6 +31,7 @@ class ContentController extends Controller
         $milestoneRemaining = bcsub($milestoneStep, $milestoneCompleted);
         $milestoneProgress = ($milestoneCompleted / $milestoneStep) * 100;
         $nextMilestone = bcadd($tokensSold, $milestoneRemaining);
+        $currentMilestone = bcsub($nextMilestone, $milestoneStep);
 
         $currentBonus = false;
 
@@ -43,19 +46,23 @@ class ContentController extends Controller
 
         $progress = $softCapPart + (100-$softCapPart) * ($tokensSold / $hardCap);
 
-        view()->share([
+        view()->share($this->icoData = [
             'softCap' => $softCap,
             'hardCap' => $hardCap,
             'softCapReached' => $tokensSold >= $softCap,
             'progressSoftCap' => $tokensSold <= $softCap ? ($tokensSold / $softCap) * 100 : 100,
             'progress' => $progress,
-            'tokensSold' => $tokensSold,
+            'tokensSold' => (int) $tokensSold,
+            'tokensSoldFormatted' => number_format($tokensSold),
             'currentBonus' => $currentBonus,
             'canGetFreeTokens' => false,
 
             'softCapPart' => $softCapPart,
             'milestoneProgress' => $milestoneProgress,
-            'nextMilestone' => $nextMilestone,
+            'nextMilestone' => (int) $nextMilestone,
+            'nextMilestoneFormatted' => bcdiv($nextMilestone, $milestoneStep).'M',
+            'currentMilestone' => (int) $currentMilestone,
+            'currentMilestoneFormatted' => bcdiv($currentMilestone, $milestoneStep).'M',
         ]);
     }
 
@@ -82,6 +89,15 @@ class ContentController extends Controller
             session()->put('airdrop', 10);
         }
         return redirect()->route('home');
+    }
+
+    /**
+     * Returns ICO details in JSON
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function icoData()
+    {
+        return response()->json($this->icoData);
     }
 
     /**

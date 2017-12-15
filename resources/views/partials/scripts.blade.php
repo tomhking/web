@@ -50,6 +50,23 @@
                 $('.time-left-days', context).text(days);
             }
         });
+
+        var lastPoll = Date.now(), pollingInterval = 1000 * 60;
+
+        setInterval(function () {
+            if(lastPoll <  Date.now() - pollingInterval) {
+                lastPoll = Date.now();
+            } else {
+                return;
+            }
+
+            $.getJSON('/en/token/ico.json').then(function (data) {
+                $('[data-ico-main-slider]').css({width: data.progress + '%'});
+                $('[data-ico-milestone-slider]').css({width: data.milestoneProgress + '%'});
+                $('[data-ico-tokens-sold]').text(data.tokensSoldFormatted);
+                $('[data-ico-milestone]').text(data.currentMilestoneFormatted);
+            });
+        }, pollingInterval + 1000);
     });
 </script>
 
