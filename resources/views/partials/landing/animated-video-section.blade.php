@@ -10,7 +10,7 @@
             <div class="col-xs-12 col-md-12 text-center">
                 <div class="video-block">
                     @if($currentLanguage == "cn")
-                        <iframe width="820" height="461" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                        <iframe height=461 width=820 src='http://player.youku.com/embed/XMzIzMTcxMjE1Ng==' frameborder=0 'allowfullscreen'></iframe>
                     @else
                         <iframe width="820" height="461" src="https://www.youtube.com/embed/RuckLtuInNY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                     @endif
