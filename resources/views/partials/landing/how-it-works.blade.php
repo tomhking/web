@@ -11,9 +11,6 @@
                         <img src="{{ asset_rev('token-economy.jpg') }}" alt="@lang('home.economy_image_alt')">
                     @endif
                 </div>
-                <h4 class="title">BITDEGREE TOKEN ECONOMY PROTOTYPE</h4>
-                <a href="{{ asset_rev('prototype-token-economy.jpg') }}" target="_blank"><img style="height: 250px;" src="{{ asset_rev('token-economy-prototype-thumbnail2.jpg') }}" alt="@lang('home.economy_image_alt')"></a>
-
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="title-container">

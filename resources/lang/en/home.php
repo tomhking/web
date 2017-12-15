@@ -101,7 +101,7 @@ return [
     'mvp-c2a-2' => 'START LEARNING (MVP)',
     'backed-by-headline' => 'TOKEN IS BACKED BY REAL COMPANY',
     'backed-by-alt' => 'Token backed by Hostinger',
-    'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> will accept BDG tokens in exchange of its services.<br>The exchange rate is 100% fixed to crowdsale price for first year: 1 BDG = 0.03 USD - the rate you paid during crowdsale. This is a guarantee that your tokens will be exchangeable in equivalent to Hostinger services to the fixed price.',
+    'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a>  will accept BDG tokens in exchange of its services. The exchange rate is fixed for the first year. According to ETH price on 5 biggest crypto exchanges (Bitfinex, Bithumb, GDAX, Poloniex, Bittrex), BDG exchange rate to Hostinger services will be fixed at crowdsale end moment. As an example on that moment: 10 000 BDG = 1 ETH = XXX USD - this is the rate was paid during last minute of crowdsale and the value that will be exchanged on Hostinger. This is a guarantee that your tokens will be exchangeable in equivalent to Hostinger services to the fixed price.',
     'backed-by-read-more' => 'Read more here',
     'read-more' => 'Read more',
     'other-tokenlot' => 'all other - via <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank" rel="nofollow">Tokenlot</a>',
