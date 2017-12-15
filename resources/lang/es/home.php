@@ -53,7 +53,7 @@ return array (
   'mvp-c2a' => 'COMIENZA A APRENDER',
   'backed-by-headline' => 'LOS TOKEN ESTÁN RESPALDADO POR',
   'backed-by-alt' => 'Token respaldado por Hostinger',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> aceptará tokens BDG a cambio de sus servicios.<br>El tasa de cambio es 100% fijo al precio de crowdsale para el primer año: 1 BDG = 0.04 USD - la tasa de pago durante crowdsale. Esta es una garantía de que sus tokens serán intercambiables en equivalentes a los servicios de Hostinger al precio fijo.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> aceptará tokens BDG a cambio de sus servicios.<br>El tasa de cambio es 100% fijo al precio de crowdsale para el primer año: 1 BDG = 0.03 USD - la tasa de pago durante crowdsale. Esta es una garantía de que sus tokens serán intercambiables en equivalentes a los servicios de Hostinger al precio fijo.',
   'backed-by-read-more' => 'Leer más aquí',
   'read-more' => 'Leer más',
   'other-tokenlot' => 'todo lo demás - a través de Tokenlot',

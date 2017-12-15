@@ -54,7 +54,7 @@ return array (
   'mvp-c2a' => 'PELAJARI SEKARANG',
   'backed-by-headline' => 'TOKEN DIDUKUNG OLEH',
   'backed-by-alt' => 'Token didukung oleh Hostinger',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> bersedia menerima token BDG untu ditukar dengan layanannya.<br>Nilai tukar adalah 100% sesuai dengan harga crowdsale untuk tahun pertama: 1 BDG = 0.04 USD - jumlah yang Anda bayarkan selama crowdsale. Hal ini menjamin bahwa token Anda memiliki nilai tukar yang sama dengan harga layanan dari Hostinger sesuai harga yang telah ditetapkan.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> bersedia menerima token BDG untu ditukar dengan layanannya.<br>Nilai tukar adalah 100% sesuai dengan harga crowdsale untuk tahun pertama: 1 BDG = 0.03 USD - jumlah yang Anda bayarkan selama crowdsale. Hal ini menjamin bahwa token Anda memiliki nilai tukar yang sama dengan harga layanan dari Hostinger sesuai harga yang telah ditetapkan.',
   'backed-by-read-more' => 'Baca selengkapnya di sini',
   'read-more' => 'Baca selengkapnya',
   'other-tokenlot' => 'lainnya - melalui Tokenlot',

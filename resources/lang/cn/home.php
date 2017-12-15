@@ -22,7 +22,7 @@ return array (
   'mvp-c2a' => '开始学习',
   'backed-by-headline' => '货币支持者',
   'backed-by-alt' => '货币由Hostinger支持',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> 将接受BDG代币换取其服务.<br>第一年的汇率为100&: 1 BDG = 0.04 USD - 你在众筹期间支付的费用. 保证您将能够享受相当于Hostinger服务交换到固定价格.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> 将接受BDG代币换取其服务.<br>第一年的汇率为100&: 1 BDG = 0.03 USD - 你在众筹期间支付的费用. 保证您将能够享受相当于Hostinger服务交换到固定价格.',
   'backed-by-read-more' => '这里阅读更多',
   'read-more' => '阅读更多',
   'other-tokenlot' => '所有其他 - 通过 Tokenlot',

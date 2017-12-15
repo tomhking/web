@@ -58,7 +58,7 @@ return array (
   'mvp-c2a' => '학습을 시작해 보세요',
   'backed-by-headline' => 'TOKEN IS BACKED BY(토큰은 다음과 같은 이점을 제공)',
   'backed-by-alt' => '호스팅거로부터 지원된 토큰',
-  'backed-by-description' => '서비스에 대한 대가로 <a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> 는 BDG토큰을 받아들일 것이다.<br>첫환율은 1년 전의 크라우드세일가격에 100%고정되어 있다: 1 BDG = 0.04 USD -당신이 크라우드세일때 지불한 환율이다. 이것은 귀하의 토큰이 Hostinger서비스와 동등한 가격으로 교환될 것임을 보증하는 것입니다.',
+  'backed-by-description' => '서비스에 대한 대가로 <a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> 는 BDG토큰을 받아들일 것이다.<br>첫환율은 1년 전의 크라우드세일가격에 100%고정되어 있다: 1 BDG = 0.03 USD -당신이 크라우드세일때 지불한 환율이다. 이것은 귀하의 토큰이 Hostinger서비스와 동등한 가격으로 교환될 것임을 보증하는 것입니다.',
   'backed-by-read-more' => '이 곳에서 더 읽으세요.',
   'read-more' => '더 읽으세요.',
   'other-tokenlot' => '다른 모든 것들 - 토큰랏을 통해',

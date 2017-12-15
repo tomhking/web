@@ -53,7 +53,7 @@ return array (
   'mvp-c2a' => 'COMECE A APRENDER',
   'backed-by-headline' => 'TOKEN É REALIZADO POR',
   'backed-by-alt' => 'Token é realizado pela Hostinger.',
-  'backed-by-description' => 'A <a href="https://hostinger.com.br" rel="nofollow" target="_blank">Hostinger</a> aceita tokens BDG em troca de seus serviços .<br> A taxa de câmbio é 100% fixada no preço do crowdsale no primeiro ano: 1 BDG = 0.04 USD - A taxa que você pagou durante o crowdsale. Está é uma garantia de que seus Tokens que serão trocados por serviços equivalentes na Hostinger a preço fixo.',
+  'backed-by-description' => 'A <a href="https://hostinger.com.br" rel="nofollow" target="_blank">Hostinger</a> aceita tokens BDG em troca de seus serviços .<br> A taxa de câmbio é 100% fixada no preço do crowdsale no primeiro ano: 1 BDG = 0.03 USD - A taxa que você pagou durante o crowdsale. Está é uma garantia de que seus Tokens que serão trocados por serviços equivalentes na Hostinger a preço fixo.',
   'backed-by-read-more' => 'Leia mais aqui',
   'read-more' => 'Leia mais',
   'other-tokenlot' => 'Todos outros - via lote Token',

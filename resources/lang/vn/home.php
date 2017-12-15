@@ -55,7 +55,7 @@ return array (
   'mvp-c2a' => 'BẮT ĐẦU HỌC',
   'backed-by-headline' => 'TOKEN ĐƯỢC HỖ TRỢ BỞI',
   'backed-by-alt' => 'Token được hỗ trợ bởi Hostinger',
-  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> sẽ chấp nhận BDG tokens để mua dịch vụ của họ.<br>Tỉ lệ chuyển đổi là 100% cố định từ đợt bán trong năm đầu tiên: 1 BDG = 0.04 USD - tỉ giá bạn dùng để thanh toán qua đợt crowdsale. Việc này để đảm bảo tokens của bạn có thể đổi sang dùng dịch vụ tương đươn gcủa Hostinger với một giá cố định.',
+  'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a> sẽ chấp nhận BDG tokens để mua dịch vụ của họ.<br>Tỉ lệ chuyển đổi là 100% cố định từ đợt bán trong năm đầu tiên: 1 BDG = 0.03 USD - tỉ giá bạn dùng để thanh toán qua đợt crowdsale. Việc này để đảm bảo tokens của bạn có thể đổi sang dùng dịch vụ tương đươn gcủa Hostinger với một giá cố định.',
   'backed-by-read-more' => 'Tìm hiểu thêm tại đây',
   'read-more' => 'Đọc thêm',
   'other-tokenlot' => 'những cái khác - qua Tokenlot',
