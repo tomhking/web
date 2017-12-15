@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-xs-4 col-sm-3 text-center">
                         <div class="partner-logo">
-                             <a href="https://www.tokenlot.com/" rel="nofollow" target="_blank"><img src="{{ asset_rev('partners/tokenlot-2.png') }}" alt="Our partners Tokenlot"></a>
+                             <a href="https://www.tokenlot.com/crowdsale/bitdegree/" rel="nofollow" target="_blank"><img src="{{ asset_rev('partners/tokenlot-2.png') }}" alt="Our partners Tokenlot"></a>
                         </div>
                 </div>
             </div>

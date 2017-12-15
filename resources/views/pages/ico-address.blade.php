@@ -238,8 +238,22 @@
 
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
-                                <div class="well">
-                                <p>@lang('ico.notice', ['commaSeparatedWalletList' => '<a href="'.route('participate').'" style="color:#fff; text-decoration: underline;">MyEtherWallet, MetaMask, Mist, Tokenlot</a>'])</p>
+                            <div class="well">
+                            <p>@lang('ico.notice', ['commaSeparatedWalletList' => '<a href="'.route('participate').'" style="color:#fff; text-decoration: underline;">MyEtherWallet, MetaMask, Mist, Tokenlot</a>'])</p>
+                                <div class="modal fade" id="howToModal" tabindex="-1" role="dialog" aria-labelledby="howToModal" aria-hidden="true">
+                                    <div class="modal-dialog modal-how-to-buy" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                               <img src="{{ asset_rev('how-to-buy-bdg.jpg') }}" alt="Our partners Tokenlot">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -248,7 +262,7 @@
                         <div class="col-xs-12 col-md-10 col-md-offset-1 buttons">
                             <div class="content dashboard-buttons">
                                 <div class="left text-left">
-                                    <a class="how-to-participate" href="{{ route('participate') }}">@lang('ico.how-to')</a>
+                                    <a class="how-to-participate" href="{{ route('participate') }}">@lang('ico.how-to2')</a>
                                 </div>
                                 <div class="right text-right">
                                     <div class="cta">

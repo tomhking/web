@@ -2350,6 +2350,27 @@ body.login-page {
     padding-top: 80px;
   }
   &.get-tokens{
+    button.modal-text-link {
+      background: none;
+      border: 0;
+      cursor:pointer;
+      margin-left:-8px;
+      &:hover{
+        background: rgba(255,255,255,0.1);
+      }
+    }
+    .modal-dialog.modal-how-to-buy {
+      width: 800px !important;
+      max-width: 100% !important;
+      -webkit-transform: translate(0, 5%) !important;
+      -ms-transform: translate(0, 5%) !important;
+      -o-transform: translate(0, 5%) !important;
+      transform: translate(0, 5%) !important;
+      img {
+        margin-bottom: 15px;
+        max-width: 100%;
+      }
+    }
     .commission-announcement{
       background:#7b3fff;
       padding:15px;
