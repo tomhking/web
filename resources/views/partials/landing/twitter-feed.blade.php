@@ -17,6 +17,10 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
+                            <li><a href="https://blog.bitdegree.org/ico-hall-of-famers-ethos-to-create-introduction-to-crypto-and-cryptocurrencies-course-cde6315b20a9" rel="nofollow" target="_blank"><b>ICO “Hall of Famers” Ethos to create “Introduction to crypto and cryptocurrencies” course for BitDegree</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/heres-3-reasons-why-you-should-hold-on-to-your-bitdegree-tokens-50ba0275f6c4" rel="nofollow" target="_blank"><b>Here’s 3 reasons why you should hold on to your BitDegree tokens!</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/why-you-should-not-miss-to-contribute-your-bdg-tokens-this-week-67878a9afe1b" rel="nofollow" target="_blank"><b>Why you should not miss to contribute your BDG tokens this week?</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/more-than-73-million-bdg-tokens-distributed-moontec-2017-winners-weekly-roundup-a008dc23acad" rel="nofollow" target="_blank"><b>More Than 73 Million BDG Tokens Distributed, Moontec 2017 Winners</b> | Weekly Roundup</a></li>
                             <li><a href="https://blog.bitdegree.org/very-important-set-these-parameters-to-be-sure-your-transaction-is-completed-in-time-c0d354e0c86f" rel="nofollow" target="_blank"><b>Very important: set these parameters to be sure your transaction is completed in time</b></a></li>
                             <li><a href="https://blog.bitdegree.org/q-a-with-arnas-stuopelis-hostinger-ceo-and-bitdegree-co-founder-cf362d04f160" rel="nofollow" target="_blank"><b>Q&A with Arnas Stuopelis, Hostinger CEO and BitDegree co-founder</b></a></li>
                             <li><a href="https://blog.bitdegree.org/dont-miss-out-claim-a-15-bonus-on-your-bitdegree-tokens-today-52dee808608" rel="nofollow" target="_blank"><b>Don’t miss out — claim a 15% bonus on your BitDegree tokens today!</b></a></li>
