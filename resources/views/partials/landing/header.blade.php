@@ -168,14 +168,14 @@
                                                     <span>3. Hard Cap: {{ number_format($hardCap) }} BDG</span>
                                                     <span class="marker"></span>
                                                 </div>
-                                                <div style="width: {{ $progress }}%;" class="slider"></div>
+                                                <div data-ico-main-slider style="width: {{ $progress }}%;" class="slider"></div>
                                             </div>
                                             <div class="slider-container milestone-slider">
                                                 <div class="milestone annotation">
                                                     <span class="marker"></span>
                                                     <span class="marker marker-front"></span>
                                                 </div>
-                                                <div class="slider" style="width: {{ $milestoneProgress }}%;">
+                                                <div data-ico-milestone-slider class="slider" style="width: {{ $milestoneProgress }}%;">
                                                     <div class="pulse"></div>
                                                 </div>
                                             </div>
@@ -184,9 +184,9 @@
                                         <div class="progress-values">
                                             @php($milestoneInMillions = bcdiv($nextMilestone, bcpow(10,6))-1)
                                             @php($hardCapInMillions = bcdiv($hardCap, bcpow(10,6)))
-                                            <div class="stage">Stage: {{ $milestoneInMillions }}M of {{ $hardCapInMillions }}M</div>
+                                            <div class="stage">Stage: <span data-ico-milestone>{{ $milestoneInMillions }}M</span> of {{ $hardCapInMillions }}M</div>
                                             <div class="main-progress">
-                                                Progress: <strong>{{ number_format($tokensSold) }}</strong> BDG
+                                                Progress: <strong data-ico-tokens-sold>{{ number_format($tokensSold) }}</strong> BDG
                                             </div>
                                         </div>
 

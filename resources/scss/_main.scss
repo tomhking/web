@@ -1761,6 +1761,7 @@ h2.current-amount {
       left: 0;
       position: absolute;
       z-index: 10;
+      transition: width ease 800ms;
     }
     &.main-slider {
       .slider {
@@ -1841,6 +1842,7 @@ h2.current-amount {
       height: 20px;
       background: rgba(52, 52, 52, 0.7);
       .slider {
+        transition: width ease 800ms;
         background: #fc0606;
         background: -moz-linear-gradient(top, #fc0606 0%, #c50303 100%);
         background: -webkit-linear-gradient(top, #fc0606 0%,#c50303 100%);
