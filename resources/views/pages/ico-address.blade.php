@@ -10,6 +10,7 @@
                 <li class="step-active"><a href="{{ route('address') }}">@lang('ico.step', ['number' => 2])</a></li>
                 <li class="step-other"><a href="{{ route('details') }}"><span>@lang('ico.other')</span></a></li>
             </ul>
+            <a style="color:rgba(255, 255, 255, 0.6); font-weight:300; display:block; font-size:14px; margin-top:45px;" href="{{ route('participate5') }}">How to check my BDG tokens?</a>
             <div class="how-to-btn">
                 <a class="how-to-participate" href="{{ route('participate') }}">@lang('ico.how-to')</a>
             </div>
@@ -79,15 +80,13 @@
                     <div class="row">
                         <div class="col-xs-12 col-md-10 col-md-offset-1">
                             @if($currentBonus)
-                                <div class="crowdsale-info-table text-center">
+                                <div class="row crowdsale-info-table text-center">
                                     <div class="col-xs-12 col-sm-3 col-md-3">
                                             <div class="bonuses-modal">
-
                                                 <div class="week-bonus" data-toggle="modal" data-target="#BonusModal">
                                                     <h4>@lang($currentBonus['name'])</h4>
                                                     <p>{{ ($currentBonus['bonus']-1) * 100 }}%</p>
                                                 </div>
-
                                                 <div class="modal fade" role="dialog" id="BonusModal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                                     <div class="modal-dialog" role="document">
                                                         <div class="modal-content">
@@ -102,7 +101,7 @@
                                                                 <div class="bonuses-table">
                                                                     <table>
                                                                         <tbody>
-                                                                        <tr>
+                                                                        <tr class="sold-out">
                                                                             <td>
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
@@ -112,7 +111,7 @@
                                                                             <td>@lang('ico.week-num', ['number' => 1])</td>
                                                                             <td>@lang('ico.bonus-percent', ['amount' => 15])</td>
                                                                             <td>
-
+                                                                                <span class="tokens-left" style="color:#fff!important;">SOLD OUT!</span>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -124,7 +123,7 @@
                                                                             <td>@lang('ico.week-num', ['number' => 2])</td>
                                                                             <td>@lang('ico.bonus-percent', ['amount' => 10])</td>
                                                                             <td>
-
+                                                                                <span class="tokens-left">Available now!</span>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -155,21 +154,18 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3">
                                         <h4>@lang('ico.rate-with-bonus')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
-
                                     <div class="col-xs-12 col-sm-3 col-md-3">
                                         <div class="bonuses-modal">
-                                            <div class="" data-toggle="modal" data-target="#Gas1Modal">
+                                            <div class="" data-toggle="modal" data-target="#Gas3Modal">
                                                 <h4>@lang('ico.gas-limit') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
                                             </div>
-
-                                            <div class="modal fade" role="dialog" id="Gas1Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                            <div class="modal fade" role="dialog" id="Gas3Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
@@ -186,14 +182,32 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <p>200,000</p>
                                     </div>
 
                                     <div class="col-xs-12 col-sm-3 col-md-3 last">
-                                        <h4 style="display: inline-block;">@lang('ico.gas-price')</h4>
-                                        <div style="display: inline-block;" class="bonuses-modal">
+                                        <div class="bonuses-modal">
+                                            <div class="" data-toggle="modal" data-target="#Gas2Modal">
+                                                <h4>@lang('ico.gas-price') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
+                                            </div>
+                                            <div class="modal fade" role="dialog" id="Gas2Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            <div class="modal-title">
+                                                                <h2>GAS PRICE</h2>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <img src="{{ asset_rev('gas-limit2.png') }}" alt="Gas Lmit">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <p>100 GWEI</p>
                                     </div>
@@ -204,7 +218,7 @@
                                     </div>
                                 </div>
                             @else
-                                <div class="crowdsale-info-table text-center">
+                                <div class="row crowdsale-info-table text-center">
                                     <div class="col-xs-6 col-sm-6 col-md-6">
                                         <h4>@lang('ico.exchange-rate')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>

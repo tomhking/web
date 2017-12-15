@@ -19,7 +19,7 @@ return [
     'gas-price' => 'Gas Price',
     'exchange-rate' => 'Exchange rate',
     'ends-in' => 'Token sale ends in:',
-    'how-to' => 'How to participate?',
+    'how-to' => 'See all tutorials',
     'bdg' => 'BDG Token',
     'whats-next' => 'What\'s next?',
     'other' => 'Other',

@@ -2362,12 +2362,6 @@ body.login-page {
         margin-bottom:15px;
       }
     }
-    .modal-dialog {
-      -webkit-transform: translate(0, 50%)!important;
-      -ms-transform: translate(0, 50%)!important;
-      -o-transform: translate(0, 50%)!important;
-      transform: translate(0, 50%)!important;
-    }
     p{
       span.red{
         color:#ffbcbc;
@@ -2730,64 +2724,66 @@ body.login-page {
       .col-md-3.last{
         border-right: 0;
       }
-      .bonuses-modal{
-        .week-bonus {
-          cursor: pointer;
-          &:hover{
-            background: rgba(255,255,255,0.1);
-          }
+      .week-bonus {
+        cursor: pointer;
+        &:hover{
+          background: rgba(255,255,255,0.1);
         }
-        .modal-dialog{
-          width: 800px;
-          max-width: 100%;
-          .modal-body {
-            position: relative;
-            padding: 35px;
+      }
+      .modal-dialog{
+        width: 800px!important;
+        max-width: 100%!important;
+        -webkit-transform: translate(0, 5%) !important;
+        -ms-transform: translate(0, 5%) !important;
+        -o-transform: translate(0, 5%) !important;
+        transform: translate(0, 5%) !important;
+        .modal-body {
+          position: relative;
+          padding: 35px;
+        }
+        .modal-content{
+          padding-bottom: 35px;
+        }
+        .bonuses-table {
+          h4{
+            font-size:20px;
+            margin-bottom:35px;
           }
-          .modal-content{
-            padding-bottom: 35px;
+          tbody{
+            border-bottom: 1px solid #828282;
+            margin-bottom:35px;
           }
-          .bonuses-table {
-            h4{
-              font-size:20px;
-              margin-bottom:35px;
-            }
-            tbody{
-              border-bottom: 1px solid #828282;
-              margin-bottom:35px;
-            }
-            tr{
-              border-top: 1px solid #828282;
-              td{
-                color:#000;
-                font-weight: 600;
-                text-align:left;
-                img{
-                  -webkit-filter: invert(100%);
-                  filter: invert(100%);
-                  margin:0;
-                }
-                span.sold-out{
-                  color:#fff;
-                }
-              }
-              &.sold-out {
-                td::before {
-                  content: " ";
-                  position: absolute;
-                  left: 0;
-                  top: 50%;
-                  width: 100%;
-                  border-bottom: 1px solid #000;
-                }
-              }
-            }
-            h4 {
-              text-transform: uppercase;
+          tr{
+            border-top: 1px solid #828282;
+            td{
+              color:#000;
               font-weight: 600;
-              letter-spacing: 1px;
-              color:#000!important;
+              text-align:left;
+              img{
+                -webkit-filter: invert(100%);
+                filter: invert(100%);
+                margin:0;
+              }
+              span.sold-out{
+                color:#fff;
+              }
             }
+            &.sold-out {
+              td::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 100%;
+                border-bottom: 1px solid #000;
+              }
+            }
+          }
+          h4 {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color:#000!important;
           }
         }
       }

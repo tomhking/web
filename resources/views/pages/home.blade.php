@@ -7,6 +7,7 @@
     @include('partials.landing.twitter-feed')
     @include('partials.landing.starting-point')
     @include('partials.landing.animated-video-section')
+    @include('partials.landing.prototype-economy')
     @include('partials.landing.stats-moocs')
     @include('partials.landing.how-it-works-mvp-2')
     @include('partials.landing.stats-demand')
