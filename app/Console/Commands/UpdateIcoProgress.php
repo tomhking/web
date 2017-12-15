@@ -98,7 +98,7 @@ class UpdateIcoProgress extends Command
 
             $result = bcadd(bcmul(hexdec($digit), bcpow(16, $power++)), $result);
 
-            if($index == 0) {
+            if($index <= 0) {
                 break;
             }
         }
