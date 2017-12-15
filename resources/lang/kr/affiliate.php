@@ -20,5 +20,5 @@ return array (
   '1-referral' => '1 리퍼럴',
   'n-referrals' => ':number 리퍼럴',
   'banner' => '배너',
-  'banner-alt' => ' BitDegree: EA 공동 창업자, 전 COURSERA 사장, 그리고 29,000,000, 사용자들을 기반합니다. 10%의 한정된 할인- 토큰을 받으세요!',
+  'banner-alt' => ' BitDegree: EA 공동 창업자, 전 COURSERA 사장, 그리고 29,000,000, 사용자들을 기반합니다. 5%의 한정된 할인- 토큰을 받으세요!',
 );

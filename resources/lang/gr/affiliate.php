@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 αναφερόμενος',
   'n-referrals' => ':number αναφερόμενοι',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree: Από τον συνιδρυτή της EA , πρώην επικεφαλή COURSERA & 29,000,000 χρήστες. Περιορισμένο 10% έκπτωση - Αγόρασε Tokens!',
+  'banner-alt' => 'BitDegree: Από τον συνιδρυτή της EA , πρώην επικεφαλή COURSERA & 29,000,000 χρήστες. Περιορισμένο 5% έκπτωση - Αγόρασε Tokens!',
 );

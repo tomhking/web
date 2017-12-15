@@ -18,5 +18,5 @@ return array (
   '1-referral' => '1 referral',
   'n-referrals' => ':number referrals',
   'banner' => 'Banner',
-  'banner-alt' => 'BitDegree: Da EA co-fondatore, ex responsabile COURSERA & 29.000.000 di utenti. Sconto limitato del 10% - Ottieni i Token!',
+  'banner-alt' => 'BitDegree: Da EA co-fondatore, ex responsabile COURSERA & 29.000.000 di utenti. Sconto limitato del 5% - Ottieni i Token!',
 );
