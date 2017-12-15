@@ -10,17 +10,17 @@
             <div class="col-md-12">
                 <div class="row row-articles">
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://blog.bitdegree.org/guaranteed-value-return-for-bitdegree-token-holders-backed-by-hostinger-services-ac5a675b9528" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/backed-by.jpg') }}" alt="Token Backed by Hostinger services">
-                            <h4>Token Value Backed by Hostinger services</h4>
-                            <p class="article-date"><span>Nov 23, 2017</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/ico-hall-of-famers-ethos-to-create-introduction-to-crypto-and-cryptocurrencies-course-cde6315b20a9" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/ethos-partnership.jpg') }}" alt="Ethos will create Introduction to crypto and cryptocurrencies course">
+                            <h4>Ethos will create “Introduction to crypto and cryptocurrencies” course</h4>
+                            <p class="article-date"><span>Dec 15, 2017</span></p>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="http://coinwisdom.org/26117-bitdegree-teams-up-with-zcoin-to-develop-cryptography-course/" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/zcoin-partnership.jpg') }}" alt="BitDegree teams up with Zcoin to develop cryptography course">
-                            <h4>BitDegree teams up with Zcoin to develop cryptography course</h4>
-                            <p class="article-date"><span>Nov 12, 2017</span></p>
+                        <a class="article-thumbnail" href="https://blog.bitdegree.org/bitdegree-wins-moonrise-2017-blockchain-startup-competition-1c8b339450de" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/moonrise-win.jpg') }}" alt=">BitDegree WINS Moonrise 2017 blockchain startup competition!">
+                            <h4>BitDegree WINS Moonrise 2017 blockchain startup competition!</h4>
+                            <p class="article-date"><span>Dec 6, 2017</span></p>
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
@@ -62,10 +62,10 @@
                         </a>
                     </div>
                     <div class="col-xs-6 col-sm-6 col-md-3">
-                        <a class="article-thumbnail" href="https://blog.bitdegree.org/bitdegree-wins-moonrise-2017-blockchain-startup-competition-1c8b339450de" rel="nofollow" target="_blank">
-                            <img src="{{ asset_rev('media-posts/moonrise-win.jpg') }}" alt=">BitDegree WINS Moonrise 2017 blockchain startup competition!">
-                            <h4>BitDegree WINS Moonrise 2017 blockchain startup competition!</h4>
-                            <p class="article-date"><span>Dec 6, 2017</span></p>
+                        <a class="article-thumbnail" href="http://coinwisdom.org/26117-bitdegree-teams-up-with-zcoin-to-develop-cryptography-course/" rel="nofollow" target="_blank">
+                            <img src="{{ asset_rev('media-posts/zcoin-partnership.jpg') }}" alt="BitDegree teams up with Zcoin to develop cryptography course">
+                            <h4>BitDegree teams up with Zcoin to develop cryptography course</h4>
+                            <p class="article-date"><span>Nov 12, 2017</span></p>
                         </a>
                     </div>
             </div>
