@@ -42,7 +42,7 @@
                                             <select tabindex="3" name="country" id="input-country" class="form-control" required>
                                                 <option value="" disabled {{ empty(old('country', $user->country ?? $currentCountry)) ? "selected" : "" }}>@lang('user.please-select')</option>
                                                 @foreach($countries as $code => $name)
-                                                    <option value="{{ $code }}" {{ old('country', $user->country ?? $currentCountry) == $code ? "selected" : ""  }}>{{ $name }}</option>
+                                                    <option {{ in_array($code, $blacklistedCountries) ? "disabled" : "" }} value="{{ $code }}" {{ old('country', $user->country ?? $currentCountry) == $code ? "selected" : ""  }}>{{ $name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>

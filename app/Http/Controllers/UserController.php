@@ -169,12 +169,17 @@ class UserController extends Controller
     function showDetails(Request $request)
     {
         $currentCountry = false;
+        $blacklistedCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP'];
 
         try {
             $result = app()->make('geoip')->country($request->ip());
 
             if($result instanceof \GeoIp2\Model\Country) {
                 $currentCountry = $result->country->isoCode;
+
+                if(in_array($currentCountry, $blacklistedCountries)) {
+                    $currentCountry = false;
+                }
             }
         }catch (\GeoIp2\Exception\AddressNotFoundException $e) {
             //
@@ -184,6 +189,7 @@ class UserController extends Controller
             'user' => auth()->user(),
             'countries' => app()->make('countries'),
             'currentCountry' => $currentCountry,
+            'blacklistedCountries' => $blacklistedCountries,
         ]);
     }
 
