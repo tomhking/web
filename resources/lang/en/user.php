@@ -62,7 +62,7 @@ return [
     'signup-headline' => 'Sign Up To BitDegree',
     'login-subtitle' => 'Have an account, but no password? Just type in a new one below, or click "Forgot password".',
     'terms' => 'By signing up you agree with Bitdegree <a href=":termsLink" target="_blank">Terms of Service</a> and <a href=":privacyLink" target="_blank">Privacy Policy</a>.',
-    'terms-us' => 'Confirm thar you are not a United States citizen, resident or green card holder, or have a primary residence or domicile in the United States, including Puerto Rico, the U.S. Virgin Islands or any other territories of the United States and are not purchasing BitDegree tokens or signing on behalf of a United States citizen, resident or entity.',
+    'terms-us' => 'Confirm that you are not a United States citizen, resident or green card holder, or have a primary residence or domicile in the United States, including Puerto Rico, the U.S. Virgin Islands or any other territories of the United States and are not purchasing BitDegree tokens or signing on behalf of a United States citizen, resident or entity.',
     'verified-headline' => 'Email Verification',
     'verified-success' => 'Your email has been successfully verified.',
     'verified-failure' => 'The confirmation link is either incorrect or it had already expired. Please request a new one.',
