@@ -39,7 +39,7 @@
                  </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center login-cta cta"><button tabindex="5" type="submit" class="btn btn-primary">{{ config('ico.started') ? __('ico.join') : __('user.signup') }}</button></div>
+                    <div class="text-center login-cta signup-cta cta"><button tabindex="5" type="submit" class="btn btn-primary">{{ config('ico.started') ? __('ico.join') : __('user.signup') }}</button></div>
                 </div>
             </div>
             {!! csrf_field() !!}
