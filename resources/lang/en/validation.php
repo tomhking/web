@@ -114,6 +114,10 @@ return [
             'required' => 'You must agree with the Terms of Service in order to proceed.',
             'accepted' => 'You must agree with the Terms of Service in order to proceed.',
         ],
+        'agreement-us' => [
+            'required' => 'You must confirm that you are not a citizen of United States.',
+            'accepted' => 'You must confirm that you are not a citizen of United States.',
+        ],
         'wallet' => [
             'size' => 'The ETH address you\'ve provided does not appear to be valid',
         ]

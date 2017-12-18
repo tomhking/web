@@ -33,10 +33,13 @@
                         'privacyLink' => asset_rev('files/privacy-policy.pdf'),
                     ])</label>
                 </div>
-
+                <div class="agreement">
+                    <input tabindex="4" type="checkbox" id="agreeToTermsUs" name="agreement-us" {{ old('agreement-us', false) ? 'checked' : '' }} value="1">
+                    <label for="agreeToTermsUs">@lang('user.terms-us')</label>
+                 </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center login-cta cta"><button tabindex="4" type="submit" class="btn btn-primary">{{ config('ico.started') ? __('ico.join') : __('user.signup') }}</button></div>
+                    <div class="text-center login-cta signup-cta cta"><button tabindex="5" type="submit" class="btn btn-primary">{{ config('ico.started') ? __('ico.join') : __('user.signup') }}</button></div>
                 </div>
             </div>
             {!! csrf_field() !!}

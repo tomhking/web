@@ -2445,6 +2445,9 @@ body.login-page {
     }
     .login-cta.cta {
       margin-top: 12px;
+      &.signup-cta {
+        margin-top: 3rem;
+      }
     }
     .text-center.login-signup-link a {
       color:#fff;
