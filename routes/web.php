@@ -82,6 +82,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
     });
 
     Route::get('/course/{course}/lesson/{lesson}', 'ContentController@lesson')->name('lesson');
+    Route::get('/course/{course}/lesson/{lesson}/attachment/{attachment}/download', 'ContentController@lessonAttachmentDownload')->name('lesson-attachment');
     Route::get('/course/{course}', 'ContentController@course')->name('course');
     Route::get('/landing/course/{course}', 'ContentController@redirectLanding');
 });

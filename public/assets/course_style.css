@@ -179,14 +179,13 @@ div#sidebar {
 
 .back-arrow {
   float: left;
-  margin-right: 10px;
   font-size: 18px;
   display: inline-block;
   margin-top: 3px;
 }
 
 .current-lesson-title-content {
-  display: inline-block;
+  margin-left: 3rem;
 }
 
 .current-lesson span{

@@ -17,10 +17,18 @@
                 <div class="row row-logos sponsor-{{ $sponsor or 'default' }}">
                     @if(isset($sponsor) && $sponsor == 'nexchange')
                         <div class="col-xs-12 text-center">
-                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="NEXCHANGE"></a>
+                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="Ethos"></a>
                             <h4 class="title text-muted">
                                 <div>Exchange Cryptocurrencies</div>
                                 Simple. Secure. Transparent.
+                            </h4>
+                        </div>
+                    @elseif(isset($sponsor) && $sponsor == 'ethos')
+                        <div class="col-xs-12 text-center">
+                            <a href="https://www.ethos.io/" target="_blank"><img src="{{ asset_rev('partners/ethos.png') }}" alt="NEXCHANGE"></a>
+                            <h4 class="title text-muted">
+                                <div>The future is for everyone.</div>
+                                The people-powered cryptocurrency platform.
                             </h4>
                         </div>
                     @else
