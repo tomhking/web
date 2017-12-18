@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\ImportTranslationsFromCsv::class,
         \App\Console\Commands\UpdateIcoProgress::class,
         \App\Console\Commands\UpdateIcoTxns::class,
+        \App\Console\Commands\ExportContributorsForCountry::class,
     ];
 
     /**
