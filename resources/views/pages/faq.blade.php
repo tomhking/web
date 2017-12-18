@@ -226,7 +226,7 @@
                     </div>
                     <div id="9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="9">
                         <div class="panel-body">
-                            <p>Actual amount of token received for course completion will be decided depending on sponsor. Amount may vary on geo location, language and tutors.</p>
+                            <p>Actual amount of token received for course completion will be decided depending on sponsor. Amount may vary on geolocation, language and tutors.</p>
                         </div>
                     </div>
                 </div>
@@ -320,23 +320,7 @@
             <h4 class="title">Company</h4>
 
             <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab">
-
-                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#022" aria-expanded="false" aria-controls="022">
-                            <h3 class="panel-title">
-                                Is BitDegree legitimate, does BitDegree have any legal confirmation?
-                            </h3>
-                        </div>
-                    </div>
-                    <div id="022" class="panel-collapse collapse" role="tabpanel" aria-labelledby="022">
-                        <div class="panel-body">
-                            <p>Yes we are. The Central Bank of Lithuania recently acknowledged that BitDegree is operating fully within the frameworks of the Lithuanian and Eurozone legal system. <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" target="blank">Read more here.</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
+                  <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#01" aria-expanded="false" aria-controls="01">
@@ -474,7 +458,7 @@
                     </div>
                     <div id="002" class="panel-collapse collapse" role="tabpanel" aria-labelledby="002">
                         <div class="panel-body">
-                            <p>December 1st 2017. It will last for one month or until hard-cap is reached.</p>
+                            <p>December 1st. 2017, 14:00 UTC (16:00 GMT +2). It will last for one month or until hard-cap is reached.</p>
                         </div>
                     </div>
                 </div>
@@ -519,8 +503,8 @@
                     </div>
                     <div id="005" class="panel-collapse collapse" role="tabpanel" aria-labelledby="005">
                         <div class="panel-body">
-                            <p>ERC20 utility token built on top of Ethereum blockchain. BitDegree token as a mean of exchange can be used among users of the platform: Students, Sponsors, and third party Digital Service Providers. </p>
-                            <p>Token can be used to create smart-incentives for educational accomplishments, to purchase advertising and recruitment services, and various other digital services offered by third parties on the BitDegree platform. </p>
+                            <p>ERC20 utility token built on top of Ethereum blockchain. BitDegree token as a mean of exchange can be used among users of the platform: Students, Sponsors, and third party Digital Service Providers.</p>
+                            <p>Token can be used to create smart-incentives for educational accomplishments, to purchase advertising and recruitment services, and various other digital services offered by third parties on the BitDegree platform.</p>
                             <p>Sponsors are the main fuel for a sustainable BitDegree economy. The economic incentive for Sponsors to buy BitDegree tokens is to enhance employer branding and recruitment of tech talent.</p>
                         </div>
                     </div>
@@ -542,14 +526,10 @@
                                 <li>Token owner <b>does not</b> participate in any kind of revenue sharing.</li>
                                 <li>Token owner <b>does not</b> receive dividends of any kind.</li>
                                 <li>Tokens will not be bought back.</li>
+                                <li>There is <b>no expectation of profit from it.</b></li>
                             </ul>
                             <br>
-                            <p>BitDegree token passes <a href="http://consumer.findlaw.com/securities-law/what-is-the-howey-test.html" target="_blank">Howey test</a>. Answering these questions:</p>
-                            <p>It is an investment of money: No<br>
-                                There is an expectation of profits from the investment: No<br>
-                                The investment of money is in a common enterprise: No<br>
-                                Any profit comes from the efforts of a promoter or third party: No<br>
-                            </p>
+                            <p>BitDegree token passes <a href="http://consumer.findlaw.com/securities-law/what-is-the-howey-test.html" target="_blank">Howey test</a>, because besides other conditions there is no expectation of profit from it.</p>
                         </div>
                     </div>
                 </div>
@@ -595,6 +575,7 @@
                     </div>
                     <div id="009" class="panel-collapse collapse" role="tabpanel" aria-labelledby="009">
                         <div class="panel-body">
+                            <p>In order to spread usability and accessibility of BitDegree platform there is a plan to list token at Exchanges. We will share any announcements when things are ready and can be shared.</p>
                             <p>We have received requests from 2 Exchanges to list BitDegree token. In general all crypto currency exchanges are able to add ERC20 tokens to their trading platform. This is the information we can provide right now. More information about exchanges will be provided after the crowdsale.</p>
                         </div>
                     </div>
@@ -611,12 +592,12 @@
                     </div>
                     <div id="0091" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0091">
                         <div class="panel-body">
-                            <p>BDG tokens will be tradable in 2 weeks after the crowdsale ends. All exchanges will be publicly named in the period after crowdsale.</p>
+                            <p> In order to spread usability and accessibility of BitDegree platform there is a plan to list token at Exchanges. We will share any announcements when things are ready and can be shared. No ETA on this.</p>
                         </div>
                     </div>
                 </div>
 
-                 <div class="panel panel-default">
+                <div class="panel panel-default">
                     <div class="panel-heading" role="tab">
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#010" aria-expanded="false" aria-controls="010">
@@ -819,7 +800,7 @@
                     </div>
                     <div id="0184" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0184">
                         <div class="panel-body">
-                            <p>All unsold BitDegree tokens (BDG) will be put in a reserve fund. Reserve fund tokens will be locked for 1 year although they could be used for utility purposes right away. All unsold BitDegree tokens (BDG) will be put in a reserve fund. Reserve fund tokens will be locked for 1 year although they could be used for utility purposes right away. This will stimulate strategic buyers to buy our tokens, but not speculative ones. Tokens will be held according to our pledge.</p>
+                            <p>All unsold BitDegree tokens (BDG) will be put in a reserve fund. Reserve fund tokens will be locked for 1 year although they could be used for utility purposes right away. This will stimulate strategic buyers to buy our tokens, but not speculative ones. Tokens will be held according to our pledge.</p>
                         </div>
                     </div>
                 </div>
@@ -855,9 +836,104 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <br>
+            <h4 class="title">Legal</h4>
+            <div class="panel-group faq-block" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
 
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#022" aria-expanded="false" aria-controls="022">
+                            <h3 class="panel-title">
+                                Is BitDegree legitimate, does BitDegree have any legal confirmation?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="022" class="panel-collapse collapse" role="tabpanel" aria-labelledby="022">
+                        <div class="panel-body">
+                            <p>Yes we are. The Central Bank of Lithuania recently acknowledged that BitDegree is operating fully within the frameworks of the Lithuanian and Eurozone legal system. <a href="https://blog.bitdegree.org/bank-of-lithuania-confirms-bitdegree-token-and-model-of-operation-is-fully-within-legal-frameworks-ad0cb8e335c2" target="blank">Read more here.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
 
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0092" aria-expanded="false" aria-controls="0092">
+                            <h3 class="panel-title">
+                                Can US citizens to participate on crowdsale?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0092" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0092">
+                        <div class="panel-body">
+                            <p>All US citizens, residents and tax payers are not allowed to participate on crowdsale.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0093" aria-expanded="false" aria-controls="0093">
+                            <h3 class="panel-title">
+                                Does this apply for Canadians and other countries? What happens if they don't want the refund?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0093" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0093">
+                        <div class="panel-body">
+                            <p>It applies just for US residents. For US residents there will be an opportunity of voluntarily refund, i.e. at their wish they will get an opportunity of refund or to hold tokens further. Please read more about it in <a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank">our blog</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0094" aria-expanded="false" aria-controls="0094">
+                            <h3 class="panel-title">
+                                But previously you said, that US citizens are allowed to participate in crowdsale. Why did you change your position?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0094" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0094">
+                        <div class="panel-body">
+                            <p>BitDegree token is fully utility token and has confirmation from regulator, but taking into account newest SEC practice and from that arising uncertainty, participation of US citizens or residents are no more allowed. Please read more about it in <a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank">our blog</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0095" aria-expanded="false" aria-controls="0095">
+                            <h3 class="panel-title">
+                                I’m US citizen and already participated on crowdsale, what shall I do now?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0095" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0095">
+                        <div class="panel-body">
+                            <p>You will get an e-mail regarding an opportunity of voluntarily refund, i.e. at your wish you will get an opportunity of refund or to hold tokens further. Please read more about it in <a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank">our blog</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0097" aria-expanded="false" aria-controls="0097">
+                            <h3 class="panel-title">
+                                Does BitDegree actions related with US citizens shows any violations?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0097" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0097">
+                        <div class="panel-body">
+                            <p>BitDegree token is fully utility token and has confirmation from regulator. So there is and there was not any violations, but taking into account newest SEC practice and from that arising uncertainty, participation of US citizens or residents are no more allowed. Please read more about it in  <a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank">our blog</a>.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <br>
