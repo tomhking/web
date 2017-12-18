@@ -106,19 +106,6 @@
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                            </td>
-                                                                            <td>@lang('ico.week-num', ['number' => 1])</td>
-                                                                            <td>@lang('ico.bonus-percent', ['amount' => 15])</td>
-                                                                            <td>
-                                                                                <span class="tokens-left" style="color:#fff!important;">SOLD OUT!</span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr class="sold-out">
-                                                                            <td>
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
                                                                             <td>@lang('ico.week-num', ['number' => 2])</td>
                                                                             <td>@lang('ico.bonus-percent', ['amount' => 10])</td>
