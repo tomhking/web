@@ -93,7 +93,7 @@ class ExportContributorsForCountry extends Command
 
                         if (in_array($currentCountry, $countries)) {
                             if ($pretend) {
-                                $this->line($user->id . ' ' . $user->email . ' included because user specified their IP resolved to ' . $userCountry);
+                                $this->line($user->id . ' ' . $user->email . ' included because user specified their IP resolved to ' . $currentCountry);
                             }
                             return true;
                         }
