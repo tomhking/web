@@ -781,10 +781,10 @@
                     </div>
                     <div id="0183" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0183">
                         <div class="panel-body">
-                            <p>If you have participated in the airdrop, you only needed to verify your email. To log in follow these steps:</p>
-                            <p>Press “Join BitDegree Now” and you will be prompted to a sign up page.</p>
-                            <p>Press Log In button below and fill in your email address and a new password. You are done.</p>
-                            <p> If you have any further issues press “Forgot password?” and you will receive an email.</p>
+                            <p>If you have participated in the airdrop, you only needed to verify your email. To log in follow these steps:<br>
+                            1. Press “Join BitDegree Now” and you will be prompted to a sign up page.<br>
+                            2. Press Log In button below and fill in your email address and a new password. You are done.<br>
+                            3. If you have any further issues press “Forgot password?” and you will receive an email.</p>
                         </div>
                     </div>
                 </div>
@@ -836,6 +836,55 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0212" aria-expanded="false" aria-controls="0212">
+                            <h3 class="panel-title">
+                                What is the difference between Einsteinium (another educoin surging post ICO) and Bitdegree?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0212" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0212">
+                        <div class="panel-body">
+                            <p>The Einsteinium Foundation exists to raise money to help fund cutting edge scientific projects. BitDegree is smart-incentive based online education platform which will revolutionize global education and tech recruiting.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0213" aria-expanded="false" aria-controls="0213">
+                            <h3 class="panel-title">
+                                Are you making KYC? Do i need KYC?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0213" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0213">
+                        <div class="panel-body">
+                            <p>Yes, of course. We kindly ask everyone to make our KYC. It will help us to develop sustainable platform, therefore with KYC you contribute to the development of a sustainable platform.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab">
+
+                        <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0214" aria-expanded="false" aria-controls="0214">
+                            <h3 class="panel-title">
+                                Will be there corrections of BDG prices regarding ETH price?
+                            </h3>
+                        </div>
+                    </div>
+                    <div id="0214" class="panel-collapse collapse" role="tabpanel" aria-labelledby="0214">
+                        <div class="panel-body">
+                            <p>BDG prices are automatically tied with ETH amount by smart contract, therefore in order to ensure maximal safety we cannot interrupt it.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <br>
