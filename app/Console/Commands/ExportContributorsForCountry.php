@@ -86,7 +86,7 @@ class ExportContributorsForCountry extends Command
             // Include users whose GEOIP matches requested countries
             if (!empty($user->ip)) {
                 try {
-                    $result = $geoIP->country($user->ip());
+                    $result = $geoIP->country($user->ip);
 
                     if ($result instanceof \GeoIp2\Model\Country) {
                         $currentCountry = $result->country->isoCode;
