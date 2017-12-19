@@ -794,7 +794,7 @@
 
                         <div class="collapsed faq-button" role="button" data-toggle="collapse" data-parent="#accordion" href="#0184" aria-expanded="false" aria-controls="0184">
                             <h3 class="panel-title">
-                                Will the unsold tokens be burnt?
+                                Will the unsold tokens be burned?
                             </h3>
                         </div>
                     </div>
