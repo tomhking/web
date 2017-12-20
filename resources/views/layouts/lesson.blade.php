@@ -34,7 +34,7 @@
             <div class="sidebar-nav">
                 <div class="current-lesson">
                     <div class="back-arrow">
-                        <a href="{{ $hasLanding ? route('course', ['course' => $course]) : route('mvp') }}" title="Back">
+                        <a href="{{ $hasLanding ? route('course', ['course' => $courseKey]) : route('mvp') }}" title="Back">
                             <i class="fa fa-chevron-left" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -73,6 +73,7 @@
                 </div>
             </div>
 
+            @if($isDemo ?? false)
             <div class="col-xs-12 col-sm-12 col-md-12  video-wrapper">
                 <div class="content front-content" id="content">
                     <div class="video-container">
@@ -98,11 +99,11 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
+            @else
+                <div class="lesson-content">
+                    @yield('content')
+                </div>
+            @endif
 
             <div class="col-xs-12 col-sm-12 col-md-12 ">
                 <div class="content front-content" id="lesson-content">

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title_cryptocurrencies_intro' => 'Introduction to Crypto and Cryptocurrencies',
     'title_web_fundamentals' => 'Web Development Theory',
     'title_coding_fundamentals' => 'Coding Fundamentals',
     'title_deep_learning' => 'Deep Learning',

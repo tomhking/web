@@ -16,7 +16,7 @@
                 <div class="row cards">
                     @endif
                     <div class="col-xs-12 col-sm-4">
-                        <div class="card left">
+                        <div class="card left course-{{ $course['key'] }}">
                             <a href="{{ $course['url'] }}">
                                 <div class="courses-badges">
                                     @if($course['isFree'] ?? false)

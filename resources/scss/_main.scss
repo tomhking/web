@@ -1208,8 +1208,53 @@ body.landing.degree-list header {
   }
 }
 
+.card.course-cryptocurrencies-intro .info .sponsor {
+  bottom: 25px !important;
+  .sponsor-img {
+    max-height: 30px;
+  }
+}
+
 body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-available {
   margin: 0;
+}
+
+.list-group.lessons {
+  margin: 0;
+  > .list-group-item {
+    background: #f8f8f8;
+    font-weight: 700;
+  }
+  .list-group.materials {
+    margin: 0;
+    border-radius: 0;
+    border-top: none;
+    border-bottom: none;
+    &:last-child {
+      border-bottom: 1px solid #CFD0CF;
+    }
+    .list-group-item {
+      border-bottom: none;
+      border-radius: 0;
+      margin: 0;
+      .fa {
+        width: 2rem;
+        text-align: left;
+      }
+      &.material-video .fa:before {
+        content: "\f16a";
+      }
+      &.material-slides .fa:before {
+        content: "\f1c4";
+      }
+      &.material-text .fa:before {
+        content: "\f0f6";
+      }
+      &.material-pdf .fa:before {
+        content: "\f1c1";
+      }
+    }
+  }
 }
 
 .card {
@@ -1282,6 +1327,46 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
 
 
 /*Course landing page*/
+
+.lesson-content {
+  .material {
+    margin: 0 2rem;
+    &.material-video {
+      box-shadow: #ccc 0 0 20px;
+      margin: 0 0 3rem;
+      iframe {
+        width: 100%;
+        height: 70%;
+      }
+    }
+    .fa {
+      width: 2rem;
+    }
+    &:last-child .list-group .list-group-item {
+      border-bottom: 1px solid #DDDDDD;
+    }
+    .list-group {
+      margin: 0;
+      .list-group-item {
+        border-radius: 0;
+        border-bottom: none;
+      }
+    }
+    &.material-video .list-group-item .fa:before {
+      content: "\f16a";
+    }
+    &.material-slides .list-group-item .fa:before {
+      content: "\f1c4";
+    }
+    &.material-text .list-group-item .fa:before {
+      content: "\f0f6";
+    }
+    &.material-pdf .list-group-item .fa:before {
+      content: "\f1c1";
+    }
+  }
+}
+
 .course-landing{
   .video-wrapper {
     padding: 0;
@@ -1407,6 +1492,17 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
         font-weight: 300;
         font-size: 24px;
       }
+    }
+  }
+  .course-syllabus {
+    padding: 3rem;
+    h2 {
+      font-size: 2.5rem;
+      font-weight:500;
+      font-family: $work-sans;
+      padding-bottom: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
     }
   }
   .trust.collaboration-with {

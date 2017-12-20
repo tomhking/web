@@ -67,3 +67,16 @@ if (!function_exists('current_route_class')) {
         return '';
     }
 }
+
+if (!function_exists('nice_duration')) {
+    /**
+     * Returns given duration in seconds in a human-readable form as a string
+     *
+     * @param $input
+     * @return string
+     */
+    function nice_duration($input)
+    {
+        return str_pad(floor($input / 60), 2, 0, STR_PAD_LEFT) . ':' . str_pad($input % 60, 2, 0, STR_PAD_LEFT);
+    }
+}
