@@ -17,7 +17,9 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
-                            <li><a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank"><b>Latest legal news on project</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/ttps-blog-bitdegree-org-000webhost-served-as-massive-help-in-ethos-ceo-career-b2448bb03bbb" rel="nofollow" target="_blank"><b>000webhost served as “massive help” in launching Ethos CEO’s career</b></a></li>
+                            <li><a href="https://blog.bitdegree.org/ethos-io-and-thomas-frey-team-up-with-bitdegree-100-millions-of-tokens-distributed-weekly-73a6596162d6" rel="nofollow" target="_blank"><b>Ethos.io and Thomas Frey team up with BitDegree, 100 millions of tokens distributed</b> | Weekly Roundup</a></li>
+                            <li><a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank"><b>Latest Crowdsale news on project</b></a></li>
                             <li><a href="https://blog.bitdegree.org/bitdegree-makes-first-of-many-appearances-in-silicon-valley-8d3d5ea16ae5" rel="nofollow" target="_blank"><b>BitDegree makes “first of many appearances in Silicon Valley”</b></a></li>
                             <li><a href="https://blog.bitdegree.org/ico-hall-of-famers-ethos-to-create-introduction-to-crypto-and-cryptocurrencies-course-cde6315b20a9" rel="nofollow" target="_blank"><b>ICO “Hall of Famers” Ethos to create “Introduction to crypto and cryptocurrencies” course for BitDegree</b></a></li>
                             <li><a href="https://blog.bitdegree.org/heres-3-reasons-why-you-should-hold-on-to-your-bitdegree-tokens-50ba0275f6c4" rel="nofollow" target="_blank"><b>Here’s 3 reasons why you should hold on to your BitDegree tokens!</b></a></li>
