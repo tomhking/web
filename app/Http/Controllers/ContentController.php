@@ -345,7 +345,7 @@ class ContentController extends Controller
             $course = $availableCourses->get($courseKey);
             $lessons = collect($course['lessons'] ?? []);
 
-            if($course['password']) {
+            if($course['password'] ?? false) {
                 $inputPassword = session()->get('course-password-'.$courseKey, request()->get('key'));
                 if($inputPassword == $course['password']) {
                     session()->put('course-password-'.$courseKey, $inputPassword);
@@ -416,7 +416,7 @@ class ContentController extends Controller
         $availableCourses = collect(app()->make('courses'))->push($this->appendedCourses)->keyBy('key');
         if($availableCourses->has($course)) {
             $courseData = $availableCourses->get($course);
-            if($courseData['password']) {
+            if($courseData['password'] ?? false) {
                 $inputPassword = session()->get('course-password-'.$course, request()->get('key'));
                 if($inputPassword == $courseData['password']) {
                     session()->put('course-password-'.$course, $inputPassword);
