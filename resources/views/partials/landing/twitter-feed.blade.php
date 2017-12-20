@@ -37,7 +37,6 @@
                             <li><a href="https://blog.bitdegree.org/bitdegree-token-sale-six-things-you-need-to-know-7331d128ee6e" rel="nofollow" target="_blank"><b>BitDegree token sale: six things you need to know!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/q-a-with-arnas-stuopelis-hostinger-ceo-and-bitdegree-co-founder-cf362d04f160" rel="nofollow" target="_blank"><b>Q&A with Arnas Stuopelis, Hostinger CEO and BitDegree co-founder</b></a></li>
                             <li><a href="https://blog.bitdegree.org/take-a-look-behind-the-scenes-of-bitdegree-609ec35ba184" rel="nofollow" target="_blank"><b>Take a look behind the scenes of BitDegree!</b></a></li>
-                            <li><a href="https://blog.bitdegree.org/bitdegree-tokens-value-will-grow-so-here-s-why-you-should-hold-on-to-yours-33b3a5d36a25" rel="nofollow" target="_blank"><b>BitDegree token’s value will grow, so here’s why you should hold on to yours!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/bitdegree-referral-program-is-on-10x-more-tokens-for-airdrop-participants-1f7f9e3d34f8" rel="nofollow" target="_blank"><b>BitDegree Referral Program is on! 10X MORE Tokens for Airdrop Participants!</b></a></li>
                             <li><a href="https://blog.bitdegree.org/bitdegree-smart-contract-course-a-great-entry-point-to-our-financial-and-educational-ecosystem-b27946629b1c" rel="nofollow" target="_blank"><b>BitDegree smart contract course “a great entry point to our financial and educational ecosystem” (MVP demo)</b></a></li>
                             <li><a href="https://blog.bitdegree.org/crowdsale-starts-this-friday-find-out-how-to-participate-weekly-roundup-4da955b0d4be" rel="nofollow" target="_blank"><b>Crowdsale starts this Friday - Find out how to participate!</b> | Weekly Roundup</a></li>
@@ -68,7 +67,6 @@
                             <li><a href="https://blog.bitdegree.org/what-the-bitdegree-name-means-69f75d844b41" rel="nofollow" target="_blank"><b>What The BitDegree Name Means</b></a></li>
                             <li><a href="https://blog.bitdegree.org/ethereum-blockchain-emulator-massive-airdrop-major-ico-trackers-weekly-roundup-c69054effdc3" rel="nofollow" target="_blank"><b>Ethereum Blockchain Emulator, Massive Airdrop, Major ICO Trackers</b> | Weekly Roundup</a></li>
                             <li><a href="https://blog.bitdegree.org/your-first-myetherwallet-c1a98f686f53" rel="nofollow" target="_blank"><b>Your first MyEtherWallet!</b></a></li>
-                            <li><a href="https://blog.bitdegree.org/bitdegree-to-change-nature-of-online-education-network-effect-with-ico-1548f9d1a8a7" rel="nofollow" target="_blank"><b>BitDegree To Shake-Up Nature Of Network Effect In Online Education With Token Sale</b></a></li>
                             <li><a href="https://blog.bitdegree.org/free-tokens-for-000webhost-users-5c7678de3190" rel="nofollow" target="_blank"><b>Free Tokens For 000webhost Users!</b></a></li>
                         </ul>
                     </div>
