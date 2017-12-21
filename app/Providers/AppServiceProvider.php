@@ -189,6 +189,222 @@ class AppServiceProvider extends ServiceProvider
                     'isNew' => true,
                 ],
                 [
+                    'url' => route('course', ['course' => 'cryptocurrencies-intro']),
+                    'key' => 'cryptocurrencies-intro',
+                    'image' => asset_rev('blockchain-basics.jpg'),
+                    'sponsor' => asset_rev('ethos.png'),
+                    'overlay' => 'grey available',
+                    'description' => __('courses.description-18-feb'),
+                    'title' => trans('courses.title_cryptocurrencies_intro'),
+                    'isMvp' => true,
+                    'isNew' => true,
+                    'lessons' => [
+                        [
+                            'title' => 'Intro Lecture',
+                            'key' => 'intro',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'kkuuZXv-1M4',
+                                    'duration' => 3 * 60 + 51,
+                                    'title' => 'Intro Lecture',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-0/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-0/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'What is a Cryptocurrency or Crypto Token',
+                            'key' => 'what-is-a-cryptocurrency-or-crypto-token',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'qOG2qzbN1QM',
+                                    'duration' => 4 * 60,
+                                    'title' => 'What is a Cryptocurrency or Crypto Token',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-1/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-1/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'Why Cryptocurrencies?',
+                            'key' => 'why-cryptocurrencies',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'M4xK1FO8Z2s',
+                                    'duration' => 4 * 60 + 43,
+                                    'title' => 'Why Cryptocurrencies?',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-2/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-2/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'How to Get Started With Cryptocurrencies?',
+                            'key' => 'how-to-get-started-with-cryptocurrencies',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => '227Fl2UKEfs',
+                                    'duration' => 5 * 60 + 9,
+                                    'title' => 'How to Get Started With Cryptocurrencies?',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-3/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-3/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'What is Bitcoin?',
+                            'key' => 'what-is-bitcoin',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'PKwVoedQr2I',
+                                    'duration' => 9 * 60 + 38,
+                                    'title' => 'What is Bitcoin?',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-4/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-4/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'The Economics of Bitcoin',
+                            'key' => 'the-economics-of-bitcoin',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'hZP8Z7G10Sc',
+                                    'duration' => 5 * 60 + 39,
+                                    'title' => 'The Economics of Bitcoin',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-5/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-5/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'Solving Bitcoin\'s Problems - Ethereum',
+                            'key' => 'solving-bitcoins-problems-ethereum',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'j1YKWmDM7TY',
+                                    'duration' => 6 * 60 + 21,
+                                    'title' => 'Solving Bitcoin\'s Problems - Ethereum',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-6/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-6/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'Checklist for Analysing Crypto BTC vs ETH',
+                            'key' => 'checklist-for-analysing-crypto-btc-vs-eth',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => 'J8NTEtsCiqE',
+                                    'duration' => 6 * 60 + 8,
+                                    'title' => 'Checklist for Analysing Crypto BTC vs ETH',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-7/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-7/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-7/checklist.pdf'),
+                                    'title' => 'Checklist to Analyzing Cryptocurrencies',
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'A Whole New World of Coins',
+                            'key' => 'a-whole-new-world-of-coins',
+                            'materials' => [
+                                [
+                                    'type' => 'video',
+                                    'videoId' => '-1LEEK3lzPw',
+                                    'duration' => 6 * 60 + 37,
+                                    'title' => 'A Whole New World of Coins',
+                                ],
+                                [
+                                    'type' => 'slides',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-8/slides.pdf'),
+                                    'title' => 'Lecture slides',
+                                ],
+                                [
+                                    'type' => 'pdf',
+                                    'file' => resource_path('courses/cryptocurrencies-intro/lecture-8/transcript.pdf'),
+                                    'title' => 'Lecture transcript',
+                                ],
+                            ],
+                        ],
+                    ]
+                ],
+                [
                     'url' => 'https://www.bitdegree.org/learn/web-fundamentals/',
                     'key' => 'web-fundamentals',
                     'image' => asset_rev('web-development.png'),
