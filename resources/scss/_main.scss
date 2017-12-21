@@ -294,6 +294,12 @@ div#testimonials {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+
+    &.no-grayscale {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      opacity: 1;
+    }
   }
   a:hover img {
     -webkit-filter: grayscale(0);
@@ -1394,6 +1400,13 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
       p{
         color:#fff;
         font-weight: 200;
+        a {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+      .c2a {
+        margin-top: 2rem;
       }
       .communicate {
         position: absolute;
@@ -1906,7 +1919,8 @@ h2.current-amount {
         bottom: 0;
         right: 33%;
         left: 33%;
-        color: #777777;
+        color: #dddddd;
+        opacity: 0.8;
       }
 
       &.milestone {
