@@ -113,7 +113,9 @@ class ContentController extends Controller
      * @return \Illuminate\View\View
      */
     function faq() {
-        return view('pages.faq');
+        return view('pages.faq', [
+            'faq' => json_decode(file_get_contents(resource_path('faq.json'))),
+        ]);
     }
 
     /**
