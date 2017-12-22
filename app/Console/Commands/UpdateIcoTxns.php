@@ -134,5 +134,23 @@ class UpdateIcoTxns extends Command
         $this->line('Affiliates updated.');
 
         cache()->forever('ico-affiliates', $affiliates);
+
+        // ETH price
+
+        if (!cache()->has('eth-price-valid')) {
+            try {
+                $prices = [];
+                foreach (json_decode(file_get_contents('https://v2.ethereumprice.org:8080/snapshot/eth/usd/waex/1m?_=1513933319177'))->data->timeseries as $input) {
+                    list($ts, $price) = $input;
+                    $prices[$dateStr = date('Y-m-d H', floor($ts / 1000))] = $price;
+                    $this->line('Price updated: ' . $dateStr . ' = ' . $price . 'USD');
+                }
+                cache()->forever('eth-price-history', collect($prices));
+                cache()->put('eth-price-valid', true, 30);
+            } catch (\Exception $e) {
+                $this->line('Price data could not be updated: ' . $e->getMessage());
+            }
+        }
+
     }
 }
