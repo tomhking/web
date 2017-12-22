@@ -1,4 +1,4 @@
-<div class="trust collaboration-with">
+<div class="collaboration-with">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-8 col-md-push-2 text-center">
@@ -14,22 +14,22 @@
 
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <div class="row row-logos sponsor-{{ $sponsor or 'default' }}">
+                <div class="row row-logos collaboration-sponsor sponsor-{{ $sponsor or 'default' }}">
                     @if(isset($sponsor) && $sponsor == 'nexchange')
                         <div class="col-xs-12 text-center">
-                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="NEXCHANGE"></a>
-                            <h4 class="title text-muted">
-                                <div>Exchange Cryptocurrencies</div>
+                            <a href="https://nexchange.io/" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="NEXCHANGE"  class="collab-partner"></a>
+                            <p>
+                                Exchange Cryptocurrencies<br>
                                 Simple. Secure. Transparent.
-                            </h4>
+                            </p>
                         </div>
                     @elseif(isset($sponsor) && $sponsor == 'ethos')
                         <div class="col-xs-12 text-center">
-                            <a href="https://www.ethos.io/" target="_blank"><img src="{{ asset_rev('partners/ethos.png') }}" alt="Ethos" class="no-grayscale"></a>
-                            <h4 class="title text-muted">
-                                <div>The future is for everyone.</div>
+                            <a href="https://www.ethos.io/" target="_blank"><img src="{{ asset_rev('partners/ethos.png') }}" alt="Ethos" class="collab-partner"></a>
+                            <p>
+                                The future is for everyone.<br>
                                 The people-powered cryptocurrency platform.
-                            </h4>
+                            </p>
                         </div>
                     @else
                         <div class="col-xs-6 col-sm-6 text-center">

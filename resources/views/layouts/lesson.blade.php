@@ -6,7 +6,7 @@
 
     @include('partials.tag-manager-head')
 
-    <meta name="description" content="Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world's first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.">
+    <meta name="description" content="Join BitDegree ICO (Initial Coin Offerings). BitDegree - The world's first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.">
     <meta name="keywords" content="ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

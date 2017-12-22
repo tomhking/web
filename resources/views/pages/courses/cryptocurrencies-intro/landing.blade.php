@@ -15,7 +15,7 @@
                                             <h1>Introduction to Crypto and Cryptocurrencies</h1>
                                             <p class="subtitle">This course will consist of 8 lectures covering all the basics that you need to know about the cryptocurrency world. By the end of this course you will understand what cryptocurrencies are, how they work, why they have value and how to use them. Furthermore, you will receive a checklist so that you can analyze any other crypto token in the world.</p>
                                             <p><strong>BETA Available Now</strong></p>
-                                            <p>Sponsored by <a href="https://ethos.io" target="_blank">Ethos.io</a></p>
+                                            <p>Sponsored by <a href="https://ethos.io" target="_blank" style="color:#fff;">Ethos.io</a></p>
                                             <a href="{{ route('lesson', [$course['key'], 'intro']) }}" class="btn btn-primary c2a">Start Course</a>
                                         </div>
                                     </div>

@@ -105,23 +105,11 @@
                                                                             <td>
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                                 <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                            </td>
-                                                                            <td>@lang('ico.week-num', ['number' => 2])</td>
-                                                                            <td>@lang('ico.bonus-percent', ['amount' => 10])</td>
-                                                                            <td>
-                                                                                <span class="tokens-left" style="color:#fff!important;">SOLD OUT!</span>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
-                                                                                <img src="{{ asset_rev('token-img.png') }}" alt="BitDegree Token">
                                                                             </td>
                                                                             <td>@lang('ico.week-num', ['number' => 3])</td>
                                                                             <td>@lang('ico.bonus-percent', ['amount' => 5])</td>
                                                                             <td>
-                                                                                <span class="tokens-left">Available now!</span>
+                                                                                <span class="tokens-left" style="color:#fff!important;">SOLD OUT!</span>
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -131,7 +119,7 @@
                                                                             <td>@lang('ico.week-num', ['number' => 4])</td>
                                                                             <td>@lang('ico.bonus-percent', ['amount' => 0])</td>
                                                                             <td>
-
+                                                                                <span class="tokens-left">Last chance!</span>
                                                                             </td>
                                                                         </tr>
                                                                         </tbody>
@@ -172,7 +160,6 @@
                                         </div>
                                         <p>200,000</p>
                                     </div>
-
                                     <div class="col-xs-12 col-sm-3 col-md-3 last">
                                         <div class="bonuses-modal">
                                             <div class="" data-toggle="modal" data-target="#Gas2Modal">
@@ -198,7 +185,6 @@
                                         </div>
                                         <p>50 GWEI</p>
                                     </div>
-
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
                                         <h2>@lang('ico.bonus-ends-in', ['bonusName' => __($currentBonus['name'])])</h2>
                                         @include('partials.countdown', ['timeLeft' => $currentBonus['to']->timestamp - time()])
@@ -206,13 +192,59 @@
                                 </div>
                             @else
                                 <div class="row crowdsale-info-table text-center">
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="col-xs-12 col-sm-4 col-md-4 ">
                                         <h4>@lang('ico.exchange-rate')</h4>
                                         <p>1 ETH = {{ number_format($rate) }} BDG</p>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <h4>@lang('ico.gas-limit')</h4>
+                                    <div class="col-xs-12 col-sm-4 col-md-4">
+                                        <div class="bonuses-modal">
+                                            <div class="" data-toggle="modal" data-target="#Gas3Modal">
+                                                <h4>@lang('ico.gas-limit') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
+                                            </div>
+                                            <div class="modal fade" role="dialog" id="Gas3Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            <div class="modal-title">
+                                                                <h2>GAS LIMIT</h2>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <img src="{{ asset_rev('gas-limit2.png') }}" alt="Gas Lmit">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <p>200,000</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 last">
+                                        <div class="bonuses-modal">
+                                            <div class="" data-toggle="modal" data-target="#Gas2Modal">
+                                                <h4>@lang('ico.gas-price') <span style="text-decoration:underline; cursor:pointer;">(SEE HOW)</span></h4>
+                                            </div>
+                                            <div class="modal fade" role="dialog" id="Gas2Modal" tabindex="-1" aria-labelledby="gridModalLabel" style="display: none;">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                                            <div class="modal-title">
+                                                                <h2>GAS PRICE</h2>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <img src="{{ asset_rev('gas-limit2.png') }}" alt="Gas Lmit">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>50 GWEI</p>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 bonus-countdown">
                                     <h2>@lang('ico.ends-in')</h2>

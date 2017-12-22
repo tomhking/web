@@ -18,7 +18,7 @@ return [
     'gas-limit' => 'Set Gas Limit',
     'gas-price' => 'Gas Price',
     'exchange-rate' => 'Exchange rate',
-    'ends-in' => 'Token sale ends in:',
+    'ends-in' => 'JOIN <b>NOW</b>! CROWDSALE ENDS IN:',
     'how-to' => 'See all tutorials',
     'how-to2' => 'How to participate?',
     'bdg' => 'BDG Token',

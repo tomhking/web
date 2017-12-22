@@ -260,22 +260,6 @@ div#testimonials {
   padding-bottom: 80px;
   .row-logos{
     margin-bottom:35px;
-    &.sponsor-nexchange {
-      img{
-        max-height: 75px;
-        opacity: 1;
-        filter: none;
-      }
-      h4 {
-        color: #636363;
-        font-weight: 200;
-        font-size:0.9em;
-        margin-top: 20px;
-        div{
-          margin-bottom:5px;
-        }
-      }
-    }
   }
   h2.title, h3.title {
     margin-bottom: 60px;
@@ -1401,7 +1385,6 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
         color:#fff;
         font-weight: 200;
         a {
-          color: #fff;
           font-weight: 500;
         }
       }
@@ -1517,11 +1500,17 @@ body.landing.degree-list.course-landing.smart-contract-developer .main.mvp-avail
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
+    .list-group.lessons .list-group.materials{
+      border: 1px solid #ddd;
+      .list-group-item{
+        border:0;
+      }
+    }
   }
-  .trust.collaboration-with {
+  .collaboration-with {
     border-top: 1px solid #d7d7d7;
-    padding: 45px 0 15px 0;
-    h2.title, h3.title {
+    padding: 55px 0 55px 0;
+    h2, h3 {
       font-size: 18px;
       color: #636363;
       line-height: 24px;
@@ -2853,11 +2842,13 @@ body.login-page {
       }
     }
     .crowdsale-info-table {
-      .col-md-3{
+      .col-md-3,
+      .col-md-4{
         border-right: 1px solid rgba(255, 255, 255, 0.5);
         min-height:100px;
       }
-      .col-md-3.last{
+      .col-md-3.last,
+      .col-md-4.last{
         border-right: 0;
       }
       .week-bonus {
@@ -3902,7 +3893,7 @@ header .header-content {
   }
   .communicate .contact {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     .cta-btn {
       text-transform: none;
       font-size:1.2em;
@@ -3989,6 +3980,14 @@ header {
   margin: auto;
   border: none;
   color: #062033;
+}
+
+.main.communicate h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
 header {
@@ -4994,7 +4993,8 @@ div#token-distribution .container {
       display: none!important;
     }
   }
-  body.login-page.get-tokens .crowdsale-info-table .col-md-3{
+  body.login-page.get-tokens .crowdsale-info-table .col-md-3,
+  body.login-page.get-tokens .crowdsale-info-table .col-md-4{
     border-right: none;
     border-bottom:1px solid rgba(255, 255, 255, 0.5);
     min-height: 100px;
@@ -5754,6 +5754,7 @@ p.subtitle {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    margin-bottom: 15px;
     &:hover{
       -webkit-filter: grayscale(0);
       filter: grayscale(0);

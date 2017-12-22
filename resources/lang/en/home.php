@@ -2,7 +2,7 @@
 
 return [
     'title' => 'BitDegree ICO - Revolutionizing education with blockchain',
-    'meta_description' => 'Join upcoming BitDegree ICO (Initial Coin Offerings). BitDegree - The world\'s first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.',
+    'meta_description' => 'Join BitDegree ICO (Initial Coin Offerings). BitDegree - The world\'s first blockchain based free education platform with token scholarships & talent networking. Be the first to know about BitDegree Foundation Token Distribution & ICO event updates.',
     'meta_description_dashboard'=> 'Bitdegree Crowdsale starts 1st of December. Login or Register and contribute to the world\'s first blockchain-powered online education platform with token scholarships &amp; tech talent acquisition',
     'meta_description_courses' => 'Bitdegree - the world\'s first blockchain-powered online education platform with token scholarships will be offering a variety of courses. Join Solidity Smart Contract Development and start learning now.',
     'meta_keywords' => 'ICO, initial coin offerings, bitdegree, ethereum, bitcoin, token, tokens, blockchain, learning foundation, scholarship, free education',
@@ -90,7 +90,7 @@ return [
     'token_distribution_note' => '* locked for 360 days.',
     'budget_allocation_title' => 'Budget Allocation',
     'ico_top_information' => 'Crowdsale starts <b>December 1st, 2017 14:00 UTC</b> - Subscribe now and <b>DON’T MISS IMPORTANT ANNOUNCEMENT</b>',
-    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree. <b>JOIN & DON\'T MISS 5% BONUS!</b>',
+    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree. <b>JOIN & DON\'T MISS YOUR CHANCE TO PARTICIPATE!</b>',
     'media_title' => 'Explore Bitdegree',
     'read_articles' => 'Read all Articles',
     'video-description' => 'Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.',

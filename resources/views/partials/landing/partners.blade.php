@@ -60,7 +60,7 @@
 
                 <div class="col-xs-4 col-sm-3 col-sm-offset-3 text-center">
                     <div class="partner-logo">
-                        <a href="https://nexchange.io/" rel="nofollow" target="_blank"><img src="{{ asset_rev('partners/nexchange-small.png') }}" alt="Our partners Nexchange"></a>
+                        <a href="https://nexchange.io/" rel="nofollow" target="_blank"><img src="{{ asset_rev('partners/nexchange.png') }}" alt="Our partners Nexchange"></a>
                     </div>
                 </div>
 

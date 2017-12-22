@@ -17,6 +17,7 @@
                     </div>
                     <div class="medium-posts-content">
                         <ul>
+                            <li><a href="https://blog.bitdegree.org/q-a-with-futurist-speaker-and-education-of-the-future-advisor-thomas-frey-1cf9583ff82d" rel="nofollow" target="_blank"><b>Q&A with Futurist Speaker and Education Of The Future advisor, Thomas Frey</b></a></li>
                             <li><a href="https://blog.bitdegree.org/ttps-blog-bitdegree-org-000webhost-served-as-massive-help-in-ethos-ceo-career-b2448bb03bbb" rel="nofollow" target="_blank"><b>000webhost served as “massive help” in launching Ethos CEO’s career</b></a></li>
                             <li><a href="https://blog.bitdegree.org/ethos-io-and-thomas-frey-team-up-with-bitdegree-100-millions-of-tokens-distributed-weekly-73a6596162d6" rel="nofollow" target="_blank"><b>Ethos.io and Thomas Frey team up with BitDegree, 100 millions of tokens distributed</b> | Weekly Roundup</a></li>
                             <li><a href="https://blog.bitdegree.org/latest-legal-news-on-project-d0582d69a85a" rel="nofollow" target="_blank"><b>Latest Crowdsale news on project</b></a></li>
