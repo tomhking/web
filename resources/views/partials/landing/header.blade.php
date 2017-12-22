@@ -201,7 +201,9 @@
                                             </div>
                                         </div>
 
-
+                                        <div class="bonuses-table">
+                                            <h4 class="text-center">@lang('ico.receive')</h4>
+                                        </div>
 
                                     @endif
                                 </div>
