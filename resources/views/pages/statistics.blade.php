@@ -11,6 +11,7 @@
                     <thead>
                     <tr>
                         <th>Raised ETH</th>
+                        <th>Raised USD</th>
                         <th>Transaction Count</th>
                         <th>Average value per TX</th>
                     </tr>
@@ -18,12 +19,14 @@
                     <tbody>
                     <tr>
                         <td>{{ number_format($raisedEth, 4) }} ETH</td>
+                        <td>${{ number_format(bcmul($raisedEth, $priceHistory->last() ?? 0), 2) }} <small class="text-muted">@ ${{ number_format($priceHistory->last() ?? 0, 2) }}/ETH</small></td>
                         <td>{{ $txns->count() }}</td>
                         <td>{{ number_format($txns->average('value')/bcpow(10,18),2) }} ETH</td>
                     </tr>
                     </tbody>
                 </table>
                 </div>
+                <div id="txns-chart"></div>
                 <h2>Transactions</h2>
                 <div class="table-responsive">
                     <table class="table table-bordered">
@@ -200,4 +203,43 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['line']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Timestamp', 'ETH price in USD', 'ETH raised'],
+                @foreach($txnsByHour as $date => $raised)
+                    ['{{ $date }}', {{ $priceHistory->get($date, $priceHistory->count() > 0 ? $priceHistory->last() : 0) }} , {{$raised}}] {{ $loop->last ? "" : "," }}
+                @endforeach
+            ]);
+            var materialOptions = {
+                //curveType: 'function',
+                chart: {
+                    title: 'ETH price and Contribution Size'
+                },
+                series: {
+                    // Gives each series an axis name that matches the Y-axis below.
+                    0: {axis: 'Price'},
+                    1: {axis: 'Contribution'}
+                },
+                axes: {
+                    // Adds labels to each axis; they don't have to match the axis names.
+                    y: {
+                        Price: {label: 'Price'},
+                        Contribution: {label: 'Contribution'}
+                    }
+                },
+                legend: {
+                    position: 'none'
+                }
+            };
+
+            var chart = new google.charts.Line(document.getElementById('txns-chart'));
+
+            chart.draw(data, materialOptions);
+        }
+    </script>
 @endsection

@@ -68,6 +68,20 @@ class AdminController
             return date('Y-m-d', $tx->timeStamp);
         })->reverse();
 
+        // TXs by hour
+        $txnsByHour = $txns->groupBy(function ($tx) {
+            return date('Y-m-d H', $tx->timeStamp);
+        })->map(function($txns) {
+            $sum = '0';
+            foreach($txns as $tx) {
+                $sum = bcadd($sum, $tx->value);
+            }
+
+            return bcdiv($sum,bcpow(10,18), 4);
+        });
+
+        $priceHistory = cache()->get('eth-price-history', collect([]));
+
         // By country
         $hasDate = $request->has('date') && $txnsByDay->has($request->get('date'));
         $date = $request->get('date');
@@ -84,6 +98,6 @@ class AdminController
             return $txns->sum('value');
         });
 
-        return view('pages.statistics', compact('raisedEth',  'txns', 'txnsByDay', 'countryTxns', 'filteredTxns', 'hasDate', 'date', 'holders', 'users', 'key', 'referrals'));
+        return view('pages.statistics', compact('raisedEth',  'txns', 'txnsByDay', 'countryTxns', 'filteredTxns', 'hasDate', 'date', 'holders', 'users', 'key', 'referrals', 'txnsByHour', 'priceHistory'));
     }
 }
