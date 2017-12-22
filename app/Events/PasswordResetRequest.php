@@ -57,7 +57,7 @@ class PasswordResetRequest extends Event implements Mailable
         $message->setLastName($this->user->last_name);
         $message->setExtras([
             'reset_link' => route('password.reset', [
-                'email' => $this->user->email,
+                //'email' => $this->user->email,
                 'token' => $this->token,
             ]),
         ]);

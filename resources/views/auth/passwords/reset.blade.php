@@ -13,12 +13,12 @@
         <form action="{{ route('password.request') }}" method="post">
             <div class="form-group">
                 <label for="input-email">@lang('user.email')</label>
-                <input type="email" data-validate="email" class="form-control" value="{{ old('email', request()->get('email')) }}" name="email" id="input-email" required>
+                <input type="email" data-validate="email" class="form-control" autofocus value="{{ old('email', request()->get('email')) }}" name="email" id="input-email" required>
             </div>
 
             <div class="form-group">
                 <label for="input-password">@lang('user.password')</label>
-                <input class="form-control" type="password" name="password" autofocus required minlength="3">
+                <input class="form-control" type="password" name="password" required minlength="3">
             </div>
 
             <div class="form-group">
