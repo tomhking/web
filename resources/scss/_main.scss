@@ -1888,7 +1888,7 @@ h2.current-amount {
       &.soft-cap{
         top: 0;
         bottom: 0;
-        right: 66%;
+        right: 66.66666666%;
         left: 0;
         .marker:nth-child(2) {
           background: #f18191;
@@ -1899,17 +1899,28 @@ h2.current-amount {
         top: 0;
         bottom: 0;
         right: 0;
-        left: 66%;
+        left: 66.66666666%;
         color: #606060;
+        opacity: 0.8;
+        &.current {
+          color: #777777;
+        }
       }
 
       &.medium-cap{
         top: 0;
         bottom: 0;
-        right: 33%;
-        left: 33%;
+        right: 33.33333333%;
+        left: 33.33333333%;
         color: #dddddd;
         opacity: 0.8;
+        &.reached {
+          color: #fff;
+          opacity: 1;
+          .marker {
+            background: #f18191;
+          }
+        }
       }
 
       &.milestone {

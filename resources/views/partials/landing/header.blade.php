@@ -152,19 +152,20 @@
                                     @else
 
                                         @include('partials.ico-countdown')
+                                        @php($mediumCapReached = bccomp($tokensSold, bcdiv($hardCap,2)) >= 0)
 
                                         <div class="progress-bar-wrapper">
                                             <div class="slider-container main-slider">
-                                                <div class="soft-cap annotation">
+                                                <div class="soft-cap reached annotation">
                                                     <span>1. Soft Cap: reached</span>
                                                     <span class="marker"></span>
                                                     <span class="marker marker-front"></span>
                                                 </div>
-                                                <div class="medium-cap annotation">
-                                                    <span>2. Half Hard Cap: in progress</span>
+                                                <div class="medium-cap {{ $mediumCapReached ? "reached" : "" }} annotation">
+                                                    <span>2. Half Hard Cap: {{ $mediumCapReached ? "reached" : "in progress" }}</span>
                                                     <span class="marker"></span>
                                                 </div>
-                                                <div class="hard-cap annotation">
+                                                <div class="hard-cap {{ $mediumCapReached ? "current" : "" }} annotation">
                                                     <span>3. Hard Cap: {{ number_format($hardCap) }} BDG</span>
                                                     <span class="marker"></span>
                                                 </div>
