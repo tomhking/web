@@ -190,16 +190,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="communicate">
-                                            <div class="contact">
-                                                @auth
-                                                    <a class="cta-btn visible-xs-block" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
-                                                @endauth
-                                                @guest
-                                                    <a class="cta-btn visible-xs-block" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
-                                                @endguest
-                                            </div>
-                                        </div>
+
 
                                         <div class="bonuses-table">
                                             <h4 class="text-center">@lang('ico.receive')</h4>
