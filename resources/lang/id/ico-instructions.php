@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Buka Ether wallet Anda dan lihat saldonya. Perlu diingat, proses transaksi memakan waktu yang cukup lama.',
   'alt-headline' => 'CARA ALTERNATIF UNTUK MENDAPATKAN TOKEN',
   'alt-note' => 'Jika Anda ingin mendapatkan token dari website BitDegree, maka token tersebut akan langsung ditransfer setelah Anda melakukan pembelian.',
-  'alt-p1' => 'Selama crowdsale, Anda bisa mendapatkan token menggunakan <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>.',
+  'alt-p1' => 'Selama crowdsale, Anda bisa mendapatkan token menggunakan TokenLot.',
   'alt-p2' => 'Tokenlot menerima semua mata uang digital. Jika Anda ingin menggunakan Tokenlot, <b>maka token Anda akan ditransfer setelah crowdsale berakhir.</b> Anda akan menerima email berisikan instruksi yang lebih jelas. Email tersebut akan dikirimkan ke alamat email yang Anda gunakan untuk membeli token. Agar token BDG dapat segera diterima, kami sangat menyarankan Anda untuk bergabung dalam crowdsale BitDegree melalui website resminya.',
   'faq-headline' => 'FAQ',
   'faq-subtitle' => 'Untuk informasi selengkapnya, silakan kunjungi situs: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">MyEtherWallet\'s FAQ</a> yang resmi.',

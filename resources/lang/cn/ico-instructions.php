@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => '访问您的Ether钱包以查看您的余额.请注意,交易可能需要一些时间.',
   'alt-headline' => '替代方法来获得货币',
   'alt-note' => '如果您选择从BitDegree网站获取您的虚拟货币,那么您在购买商品后会立即将其转让给您.',
-  'alt-p1' => '在众筹期间您将可以通过<a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>来获得货币.',
+  'alt-p1' => '在众筹期间您将可以通过 TokenLot 来获得货币.',
   'alt-p2' => 'Tokenlot接受所有其他数字货币. 如果您选择使用Tokenlot, <b>您的货币将会在众筹阶段结束后得到.</b> 您将收到一封包含详细说明的电子邮件. 电子邮件将被发送到最初用于购买货币的相同电子邮件地址. 要立即收到BDG币，我们真的推荐通过官方网站加入BitDegree众筹.',
   'faq-headline' => '常见问题',
   'faq-subtitle' => '有关更详细的信息,请访问官方网站: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">MyEtherWallet\'s FAQ</a>.',

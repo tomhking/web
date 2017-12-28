@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Ether cüzdanınıza erişin ve bakiyenizi görün. Parasal işlemlerin biraz zaman alabileceğini not edin.',
   'alt-headline' => 'TOKEN ALMAK İÇİN ALTERNATİF YOLLAR',
   'alt-note' => 'Eğer tokenlerinizi BitDegree web sitesinden almayı seçerseniz, satın alımınızdan sonra anında size transfer edilecektir.',
-  'alt-p1' => 'Crowdsale esnasında <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a> kullanarak token alabileceksiniz.',
+  'alt-p1' => 'Crowdsale esnasında TokenLot kullanarak token alabileceksiniz.',
   'alt-p2' => 'Tokenlot tüm diğer dijital kurları kabul ederi. Eğer Tokenlot kullanmayı tercih ederseniz, <b>tokenleriniz size crowdsale sona erdikten sonra ulaşacaktır.</b> Detaylı yönergeleri içeren bir e-posta alacaksınız. Token satın almak için kullanılan aynı e-posta adresine mesaj gönderilecektir. BDG tokenlerini anında almak için BitDegree crowdsale etkinliğine resmi web sitesi üzerinden katılmanız önerilir.',
   'faq-headline' => 'SSS',
   'faq-subtitle' => 'Daha detaylı bilgi için lütfen resmi web sitesini ziyaret edin: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">MyEtherWallet SSS</a>.',
