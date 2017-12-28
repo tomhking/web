@@ -90,7 +90,7 @@ return [
     'token_distribution_note' => '* locked for 360 days.',
     'budget_allocation_title' => 'Budget Allocation',
     'ico_top_information' => 'Crowdsale starts <b>December 1st, 2017 14:00 UTC</b> - Subscribe now and <b>DON’T MISS IMPORTANT ANNOUNCEMENT</b>',
-    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree. <b>FINAL WEEK - JOIN & DON\'T MISS YOUR CHANCE!</b>',
+    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree.',
     'media_title' => 'Explore Bitdegree',
     'read_articles' => 'Read all Articles',
     'video-description' => 'Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.',
