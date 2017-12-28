@@ -151,7 +151,14 @@
                                         @include('partials.countdown', ['timeLeft' => config('ico.start')->diffInSeconds()])
                                     @else
 
-                                        @include('partials.ico-countdown')
+                                        @if($hardCapReached)
+                                            <h2 class="text-center"><strong>Crowdsale ended</strong></h2>
+                                            <h1 class="text-center">Thank you for participating!</h1>
+                                            <h3 class="text-center">Let's revolutionize education together!</h3>
+                                        @else
+                                            @include('partials.ico-countdown')
+                                        @endif
+
                                         @php($mediumCapReached = bccomp($tokensSold, bcdiv($hardCap,2)) >= 0)
 
                                         <div class="progress-bar-wrapper">
@@ -165,8 +172,8 @@
                                                     <span>2. Half Hard Cap: {{ $mediumCapReached ? "reached" : "in progress" }}</span>
                                                     <span class="marker"></span>
                                                 </div>
-                                                <div class="hard-cap {{ $mediumCapReached ? "current" : "" }} annotation">
-                                                    <span>3. Hard Cap: {{ number_format($hardCap) }} BDG</span>
+                                                <div class="hard-cap {{ $hardCapReached ? "reached" : ($mediumCapReached ? "current" : "") }} annotation">
+                                                    <span>3. Hard Cap: {{ $hardCapReached ? "reached" : number_format($hardCap)." BDG" }}</span>
                                                     <span class="marker"></span>
                                                 </div>
                                                 <div data-ico-main-slider style="width: {{ $progress }}%;" class="slider"></div>
@@ -176,7 +183,7 @@
                                                     <span class="marker"></span>
                                                     <span class="marker marker-front"></span>
                                                 </div>
-                                                <div data-ico-milestone-slider class="slider" style="width: {{ $milestoneProgress }}%;">
+                                                <div data-ico-milestone-slider class="slider {{ $hardCapReached ? "no-pulse" : "" }}" style="width: {{ $milestoneProgress }}%;">
                                                     <div class="pulse"></div>
                                                 </div>
                                             </div>
@@ -192,10 +199,11 @@
                                         </div>
 
 
-
-                                        <div class="bonuses-table">
-                                            <h4 class="text-center">@lang('ico.receive')</h4>
-                                        </div>
+                                        @if(!$hardCapReached)
+                                            <div class="bonuses-table">
+                                                <h4 class="text-center">@lang('ico.receive')</h4>
+                                            </div>
+                                        @endif
 
                                     @endif
                                 </div>
@@ -206,10 +214,10 @@
                     <div class="communicate">
                         <div class="contact">
                             @auth
-                                <a class="cta-btn" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                                <a class="cta-btn" href="{{ route('address') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : ($hardCapReached ? 'ico.join-now-c2a' : 'ico.get-tokens-now'))</a>
                             @endauth
                             @guest
-                                <a class="cta-btn" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : 'ico.get-tokens-now')</a>
+                                <a class="cta-btn" href="{{ route('register') }}">@lang(config('ico.start')->isFuture() ? 'ico.join-now-c2a' : ($hardCapReached ? 'ico.join-now-c2a' : 'ico.get-tokens-now'))</a>
                             @endguest
                             <div class="contact-icons buttons">
                                 <a class="contact-icon" href="https://t.me/bitdegree" rel="nofollow" target="_blank"><img src="{{ asset_rev('telegram-logo.png') }}" alt="Telegram"></a>

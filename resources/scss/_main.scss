@@ -1905,6 +1905,10 @@ h2.current-amount {
         &.current {
           color: #ddd;
         }
+        &.reached {
+          color: #fff;
+          opacity: 1;
+        }
       }
 
       &.medium-cap{
@@ -1966,6 +1970,11 @@ h2.current-amount {
           right: 0;
           bottom:0;
           background: url('../progress-bg.png') repeat;
+        }
+        &.no-pulse {
+          .pulse {
+            display:none;
+          }
         }
         .pulse {
           position: absolute;
@@ -3886,6 +3895,12 @@ header .header-content {
     font-weight: 200;
     font-size: 40px;
     line-height: 40px;
+  }
+  h3 {
+    text-transform: none;
+    font-size: 3.5rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
   }
   p {
     font-family: $source-code;

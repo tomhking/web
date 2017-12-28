@@ -53,20 +53,26 @@
 
         var lastPoll = Date.now(), pollingInterval = 1000 * 60;
 
-        setInterval(function () {
-            if(lastPoll <  Date.now() - pollingInterval) {
-                lastPoll = Date.now();
-            } else {
-                return;
-            }
+        @if(isset($hardCapReached) && !$hardCapReached)
+            setInterval(function () {
+                if(lastPoll <  Date.now() - pollingInterval) {
+                    lastPoll = Date.now();
+                } else {
+                    return;
+                }
 
-            $.getJSON('/en/token/ico.json').then(function (data) {
-                $('[data-ico-main-slider]').css({width: data.progress + '%'});
-                $('[data-ico-milestone-slider]').css({width: data.milestoneProgress + '%'});
-                $('[data-ico-tokens-sold]').text(data.tokensSoldFormatted);
-                $('[data-ico-milestone]').text(data.currentMilestoneFormatted);
-            });
-        }, pollingInterval + 1000);
+                $.getJSON('/en/token/ico.json').then(function (data) {
+                    $('[data-ico-main-slider]').css({width: data.progress + '%'});
+                    $('[data-ico-milestone-slider]').css({width: data.milestoneProgress + '%'});
+                    $('[data-ico-tokens-sold]').text(data.tokensSoldFormatted);
+                    $('[data-ico-milestone]').text(data.currentMilestoneFormatted);
+
+                    if(data.hardCapReached) {
+                        window.location.reload();
+                    }
+                });
+            }, pollingInterval + 1000);
+        @endif
     });
 </script>
 
