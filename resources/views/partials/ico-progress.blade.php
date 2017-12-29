@@ -21,7 +21,7 @@
                     <!-- ICO is over -->
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="text-center" style="margin-bottom: 30px;">Thank you for participating!</h1>
+                                <h1 class="text-center">Thank you for participating!</h1>
                             </div>
                         </div>
                     @if($tokensSold < $softCap)

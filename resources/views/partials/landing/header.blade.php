@@ -153,7 +153,7 @@
 
                                         @if($hardCapReached)
                                             <h2 class="text-center"><strong>Crowdsale ended</strong></h2>
-                                            <h1 class="text-center">Thank you for participating!</h1>
+                                            <h1 class="text-center" style="margin-bottom:30px;">Thank you for participating!</h1>
                                             <h3 class="text-center">Let's revolutionize education together!</h3>
                                         @else
                                             @include('partials.ico-countdown')
