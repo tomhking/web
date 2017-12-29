@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'title' => 'The crowdsale is not that far away',
-    'subtitle' => 'Don’t miss out, be the first to know!',
+    'title' => 'LEARN. EARN. GROW.',
+    'subtitle' => 'Don’t miss out ont the upcoming courses!',
     'button' => 'Subscribe',
-    'email_placeholder' => 'Leave your email to get special bonus',
-    'title_alt' => 'Come &amp; help us create talent the world deserves',
+    'email_placeholder' => 'Leave your email to get updates',
+    'title_alt' => 'Join and become the talent the world deserves',
 ];

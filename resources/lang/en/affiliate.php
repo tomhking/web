@@ -2,9 +2,9 @@
 
 return [
     'headline' => 'BitDegree Referring Airdrop',
-    'subtitle' => 'Want more tokens for FREE? Get Your Share of the 200 000 BDG Token Pool now!',
+    'subtitle' => 'Now you can help us grow community & forward the whole BitDegree learning platform into successful project. Please share, we need your support!',
     'how' => 'How it works?',
-    'how-descr-1' => 'On top of the page you will find your unique referral link. Remember, sharing your link with friends, communities & others is the easiest way to earn LOTS of tokens!',
+    'how-descr-1' => 'On top of the page you will find your unique referral link. Share it with your friends, communities & others.',
     'how-descr-2' => 'Also, you can choose from banners below to place on your websites and refer even more people. Simply copy & paste the provided embed codes to the websites and publish.',
     'how-descr-3' => 'Once a person referred via your link or banner signs up on BitDegree website and contributes at least 0.5 ETH, you will earn 5% commission of their contribution. The commission will be transacted in BDG tokens after crowdsale.',
     'how-descr-4' => 'Even if referred person only signs up without any contribution, you instantly earn ONE stake of tokens!',
@@ -19,7 +19,7 @@ return [
     '1-referral' => '1 referral',
     'n-referrals' => ':number referrals',
     'referrals_count_label' => 'Your token stakes (referred users):',
-    'referral_link_label' => 'Share your personal referral link and get tokens.',
+    'referral_link_label' => 'Share your personal referral link.',
     'banner' => 'Banner',
     'banner-alt' => 'BitDegree:From EA co-founder, former COURSERA Lead & 29,000,000 users. Limited 5% discount - Get Tokens!',
     'announcement' => '<b>Dec 4 UPDATE:</b> Now earn even MORE! Get <b>5% commission</b> of your referred clients contribution!',

@@ -14,11 +14,13 @@
                             <h1>@lang('affiliate.headline')</h1>
                             <h3 class="subtitle">@lang('affiliate.subtitle')</h3>
                         </div>
+                        <!--
                         <div class="col-xs-12 col-md-12 text-center commission-announcement">
                             <h3>Now earn even MORE! Get</h3>
                             <h1><span class="percent">5%</span> commission</h1>
                             <h3>of your referred clients contribution</h3>
                         </div>
+                        -->
                     </div>
                     <div class="row">
                         <div class="col-xs-12 col-md-12">
@@ -45,7 +47,7 @@
                                         <span>Share on Telegram</span>
                                     </a>
 
-                                    <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=BitDegree%20-%20the%20most%20promising%20Token%20Sale%20with%2029%20million%20user%20base%20ends%20Friday,%20December%2029th.%20Don't%20miss%20it%20out:&via=bitdegree_org&hashtags=crowdsale%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
+                                    <a class="twitter-share text-center" href="http://twitter.com/intent/tweet?url=https://stude.co/{{ auth()->user()->id }}&text=BitDegree%20-%20the%20most%20promising%20Blockchain%20Learning%20Platform%20of%202018%20with%2029%20million%20user%20base.%20Don't%20miss,%20check%20it%20out:&via=bitdegree_org&hashtags=crowdsale%2Cblockchain%2CICO" target="_blank" class="share-btn twitter">
                                         <i class="fa fa-twitter"></i> Share on Twitter
                                     </a>
 

@@ -16,9 +16,6 @@
                                 <ul>
                                     <li>@lang('affiliate.how-descr-1')</li>
                                     <li>@lang('affiliate.how-descr-2')</li>
-                                    <li>@lang('affiliate.how-descr-3')</li>
-                                    <li>@lang('affiliate.how-descr-4')</li>
-                                    <li>@lang('affiliate.how-descr-5')</li>
                                 </ul>
                                 <h3>@lang('affiliate.restrictions')</h3>
                                 <ul>
