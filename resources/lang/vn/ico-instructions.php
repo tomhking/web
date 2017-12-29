@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Truy cập vào wallet Ether của bạn và xem balance. Lưu ý là giao dịch có thể mất ít thời gian.',
   'alt-headline' => 'CÁC KHÁC ĐỂ NHẬN TOKENS',
   'alt-note' => 'Nếu bạn chọn nhận token từ BitDegree website, chúng sẽ được chuyển tới bạn ngay lập tức khi bạn tiến hành thanh toán.',
-  'alt-p1' => 'Trong đợt crowdsale, bạn sẽ nhận được tokens bằng cách dùng <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>.',
+  'alt-p1' => 'Trong đợt crowdsale, bạn sẽ nhận được tokens bằng cách dùng TokenLot.',
   'alt-p2' => 'Tokenlot chấp nhận tất cả tiền tệ kỹ thuật số. Nếu chọn sử dụng Tokenlot, <b>tokens sẽ được gửi đến bạn sau khi crowdsale kết thúc.</b> Bạn sẽ nhận được hướng dẫn chi tiết qua email. Email sẽ được gửi đến cùng địa chỉ email bạn dùng để thanh toán tokens. để nhận BDG tokens ngay lập tức, chúng tôi khuyên hãy tham gia vào crowdsale qua website chính thức. ',
   'faq-headline' => 'FAQ',
   'faq-subtitle' => 'Để biết thêm thông tin chính thức, hãy truy cập vào: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">MyEtherWallet\'s FAQ</a>.',

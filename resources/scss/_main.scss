@@ -1888,7 +1888,7 @@ h2.current-amount {
       &.soft-cap{
         top: 0;
         bottom: 0;
-        right: 66%;
+        right: 66.66666666%;
         left: 0;
         .marker:nth-child(2) {
           background: #f18191;
@@ -1899,17 +1899,32 @@ h2.current-amount {
         top: 0;
         bottom: 0;
         right: 0;
-        left: 66%;
+        left: 66.66666666%;
         color: #606060;
+        opacity: 0.8;
+        &.current {
+          color: #ddd;
+        }
+        &.reached {
+          color: #fff;
+          opacity: 1;
+        }
       }
 
       &.medium-cap{
         top: 0;
         bottom: 0;
-        right: 33%;
-        left: 33%;
+        right: 33.33333333%;
+        left: 33.33333333%;
         color: #dddddd;
         opacity: 0.8;
+        &.reached {
+          color: #fff;
+          opacity: 1;
+          .marker {
+            background: #f18191;
+          }
+        }
       }
 
       &.milestone {
@@ -1955,6 +1970,11 @@ h2.current-amount {
           right: 0;
           bottom:0;
           background: url('../progress-bg.png') repeat;
+        }
+        &.no-pulse {
+          .pulse {
+            display:none;
+          }
         }
         .pulse {
           position: absolute;
@@ -3875,6 +3895,12 @@ header .header-content {
     font-weight: 200;
     font-size: 40px;
     line-height: 40px;
+  }
+  h3 {
+    text-transform: none;
+    font-size: 3.5rem;
+    margin-top: -2rem;
+    margin-bottom: 3rem;
   }
   p {
     font-family: $source-code;

@@ -26,6 +26,7 @@ class ContentController extends Controller
         $tokensSoldRaw = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
 
         $tokensSold = bcdiv($tokensSoldRaw, bcpow(10,  $tokenDecimals));
+        $hardCapReached = bccomp($tokensSoldRaw, bcmul($hardCap, bcpow(10, $tokenDecimals))) >= 0;
 
         $milestoneStep = bcpow(10,6);
         $milestoneCompleted = bcmod($tokensSold, bcpow(10, 6 ));
@@ -33,6 +34,10 @@ class ContentController extends Controller
         $milestoneProgress = ($milestoneCompleted / $milestoneStep) * 100;
         $nextMilestone = bcadd($tokensSold, $milestoneRemaining);
         $currentMilestone = bcsub($nextMilestone, $milestoneStep);
+
+        if(bccomp($remainder = bcmod($hardCap, $currentMilestone), $milestoneStep) == -1) {
+            $milestoneProgress = ($milestoneCompleted / $remainder) * 100;
+        }
 
         $currentBonus = false;
 
@@ -51,6 +56,7 @@ class ContentController extends Controller
             'softCap' => $softCap,
             'hardCap' => $hardCap,
             'softCapReached' => $tokensSold >= $softCap,
+            'hardCapReached' => $hardCapReached,
             'progressSoftCap' => $tokensSold <= $softCap ? ($tokensSold / $softCap) * 100 : 100,
             'progress' => $progress,
             'tokensSold' => (int) $tokensSold,

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Cookie;
@@ -113,6 +114,11 @@ class UserController extends Controller
         $currentBonus = false;
         $rate = $ico['rate'];
 
+        $hardCap = config('ico.hardCap');
+        $tokensSoldRaw = Cache::get('tokens_sold', ['amount' => 0])['amount'] ?? 0;
+        $hardCapReached = bccomp($tokensSoldRaw, bcmul($hardCap, bcpow(10, 18))) >= 0;
+
+
         foreach ($ico['bonuses'] as $item) {
             if (Carbon::now()->between($item['from'], $item['to'])) {
                 $currentBonus = $item;
@@ -121,7 +127,7 @@ class UserController extends Controller
             }
         }
 
-        return view('pages.ico-address', compact('ico', 'currentBonus', 'rate'));
+        return view('pages.ico-address', compact('ico', 'currentBonus', 'rate', 'hardCapReached'));
     }
 
     /**

@@ -90,7 +90,7 @@ return [
     'token_distribution_note' => '* locked for 360 days.',
     'budget_allocation_title' => 'Budget Allocation',
     'ico_top_information' => 'Crowdsale starts <b>December 1st, 2017 14:00 UTC</b> - Subscribe now and <b>DON’T MISS IMPORTANT ANNOUNCEMENT</b>',
-    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree. <b>FINAL WEEK - JOIN & DON\'T MISS YOUR CHANCE!</b>',
+    'ico_top_information_2' => '<b>Hot News:</b> Google’s top rated futurist speaker <b>THOMAS FREY</b> teamed up with BitDegree.',
     'media_title' => 'Explore Bitdegree',
     'read_articles' => 'Read all Articles',
     'video-description' => 'Universities and higher education institutions are universally failing to fulfil their mission - to teach their students well.The gap between the needs of employers and student knowledge already exists and is widening. BitDegree innovation is a possibility for businesses to initiate and maintain dialogue with upcoming talent and reward themfor achievements through smart-incentives.',
@@ -104,6 +104,6 @@ return [
     'backed-by-description' => '<a href="https://hostinger.com" rel="nofollow" target="_blank">Hostinger</a>  will accept BDG tokens in exchange of its services. The exchange rate is fixed for the first year. According to ETH price on 5 biggest crypto exchanges (Bitfinex, Bithumb, GDAX, Poloniex, Bittrex), BDG exchange rate to Hostinger services will be fixed at crowdsale end moment. As an example on that moment: 10 000 BDG = 1 ETH = XXX USD - this is the rate was paid during last minute of crowdsale and the value that will be exchanged on Hostinger. This is a guarantee that your tokens will be exchangeable in equivalent to Hostinger services to the fixed price.',
     'backed-by-read-more' => 'Read more here',
     'read-more' => 'Read more',
-    'other-tokenlot' => 'all other - via <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank" rel="nofollow">Tokenlot</a>',
+    'other-tokenlot' => 'all other - via Tokenlot',
     'join_crowdsale_main_header' => 'JOIN CROWDSALE <b>NOW</b>! BONUS ENDS IN:',
 ];

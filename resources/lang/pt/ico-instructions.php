@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Acesse sua carteira Ether e veja o saldo. Lembre-se que as transações podem levar algum tempo.',
   'alt-headline' => 'MANEIRAS ALTERNATIVAS DE OBTER TOKENS',
   'alt-note' => 'Se você escolher obter seus tokens pelo site da BitDegree, eles serão transferidos para você instantaneamente depois de você realizar uma compra.',
-  'alt-p1' => 'Durante o crowdsale, será possível obter tokens usando <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>.',
+  'alt-p1' => 'Durante o crowdsale, será possível obter tokens usando TokenLot.',
   'alt-p2' => 'TokenLot aceita todas as outras moedas digitais. Se você optar pelo TokenLot, <b>seus tokens chegarão a você após o fim do crowdsale.</b> Você receberá um e-mail com instruções detalhadas. O e-mail será enviado para o mesmo endereço originalmente usado para comprar os tokens. Para receber tokens BDG instantaneamente, nós recomendamos que você se junte ao crowdsale BitDegree pelo site oficial.',
   'faq-headline' => 'FAQ',
   'faq-subtitle' => 'Para mais informações, por favor visite o <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">FAQ oficial MyEtherWallet.</a>.',

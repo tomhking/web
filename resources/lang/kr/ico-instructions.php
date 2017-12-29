@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => '당신의 이더 지갑에 접속하십시오. 거래에 시간이 어느정도는 소요될 수 있음을 기억하십시오. ',
   'alt-headline' => '토큰을 받는 대체적인 방법',
   'alt-note' => 'BitDegree웹 사이트에서 토큰을 가져오도록 선택하면 구입한 후 즉시 전송됩니다',
-  'alt-p1' => ' 크라우드세일 도중에, 당신은  <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>을 이용해 토큰을 가질 수 있습니다.  ',
+  'alt-p1' => ' 크라우드세일 도중에, 당신은 TokenLot 을 이용해 토큰을 가질 수 있습니다.  ',
   'alt-p2' => 'Tokenlot은 다른 모든 디지털 통화를 수용합니다.. 당신이 Tokenlot을 사용하기로 결정하시면, <b>크라우드세일이 끝나고 토큰이 당신에게 전달될 것입니다.</b> 자세한 지침이 포함된 이메일을 받게 됩니다. 이메일은 원래 토큰을 구입하는 데 사용된 동일한 이메일 주소로 전송됩니다. BDG토큰을 받으려면 공식 웹 사이트를 통해 BitDegree 크라우드 세일에 가입하는 것이 좋습니다.',
   'faq-headline' => 'FAQ',
   'faq-subtitle' => '더 자세한 내용이 필요하시면, 공식 사이트에 방문하시길 바랍니다.  <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">MyEtherWallet\'s FAQ</a>.',

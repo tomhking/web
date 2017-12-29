@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Accesați portofelul dvs. Ether și vedeți soldul. Rețineți că tranzacțiile pot dura ceva timp.',
   'alt-headline' => 'MODURI ALTERNATIVE PENTRU A OBȚINE TOKEN-URI',
   'alt-note' => 'Dacă alegeți să obțineți token-uri de pe site-ul web BitDegree, acestea vor fi transferate imediat după efectuarea unei achiziții.',
-  'alt-p1' => 'În timpul crowdsale-ului, veți putea obține token-uri utilizând <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>.',
+  'alt-p1' => 'În timpul crowdsale-ului, veți putea obține token-uri utilizând TokenLot.',
   'alt-p2' => 'Tokenlot acceptă toate celelalte valute digitale. Dacă alegeți să utilizați Tokenlot, <b>token-urile vor ajunge la dvs. după terminarea crowdsale-ului.</b> Veți primi un e-mail cu instrucțiuni detaliate. Email-ul va fi trimis la aceeași adresă de e-mail care a fost inițial utilizată pentru achiziționarea de token-uri. Pentru a primi token-uri BDG instant, recomandăm să vă alăturați crowdsale-ului BitDegree pe site-ul oficial.',
   'faq-headline' => 'Întrebări frecvente',
   'faq-subtitle' => 'Pentru informații mai detaliate, vizitați: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow">întrebările frecvente oficiale ale MyEtherWallet</a>.',

@@ -20,7 +20,7 @@
 
             <div class="main container-main">
                 <div class="container">
-                    @if($ico['end']->isPast())
+                    @if($ico['end']->isPast() || $hardCapReached)
                         <div class="row">
                             <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
                                 <img src="{{ asset_rev('token.png') }}" alt="@lang('ico.bdg')">

@@ -95,7 +95,7 @@ return [
 
     'alt-headline' => 'ALTERNATIVE WAYS TO GET TOKENS',
     'alt-note' => 'If you choose to get your tokens from the BitDegree website, they will be transferred to you instantly after you make a purchase.',
-    'alt-p1' => 'During the crowdsale, you will be able to get tokens by using <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank">TokenLot</a>.',
+    'alt-p1' => 'During the crowdsale, you will be able to get tokens by using TokenLot.',
     'alt-p2' => 'Tokenlot accepts all other digital currencies. If you choose to use Tokenlot, <b>your tokens will reach you after the crowdsale ends.</b> You will receive an email with detailed instructions. The email will be sent to the same email address that was originally used to purchase the tokens. To receive BDG tokens instantly we really recommend to join BitDegree crowdsale via official website.',
 
     'faq-headline' => 'FAQ',

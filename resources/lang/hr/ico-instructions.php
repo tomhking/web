@@ -91,7 +91,7 @@ return array (
   'cex-note-2' => 'Pristupite svojem računalu za Etere i pogledajte ravnotežu. Imajte na umu da transakcije mogu potrajati neko vrijeme.',
   'alt-headline' => 'ALTERNATIVNI NAČINI ZA PREUZIMANJE TOKENA',
   'alt-note' => 'Ako odlučite preuzeti tokene s BitDegree web stranice, oni će vam biti preneseni odmah nakon što izvršite kupnju.',
-  'alt-p1' => 'Tijekom prodaje, moći ćete dobiti znakove pomoću <a href="https://www.tokenlot.com/crowdsale/bitdegree/" target="_blank"> TokenLota </a>.',
+  'alt-p1' => 'Tijekom prodaje, moći ćete dobiti znakove pomoću TokenLota.',
   'alt-p2' => 'Tokenlot prihvaća sve druge digitalne valute. Ako odlučite upotrebljavati Tokenlot, <b> vaši tokeni će stići do vas nakon završetka grupe. </ B> Primit ćete poruku e-pošte s detaljnim uputama. E-poruka će biti poslana na istu adresu e-pošte koja je izvorno korištena za kupnju žetona. Za primanje BDG tokena odmah preporučujemo da se pridružite BitDegree crowdsale putem službene web stranice.',
   'faq-headline' => 'FAQ',
   'faq-subtitle' => 'Detaljnije informacije potražite u službenom: <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="nofollow"> FAQu MyEtherWalleta </a>.',
