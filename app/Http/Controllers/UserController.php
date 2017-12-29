@@ -281,6 +281,11 @@ class UserController extends Controller
     /**
      * @return \Illuminate\View\View
      */
+    function refund()
+    {
+        return view('pages.refund');
+    }
+
     function affiliate()
     {
         $banners = config('affiliate.banners');

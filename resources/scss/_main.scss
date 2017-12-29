@@ -3212,6 +3212,22 @@ body.login-page {
   }
 }
 
+body.login-page.get-tokens.refund {
+  p{
+    font-size: 15px;
+  }
+  .agreement input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin-bottom: -8px;
+  }
+  .agreement label{
+    font-family: $work-sans;
+  }
+}
+
 body.login-page.token-secured a.login-logo{
   margin:0;
 }

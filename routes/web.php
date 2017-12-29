@@ -39,6 +39,7 @@ Route::group(['prefix' => $locale = language_prefix()], function() use ($locale)
             Route::get('/affiliate3', 'UserController@affiliate3')->name('affiliate3');
             Route::get('/affiliate4', 'UserController@affiliate4')->name('affiliate4');
             Route::get('/affiliate5', 'UserController@affiliate5')->name('affiliate5');
+            Route::get('/refund', 'UserController@refund')->name('refund');
             Route::get('/address', 'UserController@address')->name('address');
             Route::get('/profile', 'UserController@showDetails')->name('details');
             Route::post('/profile', 'UserController@details');

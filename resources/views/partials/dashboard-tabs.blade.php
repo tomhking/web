@@ -41,6 +41,7 @@
                 @if(auth()->user()->isAirdropParticipant())
                     <li class="{{ current_route_class('user') }}"><a href="{{ route('user') }}"><i class="fa fa-plane" aria-hidden="true"></i> @lang('user.tab-airdrops')</a></li>
                 @endif
+                    <li class="{{ current_route_class('refund') }}"><a href="{{ route('refund') }}"><i class="fa fa-undo" aria-hidden="true"></i> Refund</a></li>
                     <!-- .dropdown -->
             </ul> <!-- .nav .navbar-nav -->
         </div><!-- /.navbar-collapse -->
