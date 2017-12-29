@@ -68,7 +68,7 @@ class UpdateIcoProgress extends Command
             return;
         }
 
-        $tokensSold = static::preciseHexDec($response->result);
+        $tokensSold = preciseHexDec($response->result);
 
         Cache::forever('tokens_sold', [
             'time' => Carbon::now(),
@@ -78,31 +78,4 @@ class UpdateIcoProgress extends Command
         $this->line('Done! Number of sold tokens on contract '.$this->icoAddress.' is '.$tokensSold.'. Difference: '.bcsub($tokensSold, $soldBefore['amount'] ?? 0));
     }
 
-    /**
-     * Converts a hexadecimal string to a decimal string using arbitrary precision
-     *
-     * @param string $input
-     * @return string
-     */
-    private static function preciseHexDec(string $input) {
-        $result = '0';
-        $index = strlen($input);
-        $power = 0;
-
-        while(true) {
-            $digit = substr($input, --$index, 1);
-
-            if($digit == 'x') {
-                break;
-            }
-
-            $result = bcadd(bcmul(hexdec($digit), bcpow(16, $power++)), $result);
-
-            if($index <= 0) {
-                break;
-            }
-        }
-
-        return $result;
-    }
 }

@@ -21,6 +21,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\ExportContributorsForCountry::class,
         \App\Console\Commands\ExportUsersWithoutKYC::class,
         \App\Console\Commands\GenerateRefundEntries::class,
+        \App\Console\Commands\RetrieveTokenAndContributionAmounts::class,
     ];
 
     /**

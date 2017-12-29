@@ -80,3 +80,34 @@ if (!function_exists('nice_duration')) {
         return str_pad(floor($input / 60), 2, 0, STR_PAD_LEFT) . ':' . str_pad($input % 60, 2, 0, STR_PAD_LEFT);
     }
 }
+
+if (!function_exists('preciseHexDec')) {
+    /**
+     * Converts a hexadecimal string to a decimal string using arbitrary precision
+     *
+     * @param string $input
+     * @return string
+     */
+    function preciseHexDec(string $input)
+    {
+        $result = '0';
+        $index = strlen($input);
+        $power = 0;
+
+        while (true) {
+            $digit = substr($input, --$index, 1);
+
+            if ($digit == 'x') {
+                break;
+            }
+
+            $result = bcadd(bcmul(hexdec($digit), bcpow(16, $power++)), $result);
+
+            if ($index <= 0) {
+                break;
+            }
+        }
+
+        return $result;
+    }
+}
