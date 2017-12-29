@@ -20,6 +20,7 @@ class Kernel extends ConsoleKernel
         \App\Console\Commands\UpdateIcoTxns::class,
         \App\Console\Commands\ExportContributorsForCountry::class,
         \App\Console\Commands\ExportUsersWithoutKYC::class,
+        \App\Console\Commands\GenerateRefundEntries::class,
     ];
 
     /**

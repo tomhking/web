@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -98,6 +99,16 @@ class User extends Authenticatable
     }
 
     /**
+     * Refund relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function refunds()
+    {
+        return $this->hasMany(Refund::class);
+    }
+
+    /**
      * Email confirmations relationship
      *
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
@@ -114,6 +125,34 @@ class User extends Authenticatable
     public function isAirdropParticipant()
     {
         return $this->airdrop > 0;
+    }
+    
+    /**
+     * Returns true if user is eligible for a refund
+     * @return bool
+     */
+    public function isEligibleForARefund()
+    {
+        if(empty($this->wallet)) {
+            return false;
+        }
+
+        try {
+            $result = app()->make('geoip')->country($this->ip);
+
+            if($result instanceof \GeoIp2\Model\Country) {
+                $ipCountry = $result->country->isoCode;
+            }
+        }catch (\GeoIp2\Exception\AddressNotFoundException $e) {
+            //
+        }
+
+        $refundableCountries = ['US', 'VI', 'UM', 'PR', 'AS', 'GU', 'MP'];
+
+        // sign up checkbox added on commit 519c919dd7cf4be26ae7eee4e6f7dd2fb31eea5f
+
+        return $this->created_at->lt(Carbon::create(2017,12, 17, 8, 0, 0)) &&
+            (in_array($ipCountry ?? '', $refundableCountries) || in_array($user->country ?? '', $refundableCountries));
     }
 
     /**
